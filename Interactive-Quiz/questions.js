@@ -15,8 +15,8 @@ const questions = [
       "Program"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Agent'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Agent'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "الوكيل (Agent) هو المفهوم الجوهري في الذكاء الاصطناعي الذي يُطلق على أي كيان يتفاعل مع بيئته في دورة مغلقة: يستقبل المدخلات عبر الحواس (Sensors) ويؤثر فيها بالأفعال عبر المشغلات (Actuators).",
+    "explanationEn": "An Agent is formally defined as any entity that perceives its environment through sensors and acts upon that environment through actuators."
   },
   {
     "id": 2,
@@ -31,8 +31,8 @@ const questions = [
       "State"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'Percept'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is C: 'Percept'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "المُدرَك الحسي (Percept) يعبر تحديداً عن المدخل الحسي اللحظي للوكيل في نقطة زمنية معينة، بينما سلسلة المُدركات تمثل التاريخ التراكمي لهذه المدخلات.",
+    "explanationEn": "A Percept specifically refers to the agent's perceptual input at any given instant, distinct from the sequence of past inputs."
   },
   {
     "id": 3,
@@ -47,8 +47,8 @@ const questions = [
       "Knowledge base"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Percept sequence'. سلسلة المُدركات (Percept Sequence) تمثل التاريخ التراكمي الكامل لكل ما التقطه الوكيل بحواسه منذ بدء عمله.",
-    "explanationEn": "The correct answer is B: 'Percept sequence'. The Percept Sequence contains the complete chronological history of everything the agent has ever perceived."
+    "explanationAr": "سلسلة المُدركات (Percept Sequence) هي السجل التاريخي الكامل والشامل لكل ما التقطه الوكيل بحواسه منذ بداية تشغيله وحتى اللحظة الراهنة.",
+    "explanationEn": "The Percept Sequence represents the complete chronological record of everything the agent has ever perceived over its lifetime."
   },
   {
     "id": 4,
@@ -63,8 +63,8 @@ const questions = [
       "Utility function"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'Agent function'. سلسلة المُدركات (Percept Sequence) تمثل التاريخ التراكمي الكامل لكل ما التقطه الوكيل بحواسه منذ بدء عمله.",
-    "explanationEn": "The correct answer is C: 'Agent function'. The Percept Sequence contains the complete chronological history of everything the agent has ever perceived."
+    "explanationAr": "دالة الوكيل (Agent Function) هي صياغة رياضية مجردة تحدد الفعل الذي يجب اتخاذه استجابة لأي سلسلة مُدركات معطاة.",
+    "explanationEn": "The Agent Function is the abstract mathematical mapping that dictates the selected action for any given sequence of percepts."
   },
   {
     "id": 5,
@@ -79,8 +79,8 @@ const questions = [
       "f: P x A -> P"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'f: P* -> A'. دالة الوكيل (Agent Function) هي دالة رياضية مجردة تربط سلاسل المُدركات بالأفعال المناسبة (f: P* -> A).",
-    "explanationEn": "The correct answer is B: 'f: P* -> A'. The Agent Function is the abstract mathematical mapping from percept histories to actions: f: P* -> A."
+    "explanationAr": "دالة الوكيل تُكتب رياضياً كـ f: P* -> A؛ حيث P* تعني مجموعة كل السلاسل الممكنة من المُدركات (التاريخ السابق بأي طول)، و A هي مجموعة الأفعال المتاحة.",
+    "explanationEn": "Mathematically, the agent function maps sequences of percepts (P*, where * is the Kleene star representing history of any length) to actions (A): f: P* -> A."
   },
   {
     "id": 6,
@@ -95,8 +95,8 @@ const questions = [
       "The objective performance measure"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'The computing hardware, sensors, and actuators'. بنية الوكيل (Architecture) توفر العتاد الحاسوبي وأجهزة الاستشعار والمشغلات التي يعمل عليها برنامج الوكيل (Program).",
-    "explanationEn": "The correct answer is B: 'The computing hardware, sensors, and actuators'. The architecture provides the computing platform, physical sensors, and actuators that run the agent program."
+    "explanationAr": "معادلة الوكيل هي (Agent = Architecture + Program)؛ البنية (Architecture) توفر العتاد المادي والمستشعرات والمشغلات، بينما البرنامج ينفذ الخوارزمية التي تحسب دالة الوكيل.",
+    "explanationEn": "In the formula Agent = Architecture + Program, the Architecture supplies the physical hardware, computing machinery, sensors, and actuators."
   },
   {
     "id": 7,
@@ -111,8 +111,8 @@ const questions = [
       "There is no distinction; both terms refer to the same software code"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'The function is an abstract mathematical concept, while the program runs on physical hardware'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'The function is an abstract mathematical concept, while the program runs on physical hardware'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "الفرق الجوهري هو أن دالة الوكيل مفهوم رياضي وصفي مجرد، في حين أن برنامج الوكيل هو الكود البرمجي الملموس الذي يعمل على عتاد الحاسوب وينفذ هذه الدالة عملياً.",
+    "explanationEn": "The agent function is an abstract mathematical concept mapping percept sequences to actions, whereas the agent program is the concrete software implementation running on real hardware."
   },
   {
     "id": 8,
@@ -127,8 +127,8 @@ const questions = [
       "The next expected reward"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'The entire accumulated percept sequence'. وكلاء الجداول يعانون من النمو الأسي الهائل لحجم الجدول مع تزايد عدد الخطوات والمُدركات، مما يجعلهم غير قابلين للتطبيق في العالم الحقيقي.",
-    "explanationEn": "The correct answer is C: 'The entire accumulated percept sequence'. Table-driven agents fail because the lookup table size grows exponentially with the percept space and lifetime."
+    "explanationAr": "وكيل جدول البحث (Table-driven agent) يحتاج في كل خطوة إلى سلسلة المُدركات التراكمية كاملة للبحث في الجدول عن الفعل المطابق لتلك السلسلة المحددة.",
+    "explanationEn": "A table-driven agent program requires the entire accumulated percept sequence as its lookup key to find the corresponding action."
   },
   {
     "id": 9,
@@ -143,8 +143,8 @@ const questions = [
       "Hardware architectures cannot execute lookup tables"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'The table size grows exponentially with the agent's lifetime and percept set size'. وكلاء الجداول يعانون من النمو الأسي الهائل لحجم الجدول مع تزايد عدد الخطوات والمُدركات، مما يجعلهم غير قابلين للتطبيق في العالم الحقيقي.",
-    "explanationEn": "The correct answer is B: 'The table size grows exponentially with the agent's lifetime and percept set size'. Table-driven agents fail because the lookup table size grows exponentially with the percept space and lifetime."
+    "explanationAr": "نهج جدول البحث غير عملي واستحالة تطبيقه في الواقع؛ لأن حجم الجدول يتضاعف أسياً مع زيادة طول السلسلة وعدد المُدركات الممكنة، مما يؤدي لانفجار هائل في متطلبات الذاكرة.",
+    "explanationEn": "Table-driven agents fail because the lookup table size grows exponentially with the percept space and lifetime: sum of |P|^t, requiring astronomical memory."
   },
   {
     "id": 10,
@@ -159,8 +159,8 @@ const questions = [
       "2 states"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): '8 states'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: '8 states'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "في بيئة المكنسة ذات الخليتين، توجد حالتان لموقع الوكيل (A أو B)، وكل خلية قد تكون نظيفة أو متسخة (2 × 2 = 4 احتمالات للأوساخ)، وبالتالي إجمالي الحالات = 2 × 4 = 8 حالات ممكنة.",
+    "explanationEn": "In a two-cell vacuum world, there are 2 possible agent locations times 2^2 = 4 possible dirt configurations, yielding 2 * 4 = 8 distinct physical states."
   },
   {
     "id": 11,
@@ -175,8 +175,8 @@ const questions = [
       "(n!)^2"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'n * 2^n'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'n * 2^n'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "إذا كان لدينا 8 حالات مختلفة للبيئة وفعلين متاحين للوكيل، فإن عدد دوال الوكيل المحتملة الممكن بناؤها يساوي 2 أس 8 = 256 دالة وكيل محتملة.",
+    "explanationEn": "With 8 possible states and 2 possible actions, the number of distinct mappings from states to actions is 2^8 = 256 possible functions."
   },
   {
     "id": 12,
@@ -191,8 +191,8 @@ const questions = [
       "Sensor array"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Controller'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Controller'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "في نظرية التحكم (Control Theory)، يُعرف النظام مغلق الحلقة الذي يضبط متغيراً نحو نقطة مرجعية دون تدخل بشري باسم 'المتحكم' (Controller).",
+    "explanationEn": "In control theory, a closed-loop system regulating a process variable to a set point without manual human intervention is known as a Controller."
   },
   {
     "id": 13,
@@ -207,8 +207,8 @@ const questions = [
       "Transducer"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'Softbot'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is C: 'Softbot'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "الوكيل البرمجي الخالص الذي ينشط داخل بيئة برمجية وشبكات (مثل زواحف الويب أو برامج التداول المالي) يُصطلح عليه بـ Softbot (Software Robot).",
+    "explanationEn": "An agent that exists entirely in software environments (like a web crawler or algorithmic trading bot) is called a Softbot."
   },
   {
     "id": 14,
@@ -223,8 +223,8 @@ const questions = [
       "|P|!"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Sum from t=1 to T of |P|^t'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Sum from t=1 to T of |P|^t'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "لحساب حجم جدول البحث لوكيل يعمل لزمن T مع مجموعة مُدركات |P|، نجمع جميع السلاسل ذات الأطوال من 1 إلى T، وهو المجموع التراكمي لـ |P|^t من t=1 إلى T.",
+    "explanationEn": "The complete lookup table must index all possible percept sequences of lengths 1 through T, which sums to Σ(|P|^t) for t=1..T."
   },
   {
     "id": 15,
@@ -239,8 +239,8 @@ const questions = [
       "Search, Scan, Pick, Drop"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Left, Right, Suck, NoOp'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Left, Right, Suck, NoOp'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "في النموذج الكلاسيكي لمكنسة الفاكيوم، الأفعال الأساسية المتاحة هي: التحرك يساراً (Left)، يميناً (Right)، شفط الأوساخ (Suck)، أو عدم فعل شيء (NoOp).",
+    "explanationEn": "The standard actions available in the basic two-location vacuum-cleaner world are Left, Right, Suck, and NoOp (No Operation)."
   },
   {
     "id": 16,
@@ -255,8 +255,8 @@ const questions = [
       "Dualism"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Consequentialism'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Consequentialism'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "مذهب العواقبية (Consequentialism) هو الأساس الفلسفي للذكاء الاصطناعي، حيث يُقاس السلوك العقلاني بنتيجة الفعل وعواقبه على البيئة وليس بنية الفعل أو طبيعته المجردة.",
+    "explanationEn": "Consequentialism evaluates the rationality of an agent's behavior purely based on its consequences—the desirability of the environment states achieved."
   },
   {
     "id": 17,
@@ -271,8 +271,8 @@ const questions = [
       "Percept history"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Performance measure'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Performance measure'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "مقياس الأداء (Performance Measure) هو معيار عددي موضوعي يضعه المصمم الخارجي لتقييم مدى نجاح الوكيل في تحقيق الأهداف المرغوبة في البيئة.",
+    "explanationEn": "The Performance Measure is an objective numerical criterion established by the designer to quantify an agent's success in its environment."
   },
   {
     "id": 18,
@@ -287,8 +287,8 @@ const questions = [
       "Sucking dirt consumes excessive electrical power"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'A rational agent could maximize score by repeatedly dumping dirt and cleaning it again'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'A rational agent could maximize score by repeatedly dumping dirt and cleaning it again'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "مكافأة الوكيل على كمية الأوساخ المشفوطة غير صائبة؛ لأن الوكيل العقلاني سيتعلم تفريغ الأوساخ وإعادة شفطها تكراراً لتعظيم نقاطه بدلاً من إبقاء الأرض نظيفة.",
+    "explanationEn": "Rewarding cleaning actions creates a loophole: a rational agent could clean dirt, dump it back out, and clean it again indefinitely to maximize score without keeping the room clean."
   },
   {
     "id": 19,
@@ -303,8 +303,8 @@ const questions = [
       "Penalize the agent whenever it visits a previously seen state"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Design them according to the desired state of the environment'. مقياس الأداء (Performance Measure) هو معيار موضوعي خارجي يحدده المصمم لقياس مدى نجاح سلوك الوكيل في البيئة.",
-    "explanationEn": "The correct answer is B: 'Design them according to the desired state of the environment'. A performance measure is an objective external standard used to evaluate the desirability of the states achieved by the agent."
+    "explanationAr": "القاعدة الذهبية في تصميم مقاييس الأداء هي تصميمها وفقاً للحالة المرغوبة للبيئة (مثلاً أن تكون الغرفة نظيفة باستمرار) وليس وفقاً لطريقة تصرف الوكيل التي نفترضها.",
+    "explanationEn": "Performance measures should be designed according to the desired state of the environment, not according to how the designer thinks the agent ought to behave."
   },
   {
     "id": 20,
@@ -319,8 +319,8 @@ const questions = [
       "Six factors"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'Four factors'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is C: 'Four factors'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "عقلانية الوكيل تعتمد على 4 عوامل: مقياس الأداء، المعرفة المسبقة بالبيئة، سلسلة المُدركات المكتسبة، والأفعال التي يستطيع الوكيل تنفيذها.",
+    "explanationEn": "Rationality depends on four factors: (1) The performance measure, (2) Prior knowledge of the environment, (3) The percept sequence, and (4) The agent's available actions."
   },
   {
     "id": 21,
@@ -335,8 +335,8 @@ const questions = [
       "The agent's percept sequence to date"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'The agent's future percepts that have not yet occurred'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is C: 'The agent's future percepts that have not yet occurred'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "المعرفة المطلقة بالحالة المستقبلية الحقيقية (Omniscience) ليست من محددات العقلانية؛ فالعقلانية تقوم على تعظيم الأداء المتوقع بناءً على ما يعرفه الوكيل، ولا تشترط معرفة الغيب.",
+    "explanationEn": "Omniscience (knowing actual future outcomes) is NOT a factor of rationality. Rationality is about expected success given available information."
   },
   {
     "id": 22,
@@ -351,8 +351,8 @@ const questions = [
       "Model-based"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Omniscient'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Omniscient'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العقلانية تتعلق بالنجاح المتوقع بناءً على الأدلة المتاحة، بينما الكمال (Perfection) يتطلب النجاح الفعلي المطلق، وهو غير واقعي في البيئات غير المتوقعة.",
+    "explanationEn": "Rationality maximizes expected performance, whereas perfection requires maximizing actual performance (which is impossible without omniscience in uncertain worlds)."
   },
   {
     "id": 23,
@@ -367,8 +367,8 @@ const questions = [
       "Rational agents make no errors under any circumstances"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Rationality maximizes expected performance, whereas perfection maximizes actual outcome'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Rationality maximizes expected performance, whereas perfection maximizes actual outcome'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "جمع المعلومات (Information gathering) والاستكشاف هو جزء أساسي من العقلانية، لأنه يغير المُدركات المستقبلية ويساعد الوكيل على اتخاذ قرارات أفضل.",
+    "explanationEn": "Information gathering is an integral part of rationality because taking actions to modify future percepts helps make better-informed decisions."
   },
   {
     "id": 24,
@@ -383,8 +383,8 @@ const questions = [
       "Pruning"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Information gathering'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Information gathering'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "الاستكشاف (Exploration) يعني قيام الوكيل بأفعال لا تهدف إلى مكسب فوري بل لاكتشاف معلومات غير معروفة عن البيئة لتحسين أدائه على المدى الطويل.",
+    "explanationEn": "Exploration refers to an agent performing actions specifically to discover unknown aspects of its environment."
   },
   {
     "id": 25,
@@ -399,8 +399,8 @@ const questions = [
       "Looking is an actuator movement that scores direct utility points"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'It modifies future percepts to help make a decision that maximizes expected safety'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'It modifies future percepts to help make a decision that maximizes expected safety'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "النظر في كلا الاتجاهين قبل عبور الشارع فعل عقلاني لأنه إجراء لجمع المعلومات يغير المُدركات المستقبلية لتقليل المخاطر وزيادة السلامة المتوقعة.",
+    "explanationEn": "Looking both ways is rational information gathering: it modifies future percepts to maximize expected safety rather than scoring direct points."
   },
   {
     "id": 26,
@@ -415,8 +415,8 @@ const questions = [
       "Continuity"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Autonomy'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Autonomy'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "إذا اعتمد الوكيل فقط على المعرفة المسبقة التي برمجها المصمم دون الاعتماد على مدخلاته وخبراته، يُقال إنه يفتقر إلى الاستقلالية (Autonomy).",
+    "explanationEn": "An agent lacks Autonomy if its behavior relies primarily on the designer's built-in prior knowledge rather than learning from its own experience."
   },
   {
     "id": 27,
@@ -431,8 +431,8 @@ const questions = [
       "By refusing to execute actions in unfamiliar environments"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'By learning from its percepts to compensate for partial or incorrect prior knowledge'. الاستقلالية (Autonomy) تعني قدرة الوكيل على التعلم وتعديل سلوكه بناءً على تجاربه الخاصة بدلاً من الاعتماد المطلق على معرفة المصمم المسبقة.",
-    "explanationEn": "The correct answer is B: 'By learning from its percepts to compensate for partial or incorrect prior knowledge'. An agent possesses autonomy if its behavior is determined by its own learning and experience rather than solely by its designer's initial programming."
+    "explanationAr": "يحقق الوكيل استقلالية عالية بالتعلم المستمر من مُدركاته وتجاربه، مما يمكنه من تعويض أي نقص أو أخطاء في المعرفة المسبقة التي زوده بها المصمم.",
+    "explanationEn": "High autonomy is attained when an agent learns from its percepts over time, compensating for partial or incorrect initial designer knowledge."
   },
   {
     "id": 28,
@@ -447,8 +447,8 @@ const questions = [
       "Multi-agent competitive systems in continuous environments"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Innate, rigid behavioral routines that fail when assumptions are violated'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Innate, rigid behavioral routines that fail when assumptions are violated'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "نموذج PEAS هو اختصار للأركان الأربعة لوصف بيئة المهمة: مقياس الأداء (Performance)، البيئة (Environment)، المشغلات (Actuators)، وأجهزة الاستشعار (Sensors).",
+    "explanationEn": "PEAS stands for Performance measure, Environment, Actuators, and Sensors, formalizing the task environment specification."
   },
   {
     "id": 29,
@@ -463,8 +463,8 @@ const questions = [
       "Unobservable logic"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Bounded rationality'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Bounded rationality'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "في سيارة الأجرة الذكية، مقاييس الأداء تتضمن: السلامة، الوصول السريع، مطابقة قوانين المرور، راحة الركاب، وتعظيم الأرباح.",
+    "explanationEn": "For an automated taxi driver, the performance measure includes safety, destination arrival speed, legal compliance, passenger comfort, and profit maximization."
   },
   {
     "id": 30,
@@ -479,8 +479,8 @@ const questions = [
       "a = max_s P(s | a)"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'a = argmax_a E(U | a)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'a = argmax_a E(U | a)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "مبدأ تعظيم المنفعة المتوقعة رياضياً يتمثل في اختيار الفعل a الذي يعظم القيمة التوقعية: a = argmax_a E(U | a).",
+    "explanationEn": "The principle of maximizing expected utility chooses the action maximizing expected utility: a = argmax_a E(U | a)."
   },
   {
     "id": 31,
@@ -495,8 +495,8 @@ const questions = [
       "Program, Entity, Actuation, Sequence"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Performance measure, Environment, Actuators, Sensors'. مواصفات PEAS تشمل: الأداء (Performance)، البيئة (Environment)، المشغلات (Actuators)، وأجهزة الاستشعار (Sensors).",
-    "explanationEn": "The correct answer is B: 'Performance measure, Environment, Actuators, Sensors'. PEAS stands for Performance measure, Environment, Actuators, and Sensors, used to specify a task environment."
+    "explanationAr": "الخيار 'Performance measure, Environment, Actuators, Sensors' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
+    "explanationEn": "The option 'Performance measure, Environment, Actuators, Sensors' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
   },
   {
     "id": 32,
@@ -511,8 +511,8 @@ const questions = [
       "Assemble the physical hardware and actuators"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Specify the task environment (PEAS) as fully as possible'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Specify the task environment (PEAS) as fully as possible'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "الخيار 'Specify the task environment (PEAS) as fully as possible' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
+    "explanationEn": "The option 'Specify the task environment (PEAS) as fully as possible' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
   },
   {
     "id": 33,
@@ -527,8 +527,8 @@ const questions = [
       "GPS receiver"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Steering wheel'. مواصفات PEAS تشمل: الأداء (Performance)، البيئة (Environment)، المشغلات (Actuators)، وأجهزة الاستشعار (Sensors).",
-    "explanationEn": "The correct answer is B: 'Steering wheel'. PEAS stands for Performance measure, Environment, Actuators, and Sensors, used to specify a task environment."
+    "explanationAr": "المشغلات (Actuators) هي الأجهزة التي تسمح للوكيل بالتأثير الفعلي والحركي في البيئة، مثل المحركات، والتوجيه، والشاشات.",
+    "explanationEn": "Actuators are the output mechanisms (such as steering, accelerators, brakes, or displays) that execute actions in the environment."
   },
   {
     "id": 34,
@@ -543,8 +543,8 @@ const questions = [
       "Voice synthesizer"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'Lidar / Radar'. مواصفات PEAS تشمل: الأداء (Performance)، البيئة (Environment)، المشغلات (Actuators)، وأجهزة الاستشعار (Sensors).",
-    "explanationEn": "The correct answer is C: 'Lidar / Radar'. PEAS stands for Performance measure, Environment, Actuators, and Sensors, used to specify a task environment."
+    "explanationAr": "أجهزة الاستشعار في سيارة الأجرة تشمل الكاميرات والسونار والرادار والـ GPS وعداد السرعة لقراءة حالة الطريق.",
+    "explanationEn": "Sensors for an automated taxi include cameras, radar, sonar, GPS, and speedometers to perceive traffic and surroundings."
   },
   {
     "id": 35,
@@ -559,8 +559,8 @@ const questions = [
       "Sending coordinate packets over 5G networks"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Driving smoothly to maximize comfort, safety, and passenger satisfaction'. مقياس الأداء (Performance Measure) هو معيار موضوعي خارجي يحدده المصمم لقياس مدى نجاح سلوك الوكيل في البيئة.",
-    "explanationEn": "The correct answer is A: 'Driving smoothly to maximize comfort, safety, and passenger satisfaction'. A performance measure is an objective external standard used to evaluate the desirability of the states achieved by the agent."
+    "explanationAr": "الخيار 'Driving smoothly to maximize comfort, safety, and passenger satisfaction' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
+    "explanationEn": "The option 'Driving smoothly to maximize comfort, safety, and passenger satisfaction' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
   },
   {
     "id": 36,
@@ -575,8 +575,8 @@ const questions = [
       "Disk storage capacity of the server"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Accuracy in minimizing false positives and false negatives'. مقياس الأداء (Performance Measure) هو معيار موضوعي خارجي يحدده المصمم لقياس مدى نجاح سلوك الوكيل في البيئة.",
-    "explanationEn": "The correct answer is B: 'Accuracy in minimizing false positives and false negatives'. A performance measure is an objective external standard used to evaluate the desirability of the states achieved by the agent."
+    "explanationAr": "الخيار 'Accuracy in minimizing false positives and false negatives' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
+    "explanationEn": "The option 'Accuracy in minimizing false positives and false negatives' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
   },
   {
     "id": 37,
@@ -591,8 +591,8 @@ const questions = [
       "Sender IP address"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'Moving an email to the Spam folder'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is C: 'Moving an email to the Spam folder'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "المشغلات (Actuators) هي الأجهزة التي تسمح للوكيل بالتأثير الفعلي والحركي في البيئة، مثل المحركات، والتوجيه، والشاشات.",
+    "explanationEn": "Actuators are the output mechanisms (such as steering, accelerators, brakes, or displays) that execute actions in the environment."
   },
   {
     "id": 38,
@@ -607,8 +607,8 @@ const questions = [
       "Hospital billing database"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Touchscreen display of questions, test suggestions, and diagnoses'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Touchscreen display of questions, test suggestions, and diagnoses'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "المشغلات (Actuators) هي الأجهزة التي تسمح للوكيل بالتأثير الفعلي والحركي في البيئة، مثل المحركات، والتوجيه، والشاشات.",
+    "explanationEn": "Actuators are the output mechanisms (such as steering, accelerators, brakes, or displays) that execute actions in the environment."
   },
   {
     "id": 39,
@@ -623,8 +623,8 @@ const questions = [
       "Angle of the robotic arm joints"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Percentage of parts placed into correct sorting bins'. مقياس الأداء (Performance Measure) هو معيار موضوعي خارجي يحدده المصمم لقياس مدى نجاح سلوك الوكيل في البيئة.",
-    "explanationEn": "The correct answer is A: 'Percentage of parts placed into correct sorting bins'. A performance measure is an objective external standard used to evaluate the desirability of the states achieved by the agent."
+    "explanationAr": "الخيار 'Percentage of parts placed into correct sorting bins' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
+    "explanationEn": "The option 'Percentage of parts placed into correct sorting bins' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
   },
   {
     "id": 40,
@@ -639,8 +639,8 @@ const questions = [
       "Conveyor belt rollers"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Digital cameras and tactile touch sensors'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Digital cameras and tactile touch sensors'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "الخيار 'Digital cameras and tactile touch sensors' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
+    "explanationEn": "The option 'Digital cameras and tactile touch sensors' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
   },
   {
     "id": 41,
@@ -655,8 +655,8 @@ const questions = [
       "Chemical composition reports"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Valves, heaters, pumps, and stirrers'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Valves, heaters, pumps, and stirrers'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "المشغلات (Actuators) هي الأجهزة التي تسمح للوكيل بالتأثير الفعلي والحركي في البيئة، مثل المحركات، والتوجيه، والشاشات.",
+    "explanationEn": "Actuators are the output mechanisms (such as steering, accelerators, brakes, or displays) that execute actions in the environment."
   },
   {
     "id": 42,
@@ -671,8 +671,8 @@ const questions = [
       "Audio speaker frequency range"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'The student's improvement and test score'. مقياس الأداء (Performance Measure) هو معيار موضوعي خارجي يحدده المصمم لقياس مدى نجاح سلوك الوكيل في البيئة.",
-    "explanationEn": "The correct answer is B: 'The student's improvement and test score'. A performance measure is an objective external standard used to evaluate the desirability of the states achieved by the agent."
+    "explanationAr": "الخيار 'The student's improvement and test score' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
+    "explanationEn": "The option 'The student's improvement and test score' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
   },
   {
     "id": 43,
@@ -687,8 +687,8 @@ const questions = [
       "The environment never changes while the agent is deciding"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'The agent's sensors give it access to the complete state of the environment at each point in time'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'The agent's sensors give it access to the complete state of the environment at each point in time'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "البيئة الملاحظة بالكامل (Fully observable) هي التي تتيح فيها مستشعرات الوكيل الوصول إلى الحالة الكاملة للبيئة في كل نقطة زمنية دون أي غموض.",
+    "explanationEn": "An environment is fully observable if the agent's sensors provide complete access to the entire state of the environment at any given time."
   },
   {
     "id": 44,
@@ -703,8 +703,8 @@ const questions = [
       "The chip count is not visible to all players"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Players cannot see the hidden cards held by their opponents'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Players cannot see the hidden cards held by their opponents'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "البيئة الملاحظة جزئياً (Partially observable) تحدث عندما تكون الحواس غير قادرة على رؤية جوانب معينة من العالم بسبب الضوضاء أو محدودية نطاق الحواس.",
+    "explanationEn": "An environment is partially observable when sensors cannot detect all relevant aspects of the world due to noise or limited range."
   },
   {
     "id": 45,
@@ -719,8 +719,8 @@ const questions = [
       "Continuous"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Deterministic'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Deterministic'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "الخيار 'Deterministic' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
+    "explanationEn": "The option 'Deterministic' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
   },
   {
     "id": 46,
@@ -735,8 +735,8 @@ const questions = [
       "There is no mathematical distinction; they are completely interchangeable"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Stochastic explicitly associates probabilities with outcomes, while nondeterministic simply lists possibilities'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Stochastic explicitly associates probabilities with outcomes, while nondeterministic simply lists possibilities'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "البيئة الحتمية (Deterministic) هي التي تتحدد حالتها التالية بشكل كامل وقاطع بالحالة الحالية والفعل الذي ينفذه الوكيل.",
+    "explanationEn": "In a deterministic environment, the next state is completely determined by the current state and the action executed by the agent."
   },
   {
     "id": 47,
@@ -751,8 +751,8 @@ const questions = [
       "Continuous"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Episodic'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Episodic'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "الخيار 'Episodic' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
+    "explanationEn": "The option 'Episodic' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
   },
   {
     "id": 48,
@@ -767,8 +767,8 @@ const questions = [
       "Players are rewarded points for every piece captured"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Current board moves have long-term consequences that directly affect all future states'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Current board moves have long-term consequences that directly affect all future states'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "في البيئة المجزأة (Episodic)، تنقسم تجربة الوكيل إلى نوبات مستقلة؛ بحيث لا يؤثر القرار المتخذ في نوبة سابقة على النوبات التالية.",
+    "explanationEn": "In an episodic environment, the agent's experience is divided into independent episodes where past actions do not affect future episodes."
   },
   {
     "id": 49,
@@ -783,8 +783,8 @@ const questions = [
       "Discrete"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'Semidynamic'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is C: 'Semidynamic'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "الخيار 'Semidynamic' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
+    "explanationEn": "The option 'Semidynamic' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
   },
   {
     "id": 50,
@@ -799,8 +799,8 @@ const questions = [
       "Sorting parts on a moving conveyor belt"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Playing chess with a running game clock'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Playing chess with a running game clock'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "البيئة شبه الديناميكية (Semidynamic) هي التي لا تتغير فيها البيئة نفسها أثناء تفكير الوكيل، ولكن نقاط أداء الوكيل تتناقص مع مرور الوقت.",
+    "explanationEn": "An environment is semidynamic if the environment itself does not change while the agent thinks, but the agent's performance score does (e.g. timed chess)."
   },
   {
     "id": 51,
@@ -815,8 +815,8 @@ const questions = [
       "Stochastic"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Discrete'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Discrete'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "الخيار 'Discrete' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
+    "explanationEn": "The option 'Discrete' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
   },
   {
     "id": 52,
@@ -831,8 +831,8 @@ const questions = [
       "The taxi visits every city in the country"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Speed, location, steering angles, and time vary continuously through real-valued ranges'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Speed, location, steering angles, and time vary continuously through real-valued ranges'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "البيئة المنفصلة (Discrete) تمتلك عدداً محدداً وقابلاً للعد من الحالات والخيارات الزمنية، بينما المستمرة (Continuous) تشمل قيماً لا نهائية متصلة كالسرعة والموقع.",
+    "explanationEn": "Discrete environments have a countable number of distinct states and actions, while continuous environments feature continuous variables like position and time."
   },
   {
     "id": 53,
@@ -847,8 +847,8 @@ const questions = [
       "The entity communicates using human natural language"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'The entity's behavior is best described as maximizing a performance measure that depends on the primary agent's actions'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'The entity's behavior is best described as maximizing a performance measure that depends on the primary agent's actions'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "الخيار 'The entity's behavior is best described as maximizing a performance measure that depends on the primary agent's actions' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
+    "explanationEn": "The option 'The entity's behavior is best described as maximizing a performance measure that depends on the primary agent's actions' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
   },
   {
     "id": 54,
@@ -863,8 +863,8 @@ const questions = [
       "Both agents receive equal points regardless of outcome"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Maximizing one agent's performance measure minimizes the other's'. مقياس الأداء (Performance Measure) هو معيار موضوعي خارجي يحدده المصمم لقياس مدى نجاح سلوك الوكيل في البيئة.",
-    "explanationEn": "The correct answer is A: 'Maximizing one agent's performance measure minimizes the other's'. A performance measure is an objective external standard used to evaluate the desirability of the states achieved by the agent."
+    "explanationAr": "الخيار 'Maximizing one agent's performance measure minimizes the other's' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
+    "explanationEn": "The option 'Maximizing one agent's performance measure minimizes the other's' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
   },
   {
     "id": 55,
@@ -879,8 +879,8 @@ const questions = [
       "The state space contains fewer than 100 states"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'The outcomes (or outcome probabilities) for all actions are fully given to the agent'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'The outcomes (or outcome probabilities) for all actions are fully given to the agent'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "الخيار 'The outcomes (or outcome probabilities) for all actions are fully given to the agent' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
+    "explanationEn": "The option 'The outcomes (or outcome probabilities) for all actions are fully given to the agent' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
   },
   {
     "id": 56,
@@ -895,8 +895,8 @@ const questions = [
       "No, partial observability only occurs in unknown video games"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Yes; in solitaire card games the rules are known, but face-down cards cannot be seen'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Yes; in solitaire card games the rules are known, but face-down cards cannot be seen'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "البيئة الملاحظة جزئياً (Partially observable) تحدث عندما تكون الحواس غير قادرة على رؤية جوانب معينة من العالم بسبب الضوضاء أو محدودية نطاق الحواس.",
+    "explanationEn": "An environment is partially observable when sensors cannot detect all relevant aspects of the world due to noise or limited range."
   },
   {
     "id": 57,
@@ -911,8 +911,8 @@ const questions = [
       "Partially observable, deterministic, sequential, static, discrete, known"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Partially observable, multiagent, nondeterministic, sequential, dynamic, continuous, unknown'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Partially observable, multiagent, nondeterministic, sequential, dynamic, continuous, unknown'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "الخيار 'Partially observable, multiagent, nondeterministic, sequential, dynamic, continuous, unknown' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
+    "explanationEn": "The option 'Partially observable, multiagent, nondeterministic, sequential, dynamic, continuous, unknown' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
   },
   {
     "id": 58,
@@ -927,8 +927,8 @@ const questions = [
       "Medical diagnosis"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Standard crossword puzzle'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Standard crossword puzzle'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "البيئة الحتمية (Deterministic) هي التي تتحدد حالتها التالية بشكل كامل وقاطع بالحالة الحالية والفعل الذي ينفذه الوكيل.",
+    "explanationEn": "In a deterministic environment, the next state is completely determined by the current state and the action executed by the agent."
   },
   {
     "id": 59,
@@ -943,8 +943,8 @@ const questions = [
       "Partially observable and Continuous"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Fully observable and Stochastic'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Fully observable and Stochastic'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "الخيار 'Fully observable and Stochastic' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
+    "explanationEn": "The option 'Fully observable and Stochastic' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
   },
   {
     "id": 60,
@@ -959,8 +959,8 @@ const questions = [
       "Chess requires timing clocks, while backgammon does not"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Backgammon involves dice rolls, which introduce randomness into state transitions'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 2: Intelligent Agents ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Backgammon involves dice rolls, which introduce randomness into state transitions'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "البيئة الحتمية (Deterministic) هي التي تتحدد حالتها التالية بشكل كامل وقاطع بالحالة الحالية والفعل الذي ينفذه الوكيل.",
+    "explanationEn": "In a deterministic environment, the next state is completely determined by the current state and the action executed by the agent."
   },
   {
     "id": 61,
@@ -973,8 +973,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). An agent is anything that can perceive its environment through sensors and act upon that environment through actuators. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 2: Intelligent Agents وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. An agent is anything that can perceive its environment through sensors and act upon that environment through actuators. - This accurately reflects the core principle defined in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
   },
   {
     "id": 62,
@@ -987,8 +987,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). لا يمكن للوكيل أن يتخذ قراره بناءً على مُدركات مستقبلية لم تقع بعد؛ فاختيار الفعل يعتمد حصرياً على سلسلة المُدركات الماضية والحالية.",
-    "explanationEn": "False. An agent's action can only depend on past and current percepts (percept sequence), never on future percepts."
+    "explanationAr": "العبارة خاطئة. والسبب أن المفهوم الحقيقي يتناقض مع ذلك: فلا يمكن للوكيل أن يخرق القوانين السببية بالاعتماد على المستقبل، أو تجاوز المراقبة في البيئات غير المؤكدة.",
+    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments."
   },
   {
     "id": 63,
@@ -1001,8 +1001,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). A table-driven agent is theoretically capable of implementing any valid agent function, despite being practically infeasible for complex tasks. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 2: Intelligent Agents وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. A table-driven agent is theoretically capable of implementing any valid agent function, despite being practically infeasible for complex tasks. - This accurately reflects the core principle defined in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
   },
   {
     "id": 64,
@@ -1015,8 +1015,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن An omniscient agent is identical in definition to a rational agent, as both terms require maximizing expected utility based on current percepts. لا يتوافق مع الأسس العلمية في Chapter 2: Intelligent Agents.",
-    "explanationEn": "This statement is False. The claim that 'An omniscient agent is identical in definition to a rational agent, as both terms require maximizing expected utility based on current percepts.' is incorrect according to the standard principles in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العبارة خاطئة. والسبب أن المفهوم الحقيقي يتناقض مع ذلك: فلا يمكن للوكيل أن يخرق القوانين السببية بالاعتماد على المستقبل، أو تجاوز المراقبة في البيئات غير المؤكدة.",
+    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments."
   },
   {
     "id": 65,
@@ -1029,8 +1029,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن Rationality guarantees perfection; therefore, a rational agent will never suffer an unfortunate outcome due to unobserved external events. لا يتوافق مع الأسس العلمية في Chapter 2: Intelligent Agents.",
-    "explanationEn": "This statement is False. The claim that 'Rationality guarantees perfection; therefore, a rational agent will never suffer an unfortunate outcome due to unobserved external events.' is incorrect according to the standard principles in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العبارة خاطئة. والسبب أن المفهوم الحقيقي يتناقض مع ذلك: فلا يمكن للوكيل أن يخرق القوانين السببية بالاعتماد على المستقبل، أو تجاوز المراقبة في البيئات غير المؤكدة.",
+    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments."
   },
   {
     "id": 66,
@@ -1043,8 +1043,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). As a general rule, a performance measure should be designed according to what one actually wants to achieve in the environment, rather than how the agent should behave. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 2: Intelligent Agents وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. As a general rule, a performance measure should be designed according to what one actually wants to achieve in the environment, rather than how the agent should behave. - This accurately reflects the core principle defined in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
   },
   {
     "id": 67,
@@ -1057,8 +1057,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن An agent that relies entirely on built-in prior knowledge and never learns from its sensory experience is said to possess complete autonomy. لا يتوافق مع الأسس العلمية في Chapter 2: Intelligent Agents.",
-    "explanationEn": "This statement is False. The claim that 'An agent that relies entirely on built-in prior knowledge and never learns from its sensory experience is said to possess complete autonomy.' is incorrect according to the standard principles in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العبارة خاطئة. والسبب أن المفهوم الحقيقي يتناقض مع ذلك: فلا يمكن للوكيل أن يخرق القوانين السببية بالاعتماد على المستقبل، أو تجاوز المراقبة في البيئات غير المؤكدة.",
+    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments."
   },
   {
     "id": 68,
@@ -1071,8 +1071,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Simple reflex agents choose actions based solely on the current percept, completely ignoring the historical percept sequence. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 2: Intelligent Agents وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Simple reflex agents choose actions based solely on the current percept, completely ignoring the historical percept sequence. - This accurately reflects the core principle defined in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
   },
   {
     "id": 69,
@@ -1085,8 +1085,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). In partially observable environments, deterministic simple reflex agents are often prone to getting trapped in infinite, unrecoverable loops. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 2: Intelligent Agents وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. In partially observable environments, deterministic simple reflex agents are often prone to getting trapped in infinite, unrecoverable loops. - This accurately reflects the core principle defined in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
   },
   {
     "id": 70,
@@ -1099,8 +1099,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Randomization of actions can sometimes help a simple reflex agent escape infinite loops in partially observable single-agent environments. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 2: Intelligent Agents وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Randomization of actions can sometimes help a simple reflex agent escape infinite loops in partially observable single-agent environments. - This accurately reflects the core principle defined in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
   },
   {
     "id": 71,
@@ -1113,8 +1113,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). وكيل رد الفعل المعتمد على النموذج (Model-based reflex agent) يحتفظ بحالة داخلية لتعقب الجوانب غير المرئية حالياً في البيئة.",
-    "explanationEn": "True. Model-based agents maintain an internal state to track unseen aspects of the environment over time."
+    "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
   },
   {
     "id": 72,
@@ -1127,8 +1127,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). The transition model in a model-based agent reflects knowledge about how the world evolves independently and how the agent's actions change the world. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 2: Intelligent Agents وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. The transition model in a model-based agent reflects knowledge about how the world evolves independently and how the agent's actions change the world. - This accurately reflects the core principle defined in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
   },
   {
     "id": 73,
@@ -1141,8 +1141,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن Goal-based agents are less flexible than simple reflex agents because their decision logic cannot be adjusted without rewriting the entire program. لا يتوافق مع الأسس العلمية في Chapter 2: Intelligent Agents.",
-    "explanationEn": "This statement is False. The claim that 'Goal-based agents are less flexible than simple reflex agents because their decision logic cannot be adjusted without rewriting the entire program.' is incorrect according to the standard principles in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العبارة خاطئة. والسبب أن المفهوم الحقيقي يتناقض مع ذلك: فلا يمكن للوكيل أن يخرق القوانين السببية بالاعتماد على المستقبل، أو تجاوز المراقبة في البيئات غير المؤكدة.",
+    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments."
   },
   {
     "id": 74,
@@ -1155,8 +1155,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Utility-based agents use an internalized utility function that allows them to make rational trade- offs between conflicting goals. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 2: Intelligent Agents وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Utility-based agents use an internalized utility function that allows them to make rational trade- offs between conflicting goals. - This accurately reflects the core principle defined in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
   },
   {
     "id": 75,
@@ -1169,8 +1169,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن In a learning agent architecture, the critic evaluates the agent's behavior against an external performance standard that the agent itself is allowed to modify. لا يتوافق مع الأسس العلمية في Chapter 2: Intelligent Agents.",
-    "explanationEn": "This statement is False. The claim that 'In a learning agent architecture, the critic evaluates the agent's behavior against an external performance standard that the agent itself is allowed to modify.' is incorrect according to the standard principles in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العبارة خاطئة. والسبب أن المفهوم الحقيقي يتناقض مع ذلك: فلا يمكن للوكيل أن يخرق القوانين السببية بالاعتماد على المستقبل، أو تجاوز المراقبة في البيئات غير المؤكدة.",
+    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments."
   },
   {
     "id": 76,
@@ -1183,8 +1183,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). The problem generator component in a learning agent is responsible for suggesting exploratory actions that lead to new experiences. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 2: Intelligent Agents وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. The problem generator component in a learning agent is responsible for suggesting exploratory actions that lead to new experiences. - This accurately reflects the core principle defined in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
   },
   {
     "id": 77,
@@ -1197,8 +1197,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن In an atomic representation, each state of the world has an internal structure composed of accessible attribute-value variables called fluents. لا يتوافق مع الأسس العلمية في Chapter 2: Intelligent Agents.",
-    "explanationEn": "This statement is False. The claim that 'In an atomic representation, each state of the world has an internal structure composed of accessible attribute-value variables called fluents.' is incorrect according to the standard principles in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العبارة خاطئة. والسبب أن المفهوم الحقيقي يتناقض مع ذلك: فلا يمكن للوكيل أن يخرق القوانين السببية بالاعتماد على المستقبل، أو تجاوز المراقبة في البيئات غير المؤكدة.",
+    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments."
   },
   {
     "id": 78,
@@ -1211,8 +1211,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). A factored state representation splits each state into a fixed set of variables or attributes, each of which can hold a value. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 2: Intelligent Agents وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. A factored state representation splits each state into a fixed set of variables or attributes, each of which can hold a value. - This accurately reflects the core principle defined in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
   },
   {
     "id": 79,
@@ -1225,8 +1225,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن An environment is considered dynamic if the physical world remains unchanged while the agent deliberates, but time limits expire. لا يتوافق مع الأسس العلمية في Chapter 2: Intelligent Agents.",
-    "explanationEn": "This statement is False. The claim that 'An environment is considered dynamic if the physical world remains unchanged while the agent deliberates, but time limits expire.' is incorrect according to the standard principles in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العبارة خاطئة. والسبب أن المفهوم الحقيقي يتناقض مع ذلك: فلا يمكن للوكيل أن يخرق القوانين السببية بالاعتماد على المستقبل، أو تجاوز المراقبة في البيئات غير المؤكدة.",
+    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments."
   },
   {
     "id": 80,
@@ -1239,8 +1239,8 @@ const questions = [
       "False QUESTIONS)"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن An automated taxi driving on a highway operates in a single-agent environment because other cars are merely physical obstacles governed by physics. لا يتوافق مع الأسس العلمية في Chapter 2: Intelligent Agents.",
-    "explanationEn": "This statement is False. The claim that 'An automated taxi driving on a highway operates in a single-agent environment because other cars are merely physical obstacles governed by physics.' is incorrect according to the standard principles in AIMA (Chapter 2: Intelligent Agents)."
+    "explanationAr": "العبارة خاطئة. والسبب أن المفهوم الحقيقي يتناقض مع ذلك: فلا يمكن للوكيل أن يخرق القوانين السببية بالاعتماد على المستقبل، أو تجاوز المراقبة في البيئات غير المؤكدة.",
+    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments."
   },
   {
     "id": 81,
@@ -1255,8 +1255,8 @@ const questions = [
       "Reactive agent"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Problem-solving agent'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Problem-solving agent'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "وكيل حل المشكلات (Problem-solving agent) هو وكيل موجه بالهدف يخطط مسبقاً بمحاكاة تسلسل من الأفعال للوصول إلى حالة الهدف قبل التنفيذ الفعلي في البيئة.",
+    "explanationEn": "A problem-solving agent is a goal-based agent that plans ahead by finding a sequence of actions that leads to a goal state before executing them."
   },
   {
     "id": 82,
@@ -1271,8 +1271,8 @@ const questions = [
       "Problem formulation"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'Goal formulation'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is C: 'Goal formulation'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Goal formulation'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Goal formulation' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 83,
@@ -1287,8 +1287,8 @@ const questions = [
       "Goal formulation -> Search -> Execution -> Problem formulation"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Goal formulation -> Problem formulation -> Search -> Execution'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Goal formulation -> Problem formulation -> Search -> Execution'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Goal formulation -> Problem formulation -> Search -> Execution'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Goal formulation -> Problem formulation -> Search -> Execution' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 84,
@@ -1303,8 +1303,8 @@ const questions = [
       "Because sensors are deactivated during execution to conserve energy"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Because the predetermined sequence of actions is guaranteed to reach the goal without surprises'. الوكيل (Agent) هو المفهوم الأساسي في الذكاء الاصطناعي لكل ما يدرك بيئته بالمستشعرات (Sensors) ويؤثر فيها بالمشغلات (Actuators).",
-    "explanationEn": "The correct answer is B: 'Because the predetermined sequence of actions is guaranteed to reach the goal without surprises'. An Agent is formally defined as an entity that perceives its environment through sensors and acts upon it through actuators."
+    "explanationAr": "الخيار الصحيح هو 'Because the predetermined sequence of actions is guaranteed to reach the goal without surprises'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Because the predetermined sequence of actions is guaranteed to reach the goal without surprises' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 85,
@@ -1319,8 +1319,8 @@ const questions = [
       "Seven components"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'Five components'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is C: 'Five components'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Five components'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Five components' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 86,
@@ -1335,8 +1335,8 @@ const questions = [
       "Transition model (RESULT)"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'Heuristic decay rate'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is C: 'Heuristic decay rate'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Heuristic decay rate'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Heuristic decay rate' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 87,
@@ -1351,8 +1351,8 @@ const questions = [
       "The list of all valid actions in state s"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'The state that results from executing action a in state s'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is C: 'The state that results from executing action a in state s'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'The state that results from executing action a in state s'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'The state that results from executing action a in state s' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 88,
@@ -1367,8 +1367,8 @@ const questions = [
       "a has never been performed before"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'a belongs to the set ACTIONS(s)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'a belongs to the set ACTIONS(s)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'a belongs to the set ACTIONS(s)'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'a belongs to the set ACTIONS(s)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 89,
@@ -1383,8 +1383,8 @@ const questions = [
       "The minimum spanning tree of the search space"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'A path leading from the initial state to any valid goal state'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'A path leading from the initial state to any valid goal state'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'A path leading from the initial state to any valid goal state'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'A path leading from the initial state to any valid goal state' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 90,
@@ -1399,8 +1399,8 @@ const questions = [
       "The average of the start and goal node costs"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'The sum of the individual step costs along the path'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is C: 'The sum of the individual step costs along the path'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'The sum of the individual step costs along the path'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'The sum of the individual step costs along the path' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 91,
@@ -1415,8 +1415,8 @@ const questions = [
       "To force BFS and DFS to generate the same number of nodes"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'To avoid infinite loops where the agent traverses zero-cost or negative-cost cycles endlessly'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'To avoid infinite loops where the agent traverses zero-cost or negative-cost cycles endlessly'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'To avoid infinite loops where the agent traverses zero-cost or negative-cost cycles endlessly'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'To avoid infinite loops where the agent traverses zero-cost or negative-cost cycles endlessly' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 92,
@@ -1431,8 +1431,8 @@ const questions = [
       "Optimization"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Abstraction'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Abstraction'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Abstraction'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Abstraction' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 93,
@@ -1447,8 +1447,8 @@ const questions = [
       "Only if the state space graph is completely planar"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'If any abstract solution can be elaborated into a concrete solution in the more detailed real world'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'If any abstract solution can be elaborated into a concrete solution in the more detailed real world'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'If any abstract solution can be elaborated into a concrete solution in the more detailed real world'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'If any abstract solution can be elaborated into a concrete solution in the more detailed real world' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 94,
@@ -1463,8 +1463,8 @@ const questions = [
       "Eliminates the need for an initial state"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Is easier than solving the original unabstracted problem'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Is easier than solving the original unabstracted problem'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Is easier than solving the original unabstracted problem'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Is easier than solving the original unabstracted problem' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 95,
@@ -1479,8 +1479,8 @@ const questions = [
       "A solution discovered without expanding any non-goal nodes"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'A solution path that has the lowest path cost among all possible solutions'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'A solution path that has the lowest path cost among all possible solutions'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'A solution path that has the lowest path cost among all possible solutions'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'A solution path that has the lowest path cost among all possible solutions' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 96,
@@ -1495,8 +1495,8 @@ const questions = [
       "To eliminate the need for heuristic functions"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'To provide concise, exact problem descriptions to compare algorithm performance'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'To provide concise, exact problem descriptions to compare algorithm performance'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'To provide concise, exact problem descriptions to compare algorithm performance'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'To provide concise, exact problem descriptions to compare algorithm performance' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 97,
@@ -1511,8 +1511,8 @@ const questions = [
       "64 states"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): '24 states'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: '24 states'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "مساحة الحالات تمثل جميع التكوينات الممكنة للمسألة، بينما شجرة البحث تمثل المسارات المحددة التي يستكشفها الوكيل والتي قد تتضمن حالات مكررة في فروع مختلفة.",
+    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata."
   },
   {
     "id": 98,
@@ -1527,8 +1527,8 @@ const questions = [
       "Swapping any two arbitrary tiles regardless of position"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Moving the blank space Left, Right, Up, or Down'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Moving the blank space Left, Right, Up, or Down'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Moving the blank space Left, Right, Up, or Down'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Moving the blank space Left, Right, Up, or Down' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 99,
@@ -1543,8 +1543,8 @@ const questions = [
       "Exactly one-ninth (11%)"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Exactly one-half (50%)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Exactly one-half (50%)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Exactly one-half (50%)'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Exactly one-half (50%)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 100,
@@ -1559,8 +1559,8 @@ const questions = [
       "2^8 = 256"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): '9! / 2 = 181,440'. عدد الحالات التي يمكن الوصول إليها في لغز 8-puzzle هو نصف إجمالي التباديل الممكنة: 9! / 2 = 181,440 حالة.",
-    "explanationEn": "The correct answer is B: '9! / 2 = 181,440'. The 8-puzzle state space splits into two disconnected halves of reachability; exactly 9! / 2 = 181,440 states are reachable."
+    "explanationAr": "في لغز 8-puzzle، تنقسم مساحة الحالات الإجمالية (9! = 362,880) إلى نصفين غير متصلين بسبب قيود التكافؤ الزوجي، وبالتالي عدد الحالات القابلة للوصول هو بالضبط 9! / 2 = 181,440 حالة.",
+    "explanationEn": "In the 8-puzzle, the permutation state space splits into two parity-separated components; exactly half the configurations (9! / 2 = 181,440) are reachable from any start state."
   },
   {
     "id": 101,
@@ -1575,8 +1575,8 @@ const questions = [
       "Infinite"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Over 10 trillion (16! / 2)'. في لغز 15-puzzle، عدد الحالات التي يمكن الوصول إليها هو 16! / 2 = تقريباً 1.05 * 10^13 (أو ما يقارب 1.8 * 10^5 في النسخ المصغرة).",
-    "explanationEn": "The correct answer is B: 'Over 10 trillion (16! / 2)'. The 15-puzzle has half of 16! reachable configurations due to parity constraints."
+    "explanationAr": "الخيار الصحيح هو 'Over 10 trillion (16! / 2)'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Over 10 trillion (16! / 2)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 102,
@@ -1591,8 +1591,8 @@ const questions = [
       "Derivatives, integrals, and limits"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Square root, floor, and factorial'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Square root, floor, and factorial'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "مساحة الحالات تمثل جميع التكوينات الممكنة للمسألة، بينما شجرة البحث تمثل المسارات المحددة التي يستكشفها الوكيل والتي قد تتضمن حالات مكررة في فروع مختلفة.",
+    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata."
   },
   {
     "id": 103,
@@ -1607,8 +1607,8 @@ const questions = [
       "Travel to Bucharest with minimum mileage"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Push scattered boxes to designated storage locations'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Push scattered boxes to designated storage locations'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Push scattered boxes to designated storage locations'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Push scattered boxes to designated storage locations' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 104,
@@ -1623,8 +1623,8 @@ const questions = [
       "Softbot parsing problem"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Touring problem where every city must be visited'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Touring problem where every city must be visited'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Touring problem where every city must be visited'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Touring problem where every city must be visited' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 105,
@@ -1639,8 +1639,8 @@ const questions = [
       "Clock timing and instruction decoding"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Cell layout and channel routing'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Cell layout and channel routing'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Cell layout and channel routing'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Cell layout and channel routing' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 106,
@@ -1655,8 +1655,8 @@ const questions = [
       "The cost of arm movement is always negative"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'The search space has one continuous dimension for each joint angle'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'The search space has one continuous dimension for each joint angle'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'The search space has one continuous dimension for each joint angle'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'The search space has one continuous dimension for each joint angle' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 107,
@@ -1671,8 +1671,8 @@ const questions = [
       "The state space is always completely acyclic"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Testing whether a physical part can be added without geometrical collision requires complex spatial reasoning'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Testing whether a physical part can be added without geometrical collision requires complex spatial reasoning'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Testing whether a physical part can be added without geometrical collision requires complex spatial reasoning'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Testing whether a physical part can be added without geometrical collision requires complex spatial reasoning' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 108,
@@ -1687,8 +1687,8 @@ const questions = [
       "Grid world navigation"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Protein design'. البحث التكراري المعمق (IDS) يجمع بين انخفاض استهلاك الذاكرة كالبحث بالعمق O(bd) وميزة الاكتمال والأمثلية كالبحث بالعرض.",
-    "explanationEn": "The correct answer is A: 'Protein design'. Iterative Deepening Search (IDS) combines the minimal linear memory of DFS with the completeness and optimality of BFS."
+    "explanationAr": "البحث التكراري المعمق (IDS) يجمع بين انخفاض استهلاك الذاكرة كالبحث بالعمق O(bd) وميزة الاكتمال والأمثلية للبحث بالعرض، ويعد الطريقة المفضلة عند جهل عمق الحل.",
+    "explanationEn": "Iterative Deepening Search (IDS) combines the linear space efficiency of DFS with the completeness and optimality of BFS by repeatedly deepening depth limits."
   },
   {
     "id": 109,
@@ -1703,8 +1703,8 @@ const questions = [
       "There is no difference; the two terms are identical"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'The state space describes physical configurations of the world, while the search tree describes search paths between states'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'The state space describes physical configurations of the world, while the search tree describes search paths between states'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "مساحة الحالات تمثل جميع التكوينات الممكنة للمسألة، بينما شجرة البحث تمثل المسارات المحددة التي يستكشفها الوكيل والتي قد تتضمن حالات مكررة في فروع مختلفة.",
+    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata."
   },
   {
     "id": 110,
@@ -1719,8 +1719,8 @@ const questions = [
       "Six components"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'Four components'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is C: 'Four components'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "مساحة الحالات تمثل جميع التكوينات الممكنة للمسألة، بينما شجرة البحث تمثل المسارات المحددة التي يستكشفها الوكيل والتي قد تتضمن حالات مكررة في فروع مختلفة.",
+    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata."
   },
   {
     "id": 111,
@@ -1735,8 +1735,8 @@ const questions = [
       "DEPTH, WIDTH, HEIGHT, VOLUME"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'STATE, PARENT, ACTION, PATH-COST'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'STATE, PARENT, ACTION, PATH-COST'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "مساحة الحالات تمثل جميع التكوينات الممكنة للمسألة، بينما شجرة البحث تمثل المسارات المحددة التي يستكشفها الوكيل والتي قد تتضمن حالات مكررة في فروع مختلفة.",
+    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata."
   },
   {
     "id": 112,
@@ -1751,8 +1751,8 @@ const questions = [
       "It resets the search when memory runs out"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'It allows the algorithm to trace backward from the goal node to recover the complete solution path'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'It allows the algorithm to trace backward from the goal node to recover the complete solution path'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "مساحة الحالات تمثل جميع التكوينات الممكنة للمسألة، بينما شجرة البحث تمثل المسارات المحددة التي يستكشفها الوكيل والتي قد تتضمن حالات مكررة في فروع مختلفة.",
+    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata."
   },
   {
     "id": 113,
@@ -1767,8 +1767,8 @@ const questions = [
       "Solution path"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Frontier (or open list)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Frontier (or open list)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "مساحة الحالات تمثل جميع التكوينات الممكنة للمسألة، بينما شجرة البحث تمثل المسارات المحددة التي يستكشفها الوكيل والتي قد تتضمن حالات مكررة في فروع مختلفة.",
+    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata."
   },
   {
     "id": 114,
@@ -1783,8 +1783,8 @@ const questions = [
       "IS-EMPTY(frontier)"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'POP(frontier)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'POP(frontier)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الحدود (Frontier / Open list) تمثل مجموعة جميع العقد التي تم توليدها ولكن لم يتم التوسع فيها واستكشاف أبنائها بعد.",
+    "explanationEn": "The frontier (or open list) is the collection of all leaf nodes generated so far that have not yet been expanded."
   },
   {
     "id": 115,
@@ -1799,8 +1799,8 @@ const questions = [
       "Admissible states and inadmissible states"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'The interior (fully expanded states) and the exterior (unreached states)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'The interior (fully expanded states) and the exterior (unreached states)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الحدود (Frontier / Open list) تمثل مجموعة جميع العقد التي تم توليدها ولكن لم يتم التوسع فيها واستكشاف أبنائها بعد.",
+    "explanationEn": "The frontier (or open list) is the collection of all leaf nodes generated so far that have not yet been expanded."
   },
   {
     "id": 116,
@@ -1815,8 +1815,8 @@ const questions = [
       "Dominant edge"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Cycle (or loopy path)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Cycle (or loopy path)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Cycle (or loopy path)'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Cycle (or loopy path)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 117,
@@ -1831,8 +1831,8 @@ const questions = [
       "Graph search cannot find optimal paths"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Graph search maintains a reached table to detect and eliminate redundant paths, whereas tree- like search does not'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Graph search maintains a reached table to detect and eliminate redundant paths, whereas tree- like search does not'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Graph search maintains a reached table to detect and eliminate redundant paths, whereas tree- like search does not'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Graph search maintains a reached table to detect and eliminate redundant paths, whereas tree- like search does not' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 118,
@@ -1847,8 +1847,8 @@ const questions = [
       "Branching Depth"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Space Complexity'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Space Complexity'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Space Complexity'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Space Complexity' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 119,
@@ -1863,8 +1863,8 @@ const questions = [
       "Expand all nodes in the state space graph"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Find a solution whenever one exists, and correctly report failure when there is none'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Find a solution whenever one exists, and correctly report failure when there is none'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Find a solution whenever one exists, and correctly report failure when there is none'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Find a solution whenever one exists, and correctly report failure when there is none' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 120,
@@ -1879,8 +1879,8 @@ const questions = [
       "Evaluates only admissible heuristic functions"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Always finds a solution path with the lowest path cost among all possible solutions'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Always finds a solution path with the lowest path cost among all possible solutions'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Always finds a solution path with the lowest path cost among all possible solutions'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Always finds a solution path with the lowest path cost among all possible solutions' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 121,
@@ -1895,8 +1895,8 @@ const questions = [
       "The straight-line distance to Bucharest"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'The maximum branching factor of the search tree'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'The maximum branching factor of the search tree'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'The maximum branching factor of the search tree'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'The maximum branching factor of the search tree' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 122,
@@ -1911,8 +1911,8 @@ const questions = [
       "The number of action costs equal to 1"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'The depth of the shallowest optimal solution'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'The depth of the shallowest optimal solution'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'The depth of the shallowest optimal solution'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'The depth of the shallowest optimal solution' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 123,
@@ -1927,8 +1927,8 @@ const questions = [
       "The number of goal states"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'The maximum length of any path in the state space (which may be infinite)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'The maximum length of any path in the state space (which may be infinite)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'The maximum length of any path in the state space (which may be infinite)'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'The maximum length of any path in the state space (which may be infinite)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 124,
@@ -1943,8 +1943,8 @@ const questions = [
       "Branching index"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Diameter'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Diameter'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Diameter'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Diameter' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 125,
@@ -1959,8 +1959,8 @@ const questions = [
       "The agent's sensors fail after 9 steps"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'The grid has only 100 cells, but the number of paths of length 9 is over 100 million'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'The grid has only 100 cells, but the number of paths of length 9 is over 100 million'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'The grid has only 100 cells, but the number of paths of length 9 is over 100 million'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'The grid has only 100 cells, but the number of paths of length 9 is over 100 million' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 126,
@@ -1975,8 +1975,8 @@ const questions = [
       "Expand the node with the largest path cost g(n)"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Expand the shallowest unexpanded node in the frontier'. البحث بالعرض أولاً (BFS) يتوسع في العقد الأقل عمقاً أولاً باستخدام طابور FIFO. وهو كامل ومثالي إذا تساوت التكاليف، وتعقيده المكاني O(b^d).",
-    "explanationEn": "The correct answer is B: 'Expand the shallowest unexpanded node in the frontier'. Breadth-First Search (BFS) explores level by level using a FIFO queue. It is complete and optimal for uniform step costs, with O(b^d) memory."
+    "explanationAr": "البحث بالعرض أولاً (BFS) يتوسع في العقد الأقل عمقاً أولاً باستخدام طابور FIFO. وهو كامل ومثالي إذا تساوت تكاليف الخطوات، ولكنه يستهلك ذاكرة أسية O(b^d).",
+    "explanationEn": "Breadth-First Search (BFS) expands the shallowest nodes first using a FIFO queue. It is complete and optimal for uniform step costs, with exponential space O(b^d)."
   },
   {
     "id": 127,
@@ -1991,8 +1991,8 @@ const questions = [
       "Hash table"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'FIFO queue'. البحث بالعرض أولاً (BFS) يتوسع في العقد الأقل عمقاً أولاً باستخدام طابور FIFO. وهو كامل ومثالي إذا تساوت التكاليف، وتعقيده المكاني O(b^d).",
-    "explanationEn": "The correct answer is B: 'FIFO queue'. Breadth-First Search (BFS) explores level by level using a FIFO queue. It is complete and optimal for uniform step costs, with O(b^d) memory."
+    "explanationAr": "البحث بالعرض أولاً (BFS) يتوسع في العقد الأقل عمقاً أولاً باستخدام طابور FIFO. وهو كامل ومثالي إذا تساوت تكاليف الخطوات، ولكنه يستهلك ذاكرة أسية O(b^d).",
+    "explanationEn": "Breadth-First Search (BFS) expands the shallowest nodes first using a FIFO queue. It is complete and optimal for uniform step costs, with exponential space O(b^d)."
   },
   {
     "id": 128,
@@ -2007,8 +2007,8 @@ const questions = [
       "Because early goal testing reduces the branching factor to 1"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Because any child generated at depth d is guaranteed to be among the shallowest paths to that state'. البحث بالعرض أولاً (BFS) يتوسع في العقد الأقل عمقاً أولاً باستخدام طابور FIFO. وهو كامل ومثالي إذا تساوت التكاليف، وتعقيده المكاني O(b^d).",
-    "explanationEn": "The correct answer is B: 'Because any child generated at depth d is guaranteed to be among the shallowest paths to that state'. Breadth-First Search (BFS) explores level by level using a FIFO queue. It is complete and optimal for uniform step costs, with O(b^d) memory."
+    "explanationAr": "البحث بالعرض أولاً (BFS) يتوسع في العقد الأقل عمقاً أولاً باستخدام طابور FIFO. وهو كامل ومثالي إذا تساوت تكاليف الخطوات، ولكنه يستهلك ذاكرة أسية O(b^d).",
+    "explanationEn": "Breadth-First Search (BFS) expands the shallowest nodes first using a FIFO queue. It is complete and optimal for uniform step costs, with exponential space O(b^d)."
   },
   {
     "id": 129,
@@ -2023,8 +2023,8 @@ const questions = [
       "O(d^b)"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'O(b^d)'. البحث بالعرض أولاً (BFS) يتوسع في العقد الأقل عمقاً أولاً باستخدام طابور FIFO. وهو كامل ومثالي إذا تساوت التكاليف، وتعقيده المكاني O(b^d).",
-    "explanationEn": "The correct answer is B: 'O(b^d)'. Breadth-First Search (BFS) explores level by level using a FIFO queue. It is complete and optimal for uniform step costs, with O(b^d) memory."
+    "explanationAr": "البحث بالعرض أولاً (BFS) يتوسع في العقد الأقل عمقاً أولاً باستخدام طابور FIFO. وهو كامل ومثالي إذا تساوت تكاليف الخطوات، ولكنه يستهلك ذاكرة أسية O(b^d).",
+    "explanationEn": "Breadth-First Search (BFS) expands the shallowest nodes first using a FIFO queue. It is complete and optimal for uniform step costs, with exponential space O(b^d)."
   },
   {
     "id": 130,
@@ -2039,8 +2039,8 @@ const questions = [
       "FIFO queues can only hold a maximum of 1,000 nodes in modern operating systems"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'All generated nodes at level d must remain stored in memory, consuming gigabytes or terabytes rapidly'. البحث بالعرض أولاً (BFS) يتوسع في العقد الأقل عمقاً أولاً باستخدام طابور FIFO. وهو كامل ومثالي إذا تساوت التكاليف، وتعقيده المكاني O(b^d).",
-    "explanationEn": "The correct answer is B: 'All generated nodes at level d must remain stored in memory, consuming gigabytes or terabytes rapidly'. Breadth-First Search (BFS) explores level by level using a FIFO queue. It is complete and optimal for uniform step costs, with O(b^d) memory."
+    "explanationAr": "البحث بالعرض أولاً (BFS) يتوسع في العقد الأقل عمقاً أولاً باستخدام طابور FIFO. وهو كامل ومثالي إذا تساوت تكاليف الخطوات، ولكنه يستهلك ذاكرة أسية O(b^d).",
+    "explanationEn": "Breadth-First Search (BFS) expands the shallowest nodes first using a FIFO queue. It is complete and optimal for uniform step costs, with exponential space O(b^d)."
   },
   {
     "id": 131,
@@ -2055,8 +2055,8 @@ const questions = [
       "Iterative Deepening Search"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Uniform-Cost Search (UCS)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Uniform-Cost Search (UCS)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Uniform-Cost Search (UCS)'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Uniform-Cost Search (UCS)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 132,
@@ -2071,8 +2071,8 @@ const questions = [
       "The node generated most recently"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'The node with the lowest path cost g(n) from the start state'. بحث التكلفة الموحدة (UCS) يختار العقدة ذات أقل تكلفة مسار تراكمية g(n) باستخدام طابور أولويات، ويضمن إيجاد الحل الأمثل للتكاليف الموجبة.",
-    "explanationEn": "The correct answer is B: 'The node with the lowest path cost g(n) from the start state'. Uniform-Cost Search (UCS) expands nodes in order of cumulative path cost g(n) via priority queue, guaranteeing optimal cost solutions."
+    "explanationAr": "بحث التكلفة الموحدة (UCS) يوسع دائماً العقدة ذات أقل تكلفة تراكمية g(n) باستخدام طابور أولوية، ويضمن إيجاد الحل الأمثل متى كانت تكاليف الخطوات موجبة.",
+    "explanationEn": "Uniform-Cost Search (UCS) expands the node with lowest path cost g(n) via priority queue, guaranteeing cost-optimality with non-negative step costs."
   },
   {
     "id": 133,
@@ -2087,8 +2087,8 @@ const questions = [
       "Because the start node has cost g(n) = 0"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Because a cheaper path to the goal might be discovered later before the goal is expanded'. بحث التكلفة الموحدة (UCS) يختار العقدة ذات أقل تكلفة مسار تراكمية g(n) باستخدام طابور أولويات، ويضمن إيجاد الحل الأمثل للتكاليف الموجبة.",
-    "explanationEn": "The correct answer is B: 'Because a cheaper path to the goal might be discovered later before the goal is expanded'. Uniform-Cost Search (UCS) expands nodes in order of cumulative path cost g(n) via priority queue, guaranteeing optimal cost solutions."
+    "explanationAr": "بحث التكلفة الموحدة (UCS) يوسع دائماً العقدة ذات أقل تكلفة تراكمية g(n) باستخدام طابور أولوية، ويضمن إيجاد الحل الأمثل متى كانت تكاليف الخطوات موجبة.",
+    "explanationEn": "Uniform-Cost Search (UCS) expands the node with lowest path cost g(n) via priority queue, guaranteeing cost-optimality with non-negative step costs."
   },
   {
     "id": 134,
@@ -2103,8 +2103,8 @@ const questions = [
       "Expand nodes in random order"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Expand the deepest unexpanded node in the frontier'. البحث بالعمق أولاً (DFS) يستكشف المسار لأعمق نقطة باستخدام مكدس LIFO. ميزته الكبرى هي استهلاك الذاكرة الخطي O(bm).",
-    "explanationEn": "The correct answer is B: 'Expand the deepest unexpanded node in the frontier'. Depth-First Search (DFS) uses a LIFO stack to explore along deep branches. Its primary strength is modest linear space complexity O(bm)."
+    "explanationAr": "البحث بالعمق أولاً (DFS) يستكشف الفروع لأعمق حد ممكن عبر مكدس LIFO. ميزته الكبرى هي انخفاض استهلاك الذاكرة الخطي O(bm)، لكنه ليس مثالياً للتكلفة.",
+    "explanationEn": "Depth-First Search (DFS) uses a LIFO stack to traverse down single branches. Its main benefit is linear memory complexity O(bm), but it is not cost-optimal."
   },
   {
     "id": 135,
@@ -2119,8 +2119,8 @@ const questions = [
       "Binary min-heap"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'LIFO stack'. البحث بالعمق أولاً (DFS) يستكشف المسار لأعمق نقطة باستخدام مكدس LIFO. ميزته الكبرى هي استهلاك الذاكرة الخطي O(bm).",
-    "explanationEn": "The correct answer is A: 'LIFO stack'. Depth-First Search (DFS) uses a LIFO stack to explore along deep branches. Its primary strength is modest linear space complexity O(bm)."
+    "explanationAr": "البحث بالعمق أولاً (DFS) يستكشف الفروع لأعمق حد ممكن عبر مكدس LIFO. ميزته الكبرى هي انخفاض استهلاك الذاكرة الخطي O(bm)، لكنه ليس مثالياً للتكلفة.",
+    "explanationEn": "Depth-First Search (DFS) uses a LIFO stack to traverse down single branches. Its main benefit is linear memory complexity O(bm), but it is not cost-optimal."
   },
   {
     "id": 136,
@@ -2135,8 +2135,8 @@ const questions = [
       "Its time complexity is always O(d)"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'It has a modest linear space complexity of O(bm)'. البحث بالعرض أولاً (BFS) يتوسع في العقد الأقل عمقاً أولاً باستخدام طابور FIFO. وهو كامل ومثالي إذا تساوت التكاليف، وتعقيده المكاني O(b^d).",
-    "explanationEn": "The correct answer is B: 'It has a modest linear space complexity of O(bm)'. Breadth-First Search (BFS) explores level by level using a FIFO queue. It is complete and optimal for uniform step costs, with O(b^d) memory."
+    "explanationAr": "البحث بالعرض أولاً (BFS) يتوسع في العقد الأقل عمقاً أولاً باستخدام طابور FIFO. وهو كامل ومثالي إذا تساوت تكاليف الخطوات، ولكنه يستهلك ذاكرة أسية O(b^d).",
+    "explanationEn": "Breadth-First Search (BFS) expands the shallowest nodes first using a FIFO queue. It is complete and optimal for uniform step costs, with exponential space O(b^d)."
   },
   {
     "id": 137,
@@ -2151,8 +2151,8 @@ const questions = [
       "Because step costs are strictly positive"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Because it can follow an infinite branch or cycle forever without ever exploring other alternatives'. البحث بالعمق أولاً (DFS) يستكشف المسار لأعمق نقطة باستخدام مكدس LIFO. ميزته الكبرى هي استهلاك الذاكرة الخطي O(bm).",
-    "explanationEn": "The correct answer is B: 'Because it can follow an infinite branch or cycle forever without ever exploring other alternatives'. Depth-First Search (DFS) uses a LIFO stack to explore along deep branches. Its primary strength is modest linear space complexity O(bm)."
+    "explanationAr": "البحث بالعمق أولاً (DFS) يستكشف الفروع لأعمق حد ممكن عبر مكدس LIFO. ميزته الكبرى هي انخفاض استهلاك الذاكرة الخطي O(bm)، لكنه ليس مثالياً للتكلفة.",
+    "explanationEn": "Depth-First Search (DFS) uses a LIFO stack to traverse down single branches. Its main benefit is linear memory complexity O(bm), but it is not cost-optimal."
   },
   {
     "id": 138,
@@ -2167,8 +2167,8 @@ const questions = [
       "Zero successors"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Exactly one successor'. البحث بالعمق أولاً (DFS) يستكشف المسار لأعمق نقطة باستخدام مكدس LIFO. ميزته الكبرى هي استهلاك الذاكرة الخطي O(bm).",
-    "explanationEn": "The correct answer is A: 'Exactly one successor'. Depth-First Search (DFS) uses a LIFO stack to explore along deep branches. Its primary strength is modest linear space complexity O(bm)."
+    "explanationAr": "البحث بالعمق أولاً (DFS) يستكشف الفروع لأعمق حد ممكن عبر مكدس LIFO. ميزته الكبرى هي انخفاض استهلاك الذاكرة الخطي O(bm)، لكنه ليس مثالياً للتكلفة.",
+    "explanationEn": "Depth-First Search (DFS) uses a LIFO stack to traverse down single branches. Its main benefit is linear memory complexity O(bm), but it is not cost-optimal."
   },
   {
     "id": 139,
@@ -2183,8 +2183,8 @@ const questions = [
       "The heuristic function is doubled"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Nodes at depth l are treated as if they have no successors'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Nodes at depth l are treated as if they have no successors'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Nodes at depth l are treated as if they have no successors'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Nodes at depth l are treated as if they have no successors' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 140,
@@ -2199,8 +2199,8 @@ const questions = [
       "Optimal, Suboptimal, Infeasible"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Solution node, Failure, or Cutoff'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Solution node, Failure, or Cutoff'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Solution node, Failure, or Cutoff'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Solution node, Failure, or Cutoff' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 141,
@@ -2215,8 +2215,8 @@ const questions = [
       "It generates a random depth limit between 1 and 100"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'It systematically tries increasing depth limits: first 0, then 1, then 2, and so on'. البحث التكراري المعمق (IDS) يجمع بين انخفاض استهلاك الذاكرة كالبحث بالعمق O(bd) وميزة الاكتمال والأمثلية كالبحث بالعرض.",
-    "explanationEn": "The correct answer is B: 'It systematically tries increasing depth limits: first 0, then 1, then 2, and so on'. Iterative Deepening Search (IDS) combines the minimal linear memory of DFS with the completeness and optimality of BFS."
+    "explanationAr": "البحث التكراري المعمق (IDS) يجمع بين انخفاض استهلاك الذاكرة كالبحث بالعمق O(bd) وميزة الاكتمال والأمثلية للبحث بالعرض، ويعد الطريقة المفضلة عند جهل عمق الحل.",
+    "explanationEn": "Iterative Deepening Search (IDS) combines the linear space efficiency of DFS with the completeness and optimality of BFS by repeatedly deepening depth limits."
   },
   {
     "id": 142,
@@ -2231,8 +2231,8 @@ const questions = [
       "O(m!)"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'O(bd)'. البحث التكراري المعمق (IDS) يجمع بين انخفاض استهلاك الذاكرة كالبحث بالعمق O(bd) وميزة الاكتمال والأمثلية كالبحث بالعرض.",
-    "explanationEn": "The correct answer is B: 'O(bd)'. Iterative Deepening Search (IDS) combines the minimal linear memory of DFS with the completeness and optimality of BFS."
+    "explanationAr": "البحث التكراري المعمق (IDS) يجمع بين انخفاض استهلاك الذاكرة كالبحث بالعمق O(bd) وميزة الاكتمال والأمثلية للبحث بالعرض، ويعد الطريقة المفضلة عند جهل عمق الحل.",
+    "explanationEn": "Iterative Deepening Search (IDS) combines the linear space efficiency of DFS with the completeness and optimality of BFS by repeatedly deepening depth limits."
   },
   {
     "id": 143,
@@ -2247,8 +2247,8 @@ const questions = [
       "Because upper nodes have a cost of zero"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Because the vast majority of nodes in an exponential tree reside in the bottom level d'. البحث التكراري المعمق (IDS) يجمع بين انخفاض استهلاك الذاكرة كالبحث بالعمق O(bd) وميزة الاكتمال والأمثلية كالبحث بالعرض.",
-    "explanationEn": "The correct answer is B: 'Because the vast majority of nodes in an exponential tree reside in the bottom level d'. Iterative Deepening Search (IDS) combines the minimal linear memory of DFS with the completeness and optimality of BFS."
+    "explanationAr": "البحث التكراري المعمق (IDS) يجمع بين انخفاض استهلاك الذاكرة كالبحث بالعمق O(bd) وميزة الاكتمال والأمثلية للبحث بالعرض، ويعد الطريقة المفضلة عند جهل عمق الحل.",
+    "explanationEn": "Iterative Deepening Search (IDS) combines the linear space efficiency of DFS with the completeness and optimality of BFS by repeatedly deepening depth limits."
   },
   {
     "id": 144,
@@ -2263,8 +2263,8 @@ const questions = [
       "It evaluates both admissible and inadmissible heuristics concurrently"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'It simultaneously searches forward from the initial state and backward from the goal state'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'It simultaneously searches forward from the initial state and backward from the goal state'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'It simultaneously searches forward from the initial state and backward from the goal state'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'It simultaneously searches forward from the initial state and backward from the goal state' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 145,
@@ -2279,8 +2279,8 @@ const questions = [
       "It guarantees that all heuristics become strictly consistent"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Searching two frontiers of depth d/2 takes time O(2 * b^(d/2)), which is exponentially smaller than O(b^d)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Searching two frontiers of depth d/2 takes time O(2 * b^(d/2)), which is exponentially smaller than O(b^d)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Searching two frontiers of depth d/2 takes time O(2 * b^(d/2)), which is exponentially smaller than O(b^d)'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Searching two frontiers of depth d/2 takes time O(2 * b^(d/2)), which is exponentially smaller than O(b^d)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 146,
@@ -2295,8 +2295,8 @@ const questions = [
       "The time required to execute the next action in seconds"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'The estimated cost of the cheapest path from the state at node n to a goal state'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'The estimated cost of the cheapest path from the state at node n to a goal state'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "دالة الهيورستك h(n) هي دالة تقديرية تعطي تقديراً لتكلفة أرخص مسار من الحالة الحالية n إلى حالة الهدف، وتستمد معلوماتها من خصائص المسألة.",
+    "explanationEn": "A heuristic function h(n) estimates the cheapest path cost from node n to a goal state, guiding informed search algorithms efficiently."
   },
   {
     "id": 147,
@@ -2311,8 +2311,8 @@ const questions = [
       "h(n) = g(n)"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'h(n) = 0'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'h(n) = 0'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "دالة الهيورستك h(n) هي دالة تقديرية تعطي تقديراً لتكلفة أرخص مسار من الحالة الحالية n إلى حالة الهدف، وتستمد معلوماتها من خصائص المسألة.",
+    "explanationEn": "A heuristic function h(n) estimates the cheapest path cost from node n to a goal state, guiding informed search algorithms efficiently."
   },
   {
     "id": 148,
@@ -2327,8 +2327,8 @@ const questions = [
       "Number of intermediate cities"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Straight-line distance (h_SLD)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Straight-line distance (h_SLD)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "دالة الهيورستك h(n) هي دالة تقديرية تعطي تقديراً لتكلفة أرخص مسار من الحالة الحالية n إلى حالة الهدف، وتستمد معلوماتها من خصائص المسألة.",
+    "explanationEn": "A heuristic function h(n) estimates the cheapest path cost from node n to a goal state, guiding informed search algorithms efficiently."
   },
   {
     "id": 149,
@@ -2343,8 +2343,8 @@ const questions = [
       "The node that has been in the queue the longest"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'The node that has the lowest heuristic value h(n)'. البحث الطماع (Greedy Best-First) يعتمد فقط على قيمة الهيورستك f(n) = h(n)، وهو غير مثالي لأنه قد يختار مسارات مضللة محلياً.",
-    "explanationEn": "The correct answer is B: 'The node that has the lowest heuristic value h(n)'. Greedy Best-First Search uses f(n) = h(n) to expand the node nearest to the goal, but is not cost-optimal."
+    "explanationAr": "الحدود (Frontier / Open list) تمثل مجموعة جميع العقد التي تم توليدها ولكن لم يتم التوسع فيها واستكشاف أبنائها بعد.",
+    "explanationEn": "The frontier (or open list) is the collection of all leaf nodes generated so far that have not yet been expanded."
   },
   {
     "id": 150,
@@ -2359,8 +2359,8 @@ const questions = [
       "It requires straight-line distance to be negative"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'It greedily chooses locally promising steps (like Fagaras) that lead to longer overall routes (450 miles vs 418 miles)'. البحث الطماع (Greedy Best-First) يعتمد فقط على قيمة الهيورستك f(n) = h(n)، وهو غير مثالي لأنه قد يختار مسارات مضللة محلياً.",
-    "explanationEn": "The correct answer is B: 'It greedily chooses locally promising steps (like Fagaras) that lead to longer overall routes (450 miles vs 418 miles)'. Greedy Best-First Search uses f(n) = h(n) to expand the node nearest to the goal, but is not cost-optimal."
+    "explanationAr": "البحث الطماع (Greedy Best-First) ليس مثالياً من حيث التكلفة لأنه ينخدع بالخطوات التي تبدو واعدة محلياً استناداً لقيمة h(n) فقط دون النظر للتكلفة التراكمية g(n)، مما يؤدي لمسار أطول.",
+    "explanationEn": "Greedy Best-First Search is not cost-optimal because it evaluates nodes solely by heuristic distance to goal h(n), ignoring accumulated path cost g(n) and choosing locally appealing detours."
   },
   {
     "id": 151,
@@ -2375,8 +2375,8 @@ const questions = [
       "f(n) = max(g(n), h(n))"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'f(n) = g(n) + h(n)'. خوارزمية A* تجمع بين التكلفة السابقة والتوقع المستقبلي f(n) = g(n) + h(n). تضمن الحل الأمثل إذا كان الهيورستك مقبولاً (Admissible) أو متسقاً (Consistent).",
-    "explanationEn": "The correct answer is B: 'f(n) = g(n) + h(n)'. A* search evaluates f(n) = g(n) + h(n). It is provably cost-optimal when h(n) is admissible (tree search) or consistent (graph search)."
+    "explanationAr": "خوارزمية A* تعتمد على دالة التقييم f(n) = g(n) + h(n). تضمن الحل الأمثل بشرط أن يكون الهيورستك مقبولاً (Admissible) في الأشجار أو متسقاً (Consistent) في الرسوم البيانية.",
+    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search)."
   },
   {
     "id": 152,
@@ -2391,8 +2391,8 @@ const questions = [
       "The penalty for visiting a redundant state"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'The estimated cost of the best path that continues from the start node through node n to a goal'. خوارزمية A* تجمع بين التكلفة السابقة والتوقع المستقبلي f(n) = g(n) + h(n). تضمن الحل الأمثل إذا كان الهيورستك مقبولاً (Admissible) أو متسقاً (Consistent).",
-    "explanationEn": "The correct answer is B: 'The estimated cost of the best path that continues from the start node through node n to a goal'. A* search evaluates f(n) = g(n) + h(n). It is provably cost-optimal when h(n) is admissible (tree search) or consistent (graph search)."
+    "explanationAr": "خوارزمية A* تعتمد على دالة التقييم f(n) = g(n) + h(n). تضمن الحل الأمثل بشرط أن يكون الهيورستك مقبولاً (Admissible) في الأشجار أو متسقاً (Consistent) في الرسوم البيانية.",
+    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search)."
   },
   {
     "id": 153,
@@ -2407,8 +2407,8 @@ const questions = [
       "h(n) is an integer multiple of the branching factor"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'h(n) never overestimates the true cost to reach a goal, i.e., h(n) <= h*(n)'. الهيورستك المقبول (Admissible) هو الذي لا يبالغ في تقدير التكلفة الحقيقية للهدف h(n) <= h*(n)، وهو شرط أساسي لأمثلية A*.",
-    "explanationEn": "The correct answer is B: 'h(n) never overestimates the true cost to reach a goal, i.e., h(n) <= h*(n)'. An admissible heuristic never overestimates the true remaining cost to the goal: h(n) <= h*(n)."
+    "explanationAr": "الهيورستك المقبول (Admissible) هو الذي لا يبالغ إطلاقاً في تقدير التكلفة الحقيقية المتبقية للوصول إلى الهدف؛ أي يحقق دائماً h(n) <= h*(n).",
+    "explanationEn": "An admissible heuristic never overestimates the true remaining cost to reach the goal: h(n) <= h*(n), guaranteeing that A* finds the optimal path."
   },
   {
     "id": 154,
@@ -2423,8 +2423,8 @@ const questions = [
       "Inconsistent"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Optimistic'. الهيورستك المقبول (Admissible) هو الذي لا يبالغ في تقدير التكلفة الحقيقية للهدف h(n) <= h*(n)، وهو شرط أساسي لأمثلية A*.",
-    "explanationEn": "The correct answer is B: 'Optimistic'. An admissible heuristic never overestimates the true remaining cost to the goal: h(n) <= h*(n)."
+    "explanationAr": "الهيورستك المقبول (Admissible) هو الذي لا يبالغ إطلاقاً في تقدير التكلفة الحقيقية المتبقية للوصول إلى الهدف؛ أي يحقق دائماً h(n) <= h*(n).",
+    "explanationEn": "An admissible heuristic never overestimates the true remaining cost to reach the goal: h(n) <= h*(n), guaranteeing that A* finds the optimal path."
   },
   {
     "id": 155,
@@ -2439,8 +2439,8 @@ const questions = [
       "All action costs are equal to zero"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'The heuristic function h(n) is admissible'. خوارزمية A* تجمع بين التكلفة السابقة والتوقع المستقبلي f(n) = g(n) + h(n). تضمن الحل الأمثل إذا كان الهيورستك مقبولاً (Admissible) أو متسقاً (Consistent).",
-    "explanationEn": "The correct answer is A: 'The heuristic function h(n) is admissible'. A* search evaluates f(n) = g(n) + h(n). It is provably cost-optimal when h(n) is admissible (tree search) or consistent (graph search)."
+    "explanationAr": "خوارزمية A* تعتمد على دالة التقييم f(n) = g(n) + h(n). تضمن الحل الأمثل بشرط أن يكون الهيورستك مقبولاً (Admissible) في الأشجار أو متسقاً (Consistent) في الرسوم البيانية.",
+    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search)."
   },
   {
     "id": 156,
@@ -2455,8 +2455,8 @@ const questions = [
       "h(n) + h(n') <= c(n, a, n')"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'h(n) <= c(n, a, n') + h(n')'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'h(n) <= c(n, a, n') + h(n')'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الهيورستك المتسق (Consistent) يحقق متباينة المثلث: تقدير العقدة h(n) لا يتجاوز تكلفة الخطوة إلى العقدة التالية c(n, a, n') مضافاً إليها تقدير تلك العقدة h(n').",
+    "explanationEn": "A consistent heuristic satisfies the triangle inequality: h(n) <= c(n, a, n') + h(n'), ensuring f-values never decrease along any search path."
   },
   {
     "id": 157,
@@ -2471,8 +2471,8 @@ const questions = [
       "Central limit theorem"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Triangle inequality'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Triangle inequality'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "دالة الهيورستك h(n) هي دالة تقديرية تعطي تقديراً لتكلفة أرخص مسار من الحالة الحالية n إلى حالة الهدف، وتستمد معلوماتها من خصائص المسألة.",
+    "explanationEn": "A heuristic function h(n) estimates the cheapest path cost from node n to a goal state, guiding informed search algorithms efficiently."
   },
   {
     "id": 158,
@@ -2487,8 +2487,8 @@ const questions = [
       "An admissible heuristic can never satisfy the triangle inequality"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Every consistent heuristic is admissible, but not every admissible heuristic is consistent'. الهيورستك المقبول (Admissible) هو الذي لا يبالغ في تقدير التكلفة الحقيقية للهدف h(n) <= h*(n)، وهو شرط أساسي لأمثلية A*.",
-    "explanationEn": "The correct answer is A: 'Every consistent heuristic is admissible, but not every admissible heuristic is consistent'. An admissible heuristic never overestimates the true remaining cost to the goal: h(n) <= h*(n)."
+    "explanationAr": "الهيورستك المقبول (Admissible) هو الذي لا يبالغ إطلاقاً في تقدير التكلفة الحقيقية المتبقية للوصول إلى الهدف؛ أي يحقق دائماً h(n) <= h*(n).",
+    "explanationEn": "An admissible heuristic never overestimates the true remaining cost to reach the goal: h(n) <= h*(n), guaranteeing that A* finds the optimal path."
   },
   {
     "id": 159,
@@ -2503,8 +2503,8 @@ const questions = [
       "Every node in the state space graph"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'All reachable nodes with f(n) < C*'. خوارزمية A* تجمع بين التكلفة السابقة والتوقع المستقبلي f(n) = g(n) + h(n). تضمن الحل الأمثل إذا كان الهيورستك مقبولاً (Admissible) أو متسقاً (Consistent).",
-    "explanationEn": "The correct answer is B: 'All reachable nodes with f(n) < C*'. A* search evaluates f(n) = g(n) + h(n). It is provably cost-optimal when h(n) is admissible (tree search) or consistent (graph search)."
+    "explanationAr": "خوارزمية A* تعتمد على دالة التقييم f(n) = g(n) + h(n). تضمن الحل الأمثل بشرط أن يكون الهيورستك مقبولاً (Admissible) في الأشجار أو متسقاً (Consistent) في الرسوم البيانية.",
+    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search)."
   },
   {
     "id": 160,
@@ -2519,8 +2519,8 @@ const questions = [
       "It never computes the value of g(n)"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'No other optimal search algorithm using the same heuristic can expand fewer nodes (up to tie- breaking)'. خوارزمية A* تجمع بين التكلفة السابقة والتوقع المستقبلي f(n) = g(n) + h(n). تضمن الحل الأمثل إذا كان الهيورستك مقبولاً (Admissible) أو متسقاً (Consistent).",
-    "explanationEn": "The correct answer is B: 'No other optimal search algorithm using the same heuristic can expand fewer nodes (up to tie- breaking)'. A* search evaluates f(n) = g(n) + h(n). It is provably cost-optimal when h(n) is admissible (tree search) or consistent (graph search)."
+    "explanationAr": "خوارزمية A* تعتمد على دالة التقييم f(n) = g(n) + h(n). تضمن الحل الأمثل بشرط أن يكون الهيورستك مقبولاً (Admissible) في الأشجار أو متسقاً (Consistent) في الرسوم البيانية.",
+    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search)."
   },
   {
     "id": 161,
@@ -2535,8 +2535,8 @@ const questions = [
       "Direct straight-line Euclidean distance"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Number of misplaced tiles (excluding the blank)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Number of misplaced tiles (excluding the blank)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "دالة الهيورستك h(n) هي دالة تقديرية تعطي تقديراً لتكلفة أرخص مسار من الحالة الحالية n إلى حالة الهدف، وتستمد معلوماتها من خصائص المسألة.",
+    "explanationEn": "A heuristic function h(n) estimates the cheapest path cost from node n to a goal state, guiding informed search algorithms efficiently."
   },
   {
     "id": 162,
@@ -2551,8 +2551,8 @@ const questions = [
       "The product of row and column indices for each tile"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'The sum of horizontal and vertical grid steps each tile must take to reach its goal square'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'The sum of horizontal and vertical grid steps each tile must take to reach its goal square'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "دالة الهيورستك h(n) هي دالة تقديرية تعطي تقديراً لتكلفة أرخص مسار من الحالة الحالية n إلى حالة الهدف، وتستمد معلوماتها من خصائص المسألة.",
+    "explanationEn": "A heuristic function h(n) estimates the cheapest path cost from node n to a goal state, guiding informed search algorithms efficiently."
   },
   {
     "id": 163,
@@ -2567,8 +2567,8 @@ const questions = [
       "h1 is strictly monotonic"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'h2 dominates h1'. الهيورستك المقبول (Admissible) هو الذي لا يبالغ في تقدير التكلفة الحقيقية للهدف h(n) <= h*(n)، وهو شرط أساسي لأمثلية A*.",
-    "explanationEn": "The correct answer is B: 'h2 dominates h1'. An admissible heuristic never overestimates the true remaining cost to the goal: h(n) <= h*(n)."
+    "explanationAr": "الهيورستك المقبول (Admissible) هو الذي لا يبالغ إطلاقاً في تقدير التكلفة الحقيقية المتبقية للوصول إلى الهدف؛ أي يحقق دائماً h(n) <= h*(n).",
+    "explanationEn": "An admissible heuristic never overestimates the true remaining cost to reach the goal: h(n) <= h*(n), guaranteeing that A* finds the optimal path."
   },
   {
     "id": 164,
@@ -2583,8 +2583,8 @@ const questions = [
       "h2 eliminates the need to calculate path costs g(n)"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'A* using h2 will never expand more nodes than A* using h1 (except for tie-breaking)'. خوارزمية A* تجمع بين التكلفة السابقة والتوقع المستقبلي f(n) = g(n) + h(n). تضمن الحل الأمثل إذا كان الهيورستك مقبولاً (Admissible) أو متسقاً (Consistent).",
-    "explanationEn": "The correct answer is B: 'A* using h2 will never expand more nodes than A* using h1 (except for tie-breaking)'. A* search evaluates f(n) = g(n) + h(n). It is provably cost-optimal when h(n) is admissible (tree search) or consistent (graph search)."
+    "explanationAr": "خوارزمية A* تعتمد على دالة التقييم f(n) = g(n) + h(n). تضمن الحل الأمثل بشرط أن يكون الهيورستك مقبولاً (Admissible) في الأشجار أو متسقاً (Consistent) في الرسوم البيانية.",
+    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search)."
   },
   {
     "id": 165,
@@ -2599,8 +2599,8 @@ const questions = [
       "Dual problem"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Relaxed problem'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Relaxed problem'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Relaxed problem'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Relaxed problem' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 166,
@@ -2615,8 +2615,8 @@ const questions = [
       "Because all heuristics generated by relaxation equal zero"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Because removing action constraints adds edges to the state graph, creating shortcuts that can never increase the optimal cost'. الهيورستك المقبول (Admissible) هو الذي لا يبالغ في تقدير التكلفة الحقيقية للهدف h(n) <= h*(n)، وهو شرط أساسي لأمثلية A*.",
-    "explanationEn": "The correct answer is B: 'Because removing action constraints adds edges to the state graph, creating shortcuts that can never increase the optimal cost'. An admissible heuristic never overestimates the true remaining cost to the goal: h(n) <= h*(n)."
+    "explanationAr": "الهيورستك المقبول (Admissible) هو الذي لا يبالغ إطلاقاً في تقدير التكلفة الحقيقية المتبقية للوصول إلى الهدف؛ أي يحقق دائماً h(n) <= h*(n).",
+    "explanationEn": "An admissible heuristic never overestimates the true remaining cost to reach the goal: h(n) <= h*(n), guaranteeing that A* finds the optimal path."
   },
   {
     "id": 167,
@@ -2631,8 +2631,8 @@ const questions = [
       "h(n) = (h1(n) + h2(n) + ... + hk(n)) / k"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'h(n) = max{h1(n), h2(n), ..., hk(n)}'. الهيورستك المقبول (Admissible) هو الذي لا يبالغ في تقدير التكلفة الحقيقية للهدف h(n) <= h*(n)، وهو شرط أساسي لأمثلية A*.",
-    "explanationEn": "The correct answer is B: 'h(n) = max{h1(n), h2(n), ..., hk(n)}'. An admissible heuristic never overestimates the true remaining cost to the goal: h(n) <= h*(n)."
+    "explanationAr": "الهيورستك المقبول (Admissible) هو الذي لا يبالغ إطلاقاً في تقدير التكلفة الحقيقية المتبقية للوصول إلى الهدف؛ أي يحقق دائماً h(n) <= h*(n).",
+    "explanationEn": "An admissible heuristic never overestimates the true remaining cost to reach the goal: h(n) <= h*(n), guaranteeing that A* finds the optimal path."
   },
   {
     "id": 168,
@@ -2647,8 +2647,8 @@ const questions = [
       "Landmark cache"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Pattern database'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 3: Solving Problems by Searching ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Pattern database'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "الخيار الصحيح هو 'Pattern database'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
+    "explanationEn": "The correct choice 'Pattern database' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
   },
   {
     "id": 169,
@@ -2663,8 +2663,8 @@ const questions = [
       "To convert graph search into tree search"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'To trade off solution optimality for a significant reduction in the number of expanded nodes'. خوارزمية A* تجمع بين التكلفة السابقة والتوقع المستقبلي f(n) = g(n) + h(n). تضمن الحل الأمثل إذا كان الهيورستك مقبولاً (Admissible) أو متسقاً (Consistent).",
-    "explanationEn": "The correct answer is B: 'To trade off solution optimality for a significant reduction in the number of expanded nodes'. A* search evaluates f(n) = g(n) + h(n). It is provably cost-optimal when h(n) is admissible (tree search) or consistent (graph search)."
+    "explanationAr": "خوارزمية A* تعتمد على دالة التقييم f(n) = g(n) + h(n). تضمن الحل الأمثل بشرط أن يكون الهيورستك مقبولاً (Admissible) في الأشجار أو متسقاً (Consistent) في الرسوم البيانية.",
+    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search)."
   },
   {
     "id": 170,
@@ -2679,8 +2679,8 @@ const questions = [
       "All nodes residing at depth d"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'The worst leaf node, which has the highest f-value'. خوارزمية A* تجمع بين التكلفة السابقة والتوقع المستقبلي f(n) = g(n) + h(n). تضمن الحل الأمثل إذا كان الهيورستك مقبولاً (Admissible) أو متسقاً (Consistent).",
-    "explanationEn": "The correct answer is B: 'The worst leaf node, which has the highest f-value'. A* search evaluates f(n) = g(n) + h(n). It is provably cost-optimal when h(n) is admissible (tree search) or consistent (graph search)."
+    "explanationAr": "خوارزمية A* تعتمد على دالة التقييم f(n) = g(n) + h(n). تضمن الحل الأمثل بشرط أن يكون الهيورستك مقبولاً (Admissible) في الأشجار أو متسقاً (Consistent) في الرسوم البيانية.",
+    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search)."
   },
   {
     "id": 171,
@@ -2693,8 +2693,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). A search problem is formally defined by five components: initial state, actions, transition model, goal states, and action cost function. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 3: Solving Problems by Searching وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. A search problem is formally defined by five components: initial state, actions, transition model, goal states, and action cost function. - This accurately reflects the core principle defined in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 172,
@@ -2707,8 +2707,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). في البيئات غير الحتمية أو غير الملاحظة بالكامل، لا يمكن استخدام نظام مفتوح (open-loop) دون قراءة الحواس، بل يلزم نظام مغلق (closed-loop) للتحقق من نجاح الأفعال.",
-    "explanationEn": "False. In nondeterministic or partially observable environments, an agent cannot safely execute open-loop; percepts must be monitored (closed-loop execution)."
+    "explanationAr": "العبارة خاطئة؛ لأن تطبيق هذا النهج يؤدي إلى فقدان ضمانات الأمثلية أو الدخول في حلقات لانهائية في غياب التحقق والمراقبة الحركية.",
+    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions."
   },
   {
     "id": 173,
@@ -2721,8 +2721,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). A single physical state of the environment can be represented by multiple distinct nodes in a search tree if there are redundant paths to that state. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 3: Solving Problems by Searching وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. A single physical state of the environment can be represented by multiple distinct nodes in a search tree if there are redundant paths to that state. - This accurately reflects the core principle defined in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 174,
@@ -2735,8 +2735,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Each node in a search tree stores a pointer to its parent node, which allows the solution path of actions to be reconstructed once a goal is reached. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 3: Solving Problems by Searching وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Each node in a search tree stores a pointer to its parent node, which allows the solution path of actions to be reconstructed once a goal is reached. - This accurately reflects the core principle defined in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 175,
@@ -2749,8 +2749,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Graph search algorithms use a reached table (or closed list) to remember previously explored states and prevent visiting nodes multiple times. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 3: Solving Problems by Searching وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Graph search algorithms use a reached table (or closed list) to remember previously explored states and prevent visiting nodes multiple times. - This accurately reflects the core principle defined in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 176,
@@ -2763,8 +2763,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن Tree-like search uses more memory than graph search because it maintains both an open list and a closed list of reached states. لا يتوافق مع الأسس العلمية في Chapter 3: Solving Problems by Searching.",
-    "explanationEn": "This statement is False. The claim that 'Tree-like search uses more memory than graph search because it maintains both an open list and a closed list of reached states.' is incorrect according to the standard principles in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة خاطئة؛ لأن تطبيق هذا النهج يؤدي إلى فقدان ضمانات الأمثلية أو الدخول في حلقات لانهائية في غياب التحقق والمراقبة الحركية.",
+    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions."
   },
   {
     "id": 177,
@@ -2777,8 +2777,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Breadth-First Search is complete on infinite state spaces, provided that the branching factor b is finite. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 3: Solving Problems by Searching وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Breadth-First Search is complete on infinite state spaces, provided that the branching factor b is finite. - This accurately reflects the core principle defined in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 178,
@@ -2791,8 +2791,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن Breadth-First Search is always cost-optimal, regardless of whether step action costs are identical or widely different. لا يتوافق مع الأسس العلمية في Chapter 3: Solving Problems by Searching.",
-    "explanationEn": "This statement is False. The claim that 'Breadth-First Search is always cost-optimal, regardless of whether step action costs are identical or widely different.' is incorrect according to the standard principles in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة خاطئة؛ لأن تطبيق هذا النهج يؤدي إلى فقدان ضمانات الأمثلية أو الدخول في حلقات لانهائية في غياب التحقق والمراقبة الحركية.",
+    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions."
   },
   {
     "id": 179,
@@ -2805,8 +2805,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Both the time complexity and space complexity of Breadth-First Search are exponential in the solution depth d, expressed as O(b^d). - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 3: Solving Problems by Searching وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Both the time complexity and space complexity of Breadth-First Search are exponential in the solution depth d, expressed as O(b^d). - This accurately reflects the core principle defined in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 180,
@@ -2819,8 +2819,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Uniform-Cost Search expands nodes in increasing order of their path cost g(n) from the initial state. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 3: Solving Problems by Searching وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Uniform-Cost Search expands nodes in increasing order of their path cost g(n) from the initial state. - This accurately reflects the core principle defined in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 181,
@@ -2833,8 +2833,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن If Uniform-Cost Search applies an early goal test upon generating a node, it is still guaranteed to return the cost-optimal solution. لا يتوافق مع الأسس العلمية في Chapter 3: Solving Problems by Searching.",
-    "explanationEn": "This statement is False. The claim that 'If Uniform-Cost Search applies an early goal test upon generating a node, it is still guaranteed to return the cost-optimal solution.' is incorrect according to the standard principles in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة خاطئة؛ لأن تطبيق هذا النهج يؤدي إلى فقدان ضمانات الأمثلية أو الدخول في حلقات لانهائية في غياب التحقق والمراقبة الحركية.",
+    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions."
   },
   {
     "id": 182,
@@ -2847,8 +2847,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن Depth-First Search is cost-optimal because it always explores the deepest leaves first. لا يتوافق مع الأسس العلمية في Chapter 3: Solving Problems by Searching.",
-    "explanationEn": "This statement is False. The claim that 'Depth-First Search is cost-optimal because it always explores the deepest leaves first.' is incorrect according to the standard principles in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة خاطئة؛ لأن تطبيق هذا النهج يؤدي إلى فقدان ضمانات الأمثلية أو الدخول في حلقات لانهائية في غياب التحقق والمراقبة الحركية.",
+    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions."
   },
   {
     "id": 183,
@@ -2861,8 +2861,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Tree-like Depth-First Search requires only linear space complexity O(bm), where b is branching factor and m is maximum depth. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 3: Solving Problems by Searching وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Tree-like Depth-First Search requires only linear space complexity O(bm), where b is branching factor and m is maximum depth. - This accurately reflects the core principle defined in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 184,
@@ -2875,8 +2875,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Backtracking search reduces memory requirements even further than standard DFS to just one state description and a path of O(m) actions. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 3: Solving Problems by Searching وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Backtracking search reduces memory requirements even further than standard DFS to just one state description and a path of O(m) actions. - This accurately reflects the core principle defined in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 185,
@@ -2889,8 +2889,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن Depth-Limited Search is complete even if the chosen depth limit l is smaller than the depth d of the optimal solution. لا يتوافق مع الأسس العلمية في Chapter 3: Solving Problems by Searching.",
-    "explanationEn": "This statement is False. The claim that 'Depth-Limited Search is complete even if the chosen depth limit l is smaller than the depth d of the optimal solution.' is incorrect according to the standard principles in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة خاطئة؛ لأن تطبيق هذا النهج يؤدي إلى فقدان ضمانات الأمثلية أو الدخول في حلقات لانهائية في غياب التحقق والمراقبة الحركية.",
+    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions."
   },
   {
     "id": 186,
@@ -2903,8 +2903,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Iterative Deepening Search combines the linear memory benefits of DFS with the completeness and optimality of BFS for unit action costs. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 3: Solving Problems by Searching وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Iterative Deepening Search combines the linear memory benefits of DFS with the completeness and optimality of BFS for unit action costs. - This accurately reflects the core principle defined in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 187,
@@ -2917,8 +2917,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Bidirectional search maintains two frontiers and two reached tables, searching simultaneously from start and goal. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 3: Solving Problems by Searching وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Bidirectional search maintains two frontiers and two reached tables, searching simultaneously from start and goal. - This accurately reflects the core principle defined in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 188,
@@ -2931,8 +2931,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Greedy Best-First Search expands the node with the minimum value of evaluation function f(n) = h(n). - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 3: Solving Problems by Searching وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Greedy Best-First Search expands the node with the minimum value of evaluation function f(n) = h(n). - This accurately reflects the core principle defined in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 189,
@@ -2945,8 +2945,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن Greedy Best-First Search is guaranteed to be cost-optimal because it always expands the node that appears closest to the goal. لا يتوافق مع الأسس العلمية في Chapter 3: Solving Problems by Searching.",
-    "explanationEn": "This statement is False. The claim that 'Greedy Best-First Search is guaranteed to be cost-optimal because it always expands the node that appears closest to the goal.' is incorrect according to the standard principles in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة خاطئة؛ لأن تطبيق هذا النهج يؤدي إلى فقدان ضمانات الأمثلية أو الدخول في حلقات لانهائية في غياب التحقق والمراقبة الحركية.",
+    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions."
   },
   {
     "id": 190,
@@ -2959,8 +2959,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). The evaluation function for A* search is f(n) = g(n) + h(n), where g(n) is path cost to n and h(n) is estimated cost from n to goal. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 3: Solving Problems by Searching وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. The evaluation function for A* search is f(n) = g(n) + h(n), where g(n) is path cost to n and h(n) is estimated cost from n to goal. - This accurately reflects the core principle defined in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 191,
@@ -2973,8 +2973,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). دالة الهيورستك المقبولة (Admissible) لا تبالغ أبداً في تقدير التكلفة للوصول للهدف، أي h(n) <= h*(n).",
-    "explanationEn": "True. An admissible heuristic never overestimates the true cost to reach the goal."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 192,
@@ -2987,8 +2987,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). الهيورستك المتسق (Consistent) يحقق متباينة المثلث: h(n) <= c(n, a, n') + h(n').",
-    "explanationEn": "True. A consistent heuristic satisfies the triangle inequality: h(n) <= c(n, a, n') + h(n')."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 193,
@@ -3001,8 +3001,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). الهيورستك المتسق (Consistent) يحقق متباينة المثلث: h(n) <= c(n, a, n') + h(n').",
-    "explanationEn": "True. A consistent heuristic satisfies the triangle inequality: h(n) <= c(n, a, n') + h(n')."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 194,
@@ -3015,8 +3015,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). A* search expands no nodes with an evaluation cost strictly greater than the optimal solution cost C*. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 3: Solving Problems by Searching وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. A* search expands no nodes with an evaluation cost strictly greater than the optimal solution cost C*. - This accurately reflects the core principle defined in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 195,
@@ -3029,8 +3029,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). The Manhattan distance heuristic for the 8-puzzle is admissible because any single move can at most decrease one tile's distance by 1 step. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 3: Solving Problems by Searching وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. The Manhattan distance heuristic for the 8-puzzle is admissible because any single move can at most decrease one tile's distance by 1 step. - This accurately reflects the core principle defined in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 196,
@@ -3043,8 +3043,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). If heuristic h2 dominates h1, then A* search using h2 will never expand more nodes than A* search using h1 (except for tie-breaking). - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 3: Solving Problems by Searching وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. If heuristic h2 dominates h1, then A* search using h2 will never expand more nodes than A* search using h1 (except for tie-breaking). - This accurately reflects the core principle defined in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 197,
@@ -3057,8 +3057,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Given two admissible heuristics h1 and h2, the composite function h(n) = max(h1(n), h2(n)) is also admissible and dominates both h1 and h2. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 3: Solving Problems by Searching وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Given two admissible heuristics h1 and h2, the composite function h(n) = max(h1(n), h2(n)) is also admissible and dominates both h1 and h2. - This accurately reflects the core principle defined in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 198,
@@ -3071,8 +3071,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). The cost of an optimal solution to a relaxed problem provides an admissible heuristic for the original unrelaxed problem. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 3: Solving Problems by Searching وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. The cost of an optimal solution to a relaxed problem provides an admissible heuristic for the original unrelaxed problem. - This accurately reflects the core principle defined in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 199,
@@ -3085,8 +3085,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن Weighted A* search with weight W > 1 is guaranteed to find the strictly cost-optimal solution in every search problem. لا يتوافق مع الأسس العلمية في Chapter 3: Solving Problems by Searching.",
-    "explanationEn": "This statement is False. The claim that 'Weighted A* search with weight W > 1 is guaranteed to find the strictly cost-optimal solution in every search problem.' is incorrect according to the standard principles in AIMA (Chapter 3: Solving Problems by Searching)."
+    "explanationAr": "العبارة خاطئة؛ لأن تطبيق هذا النهج يؤدي إلى فقدان ضمانات الأمثلية أو الدخول في حلقات لانهائية في غياب التحقق والمراقبة الحركية.",
+    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions."
   },
   {
     "id": 200,
@@ -3099,8 +3099,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). خوارزمية SMA* عند ضيق الذاكرة قد تقع في ظاهرة التخبط (thrashing) بإعادة توليد وحذف العقد نفسها باستمرار.",
-    "explanationEn": "True. Memory-bounded algorithms like SMA* can suffer from thrashing when memory is insufficient to retain search paths."
+    "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
   },
   {
     "id": 201,
@@ -3115,8 +3115,8 @@ const questions = [
       "Discrete time vs Continuous time, and Single-agent vs Multi-agent"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Thought processes/reasoning vs Behavior, and Human performance vs Ideal rationality'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Thought processes/reasoning vs Behavior, and Human performance vs Ideal rationality'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "صنف رسل ونورفيغ تعريفات الذكاء الاصطناعي في شبكة 2×2 ترتكز على بُعدين: العمليات الذهنية الداخلية مقابل السلوك الخارجي، ومحاكاة الأداء البشري مقابل العقلانية والمثالية.",
+    "explanationEn": "Russell & Norvig categorize definitions of AI into a 2x2 matrix along two axes: Thought processes vs. Behavior, and Human performance vs. Ideal rationality."
   },
   {
     "id": 202,
@@ -3131,8 +3131,8 @@ const questions = [
       "The Voight-Kampff test"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'The Imitation Game (Turing Test)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'The Imitation Game (Turing Test)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
   },
   {
     "id": 203,
@@ -3147,8 +3147,8 @@ const questions = [
       "Machine Learning"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'Physical Robotic Manipulation'. اختبار تورينج (1950) يركز على بُعد 'التصرف كالبشر' (Acting Humanly) من خلال حوار نصي يقيس قدرة الحاسوب على محاكاة التفكير البشري.",
-    "explanationEn": "The correct answer is C: 'Physical Robotic Manipulation'. The Turing Test tests whether a computer's conversational performance can be distinguished from a human's ('Acting Humanly')."
+    "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
   },
   {
     "id": 204,
@@ -3163,8 +3163,8 @@ const questions = [
       "Quantum computing and Cloud storage"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Computer Vision and Robotics'. اختبار تورينج (1950) يركز على بُعد 'التصرف كالبشر' (Acting Humanly) من خلال حوار نصي يقيس قدرة الحاسوب على محاكاة التفكير البشري.",
-    "explanationEn": "The correct answer is B: 'Computer Vision and Robotics'. The Turing Test tests whether a computer's conversational performance can be distinguished from a human's ('Acting Humanly')."
+    "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
   },
   {
     "id": 205,
@@ -3179,8 +3179,8 @@ const questions = [
       "Control Theory"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Cognitive Science'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Cognitive Science'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Cognitive Science' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Cognitive Science' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 206,
@@ -3195,8 +3195,8 @@ const questions = [
       "Measuring processor clock speeds and memory voltage"
     ],
     "correctAnswer": 3,
-    "explanationAr": "الإجابة الصحيحة هي (D): 'Measuring processor clock speeds and memory voltage'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is D: 'Measuring processor clock speeds and memory voltage'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Measuring processor clock speeds and memory voltage' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Measuring processor clock speeds and memory voltage' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 207,
@@ -3211,8 +3211,8 @@ const questions = [
       "Epicurus"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Aristotle'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Aristotle'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Aristotle' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Aristotle' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 208,
@@ -3227,8 +3227,8 @@ const questions = [
       "Formal logic cannot be implemented using programming languages"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Stating informal real-world knowledge in formal logic terms is extremely difficult, and deductive reasoning can be computationally intractable'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Stating informal real-world knowledge in formal logic terms is extremely difficult, and deductive reasoning can be computationally intractable'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Stating informal real-world knowledge in formal logic terms is extremely difficult, and deductive reasoning can be computationally intractable' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Stating informal real-world knowledge in formal logic terms is extremely difficult, and deductive reasoning can be computationally intractable' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 209,
@@ -3243,8 +3243,8 @@ const questions = [
       "Thinking Rationally (Pure deductive logic)"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'Acting Rationally (The rational agent approach)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is C: 'Acting Rationally (The rational agent approach)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Acting Rationally (The rational agent approach)' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Acting Rationally (The rational agent approach)' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 210,
@@ -3259,8 +3259,8 @@ const questions = [
       "It guarantees that algorithms always run in O(1) constant time"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Correct logical inference is only one of several possible mechanisms for achieving rationality, allowing for reflex actions and actions under uncertainty'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Correct logical inference is only one of several possible mechanisms for achieving rationality, allowing for reflex actions and actions under uncertainty'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Correct logical inference is only one of several possible mechanisms for achieving rationality, allowing for reflex actions and actions under uncertainty' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Correct logical inference is only one of several possible mechanisms for achieving rationality, allowing for reflex actions and actions under uncertainty' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 211,
@@ -3275,8 +3275,8 @@ const questions = [
       "Pass the Turing Test in a minimum of five different languages"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Optimize an objective or utility function specified by its human designers'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Optimize an objective or utility function specified by its human designers'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Optimize an objective or utility function specified by its human designers' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Optimize an objective or utility function specified by its human designers' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 212,
@@ -3291,8 +3291,8 @@ const questions = [
       "Agents will refuse to accept any objectives from users"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'If we specify the wrong objective function, a super-capable agent will optimize that flawed objective with potentially catastrophic consequences'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'If we specify the wrong objective function, a super-capable agent will optimize that flawed objective with potentially catastrophic consequences'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'If we specify the wrong objective function, a super-capable agent will optimize that flawed objective with potentially catastrophic consequences' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'If we specify the wrong objective function, a super-capable agent will optimize that flawed objective with potentially catastrophic consequences' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 213,
@@ -3307,8 +3307,8 @@ const questions = [
       "10 seconds"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): '5 minutes'. اختبار تورينج (1950) يركز على بُعد 'التصرف كالبشر' (Acting Humanly) من خلال حوار نصي يقيس قدرة الحاسوب على محاكاة التفكير البشري.",
-    "explanationEn": "The correct answer is A: '5 minutes'. The Turing Test tests whether a computer's conversational performance can be distinguished from a human's ('Acting Humanly')."
+    "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
   },
   {
     "id": 214,
@@ -3323,8 +3323,8 @@ const questions = [
       "The Turing Test only applies to analog computers"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'AI researchers focus on studying the underlying principles of intelligence and solving real problems, analogous to how aeronautical engineering focuses on aerodynamics rather than copying birds'. اختبار تورينج (1950) يركز على بُعد 'التصرف كالبشر' (Acting Humanly) من خلال حوار نصي يقيس قدرة الحاسوب على محاكاة التفكير البشري.",
-    "explanationEn": "The correct answer is B: 'AI researchers focus on studying the underlying principles of intelligence and solving real problems, analogous to how aeronautical engineering focuses on aerodynamics rather than copying birds'. The Turing Test tests whether a computer's conversational performance can be distinguished from a human's ('Acting Humanly')."
+    "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
   },
   {
     "id": 215,
@@ -3339,8 +3339,8 @@ const questions = [
       "Natural Language Processing"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Automated Reasoning'. اختبار تورينج (1950) يركز على بُعد 'التصرف كالبشر' (Acting Humanly) من خلال حوار نصي يقيس قدرة الحاسوب على محاكاة التفكير البشري.",
-    "explanationEn": "The correct answer is B: 'Automated Reasoning'. The Turing Test tests whether a computer's conversational performance can be distinguished from a human's ('Acting Humanly')."
+    "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
   },
   {
     "id": 216,
@@ -3355,8 +3355,8 @@ const questions = [
       "To convert AC power to DC power"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'To adapt to new circumstances and detect and extrapolate patterns'. اختبار تورينج (1950) يركز على بُعد 'التصرف كالبشر' (Acting Humanly) من خلال حوار نصي يقيس قدرة الحاسوب على محاكاة التفكير البشري.",
-    "explanationEn": "The correct answer is B: 'To adapt to new circumstances and detect and extrapolate patterns'. The Turing Test tests whether a computer's conversational performance can be distinguished from a human's ('Acting Humanly')."
+    "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
   },
   {
     "id": 217,
@@ -3371,8 +3371,8 @@ const questions = [
       "Discards all past percept history"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Does the 'right thing' based on what it knows and its performance measure'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Does the 'right thing' based on what it knows and its performance measure'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Does the 'right thing' based on what it knows and its performance measure' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Does the 'right thing' based on what it knows and its performance measure' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 218,
@@ -3387,8 +3387,8 @@ const questions = [
       "Human memory capacity is mathematically zero"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Human reasoning is subject to systematic cognitive biases, emotional distortions, and computational resource limits'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Human reasoning is subject to systematic cognitive biases, emotional distortions, and computational resource limits'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Human reasoning is subject to systematic cognitive biases, emotional distortions, and computational resource limits' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Human reasoning is subject to systematic cognitive biases, emotional distortions, and computational resource limits' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 219,
@@ -3403,8 +3403,8 @@ const questions = [
       "Empiricism"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Dualism'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Dualism'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Dualism' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Dualism' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 220,
@@ -3419,8 +3419,8 @@ const questions = [
       "Existentialism"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Materialism (or Physicalism)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Materialism (or Physicalism)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Materialism (or Physicalism)' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Materialism (or Physicalism)' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 221,
@@ -3435,8 +3435,8 @@ const questions = [
       "Skepticism"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Empiricism'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Empiricism'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Empiricism' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Empiricism' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 222,
@@ -3451,8 +3451,8 @@ const questions = [
       "How processors maintain clock synchronization"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'How general rules and future predictions can be justified on the basis of a finite number of past observations'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'How general rules and future predictions can be justified on the basis of a finite number of past observations'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'How general rules and future predictions can be justified on the basis of a finite number of past observations' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'How general rules and future predictions can be justified on the basis of a finite number of past observations' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 223,
@@ -3467,8 +3467,8 @@ const questions = [
       "Hardware circuits"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Logical theories connected to observable sensory observations'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Logical theories connected to observable sensory observations'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Logical theories connected to observable sensory observations' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Logical theories connected to observable sensory observations' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 224,
@@ -3483,8 +3483,8 @@ const questions = [
       "Gottfried Leibniz"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'George Boole'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'George Boole'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'George Boole' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'George Boole' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 225,
@@ -3499,8 +3499,8 @@ const questions = [
       "Quantum gates"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'First-order predicate calculus'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'First-order predicate calculus'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'First-order predicate calculus' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'First-order predicate calculus' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 226,
@@ -3515,8 +3515,8 @@ const questions = [
       "Heuristics are always inadmissible in cyclic graphs"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'In any formal mathematical system powerful enough to do arithmetic, there exist true statements that cannot be proven within the system'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'In any formal mathematical system powerful enough to do arithmetic, there exist true statements that cannot be proven within the system'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'In any formal mathematical system powerful enough to do arithmetic, there exist true statements that cannot be proven within the system' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'In any formal mathematical system powerful enough to do arithmetic, there exist true statements that cannot be proven within the system' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 227,
@@ -3531,8 +3531,8 @@ const questions = [
       "Sorting Problem"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Halting Problem'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Halting Problem'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
   },
   {
     "id": 228,
@@ -3547,8 +3547,8 @@ const questions = [
       "In constant time O(1)"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'Exponentially with the size of the problem instances'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is C: 'Exponentially with the size of the problem instances'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Exponentially with the size of the problem instances' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Exponentially with the size of the problem instances' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 229,
@@ -3563,8 +3563,8 @@ const questions = [
       "Neural networks cannot compute linear combinations"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'A large class of combinatorial search and reasoning problems are likely intractable in the worst case'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'A large class of combinatorial search and reasoning problems are likely intractable in the worst case'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'A large class of combinatorial search and reasoning problems are likely intractable in the worst case' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'A large class of combinatorial search and reasoning problems are likely intractable in the worst case' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 230,
@@ -3579,8 +3579,8 @@ const questions = [
       "Bertrand Russell"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Thomas Bayes'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Thomas Bayes'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Thomas Bayes' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Thomas Bayes' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 231,
@@ -3595,8 +3595,8 @@ const questions = [
       "Computer network packet loss"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Gambling odds in games of chance'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Gambling odds in games of chance'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Gambling odds in games of chance' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Gambling odds in games of chance' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 232,
@@ -3611,8 +3611,8 @@ const questions = [
       "Brains contain exactly 10 billion neurons"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Any algorithmic computation that can be carried out by any physical machine can be simulated by a Turing machine'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Any algorithmic computation that can be carried out by any physical machine can be simulated by a Turing machine'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
   },
   {
     "id": 233,
@@ -3627,8 +3627,8 @@ const questions = [
       "Alan Turing and Claude Shannon"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'John von Neumann and Oskar Morgenstern'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'John von Neumann and Oskar Morgenstern'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'John von Neumann and Oskar Morgenstern' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'John von Neumann and Oskar Morgenstern' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 234,
@@ -3643,8 +3643,8 @@ const questions = [
       "Robotics and Computer Vision"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Probability Theory and Utility Theory'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Probability Theory and Utility Theory'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Probability Theory and Utility Theory' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Probability Theory and Utility Theory' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 235,
@@ -3659,8 +3659,8 @@ const questions = [
       "Exhaustive state enumeration"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Satisficing (making decisions that are 'good enough')'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Satisficing (making decisions that are 'good enough')'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Satisficing (making decisions that are 'good enough')' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Satisficing (making decisions that are 'good enough')' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 236,
@@ -3675,8 +3675,8 @@ const questions = [
       "Turing machines"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Markov Decision Processes (MDPs)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Markov Decision Processes (MDPs)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Markov Decision Processes (MDPs)' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Markov Decision Processes (MDPs)' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 237,
@@ -3691,8 +3691,8 @@ const questions = [
       "Synaptic cleft"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Neuron'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Neuron'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Neuron' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Neuron' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 238,
@@ -3707,8 +3707,8 @@ const questions = [
       "Both have identical cycle times of one microsecond"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Computer processors have cycle times in nanoseconds, whereas biological neurons operate much slower, in milliseconds'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Computer processors have cycle times in nanoseconds, whereas biological neurons operate much slower, in milliseconds'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Computer processors have cycle times in nanoseconds, whereas biological neurons operate much slower, in milliseconds' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Computer processors have cycle times in nanoseconds, whereas biological neurons operate much slower, in milliseconds' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 239,
@@ -3723,8 +3723,8 @@ const questions = [
       "Biological neurons do not obey physical laws"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'The brain utilizes massive parallelism across roughly 10^11 neurons and 10^14 synaptic connections'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'The brain utilizes massive parallelism across roughly 10^11 neurons and 10^14 synaptic connections'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'The brain utilizes massive parallelism across roughly 10^11 neurons and 10^14 synaptic connections' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'The brain utilizes massive parallelism across roughly 10^11 neurons and 10^14 synaptic connections' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 240,
@@ -3739,8 +3739,8 @@ const questions = [
       "Mathematical proofs"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Objective measures of external stimuli and observable behavioral responses'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Objective measures of external stimuli and observable behavioral responses'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Objective measures of external stimuli and observable behavioral responses' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Objective measures of external stimuli and observable behavioral responses' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 241,
@@ -3755,8 +3755,8 @@ const questions = [
       "Ivan Pavlov"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Kenneth Craik'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Kenneth Craik'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Kenneth Craik' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Kenneth Craik' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 242,
@@ -3771,8 +3771,8 @@ const questions = [
       "The World Economic Forum"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'MIT Symposium on Information Theory'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'MIT Symposium on Information Theory'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'MIT Symposium on Information Theory' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'MIT Symposium on Information Theory' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 243,
@@ -3787,8 +3787,8 @@ const questions = [
       "Infinite"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): '7 plus or minus 2 chunks'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: '7 plus or minus 2 chunks'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار '7 plus or minus 2 chunks' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option '7 plus or minus 2 chunks' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 244,
@@ -3803,8 +3803,8 @@ const questions = [
       "It proved that animals do not possess neural systems"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'It allowed researchers to legitimately model internal cognitive structures, beliefs, and goals inside computer programs'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'It allowed researchers to legitimately model internal cognitive structures, beliefs, and goals inside computer programs'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'It allowed researchers to legitimately model internal cognitive structures, beliefs, and goals inside computer programs' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'It allowed researchers to legitimately model internal cognitive structures, beliefs, and goals inside computer programs' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 245,
@@ -3819,8 +3819,8 @@ const questions = [
       "John von Neumann"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Charles Babbage'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Charles Babbage'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Charles Babbage' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Charles Babbage' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 246,
@@ -3835,8 +3835,8 @@ const questions = [
       "Only digital electronic circuits can perform addition"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'The Analytical Engine has no pretensions to originate anything; it can do whatever we know how to order it to perform'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'The Analytical Engine has no pretensions to originate anything; it can do whatever we know how to order it to perform'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'The Analytical Engine has no pretensions to originate anything; it can do whatever we know how to order it to perform' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'The Analytical Engine has no pretensions to originate anything; it can do whatever we know how to order it to perform' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 247,
@@ -3851,8 +3851,8 @@ const questions = [
       "Analytical Engine"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'The Bombe'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'The Bombe'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
   },
   {
     "id": 248,
@@ -3867,8 +3867,8 @@ const questions = [
       "An abacus"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'A water clock with a float regulator'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'A water clock with a float regulator'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'A water clock with a float regulator' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'A water clock with a float regulator' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 249,
@@ -3883,8 +3883,8 @@ const questions = [
       "Robot Dynamics"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Cybernetics'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Cybernetics'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Cybernetics' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Cybernetics' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 250,
@@ -3899,8 +3899,8 @@ const questions = [
       "Control theory was invented after deep learning"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Control theory focused on continuous state spaces governed by calculus and differential equations, while early AI focused on discrete logical and symbolic reasoning'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Control theory focused on continuous state spaces governed by calculus and differential equations, while early AI focused on discrete logical and symbolic reasoning'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Control theory focused on continuous state spaces governed by calculus and differential equations, while early AI focused on discrete logical and symbolic reasoning' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Control theory focused on continuous state spaces governed by calculus and differential equations, while early AI focused on discrete logical and symbolic reasoning' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 251,
@@ -3915,8 +3915,8 @@ const questions = [
       "Roman Jakobson"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Noam Chomsky'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Noam Chomsky'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Noam Chomsky' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Noam Chomsky' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 252,
@@ -3931,8 +3931,8 @@ const questions = [
       "Cryptanalysis"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Computational Linguistics (Natural Language Processing)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Computational Linguistics (Natural Language Processing)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Computational Linguistics (Natural Language Processing)' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Computational Linguistics (Natural Language Processing)' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 253,
@@ -3947,8 +3947,8 @@ const questions = [
       "Because grammar rules are identical in all languages"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Because sentences contain massive lexical and syntactic ambiguities that can only be resolved using background world context'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Because sentences contain massive lexical and syntactic ambiguities that can only be resolved using background world context'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Because sentences contain massive lexical and syntactic ambiguities that can only be resolved using background world context' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Because sentences contain massive lexical and syntactic ambiguities that can only be resolved using background world context' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 254,
@@ -3963,8 +3963,8 @@ const questions = [
       "Computer screen resolutions double every week"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'The number of transistors on an integrated circuit doubles approximately every 18 to 24 months'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'The number of transistors on an integrated circuit doubles approximately every 18 to 24 months'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'The number of transistors on an integrated circuit doubles approximately every 18 to 24 months' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'The number of transistors on an integrated circuit doubles approximately every 18 to 24 months' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 255,
@@ -3979,8 +3979,8 @@ const questions = [
       "Donald Hebb and Frank Rosenblatt"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Warren McCulloch and Walter Pitts'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Warren McCulloch and Walter Pitts'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Warren McCulloch and Walter Pitts' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Warren McCulloch and Walter Pitts' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 256,
@@ -3995,8 +3995,8 @@ const questions = [
       "Neural networks cannot learn linear functions"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Synaptic connections strengthen when two neurons fire simultaneously ('neurons that fire together, wire together')'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Synaptic connections strengthen when two neurons fire simultaneously ('neurons that fire together, wire together')'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Synaptic connections strengthen when two neurons fire simultaneously ('neurons that fire together, wire together')' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Synaptic connections strengthen when two neurons fire simultaneously ('neurons that fire together, wire together')' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 257,
@@ -4011,8 +4011,8 @@ const questions = [
       "Shakey"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'SNARC'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'SNARC'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'SNARC' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'SNARC' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 258,
@@ -4027,8 +4027,8 @@ const questions = [
       "Oxford University"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Dartmouth College'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Dartmouth College'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Dartmouth College' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Dartmouth College' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 259,
@@ -4043,8 +4043,8 @@ const questions = [
       "DENDRAL"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Logic Theorist'. ورشة عمل دارتموث (1956) هي الحدث التاريخي الذي تأسس فيه علم الذكاء الاصطناعي رسمياً بقيادة جون مكارثي ومارفن مينسكي وشانون.",
-    "explanationEn": "The correct answer is A: 'Logic Theorist'. The 1956 Dartmouth workshop officially established Artificial Intelligence as an academic field, organized by John McCarthy."
+    "explanationAr": "ورشة عمل دارتموث الصيفية عام 1956 هي المولد الرسمي لميدان الذكاء الاصطناعي كعلم مستقل، وفيها صاغ جون مكارثي مصطلح 'Artificial Intelligence'.",
+    "explanationEn": "The 1956 Dartmouth Summer Research Project officially birthed AI as an academic discipline, organized by John McCarthy who coined the term."
   },
   {
     "id": 260,
@@ -4059,8 +4059,8 @@ const questions = [
       "Backgammon"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Checkers'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Checkers'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Checkers' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Checkers' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 261,
@@ -4075,8 +4075,8 @@ const questions = [
       "The ALPAC Report"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'The Lighthill Report'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'The Lighthill Report'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'The Lighthill Report' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'The Lighthill Report' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 262,
@@ -4091,8 +4091,8 @@ const questions = [
       "NOT"
     ],
     "correctAnswer": 2,
-    "explanationAr": "الإجابة الصحيحة هي (C): 'XOR (Exclusive-OR)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is C: 'XOR (Exclusive-OR)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "كتاب 'Perceptrons' لمينسكي وبابرت (1969) أثبت رياضياً عجز شبكات البيرسبترون أحادية الطبقة عن تعلم الدوال غير الخطية مثل دالة XOR، مما أدى لأول شتاء للذكاء الاصطناعي.",
+    "explanationEn": "Minsky and Papert's 1969 book showed that single-layer perceptrons cannot learn linearly inseparable functions like XOR, triggering the first AI winter."
   },
   {
     "id": 263,
@@ -4107,8 +4107,8 @@ const questions = [
       "XCON"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'MYCIN'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'MYCIN'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الأنظمة الخبيرة (Expert Systems) اعتمدت على تمثيل المعرفة المتخصصة عبر قواعد استدلالية تحاكي تفكير الخبراء البشريين في مجالات دقيقة كالطب والكيمياء.",
+    "explanationEn": "Expert systems represented a shift from general-purpose problem solvers to domain-specific knowledge bases combining facts and heuristic inference rules."
   },
   {
     "id": 264,
@@ -4123,8 +4123,8 @@ const questions = [
       "Predict international stock market prices"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Configure customer computer orders for VAX computer systems'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Configure customer computer orders for VAX computer systems'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الأنظمة الخبيرة (Expert Systems) اعتمدت على تمثيل المعرفة المتخصصة عبر قواعد استدلالية تحاكي تفكير الخبراء البشريين في مجالات دقيقة كالطب والكيمياء.",
+    "explanationEn": "Expert systems represented a shift from general-purpose problem solvers to domain-specific knowledge bases combining facts and heuristic inference rules."
   },
   {
     "id": 265,
@@ -4139,8 +4139,8 @@ const questions = [
       "Alpha-Beta Pruning"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Backpropagation'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Backpropagation'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Backpropagation' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Backpropagation' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 266,
@@ -4155,8 +4155,8 @@ const questions = [
       "Predicate Calculus"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Bayesian Networks'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Bayesian Networks'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Bayesian Networks' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Bayesian Networks' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 267,
@@ -4171,8 +4171,8 @@ const questions = [
       "Bobby Fischer"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Garry Kasparov'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Garry Kasparov'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Garry Kasparov' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Garry Kasparov' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 268,
@@ -4187,8 +4187,8 @@ const questions = [
       "COCO"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'ImageNet'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'ImageNet'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'ImageNet' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'ImageNet' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 269,
@@ -4203,8 +4203,8 @@ const questions = [
       "Linear programming"
     ],
     "correctAnswer": 0,
-    "explanationAr": "الإجابة الصحيحة هي (A): 'Monte Carlo Tree Search (MCTS)'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is A: 'Monte Carlo Tree Search (MCTS)'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Monte Carlo Tree Search (MCTS)' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Monte Carlo Tree Search (MCTS)' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 270,
@@ -4219,8 +4219,8 @@ const questions = [
       "Calibrating accelerometer sensors in robots"
     ],
     "correctAnswer": 1,
-    "explanationAr": "الإجابة الصحيحة هي (B): 'Ensuring that autonomous AI systems pursue objectives that are truly aligned with human values and intentions'. هذا الخيار يتطابق مباشرة مع المفاهيم المقررة في Chapter 1: Introduction to AI ويوضح الإجابة الصحيحة للسؤال.",
-    "explanationEn": "The correct answer is B: 'Ensuring that autonomous AI systems pursue objectives that are truly aligned with human values and intentions'. This option accurately satisfies the question according to the foundational definitions in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "الخيار 'Ensuring that autonomous AI systems pursue objectives that are truly aligned with human values and intentions' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
+    "explanationEn": "The option 'Ensuring that autonomous AI systems pursue objectives that are truly aligned with human values and intentions' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
   },
   {
     "id": 271,
@@ -4233,8 +4233,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). اختبار تورينج القياسي يتجنب التفاعل الجسدي ويركز على محادثة نصية لاختبار الذكاء والقدرات الإدراكية دون المظهر الخارجي.",
-    "explanationEn": "True. The Turing Test deliberately avoids physical embodiment to focus purely on intellectual capabilities via text communication."
+    "explanationAr": "العبارة صحيحة (True). اختبار تورينج القياسي يتجنب التفاعل الجسدي المتعمد ليركز حصرياً على فحص الذكاء التواصلي والإدراكي دون التأثر بالشكل الفيزيائي أو المظهر الخارجي.",
+    "explanationEn": "True. The standard Turing Test deliberately avoids physical contact to ensure that intellectual ability, not physical appearance, is being evaluated."
   },
   {
     "id": 272,
@@ -4247,8 +4247,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). اختبار تورينج القياسي يتجنب التفاعل الجسدي ويركز على محادثة نصية لاختبار الذكاء والقدرات الإدراكية دون المظهر الخارجي.",
-    "explanationEn": "True. The Turing Test deliberately avoids physical embodiment to focus purely on intellectual capabilities via text communication."
+    "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
   },
   {
     "id": 273,
@@ -4261,8 +4261,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Cognitive Science combines computer AI models with experimental psychology techniques to construct testable theories of the human mind. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 1: Introduction to AI وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Cognitive Science combines computer AI models with experimental psychology techniques to construct testable theories of the human mind. - This accurately reflects the core principle defined in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
   },
   {
     "id": 274,
@@ -4275,8 +4275,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Aristotle's syllogisms were designed to provide patterns for argument structures that always yielded correct conclusions whenever the premises were true. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 1: Introduction to AI وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Aristotle's syllogisms were designed to provide patterns for argument structures that always yielded correct conclusions whenever the premises were true. - This accurately reflects the core principle defined in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
   },
   {
     "id": 275,
@@ -4289,8 +4289,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). A rational agent is one that acts so as to achieve the best outcome or, when there is uncertainty, the best expected outcome. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 1: Introduction to AI وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. A rational agent is one that acts so as to achieve the best outcome or, when there is uncertainty, the best expected outcome. - This accurately reflects the core principle defined in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
   },
   {
     "id": 276,
@@ -4303,8 +4303,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن Under the rational agent approach, making correct logical deductions is the ONLY possible way for an agent to exhibit rational behavior. لا يتوافق مع الأسس العلمية في Chapter 1: Introduction to AI.",
-    "explanationEn": "This statement is False. The claim that 'Under the rational agent approach, making correct logical deductions is the ONLY possible way for an agent to exhibit rational behavior.' is incorrect according to the standard principles in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
   },
   {
     "id": 277,
@@ -4317,8 +4317,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن René Descartes was an advocate of materialism, arguing that the human mind is entirely identical to the physical machinery of the brain. لا يتوافق مع الأسس العلمية في Chapter 1: Introduction to AI.",
-    "explanationEn": "This statement is False. The claim that 'René Descartes was an advocate of materialism, arguing that the human mind is entirely identical to the physical machinery of the brain.' is incorrect according to the standard principles in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
   },
   {
     "id": 278,
@@ -4331,8 +4331,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Empiricism holds that knowledge is formed primarily through sensory perception and experiential observation rather than innate mental ideas. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 1: Introduction to AI وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Empiricism holds that knowledge is formed primarily through sensory perception and experiential observation rather than innate mental ideas. - This accurately reflects the core principle defined in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
   },
   {
     "id": 279,
@@ -4345,8 +4345,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن Kurt Gödel proved that any sufficiently powerful formal mathematical system is both complete and fully decidable. لا يتوافق مع الأسس العلمية في Chapter 1: Introduction to AI.",
-    "explanationEn": "This statement is False. The claim that 'Kurt Gödel proved that any sufficiently powerful formal mathematical system is both complete and fully decidable.' is incorrect according to the standard principles in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
   },
   {
     "id": 280,
@@ -4359,8 +4359,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Alan Turing proved that there is no general algorithm capable of deciding whether an arbitrary computer program will eventually halt. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 1: Introduction to AI وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Alan Turing proved that there is no general algorithm capable of deciding whether an arbitrary computer program will eventually halt. - This accurately reflects the core principle defined in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
   },
   {
     "id": 281,
@@ -4373,8 +4373,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). If a problem is NP-complete, it is widely believed that no algorithm exists that can solve all problem instances in polynomial time. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 1: Introduction to AI وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. If a problem is NP-complete, it is widely believed that no algorithm exists that can solve all problem instances in polynomial time. - This accurately reflects the core principle defined in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
   },
   {
     "id": 282,
@@ -4387,8 +4387,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Thomas Bayes introduced the mathematical rule that enables prior probabilities to be updated in the presence of new sensory evidence. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 1: Introduction to AI وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Thomas Bayes introduced the mathematical rule that enables prior probabilities to be updated in the presence of new sensory evidence. - This accurately reflects the core principle defined in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
   },
   {
     "id": 283,
@@ -4401,8 +4401,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). الهيورستك المتسق (Consistent) يحقق متباينة المثلث: h(n) <= c(n, a, n') + h(n').",
-    "explanationEn": "True. A consistent heuristic satisfies the triangle inequality: h(n) <= c(n, a, n') + h(n')."
+    "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
   },
   {
     "id": 284,
@@ -4415,8 +4415,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن Herbert Simon's concept of 'satisficing' states that agents should always search until they compute the mathematically optimal solution. لا يتوافق مع الأسس العلمية في Chapter 1: Introduction to AI.",
-    "explanationEn": "This statement is False. The claim that 'Herbert Simon's concept of 'satisficing' states that agents should always search until they compute the mathematically optimal solution.' is incorrect according to the standard principles in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
   },
   {
     "id": 285,
@@ -4429,8 +4429,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن Individual biological neurons in the human brain have significantly faster switching speeds than modern silicon microprocessor transistors. لا يتوافق مع الأسس العلمية في Chapter 1: Introduction to AI.",
-    "explanationEn": "This statement is False. The claim that 'Individual biological neurons in the human brain have significantly faster switching speeds than modern silicon microprocessor transistors.' is incorrect according to the standard principles in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
   },
   {
     "id": 286,
@@ -4443,8 +4443,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). The human brain contains approximately 10^11 neurons, with each neuron connected to thousands of other neurons via synapses. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 1: Introduction to AI وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. The human brain contains approximately 10^11 neurons, with each neuron connected to thousands of other neurons via synapses. - This accurately reflects the core principle defined in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
   },
   {
     "id": 287,
@@ -4457,8 +4457,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن Psychological behaviorism actively encouraged the study of internal representations, beliefs, and conscious desires. لا يتوافق مع الأسس العلمية في Chapter 1: Introduction to AI.",
-    "explanationEn": "This statement is False. The claim that 'Psychological behaviorism actively encouraged the study of internal representations, beliefs, and conscious desires.' is incorrect according to the standard principles in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
   },
   {
     "id": 288,
@@ -4471,8 +4471,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن Ada Lovelace anticipated that the Analytical Engine would be capable of genuine original thought completely independent of human programming. لا يتوافق مع الأسس العلمية في Chapter 1: Introduction to AI.",
-    "explanationEn": "This statement is False. The claim that 'Ada Lovelace anticipated that the Analytical Engine would be capable of genuine original thought completely independent of human programming.' is incorrect according to the standard principles in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
   },
   {
     "id": 289,
@@ -4485,8 +4485,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Norbert Wiener's work on Cybernetics defined self-regulation in machines through feedback loops designed to minimize error between current state and goal state. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 1: Introduction to AI وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Norbert Wiener's work on Cybernetics defined self-regulation in machines through feedback loops designed to minimize error between current state and goal state. - This accurately reflects the core principle defined in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
   },
   {
     "id": 290,
@@ -4499,8 +4499,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن Noam Chomsky demonstrated that the infinite syntactic creativity of human natural language could be adequately modeled by simple finite-state Markov chains. لا يتوافق مع الأسس العلمية في Chapter 1: Introduction to AI.",
-    "explanationEn": "This statement is False. The claim that 'Noam Chomsky demonstrated that the infinite syntactic creativity of human natural language could be adequately modeled by simple finite-state Markov chains.' is incorrect according to the standard principles in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
   },
   {
     "id": 291,
@@ -4513,8 +4513,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). The 1943 McCulloch-Pitts neural model demonstrated that suitable networks of interconnected artificial neurons could compute any computable logical function. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 1: Introduction to AI وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. The 1943 McCulloch-Pitts neural model demonstrated that suitable networks of interconnected artificial neurons could compute any computable logical function. - This accurately reflects the core principle defined in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
   },
   {
     "id": 292,
@@ -4527,8 +4527,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). The term 'Artificial Intelligence' was officially coined by John McCarthy in the 1955 proposal for the 1956 Dartmouth Summer Research Project. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 1: Introduction to AI وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. The term 'Artificial Intelligence' was officially coined by John McCarthy in the 1955 proposal for the 1956 Dartmouth Summer Research Project. - This accurately reflects the core principle defined in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
   },
   {
     "id": 293,
@@ -4541,8 +4541,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Newell and Simon's Logic Theorist program proved mathematical theorems so elegantly that it found a shorter proof for one theorem than Russell and Whitehead had originally published. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 1: Introduction to AI وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Newell and Simon's Logic Theorist program proved mathematical theorems so elegantly that it found a shorter proof for one theorem than Russell and Whitehead had originally published. - This accurately reflects the core principle defined in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
   },
   {
     "id": 294,
@@ -4555,8 +4555,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). The early failure of literal machine translation projects (such as translating English to Russian) contributed significantly to the first AI Winter. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 1: Introduction to AI وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. The early failure of literal machine translation projects (such as translating English to Russian) contributed significantly to the first AI Winter. - This accurately reflects the core principle defined in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
   },
   {
     "id": 295,
@@ -4569,8 +4569,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن Minsky and Papert's 1969 book mathematically proved that multi-layer neural networks could never learn nonlinear functions under any circumstances. لا يتوافق مع الأسس العلمية في Chapter 1: Introduction to AI.",
-    "explanationEn": "This statement is False. The claim that 'Minsky and Papert's 1969 book mathematically proved that multi-layer neural networks could never learn nonlinear functions under any circumstances.' is incorrect according to the standard principles in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
   },
   {
     "id": 296,
@@ -4583,8 +4583,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). The development of expert systems in the 1970s marked a major paradigm shift in AI from general-purpose search algorithms to domain-specific knowledge bases. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 1: Introduction to AI وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. The development of expert systems in the 1970s marked a major paradigm shift in AI from general-purpose search algorithms to domain-specific knowledge bases. - This accurately reflects the core principle defined in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
   },
   {
     "id": 297,
@@ -4597,8 +4597,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). The popularization of the backpropagation algorithm in 1986 solved the problem of training multi-layer neural networks. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 1: Introduction to AI وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. The popularization of the backpropagation algorithm in 1986 solved the problem of training multi-layer neural networks. - This accurately reflects the core principle defined in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
   },
   {
     "id": 298,
@@ -4611,8 +4611,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). Bayesian Networks provide a mathematically principled way to represent conditional dependencies and reason probabilistically under uncertainty. - هذا يمثل حقيقة علمية وقاعدة أساسية مقررة في Chapter 1: Introduction to AI وفق مرجع AIMA.",
-    "explanationEn": "This statement is True. Bayesian Networks provide a mathematically principled way to represent conditional dependencies and reason probabilistically under uncertainty. - This accurately reflects the core principle defined in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
   },
   {
     "id": 299,
@@ -4625,8 +4625,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 1,
-    "explanationAr": "العبارة خاطئة (False). الصواب هو نقيض هذه العبارة لأن The breakthrough of modern Deep Learning was driven primarily by novel mathematical theorems rather than the availability of massive datasets and parallel GPU computing power. لا يتوافق مع الأسس العلمية في Chapter 1: Introduction to AI.",
-    "explanationEn": "This statement is False. The claim that 'The breakthrough of modern Deep Learning was driven primarily by novel mathematical theorems rather than the availability of massive datasets and parallel GPU computing power.' is incorrect according to the standard principles in AIMA (Chapter 1: Introduction to AI)."
+    "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
   },
   {
     "id": 300,
@@ -4639,8 +4639,8 @@ const questions = [
       "False"
     ],
     "correctAnswer": 0,
-    "explanationAr": "العبارة صحيحة (True). مشكلة الملك ميداس في أمان الذكاء الاصطناعي تعني تحقيق الآلة للهدف المحدد لها حرفياً ولكن الهدف صيغ بطريقة غير ملائمة مما يؤدي لعواقب وخيمة غير متوقعة.",
-    "explanationEn": "True. The King Midas problem refers to an agent perfectly optimizing a poorly specified or unintended human objective."
+    "explanationAr": "العبارة صحيحة (True). معضلة الملك ميداس (King Midas problem) تشير إلى الخطر الكامن في تحقيق الآلة للهدف المحدد لها بدقة حرفية مطلقة ولكن الهدف صيغ بطريقة خاطئة أو ناقصة، مسبباً كوارث غير مقصودة.",
+    "explanationEn": "True. The King Midas problem describes the AI safety peril where an agent flawlessly optimizes a human-specified objective that was improperly or incompletely stated."
   }
 ];
 

@@ -167,6 +167,11 @@
     quizChapterBadge: document.getElementById('quiz-chapter-badge'),
     quizCounter: document.getElementById('quiz-counter'),
     quizProgressBar: document.getElementById('quiz-progress-bar'),
+    btnToggleNavigator: document.getElementById('btn-toggle-navigator'),
+    navBtnText: document.getElementById('nav-btn-text'),
+    navDrawer: document.getElementById('question-navigator-drawer'),
+    btnCloseNavigator: document.getElementById('btn-close-navigator'),
+    navGridContainer: document.getElementById('nav-grid-container'),
     qIdTag: document.getElementById('q-id-tag'),
     qTypeBadge: document.getElementById('q-type-badge'),
     qText: document.getElementById('q-text'),
@@ -353,6 +358,14 @@
     // Explanation toggle button
     dom.btnToggleExp.addEventListener('click', toggleExplanationContent);
 
+    // Question navigator buttons
+    if (dom.btnToggleNavigator) {
+      dom.btnToggleNavigator.addEventListener('click', toggleNavigatorDrawer);
+    }
+    if (dom.btnCloseNavigator) {
+      dom.btnCloseNavigator.addEventListener('click', closeNavigatorDrawer);
+    }
+
     // Results view buttons
     dom.btnReviewAnswers.addEventListener('click', () => {
       renderReviewView();
@@ -440,6 +453,7 @@
     };
 
     showView(dom.viewQuiz);
+    closeNavigatorDrawer();
     loadQuestion(0);
   }
 
@@ -634,6 +648,77 @@
 
     const pct = ((index + 1) / total) * 100;
     dom.quizProgressBar.style.width = `${pct}%`;
+
+    renderNavigatorGrid();
+  }
+
+  function toggleNavigatorDrawer() {
+    if (!dom.navDrawer) return;
+    const isVisible = dom.navDrawer.style.display === 'block';
+    if (isVisible) {
+      closeNavigatorDrawer();
+    } else {
+      openNavigatorDrawer();
+    }
+  }
+
+  function openNavigatorDrawer() {
+    if (!dom.navDrawer) return;
+    dom.navDrawer.style.display = 'block';
+    renderNavigatorGrid();
+  }
+
+  function closeNavigatorDrawer() {
+    if (!dom.navDrawer) return;
+    dom.navDrawer.style.display = 'none';
+  }
+
+  function renderNavigatorGrid() {
+    if (!dom.navGridContainer) return;
+    const quiz = state.currentQuiz;
+    const total = quiz.questions.length;
+    const currentIdx = quiz.currentIndex;
+
+    let answeredCount = 0;
+    Object.keys(quiz.userAnswers).forEach((k) => {
+      if (quiz.userAnswers[k] && (quiz.userAnswers[k].isChecked || quiz.userAnswers[k].selected !== undefined)) {
+        answeredCount++;
+      }
+    });
+
+    if (dom.navBtnText) {
+      const label = state.lang === 'ar' ? 'قائمة الأسئلة' : 'Questions';
+      dom.navBtnText.textContent = `${label} (${answeredCount}/${total})`;
+    }
+
+    dom.navGridContainer.innerHTML = '';
+    quiz.questions.forEach((q, idx) => {
+      const btn = document.createElement('button');
+      btn.className = 'nav-q-btn';
+      btn.textContent = idx + 1;
+      btn.type = 'button';
+      btn.title = `Question ${idx + 1} (${q.type === 'mcq' ? 'MCQ' : 'T/F'})`;
+
+      const ans = quiz.userAnswers[idx];
+      if (idx === currentIdx) {
+        btn.classList.add('current');
+      }
+
+      if (ans && ans.isChecked) {
+        btn.classList.add(ans.isCorrect ? 'correct' : 'wrong');
+      } else if (ans && ans.selected !== undefined) {
+        btn.classList.add('answered-unverified');
+      }
+
+      btn.addEventListener('click', () => {
+        loadQuestion(idx);
+        if (window.innerWidth < 768) {
+          closeNavigatorDrawer();
+        }
+      });
+
+      dom.navGridContainer.appendChild(btn);
+    });
   }
 
   function selectOption(optionIndex) {
@@ -651,6 +736,7 @@
 
     // Enable check answer button
     dom.btnCheckAns.disabled = false;
+    renderNavigatorGrid();
   }
 
   function checkCurrentAnswer() {
@@ -685,6 +771,9 @@
 
     // Show explanation box
     dom.explanationBox.classList.add('show');
+
+    // Update navigator grid
+    renderNavigatorGrid();
   }
 
   function optItemHighlight(opt, status) {

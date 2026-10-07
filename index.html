@@ -179,11 +179,37 @@
               <span class="badge badge-primary" id="quiz-mode-badge">وضع جميع الأسئلة</span>
               <span class="badge badge-chapter" id="quiz-chapter-badge">Chapter 2</span>
             </div>
-            <div class="quiz-counter" id="quiz-counter">السؤال 1 من 20</div>
+            <div style="display:flex; align-items:center; gap:0.75rem;">
+              <button class="icon-btn" id="btn-toggle-navigator" title="قائمة الأسئلة / Question Navigator">
+                <span>📑</span>
+                <span id="nav-btn-text">قائمة الأسئلة (1/20)</span>
+              </button>
+              <div class="quiz-counter" id="quiz-counter">السؤال 1 من 20</div>
+            </div>
           </div>
           <!-- Progress bar -->
           <div class="progress-container">
             <div class="progress-bar" id="quiz-progress-bar"></div>
+          </div>
+        </div>
+
+        <!-- Question Navigation Drawer / Palette -->
+        <div class="question-navigator-drawer" id="question-navigator-drawer" style="display: none;">
+          <div class="nav-drawer-header">
+            <div class="nav-drawer-title">
+              <span>📑</span>
+              <span id="nav-drawer-heading">قائمة الأسئلة والتنقل السريع (Question Navigator)</span>
+            </div>
+            <button class="close-btn" id="btn-close-navigator" title="إغلاق">&times;</button>
+          </div>
+          <div class="nav-legend">
+            <span class="legend-item"><span class="legend-dot current"></span> الحالي (Current)</span>
+            <span class="legend-item"><span class="legend-dot correct"></span> صحيحة (Correct)</span>
+            <span class="legend-item"><span class="legend-dot wrong"></span> خاطئة (Wrong)</span>
+            <span class="legend-item"><span class="legend-dot unanswered"></span> لم تُجب (Unanswered)</span>
+          </div>
+          <div class="nav-grid-container" id="nav-grid-container">
+            <!-- Dynamically populated buttons -->
           </div>
         </div>
 
@@ -418,9 +444,8 @@
 
   <!-- Footer -->
   <footer class="app-footer">
-    <div class="container footer-inner">
-      <div>منصة الاختبارات التفاعلية للذكاء الاصطناعي • مبنية بالكامل باستخدام HTML5, CSS3, Vanilla JS</div>
-      <div>نظام Static مستقل • خالي من أي مكتبات أو Backend</div>
+    <div class="container footer-inner" style="justify-content: center;">
+      <div id="footer-text">Artificial Intelligence Question Bank (300Q) • AIMA</div>
     </div>
   </footer>
 

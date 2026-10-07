@@ -216,8 +216,14 @@
         <!-- Question Card -->
         <div class="question-card">
           <div class="question-header">
-            <span class="question-number-tag" id="q-id-tag">Q1</span>
-            <span class="badge" id="q-type-badge">MCQ</span>
+            <div style="display:flex; align-items:center; gap:0.5rem;">
+              <span class="question-number-tag" id="q-id-tag">Q1</span>
+              <span class="badge" id="q-type-badge">MCQ</span>
+            </div>
+            <button class="icon-btn" id="btn-toggle-q-lang" style="font-size:0.8rem; padding:0.25rem 0.65rem;" title="تبديل لغة السؤال / Switch Question Language">
+              <span>🌐</span>
+              <span id="q-lang-label">English</span>
+            </button>
           </div>
 
           <div class="question-text" id="q-text">

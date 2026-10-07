@@ -27,6 +27,7 @@
     bankTypeFilter: 'all',
     theme: localStorage.getItem('ai_quiz_theme') || 'light',
     lang: localStorage.getItem('ai_quiz_lang') || 'ar',
+    questionLangOverride: null,
   };
 
   // Translations dictionary
@@ -174,6 +175,8 @@
     navGridContainer: document.getElementById('nav-grid-container'),
     qIdTag: document.getElementById('q-id-tag'),
     qTypeBadge: document.getElementById('q-type-badge'),
+    btnToggleQLang: document.getElementById('btn-toggle-q-lang'),
+    qLangLabel: document.getElementById('q-lang-label'),
     qText: document.getElementById('q-text'),
     qOptionsContainer: document.getElementById('q-options-container'),
     feedbackBanner: document.getElementById('feedback-banner'),
@@ -284,9 +287,18 @@
       dom.themeLabel.textContent = state.theme === 'dark' ? 'Light' : 'Dark';
     }
 
-    // Refresh active question counter / labels if quiz is running
+    // Reset questionLangOverride
+    state.questionLangOverride = null;
+
+    // Refresh active question counter / views
     if (dom.viewQuiz.classList.contains('active')) {
-      updateQuizTopBar();
+      loadQuestion(state.currentQuiz.currentIndex);
+    }
+    if (dom.viewReview.classList.contains('active')) {
+      renderReviewView();
+    }
+    if (dom.viewBrowser.classList.contains('active')) {
+      renderBankView();
     }
   }
 
@@ -357,6 +369,11 @@
 
     // Explanation toggle button
     dom.btnToggleExp.addEventListener('click', toggleExplanationContent);
+
+    // Question language switch button
+    if (dom.btnToggleQLang) {
+      dom.btnToggleQLang.addEventListener('click', toggleQuestionLanguage);
+    }
 
     // Question navigator buttons
     if (dom.btnToggleNavigator) {
@@ -548,6 +565,12 @@
   // =========================================================================
   // Question Rendering & Navigation
   // =========================================================================
+  function toggleQuestionLanguage() {
+    const activeQLang = state.questionLangOverride || state.lang;
+    state.questionLangOverride = activeQLang === 'ar' ? 'en' : 'ar';
+    loadQuestion(state.currentQuiz.currentIndex);
+  }
+
   function loadQuestion(index) {
     const quiz = state.currentQuiz;
     if (index < 0 || index >= quiz.questions.length) return;
@@ -558,11 +581,27 @@
 
     updateQuizTopBar();
 
+    // Determine current effective question language:
+    const activeQLang = state.questionLangOverride || state.lang;
+    const isAr = activeQLang === 'ar';
+
     // Set question meta tags
     dom.qIdTag.textContent = `Q${q.id}`;
-    dom.qTypeBadge.textContent = q.type === 'mcq' ? 'MCQ' : 'True / False';
+    dom.qTypeBadge.textContent = q.type === 'mcq' ? 'MCQ' : (isAr ? 'صح / خطأ' : 'True / False');
     dom.qTypeBadge.className = `badge ${q.type === 'mcq' ? 'badge-primary' : 'badge-chapter'}`;
-    dom.qText.textContent = q.question;
+
+    // Language toggle button on question card
+    if (dom.qLangLabel) {
+      dom.qLangLabel.textContent = isAr ? 'English (الأصل)' : 'العربية (مترجم)';
+      if (dom.btnToggleQLang) {
+        dom.btnToggleQLang.title = isAr ? 'عرض نص السؤال الأصلي بالإنجليزية' : 'عرض ترجمة السؤال بالعربية';
+      }
+    }
+
+    // Question text & formatting
+    const qDisplay = (isAr && q.questionAr) ? q.questionAr : q.question;
+    dom.qText.textContent = qDisplay;
+    dom.qText.classList.toggle('is-arabic', isAr);
 
     // Reset Explanation box
     dom.explanationBox.classList.remove('show');
@@ -581,16 +620,25 @@
 
     // Render Options
     dom.qOptionsContainer.innerHTML = '';
-    const optionLetters = ['A', 'B', 'C', 'D'];
+    dom.qOptionsContainer.classList.toggle('is-arabic', isAr);
 
-    q.options.forEach((optText, optIdx) => {
+    const optionLetters = ['A', 'B', 'C', 'D'];
+    const optList = (isAr && Array.isArray(q.optionsAr) && q.optionsAr.length === q.options.length)
+      ? q.optionsAr
+      : q.options;
+
+    optList.forEach((optText, optIdx) => {
       const optItem = document.createElement('div');
       optItem.className = 'option-item';
       optItem.setAttribute('data-idx', optIdx);
 
       const prefix = document.createElement('div');
       prefix.className = 'option-prefix';
-      prefix.textContent = q.type === 'mcq' ? optionLetters[optIdx] : (optIdx === 0 ? 'T' : 'F');
+      if (q.type === 'mcq') {
+        prefix.textContent = optionLetters[optIdx];
+      } else {
+        prefix.textContent = isAr ? (optIdx === 0 ? '✓' : '✗') : (optIdx === 0 ? 'T' : 'F');
+      }
 
       const label = document.createElement('div');
       label.className = 'option-label';
@@ -784,25 +832,39 @@
   function showFeedbackBanner(isCorrect, userChoiceIdx, correctChoiceIdx) {
     const quiz = state.currentQuiz;
     const q = quiz.questions[quiz.currentIndex];
+    const activeQLang = state.questionLangOverride || state.lang;
+    const isAr = activeQLang === 'ar';
+    const optList = (isAr && Array.isArray(q.optionsAr) && q.optionsAr.length === q.options.length)
+      ? q.optionsAr
+      : q.options;
     const optionLetters = ['A', 'B', 'C', 'D'];
 
     dom.feedbackBanner.classList.remove('correct', 'wrong');
     dom.feedbackBanner.classList.add('show', isCorrect ? 'correct' : 'wrong');
     dom.feedbackBanner.style.display = 'block';
 
+    const correctChoiceText = optList[correctChoiceIdx];
+    const correctLetter = q.type === 'mcq'
+      ? optionLetters[correctChoiceIdx]
+      : (isAr ? (correctChoiceIdx === 0 ? 'صواب' : 'خطأ') : (correctChoiceIdx === 0 ? 'True' : 'False'));
+
     if (isCorrect) {
       dom.feedbackHeader.textContent = i18n[state.lang].correct_msg;
       dom.feedbackDetails.innerHTML = `
-        <div>${i18n[state.lang].correct_answer} <strong>${q.options[correctChoiceIdx]}</strong></div>
+        <div style="direction:${isAr ? 'rtl' : 'ltr'};">${i18n[state.lang].correct_answer} <strong>${correctLetter}) ${correctChoiceText}</strong></div>
       `;
     } else {
       dom.feedbackHeader.textContent = i18n[state.lang].wrong_msg;
-      const userLetter = q.type === 'mcq' ? optionLetters[userChoiceIdx] : (userChoiceIdx === 0 ? 'True' : 'False');
-      const correctLetter = q.type === 'mcq' ? optionLetters[correctChoiceIdx] : (correctChoiceIdx === 0 ? 'True' : 'False');
+      const userChoiceText = userChoiceIdx !== undefined && userChoiceIdx >= 0
+        ? optList[userChoiceIdx]
+        : (isAr ? 'لم تختر إجابة' : 'No option selected');
+      const userLetter = userChoiceIdx !== undefined && userChoiceIdx >= 0
+        ? (q.type === 'mcq' ? optionLetters[userChoiceIdx] : (isAr ? (userChoiceIdx === 0 ? 'صواب' : 'خطأ') : (userChoiceIdx === 0 ? 'True' : 'False')))
+        : '-';
 
       dom.feedbackDetails.innerHTML = `
-        <div>${i18n[state.lang].your_answer} <span style="text-decoration:line-through; color:var(--danger);">${userLetter}) ${q.options[userChoiceIdx]}</span></div>
-        <div>${i18n[state.lang].correct_answer} <span style="font-weight:700; color:var(--success);">${correctLetter}) ${q.options[correctChoiceIdx]}</span></div>
+        <div style="direction:${isAr ? 'rtl' : 'ltr'};">${i18n[state.lang].your_answer} <span style="text-decoration:line-through; color:var(--danger);">${userLetter}) ${userChoiceText}</span></div>
+        <div style="direction:${isAr ? 'rtl' : 'ltr'};">${i18n[state.lang].correct_answer} <span style="font-weight:700; color:var(--success);">${correctLetter}) ${correctChoiceText}</span></div>
       `;
     }
   }
@@ -924,6 +986,7 @@
 
     const filter = state.reviewFilter;
     const query = state.reviewSearchQuery;
+    const isAr = state.lang === 'ar';
 
     let itemsToRender = [];
 
@@ -936,9 +999,11 @@
 
       if (query) {
         const textMatch = q.question.toLowerCase().includes(query) ||
+          (q.questionAr && q.questionAr.toLowerCase().includes(query)) ||
           q.explanationAr.toLowerCase().includes(query) ||
           q.explanationEn.toLowerCase().includes(query) ||
-          q.options.some((o) => o.toLowerCase().includes(query));
+          q.options.some((o) => o.toLowerCase().includes(query)) ||
+          (q.optionsAr && q.optionsAr.some((o) => o.toLowerCase().includes(query)));
         if (!textMatch) return;
       }
 
@@ -948,7 +1013,7 @@
     if (itemsToRender.length === 0) {
       dom.reviewCardsContainer.innerHTML = `
         <div style="text-align:center; padding:3rem; color:var(--text-muted); font-size:1.1rem;">
-          ${state.lang === 'ar' ? 'لا توجد أسئلة مطابقة للبحث أو التصفية الحالية.' : 'No questions matching current filter or search.'}
+          ${isAr ? 'لا توجد أسئلة مطابقة للبحث أو التصفية الحالية.' : 'No questions matching current filter or search.'}
         </div>
       `;
       return;
@@ -960,10 +1025,18 @@
       const card = document.createElement('div');
       card.className = `review-item-card ${isCorrect ? 'is-correct' : 'is-wrong'}`;
 
-      const userChoiceText = userAns.selected >= 0 ? q.options[userAns.selected] : (state.lang === 'ar' ? 'لم تتم الإجابة' : 'Unanswered');
-      const userChoiceLetter = userAns.selected >= 0 ? (q.type === 'mcq' ? optionLetters[userAns.selected] : (userAns.selected === 0 ? 'True' : 'False')) : '-';
-      const correctChoiceText = q.options[q.correctAnswer];
-      const correctChoiceLetter = q.type === 'mcq' ? optionLetters[q.correctAnswer] : (q.correctAnswer === 0 ? 'True' : 'False');
+      const optList = (isAr && q.optionsAr) ? q.optionsAr : q.options;
+      const qPrimary = (isAr && q.questionAr) ? q.questionAr : q.question;
+      const qSecondary = (isAr && q.questionAr) ? q.question : (q.questionAr || '');
+
+      const userChoiceText = userAns.selected >= 0 ? optList[userAns.selected] : (isAr ? 'لم تتم الإجابة' : 'Unanswered');
+      const userChoiceLetter = userAns.selected >= 0
+        ? (q.type === 'mcq' ? optionLetters[userAns.selected] : (userAns.selected === 0 ? (isAr ? 'صواب' : 'True') : (isAr ? 'خطأ' : 'False')))
+        : '-';
+      const correctChoiceText = optList[q.correctAnswer];
+      const correctChoiceLetter = q.type === 'mcq'
+        ? optionLetters[q.correctAnswer]
+        : (q.correctAnswer === 0 ? (isAr ? 'صواب' : 'True') : (isAr ? 'خطأ' : 'False'));
 
       card.innerHTML = `
         <div class="review-card-top">
@@ -972,13 +1045,14 @@
             <span class="badge badge-chapter">${q.chapter}</span>
           </div>
           <span class="review-status-badge ${isCorrect ? 'correct' : 'wrong'}">
-            ${isCorrect ? (state.lang === 'ar' ? '✓ إجابة صحيحة' : '✓ Correct') : (state.lang === 'ar' ? '✗ إجابة خاطئة' : '✗ Wrong')}
+            ${isCorrect ? (isAr ? '✓ إجابة صحيحة' : '✓ Correct') : (isAr ? '✗ إجابة خاطئة' : '✗ Wrong')}
           </span>
         </div>
 
-        <div class="review-q-text">${q.question}</div>
+        <div class="review-q-text ${isAr ? 'is-arabic' : ''}">${qPrimary}</div>
+        ${qSecondary ? `<div style="font-size:0.88rem; color:var(--text-muted); margin-top:-0.75rem; margin-bottom:1.25rem; direction:${isAr ? 'ltr' : 'rtl'}; font-style:italic;">${qSecondary}</div>` : ''}
 
-        <div class="review-answers-box">
+        <div class="review-answers-box ${isAr ? 'is-arabic' : ''}">
           <div><strong>${i18n[state.lang].your_answer}</strong> <span style="color:${isCorrect ? 'var(--success)' : 'var(--danger)'}; font-weight:700;">${userChoiceLetter}) ${userChoiceText}</span></div>
           <div><strong>${i18n[state.lang].correct_answer}</strong> <span style="color:var(--success); font-weight:700;">${correctChoiceLetter}) ${correctChoiceText}</span></div>
         </div>
@@ -1007,15 +1081,18 @@
     const query = state.bankSearchQuery;
     const chapFilter = state.bankChapterFilter;
     const typeFilter = state.bankTypeFilter;
+    const isAr = state.lang === 'ar';
 
     let filtered = state.allQuestions.filter((q) => {
       if (chapFilter !== 'all' && q.chapterId !== parseInt(chapFilter, 10)) return false;
       if (typeFilter !== 'all' && q.type !== typeFilter) return false;
       if (query) {
         const matches = q.question.toLowerCase().includes(query) ||
+          (q.questionAr && q.questionAr.toLowerCase().includes(query)) ||
           q.explanationAr.toLowerCase().includes(query) ||
           q.explanationEn.toLowerCase().includes(query) ||
-          q.options.some((o) => o.toLowerCase().includes(query));
+          q.options.some((o) => o.toLowerCase().includes(query)) ||
+          (q.optionsAr && q.optionsAr.some((o) => o.toLowerCase().includes(query)));
         if (!matches) return false;
       }
       return true;
@@ -1024,7 +1101,7 @@
     if (filtered.length === 0) {
       dom.bankCardsContainer.innerHTML = `
         <div style="text-align:center; padding:3rem; color:var(--text-muted); font-size:1.1rem;">
-          ${state.lang === 'ar' ? 'لم يتم العثور على أي أسئلة مطابقة للبحث.' : 'No questions found matching your search.'}
+          ${isAr ? 'لم يتم العثور على أي أسئلة مطابقة للبحث.' : 'No questions found matching your search.'}
         </div>
       `;
       return;
@@ -1036,11 +1113,17 @@
       const card = document.createElement('div');
       card.className = 'review-item-card is-correct';
 
-      const optionsHtml = q.options.map((opt, i) => {
+      const optList = (isAr && q.optionsAr) ? q.optionsAr : q.options;
+      const qPrimary = (isAr && q.questionAr) ? q.questionAr : q.question;
+      const qSecondary = (isAr && q.questionAr) ? q.question : (q.questionAr || '');
+
+      const optionsHtml = optList.map((opt, i) => {
         const isAnswer = i === q.correctAnswer;
-        const letter = q.type === 'mcq' ? optionLetters[i] : (i === 0 ? 'True' : 'False');
+        const letter = q.type === 'mcq'
+          ? optionLetters[i]
+          : (i === 0 ? (isAr ? 'صواب' : 'True') : (isAr ? 'خطأ' : 'False'));
         return `
-          <div style="padding:0.4rem 0.6rem; border-radius:6px; background:${isAnswer ? 'var(--success-bg)' : 'transparent'}; color:${isAnswer ? 'var(--success-text)' : 'inherit'}; font-weight:${isAnswer ? '700' : 'normal'};">
+          <div style="padding:0.4rem 0.6rem; border-radius:6px; background:${isAnswer ? 'var(--success-bg)' : 'transparent'}; color:${isAnswer ? 'var(--success-text)' : 'inherit'}; font-weight:${isAnswer ? '700' : 'normal'}; direction:${isAr ? 'rtl' : 'ltr'}; text-align:${isAr ? 'right' : 'left'};">
             ${letter}) ${opt} ${isAnswer ? '✓' : ''}
           </div>
         `;
@@ -1051,11 +1134,12 @@
           <div style="display:flex; align-items:center; gap:0.5rem;">
             <span class="question-number-tag">Q${q.id}</span>
             <span class="badge badge-chapter">${q.chapter}</span>
-            <span class="badge ${q.type === 'mcq' ? 'badge-primary' : 'badge-chapter'}">${q.type === 'mcq' ? 'MCQ' : 'True/False'}</span>
+            <span class="badge ${q.type === 'mcq' ? 'badge-primary' : 'badge-chapter'}">${q.type === 'mcq' ? 'MCQ' : (isAr ? 'صح / خطأ' : 'True / False')}</span>
           </div>
         </div>
 
-        <div class="review-q-text">${q.question}</div>
+        <div class="review-q-text ${isAr ? 'is-arabic' : ''}">${qPrimary}</div>
+        ${qSecondary ? `<div style="font-size:0.88rem; color:var(--text-muted); margin-top:-0.75rem; margin-bottom:1.25rem; direction:${isAr ? 'ltr' : 'rtl'}; font-style:italic;">${qSecondary}</div>` : ''}
 
         <div style="background:var(--bg-tertiary); border-radius:8px; padding:0.75rem 1rem; margin-bottom:1rem; display:flex; flex-direction:column; gap:0.25rem;">
           ${optionsHtml}

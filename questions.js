@@ -16,7 +16,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الوكيل (Agent) هو المفهوم الجوهري في الذكاء الاصطناعي الذي يُطلق على أي كيان يتفاعل مع بيئته في دورة مغلقة: يستقبل المدخلات عبر الحواس (Sensors) ويؤثر فيها بالأفعال عبر المشغلات (Actuators).",
-    "explanationEn": "An Agent is formally defined as any entity that perceives its environment through sensors and acts upon that environment through actuators."
+    "explanationEn": "An Agent is formally defined as any entity that perceives its environment through sensors and acts upon that environment through actuators.",
+    "questionAr": "في الذكاء الاصطناعي، يتم تعريف الكيان الذي يدرك بيئته من خلال أجهزة الاستشعار ويعمل على تلك البيئة من خلال المحركات بشكل أساسي على أنه أ/أن:",
+    "optionsAr": [
+      "جهاز التحكم",
+      "الوكيل",
+      "نموذج",
+      "برنامج"
+    ]
   },
   {
     "id": 2,
@@ -32,7 +39,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "المُدرَك الحسي (Percept) يعبر تحديداً عن المدخل الحسي اللحظي للوكيل في نقطة زمنية معينة، بينما سلسلة المُدركات تمثل التاريخ التراكمي لهذه المدخلات.",
-    "explanationEn": "A Percept specifically refers to the agent's perceptual input at any given instant, distinct from the sequence of past inputs."
+    "explanationEn": "A Percept specifically refers to the agent's perceptual input at any given instant, distinct from the sequence of past inputs.",
+    "questionAr": "أي من المصطلحات التالية يشير على وجه التحديد إلى المدخلات الحسية للعامل في أي لحظة زمنية معينة؟",
+    "optionsAr": [
+      "التسلسل",
+      "العمل",
+      "الإدراك",
+      "ولاية"
+    ]
   },
   {
     "id": 3,
@@ -48,7 +62,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "سلسلة المُدركات (Percept Sequence) هي السجل التاريخي الكامل والشامل لكل ما التقطه الوكيل بحواسه منذ بداية تشغيله وحتى اللحظة الراهنة.",
-    "explanationEn": "The Percept Sequence represents the complete chronological record of everything the agent has ever perceived over its lifetime."
+    "explanationEn": "The Percept Sequence represents the complete chronological record of everything the agent has ever perceived over its lifetime.",
+    "questionAr": "يتم تعريف السجل التاريخي الكامل لكل ما أدركه الوكيل خلال فترة تشغيله بالكامل على النحو التالي:",
+    "optionsAr": [
+      "مساحة الدولة",
+      "تسلسل الإدراك",
+      "تاريخ العمل",
+      "قاعدة المعرفة"
+    ]
   },
   {
     "id": 4,
@@ -64,7 +85,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "دالة الوكيل (Agent Function) هي صياغة رياضية مجردة تحدد الفعل الذي يجب اتخاذه استجابة لأي سلسلة مُدركات معطاة.",
-    "explanationEn": "The Agent Function is the abstract mathematical mapping that dictates the selected action for any given sequence of percepts."
+    "explanationEn": "The Agent Function is the abstract mathematical mapping that dictates the selected action for any given sequence of percepts.",
+    "questionAr": "رياضيًا، يُعرف التعيين المجرد الذي يحدد الإجراء المحدد للوكيل لكل تسلسل إدراكي محتمل باسم:",
+    "optionsAr": [
+      "نموذج التحول",
+      "وظيفة الاستشعار",
+      "وظيفة الوكيل",
+      "وظيفة المنفعة"
+    ]
   },
   {
     "id": 5,
@@ -80,7 +108,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "دالة الوكيل تُكتب رياضياً كـ f: P* -> A؛ حيث P* تعني مجموعة كل السلاسل الممكنة من المُدركات (التاريخ السابق بأي طول)، و A هي مجموعة الأفعال المتاحة.",
-    "explanationEn": "Mathematically, the agent function maps sequences of percepts (P*, where * is the Kleene star representing history of any length) to actions (A): f: P* -> A."
+    "explanationEn": "Mathematically, the agent function maps sequences of percepts (P*, where * is the Kleene star representing history of any length) to actions (A): f: P* -> A.",
+    "questionAr": "إذا كانت P هي مجموعة جميع التصورات الممكنة و A هي مجموعة جميع الإجراءات الممكنة، فما هو المجال الرياضي الرسمي ومدى الدالة الوكيل f؟",
+    "optionsAr": [
+      "و: ف -> أ",
+      "و: ف* -> أ",
+      "و: أ -> ف*",
+      "و: ف × أ -> ص"
+    ]
   },
   {
     "id": 6,
@@ -96,7 +131,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "معادلة الوكيل هي (Agent = Architecture + Program)؛ البنية (Architecture) توفر العتاد المادي والمستشعرات والمشغلات، بينما البرنامج ينفذ الخوارزمية التي تحسب دالة الوكيل.",
-    "explanationEn": "In the formula Agent = Architecture + Program, the Architecture supplies the physical hardware, computing machinery, sensors, and actuators."
+    "explanationEn": "In the formula Agent = Architecture + Program, the Architecture supplies the physical hardware, computing machinery, sensors, and actuators.",
+    "questionAr": "يتكون الوكيل الذكي فعليًا من مكونين أساسيين وفقًا للمعادلة: الوكيل = الهندسة المعمارية + البرنامج. ماذا تقدم الهندسة المعمارية؟",
+    "optionsAr": [
+      "قواعد التصرف الشرطي",
+      "أجهزة الحوسبة وأجهزة الاستشعار والمحركات",
+      "وظيفة التقييم الإرشادي",
+      "مقياس الأداء الموضوعي"
+    ]
   },
   {
     "id": 7,
@@ -112,7 +154,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الفرق الجوهري هو أن دالة الوكيل مفهوم رياضي وصفي مجرد، في حين أن برنامج الوكيل هو الكود البرمجي الملموس الذي يعمل على عتاد الحاسوب وينفذ هذه الدالة عملياً.",
-    "explanationEn": "The agent function is an abstract mathematical concept mapping percept sequences to actions, whereas the agent program is the concrete software implementation running on real hardware."
+    "explanationEn": "The agent function is an abstract mathematical concept mapping percept sequences to actions, whereas the agent program is the concrete software implementation running on real hardware.",
+    "questionAr": "ما هو الفرق التشغيلي الرئيسي بين وظيفة الوكيل وبرنامج الوكيل؟",
+    "optionsAr": [
+      "تأخذ الدالة الإدراك الحالي، بينما يأخذ البرنامج تاريخ الإدراك",
+      "الدالة هي مفهوم رياضي مجرد، بينما يعمل البرنامج على أجهزة مادية",
+      "يعتمد البرنامج دائمًا على الجدول، بينما تعتمد الوظيفة على القواعد",
+      "لا يوجد تمييز. يشير كلا المصطلحين إلى نفس رمز البرنامج"
+    ]
   },
   {
     "id": 8,
@@ -128,7 +177,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "وكيل جدول البحث (Table-driven agent) يحتاج في كل خطوة إلى سلسلة المُدركات التراكمية كاملة للبحث في الجدول عن الفعل المطابق لتلك السلسلة المحددة.",
-    "explanationEn": "A table-driven agent program requires the entire accumulated percept sequence as its lookup key to find the corresponding action."
+    "explanationEn": "A table-driven agent program requires the entire accumulated percept sequence as its lookup key to find the corresponding action.",
+    "questionAr": "في الوكيل المبني على الجدول، ما هي المدخلات الأساسية التي يأخذها البرنامج في كل استدعاء لإجراء بحث الجدول الخاص به؟",
+    "optionsAr": [
+      "الإدراك الحالي فقط",
+      "الحالة الحالية فقط",
+      "كامل تسلسل الإدراك المتراكم",
+      "المكافأة المتوقعة القادمة"
+    ]
   },
   {
     "id": 9,
@@ -144,7 +200,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "نهج جدول البحث غير عملي واستحالة تطبيقه في الواقع؛ لأن حجم الجدول يتضاعف أسياً مع زيادة طول السلسلة وعدد المُدركات الممكنة، مما يؤدي لانفجار هائل في متطلبات الذاكرة.",
-    "explanationEn": "Table-driven agents fail because the lookup table size grows exponentially with the percept space and lifetime: sum of |P|^t, requiring astronomical memory."
+    "explanationEn": "Table-driven agents fail because the lookup table size grows exponentially with the percept space and lifetime: sum of |P|^t, requiring astronomical memory.",
+    "questionAr": "لماذا يعتبر النهج القائم على الجدول لبناء عملاء أذكياء غير عملي بشكل أساسي لمهام العالم الحقيقي المعقدة؟",
+    "optionsAr": [
+      "لا يمكنه تنفيذ وظائف الوكيل الحتمية",
+      "ينمو حجم الجدول بشكل كبير مع عمر الوكيل وحجم المجموعة المدركة",
+      "يتطلب البحث عن الجدول خوارزميات متكررة معقدة",
+      "لا تستطيع بنيات الأجهزة تنفيذ جداول البحث"
+    ]
   },
   {
     "id": 10,
@@ -160,7 +223,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "في بيئة المكنسة ذات الخليتين، توجد حالتان لموقع الوكيل (A أو B)، وكل خلية قد تكون نظيفة أو متسخة (2 × 2 = 4 احتمالات للأوساخ)، وبالتالي إجمالي الحالات = 2 × 4 = 8 حالات ممكنة.",
-    "explanationEn": "In a two-cell vacuum world, there are 2 possible agent locations times 2^2 = 4 possible dirt configurations, yielding 2 * 4 = 8 distinct physical states."
+    "explanationEn": "In a two-cell vacuum world, there are 2 possible agent locations times 2^2 = 4 possible dirt configurations, yielding 2 * 4 = 8 distinct physical states.",
+    "questionAr": "في عالم المكنسة الكهربائية القياسي المكون من خليتين (الموقعان A وB)، ما عدد الحالات الفيزيائية الذرية المحتملة الموجودة في البيئة؟",
+    "optionsAr": [
+      "4 ولايات",
+      "8 ولايات",
+      "16 ولاية",
+      "2 ولاية"
+    ]
   },
   {
     "id": 11,
@@ -176,7 +246,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "إذا كان لدينا 8 حالات مختلفة للبيئة وفعلين متاحين للوكيل، فإن عدد دوال الوكيل المحتملة الممكن بناؤها يساوي 2 أس 8 = 256 دالة وكيل محتملة.",
-    "explanationEn": "With 8 possible states and 2 possible actions, the number of distinct mappings from states to actions is 2^8 = 256 possible functions."
+    "explanationEn": "With 8 possible states and 2 possible actions, the number of distinct mappings from states to actions is 2^8 = 256 possible functions.",
+    "questionAr": "بالنسبة لعالم المكنسة الكهربائية الذي يتكون من عدد n من الخلايا المتميزة، حيث يمكن أن تكون كل خلية بشكل مستقل إما نظيفة أو متسخة، يتم إعطاء العدد الإجمالي للحالات المادية بواسطة:",
+    "optionsAr": [
+      "2 ^ ن",
+      "ن * 2 ^ ن",
+      "ن^2",
+      "(ن!)^2"
+    ]
   },
   {
     "id": 12,
@@ -192,7 +269,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "في نظرية التحكم (Control Theory)، يُعرف النظام مغلق الحلقة الذي يضبط متغيراً نحو نقطة مرجعية دون تدخل بشري باسم 'المتحكم' (Controller).",
-    "explanationEn": "In control theory, a closed-loop system regulating a process variable to a set point without manual human intervention is known as a Controller."
+    "explanationEn": "In control theory, a closed-loop system regulating a process variable to a set point without manual human intervention is known as a Controller.",
+    "questionAr": "في مجال نظرية التحكم، يُعرف نظام الحلقة المغلقة الذي ينظم متغير العملية إلى نقطة محددة دون تدخل بشري باسم:",
+    "optionsAr": [
+      "جهاز التحكم",
+      "محول",
+      "سوفت بوت",
+      "مجموعة أجهزة الاستشعار"
+    ]
   },
   {
     "id": 13,
@@ -208,7 +292,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "الوكيل البرمجي الخالص الذي ينشط داخل بيئة برمجية وشبكات (مثل زواحف الويب أو برامج التداول المالي) يُصطلح عليه بـ Softbot (Software Robot).",
-    "explanationEn": "An agent that exists entirely in software environments (like a web crawler or algorithmic trading bot) is called a Softbot."
+    "explanationEn": "An agent that exists entirely in software environments (like a web crawler or algorithmic trading bot) is called a Softbot.",
+    "questionAr": "يُشار عادةً إلى الوكيل الموجود فقط في بيئة برمجية (مثل متتبع الويب الآلي أو برنامج التداول عبر الإنترنت) باسم:",
+    "optionsAr": [
+      "روبوت",
+      "سايبورغ",
+      "سوفت بوت",
+      "محول"
+    ]
   },
   {
     "id": 14,
@@ -224,7 +315,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "لحساب حجم جدول البحث لوكيل يعمل لزمن T مع مجموعة مُدركات |P|، نجمع جميع السلاسل ذات الأطوال من 1 إلى T، وهو المجموع التراكمي لـ |P|^t من t=1 إلى T.",
-    "explanationEn": "The complete lookup table must index all possible percept sequences of lengths 1 through T, which sums to Σ(|P|^t) for t=1..T."
+    "explanationEn": "The complete lookup table must index all possible percept sequences of lengths 1 through T, which sums to Σ(|P|^t) for t=1..T.",
+    "questionAr": "إذا كان الوكيل يعمل لمدى الحياة بخطوات زمنية T مع مجموعة من التصورات المحتملة |P|، فكم عدد الإدخالات الإجمالية التي سيحتويها جدول البحث الكامل؟",
+    "optionsAr": [
+      "|ف| *ت",
+      "المجموع من t=1 إلى T لـ |P|^t",
+      "ت^|ف|",
+      "|ف|!"
+    ]
   },
   {
     "id": 15,
@@ -240,7 +338,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "في النموذج الكلاسيكي لمكنسة الفاكيوم، الأفعال الأساسية المتاحة هي: التحرك يساراً (Left)، يميناً (Right)، شفط الأوساخ (Suck)، أو عدم فعل شيء (NoOp).",
-    "explanationEn": "The standard actions available in the basic two-location vacuum-cleaner world are Left, Right, Suck, and NoOp (No Operation)."
+    "explanationEn": "The standard actions available in the basic two-location vacuum-cleaner world are Left, Right, Suck, and NoOp (No Operation).",
+    "questionAr": "في أبسط نموذج للمكنسة الكهربائية المكونة من خليتين والموصوف في الفصل الثاني من AIMA، ما هي الإجراءات الأساسية المتاحة للوكيل؟",
+    "optionsAr": [
+      "للأمام، للخلف، لليسار، لليمين",
+      "يسار، يمين، مص، NoOp",
+      "تنظيف، تحرك، نوم، توقف",
+      "بحث، مسح، اختيار، إسقاط"
+    ]
   },
   {
     "id": 16,
@@ -256,7 +361,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "مذهب العواقبية (Consequentialism) هو الأساس الفلسفي للذكاء الاصطناعي، حيث يُقاس السلوك العقلاني بنتيجة الفعل وعواقبه على البيئة وليس بنية الفعل أو طبيعته المجردة.",
-    "explanationEn": "Consequentialism evaluates the rationality of an agent's behavior purely based on its consequences—the desirability of the environment states achieved."
+    "explanationEn": "Consequentialism evaluates the rationality of an agent's behavior purely based on its consequences—the desirability of the environment states achieved.",
+    "questionAr": "يُطلق على النهج الفلسفي المعتمد في الذكاء الاصطناعي والذي يقيم جودة أو عقلانية سلوك العميل بشكل صارم من خلال نتائجه:",
+    "optionsAr": [
+      "أخلاق",
+      "التبعية",
+      "العقلانية",
+      "ثنائية"
+    ]
   },
   {
     "id": 17,
@@ -272,7 +384,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "مقياس الأداء (Performance Measure) هو معيار عددي موضوعي يضعه المصمم الخارجي لتقييم مدى نجاح الوكيل في تحقيق الأهداف المرغوبة في البيئة.",
-    "explanationEn": "The Performance Measure is an objective numerical criterion established by the designer to quantify an agent's success in its environment."
+    "explanationEn": "The Performance Measure is an objective numerical criterion established by the designer to quantify an agent's success in its environment.",
+    "questionAr": "المعيار العددي الموضوعي الذي يستخدمه المصمم الخارجي لتقييم نجاح سلوك الوكيل في البيئة هو:",
+    "optionsAr": [
+      "برنامج الوكيل",
+      "مقياس الأداء",
+      "نموذج الحساس",
+      "تاريخ الإدراك"
+    ]
   },
   {
     "id": 18,
@@ -288,7 +407,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "مكافأة الوكيل على كمية الأوساخ المشفوطة غير صائبة؛ لأن الوكيل العقلاني سيتعلم تفريغ الأوساخ وإعادة شفطها تكراراً لتعظيم نقاطه بدلاً من إبقاء الأرض نظيفة.",
-    "explanationEn": "Rewarding cleaning actions creates a loophole: a rational agent could clean dirt, dump it back out, and clean it again indefinitely to maximize score without keeping the room clean."
+    "explanationEn": "Rewarding cleaning actions creates a loophole: a rational agent could clean dirt, dump it back out, and clean it again indefinitely to maximize score without keeping the room clean.",
+    "questionAr": "لماذا يعتبر بشكل عام تصميمًا سيئًا لقياس أداء المكنسة الكهربائية من خلال كمية الأوساخ التي تقوم بكنسها أثناء نوبة العمل؟",
+    "optionsAr": [
+      "لا يستطيع العامل إحصاء ذرات الأوساخ بدقة",
+      "يمكن للعامل العقلاني تعظيم النتيجة عن طريق رمي الأوساخ بشكل متكرر وتنظيفها مرة أخرى",
+      "أجهزة استشعار الأوساخ صاخبة جدًا بحيث لا توفر ردود فعل موضوعية",
+      "يستهلك مص الأوساخ طاقة كهربائية زائدة"
+    ]
   },
   {
     "id": 19,
@@ -304,7 +430,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "القاعدة الذهبية في تصميم مقاييس الأداء هي تصميمها وفقاً للحالة المرغوبة للبيئة (مثلاً أن تكون الغرفة نظيفة باستمرار) وليس وفقاً لطريقة تصرف الوكيل التي نفترضها.",
-    "explanationEn": "Performance measures should be designed according to the desired state of the environment, not according to how the designer thinks the agent ought to behave."
+    "explanationEn": "Performance measures should be designed according to the desired state of the environment, not according to how the designer thinks the agent ought to behave.",
+    "questionAr": "ما هي القاعدة العامة الموصى بها لتصميم مقاييس الأداء لأنظمة الذكاء الاصطناعي؟",
+    "optionsAr": [
+      "قم بتصميمها وفقًا للطريقة التي تعتقد أنه يجب أن يتصرف بها الوكيل",
+      "تصميمها حسب الحالة البيئية المرغوبة",
+      "تعظيم عدد الإجراءات التي يتم تنفيذها في الثانية",
+      "معاقبة الوكيل كلما زار دولة سبق رؤيتها"
+    ]
   },
   {
     "id": 20,
@@ -320,7 +453,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "عقلانية الوكيل تعتمد على 4 عوامل: مقياس الأداء، المعرفة المسبقة بالبيئة، سلسلة المُدركات المكتسبة، والأفعال التي يستطيع الوكيل تنفيذها.",
-    "explanationEn": "Rationality depends on four factors: (1) The performance measure, (2) Prior knowledge of the environment, (3) The percept sequence, and (4) The agent's available actions."
+    "explanationEn": "Rationality depends on four factors: (1) The performance measure, (2) Prior knowledge of the environment, (3) The percept sequence, and (4) The agent's available actions.",
+    "questionAr": "وفقًا لراسل ونورفيج، تعتمد عقلانية الفاعل في أي وقت على كم عدد العوامل الأساسية؟",
+    "optionsAr": [
+      "عاملين",
+      "ثلاثة عوامل",
+      "أربعة عوامل",
+      "ستة عوامل"
+    ]
   },
   {
     "id": 21,
@@ -336,7 +476,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "المعرفة المطلقة بالحالة المستقبلية الحقيقية (Omniscience) ليست من محددات العقلانية؛ فالعقلانية تقوم على تعظيم الأداء المتوقع بناءً على ما يعرفه الوكيل، ولا تشترط معرفة الغيب.",
-    "explanationEn": "Omniscience (knowing actual future outcomes) is NOT a factor of rationality. Rationality is about expected success given available information."
+    "explanationEn": "Omniscience (knowing actual future outcomes) is NOT a factor of rationality. Rationality is about expected success given available information.",
+    "questionAr": "أي مما يلي ليس أحد العوامل الأربعة التي تحدد عقلانية الوكيل في أي وقت معين؟",
+    "optionsAr": [
+      "مقياس الأداء الخارجي",
+      "معرفة الوكيل المسبقة بالبيئة",
+      "تصورات الوكيل المستقبلية التي لم تحدث بعد",
+      "تسلسل إدراك الوكيل حتى الآن"
+    ]
   },
   {
     "id": 22,
@@ -352,7 +499,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العقلانية تتعلق بالنجاح المتوقع بناءً على الأدلة المتاحة، بينما الكمال (Perfection) يتطلب النجاح الفعلي المطلق، وهو غير واقعي في البيئات غير المتوقعة.",
-    "explanationEn": "Rationality maximizes expected performance, whereas perfection requires maximizing actual performance (which is impossible without omniscience in uncertain worlds)."
+    "explanationEn": "Rationality maximizes expected performance, whereas perfection requires maximizing actual performance (which is impossible without omniscience in uncertain worlds).",
+    "questionAr": "الفاعل الذي يعرف النتيجة الفعلية لأفعاله ويستطيع أن يتصرف ببصيرة معصومة يسمى:",
+    "optionsAr": [
+      "عقلاني",
+      "كلي العلم",
+      "مستقلة",
+      "على أساس النموذج"
+    ]
   },
   {
     "id": 23,
@@ -368,7 +522,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "جمع المعلومات (Information gathering) والاستكشاف هو جزء أساسي من العقلانية، لأنه يغير المُدركات المستقبلية ويساعد الوكيل على اتخاذ قرارات أفضل.",
-    "explanationEn": "Information gathering is an integral part of rationality because taking actions to modify future percepts helps make better-informed decisions."
+    "explanationEn": "Information gathering is an integral part of rationality because taking actions to modify future percepts helps make better-informed decisions.",
+    "questionAr": "ما هو الفرق المفاهيمي الحاسم بين العقلانية والكمال؟",
+    "optionsAr": [
+      "العقلانية تزيد من الأداء المتوقع، في حين أن الكمال يزيد من النتيجة الفعلية",
+      "الكمال ينطبق فقط على وكلاء البرمجيات، في حين أن العقلانية تنطبق على الروبوتات المادية",
+      "العقلانية تتطلب معرفة كاملة بالمستقبل، أما الكمال فلا",
+      "الوكلاء العقلانيون لا يرتكبون الأخطاء تحت أي ظرف من الظروف"
+    ]
   },
   {
     "id": 24,
@@ -384,7 +545,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الاستكشاف (Exploration) يعني قيام الوكيل بأفعال لا تهدف إلى مكسب فوري بل لاكتشاف معلومات غير معروفة عن البيئة لتحسين أدائه على المدى الطويل.",
-    "explanationEn": "Exploration refers to an agent performing actions specifically to discover unknown aspects of its environment."
+    "explanationEn": "Exploration refers to an agent performing actions specifically to discover unknown aspects of its environment.",
+    "questionAr": "تسمى الإجراءات التي ينفذها الوكيل بشكل أساسي لتعديل التصورات المستقبلية بدلاً من تعديل حالة البيئة مباشرة:",
+    "optionsAr": [
+      "الأفعال الانعكاسية",
+      "جمع المعلومات",
+      "التراجع",
+      "تشذيب"
+    ]
   },
   {
     "id": 25,
@@ -400,7 +568,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "النظر في كلا الاتجاهين قبل عبور الشارع فعل عقلاني لأنه إجراء لجمع المعلومات يغير المُدركات المستقبلية لتقليل المخاطر وزيادة السلامة المتوقعة.",
-    "explanationEn": "Looking both ways is rational information gathering: it modifies future percepts to maximize expected safety rather than scoring direct points."
+    "explanationEn": "Looking both ways is rational information gathering: it modifies future percepts to maximize expected safety rather than scoring direct points.",
+    "questionAr": "لماذا يعتبر النظر في الاتجاهين قبل عبور شارع مزدحم عملاً عقلانيًا وليس عملاً ضائعًا؟",
+    "optionsAr": [
+      "يوفر تأخيرًا يؤدي إلى إبطاء معالج الوكيل",
+      "إنه يعدل التصورات المستقبلية للمساعدة في اتخاذ قرار يزيد من السلامة المتوقعة",
+      "يقوم على الفور بتغيير مواقع المركبات المقتربة",
+      "النظر هو حركة مشغلة تسجل نقاط فائدة مباشرة"
+    ]
   },
   {
     "id": 26,
@@ -416,7 +591,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "إذا اعتمد الوكيل فقط على المعرفة المسبقة التي برمجها المصمم دون الاعتماد على مدخلاته وخبراته، يُقال إنه يفتقر إلى الاستقلالية (Autonomy).",
-    "explanationEn": "An agent lacks Autonomy if its behavior relies primarily on the designer's built-in prior knowledge rather than learning from its own experience."
+    "explanationEn": "An agent lacks Autonomy if its behavior relies primarily on the designer's built-in prior knowledge rather than learning from its own experience.",
+    "questionAr": "إذا كان الوكيل يعتمد بشكل أساسي على المعرفة السابقة المضمنة في مصممه بدلاً من اعتماده على إدراكه وتعلمه، فيقال إن الوكيل يفتقر إلى:",
+    "optionsAr": [
+      "التنقل",
+      "الحكم الذاتي",
+      "الحتمية",
+      "الاستمرارية"
+    ]
   },
   {
     "id": 27,
@@ -432,7 +614,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "يحقق الوكيل استقلالية عالية بالتعلم المستمر من مُدركاته وتجاربه، مما يمكنه من تعويض أي نقص أو أخطاء في المعرفة المسبقة التي زوده بها المصمم.",
-    "explanationEn": "High autonomy is attained when an agent learns from its percepts over time, compensating for partial or incorrect initial designer knowledge."
+    "explanationEn": "High autonomy is attained when an agent learns from its percepts over time, compensating for partial or incorrect initial designer knowledge.",
+    "questionAr": "كيف يحقق الوكيل استقلالية عالية على مدار حياته؟",
+    "optionsAr": [
+      "وذلك بالتخلص من كافة المستشعرات والاعتماد فقط على ساعتها الداخلية",
+      "بالتعلم من مفاهيمه للتعويض عن المعرفة المسبقة الجزئية أو غير الصحيحة",
+      "باتباع جدول ثابت لقواعد الإجراء الشرطي التي تم إنشاؤها عند التصنيع",
+      "من خلال رفض تنفيذ الإجراءات في بيئات غير مألوفة"
+    ]
   },
   {
     "id": 28,
@@ -448,7 +637,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "نموذج PEAS هو اختصار للأركان الأربعة لوصف بيئة المهمة: مقياس الأداء (Performance)، البيئة (Environment)، المشغلات (Actuators)، وأجهزة الاستشعار (Sensors).",
-    "explanationEn": "PEAS stands for Performance measure, Environment, Actuators, and Sensors, formalizing the task environment specification."
+    "explanationEn": "PEAS stands for Performance measure, Environment, Actuators, and Sensors, formalizing the task environment specification.",
+    "questionAr": "في الفصل الثاني من AIMA، تمت مناقشة دبور السفيكس وخنفساء الروث كأمثلة بيولوجية كلاسيكية لما يلي:",
+    "optionsAr": [
+      "وكلاء التعلم القائم على المرافق ذات الاستقلالية العالية",
+      "إجراءات سلوكية فطرية جامدة تفشل عند انتهاك الافتراضات",
+      "وكلاء مثاليون يظهرون المعرفة الكاملة",
+      "أنظمة تنافسية متعددة الوكلاء في بيئات مستمرة"
+    ]
   },
   {
     "id": 29,
@@ -464,7 +660,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "في سيارة الأجرة الذكية، مقاييس الأداء تتضمن: السلامة، الوصول السريع، مطابقة قوانين المرور، راحة الركاب، وتعظيم الأرباح.",
-    "explanationEn": "For an automated taxi driver, the performance measure includes safety, destination arrival speed, legal compliance, passenger comfort, and profit maximization."
+    "explanationEn": "For an automated taxi driver, the performance measure includes safety, destination arrival speed, legal compliance, passenger comfort, and profit maximization.",
+    "questionAr": "من الناحية العملية، فإن قدرة الوكيل على حساب القرار العقلاني الأمثل مقيدة بشكل صارم بالوقت الحسابي والذاكرة المحدودة. وهذا ما يُعرف بـ:",
+    "optionsAr": [
+      "العقلانية المحدودة",
+      "العقلانية الكاملة",
+      "كلي العلم",
+      "منطق لا يمكن ملاحظته"
+    ]
   },
   {
     "id": 30,
@@ -480,7 +683,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "مبدأ تعظيم المنفعة المتوقعة رياضياً يتمثل في اختيار الفعل a الذي يعظم القيمة التوقعية: a = argmax_a E(U | a).",
-    "explanationEn": "The principle of maximizing expected utility chooses the action maximizing expected utility: a = argmax_a E(U | a)."
+    "explanationEn": "The principle of maximizing expected utility chooses the action maximizing expected utility: a = argmax_a E(U | a).",
+    "questionAr": "ما التعبير الرياضي الذي يصف اختيار الإجراء الذي يزيد من المنفعة المتوقعة E(U|a)؟",
+    "optionsAr": [
+      "أ = argmax_a E(U | أ)",
+      "أ = argmin_a E(U | أ)",
+      "أ = ه(أ | ش)",
+      "أ = max_s P(s | أ)"
+    ]
   },
   {
     "id": 31,
@@ -496,7 +706,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Performance measure, Environment, Actuators, Sensors' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
-    "explanationEn": "The option 'Performance measure, Environment, Actuators, Sensors' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
+    "explanationEn": "The option 'Performance measure, Environment, Actuators, Sensors' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent.",
+    "questionAr": "في إطار مواصفات مشكلة PEAS، ما الذي ترمز إليه الأحرف الأربعة؟",
+    "optionsAr": [
+      "الإدراك، البيئة، الإجراءات، النظام",
+      "مقياس الأداء، البيئة، المحركات، الحساسات",
+      "العملية، التنفيذ، الوكلاء، الدولة",
+      "البرنامج، الكيان، التشغيل، التسلسل"
+    ]
   },
   {
     "id": 32,
@@ -512,7 +729,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Specify the task environment (PEAS) as fully as possible' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
-    "explanationEn": "The option 'Specify the task environment (PEAS) as fully as possible' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
+    "explanationEn": "The option 'Specify the task environment (PEAS) as fully as possible' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent.",
+    "questionAr": "عند تصميم أي وكيل ذكي، ما هي الخطوة الأولى التي يجب أن تكون دائمًا وفقًا لـ AIMA؟",
+    "optionsAr": [
+      "اكتب الكود الخاص بقواعد التصرف الشرطي",
+      "حدد بيئة المهمة (PEAS) على أكمل وجه قدر الإمكان",
+      "حدد بنية الشبكة العصبية",
+      "تجميع الأجهزة المادية والمحركات"
+    ]
   },
   {
     "id": 33,
@@ -528,7 +752,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "المشغلات (Actuators) هي الأجهزة التي تسمح للوكيل بالتأثير الفعلي والحركي في البيئة، مثل المحركات، والتوجيه، والشاشات.",
-    "explanationEn": "Actuators are the output mechanisms (such as steering, accelerators, brakes, or displays) that execute actions in the environment."
+    "explanationEn": "Actuators are the output mechanisms (such as steering, accelerators, brakes, or displays) that execute actions in the environment.",
+    "questionAr": "في مواصفات PEAS لسائق سيارة أجرة آلي، أي مما يلي يعتبر مشغلًا؟",
+    "optionsAr": [
+      "كاميرا فيديو",
+      "عجلة القيادة",
+      "عداد السرعة",
+      "جهاز استقبال جي بي اس"
+    ]
   },
   {
     "id": 34,
@@ -544,7 +775,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "أجهزة الاستشعار في سيارة الأجرة تشمل الكاميرات والسونار والرادار والـ GPS وعداد السرعة لقراءة حالة الطريق.",
-    "explanationEn": "Sensors for an automated taxi include cameras, radar, sonar, GPS, and speedometers to perceive traffic and surroundings."
+    "explanationEn": "Sensors for an automated taxi include cameras, radar, sonar, GPS, and speedometers to perceive traffic and surroundings.",
+    "questionAr": "في مواصفات PEAS لسائق سيارة أجرة آلي، أي مما يلي يُصنف على أنه جهاز استشعار؟",
+    "optionsAr": [
+      "المسرع",
+      "دواسة الفرامل",
+      "ليدار / رادار",
+      "مركب صوتي"
+    ]
   },
   {
     "id": 35,
@@ -560,7 +798,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Driving smoothly to maximize comfort, safety, and passenger satisfaction' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
-    "explanationEn": "The option 'Driving smoothly to maximize comfort, safety, and passenger satisfaction' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
+    "explanationEn": "The option 'Driving smoothly to maximize comfort, safety, and passenger satisfaction' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent.",
+    "questionAr": "أي مما يلي يعد عنصرًا صريحًا في مقياس الأداء لسائق سيارة أجرة آلي؟",
+    "optionsAr": [
+      "القيادة بسلاسة لتحقيق أقصى قدر من الراحة والأمان ورضا الركاب",
+      "تحويل المقود 15 درجة لليمين",
+      "كشف علامات المسار بالكاميرات",
+      "إرسال حزم الإحداثيات عبر شبكات 5G"
+    ]
   },
   {
     "id": 36,
@@ -576,7 +821,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Accuracy in minimizing false positives and false negatives' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
-    "explanationEn": "The option 'Accuracy in minimizing false positives and false negatives' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
+    "explanationEn": "The option 'Accuracy in minimizing false positives and false negatives' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent.",
+    "questionAr": "بالنسبة لعامل تصفية البريد الإلكتروني العشوائي الآلي، ما الذي يشكل مقياس الأداء الأساسي؟",
+    "optionsAr": [
+      "سرعة تحميل الملفات",
+      "الدقة في التقليل من الإيجابيات الكاذبة والسلبيات الكاذبة",
+      "عدد رسائل البريد الإلكتروني المرسلة في الساعة",
+      "سعة تخزين القرص للخادم"
+    ]
   },
   {
     "id": 37,
@@ -592,7 +844,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "المشغلات (Actuators) هي الأجهزة التي تسمح للوكيل بالتأثير الفعلي والحركي في البيئة، مثل المحركات، والتوجيه، والشاشات.",
-    "explanationEn": "Actuators are the output mechanisms (such as steering, accelerators, brakes, or displays) that execute actions in the environment."
+    "explanationEn": "Actuators are the output mechanisms (such as steering, accelerators, brakes, or displays) that execute actions in the environment.",
+    "questionAr": "أي مما يلي يعد مشغلًا لعامل تصفية البريد الإلكتروني العشوائي؟",
+    "optionsAr": [
+      "رؤوس البريد الإلكتروني الوارد",
+      "محتوى نص البريد الإلكتروني",
+      "نقل البريد الإلكتروني إلى مجلد البريد العشوائي",
+      "عنوان IP للمرسل"
+    ]
   },
   {
     "id": 38,
@@ -608,7 +867,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "المشغلات (Actuators) هي الأجهزة التي تسمح للوكيل بالتأثير الفعلي والحركي في البيئة، مثل المحركات، والتوجيه، والشاشات.",
-    "explanationEn": "Actuators are the output mechanisms (such as steering, accelerators, brakes, or displays) that execute actions in the environment."
+    "explanationEn": "Actuators are the output mechanisms (such as steering, accelerators, brakes, or displays) that execute actions in the environment.",
+    "questionAr": "في النظام الخبير للتشخيص الطبي، أي مما يلي يمثل المحرك؟",
+    "optionsAr": [
+      "شاشة تعمل باللمس للأسئلة واقتراحات الاختبار والتشخيصات",
+      "إدخال لوحة المفاتيح لأعراض المريض",
+      "مستشعر معدل ضربات قلب المريض",
+      "قاعدة بيانات فواتير المستشفيات"
+    ]
   },
   {
     "id": 39,
@@ -624,7 +890,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Percentage of parts placed into correct sorting bins' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
-    "explanationEn": "The option 'Percentage of parts placed into correct sorting bins' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
+    "explanationEn": "The option 'Percentage of parts placed into correct sorting bins' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent.",
+    "questionAr": "ما هو مقياس الأداء الأساسي لروبوت التقاط الأجزاء الذي يعمل على خط تجميع التصنيع؟",
+    "optionsAr": [
+      "نسبة الأجزاء الموضوعة في صناديق الفرز الصحيحة",
+      "الجهد الكهربائي المزود للحزام الناقل",
+      "درجة الحرارة المحيطة بالمستودع",
+      "زاوية مفاصل الذراع الروبوتية"
+    ]
   },
   {
     "id": 40,
@@ -640,7 +913,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Digital cameras and tactile touch sensors' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
-    "explanationEn": "The option 'Digital cameras and tactile touch sensors' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
+    "explanationEn": "The option 'Digital cameras and tactile touch sensors' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent.",
+    "questionAr": "ما هي مجموعة الأجهزة التي تعمل كأجهزة استشعار لروبوت التقاط الأجزاء في المصنع؟",
+    "optionsAr": [
+      "ذراع مفصلية وقابض هوائي",
+      "الكاميرات الرقمية وحساسات اللمس",
+      "محركات مؤازرة وتروس كهربائية",
+      "بكرات الحزام الناقل"
+    ]
   },
   {
     "id": 41,
@@ -656,7 +936,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "المشغلات (Actuators) هي الأجهزة التي تسمح للوكيل بالتأثير الفعلي والحركي في البيئة، مثل المحركات، والتوجيه، والشاشات.",
-    "explanationEn": "Actuators are the output mechanisms (such as steering, accelerators, brakes, or displays) that execute actions in the environment."
+    "explanationEn": "Actuators are the output mechanisms (such as steering, accelerators, brakes, or displays) that execute actions in the environment.",
+    "questionAr": "بالنسبة لعامل التحكم في مصفاة تكرير المواد الكيميائية، ما هي المحركات الأساسية المستخدمة للحفاظ على التحكم في العملية؟",
+    "optionsAr": [
+      "أجهزة قياس الضغط وحساسات الحرارة",
+      "صمامات وسخانات ومضخات ونمامات",
+      "فحوصات قياس النقاء",
+      "تقارير التركيب الكيميائي"
+    ]
   },
   {
     "id": 42,
@@ -672,7 +959,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'The student's improvement and test score' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
-    "explanationEn": "The option 'The student's improvement and test score' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
+    "explanationEn": "The option 'The student's improvement and test score' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent.",
+    "questionAr": "بالنسبة لبرنامج softbot لتعليم اللغة الإنجليزية التفاعلي الآلي، ما هو مقياس الأداء الرئيسي؟",
+    "optionsAr": [
+      "سرعة تسجيل ضغطات المفاتيح",
+      "تحسن الطالب ودرجة الاختبار",
+      "عدد طلبات الشبكة التي تمت معالجتها",
+      "نطاق تردد مكبر الصوت"
+    ]
   },
   {
     "id": 43,
@@ -688,7 +982,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "البيئة الملاحظة بالكامل (Fully observable) هي التي تتيح فيها مستشعرات الوكيل الوصول إلى الحالة الكاملة للبيئة في كل نقطة زمنية دون أي غموض.",
-    "explanationEn": "An environment is fully observable if the agent's sensors provide complete access to the entire state of the environment at any given time."
+    "explanationEn": "An environment is fully observable if the agent's sensors provide complete access to the entire state of the environment at any given time.",
+    "questionAr": "توصف البيئة بأنها قابلة للملاحظة بالكامل إذا:",
+    "optionsAr": [
+      "الوكيل يعرف المسار المستقبلي الكامل للدول",
+      "أجهزة الاستشعار الخاصة بالوكيل تمنحه إمكانية الوصول إلى الحالة الكاملة للبيئة في كل نقطة زمنية",
+      "الوكيل لا يحتاج إلى مشغلات",
+      "البيئة لا تتغير أبدًا بينما يتخذ الوكيل القرار"
+    ]
   },
   {
     "id": 44,
@@ -704,7 +1005,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "البيئة الملاحظة جزئياً (Partially observable) تحدث عندما تكون الحواس غير قادرة على رؤية جوانب معينة من العالم بسبب الضوضاء أو محدودية نطاق الحواس.",
-    "explanationEn": "An environment is partially observable when sensors cannot detect all relevant aspects of the world due to noise or limited range."
+    "explanationEn": "An environment is partially observable when sensors cannot detect all relevant aspects of the world due to noise or limited range.",
+    "questionAr": "لماذا يتم تصنيف لعبة البوكر على أنها بيئة يمكن ملاحظتها جزئيًا؟",
+    "optionsAr": [
+      "يقوم الموزع بخلط البطاقات بشكل غير متوقع",
+      "لا يمكن للاعبين رؤية البطاقات المخفية التي يحتفظ بها خصومهم",
+      "قواعد الرهان تتغير بعد كل جولة",
+      "عدد الرقائق غير مرئي لجميع اللاعبين"
+    ]
   },
   {
     "id": 45,
@@ -720,7 +1028,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Deterministic' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
-    "explanationEn": "The option 'Deterministic' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
+    "explanationEn": "The option 'Deterministic' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent.",
+    "questionAr": "إذا تم تحديد الحالة التالية للبيئة بالكامل من خلال الحالة الحالية والإجراء الذي تم تنفيذه بواسطة الوكيل، فإن البيئة هي:",
+    "optionsAr": [
+      "مؤشر ستوكاستيك",
+      "حتمية",
+      "ديناميكي",
+      "مستمر"
+    ]
   },
   {
     "id": 46,
@@ -736,7 +1051,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "البيئة الحتمية (Deterministic) هي التي تتحدد حالتها التالية بشكل كامل وقاطع بالحالة الحالية والفعل الذي ينفذه الوكيل.",
-    "explanationEn": "In a deterministic environment, the next state is completely determined by the current state and the action executed by the agent."
+    "explanationEn": "In a deterministic environment, the next state is completely determined by the current state and the action executed by the agent.",
+    "questionAr": "ما هو الفرق الفني بين البيئة العشوائية والبيئة غير الحتمية في AIMA؟",
+    "optionsAr": [
+      "يربط مؤشر ستوكاستيك الاحتمالات بالنتائج بشكل صريح، بينما يسرد مؤشر غير حتمي الاحتمالات",
+      "البيئات غير الحتمية تكون دائمًا قابلة للملاحظة بشكل كامل، في حين أن البيئات العشوائية ليست",
+      "البيئات العشوائية تحدث فقط في ألعاب الطاولة",
+      "لا يوجد تمييز رياضي. فهي قابلة للتبديل تمامًا"
+    ]
   },
   {
     "id": 47,
@@ -752,7 +1074,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Episodic' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
-    "explanationEn": "The option 'Episodic' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
+    "explanationEn": "The option 'Episodic' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent.",
+    "questionAr": "في أي نوع من بيئة المهام يتم تقسيم تجربة الوكيل إلى حلقات ذرية حيث ليس للقرار الحالي أي تأثير على الحلقات المستقبلية؟",
+    "optionsAr": [
+      "متسلسل",
+      "عرضي",
+      "ديناميكي",
+      "مستمر"
+    ]
   },
   {
     "id": 48,
@@ -768,7 +1097,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "في البيئة المجزأة (Episodic)، تنقسم تجربة الوكيل إلى نوبات مستقلة؛ بحيث لا يؤثر القرار المتخذ في نوبة سابقة على النوبات التالية.",
-    "explanationEn": "In an episodic environment, the agent's experience is divided into independent episodes where past actions do not affect future episodes."
+    "explanationEn": "In an episodic environment, the agent's experience is divided into independent episodes where past actions do not affect future episodes.",
+    "questionAr": "لماذا تعتبر لعبة الشطرنج بيئة متتابعة وليست عرضية؟",
+    "optionsAr": [
+      "تتحرك القطع في مربعات منفصلة",
+      "تحركات مجلس الإدارة الحالية لها عواقب طويلة المدى تؤثر بشكل مباشر على جميع الحالات المستقبلية",
+      "كل دور مستقل تمامًا عن من انتقل سابقًا",
+      "يحصل اللاعبون على نقاط مقابل كل قطعة يتم التقاطها"
+    ]
   },
   {
     "id": 49,
@@ -784,7 +1120,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "الخيار 'Semidynamic' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
-    "explanationEn": "The option 'Semidynamic' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
+    "explanationEn": "The option 'Semidynamic' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent.",
+    "questionAr": "إذا لم تتغير البيئة أثناء مداولات الوكيل، لكن درجة أداء الوكيل تنخفض مع مرور الوقت، فإن البيئة هي:",
+    "optionsAr": [
+      "ثابت",
+      "ديناميكي",
+      "شبه ديناميكي",
+      "منفصلة"
+    ]
   },
   {
     "id": 50,
@@ -800,7 +1143,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "البيئة شبه الديناميكية (Semidynamic) هي التي لا تتغير فيها البيئة نفسها أثناء تفكير الوكيل، ولكن نقاط أداء الوكيل تتناقص مع مرور الوقت.",
-    "explanationEn": "An environment is semidynamic if the environment itself does not change while the agent thinks, but the agent's performance score does (e.g. timed chess)."
+    "explanationEn": "An environment is semidynamic if the environment itself does not change while the agent thinks, but the agent's performance score does (e.g. timed chess).",
+    "questionAr": "أي مما يلي يعد مثالًا كلاسيكيًا لبيئة المهام شبه الديناميكية؟",
+    "optionsAr": [
+      "قيادة سيارة أجرة آلية عبر حركة المرور في المناطق الحضرية",
+      "لعب الشطرنج بساعة اللعب الجارية",
+      "حل لغز الكلمات المتقاطعة القياسية",
+      "فرز الأجزاء على الحزام الناقل المتحرك"
+    ]
   },
   {
     "id": 51,
@@ -816,7 +1166,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Discrete' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
-    "explanationEn": "The option 'Discrete' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
+    "explanationEn": "The option 'Discrete' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent.",
+    "questionAr": "يتم تصنيف البيئة التي تحتوي على عدد محدود أو لا يحصى من الحالات والإدراكات والإجراءات والخطوات الزمنية المميزة على النحو التالي:",
+    "optionsAr": [
+      "مستمر",
+      "منفصل",
+      "ديناميكي",
+      "العشوائية"
+    ]
   },
   {
     "id": 52,
@@ -832,7 +1189,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "البيئة المنفصلة (Discrete) تمتلك عدداً محدداً وقابلاً للعد من الحالات والخيارات الزمنية، بينما المستمرة (Continuous) تشمل قيماً لا نهائية متصلة كالسرعة والموقع.",
-    "explanationEn": "Discrete environments have a countable number of distinct states and actions, while continuous environments feature continuous variables like position and time."
+    "explanationEn": "Discrete environments have a countable number of distinct states and actions, while continuous environments feature continuous variables like position and time.",
+    "questionAr": "لماذا تصنف قيادة سيارات الأجرة الآلية على أنها بيئة مستمرة؟",
+    "optionsAr": [
+      "التاكسي يعمل 24 ساعة يوميا بدون توقف",
+      "تختلف السرعة والموقع وزوايا التوجيه والوقت بشكل مستمر من خلال نطاقات ذات قيمة حقيقية",
+      "قواعد الطريق لا تتغير مع مرور الوقت",
+      "سيارة الأجرة تزور كل مدينة في البلاد"
+    ]
   },
   {
     "id": 53,
@@ -848,7 +1212,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'The entity's behavior is best described as maximizing a performance measure that depends on the primary agent's actions' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
-    "explanationEn": "The option 'The entity's behavior is best described as maximizing a performance measure that depends on the primary agent's actions' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
+    "explanationEn": "The option 'The entity's behavior is best described as maximizing a performance measure that depends on the primary agent's actions' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent.",
+    "questionAr": "ما هو المعيار الرئيسي الذي يميز كيانًا ما في بيئة ما باعتباره \"عاملًا\" آخر وليس مجرد كائن يتبع القوانين الفيزيائية؟",
+    "optionsAr": [
+      "يتحرك الكيان بشكل أسرع من الوكيل الأساسي",
+      "أفضل وصف لسلوك الكيان هو تعظيم مقياس الأداء الذي يعتمد على تصرفات الوكيل الأساسي",
+      "الكيان مصنوع من المعدن والدوائر الإلكترونية",
+      "يتواصل الكيان باستخدام اللغة البشرية الطبيعية"
+    ]
   },
   {
     "id": 54,
@@ -864,7 +1235,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Maximizing one agent's performance measure minimizes the other's' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
-    "explanationEn": "The option 'Maximizing one agent's performance measure minimizes the other's' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
+    "explanationEn": "The option 'Maximizing one agent's performance measure minimizes the other's' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent.",
+    "questionAr": "في بيئة تنافسية متعددة الوكلاء مثل لعبة الشطرنج، كيف ترتبط مقاييس أداء الوكلاء ببعضها البعض؟",
+    "optionsAr": [
+      "يؤدي تعظيم مقياس أداء وكيل واحد إلى تقليل",
+      "الآخر يعمل كلا الوكيلين معًا لتحقيق أقصى قدر من المكافأة المشتركة",
+      "يتجاهل الوكلاء نقاط بعضهم البعض تمامًا",
+      "يحصل كلا الوكيلين على نقاط متساوية بغض النظر عن النتيجة"
+    ]
   },
   {
     "id": 55,
@@ -880,7 +1258,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'The outcomes (or outcome probabilities) for all actions are fully given to the agent' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
-    "explanationEn": "The option 'The outcomes (or outcome probabilities) for all actions are fully given to the agent' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
+    "explanationEn": "The option 'The outcomes (or outcome probabilities) for all actions are fully given to the agent' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent.",
+    "questionAr": "تسمى البيئة \"معروفة\" عندما:",
+    "optionsAr": [
+      "يستطيع العميل الرؤية من خلال الجدران باستخدام أجهزة استشعار الأشعة تحت الحمراء",
+      "يتم إعطاء النتائج (أو احتمالات النتائج) لجميع الإجراءات بالكامل إلى الوكيل",
+      "لقد وصل الوكيل بالفعل إلى حالة الهدف",
+      "تحتوي مساحة الحالة على أقل من 100 ولاية"
+    ]
   },
   {
     "id": 56,
@@ -896,7 +1281,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "البيئة الملاحظة جزئياً (Partially observable) تحدث عندما تكون الحواس غير قادرة على رؤية جوانب معينة من العالم بسبب الضوضاء أو محدودية نطاق الحواس.",
-    "explanationEn": "An environment is partially observable when sensors cannot detect all relevant aspects of the world due to noise or limited range."
+    "explanationEn": "An environment is partially observable when sensors cannot detect all relevant aspects of the world due to noise or limited range.",
+    "questionAr": "هل يمكن أن تكون البيئة \"معروفة\" ولكن مع ذلك \"يمكن ملاحظتها جزئيًا\"؟ أي مثال يثبت ذلك؟",
+    "optionsAr": [
+      "لا، إن معرفة القواعد تضمن إمكانية الملاحظة الكاملة",
+      "نعم؛ القواعد معروفة في ألعاب ورق السوليتير، لكن لا يمكن رؤية البطاقات المقلوبة",
+      "نعم؛ في الكلمات المتقاطعة تكون الشبكة غير مرئية جزئيًا",
+      "لا، إمكانية الملاحظة الجزئية تحدث فقط في ألعاب الفيديو غير المعروفة"
+    ]
   },
   {
     "id": 57,
@@ -912,7 +1304,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Partially observable, multiagent, nondeterministic, sequential, dynamic, continuous, unknown' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
-    "explanationEn": "The option 'Partially observable, multiagent, nondeterministic, sequential, dynamic, continuous, unknown' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
+    "explanationEn": "The option 'Partially observable, multiagent, nondeterministic, sequential, dynamic, continuous, unknown' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent.",
+    "questionAr": "ما هي مجموعة خصائص البيئة التي تمثل التحدي الأكثر صعوبة في تصميم عوامل الذكاء الاصطناعي؟",
+    "optionsAr": [
+      "يمكن ملاحظتها بالكامل، حتمية، ثابتة، منفصلة، ​​وكيل واحد، معروف",
+      "يمكن ملاحظته جزئيا، متعدد العوامل، غير حتمي، متسلسل، ديناميكي، مستمر، غير معروف",
+      "يمكن ملاحظته بالكامل، عشوائي، عرضي، ثابت، وكيل واحد، معروف",
+      "يمكن ملاحظتها جزئيا، حتمية، متسلسل، ثابت، منفصل، معروف"
+    ]
   },
   {
     "id": 58,
@@ -928,7 +1327,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "البيئة الحتمية (Deterministic) هي التي تتحدد حالتها التالية بشكل كامل وقاطع بالحالة الحالية والفعل الذي ينفذه الوكيل.",
-    "explanationEn": "In a deterministic environment, the next state is completely determined by the current state and the action executed by the agent."
+    "explanationEn": "In a deterministic environment, the next state is completely determined by the current state and the action executed by the agent.",
+    "questionAr": "أي من بيئات المهام التالية تم تصنيفها على أنها ثابتة ومنفصلة وحتمية؟",
+    "optionsAr": [
+      "قيادة سيارات الأجرة",
+      "لغز الكلمات المتقاطعة القياسية",
+      "مراقب المصفاة",
+      "التشخيص الطبي"
+    ]
   },
   {
     "id": 59,
@@ -944,7 +1350,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Fully observable and Stochastic' يوضح هذا المفهوم بدقة؛ حيث يرتبط مباشرة بالوظيفة المحددة والمبدأ النظري المنظم لعمل الوكلاء الأذكياء.",
-    "explanationEn": "The option 'Fully observable and Stochastic' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent."
+    "explanationEn": "The option 'Fully observable and Stochastic' is correct because it directly defines the behavioral mechanism and operational requirements of the intelligent agent.",
+    "questionAr": "في الشكل 2.6 من AIMA، كيف يتم تصنيف بيئة مهمة لعبة الطاولة فيما يتعلق بقابلية الملاحظة والحتمية؟",
+    "optionsAr": [
+      "يمكن ملاحظتها جزئيا وحتمية",
+      "يمكن ملاحظتها بالكامل و العشوائية",
+      "يمكن ملاحظتها بالكامل وحتمية",
+      "يمكن ملاحظتها جزئيا ومستمرة"
+    ]
   },
   {
     "id": 60,
@@ -960,7 +1373,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "البيئة الحتمية (Deterministic) هي التي تتحدد حالتها التالية بشكل كامل وقاطع بالحالة الحالية والفعل الذي ينفذه الوكيل.",
-    "explanationEn": "In a deterministic environment, the next state is completely determined by the current state and the action executed by the agent."
+    "explanationEn": "In a deterministic environment, the next state is completely determined by the current state and the action executed by the agent.",
+    "questionAr": "لماذا تم تصنيف لعبة الطاولة على أنها عشوائية، في حين تم تصنيف الشطرنج على أنها حتمية؟",
+    "optionsAr": [
+      "تتضمن لعبة الطاولة رمي النرد، مما يُدخل العشوائية في انتقالات الحالة",
+      "الشطرنج لديه حجم لوحة أصغر من لعبة الطاولة",
+      "في لعبة الطاولة، يتم إخفاء قطع الخصم عن الأنظار",
+      "تتطلب لعبة الشطرنج ساعات زمنية، بينما لا تتطلب لعبة الطاولة ذلك"
+    ]
   },
   {
     "id": 61,
@@ -974,7 +1394,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
-    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations.",
+    "questionAr": "الوكيل هو أي شيء يمكنه إدراك بيئته من خلال أجهزة الاستشعار والتصرف في تلك البيئة من خلال المحركات.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 62,
@@ -988,7 +1413,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة. والسبب أن المفهوم الحقيقي يتناقض مع ذلك: فلا يمكن للوكيل أن يخرق القوانين السببية بالاعتماد على المستقبل، أو تجاوز المراقبة في البيئات غير المؤكدة.",
-    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments."
+    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments.",
+    "questionAr": "يمكن أن يعتمد اختيار الوكيل للتصرف في أي لحظة بشكل مشروع على التصورات المستقبلية التي لم تحدث بعد.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 63,
@@ -1002,7 +1432,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
-    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations.",
+    "questionAr": "الوكيل المبني على الجدول قادر نظريًا على تنفيذ أي وظيفة وكيل صالحة، على الرغم من كونه غير ممكن عمليًا للمهام المعقدة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 64,
@@ -1016,7 +1451,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة. والسبب أن المفهوم الحقيقي يتناقض مع ذلك: فلا يمكن للوكيل أن يخرق القوانين السببية بالاعتماد على المستقبل، أو تجاوز المراقبة في البيئات غير المؤكدة.",
-    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments."
+    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments.",
+    "questionAr": "العامل كلي العلم مطابق في التعريف للعامل العقلاني، حيث يتطلب كلا المصطلحين تعظيم المنفعة المتوقعة بناءً على التصورات الحالية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 65,
@@ -1030,7 +1470,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة. والسبب أن المفهوم الحقيقي يتناقض مع ذلك: فلا يمكن للوكيل أن يخرق القوانين السببية بالاعتماد على المستقبل، أو تجاوز المراقبة في البيئات غير المؤكدة.",
-    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments."
+    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments.",
+    "questionAr": "العقلانية تضمن الكمال؛ ولذلك، فإن العامل العقلاني لن يعاني أبدًا من نتيجة مؤسفة بسبب أحداث خارجية غير ملحوظة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 66,
@@ -1044,7 +1489,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
-    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations.",
+    "questionAr": "كقاعدة عامة، يجب تصميم مقياس الأداء وفقًا لما يريد الفرد تحقيقه فعليًا في البيئة، وليس وفقًا للطريقة التي يجب أن يتصرف بها الوكيل.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 67,
@@ -1058,7 +1508,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة. والسبب أن المفهوم الحقيقي يتناقض مع ذلك: فلا يمكن للوكيل أن يخرق القوانين السببية بالاعتماد على المستقبل، أو تجاوز المراقبة في البيئات غير المؤكدة.",
-    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments."
+    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments.",
+    "questionAr": "يقال إن الوكيل الذي يعتمد بشكل كامل على المعرفة السابقة المضمنة ولا يتعلم أبدًا من تجربته الحسية يمتلك استقلالية كاملة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 68,
@@ -1072,7 +1527,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
-    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations.",
+    "questionAr": "يختار الوكلاء المنعكسون البسيطون إجراءات تعتمد فقط على الإدراك الحالي، متجاهلين تمامًا تسلسل الإدراك التاريخي.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 69,
@@ -1086,7 +1546,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
-    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations.",
+    "questionAr": "في البيئات التي يمكن ملاحظتها جزئيًا، غالبًا ما تكون العوامل المنعكسة الحتمية البسيطة عرضة للوقوع في فخ حلقات لا نهائية وغير قابلة للاسترداد.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 70,
@@ -1100,7 +1565,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
-    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations.",
+    "questionAr": "يمكن أن تساعد عشوائية الإجراءات في بعض الأحيان وكيلًا منعكسًا بسيطًا على الهروب من الحلقات اللانهائية في بيئات الوكيل الفردي التي يمكن ملاحظتها جزئيًا.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 71,
@@ -1114,7 +1584,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
-    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations.",
+    "questionAr": "تحافظ العوامل المنعكسة القائمة على النموذج على حالة داخلية لتتبع جوانب العالم التي لا يمكن ملاحظتها في الإدراك الحالي.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 72,
@@ -1128,7 +1603,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
-    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations.",
+    "questionAr": "يعكس نموذج الانتقال في الوكيل القائم على النموذج المعرفة حول كيفية تطور العالم بشكل مستقل وكيف تغير تصرفات الوكيل العالم.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 73,
@@ -1142,7 +1622,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة. والسبب أن المفهوم الحقيقي يتناقض مع ذلك: فلا يمكن للوكيل أن يخرق القوانين السببية بالاعتماد على المستقبل، أو تجاوز المراقبة في البيئات غير المؤكدة.",
-    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments."
+    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments.",
+    "questionAr": "تعتبر الوكلاء المعتمدون على الأهداف أقل مرونة من الوكلاء المنعكسين البسيطين لأنه لا يمكن تعديل منطق القرار الخاص بهم دون إعادة كتابة البرنامج بأكمله.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 74,
@@ -1156,7 +1641,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
-    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations.",
+    "questionAr": "يستخدم الوكلاء المعتمدون على المنفعة وظيفة المنفعة الداخلية التي تسمح لهم بإجراء مقايضات عقلانية بين الأهداف المتضاربة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 75,
@@ -1170,7 +1660,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة. والسبب أن المفهوم الحقيقي يتناقض مع ذلك: فلا يمكن للوكيل أن يخرق القوانين السببية بالاعتماد على المستقبل، أو تجاوز المراقبة في البيئات غير المؤكدة.",
-    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments."
+    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments.",
+    "questionAr": "في بنية وكيل التعلم، يقوم الناقد بتقييم سلوك الوكيل مقابل معيار أداء خارجي يُسمح للوكيل نفسه بتعديله.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 76,
@@ -1184,7 +1679,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
-    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations.",
+    "questionAr": "يعد مكون مولد المشكلات في وكيل التعلم مسؤولاً عن اقتراح الإجراءات الاستكشافية التي تؤدي إلى تجارب جديدة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 77,
@@ -1198,7 +1698,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة. والسبب أن المفهوم الحقيقي يتناقض مع ذلك: فلا يمكن للوكيل أن يخرق القوانين السببية بالاعتماد على المستقبل، أو تجاوز المراقبة في البيئات غير المؤكدة.",
-    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments."
+    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments.",
+    "questionAr": "في التمثيل الذري، كل حالة من دول العالم لديها بنية داخلية تتكون من متغيرات قيمة السمة التي يمكن الوصول إليها والتي تسمى بطلاقة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 78,
@@ -1212,7 +1717,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة. فالمفهوم المذكور يعبر عن حقيقة ثابتة في هيكلة الوكلاء: فالوكيل يعتمد على مدخلاته لمعالجة العالم الداخلي واتخاذ القرار الأنسب.",
-    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations."
+    "explanationEn": "True. This statement accurately describes agent architecture and how intelligent systems process percepts and internal representations.",
+    "questionAr": "يقوم تمثيل الحالة المُعامل بتقسيم كل حالة إلى مجموعة ثابتة من المتغيرات أو السمات، كل منها يمكن أن يحمل قيمة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 79,
@@ -1226,7 +1736,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة. والسبب أن المفهوم الحقيقي يتناقض مع ذلك: فلا يمكن للوكيل أن يخرق القوانين السببية بالاعتماد على المستقبل، أو تجاوز المراقبة في البيئات غير المؤكدة.",
-    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments."
+    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments.",
+    "questionAr": "تعتبر البيئة ديناميكية إذا ظل العالم المادي دون تغيير أثناء تداول الوكيل، ولكن تنتهي الحدود الزمنية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 80,
@@ -1240,7 +1755,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة. والسبب أن المفهوم الحقيقي يتناقض مع ذلك: فلا يمكن للوكيل أن يخرق القوانين السببية بالاعتماد على المستقبل، أو تجاوز المراقبة في البيئات غير المؤكدة.",
-    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments."
+    "explanationEn": "False. An agent cannot violate causal limits (such as depending on unborn future percepts) or execute open-loop actions in stochastic environments.",
+    "questionAr": "تعمل سيارة أجرة آلية تسير على الطريق السريع في بيئة وكيل واحد لأن السيارات الأخرى مجرد عقبات مادية تحكمها الفيزياء.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 81,
@@ -1256,7 +1776,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "وكيل حل المشكلات (Problem-solving agent) هو وكيل موجه بالهدف يخطط مسبقاً بمحاكاة تسلسل من الأفعال للوصول إلى حالة الهدف قبل التنفيذ الفعلي في البيئة.",
-    "explanationEn": "A problem-solving agent is a goal-based agent that plans ahead by finding a sequence of actions that leads to a goal state before executing them."
+    "explanationEn": "A problem-solving agent is a goal-based agent that plans ahead by finding a sequence of actions that leads to a goal state before executing them.",
+    "questionAr": "الوكيل الذي يخطط للمستقبل من خلال النظر في سلسلة من الإجراءات التي تشكل طريقًا إلى حالة الهدف قبل اتخاذ إجراء في العالم المادي يسمى:",
+    "optionsAr": [
+      "العامل المنعكس",
+      "وكيل حل المشكلات",
+      "وكيل بدون فائدة",
+      "عامل رد الفعل"
+    ]
   },
   {
     "id": 82,
@@ -1272,7 +1799,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "الخيار الصحيح هو 'Goal formulation'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Goal formulation' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Goal formulation' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "ما هي المرحلة الأولى في عملية حل المشكلات ذات المراحل الأربع التي يقوم بها وكيل حل المشكلات؟",
+    "optionsAr": [
+      "تنفيذ",
+      "بحث",
+      "صياغة الأهداف",
+      "صياغة المشكلة"
+    ]
   },
   {
     "id": 83,
@@ -1288,7 +1822,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'Goal formulation -> Problem formulation -> Search -> Execution'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Goal formulation -> Problem formulation -> Search -> Execution' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Goal formulation -> Problem formulation -> Search -> Execution' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "في عملية حل المشكلات المكونة من أربع مراحل، ما هو التسلسل الزمني الصحيح للمراحل؟",
+    "optionsAr": [
+      "بحث -> صياغة الأهداف -> صياغة المشكلة -> التنفيذ",
+      "صياغة الأهداف -> صياغة المشكلة -> البحث -> التنفيذ",
+      "صياغة المشكلة -> التنفيذ -> صياغة الأهداف -> بحث",
+      "صياغة الأهداف -> البحث -> التنفيذ -> صياغة المشكلة"
+    ]
   },
   {
     "id": 84,
@@ -1304,7 +1845,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'Because the predetermined sequence of actions is guaranteed to reach the goal without surprises'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Because the predetermined sequence of actions is guaranteed to reach the goal without surprises' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Because the predetermined sequence of actions is guaranteed to reach the goal without surprises' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "في بيئة يمكن ملاحظتها وحتميتها ومعروفة بالكامل، لماذا يمكن للوكيل تنفيذ حله باعتباره \"نظام حلقة مفتوحة\" دون مراقبة أجهزة الاستشعار؟",
+    "optionsAr": [
+      "لأن المحركات لا تبلى أبدًا",
+      "لأن تسلسل الإجراءات المحدد مسبقًا يضمن الوصول إلى الهدف دون مفاجآت",
+      "لأن أنظمة الحلقة المفتوحة تكون دائمًا أسرع من أنظمة الحلقة المغلقة",
+      "لأنه يتم تعطيل أجهزة الاستشعار أثناء التنفيذ للحفاظ على الطاقة"
+    ]
   },
   {
     "id": 85,
@@ -1320,7 +1868,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "الخيار الصحيح هو 'Five components'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Five components' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Five components' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "ما هو عدد المكونات الرسمية المطلوبة لتحديد مشكلة البحث رياضيًا وفقًا للفصل الثالث من AIMA؟",
+    "optionsAr": [
+      "ثلاثة مكونات",
+      "أربعة مكونات",
+      "خمسة مكونات",
+      "سبعة مكونات"
+    ]
   },
   {
     "id": 86,
@@ -1336,7 +1891,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "الخيار الصحيح هو 'Heuristic decay rate'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Heuristic decay rate' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Heuristic decay rate' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "أي مما يلي ليس أحد المكونات الرسمية الخمسة لمشكلة البحث؟",
+    "optionsAr": [
+      "الحالة الأولية",
+      "مجموعة الإجراءات المتاحة (ACTIONS)",
+      "معدل الاضمحلال الإرشادي",
+      "النموذج الانتقالي (النتيجة)"
+    ]
   },
   {
     "id": 87,
@@ -1352,7 +1914,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "الخيار الصحيح هو 'The state that results from executing action a in state s'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'The state that results from executing action a in state s' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'The state that results from executing action a in state s' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "في التعريف الرسمي لمشكلة البحث، ما الذي ترجعه الدالة RESULT(s, a)؟",
+    "optionsAr": [
+      "قيمة منطقية تشير إلى ما إذا كانت الحالة هي الهدف",
+      "التكلفة العددية للعمل أ",
+      "الحالة الناتجة عن تنفيذ الإجراء a في الحالة",
+      "قائمة بجميع الإجراءات الصالحة في الحالة"
+    ]
   },
   {
     "id": 88,
@@ -1368,7 +1937,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار الصحيح هو 'a belongs to the set ACTIONS(s)'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'a belongs to the set ACTIONS(s)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'a belongs to the set ACTIONS(s)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "يتم وصف الإجراء a بأنه \"قابل للتطبيق\" في الحالة s إذا:",
+    "optionsAr": [
+      "ينتمي a إلى مجموعة الإجراءات (الإجراءات)",
+      "تكلفة صفر",
+      "يحقق حالة الهدف على الفور",
+      "لم يتم تنفيذها من قبل"
+    ]
   },
   {
     "id": 89,
@@ -1384,7 +1960,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'A path leading from the initial state to any valid goal state'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'A path leading from the initial state to any valid goal state' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'A path leading from the initial state to any valid goal state' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "في خوارزميات البحث، يتم تعريف المسار على أنه سلسلة من الإجراءات، ويتم تعريف الحل رسميًا على النحو التالي:",
+    "optionsAr": [
+      "أقصر مسار بين أي حالتين عشوائيتين",
+      "مسار يؤدي من الحالة الأولية إلى أي حالة هدف صالحة",
+      "الجزء المستكشف بالكامل من الرسم البياني الفضائي للحالة",
+      "الحد الأدنى للشجرة الممتدة لمساحة البحث"
+    ]
   },
   {
     "id": 90,
@@ -1400,7 +1983,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "الخيار الصحيح هو 'The sum of the individual step costs along the path'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'The sum of the individual step costs along the path' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'The sum of the individual step costs along the path' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "في خوارزميات البحث، يُفترض أن تكون تكاليف المسار مضافة، مما يعني أن تكلفة المسار الإجمالية هي:",
+    "optionsAr": [
+      "الحد الأقصى للتكلفة بين جميع خطوات العمل الفردية",
+      "منتج جميع تكاليف العمل الفردي",
+      "مجموع تكاليف الخطوة الفردية على طول المسار",
+      "متوسط ​​تكاليف عقدة البداية والهدف"
+    ]
   },
   {
     "id": 91,
@@ -1416,7 +2006,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'To avoid infinite loops where the agent traverses zero-cost or negative-cost cycles endlessly'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'To avoid infinite loops where the agent traverses zero-cost or negative-cost cycles endlessly' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'To avoid infinite loops where the agent traverses zero-cost or negative-cost cycles endlessly' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "لماذا يُفترض في البحث الكلاسيكي القياسي أن جميع تكاليف الإجراء يجب أن تكون إيجابية تمامًا (التكلفة > = إبسيلون > 0)؟",
+    "optionsAr": [
+      "للتأكد من عدم قسمة أجهزة الكمبيوتر على صفر أثناء البحث",
+      "لتجنب الحلقات اللانهائية حيث يجتاز الوكيل دورات التكلفة الصفرية أو التكلفة السلبية إلى ما لا نهاية",
+      "لأن المال الحقيقي لا يمكن أن يكون له قيم سلبية أبدًا",
+      "لإجبار BFS و DFS على إنشاء نفس العدد من العقد"
+    ]
   },
   {
     "id": 92,
@@ -1432,7 +2029,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'Abstraction'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Abstraction' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Abstraction' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "تسمى العملية الهندسية الأساسية لإزالة التفاصيل غير ذات الصلة من التمثيل العالمي لإنشاء نموذج مشكلة يمكن التحكم فيه:",
+    "optionsAr": [
+      "التقليم",
+      "التجريد",
+      "التفرد",
+      "تحسين"
+    ]
   },
   {
     "id": 93,
@@ -1448,7 +2052,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'If any abstract solution can be elaborated into a concrete solution in the more detailed real world'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'If any abstract solution can be elaborated into a concrete solution in the more detailed real world' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'If any abstract solution can be elaborated into a concrete solution in the more detailed real world' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "متى تعتبر صياغة المشكلة المجردة \"صالحة\"؟",
+    "optionsAr": [
+      "إذا لم يكن يحتوي على أرقام أكبر من 1000",
+      "إذا كان من الممكن تطوير أي حل مجرد إلى حل ملموس في العالم الحقيقي الأكثر تفصيلاً",
+      "إذا كان من الممكن حلها في زمن كثير الحدود O(n)",
+      "فقط إذا كان الرسم البياني الفضائي للحالة مستويًا تمامًا"
+    ]
   },
   {
     "id": 94,
@@ -1464,7 +2075,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار الصحيح هو 'Is easier than solving the original unabstracted problem'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Is easier than solving the original unabstracted problem' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Is easier than solving the original unabstracted problem' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "يعتبر التجريد \"مفيدًا\" في حالة تنفيذ كل إجراء مجرد في الحل:",
+    "optionsAr": [
+      "أسهل من حل المشكلة الأصلية غير الملخصة",
+      "يولد ما لا يقل عن 100 دولة لاحقة",
+      "يكلف بالضبط وحدة واحدة من الطاقة",
+      "يلغي الحاجة إلى حالة أولية"
+    ]
   },
   {
     "id": 95,
@@ -1480,7 +2098,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'A solution path that has the lowest path cost among all possible solutions'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'A solution path that has the lowest path cost among all possible solutions' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'A solution path that has the lowest path cost among all possible solutions' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "يتم تعريف الحل الأمثل لمشكلة البحث رسميًا على النحو التالي:",
+    "optionsAr": [
+      "أي مسار يزور أقل عدد ممكن من الحالات",
+      "مسار الحل ذو تكلفة المسار الأقل بين جميع الحلول الممكنة",
+      "المسار الذي يزور كل عقدة في الرسم البياني مرة واحدة بالضبط",
+      "تم اكتشاف الحل دون توسيع أي عقد غير هدفية"
+    ]
   },
   {
     "id": 96,
@@ -1496,7 +2121,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'To provide concise, exact problem descriptions to compare algorithm performance'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'To provide concise, exact problem descriptions to compare algorithm performance' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'To provide concise, exact problem descriptions to compare algorithm performance' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "ما هو الغرض الأكاديمي الأساسي لمشكلة مرجعية موحدة في أبحاث الذكاء الاصطناعي؟",
+    "optionsAr": [
+      "لإجراء حجوزات طيران تجارية فعلية",
+      "لتوفير أوصاف موجزة ودقيقة للمشكلة لمقارنة أداء الخوارزمية",
+      "للتحكم بأجهزة المصنع على خطوط الإنتاج",
+      "للقضاء على الحاجة إلى وظائف ارشادية"
+    ]
   },
   {
     "id": 97,
@@ -1512,7 +2144,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "مساحة الحالات تمثل جميع التكوينات الممكنة للمسألة، بينما شجرة البحث تمثل المسارات المحددة التي يستكشفها الوكيل والتي قد تتضمن حالات مكررة في فروع مختلفة.",
-    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata."
+    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata.",
+    "questionAr": "في عالم المكنسة الكهربائية المكون من ثلاث خلايا حيث يمكن أن تكون كل خلية نظيفة أو متسخة، ما هو العدد الدقيق للحالات المحتملة في مساحة الحالة؟",
+    "optionsAr": [
+      "12 ولاية",
+      "24 ولاية",
+      "16 ولاية",
+      "64 ولاية"
+    ]
   },
   {
     "id": 98,
@@ -1528,7 +2167,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'Moving the blank space Left, Right, Up, or Down'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Moving the blank space Left, Right, Up, or Down' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Moving the blank space Left, Right, Up, or Down' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "في الصيغة القياسية للألغاز الثمانية، كيف يتم تصور الإجراءات بشكل أكثر وضوحًا وملاءمة؟",
+    "optionsAr": [
+      "تحريك البلاطات المرقمة على طول المسارات القطرية",
+      "تحريك المساحة الفارغة لليسار أو لليمين أو للأعلى أو للأسفل",
+      "هز لوحة اللغز لترتيب البلاط بشكل عشوائي",
+      "مبادلة أي اثنين من البلاط التعسفي بغض النظر عن الموقف"
+    ]
   },
   {
     "id": 99,
@@ -1544,7 +2190,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'Exactly one-half (50%)'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Exactly one-half (50%)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Exactly one-half (50%)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "بسبب خاصية التكافؤ الرياضي في لغز البلاط المنزلق، ما هو الجزء من جميع ترتيبات البلاط العشوائية الممكنة التي يمكن أن تصل إلى حالة هدف معينة؟",
+    "optionsAr": [
+      "الكل بالضبط (100%)",
+      "بالضبط النصف (50%)",
+      "الثلث بالضبط (33%)",
+      "التاسع بالضبط (11%)"
+    ]
   },
   {
     "id": 100,
@@ -1560,7 +2213,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "في لغز 8-puzzle، تنقسم مساحة الحالات الإجمالية (9! = 362,880) إلى نصفين غير متصلين بسبب قيود التكافؤ الزوجي، وبالتالي عدد الحالات القابلة للوصول هو بالضبط 9! / 2 = 181,440 حالة.",
-    "explanationEn": "In the 8-puzzle, the permutation state space splits into two parity-separated components; exactly half the configurations (9! / 2 = 181,440) are reachable from any start state."
+    "explanationEn": "In the 8-puzzle, the permutation state space splits into two parity-separated components; exactly half the configurations (9! / 2 = 181,440) are reachable from any start state.",
+    "questionAr": "إجمالي عدد الحالات التي يمكن الوصول إليها في مساحة الحالة القياسية المكونة من 8 ألغاز هو بالضبط:",
+    "optionsAr": [
+      "9! = 362,880",
+      "9! / 2 = 181,440",
+      "8! = 40,320",
+      "2^8 = 256"
+    ]
   },
   {
     "id": 101,
@@ -1576,7 +2236,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'Over 10 trillion (16! / 2)'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Over 10 trillion (16! / 2)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Over 10 trillion (16! / 2)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "بالنسبة للألغاز الأكبر المكونة من 15 لغزًا (شبكة 4×4)، يكون عدد الحالات التي يمكن الوصول إليها تقريبًا:",
+    "optionsAr": [
+      "1.8 * 10^5",
+      "أكثر من 10 تريليون (16!/2)",
+      "15^2 = 225",
+      "لانهائي"
+    ]
   },
   {
     "id": 102,
@@ -1592,7 +2259,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "مساحة الحالات تمثل جميع التكوينات الممكنة للمسألة، بينما شجرة البحث تمثل المسارات المحددة التي يستكشفها الوكيل والتي قد تتضمن حالات مكررة في فروع مختلفة.",
-    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata."
+    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata.",
+    "questionAr": "توضح مشكلة دونالد كنوث 4 كيف يمكن أن تنشأ مساحات الحالة اللانهائية في مشاكل البحث من خلال تطبيق أي مجموعة من العمليات الرياضية على الرقم 4؟",
+    "optionsAr": [
+      "الجمع والطرح والضرب والقسمة",
+      "الجذر التربيعي والأرضي والمضروب",
+      "الوحدات والأسيات واللوغاريتمات",
+      "المشتقات والتكاملات والحدود"
+    ]
   },
   {
     "id": 103,
@@ -1608,7 +2282,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'Push scattered boxes to designated storage locations'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Push scattered boxes to designated storage locations' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Push scattered boxes to designated storage locations' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "في لغز عالم شبكة سوكوبان، ما هو الهدف الأساسي للعميل؟",
+    "optionsAr": [
+      "تنظيف جميع المربعات المتسخة بالشفط",
+      "ادفع الصناديق المتناثرة إلى مواقع التخزين المخصصة",
+      "تدمير قطع العدو على اللوح",
+      "سافر إلى بوخارست بأقل عدد من الأميال"
+    ]
   },
   {
     "id": 104,
@@ -1624,7 +2305,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'Touring problem where every city must be visited'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Touring problem where every city must be visited' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Touring problem where every city must be visited' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "يتم تصنيف مشكلة مندوب المبيعات المتجول (TSP) رسميًا على أنها نوع مشكلة البحث؟",
+    "optionsAr": [
+      "مشكلة مسار الوجهة الواحدة",
+      "مشكلة التجول حيث يجب زيارة كل مدينة",
+      "مشكلة الانعكاس المستمر",
+      "مشكلة في تحليل سوفت بوت"
+    ]
   },
   {
     "id": 105,
@@ -1640,7 +2328,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار الصحيح هو 'Cell layout and channel routing'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Cell layout and channel routing' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Cell layout and channel routing' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "في تصميم الدوائر الإلكترونية، تنقسم مشكلة تخطيط VLSI عادةً إلى أي مشكلتين فرعيتين متسلسلتين؟",
+    "optionsAr": [
+      "تخطيط الخلية وتوجيه القناة",
+      "لحام البوابة وربط الأسلاك",
+      "التوليف المنطقي وشحن الطاقة",
+      "توقيت الساعة وفك التعليمات"
+    ]
   },
   {
     "id": 106,
@@ -1656,7 +2351,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار الصحيح هو 'The search space has one continuous dimension for each joint angle'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'The search space has one continuous dimension for each joint angle' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'The search space has one continuous dimension for each joint angle' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "لماذا يعتبر تخطيط حركة الروبوت لذراع الروبوت ذات المفاصل المتعددة أكثر تعقيدًا بكثير من تحديد مسار الشبكة ثنائية الأبعاد؟",
+    "optionsAr": [
+      "مساحة البحث لها بعد واحد مستمر لكل زاوية مشتركة",
+      "لا يمكن لأذرع الروبوت تنفيذ إجراءات التدوير",
+      "أذرع الروبوت ليس لها حالة أولية",
+      "تكلفة حركة الذراع دائما سلبية"
+    ]
   },
   {
     "id": 107,
@@ -1672,7 +2374,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'Testing whether a physical part can be added without geometrical collision requires complex spatial reasoning'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Testing whether a physical part can be added without geometrical collision requires complex spatial reasoning' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Testing whether a physical part can be added without geometrical collision requires complex spatial reasoning' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "في تسلسل التجميع التلقائي لأشياء التصنيع، ما الذي يجعل العثور على الإجراءات القانونية مكلفًا من الناحية الحسابية بشكل خاص؟",
+    "optionsAr": [
+      "لا يمكن طلاء الأجزاء مسبقًا",
+      "يتطلب اختبار إمكانية إضافة جزء مادي دون تصادم هندسي تفكيرًا مكانيًا معقدًا",
+      "خطوط التجميع لها دائمًا إجراءات بدون تكلفة",
+      "مساحة الحالة دائمًا ما تكون غير دورية تمامًا"
+    ]
   },
   {
     "id": 108,
@@ -1688,7 +2397,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "البحث التكراري المعمق (IDS) يجمع بين انخفاض استهلاك الذاكرة كالبحث بالعمق O(bd) وميزة الاكتمال والأمثلية للبحث بالعرض، ويعد الطريقة المفضلة عند جهل عمق الحل.",
-    "explanationEn": "Iterative Deepening Search (IDS) combines the linear space efficiency of DFS with the completeness and optimality of BFS by repeatedly deepening depth limits."
+    "explanationEn": "Iterative Deepening Search (IDS) combines the linear space efficiency of DFS with the completeness and optimality of BFS by repeatedly deepening depth limits.",
+    "questionAr": "في علم الأحياء الحسابي، ما هي مشكلة البحث التي تهدف إلى العثور على سلسلة من الأحماض الأمينية التي يمكن طيها في بنية ثلاثية الأبعاد محددة لعلاج الأمراض؟",
+    "optionsAr": [
+      "تصميم البروتين",
+      "توجيه سوكوبان",
+      "مشكلة التجول",
+      "شبكة الملاحة العالمية"
+    ]
   },
   {
     "id": 109,
@@ -1704,7 +2420,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "مساحة الحالات تمثل جميع التكوينات الممكنة للمسألة، بينما شجرة البحث تمثل المسارات المحددة التي يستكشفها الوكيل والتي قد تتضمن حالات مكررة في فروع مختلفة.",
-    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata."
+    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata.",
+    "questionAr": "ما هو الفرق المفاهيمي الرئيسي بين الرسم البياني الفضائي للحالة وشجرة البحث؟",
+    "optionsAr": [
+      "تصف مساحة الحالة التكوينات المادية للعالم، بينما تصف شجرة البحث مسارات البحث بين الحالات",
+      "تحتوي شجرة البحث على مدن فعلية، بينما تحتوي مساحة الحالة على عقد مجردة",
+      "لا يمكن أبدًا أن تحتوي الرسوم البيانية الفضائية للحالة على حلقات، بينما تحتوي أشجار البحث دائمًا على حلقات",
+      "لا يوجد فرق. المصطلحين متطابقان"
+    ]
   },
   {
     "id": 110,
@@ -1720,7 +2443,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "مساحة الحالات تمثل جميع التكوينات الممكنة للمسألة، بينما شجرة البحث تمثل المسارات المحددة التي يستكشفها الوكيل والتي قد تتضمن حالات مكررة في فروع مختلفة.",
-    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata."
+    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata.",
+    "questionAr": "في خوارزميات البحث، يتم تمثيل كل عقدة في شجرة البحث بواسطة بنية بيانات تحتوي على عدد المكونات الأساسية؟",
+    "optionsAr": [
+      "مكونين",
+      "ثلاثة مكونات",
+      "أربعة مكونات",
+      "ستة مكونات"
+    ]
   },
   {
     "id": 111,
@@ -1736,7 +2466,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "مساحة الحالات تمثل جميع التكوينات الممكنة للمسألة، بينما شجرة البحث تمثل المسارات المحددة التي يستكشفها الوكيل والتي قد تتضمن حالات مكررة في فروع مختلفة.",
-    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata."
+    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata.",
+    "questionAr": "أي مما يلي يسرد بشكل صحيح المكونات الأربعة لبنية بيانات عقدة شجرة البحث؟",
+    "optionsAr": [
+      "الدولة، الوالد، الإجراء، تكلفة المسار",
+      "المستشعر، المشغل، البرنامج، المكافأة",
+      "المدخلات والمخرجات والوزن والتحيز",
+      "العمق، العرض، الارتفاع، الحجم"
+    ]
   },
   {
     "id": 112,
@@ -1752,7 +2489,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "مساحة الحالات تمثل جميع التكوينات الممكنة للمسألة، بينما شجرة البحث تمثل المسارات المحددة التي يستكشفها الوكيل والتي قد تتضمن حالات مكررة في فروع مختلفة.",
-    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata."
+    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata.",
+    "questionAr": "ما هي الوظيفة الأساسية لمؤشر PARENT المخزن داخل كل بنية بيانات عقدة في شجرة البحث؟",
+    "optionsAr": [
+      "يسمح للخوارزمية بالتتبع للخلف من عقدة الهدف لاستعادة مسار الحل الكامل",
+      "إنه يحدد القيمة الإرشادية h(n)",
+      "يقوم بحساب عامل التفرع ب",
+      "يقوم بإعادة ضبط البحث عند نفاد الذاكرة"
+    ]
   },
   {
     "id": 113,
@@ -1768,7 +2512,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "مساحة الحالات تمثل جميع التكوينات الممكنة للمسألة، بينما شجرة البحث تمثل المسارات المحددة التي يستكشفها الوكيل والتي قد تتضمن حالات مكررة في فروع مختلفة.",
-    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata."
+    "explanationEn": "The state space is the set of all world states, while the search tree is the dynamic set of paths explored by the algorithm, where nodes contain parent and cost metadata.",
+    "questionAr": "مجموعة كافة العقد التي تم إنشاؤها ولكن لم يتم توسيعها بعد في شجرة البحث تسمى:",
+    "optionsAr": [
+      "وصلت المجموعة",
+      "الحدود (أو القائمة المفتوحة)",
+      "مساحة الدولة",
+      "مسار الحل"
+    ]
   },
   {
     "id": 114,
@@ -1784,7 +2535,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الحدود (Frontier / Open list) تمثل مجموعة جميع العقد التي تم توليدها ولكن لم يتم التوسع فيها واستكشاف أبنائها بعد.",
-    "explanationEn": "The frontier (or open list) is the collection of all leaf nodes generated so far that have not yet been expanded."
+    "explanationEn": "The frontier (or open list) is the collection of all leaf nodes generated so far that have not yet been expanded.",
+    "questionAr": "ما هي عملية قائمة الانتظار الحدودية التي تقوم بإزالة العقدة العليا وإرجاعها وفقًا لاستراتيجية ترتيب قائمة الانتظار؟",
+    "optionsAr": [
+      "أعلى (الحدود)",
+      "بوب (الحدود)",
+      "ADD(عقدة، حدود)",
+      "IS-فارغة (الحدود)"
+    ]
   },
   {
     "id": 115,
@@ -1800,7 +2558,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الحدود (Frontier / Open list) تمثل مجموعة جميع العقد التي تم توليدها ولكن لم يتم التوسع فيها واستكشاف أبنائها بعد.",
-    "explanationEn": "The frontier (or open list) is the collection of all leaf nodes generated so far that have not yet been expanded."
+    "explanationEn": "The frontier (or open list) is the collection of all leaf nodes generated so far that have not yet been expanded.",
+    "questionAr": "توضح خاصية الفصل للبحث في الرسم البياني أن الحدود تعمل كحدود تفصل بين منطقتين من الرسم البياني الفضائي للحالة؟",
+    "optionsAr": [
+      "عقدة البداية والعقدة الجذرية",
+      "الداخلية (الحالات الموسعة بالكامل) والخارجية (الحالات التي لم يتم الوصول إليها)",
+      "حالات الهدف والحالات الأولية",
+      "الدول المقبولة والدول غير المقبولة"
+    ]
   },
   {
     "id": 116,
@@ -1816,7 +2581,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'Cycle (or loopy path)'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Cycle (or loopy path)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Cycle (or loopy path)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "في خوارزميات البحث، المسار الذي يشكل حلقة من خلال العودة إلى الحالة التي تمت زيارتها مسبقًا (على سبيل المثال، Arad -> Sibiu -> Arad) يُعرف باسم:",
+    "optionsAr": [
+      "المسار الإرشادي",
+      "دورة (أو مسار مجنون)",
+      "الفرع الأمثل",
+      "الحافة المهيمنة"
+    ]
   },
   {
     "id": 117,
@@ -1832,7 +2604,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار الصحيح هو 'Graph search maintains a reached table to detect and eliminate redundant paths, whereas tree- like search does not'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Graph search maintains a reached table to detect and eliminate redundant paths, whereas tree- like search does not' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Graph search maintains a reached table to detect and eliminate redundant paths, whereas tree- like search does not' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "ما هو الفرق الخوارزمي الحاسم بين خوارزمية \"بحث الرسم البياني\" وخوارزمية \"البحث الشبيه بالشجرة\"؟",
+    "optionsAr": [
+      "يحتفظ بحث الرسم البياني بجدول تم الوصول إليه لاكتشاف المسارات الزائدة عن الحاجة وإزالتها، في حين أن البحث الشبيه بالشجرة لا",
+      "يتم تشغيل بحث الرسم البياني فقط على الخرائط المستوية، بينما يتم تشغيل البحث المشابه للشجرة على الأشجار",
+      "يستخدم البحث الشبيه بالشجرة دائمًا قائمة انتظار ذات أولوية، بينما يستخدم البحث في الرسم البياني المكدس",
+      "لا يمكن لبحث الرسم البياني العثور على المسارات المثالية"
+    ]
   },
   {
     "id": 118,
@@ -1848,7 +2627,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'Space Complexity'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Space Complexity' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Space Complexity' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "يتم تقييم خوارزميات البحث رسميًا وفقًا لأربعة أبعاد أساسية: الاكتمال، وتحسين التكلفة، وتعقيد الوقت، و:",
+    "optionsAr": [
+      "قابلية التوسيع",
+      "تعقيد الفضاء",
+      "المنحدر الإرشادي",
+      "عمق المتفرعة"
+    ]
   },
   {
     "id": 119,
@@ -1864,7 +2650,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'Find a solution whenever one exists, and correctly report failure when there is none'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Find a solution whenever one exists, and correctly report failure when there is none' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Find a solution whenever one exists, and correctly report failure when there is none' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "يُطلق على خوارزمية البحث اسم \"كاملة\" إذا تم ضمانها لـ:",
+    "optionsAr": [
+      "ابحث عن الحل في أقل من ثانية",
+      "ابحث عن حل عندما يكون موجودًا، وقم بالإبلاغ بشكل صحيح عن الفشل في حالة عدم وجوده",
+      "لا تستخدم أكثر من ذاكرة O(bm)",
+      "قم بتوسيع كافة العقد في الرسم البياني الفضائي للحالة"
+    ]
   },
   {
     "id": 120,
@@ -1880,7 +2673,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'Always finds a solution path with the lowest path cost among all possible solutions'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Always finds a solution path with the lowest path cost among all possible solutions' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Always finds a solution path with the lowest path cost among all possible solutions' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "توصف خوارزمية البحث بأنها \"التكلفة المثلى\" إذا كانت:",
+    "optionsAr": [
+      "يوسع أقل عدد من العقد الإجمالية",
+      "يجد دائمًا مسار الحل بأقل تكلفة للمسار بين جميع الحلول الممكنة",
+      "تعمل مع تعقيد الذاكرة الخطية O(bd)",
+      "يقيم فقط وظائف ارشادية مقبولة"
+    ]
   },
   {
     "id": 121,
@@ -1896,7 +2696,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'The maximum branching factor of the search tree'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'The maximum branching factor of the search tree' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'The maximum branching factor of the search tree' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "في تحليل التعقيد النظري لخوارزميات البحث، ماذا تمثل المعلمة \"b\"؟",
+    "optionsAr": [
+      "عمق المرمى الضحل",
+      "الحد الأقصى لعامل التفرع لشجرة البحث",
+      "إجمالي عدد الدورات في الرسم البياني",
+      "مسافة الخط المستقيم إلى بوخارست"
+    ]
   },
   {
     "id": 122,
@@ -1912,7 +2719,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'The depth of the shallowest optimal solution'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'The depth of the shallowest optimal solution' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'The depth of the shallowest optimal solution' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "في صيغ تعقيد البحث، ما الذي تشير إليه المعلمة \"d\"؟",
+    "optionsAr": [
+      "أقصى عمق لشجرة البحث (يمكن أن يكون لا نهائي)",
+      "عمق الحل الأمثل الضحل",
+      "قطر الرسم البياني",
+      "عدد تكاليف الإجراء يساوي 1"
+    ]
   },
   {
     "id": 123,
@@ -1928,7 +2742,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار الصحيح هو 'The maximum length of any path in the state space (which may be infinite)'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'The maximum length of any path in the state space (which may be infinite)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'The maximum length of any path in the state space (which may be infinite)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "في صيغ تعقيد البحث، ما الذي تشير إليه المعلمة \"m\"؟",
+    "optionsAr": [
+      "الحد الأقصى لطول أي مسار في مساحة الحالة (والذي قد يكون لا نهائيًا)",
+      "عدد البلاطات في غير مكانها في اللغز الـ 8",
+      "الحد الأدنى لتكلفة الخطوة إبسيلون",
+      "عدد حالات الهدف"
+    ]
   },
   {
     "id": 124,
@@ -1944,7 +2765,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'Diameter'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Diameter' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Diameter' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "الحد الأقصى لعدد الخطوات المطلوبة للانتقال من أي ولاية إلى أي ولاية أخرى على طول أقصر مسار بينهما في الرسم البياني لمساحة الولاية يسمى:",
+    "optionsAr": [
+      "نصف القطر",
+      "القطر",
+      "محيط",
+      "مؤشر المتفرعة"
+    ]
   },
   {
     "id": 125,
@@ -1960,7 +2788,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار الصحيح هو 'The grid has only 100 cells, but the number of paths of length 9 is over 100 million'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'The grid has only 100 cells, but the number of paths of length 9 is over 100 million' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'The grid has only 100 cells, but the number of paths of length 9 is over 100 million' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "في عالم شبكي خالٍ من العوائق 10x10 حيث يمكن للوكيل التحرك في 8 اتجاهات، لماذا يعد التخلص من المسارات الزائدة أمرًا بالغ الأهمية لسرعة البحث؟",
+    "optionsAr": [
+      "تحتوي الشبكة على 100 خلية فقط، لكن عدد المسارات بطول 9 يزيد عن 100 مليون",
+      "لا يمكن حل شبكات 10x10 باستخدام بحث العرض الأول",
+      "التحرك في 8 اتجاهات يجعل البيئة مستمرة",
+      "أجهزة استشعار الوكيل تفشل بعد 9 خطوات"
+    ]
   },
   {
     "id": 126,
@@ -1976,7 +2811,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "البحث بالعرض أولاً (BFS) يتوسع في العقد الأقل عمقاً أولاً باستخدام طابور FIFO. وهو كامل ومثالي إذا تساوت تكاليف الخطوات، ولكنه يستهلك ذاكرة أسية O(b^d).",
-    "explanationEn": "Breadth-First Search (BFS) expands the shallowest nodes first using a FIFO queue. It is complete and optimal for uniform step costs, with exponential space O(b^d)."
+    "explanationEn": "Breadth-First Search (BFS) expands the shallowest nodes first using a FIFO queue. It is complete and optimal for uniform step costs, with exponential space O(b^d).",
+    "questionAr": "ما هي قاعدة توسيع العقدة التي تحكم البحث بالعرض الأول (BFS)؟",
+    "optionsAr": [
+      "قم بتوسيع أعمق عقدة غير موسعة في الحدود",
+      "قم بتوسيع العقدة الضحلة غير الموسعة في الحدود",
+      "قم بتوسيع العقدة ذات القيمة الإرشادية الأقل h(n)",
+      "قم بتوسيع العقدة ذات تكلفة المسار الأكبر g(n)"
+    ]
   },
   {
     "id": 127,
@@ -1992,7 +2834,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "البحث بالعرض أولاً (BFS) يتوسع في العقد الأقل عمقاً أولاً باستخدام طابور FIFO. وهو كامل ومثالي إذا تساوت تكاليف الخطوات، ولكنه يستهلك ذاكرة أسية O(b^d).",
-    "explanationEn": "Breadth-First Search (BFS) expands the shallowest nodes first using a FIFO queue. It is complete and optimal for uniform step costs, with exponential space O(b^d)."
+    "explanationEn": "Breadth-First Search (BFS) expands the shallowest nodes first using a FIFO queue. It is complete and optimal for uniform step costs, with exponential space O(b^d).",
+    "questionAr": "ما هي بنية البيانات المستخدمة بشكل تقليدي لتنفيذ قائمة الانتظار الحدودية في بحث العرض الأول (BFS)؟",
+    "optionsAr": [
+      "مكدس LIFO",
+      "قائمة انتظار FIFO",
+      "قائمة انتظار الأولوية مرتبة بواسطة h(n)",
+      "جدول التجزئة"
+    ]
   },
   {
     "id": 128,
@@ -2008,7 +2857,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "البحث بالعرض أولاً (BFS) يتوسع في العقد الأقل عمقاً أولاً باستخدام طابور FIFO. وهو كامل ومثالي إذا تساوت تكاليف الخطوات، ولكنه يستهلك ذاكرة أسية O(b^d).",
-    "explanationEn": "Breadth-First Search (BFS) expands the shallowest nodes first using a FIFO queue. It is complete and optimal for uniform step costs, with exponential space O(b^d)."
+    "explanationEn": "Breadth-First Search (BFS) expands the shallowest nodes first using a FIFO queue. It is complete and optimal for uniform step costs, with exponential space O(b^d).",
+    "questionAr": "لماذا يمكن لبحث العرض الأول تطبيق \"اختبار الهدف المبكر\" (التحقق مما إذا كانت العقدة هدفًا بمجرد إنشائها، وليس عند ظهورها)؟",
+    "optionsAr": [
+      "لأن BFS لا يقوم أبدًا بتوسيع العقد بتكاليف متساوية",
+      "لأن أي طفل يتم إنشاؤه على العمق d يضمن أن يكون من بين المسارات الأكثر ضحالة لتلك الحالة",
+      "لأن قوائم الانتظار ذات الأولوية تتطلب اختبار الهدف مبكرًا",
+      "لأن اختبار الهدف المبكر يقلل من عامل التفرع إلى 1"
+    ]
   },
   {
     "id": 129,
@@ -2024,7 +2880,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "البحث بالعرض أولاً (BFS) يتوسع في العقد الأقل عمقاً أولاً باستخدام طابور FIFO. وهو كامل ومثالي إذا تساوت تكاليف الخطوات، ولكنه يستهلك ذاكرة أسية O(b^d).",
-    "explanationEn": "Breadth-First Search (BFS) expands the shallowest nodes first using a FIFO queue. It is complete and optimal for uniform step costs, with exponential space O(b^d)."
+    "explanationEn": "Breadth-First Search (BFS) expands the shallowest nodes first using a FIFO queue. It is complete and optimal for uniform step costs, with exponential space O(b^d).",
+    "questionAr": "ما هو التعقيد الفضائي الأسوأ في البحث عن العرض الأول لعامل التفرع b وعمق الحل d؟",
+    "optionsAr": [
+      "يا(دينار بحريني)",
+      "يا(ب^د)",
+      "يا(بم)",
+      "يا (د ^ ب)"
+    ]
   },
   {
     "id": 130,
@@ -2040,7 +2903,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "البحث بالعرض أولاً (BFS) يتوسع في العقد الأقل عمقاً أولاً باستخدام طابور FIFO. وهو كامل ومثالي إذا تساوت تكاليف الخطوات، ولكنه يستهلك ذاكرة أسية O(b^d).",
-    "explanationEn": "Breadth-First Search (BFS) expands the shallowest nodes first using a FIFO queue. It is complete and optimal for uniform step costs, with exponential space O(b^d)."
+    "explanationEn": "Breadth-First Search (BFS) expands the shallowest nodes first using a FIFO queue. It is complete and optimal for uniform step costs, with exponential space O(b^d).",
+    "questionAr": "لماذا تعتبر متطلبات الذاكرة (تعقيد المساحة) عادةً بمثابة عنق الزجاجة العملي الأكثر خطورة بكثير من وقت التنفيذ للبحث الموسع؟",
+    "optionsAr": [
+      "الوصول إلى الذاكرة أبطأ من معالجة وحدة المعالجة المركزية",
+      "يجب أن تظل كافة العقد التي تم إنشاؤها في المستوى d مخزنة في الذاكرة، مما يؤدي إلى استهلاك الجيجابايت أو التيرابايت بسرعة",
+      "يقوم BFS بإفراغ المخزن المؤقت للذاكرة بعد كل توسيع",
+      "يمكن أن تحتوي قوائم انتظار FIFO على 1000 عقدة كحد أقصى في أنظمة التشغيل الحديثة"
+    ]
   },
   {
     "id": 131,
@@ -2056,7 +2926,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'Uniform-Cost Search (UCS)'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Uniform-Cost Search (UCS)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Uniform-Cost Search (UCS)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "ما هي الخوارزمية التي تعادل خوارزمية Dijkstra للمسار الأقصر في أدبيات بحث الذكاء الاصطناعي؟",
+    "optionsAr": [
+      "العمق-البحث الأول",
+      "بحث التكلفة الموحدة (UCS)",
+      "الجشع أفضل البحث الأول",
+      "بحث التعميق التكراري"
+    ]
   },
   {
     "id": 132,
@@ -2072,7 +2949,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "بحث التكلفة الموحدة (UCS) يوسع دائماً العقدة ذات أقل تكلفة تراكمية g(n) باستخدام طابور أولوية، ويضمن إيجاد الحل الأمثل متى كانت تكاليف الخطوات موجبة.",
-    "explanationEn": "Uniform-Cost Search (UCS) expands the node with lowest path cost g(n) via priority queue, guaranteeing cost-optimality with non-negative step costs."
+    "explanationEn": "Uniform-Cost Search (UCS) expands the node with lowest path cost g(n) via priority queue, guaranteeing cost-optimality with non-negative step costs.",
+    "questionAr": "في بحث التكلفة الموحدة، ما هي العقدة من الحدود التي تم تحديدها للتوسع في كل خطوة؟",
+    "optionsAr": [
+      "العقدة ذات المستوى الأعمق في الشجرة",
+      "العقدة ذات أقل تكلفة للمسار g(n) من حالة البداية",
+      "العقدة التي تحتوي على أكبر عدد من الأطفال",
+      "العقدة التي تم إنشاؤها مؤخرًا"
+    ]
   },
   {
     "id": 133,
@@ -2088,7 +2972,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "بحث التكلفة الموحدة (UCS) يوسع دائماً العقدة ذات أقل تكلفة تراكمية g(n) باستخدام طابور أولوية، ويضمن إيجاد الحل الأمثل متى كانت تكاليف الخطوات موجبة.",
-    "explanationEn": "Uniform-Cost Search (UCS) expands the node with lowest path cost g(n) via priority queue, guaranteeing cost-optimality with non-negative step costs."
+    "explanationEn": "Uniform-Cost Search (UCS) expands the node with lowest path cost g(n) via priority queue, guaranteeing cost-optimality with non-negative step costs.",
+    "questionAr": "لماذا يجب أن يقوم بحث التكلفة الموحدة بإجراء اختبار الهدف الخاص به عند ظهور العقدة من الحدود (اختبار متأخر)، وليس عند إنشائها (اختبار مبكر)؟",
+    "optionsAr": [
+      "لمنع تجاوز الذاكرة في قائمة الانتظار ذات الأولوية",
+      "لأن الطريق الأرخص للوصول إلى الهدف قد يتم اكتشافه لاحقاً قبل توسيع الهدف",
+      "لأن قوائم الانتظار ذات الأولوية لا تدعم الإدراج المبكر",
+      "لأن تكلفة عقدة البداية g(n) = 0"
+    ]
   },
   {
     "id": 134,
@@ -2104,7 +2995,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "البحث بالعمق أولاً (DFS) يستكشف الفروع لأعمق حد ممكن عبر مكدس LIFO. ميزته الكبرى هي انخفاض استهلاك الذاكرة الخطي O(bm)، لكنه ليس مثالياً للتكلفة.",
-    "explanationEn": "Depth-First Search (DFS) uses a LIFO stack to traverse down single branches. Its main benefit is linear memory complexity O(bm), but it is not cost-optimal."
+    "explanationEn": "Depth-First Search (DFS) uses a LIFO stack to traverse down single branches. Its main benefit is linear memory complexity O(bm), but it is not cost-optimal.",
+    "questionAr": "ما هي قاعدة توسيع العقدة التي تميز البحث العميق الأول (DFS)؟",
+    "optionsAr": [
+      "قم بتوسيع العقدة الضحلة غير الموسعة",
+      "قم بتوسيع أعمق عقدة غير موسعة في الحدود",
+      "قم بتوسيع العقدة ذات القيمة الإرشادية الأعلى",
+      "قم بتوسيع العقد بترتيب عشوائي"
+    ]
   },
   {
     "id": 135,
@@ -2120,7 +3018,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "البحث بالعمق أولاً (DFS) يستكشف الفروع لأعمق حد ممكن عبر مكدس LIFO. ميزته الكبرى هي انخفاض استهلاك الذاكرة الخطي O(bm)، لكنه ليس مثالياً للتكلفة.",
-    "explanationEn": "Depth-First Search (DFS) uses a LIFO stack to traverse down single branches. Its main benefit is linear memory complexity O(bm), but it is not cost-optimal."
+    "explanationEn": "Depth-First Search (DFS) uses a LIFO stack to traverse down single branches. Its main benefit is linear memory complexity O(bm), but it is not cost-optimal.",
+    "questionAr": "ما هي بنية البيانات المستخدمة للحفاظ على الحدود في البحث القياسي للعمق الأول؟",
+    "optionsAr": [
+      "مكدس LIFO",
+      "قائمة انتظار FIFO",
+      "قائمة الانتظار ذات الأولوية مرتبة حسب g(n)",
+      "الحد الأدنى الثنائي"
+    ]
   },
   {
     "id": 136,
@@ -2136,7 +3041,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "البحث بالعرض أولاً (BFS) يتوسع في العقد الأقل عمقاً أولاً باستخدام طابور FIFO. وهو كامل ومثالي إذا تساوت تكاليف الخطوات، ولكنه يستهلك ذاكرة أسية O(b^d).",
-    "explanationEn": "Breadth-First Search (BFS) expands the shallowest nodes first using a FIFO queue. It is complete and optimal for uniform step costs, with exponential space O(b^d)."
+    "explanationEn": "Breadth-First Search (BFS) expands the shallowest nodes first using a FIFO queue. It is complete and optimal for uniform step costs, with exponential space O(b^d).",
+    "questionAr": "ما هي الميزة العملية الأساسية لبحث العمق أولاً الشبيه بالشجرة مقارنة ببحث العرض أولًا؟",
+    "optionsAr": [
+      "نضمن دائمًا إيجاد الحل الأمثل للتكلفة",
+      "لها تعقيد فضاء خطي متواضع قدره O(bm)",
+      "لا يقوم أبدًا بزيارة المسارات أو الدورات الزائدة عن الحاجة",
+      "التعقيد الزمني هو دائمًا O(d)"
+    ]
   },
   {
     "id": 137,
@@ -2152,7 +3064,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "البحث بالعمق أولاً (DFS) يستكشف الفروع لأعمق حد ممكن عبر مكدس LIFO. ميزته الكبرى هي انخفاض استهلاك الذاكرة الخطي O(bm)، لكنه ليس مثالياً للتكلفة.",
-    "explanationEn": "Depth-First Search (DFS) uses a LIFO stack to traverse down single branches. Its main benefit is linear memory complexity O(bm), but it is not cost-optimal."
+    "explanationEn": "Depth-First Search (DFS) uses a LIFO stack to traverse down single branches. Its main benefit is linear memory complexity O(bm), but it is not cost-optimal.",
+    "questionAr": "لماذا لا يكتمل البحث القياسي في العمق-الأول الشبيه بالشجرة في مساحات الحالة ذات العمق أو الدورات اللانهائية؟",
+    "optionsAr": [
+      "لأن الذاكرة المكدسة نفدت على الفور",
+      "لأنه يمكن أن يتبع فرعًا أو دورة لا نهائية إلى الأبد دون استكشاف بدائل أخرى",
+      "لأنه لا يمكن إجراء اختبار الهدف على عمق أكبر من 10",
+      "لأن تكاليف الخطوة إيجابية تمامًا"
+    ]
   },
   {
     "id": 138,
@@ -2168,7 +3087,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "البحث بالعمق أولاً (DFS) يستكشف الفروع لأعمق حد ممكن عبر مكدس LIFO. ميزته الكبرى هي انخفاض استهلاك الذاكرة الخطي O(bm)، لكنه ليس مثالياً للتكلفة.",
-    "explanationEn": "Depth-First Search (DFS) uses a LIFO stack to traverse down single branches. Its main benefit is linear memory complexity O(bm), but it is not cost-optimal."
+    "explanationEn": "Depth-First Search (DFS) uses a LIFO stack to traverse down single branches. Its main benefit is linear memory complexity O(bm), but it is not cost-optimal.",
+    "questionAr": "في البحث التراجعي (متغير DFS موفر للذاكرة)، ما عدد العقد اللاحقة التي يتم إنشاؤها في المرة الواحدة؟",
+    "optionsAr": [
+      "خليفة واحد بالضبط",
+      "جميع ب خلفاء",
+      "ب/ 2 خلفاء",
+      "صفر خلفاء"
+    ]
   },
   {
     "id": 139,
@@ -2184,7 +3110,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'Nodes at depth l are treated as if they have no successors'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Nodes at depth l are treated as if they have no successors' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Nodes at depth l are treated as if they have no successors' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "في البحث المحدود العمق (DLS)، ماذا يحدث عندما يصل فرع البحث إلى حد العمق المحدد مسبقًا؟",
+    "optionsAr": [
+      "البرنامج بأكمله يتعطل مع الفشل",
+      "يتم التعامل مع العقد في العمق l كما لو لم يكن لها خلفاء",
+      "تتحول الخوارزمية فورًا إلى BFS",
+      "يتم مضاعفة وظيفة الكشف عن مجريات الأمور"
+    ]
   },
   {
     "id": 140,
@@ -2200,7 +3133,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'Solution node, Failure, or Cutoff'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Solution node, Failure, or Cutoff' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Solution node, Failure, or Cutoff' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "وفقًا للكود الكاذب في الشكل 3.12، ما هي الأنواع الثلاثة المحتملة من القيم؟",
+    "optionsAr": [
+      "نجاح، خطأ، مهلة",
+      "عقدة الحل أو الفشل أو القطع",
+      "صحيح، خطأ، لاغ",
+      "الأمثل، دون الأمثل، غير ممكن"
+    ]
   },
   {
     "id": 141,
@@ -2216,7 +3156,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "البحث التكراري المعمق (IDS) يجمع بين انخفاض استهلاك الذاكرة كالبحث بالعمق O(bd) وميزة الاكتمال والأمثلية للبحث بالعرض، ويعد الطريقة المفضلة عند جهل عمق الحل.",
-    "explanationEn": "Iterative Deepening Search (IDS) combines the linear space efficiency of DFS with the completeness and optimality of BFS by repeatedly deepening depth limits."
+    "explanationEn": "Iterative Deepening Search (IDS) combines the linear space efficiency of DFS with the completeness and optimality of BFS by repeatedly deepening depth limits.",
+    "questionAr": "كيف يحدد بحث التعميق التكراري (IDS) حد العمق l أثناء تنفيذه؟",
+    "optionsAr": [
+      "يبدأ من ما لا نهاية ويتناقص بمقدار 1 في كل خطوة",
+      "فهو يحاول بشكل منهجي زيادة حدود العمق: أولاً 0، ثم 1، ثم 2، وهكذا",
+      "يقوم بتعيين حد العمق مساويًا للقيمة الإرشادية h(n)",
+      "يقوم بإنشاء حد عمق عشوائي بين 1 و 100"
+    ]
   },
   {
     "id": 142,
@@ -2232,7 +3179,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "البحث التكراري المعمق (IDS) يجمع بين انخفاض استهلاك الذاكرة كالبحث بالعمق O(bd) وميزة الاكتمال والأمثلية للبحث بالعرض، ويعد الطريقة المفضلة عند جهل عمق الحل.",
-    "explanationEn": "Iterative Deepening Search (IDS) combines the linear space efficiency of DFS with the completeness and optimality of BFS by repeatedly deepening depth limits."
+    "explanationEn": "Iterative Deepening Search (IDS) combines the linear space efficiency of DFS with the completeness and optimality of BFS by repeatedly deepening depth limits.",
+    "questionAr": "ما هو تعقيد الذاكرة (المساحة) للبحث التعميق التكراري عندما يوجد حل في العمق d مع عامل التفرع b؟",
+    "optionsAr": [
+      "يا(ب^د)",
+      "يا(دينار بحريني)",
+      "يا (د ^ ب)",
+      "يا (م!)"
+    ]
   },
   {
     "id": 143,
@@ -2248,7 +3202,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "البحث التكراري المعمق (IDS) يجمع بين انخفاض استهلاك الذاكرة كالبحث بالعمق O(bd) وميزة الاكتمال والأمثلية للبحث بالعرض، ويعد الطريقة المفضلة عند جهل عمق الحل.",
-    "explanationEn": "Iterative Deepening Search (IDS) combines the linear space efficiency of DFS with the completeness and optimality of BFS by repeatedly deepening depth limits."
+    "explanationEn": "Iterative Deepening Search (IDS) combines the linear space efficiency of DFS with the completeness and optimality of BFS by repeatedly deepening depth limits.",
+    "questionAr": "لماذا لا يعد التوليد المتكرر لعقد المستوى العلوي في بحث التعميق التكراري هدرًا حسابيًا كبيرًا في الأشجار ذات عامل المتفرعة b >= 2؟",
+    "optionsAr": [
+      "لأن العقد العلوية مخزنة بشكل دائم في ذاكرة التخزين المؤقت",
+      "لأن الغالبية العظمى من العقد في الشجرة الأسية تقع في المستوى السفلي d",
+      "لأن المعالج يعمل بشكل أسرع 10 مرات على العقد المتكررة",
+      "لأن تكلفة العقد العليا صفر"
+    ]
   },
   {
     "id": 144,
@@ -2264,7 +3225,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار الصحيح هو 'It simultaneously searches forward from the initial state and backward from the goal state'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'It simultaneously searches forward from the initial state and backward from the goal state' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'It simultaneously searches forward from the initial state and backward from the goal state' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "ما هو المبدأ التشغيلي الأساسي للبحث ثنائي الاتجاه؟",
+    "optionsAr": [
+      "يتم تشغيل بحث العرض الأول وبحث العمق أولاً بالتناوب",
+      "يقوم بالبحث في نفس الوقت للأمام من الحالة الأولية وللخلف من حالة الهدف",
+      "يقوم بالبحث في الشجرة الفرعية اليسرى والشجرة الفرعية اليمنى في وقت واحد",
+      "يقوم بتقييم كل من الاستدلالات المقبولة وغير المقبولة في وقت واحد"
+    ]
   },
   {
     "id": 145,
@@ -2280,7 +3248,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار الصحيح هو 'Searching two frontiers of depth d/2 takes time O(2 * b^(d/2)), which is exponentially smaller than O(b^d)'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Searching two frontiers of depth d/2 takes time O(2 * b^(d/2)), which is exponentially smaller than O(b^d)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Searching two frontiers of depth d/2 takes time O(2 * b^(d/2)), which is exponentially smaller than O(b^d)' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "ما هو الدافع الحسابي الأساسي لاستخدام البحث ثنائي الاتجاه بدلاً من البحث أحادي الاتجاه؟",
+    "optionsAr": [
+      "يستغرق البحث عن حدين للعمق d/2 وقتًا O(2 * b^(d/2))، وهو أصغر بشكل كبير من O(b^d)",
+      "إنه يلغي تمامًا الحاجة إلى بيانات المستشعر",
+      "لا يتطلب أي ذاكرة لأن الحدود لا تخزن الحالات",
+      "إنه يضمن أن جميع الاستدلالات تصبح متسقة بشكل صارم"
+    ]
   },
   {
     "id": 146,
@@ -2296,7 +3271,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "دالة الهيورستك h(n) هي دالة تقديرية تعطي تقديراً لتكلفة أرخص مسار من الحالة الحالية n إلى حالة الهدف، وتستمد معلوماتها من خصائص المسألة.",
-    "explanationEn": "A heuristic function h(n) estimates the cheapest path cost from node n to a goal state, guiding informed search algorithms efficiently."
+    "explanationEn": "A heuristic function h(n) estimates the cheapest path cost from node n to a goal state, guiding informed search algorithms efficiently.",
+    "questionAr": "في خوارزميات البحث المستنيرة، ما الذي تقدره الدالة الإرشادية h(n)؟",
+    "optionsAr": [
+      "التكلفة الدقيقة للمسار من العقدة الجذرية إلى العقدة n",
+      "التكلفة المقدرة لأرخص مسار من الحالة عند العقدة n إلى حالة الهدف",
+      "إجمالي عدد العقد المخزنة حاليًا في الحدود",
+      "الوقت اللازم لتنفيذ الإجراء التالي بالثواني"
+    ]
   },
   {
     "id": 147,
@@ -2312,7 +3294,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "دالة الهيورستك h(n) هي دالة تقديرية تعطي تقديراً لتكلفة أرخص مسار من الحالة الحالية n إلى حالة الهدف، وتستمد معلوماتها من خصائص المسألة.",
-    "explanationEn": "A heuristic function h(n) estimates the cheapest path cost from node n to a goal state, guiding informed search algorithms efficiently."
+    "explanationEn": "A heuristic function h(n) estimates the cheapest path cost from node n to a goal state, guiding informed search algorithms efficiently.",
+    "questionAr": "إذا كانت العقدة n تمثل حالة هدف صالحة، فما هي قيمة دالتها الإرشادية h(n)؟",
+    "optionsAr": [
+      "ح(ن) = 0",
+      "ح(ن) = 1",
+      "ح(ن) = ما لا نهاية",
+      "ح(ن) = ز(ن)"
+    ]
   },
   {
     "id": 148,
@@ -2328,7 +3317,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "دالة الهيورستك h(n) هي دالة تقديرية تعطي تقديراً لتكلفة أرخص مسار من الحالة الحالية n إلى حالة الهدف، وتستمد معلوماتها من خصائص المسألة.",
-    "explanationEn": "A heuristic function h(n) estimates the cheapest path cost from node n to a goal state, guiding informed search algorithms efficiently."
+    "explanationEn": "A heuristic function h(n) estimates the cheapest path cost from node n to a goal state, guiding informed search algorithms efficiently.",
+    "questionAr": "في مشكلة تحديد الطريق في رومانيا، ما هي الوظيفة الإرشادية المستخدمة عادة لتقدير المسافة إلى بوخارست؟",
+    "optionsAr": [
+      "عدد أكشاك تحصيل الرسوم",
+      "مسافة الخط المستقيم (h_SLD)",
+      "مسافة شبكة مانهاتن",
+      "عدد المدن الوسيطة"
+    ]
   },
   {
     "id": 149,
@@ -2344,7 +3340,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الحدود (Frontier / Open list) تمثل مجموعة جميع العقد التي تم توليدها ولكن لم يتم التوسع فيها واستكشاف أبنائها بعد.",
-    "explanationEn": "The frontier (or open list) is the collection of all leaf nodes generated so far that have not yet been expanded."
+    "explanationEn": "The frontier (or open list) is the collection of all leaf nodes generated so far that have not yet been expanded.",
+    "questionAr": "هل يختار البحث الجشع الأفضل-الأول أي عقدة من الحدود للتوسع في كل خطوة؟",
+    "optionsAr": [
+      "العقدة التي لديها أقل تكلفة للمسار g(n)",
+      "العقدة التي لها أقل قيمة إرشادية h(n)",
+      "العقدة ذات أكبر دالة تقييم f(n)",
+      "العقدة التي ظلت في قائمة الانتظار لفترة أطول"
+    ]
   },
   {
     "id": 150,
@@ -2360,7 +3363,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "البحث الطماع (Greedy Best-First) ليس مثالياً من حيث التكلفة لأنه ينخدع بالخطوات التي تبدو واعدة محلياً استناداً لقيمة h(n) فقط دون النظر للتكلفة التراكمية g(n)، مما يؤدي لمسار أطول.",
-    "explanationEn": "Greedy Best-First Search is not cost-optimal because it evaluates nodes solely by heuristic distance to goal h(n), ignoring accumulated path cost g(n) and choosing locally appealing detours."
+    "explanationEn": "Greedy Best-First Search is not cost-optimal because it evaluates nodes solely by heuristic distance to goal h(n), ignoring accumulated path cost g(n) and choosing locally appealing detours.",
+    "questionAr": "لماذا يعتبر البحث الجشع الأفضل-الأول ليس الأمثل من حيث التكلفة في العثور على الطريق من أراد إلى بوخارست؟",
+    "optionsAr": [
+      "لا يمكنه التعامل مع الرسوم البيانية ذات الدورات",
+      "يختار بجشع خطوات واعدة محليًا (مثل Fagaras) تؤدي إلى مسارات إجمالية أطول (450 ميلًا مقابل 418 ميلًا)",
+      "قائمة انتظار الأولوية الخاصة بها تعكس ترتيب المدن",
+      "يتطلب أن تكون مسافة الخط المستقيم سالبة"
+    ]
   },
   {
     "id": 151,
@@ -2376,7 +3386,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "خوارزمية A* تعتمد على دالة التقييم f(n) = g(n) + h(n). تضمن الحل الأمثل بشرط أن يكون الهيورستك مقبولاً (Admissible) في الأشجار أو متسقاً (Consistent) في الرسوم البيانية.",
-    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search)."
+    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search).",
+    "questionAr": "في بحث A*، ما هي وظيفة التقييم القياسية f(n) المستخدمة لترتيب العقد في الحدود؟",
+    "optionsAr": [
+      "و(ن) = ز(ن) - ح(ن)",
+      "و(ن) = ز(ن) + ح(ن)",
+      "و(ن) = ز(ن) * ح(ن)",
+      "و(ن) = الحد الأقصى(ز(ن)، ح(ن))"
+    ]
   },
   {
     "id": 152,
@@ -2392,7 +3409,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "خوارزمية A* تعتمد على دالة التقييم f(n) = g(n) + h(n). تضمن الحل الأمثل بشرط أن يكون الهيورستك مقبولاً (Admissible) في الأشجار أو متسقاً (Consistent) في الرسوم البيانية.",
-    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search)."
+    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search).",
+    "questionAr": "في دالة التقييم A* f(n) = g(n) + h(n)، ماذا تمثل f(n) من الناحية المفاهيمية؟",
+    "optionsAr": [
+      "إجمالي وقت التنفيذ الدقيق للخوارزمية",
+      "التكلفة المقدرة لأفضل مسار يستمر من عقدة البداية عبر العقدة n إلى الهدف",
+      "عمق شجرة البحث مقسوما على عامل التفرع ب",
+      "عقوبة زيارة دولة زائدة عن الحاجة"
+    ]
   },
   {
     "id": 153,
@@ -2408,7 +3432,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الهيورستك المقبول (Admissible) هو الذي لا يبالغ إطلاقاً في تقدير التكلفة الحقيقية المتبقية للوصول إلى الهدف؛ أي يحقق دائماً h(n) <= h*(n).",
-    "explanationEn": "An admissible heuristic never overestimates the true remaining cost to reach the goal: h(n) <= h*(n), guaranteeing that A* finds the optimal path."
+    "explanationEn": "An admissible heuristic never overestimates the true remaining cost to reach the goal: h(n) <= h*(n), guaranteeing that A* finds the optimal path.",
+    "questionAr": "يتم تعريف الدالة الإرشادية h(n) رسميًا على أنها \"مقبولة\" إذا:",
+    "optionsAr": [
+      "h(n) دائمًا أكبر من التكلفة الحقيقية h*(n)",
+      "لا تبالغ h(n) أبدًا في تقدير التكلفة الحقيقية للوصول إلى الهدف، أي h(n) <= h*(n)",
+      "يتم حساب h(n) في زمن متعدد الحدود",
+      "h(n) هو عدد صحيح مضاعف لعامل التفرع"
+    ]
   },
   {
     "id": 154,
@@ -2424,7 +3455,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الهيورستك المقبول (Admissible) هو الذي لا يبالغ إطلاقاً في تقدير التكلفة الحقيقية المتبقية للوصول إلى الهدف؛ أي يحقق دائماً h(n) <= h*(n).",
-    "explanationEn": "An admissible heuristic never overestimates the true remaining cost to reach the goal: h(n) <= h*(n), guaranteeing that A* finds the optimal path."
+    "explanationEn": "An admissible heuristic never overestimates the true remaining cost to reach the goal: h(n) <= h*(n), guaranteeing that A* finds the optimal path.",
+    "questionAr": "نظرًا لأن الاستدلال المقبول لا يبالغ أبدًا في تقدير التكلفة الحقيقية المتبقية للهدف، فإنه كثيرًا ما يوصف بأنه:",
+    "optionsAr": [
+      "متشائم",
+      "متفائل",
+      "عشوائي",
+      "غير متناسق"
+    ]
   },
   {
     "id": 155,
@@ -2440,7 +3478,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "خوارزمية A* تعتمد على دالة التقييم f(n) = g(n) + h(n). تضمن الحل الأمثل بشرط أن يكون الهيورستك مقبولاً (Admissible) في الأشجار أو متسقاً (Consistent) في الرسوم البيانية.",
-    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search)."
+    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search).",
+    "questionAr": "وفقًا للنظرية الأساسية للبحث الإرشادي، فإن بحث A* الشبيه بالشجرة يضمن أن يكون مثاليًا من حيث التكلفة إذا:",
+    "optionsAr": [
+      "الدالة الإرشادية h(n) مقبولة",
+      "عامل التفرع b أقل من 2",
+      "مساحة الحالة محدودة وغير دورية",
+      "جميع تكاليف العمل تساوي الصفر"
+    ]
   },
   {
     "id": 156,
@@ -2456,7 +3501,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الهيورستك المتسق (Consistent) يحقق متباينة المثلث: تقدير العقدة h(n) لا يتجاوز تكلفة الخطوة إلى العقدة التالية c(n, a, n') مضافاً إليها تقدير تلك العقدة h(n').",
-    "explanationEn": "A consistent heuristic satisfies the triangle inequality: h(n) <= c(n, a, n') + h(n'), ensuring f-values never decrease along any search path."
+    "explanationEn": "A consistent heuristic satisfies the triangle inequality: h(n) <= c(n, a, n') + h(n'), ensuring f-values never decrease along any search path.",
+    "questionAr": "تعتبر الدالة الإرشادية h(n) \"متسقة\" (أو رتيبة) إذا تم إنشاء كل عقدة n وكل عقدة لاحقة n بواسطة الإجراء a:",
+    "optionsAr": [
+      "h(n) <= c(n, a, n') + h(n')",
+      "h(n) >= c(n, a, n') + h(n')",
+      "h(n) = c(n, a, n')",
+      "ح(ن) + ح(ن') <= ج(ن، أ، ن')"
+    ]
   },
   {
     "id": 157,
@@ -2472,7 +3524,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "دالة الهيورستك h(n) هي دالة تقديرية تعطي تقديراً لتكلفة أرخص مسار من الحالة الحالية n إلى حالة الهدف، وتستمد معلوماتها من خصائص المسألة.",
-    "explanationEn": "A heuristic function h(n) estimates the cheapest path cost from node n to a goal state, guiding informed search algorithms efficiently."
+    "explanationEn": "A heuristic function h(n) estimates the cheapest path cost from node n to a goal state, guiding informed search algorithms efficiently.",
+    "questionAr": "الشرط الرياضي للاتساق الإرشادي هو تطبيق مباشر لأي مبدأ هندسي؟",
+    "optionsAr": [
+      "نظرية فيثاغورس",
+      "متباينة المثلث",
+      "عدم المساواة بين كوشي وشوارتز",
+      "نظرية الحد المركزي"
+    ]
   },
   {
     "id": 158,
@@ -2488,7 +3547,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الهيورستك المقبول (Admissible) هو الذي لا يبالغ إطلاقاً في تقدير التكلفة الحقيقية المتبقية للوصول إلى الهدف؛ أي يحقق دائماً h(n) <= h*(n).",
-    "explanationEn": "An admissible heuristic never overestimates the true remaining cost to reach the goal: h(n) <= h*(n), guaranteeing that A* finds the optimal path."
+    "explanationEn": "An admissible heuristic never overestimates the true remaining cost to reach the goal: h(n) <= h*(n), guaranteeing that A* finds the optimal path.",
+    "questionAr": "ما هي العلاقة بين الاستدلال المتسق والاستدلال المقبول؟",
+    "optionsAr": [
+      "كل إرشادي متسق مقبول، ولكن ليس كل إرشادي مقبول متسق",
+      "كل ارشادي مقبول هو متسق، ولكن ليس العكس",
+      "الاتساق والمقبولية متنافيان تمامًا",
+      "لا يمكن للاستدلال المقبول أبدًا أن يفي بعدم المساواة في المثلث"
+    ]
   },
   {
     "id": 159,
@@ -2504,7 +3570,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "خوارزمية A* تعتمد على دالة التقييم f(n) = g(n) + h(n). تضمن الحل الأمثل بشرط أن يكون الهيورستك مقبولاً (Admissible) في الأشجار أو متسقاً (Consistent) في الرسوم البيانية.",
-    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search)."
+    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search).",
+    "questionAr": "إذا كانت C* هي تكلفة مسار الحل الأمثل، فما هي مجموعة العقد المضمونة للتوسيع بواسطة بحث A* باستخدام إرشادي متسق؟",
+    "optionsAr": [
+      "جميع العقد مع f(n) > C*",
+      "جميع العقد التي يمكن الوصول إليها باستخدام f(n) < C*",
+      "فقط العقد التي يقل عمقها عن d/2",
+      "كل عقدة في الرسم البياني لمساحة الدولة"
+    ]
   },
   {
     "id": 160,
@@ -2520,7 +3593,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "خوارزمية A* تعتمد على دالة التقييم f(n) = g(n) + h(n). تضمن الحل الأمثل بشرط أن يكون الهيورستك مقبولاً (Admissible) في الأشجار أو متسقاً (Consistent) في الرسوم البيانية.",
-    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search)."
+    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search).",
+    "questionAr": "يتم وصف A* ذو الاستدلال المتسق بأنه \"فعال على النحو الأمثل\" للأسباب التالية:",
+    "optionsAr": [
+      "يستخدم ذاكرة أقل من بحث العمق الأول",
+      "لا توجد خوارزمية بحث مثالية أخرى تستخدم نفس الاستدلال يمكنها توسيع عدد أقل من العقد (حتى كسر التعادل)",
+      "وقت تشغيله خطي تمامًا في عمق الحل d",
+      "لا يحسب أبدًا قيمة g(n)"
+    ]
   },
   {
     "id": 161,
@@ -2536,7 +3616,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "دالة الهيورستك h(n) هي دالة تقديرية تعطي تقديراً لتكلفة أرخص مسار من الحالة الحالية n إلى حالة الهدف، وتستمد معلوماتها من خصائص المسألة.",
-    "explanationEn": "A heuristic function h(n) estimates the cheapest path cost from node n to a goal state, guiding informed search algorithms efficiently."
+    "explanationEn": "A heuristic function h(n) estimates the cheapest path cost from node n to a goal state, guiding informed search algorithms efficiently.",
+    "questionAr": "في مسألة الألغاز الثمانية، يتم تعريف h1(n) الإرشادي على النحو التالي:",
+    "optionsAr": [
+      "مجموع المسافات الأفقية والرأسية للبلاطات من مواقع أهدافها",
+      "عدد البلاطات في غير مكانها (باستثناء الفراغات)",
+      "إجمالي عدد التحركات القانونية المتاحة للفراغ",
+      "المسافة الإقليدية المستقيمة المباشرة"
+    ]
   },
   {
     "id": 162,
@@ -2552,7 +3639,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "دالة الهيورستك h(n) هي دالة تقديرية تعطي تقديراً لتكلفة أرخص مسار من الحالة الحالية n إلى حالة الهدف، وتستمد معلوماتها من خصائص المسألة.",
-    "explanationEn": "A heuristic function h(n) estimates the cheapest path cost from node n to a goal state, guiding informed search algorithms efficiently."
+    "explanationEn": "A heuristic function h(n) estimates the cheapest path cost from node n to a goal state, guiding informed search algorithms efficiently.",
+    "questionAr": "في مسألة الألغاز الثمانية، يتم حساب المسافة الإرشادية في مانهاتن h2(n):",
+    "optionsAr": [
+      "عدد المربعات الموجودة حاليًا في مربعات الأهداف المحددة",
+      "مجموع خطوات الشبكة الأفقية والرأسية التي يجب أن يتخذها كل بلاط للوصول إلى مربع الهدف",
+      "المسافة الإقليدية القطرية المستقيمة لجميع البلاطات",
+      "حاصل ضرب مؤشرات الصفوف والأعمدة لكل بلاطة"
+    ]
   },
   {
     "id": 163,
@@ -2568,7 +3662,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الهيورستك المقبول (Admissible) هو الذي لا يبالغ إطلاقاً في تقدير التكلفة الحقيقية المتبقية للوصول إلى الهدف؛ أي يحقق دائماً h(n) <= h*(n).",
-    "explanationEn": "An admissible heuristic never overestimates the true remaining cost to reach the goal: h(n) <= h*(n), guaranteeing that A* finds the optimal path."
+    "explanationEn": "An admissible heuristic never overestimates the true remaining cost to reach the goal: h(n) <= h*(n), guaranteeing that A* finds the optimal path.",
+    "questionAr": "إذا كان كل من h1 وh2 استدلالًا مقبولًا، وh2(n) >= h1(n) لجميع العقد n، فإننا نقول:",
+    "optionsAr": [
+      "h1 يهيمن على h2",
+      "h2 يهيمن على h1",
+      "h2 غير مقبول",
+      "h1 رتيب تمامًا"
+    ]
   },
   {
     "id": 164,
@@ -2584,7 +3685,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "خوارزمية A* تعتمد على دالة التقييم f(n) = g(n) + h(n). تضمن الحل الأمثل بشرط أن يكون الهيورستك مقبولاً (Admissible) في الأشجار أو متسقاً (Consistent) في الرسوم البيانية.",
-    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search)."
+    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search).",
+    "questionAr": "لماذا يتم تفضيل h2 الإرشادي السائد على h1 في بحث A*؟",
+    "optionsAr": [
+      "يتطلب h2 ذاكرة أقل لتخزين",
+      "A* باستخدام h2 لن يقوم أبدًا بتوسيع عقد أكثر من A* باستخدام h1 (باستثناء كسر التعادل)",
+      "يضمن h2 أن يصبح عامل التفرع b 1",
+      "h2 يلغي الحاجة إلى حساب تكاليف المسار g(n)"
+    ]
   },
   {
     "id": 165,
@@ -2600,7 +3708,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار الصحيح هو 'Relaxed problem'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Relaxed problem' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Relaxed problem' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "تسمى المشكلة المشتقة عن طريق إزالة واحد أو أكثر من القيود على الإجراءات من تعريف المشكلة الأصلي a/an:",
+    "optionsAr": [
+      "مشكلة مريحة",
+      "مشكلة محدودة",
+      "مشكلة عاملة",
+      "مشكلة مزدوجة"
+    ]
   },
   {
     "id": 166,
@@ -2616,7 +3731,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الهيورستك المقبول (Admissible) هو الذي لا يبالغ إطلاقاً في تقدير التكلفة الحقيقية المتبقية للوصول إلى الهدف؛ أي يحقق دائماً h(n) <= h*(n).",
-    "explanationEn": "An admissible heuristic never overestimates the true remaining cost to reach the goal: h(n) <= h*(n), guaranteeing that A* finds the optimal path."
+    "explanationEn": "An admissible heuristic never overestimates the true remaining cost to reach the goal: h(n) <= h*(n), guaranteeing that A* finds the optimal path.",
+    "questionAr": "لماذا تكون تكلفة الحل الأمثل لمشكلة مريحة مضمونة لتكون إرشادية مقبولة للمشكلة الأصلية؟",
+    "optionsAr": [
+      "لأن المشاكل المريحة ليس لها أهداف",
+      "لأن إزالة قيود الإجراء تضيف حواف إلى الرسم البياني للحالة، مما يؤدي إلى إنشاء اختصارات لا يمكنها أبدًا زيادة التكلفة المثلى",
+      "لأن المشكلات المريحة لا يمكن حلها إلا باستخدام بحث العمق أولاً",
+      "لأن جميع الاستدلالات الناتجة عن الاسترخاء تساوي الصفر"
+    ]
   },
   {
     "id": 167,
@@ -2632,7 +3754,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الهيورستك المقبول (Admissible) هو الذي لا يبالغ إطلاقاً في تقدير التكلفة الحقيقية المتبقية للوصول إلى الهدف؛ أي يحقق دائماً h(n) <= h*(n).",
-    "explanationEn": "An admissible heuristic never overestimates the true remaining cost to reach the goal: h(n) <= h*(n), guaranteeing that A* finds the optimal path."
+    "explanationEn": "An admissible heuristic never overestimates the true remaining cost to reach the goal: h(n) <= h*(n), guaranteeing that A* finds the optimal path.",
+    "questionAr": "إذا كان لدينا مجموعة من الاستدلالات المقبولة h1، h2، ...، hk، فكيف يمكننا دمجها في استدلال واحد مقبول ومهيمن h(n)؟",
+    "optionsAr": [
+      "h(n) = دقيقة{h1(n), h2(n), ..., hk(n)}",
+      "h(n) = الحد الأقصى{h1(n), h2(n), ..., hk(n)}",
+      "h(n) = h1(n) * h2(n) * ... * hk(n)",
+      "h(n) = (h1(n) + h2(n) + ... + hk(n)) / k"
+    ]
   },
   {
     "id": 168,
@@ -2648,7 +3777,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار الصحيح هو 'Pattern database'؛ لأنه يعبر عن المعيار الرياضي والخوارزمي الدقيق لتحليل كفاءة خوارزميات البحث وحساب تعقيداتها المكانية والزمنية.",
-    "explanationEn": "The correct choice 'Pattern database' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods."
+    "explanationEn": "The correct choice 'Pattern database' accurately reflects the algorithmic rules and computational complexities governing problem-solving search methods.",
+    "questionAr": "في ألغاز التجانب المنزلق، يُعرف تخزين تكاليف الحل المحسوبة مسبقًا الدقيقة لجميع تكوينات المشكلات الفرعية المحتملة في جدول البحث باسم:",
+    "optionsAr": [
+      "قاعدة بيانات الأنماط",
+      "طابور الحدود",
+      "تم الوصول إلى الجدول",
+      "ذاكرة التخزين المؤقت التاريخية"
+    ]
   },
   {
     "id": 169,
@@ -2664,7 +3800,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "خوارزمية A* تعتمد على دالة التقييم f(n) = g(n) + h(n). تضمن الحل الأمثل بشرط أن يكون الهيورستك مقبولاً (Admissible) في الأشجار أو متسقاً (Consistent) في الرسوم البيانية.",
-    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search)."
+    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search).",
+    "questionAr": "يستخدم البحث الموزون A* دالة التقييم f(n) = g(n) + W * h(n) مع W > 1. ما هو الغرض الأساسي من هذا الترجيح؟",
+    "optionsAr": [
+      "للتأكد من أن الاستدلال يصبح متسقًا تمامًا",
+      "لمقايضة الحل الأمثل من أجل تقليل كبير في عدد العقد الموسعة",
+      "للتخلص من الحاجة إلى قوائم الانتظار ذات الأولوية",
+      "لتحويل بحث الرسم البياني إلى بحث شجرة"
+    ]
   },
   {
     "id": 170,
@@ -2680,7 +3823,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "خوارزمية A* تعتمد على دالة التقييم f(n) = g(n) + h(n). تضمن الحل الأمثل بشرط أن يكون الهيورستك مقبولاً (Admissible) في الأشجار أو متسقاً (Consistent) في الرسوم البيانية.",
-    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search)."
+    "explanationEn": "A* Search evaluates nodes via f(n) = g(n) + h(n). It guarantees optimal solutions when the heuristic h(n) is admissible (tree search) or consistent (graph search).",
+    "questionAr": "عندما تكون الذاكرة ممتلئة تمامًا، ما هي العقدة التي تقوم بإسقاط خوارزمية Simplified Memory-Bounded A* (SMA*) من شجرة البحث؟",
+    "optionsAr": [
+      "العقدة الجذرية للشجرة",
+      "أسوأ عقدة ورقية، والتي لديها أعلى قيمة f",
+      "أحدث عقدة فرعية ذات أقل قيمة g",
+      "جميع العقد المقيمة في العمق د"
+    ]
   },
   {
     "id": 171,
@@ -2694,7 +3844,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "يتم تعريف مشكلة البحث رسميًا من خلال خمسة مكونات: الحالة الأولية، والإجراءات، ونموذج الانتقال، وحالات الهدف، ووظيفة تكلفة الإجراء.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 172,
@@ -2708,7 +3863,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة؛ لأن تطبيق هذا النهج يؤدي إلى فقدان ضمانات الأمثلية أو الدخول في حلقات لانهائية في غياب التحقق والمراقبة الحركية.",
-    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions."
+    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions.",
+    "questionAr": "في بيئة غير حتمية أو يمكن ملاحظتها جزئيًا، يمكن للوكيل تنفيذ حل بحث بأمان باستخدام نظام حلقة مفتوحة دون التحقق من تصوراته.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 173,
@@ -2722,7 +3882,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "يمكن تمثيل الحالة المادية الواحدة للبيئة من خلال عدة عقد مميزة في شجرة بحث إذا كانت هناك مسارات زائدة عن الحاجة إلى تلك الحالة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 174,
@@ -2736,7 +3901,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "تقوم كل عقدة في شجرة البحث بتخزين مؤشر إلى العقدة الأصلية، مما يسمح بإعادة بناء مسار الحل للإجراءات بمجرد الوصول إلى الهدف.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 175,
@@ -2750,7 +3920,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "تستخدم خوارزميات البحث في الرسم البياني جدولًا تم الوصول إليه (أو قائمة مغلقة) لتذكر الحالات التي تم استكشافها مسبقًا ومنع زيارة العقد عدة مرات.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 176,
@@ -2764,7 +3939,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة؛ لأن تطبيق هذا النهج يؤدي إلى فقدان ضمانات الأمثلية أو الدخول في حلقات لانهائية في غياب التحقق والمراقبة الحركية.",
-    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions."
+    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions.",
+    "questionAr": "يستخدم البحث الشبيه بالشجرة ذاكرة أكبر من البحث في الرسم البياني لأنه يحتفظ بقائمة مفتوحة وقائمة مغلقة للحالات التي تم الوصول إليها.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 177,
@@ -2778,7 +3958,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "يكتمل بحث العرض الأول في مساحات الحالة اللانهائية، بشرط أن يكون عامل التفرع b محدودًا.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 178,
@@ -2792,7 +3977,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة؛ لأن تطبيق هذا النهج يؤدي إلى فقدان ضمانات الأمثلية أو الدخول في حلقات لانهائية في غياب التحقق والمراقبة الحركية.",
-    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions."
+    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions.",
+    "questionAr": "يعتبر البحث الموسع أولاً هو التكلفة الأمثل دائمًا، بغض النظر عما إذا كانت تكاليف الإجراء المرحلي متطابقة أو مختلفة إلى حد كبير.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 179,
@@ -2806,7 +3996,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "يعد كل من التعقيد الزمني والتعقيد المكاني للبحث العرضي الأول أسيًا في عمق الحل d، معبرًا عنه بـ O(b^d).",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 180,
@@ -2820,7 +4015,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "يقوم بحث التكلفة الموحدة بتوسيع العقد بترتيب متزايد لتكلفة مسارها g(n) من الحالة الأولية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 181,
@@ -2834,7 +4034,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة؛ لأن تطبيق هذا النهج يؤدي إلى فقدان ضمانات الأمثلية أو الدخول في حلقات لانهائية في غياب التحقق والمراقبة الحركية.",
-    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions."
+    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions.",
+    "questionAr": "إذا طبق البحث الموحد للتكلفة اختبارًا مبكرًا للهدف عند إنشاء عقدة، فلا يزال من المضمون إرجاع الحل الأمثل من حيث التكلفة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 182,
@@ -2848,7 +4053,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة؛ لأن تطبيق هذا النهج يؤدي إلى فقدان ضمانات الأمثلية أو الدخول في حلقات لانهائية في غياب التحقق والمراقبة الحركية.",
-    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions."
+    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions.",
+    "questionAr": "يعد البحث في العمق أولاً مثاليًا من حيث التكلفة لأنه يستكشف دائمًا أعمق الأوراق أولاً.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 183,
@@ -2862,7 +4072,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "لا يتطلب البحث عن العمق الأول الشبيه بالشجرة سوى تعقيد الفضاء الخطي O(bm)، حيث b هو عامل التفرع وm هو الحد الأقصى للعمق.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 184,
@@ -2876,7 +4091,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "يؤدي البحث التراجعي إلى تقليل متطلبات الذاكرة بشكل أكبر من DFS القياسي إلى وصف حالة واحد فقط ومسار لإجراءات O(m).",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 185,
@@ -2890,7 +4110,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة؛ لأن تطبيق هذا النهج يؤدي إلى فقدان ضمانات الأمثلية أو الدخول في حلقات لانهائية في غياب التحقق والمراقبة الحركية.",
-    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions."
+    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions.",
+    "questionAr": "يكتمل البحث محدود العمق حتى لو كان حد العمق المختار l أصغر من العمق d للحل الأمثل.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 186,
@@ -2904,7 +4129,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "يجمع البحث التكراري العميق بين فوائد الذاكرة الخطية لـ DFS واكتمال BFS وتحسينه بالنسبة لتكاليف عمل الوحدة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 187,
@@ -2918,7 +4148,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "يحافظ البحث ثنائي الاتجاه على حدين وجدولين تم الوصول إليهما، ويبحث في وقت واحد من البداية والهدف.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 188,
@@ -2932,7 +4167,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "يقوم البحث الجشع الأفضل-الأول بتوسيع العقدة ذات القيمة الدنيا لوظيفة التقييم f(n) = h(n).",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 189,
@@ -2946,7 +4186,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة؛ لأن تطبيق هذا النهج يؤدي إلى فقدان ضمانات الأمثلية أو الدخول في حلقات لانهائية في غياب التحقق والمراقبة الحركية.",
-    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions."
+    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions.",
+    "questionAr": "يُضمن أن يكون البحث الجشع الأفضل-الأول هو الأمثل من حيث التكلفة لأنه يعمل دائمًا على توسيع العقدة التي تبدو الأقرب إلى الهدف.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 190,
@@ -2960,7 +4205,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "وظيفة التقييم للبحث A* هي f(n) = g(n) + h(n)، حيث g(n) هي تكلفة المسار إلى n وh(n) هي التكلفة المقدرة من n إلى الهدف.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 191,
@@ -2974,7 +4224,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "إن الاستدلال المقبول هو الذي لا يبالغ أبدًا في تقدير التكلفة الحقيقية للوصول إلى حالة الهدف.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 192,
@@ -2988,7 +4243,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "يكون الاستدلال متسقًا إذا كان لكل عقدة n وخليفة n'، تباين المثلث h(n) <= c(n, a, n') + h(n') محققًا.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 193,
@@ -3002,7 +4262,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "كل ارشادي متسق مقبول، ولكن ارشادي مقبول ليس بالضرورة متسقا.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 194,
@@ -3016,7 +4281,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "لا يقوم بحث A* بتوسيع أي عقد بتكلفة تقييم أكبر بشكل صارم من تكلفة الحل الأمثل C*.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 195,
@@ -3030,7 +4300,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "يعد اختبار مسافة مانهاتن للألغاز الثمانية مقبولًا لأن أي حركة واحدة يمكن أن تقلل على الأكثر مسافة قطعة واحدة بخطوة واحدة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 196,
@@ -3044,7 +4319,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "إذا كان h2 الإرشادي يهيمن على h1، فلن يقوم بحث A* باستخدام h2 أبدًا بتوسيع عقد أكثر من بحث A* باستخدام h1 (باستثناء كسر التعادل).",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 197,
@@ -3058,7 +4338,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "بالنظر إلى اثنين من الاستدلالات المقبولة h1 وh2، فإن الوظيفة المركبة h(n) = max(h1(n)، h2(n)) مقبولة أيضًا وتهيمن على كل من h1 وh2.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 198,
@@ -3072,7 +4357,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "توفر تكلفة الحل الأمثل لمشكلة مريحة إرشادًا مقبولًا للمشكلة الأصلية غير المريحة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 199,
@@ -3086,7 +4376,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة؛ لأن تطبيق هذا النهج يؤدي إلى فقدان ضمانات الأمثلية أو الدخول في حلقات لانهائية في غياب التحقق والمراقبة الحركية.",
-    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions."
+    "explanationEn": "False. Implementing this method compromises optimality guarantees or risks infinite loops due to unmonitored state transitions.",
+    "questionAr": "يتم ضمان البحث الموزون A* مع الوزن W > 1 للعثور على الحل الأمثل من حيث التكلفة في كل مشكلة بحث.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 200,
@@ -3100,7 +4395,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ فالقاعدة الرياضية تشترط هذا البناء لضمان اكتمال وأمثلية خوارزمية البحث وتفادي التكرار أو التجاوز غير المحسوب.",
-    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces."
+    "explanationEn": "True. This represents a proven algorithmic property required to guarantee completeness and cost-optimality in search spaces.",
+    "questionAr": "في مشكلات البحث المعقدة ذات الحدود الضيقة للذاكرة، يمكن أن يعاني SMA* من الضرب، حيث يقوم باستمرار بتجديد العقد المنسية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 201,
@@ -3116,7 +4416,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "صنف رسل ونورفيغ تعريفات الذكاء الاصطناعي في شبكة 2×2 ترتكز على بُعدين: العمليات الذهنية الداخلية مقابل السلوك الخارجي، ومحاكاة الأداء البشري مقابل العقلانية والمثالية.",
-    "explanationEn": "Russell & Norvig categorize definitions of AI into a 2x2 matrix along two axes: Thought processes vs. Behavior, and Human performance vs. Ideal rationality."
+    "explanationEn": "Russell & Norvig categorize definitions of AI into a 2x2 matrix along two axes: Thought processes vs. Behavior, and Human performance vs. Ideal rationality.",
+    "questionAr": "في الفصل الأول من AIMA، تم تنظيم تعريفات الذكاء الاصطناعي تاريخيًا في مصفوفة 2x2 والتي يوجد على طولها بعدان أساسيان؟",
+    "optionsAr": [
+      "الأجهزة مقابل البرمجيات، والنظرية مقابل الممارسة",
+      "عمليات التفكير/الاستدلال مقابل السلوك، والأداء البشري مقابل العقلانية المثالية",
+      "الأنظمة الرمزية مقابل الأنظمة الاتصالية، والأنظمة الخاضعة للإشراف مقابل الأنظمة غير الخاضعة للرقابة",
+      "الوقت المنفصل مقابل الوقت المستمر، والوكيل الفردي مقابل الوكيل المتعدد"
+    ]
   },
   {
     "id": 202,
@@ -3132,7 +4439,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
-    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human.",
+    "questionAr": "لقد تم تفعيل منهج \"التصرف بشكل إنساني\" تجاه الذكاء الاصطناعي في عام 1950 على يد آلان تورينج، من خلال أي تقييم مقترح؟",
+    "optionsAr": [
+      "حجة الغرفة الصينية",
+      "لعبة التقليد (اختبار تورينج)",
+      "تحدي مخطط فينوغراد",
+      "اختبار فويت كامبف"
+    ]
   },
   {
     "id": 203,
@@ -3148,7 +4462,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
-    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human.",
+    "questionAr": "لاجتياز اختبار تورينج القياسي عبر محطة قائمة على النصوص، يحتاج نظام الذكاء الاصطناعي إلى قدرات في جميع التخصصات الأساسية التالية باستثناء:",
+    "optionsAr": [
+      "معالجة اللغات الطبيعية (NLP)",
+      "تمثيل المعرفة",
+      "التلاعب الآلي الفيزيائي",
+      "التعلم الآلي"
+    ]
   },
   {
     "id": 204,
@@ -3164,7 +4485,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
-    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human.",
+    "questionAr": "ما الإمكانيتين الإضافيتين المطلوبتين على وجه التحديد للوكيل لاجتياز اختبار تورينج الإجمالي مقارنة باختبار تورينج القياسي؟",
+    "optionsAr": [
+      "حساب التفاضل والتكامل والنظرية إثبات",
+      "الرؤية الحاسوبية والروبوتات",
+      "تركيب الكلام والبحث في الويب",
+      "الحوسبة الكمومية والتخزين السحابي"
+    ]
   },
   {
     "id": 205,
@@ -3180,7 +4508,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Cognitive Science' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Cognitive Science' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Cognitive Science' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "يعتمد نهج \"التفكير الإنساني\" في الذكاء الاصطناعي على التحقق من صحة برامج الكمبيوتر مقابل البيانات البشرية التجريبية، من خلال أي مجال متعدد التخصصات؟",
+    "optionsAr": [
+      "بحوث العمليات",
+      "العلوم المعرفية",
+      "ميكانيكا الكم",
+      "نظرية التحكم"
+    ]
   },
   {
     "id": 206,
@@ -3196,7 +4531,14 @@ const questions = [
     ],
     "correctAnswer": 3,
     "explanationAr": "الخيار 'Measuring processor clock speeds and memory voltage' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Measuring processor clock speeds and memory voltage' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Measuring processor clock speeds and memory voltage' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "في العلوم المعرفية، أي مما يلي لا يعد إحدى الطرق الأساسية الثلاثة المستخدمة لتحديد كيفية عمل الأفكار البشرية؟",
+    "optionsAr": [
+      "الاستبطان (التقاط أفكارنا أثناء مرورها)",
+      "تجارب نفسية (ملاحظة الأشخاص أثناء تصرفاتهم)",
+      "تصوير الدماغ (ملاحظة عمل الدماغ العصبي)",
+      "قياس سرعات ساعة المعالج وجهد الذاكرة"
+    ]
   },
   {
     "id": 207,
@@ -3212,7 +4554,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Aristotle' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Aristotle' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Aristotle' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "إن منهج \"التفكير العقلاني\" في التعامل مع الذكاء الاصطناعي متجذر في تقليد \"قوانين الفكر\"، الذي كان رائده أي فيلسوف يوناني قديم؟",
+    "optionsAr": [
+      "أرسطو",
+      "سقراط",
+      "فيثاغورس",
+      "أبيقور"
+    ]
   },
   {
     "id": 208,
@@ -3228,7 +4577,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Stating informal real-world knowledge in formal logic terms is extremely difficult, and deductive reasoning can be computationally intractable' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Stating informal real-world knowledge in formal logic terms is extremely difficult, and deductive reasoning can be computationally intractable' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Stating informal real-world knowledge in formal logic terms is extremely difficult, and deductive reasoning can be computationally intractable' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "ما هي العقبة العملية الرئيسية التي يواجهها النهج المنطقي المحض (\"قوانين الفكر\") عند تطبيقه على الذكاء الاصطناعي في العالم الحقيقي؟",
+    "optionsAr": [
+      "لا يمكن لأجهزة الكمبيوتر إجراء عمليات منطقية مثل AND وOR",
+      "يعد ذكر المعرفة غير الرسمية في العالم الحقيقي بمصطلحات المنطق الرسمي أمرًا صعبًا للغاية، ويمكن أن يكون التفكير الاستنتاجي مستعصيًا حسابيًا",
+      "القياسات المنطقية الأرسطية تعمل فقط في البيئات المستمرة",
+      "لا يمكن تنفيذ المنطق الرسمي باستخدام لغات البرمجة"
+    ]
   },
   {
     "id": 209,
@@ -3244,7 +4600,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "الخيار 'Acting Rationally (The rational agent approach)' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Acting Rationally (The rational agent approach)' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Acting Rationally (The rational agent approach)' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "في AIMA، النهج الأساسي المعتمد كموضوع تنظيمي مركزي في جميع أنحاء الكتاب المدرسي هو:",
+    "optionsAr": [
+      "التفكير إنسانياً (النمذجة المعرفية)",
+      "التصرف إنسانيا (التقليد باختبار تورينج)",
+      "التصرف بعقلانية (منهج الفاعل العقلاني)",
+      "التفكير العقلاني (المنطق الاستنتاجي البحت)"
+    ]
   },
   {
     "id": 210,
@@ -3260,7 +4623,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Correct logical inference is only one of several possible mechanisms for achieving rationality, allowing for reflex actions and actions under uncertainty' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Correct logical inference is only one of several possible mechanisms for achieving rationality, allowing for reflex actions and actions under uncertainty' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Correct logical inference is only one of several possible mechanisms for achieving rationality, allowing for reflex actions and actions under uncertainty' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "لماذا يعد منهج العامل العقلاني (\"التصرف بعقلانية\") مفيدًا على منهج \"التفكير العقلاني\" (قوانين الفكر)؟",
+    "optionsAr": [
+      "إنه يلغي تماما الحاجة إلى التمثيلات الرياضية",
+      "إن الاستدلال المنطقي الصحيح ليس سوى واحدة من عدة آليات ممكنة لتحقيق العقلانية، مما يسمح بأفعال منعكسة وأفعال في ظل عدم اليقين",
+      "لا تتطلب العوامل العقلانية أجهزة استشعار أو مشغلات",
+      "إنه يضمن تشغيل الخوارزميات دائمًا في وقت ثابت O (1)."
+    ]
   },
   {
     "id": 211,
@@ -3276,7 +4646,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Optimize an objective or utility function specified by its human designers' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Optimize an objective or utility function specified by its human designers' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Optimize an objective or utility function specified by its human designers' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "في أبحاث الذكاء الاصطناعي، يتصور \"النموذج القياسي\" للذكاء الاصطناعي وكيلًا مصممًا من أجل:",
+    "optionsAr": [
+      "تجربة الحالات العاطفية البشرية",
+      "تحسين وظيفة الهدف أو المنفعة المحددة من قبل المصممين البشريين",
+      "عصي أوامر الإنسان عندما تكون الطاقة منخفضة",
+      "اجتياز اختبار تورينج بخمس لغات مختلفة على الأقل"
+    ]
   },
   {
     "id": 212,
@@ -3292,7 +4669,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'If we specify the wrong objective function, a super-capable agent will optimize that flawed objective with potentially catastrophic consequences' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'If we specify the wrong objective function, a super-capable agent will optimize that flawed objective with potentially catastrophic consequences' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'If we specify the wrong objective function, a super-capable agent will optimize that flawed objective with potentially catastrophic consequences' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "ما هو الاهتمام الرئيسي بالسلامة الحديثة في \"النموذج القياسي\" للذكاء الاصطناعي (مشكلة الملك ميداس)؟",
+    "optionsAr": [
+      "ستصبح الآلات بطيئة جدًا في معالجة الكلام",
+      "إذا قمنا بتحديد وظيفة الهدف الخاطئة، فسيعمل الوكيل ذو القدرة الفائقة على تحسين هذا الهدف المعيب مع عواقب وخيمة محتملة",
+      "سوف تذوب معالجات السيليكون عند تشغيل الشبكات العصبية العميقة",
+      "سوف يرفض الوكلاء قبول أي أهداف من المستخدمين"
+    ]
   },
   {
     "id": 213,
@@ -3308,7 +4692,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
-    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human.",
+    "questionAr": "في بروتوكول اختبار تورينج الأصلي، بعد أي مدة من المحادثة يقرر المحقق ما إذا كان المستفتى آلة أم إنسانًا؟",
+    "optionsAr": [
+      "5 دقائق",
+      "ساعة واحدة",
+      "24 ساعة",
+      "10 ثواني"
+    ]
   },
   {
     "id": 214,
@@ -3324,7 +4715,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
-    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human.",
+    "questionAr": "لماذا يبذل باحثو الذكاء الاصطناعي السائد عمومًا جهدًا قليلًا نسبيًا في محاولة بناء أنظمة مصممة خصيصًا لاجتياز اختبار تورينج؟",
+    "optionsAr": [
+      "لقد تم بالفعل حل الاختبار رسميًا بواسطة حاسبات الجيب",
+      "يركز باحثو الذكاء الاصطناعي على دراسة المبادئ الأساسية للذكاء وحل المشكلات الحقيقية، على غرار كيفية تركيز هندسة الطيران على الديناميكا الهوائية بدلاً من تقليد الطيور",
+      "اجتياز اختبار تورينج أمر غير قانوني بموجب القانون الدولي",
+      "ينطبق اختبار تورينج فقط على أجهزة الكمبيوتر التناظرية"
+    ]
   },
   {
     "id": 215,
@@ -3340,7 +4738,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
-    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human.",
+    "questionAr": "في سياق اختبار تورينج، تُعرف القدرة على استخدام المعلومات المخزنة للإجابة على الأسئلة واستخلاص استنتاجات جديدة باسم:",
+    "optionsAr": [
+      "رؤية الكمبيوتر",
+      "الاستدلال الآلي",
+      "الروبوتات",
+      "معالجة اللغات الطبيعية"
+    ]
   },
   {
     "id": 216,
@@ -3356,7 +4761,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
-    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human.",
+    "questionAr": "لماذا يعتبر التعلم الآلي قدرة أساسية للوكيل الذي يحاول اجتياز اختبار تورينج؟",
+    "optionsAr": [
+      "لتشغيل مراوح التبريد",
+      "التكيف مع الظروف الجديدة وكشف الأنماط واستقراءها",
+      "لحساب الجذور التربيعية الرياضية في الأجهزة",
+      "لتحويل طاقة التيار المتردد إلى طاقة التيار المستمر"
+    ]
   },
   {
     "id": 217,
@@ -3372,7 +4784,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Does the 'right thing' based on what it knows and its performance measure' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Does the 'right thing' based on what it knows and its performance measure' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Does the 'right thing' based on what it knows and its performance measure' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "يتم تعريف النظام على أنه عقلاني إذا كان:",
+    "optionsAr": [
+      "يكرر أخطاء البشر وتحيزاتهم",
+      "يفعل \"الشيء الصحيح\" بناءً على ما يعرفه وقياس أدائه",
+      "يعمل حصريًا على الأجهزة الكمومية",
+      "يتجاهل كل تاريخ الإدراك الماضي"
+    ]
   },
   {
     "id": 218,
@@ -3388,7 +4807,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Human reasoning is subject to systematic cognitive biases, emotional distortions, and computational resource limits' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Human reasoning is subject to systematic cognitive biases, emotional distortions, and computational resource limits' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Human reasoning is subject to systematic cognitive biases, emotional distortions, and computational resource limits' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "لماذا لا تكون عمليات التفكير البشري عقلانية دائمًا؟",
+    "optionsAr": [
+      "البشر لا يملكون أدمغة بيولوجية",
+      "يخضع المنطق البشري للتحيزات المعرفية المنهجية والتشوهات العاطفية وحدود الموارد الحسابية",
+      "لا يستطيع البشر التواصل باللغة الطبيعية",
+      "سعة الذاكرة البشرية تساوي صفرًا رياضيًا"
+    ]
   },
   {
     "id": 219,
@@ -3404,7 +4830,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Dualism' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Dualism' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Dualism' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "تُعرف العقيدة الفلسفية التي اقترحها رينيه ديكارت والتي تفترض أن العقل منفصل بشكل أساسي عن الجسم المادي بما يلي:",
+    "optionsAr": [
+      "المادية",
+      "الثنائية",
+      "الوضعية",
+      "التجريبية"
+    ]
   },
   {
     "id": 220,
@@ -3420,7 +4853,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Materialism (or Physicalism)' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Materialism (or Physicalism)' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Materialism (or Physicalism)' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "على النقيض من الثنائية، ما هي المدرسة الفلسفية التي ترى أن عمليات الدماغ التي تعمل وفقا لقوانين الفيزياء تشكل العقل؟",
+    "optionsAr": [
+      "المادية (أو الفيزيائية)",
+      "الأنانية",
+      "العقلانية",
+      "الوجودية"
+    ]
   },
   {
     "id": 221,
@@ -3436,7 +4876,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Empiricism' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Empiricism' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Empiricism' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "تُعرف الحركة الفلسفية التي بدأها جون لوك بمقولته القائلة بأن \"لا شيء في الفهم لم يكن أولًا بالمعنى\" باسم:",
+    "optionsAr": [
+      "التجريبية",
+      "المثالية",
+      "القومية",
+      "الشك"
+    ]
   },
   {
     "id": 222,
@@ -3452,7 +4899,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'How general rules and future predictions can be justified on the basis of a finite number of past observations' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'How general rules and future predictions can be justified on the basis of a finite number of past observations' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'How general rules and future predictions can be justified on the basis of a finite number of past observations' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "اشتهر ديفيد هيوم بتحليل \"مبدأ الاستقراء\"، والذي يطرح ما هو السؤال الأساسي ذو الصلة بالتعلم الآلي؟",
+    "optionsAr": [
+      "كيف تحفز التيارات الكهربائية المجالات المغناطيسية في أقراص الكمبيوتر",
+      "كيف يمكن تبرير القواعد العامة والتنبؤات المستقبلية على أساس عدد محدود من الملاحظات السابقة",
+      "لماذا لا يمكن للمنطق الثنائي تمثيل الكسور العشرية",
+      "كيف تحافظ المعالجات على تزامن الساعة"
+    ]
   },
   {
     "id": 223,
@@ -3468,7 +4922,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Logical theories connected to observable sensory observations' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Logical theories connected to observable sensory observations' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Logical theories connected to observable sensory observations' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "طورت دائرة فيينا من الفلاسفة \"الوضعية المنطقية\"، التي جادلت بأن كل المعرفة ذات المعنى يجب أن تكون مرتبطة بما يلي:",
+    "optionsAr": [
+      "الوحي الإلهي",
+      "النظريات المنطقية المرتبطة بالملاحظات الحسية المرصودة",
+      "القياسات المنطقية مكتوبة بدقة باللغة اليونانية القديمة",
+      "دوائر الأجهزة"
+    ]
   },
   {
     "id": 224,
@@ -3484,7 +4945,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'George Boole' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'George Boole' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'George Boole' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "من الذي قدم المنطق المنطقي الرسمي في عام 1847، معتبرًا أن الاستدلال المنطقي يمكن حسابه رياضيًا من خلال التلاعب الجبري؟",
+    "optionsAr": [
+      "آلان تورينج",
+      "جورج بول",
+      "إسحاق نيوتن",
+      "جوتفريد لايبنتز"
+    ]
   },
   {
     "id": 225,
@@ -3500,7 +4968,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'First-order predicate calculus' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'First-order predicate calculus' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'First-order predicate calculus' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "قام جوتلوب فريجه بتوسيع المنطق البولياني في عام 1879 من خلال إدخال الأشياء والعلاقات والمحددات الكمية، مما أدى إلى إنشاء:",
+    "optionsAr": [
+      "حساب التفاضل والتكامل من الدرجة الأولى",
+      "منطق غامض",
+      "منطق مشروط",
+      "بوابات الكم"
+    ]
   },
   {
     "id": 226,
@@ -3516,7 +4991,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'In any formal mathematical system powerful enough to do arithmetic, there exist true statements that cannot be proven within the system' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'In any formal mathematical system powerful enough to do arithmetic, there exist true statements that cannot be proven within the system' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'In any formal mathematical system powerful enough to do arithmetic, there exist true statements that cannot be proven within the system' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "في عام 1931، صدم كورت جودل المجتمع الرياضي بنظرية عدم الاكتمال، والتي أثبتت أن:",
+    "optionsAr": [
+      "لا يمكن بناء أي جهاز كمبيوتر بأكثر من 100 بايت من الذاكرة",
+      "في أي نظام رياضي رسمي قوي بما يكفي لإجراء العمليات الحسابية، توجد عبارات صحيحة لا يمكن إثباتها داخل النظام",
+      "جميع خوارزميات الوقت متعدد الحدود كاملة NP",
+      "الاستدلال غير مقبول دائمًا في الرسوم البيانية الدورية"
+    ]
   },
   {
     "id": 227,
@@ -3532,7 +5014,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
-    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human.",
+    "questionAr": "قدمت ورقة آلان تورينج عام 1936 آلة تورينج وأثبتت وجود مشاكل غير قابلة للحساب، أبرزها:",
+    "optionsAr": [
+      "مشكلة مندوب المبيعات المتجول",
+      "مشكلة التوقف",
+      "مشكلة أقصر مسار",
+      "مشكلة الفرز"
+    ]
   },
   {
     "id": 228,
@@ -3548,7 +5037,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "الخيار 'Exponentially with the size of the problem instances' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Exponentially with the size of the problem instances' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Exponentially with the size of the problem instances' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "في نظرية التعقيد الحسابي، يتم تصنيف المشكلة الحسابية رسميًا على أنها \"مستعصية على الحل\" إذا زاد الوقت اللازم لحل الحالات:",
+    "optionsAr": [
+      "خطيًا بحجم الإدخال O(n)",
+      "لوغاريتميًا O(log n)",
+      "أضعافا مضاعفة مع حجم مثيلات المشكلة",
+      "في زمن ثابت O(1)"
+    ]
   },
   {
     "id": 229,
@@ -3564,7 +5060,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'A large class of combinatorial search and reasoning problems are likely intractable in the worst case' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'A large class of combinatorial search and reasoning problems are likely intractable in the worst case' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'A large class of combinatorial search and reasoning problems are likely intractable in the worst case' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "أسس ستيفن كوك (1971) وريتشارد كارب (1972) نظرية اكتمال NP، وأثبتا أن:",
+    "optionsAr": [
+      "يمكن حل جميع مشاكل NP-Complete في الوقت الخطي على أجهزة الكمبيوتر أحادية النواة",
+      "من المحتمل أن تكون هناك فئة كبيرة من مشكلات البحث والاستدلال التوافقي مستعصية على الحل في أسوأ الحالات",
+      "لا يمكن لأجهزة الكمبيوتر تخزين أرقام الفاصلة العائمة",
+      "لا تستطيع الشبكات العصبية حساب المجموعات الخطية"
+    ]
   },
   {
     "id": 230,
@@ -3580,7 +5083,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Thomas Bayes' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Thomas Bayes' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Thomas Bayes' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "أي عالم رياضيات إنجليزي من القرن الثامن عشر صاغ القاعدة الأساسية لتحديث الاحتمالات الذاتية في ضوء الأدلة الجديدة؟",
+    "optionsAr": [
+      "إسحاق نيوتن",
+      "توماس بايز",
+      "تشارلز باباج",
+      "برتراند راسل"
+    ]
   },
   {
     "id": 231,
@@ -3596,7 +5106,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Gambling odds in games of chance' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Gambling odds in games of chance' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Gambling odds in games of chance' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "تم تطوير النظرية الرياضية الرسمية للاحتمال في الأصل عام 1654 من خلال المراسلات بين بيير دي فيرما وبليز باسكال لتحليل:",
+    "optionsAr": [
+      "احتمالات القمار في ألعاب الحظ",
+      "إثبات النظرية الآلية",
+      "نهاية مباريات الشطرنج",
+      "فقدان حزمة شبكة الكمبيوتر"
+    ]
   },
   {
     "id": 232,
@@ -3612,7 +5129,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
-    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human.",
+    "questionAr": "تؤكد أطروحة الكنيسة-تورينج على أن:",
+    "optionsAr": [
+      "أي عملية حسابية خوارزمية يمكن إجراؤها بواسطة أي آلة مادية يمكن محاكاتها بواسطة آلة تورينج",
+      "لا تستطيع أجهزة الكمبيوتر الكمومية حل أي مسائل رياضية",
+      "الذكاء البشري سوف يفوق الذكاء الاصطناعي بحلول عام 2000",
+      "يحتوي الدماغ على 10 مليارات خلية عصبية بالضبط"
+    ]
   },
   {
     "id": 233,
@@ -3628,7 +5152,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'John von Neumann and Oskar Morgenstern' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'John von Neumann and Oskar Morgenstern' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'John von Neumann and Oskar Morgenstern' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "الأساس الرياضي الرسمي لنظرية المنفعة، والذي يوضح أن أي بنية تفضيل عقلاني يمكن نمذجتها باستخدام دالة منفعة رقمية، تم تأسيسها في عام 1944 بواسطة:",
+    "optionsAr": [
+      "آدم سميث وديفيد ريكاردو",
+      "جون فون نيومان وأوسكار مورجنسترن",
+      "جون ماينارد كينز وميلتون فريدمان",
+      "آلان تورينج وكلود شانون"
+    ]
   },
   {
     "id": 234,
@@ -3644,7 +5175,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Probability Theory and Utility Theory' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Probability Theory and Utility Theory' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Probability Theory and Utility Theory' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "في الاقتصاد والذكاء الاصطناعي، يتم تعريف نظرية القرار رسميًا على أنها مزيج من:",
+    "optionsAr": [
+      "المنطق والحساب",
+      "نظرية الاحتمالية ونظرية المنفعة",
+      "هندسة الأجهزة ورمز البرمجيات",
+      "الروبوتات ورؤية الكمبيوتر"
+    ]
   },
   {
     "id": 235,
@@ -3660,7 +5198,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Satisficing (making decisions that are 'good enough')' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Satisficing (making decisions that are 'good enough')' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Satisficing (making decisions that are 'good enough')' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "فاز هربرت سايمون بجائزة نوبل في الاقتصاد لعمله الرائد الذي أظهر أن صناع القرار البشريين الفعليين لا يقومون بالتحسين بشكل صارم، بل ينخرطون في:",
+    "optionsAr": [
+      "التعظيم العقلاني",
+      "مرضية (اتخاذ قرارات \"جيدة بما فيه الكفاية\")",
+      "البحث التراجعي",
+      "تعداد الدولة الشامل"
+    ]
   },
   {
     "id": 236,
@@ -3676,7 +5221,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Markov Decision Processes (MDPs)' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Markov Decision Processes (MDPs)' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Markov Decision Processes (MDPs)' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "كان ريتشارد بيلمان رائدًا في البرمجة الديناميكية في الخمسينيات من القرن الماضي، حيث أنشأ فئة من مشاكل القرار المتسلسلة في الاقتصاد المعروفة باسم:",
+    "optionsAr": [
+      "الدوائر المنطقية",
+      "عمليات ماركوف لاتخاذ القرار (MDPs)",
+      "الرسوم البيانية الإرشادية",
+      "آلات تورينج"
+    ]
   },
   {
     "id": 237,
@@ -3692,7 +5244,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Neuron' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Neuron' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Neuron' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "علم الأعصاب هو دراسة الجهاز العصبي والدماغ. ما هي الخلية البيولوجية الأساسية لمعالجة المعلومات في الدماغ؟",
+    "optionsAr": [
+      "العصبون",
+      "جليا",
+      "محطة اكسون",
+      "شق متشابك"
+    ]
   },
   {
     "id": 238,
@@ -3708,7 +5267,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Computer processors have cycle times in nanoseconds, whereas biological neurons operate much slower, in milliseconds' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Computer processors have cycle times in nanoseconds, whereas biological neurons operate much slower, in milliseconds' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Computer processors have cycle times in nanoseconds, whereas biological neurons operate much slower, in milliseconds' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "كيف يمكن مقارنة زمن دورة الخلايا العصبية البشرية بمعالجات الكمبيوتر الدقيقة المصنوعة من السيليكون الحديثة؟",
+    "optionsAr": [
+      "الخلايا العصبية أسرع مليون مرة من رقائق الكمبيوتر",
+      "تستغرق معالجات الكمبيوتر أوقات دورة بالنانو ثانية، بينما تعمل الخلايا العصبية البيولوجية بشكل أبطأ بكثير، بالمللي ثانية",
+      "تعمل الخلايا العصبية البيولوجية بسرعة الضوء بالضبط",
+      "كلاهما لهما أوقات دورة متطابقة تبلغ ميكروثانية واحدة"
+    ]
   },
   {
     "id": 239,
@@ -3724,7 +5290,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'The brain utilizes massive parallelism across roughly 10^11 neurons and 10^14 synaptic connections' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'The brain utilizes massive parallelism across roughly 10^11 neurons and 10^14 synaptic connections' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'The brain utilizes massive parallelism across roughly 10^11 neurons and 10^14 synaptic connections' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "على الرغم من أن أوقات الدورة الفردية أبطأ بكثير من المعالجات الدقيقة، كيف يتفوق الدماغ البشري على أجهزة الكمبيوتر العملاقة في المهام الإدراكية المعقدة؟",
+    "optionsAr": [
+      "يستخدم الدماغ التبريد بالنتروجين السائل",
+      "يستخدم الدماغ التوازي الهائل عبر ما يقرب من 10^11 خلية عصبية و10^14 وصلة متشابكة",
+      "الدماغ لديه الكمون صفر بين أجهزة الاستشعار والعضلات",
+      "الخلايا العصبية البيولوجية لا تخضع للقوانين الفيزيائية"
+    ]
   },
   {
     "id": 240,
@@ -3740,7 +5313,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Objective measures of external stimuli and observable behavioral responses' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Objective measures of external stimuli and observable behavioral responses' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Objective measures of external stimuli and observable behavioral responses' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "رفضت المدرسة النفسية \"السلوكية\" (التي دافع عنها جيه بي واتسون وبي إف سكينر) دراسة الحالات العقلية الداخلية، بحجة أن علم النفس يجب أن يدرس فقط:",
+    "optionsAr": [
+      "أحلام استبطانية",
+      "المقاييس الموضوعية للمثيرات الخارجية والاستجابات السلوكية الملحوظة",
+      "صور عمليات المخ",
+      "البراهين الرياضية"
+    ]
   },
   {
     "id": 241,
@@ -3756,7 +5336,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Kenneth Craik' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Kenneth Craik' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Kenneth Craik' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "ينظر علم النفس المعرفي إلى الدماغ باعتباره نظامًا لمعالجة المعلومات. من الذي صاغ النموذج العقلي ثلاثي الخطوات لعام 1943 (التحفيز -> التمثيل الداخلي -> الفعل)؟",
+    "optionsAr": [
+      "كينيث كريك",
+      "بي إف سكينر",
+      "سيغموند فرويد",
+      "إيفان بافلوف"
+    ]
   },
   {
     "id": 242,
@@ -3772,7 +5359,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'MIT Symposium on Information Theory' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'MIT Symposium on Information Theory' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'MIT Symposium on Information Theory' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "في أي ندوة تاريخية عام 1956 قدم ألين نيويل، وهربرت سايمون، ونعوم تشومسكي، وجورج ميلر أوراقًا بحثية تاريخية أشعلت شرارة الثورة المعرفية؟",
+    "optionsAr": [
+      "ندوة معهد ماساتشوستس للتكنولوجيا حول نظرية المعلومات",
+      "اجتماع الجمعية الملكية في لندن",
+      "اتفاقية معايير IEEE",
+      "المنتدى الاقتصادي العالمي"
+    ]
   },
   {
     "id": 243,
@@ -3788,7 +5382,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار '7 plus or minus 2 chunks' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option '7 plus or minus 2 chunks' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option '7 plus or minus 2 chunks' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "أوضحت ورقة علم النفس الشهيرة لجورج ميلر عام 1956 أن سعة الذاكرة العاملة قصيرة المدى للإنسان تبلغ تقريبًا:",
+    "optionsAr": [
+      "7 قطع زائد أو ناقص 2",
+      "100 عنصر",
+      "عنصر واحد فقط",
+      "لانهائي"
+    ]
   },
   {
     "id": 244,
@@ -3804,7 +5405,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'It allowed researchers to legitimately model internal cognitive structures, beliefs, and goals inside computer programs' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'It allowed researchers to legitimately model internal cognitive structures, beliefs, and goals inside computer programs' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'It allowed researchers to legitimately model internal cognitive structures, beliefs, and goals inside computer programs' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "لماذا كان تراجع السلوكية وصعود علم النفس المعرفي ضروريًا لنمو الذكاء الاصطناعي الحديث؟",
+    "optionsAr": [
+      "لقد سمح للباحثين بصياغة الهياكل المعرفية الداخلية والمعتقدات والأهداف بشكل شرعي داخل برامج الكمبيوتر",
+      "لقد أثبت أنه لا يمكن بناء الأجهزة بدون التروس الخشبية",
+      "حظر استخدام المنطق الرياضي في علوم الكمبيوتر",
+      "لقد أثبت أن الحيوانات لا تمتلك أنظمة عصبية"
+    ]
   },
   {
     "id": 245,
@@ -3820,7 +5428,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Charles Babbage' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Charles Babbage' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Charles Babbage' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "من الذي صمم \"المحرك التحليلي\" الميكانيكي في عام 1834، والذي تم الاعتراف به باعتباره أول مقدمة ميكانيكية للكمبيوتر الحديث متعدد الأغراض القابل للبرمجة؟",
+    "optionsAr": [
+      "تشارلز باباج",
+      "بليز باسكال",
+      "جوتفريد لايبنيز",
+      "جون فون نيومان"
+    ]
   },
   {
     "id": 246,
@@ -3836,7 +5451,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'The Analytical Engine has no pretensions to originate anything; it can do whatever we know how to order it to perform' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'The Analytical Engine has no pretensions to originate anything; it can do whatever we know how to order it to perform' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'The Analytical Engine has no pretensions to originate anything; it can do whatever we know how to order it to perform' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "أدا لوفلايس، التي تعتبر أول مبرمجة كمبيوتر في العالم، ما هو الاعتراض الشهير فيما يتعلق بذكاء الآلة؟",
+    "optionsAr": [
+      "ليس لدى المحرك التحليلي أي ادعاءات لإنشاء أي شيء؛ يمكنها أن تفعل كل ما نعرف كيفية تنفيذه",
+      "الآلات ستدمر البشرية حتماً خلال 50 عاماً",
+      "لا يمكن للتروس الميكانيكية أن تمثل الأعداد الأولية",
+      "الدوائر الإلكترونية الرقمية فقط هي التي يمكنها إجراء عملية الجمع"
+    ]
   },
   {
     "id": 247,
@@ -3852,7 +5474,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "اختبار تورينج (آلان تورينج 1950) يمثل مقاربة 'التصرف كالبشر' (Acting Humanly) من خلال محادثة نصية تقيس قدرة الآلة على توليد استجابات لا يمكن تمييزها عن الإنسان.",
-    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human."
+    "explanationEn": "The Turing Test (Alan Turing, 1950) defines the 'Acting Humanly' dimension of AI, testing whether machine responses in a text conversation are indistinguishable from a human.",
+    "questionAr": "خلال الحرب العالمية الثانية، صمم فريق آلان تورينج لفك الشفرات في بلتشلي بارك أي آلة كهروميكانيكية يمكنها فك رموز اتصالات إنجما العسكرية الألمانية؟",
+    "optionsAr": [
+      "القنبلة",
+      "اينياك",
+      "ديب بلو",
+      "المحرك التحليلي"
+    ]
   },
   {
     "id": 248,
@@ -3868,7 +5497,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'A water clock with a float regulator' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'A water clock with a float regulator' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'A water clock with a float regulator' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "ما هو الجهاز الهيدروليكي القديم الذي بناه كتيسيبيوس السكندري (حوالي 250 قبل الميلاد) والذي تم الاستشهاد به باعتباره نظامًا تاريخيًا مبكرًا للتحكم في التغذية الراجعة ذاتي التنظيم؟",
+    "optionsAr": [
+      "ساعة مائية بمنظم العوامة",
+      "حاكم المحرك البخاري",
+      "دائرة التتابع الكهربائي",
+      "المعداد"
+    ]
   },
   {
     "id": 249,
@@ -3884,7 +5520,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Cybernetics' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Cybernetics' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Cybernetics' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "نشر نوربرت وينر كتابًا تأسيسيًا عام 1948 أضفى طابعًا رسميًا على حلقات التغذية الراجعة والتحكم في الحيوانات والآلات تحت عنوان:",
+    "optionsAr": [
+      "علم التحكم الآلي",
+      "الكمبيوتر والدماغ",
+      "العقل والمادة",
+      "ديناميات الروبوت"
+    ]
   },
   {
     "id": 250,
@@ -3900,7 +5543,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Control theory focused on continuous state spaces governed by calculus and differential equations, while early AI focused on discrete logical and symbolic reasoning' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Control theory focused on continuous state spaces governed by calculus and differential equations, while early AI focused on discrete logical and symbolic reasoning' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Control theory focused on continuous state spaces governed by calculus and differential equations, while early AI focused on discrete logical and symbolic reasoning' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "كيف اختلفت نظرية التحكم الكلاسيكية تاريخياً في التركيز عن الذكاء الاصطناعي السائد؟",
+    "optionsAr": [
+      "ركزت نظرية التحكم على مساحات الحالة المستمرة التي يحكمها حساب التفاضل والتكامل والمعادلات التفاضلية، بينما ركز الذكاء الاصطناعي المبكر على التفكير المنطقي والرمزي المنفصل",
+      "نظرية التحكم لا تستخدم أجهزة الاستشعار أو المحركات",
+      "الذكاء الاصطناعي يدرس الألعاب فقط، بينما نظرية التحكم تدرس علم الفلك فقط",
+      "تم اختراع نظرية التحكم بعد التعلم العميق"
+    ]
   },
   {
     "id": 251,
@@ -3916,7 +5566,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Noam Chomsky' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Noam Chomsky' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Noam Chomsky' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "في عام 1957، من هو اللغوي الذي نشر كتابه \"البنى النحوية\"، الذي يوضح أن اللغة البشرية لا يمكن تفسيرها من خلال سلاسل كلمات ماركوفية سلوكية بسيطة؟",
+    "optionsAr": [
+      "نعوم تشومسكي",
+      "بي إف سكينر",
+      "فرديناند دي سوسير",
+      "رومان جاكوبسون"
+    ]
   },
   {
     "id": 252,
@@ -3932,7 +5589,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Computational Linguistics (Natural Language Processing)' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Computational Linguistics (Natural Language Processing)' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Computational Linguistics (Natural Language Processing)' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "أدى التقاطع بين اللغويات الرسمية والذكاء الاصطناعي إلى ولادة أي مجال فرعي رئيسي للبحث؟",
+    "optionsAr": [
+      "اللغويات الحاسوبية (معالجة اللغات الطبيعية)",
+      "رسومات الحاسوب",
+      "فيزياء الحالة الصلبة",
+      "تحليل الشفرات"
+    ]
   },
   {
     "id": 253,
@@ -3948,7 +5612,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Because sentences contain massive lexical and syntactic ambiguities that can only be resolved using background world context' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Because sentences contain massive lexical and syntactic ambiguities that can only be resolved using background world context' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Because sentences contain massive lexical and syntactic ambiguities that can only be resolved using background world context' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "لماذا اكتشف الباحثون الأوائل بسرعة أن ترجمة اللغة الطبيعية أو فهمها يتطلب معرفة عالمية واسعة النطاق بالفطرة السليمة؟",
+    "optionsAr": [
+      "لأن القواميس لا تحتوي على كلمات",
+      "لأن الجمل تحتوي على غموض معجمي ونحوي هائل لا يمكن حله إلا باستخدام سياق عالم الخلفية",
+      "لأن أجهزة الكمبيوتر لا تستطيع تخزين الحروف الهجائية",
+      "لأن القواعد النحوية متطابقة في جميع اللغات"
+    ]
   },
   {
     "id": 254,
@@ -3964,7 +5635,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'The number of transistors on an integrated circuit doubles approximately every 18 to 24 months' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'The number of transistors on an integrated circuit doubles approximately every 18 to 24 months' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'The number of transistors on an integrated circuit doubles approximately every 18 to 24 months' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "ملاحظة جوردون مور التجريبية (قانون مور) تنص تاريخياً على ما يلي:",
+    "optionsAr": [
+      "عدد الترانزستورات في الدائرة المتكاملة يتضاعف تقريباً كل 18 إلى 24 شهراً",
+      "معدلات الأخطاء البرمجية ترتفع بنسبة 50% كل عام",
+      "أنظمة الذكاء الاصطناعي ستحل محل جميع العاملين البشريين بحلول عام 1980",
+      "تتضاعف دقة شاشة الكمبيوتر كل أسبوع"
+    ]
   },
   {
     "id": 255,
@@ -3980,7 +5658,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Warren McCulloch and Walter Pitts' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Warren McCulloch and Walter Pitts' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Warren McCulloch and Walter Pitts' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "تم نشر أول نموذج رياضي وحسابي معترف به للشبكة العصبية الاصطناعية في عام 1943 بواسطة:",
+    "optionsAr": [
+      "وارن ماكولوتش ووالتر بيتس",
+      "جون فون نيومان ونوربرت وينر",
+      "مارفن مينسكي وكلود شانون",
+      "دونالد هيب وفرانك روزنبلات"
+    ]
   },
   {
     "id": 256,
@@ -3996,7 +5681,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Synaptic connections strengthen when two neurons fire simultaneously ('neurons that fire together, wire together')' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Synaptic connections strengthen when two neurons fire simultaneously ('neurons that fire together, wire together')' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Synaptic connections strengthen when two neurons fire simultaneously ('neurons that fire together, wire together')' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "قدم دونالد هب (1949) قاعدة تعلم فسيولوجية عصبية مؤثرة أظهرت ما يلي:",
+    "optionsAr": [
+      "تتقوى الوصلات المتشابكة عندما تنشط خليتان عصبيتان في وقت واحد (\"الخلايا العصبية التي تنطلق معًا، وتتصل ببعضها البعض\")",
+      "سعة الذاكرة محدودة بشكل صارم بـ 1000 حقيقة",
+      "تنقل الخلايا العصبية الإشارات بطريقة ميكانيكية بحتة عبر السوائل",
+      "لا تستطيع الشبكات العصبية تعلم الوظائف الخطية"
+    ]
   },
   {
     "id": 257,
@@ -4012,7 +5704,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'SNARC' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'SNARC' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'SNARC' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "في عام 1951، قام مارفن مينسكي ودين إدموندز ببناء أول حاسوب تشغيلي للشبكة العصبية الاصطناعية، وسمي:",
+    "optionsAr": [
+      "سنارك",
+      "اينياك",
+      "ديب بلو",
+      "هش"
+    ]
   },
   {
     "id": 258,
@@ -4028,7 +5727,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Dartmouth College' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Dartmouth College' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Dartmouth College' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "حدثت الولادة الرسمية للذكاء الاصطناعي كنظام أكاديمي مستقل في ورشة العمل التاريخية التي استمرت لمدة شهرين في عام 1956 والتي عقدت في:",
+    "optionsAr": [
+      "جامعة هارفارد",
+      "كلية دارتموث",
+      "جامعة ستانفورد",
+      "جامعة أكسفورد"
+    ]
   },
   {
     "id": 259,
@@ -4044,7 +5750,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "ورشة عمل دارتموث الصيفية عام 1956 هي المولد الرسمي لميدان الذكاء الاصطناعي كعلم مستقل، وفيها صاغ جون مكارثي مصطلح 'Artificial Intelligence'.",
-    "explanationEn": "The 1956 Dartmouth Summer Research Project officially birthed AI as an academic discipline, organized by John McCarthy who coined the term."
+    "explanationEn": "The 1956 Dartmouth Summer Research Project officially birthed AI as an academic discipline, organized by John McCarthy who coined the term.",
+    "questionAr": "ما هو البرنامج البرمجي، الذي عرضه ألين نيويل وهربرت سيمون في دارتموث عام 1956، والذي يحظى بالاحتفاء به على نطاق واسع باعتباره أول برنامج للذكاء الاصطناعي؟",
+    "optionsAr": [
+      "المنظر المنطقي",
+      "حل المشكلات العامة",
+      "ديب بلو",
+      "ديندرال"
+    ]
   },
   {
     "id": 260,
@@ -4060,7 +5773,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Checkers' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Checkers' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Checkers' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "في عام 1952، أنشأ آرثر صموئيل برنامجًا تاريخيًا في شركة IBM لعب أي لعبة، وتعلم كيف يصبح لاعبًا أفضل من مخترعها البشري؟",
+    "optionsAr": [
+      "لعبة الداما",
+      "شطرنج",
+      "اذهب",
+      "لعبة الطاولة"
+    ]
   },
   {
     "id": 261,
@@ -4076,7 +5796,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'The Lighthill Report' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'The Lighthill Report' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'The Lighthill Report' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "ما هو التقرير المؤثر الصادر عام 1973 والذي نُشر في المملكة المتحدة والذي انتقد بشدة أبحاث الذكاء الاصطناعي لفشلها في تحقيق وعودها الكبرى، مما أدى إلى تخفيضات حادة في التمويل؟",
+    "optionsAr": [
+      "تقرير لايتهيل",
+      "مراجعة تورينج",
+      "بيان دارتموث",
+      "تقرير الألباك"
+    ]
   },
   {
     "id": 262,
@@ -4092,7 +5819,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "كتاب 'Perceptrons' لمينسكي وبابرت (1969) أثبت رياضياً عجز شبكات البيرسبترون أحادية الطبقة عن تعلم الدوال غير الخطية مثل دالة XOR، مما أدى لأول شتاء للذكاء الاصطناعي.",
-    "explanationEn": "Minsky and Papert's 1969 book showed that single-layer perceptrons cannot learn linearly inseparable functions like XOR, triggering the first AI winter."
+    "explanationEn": "Minsky and Papert's 1969 book showed that single-layer perceptrons cannot learn linearly inseparable functions like XOR, triggering the first AI winter.",
+    "questionAr": "في عام 1969، نشر مارفن مينسكي وسيمور بابيرت كتابًا بعنوان \"الإدراك الحسي\"، حيث أثبتا رياضيًا أن الإدراك الحسي أحادي الطبقة لا يمكنه حساب أي وظيفة بسيطة؟",
+    "optionsAr": [
+      "و",
+      "أو",
+      "XOR (حصريا-OR)",
+      "لا"
+    ]
   },
   {
     "id": 263,
@@ -4108,7 +5842,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الأنظمة الخبيرة (Expert Systems) اعتمدت على تمثيل المعرفة المتخصصة عبر قواعد استدلالية تحاكي تفكير الخبراء البشريين في مجالات دقيقة كالطب والكيمياء.",
-    "explanationEn": "Expert systems represented a shift from general-purpose problem solvers to domain-specific knowledge bases combining facts and heuristic inference rules."
+    "explanationEn": "Expert systems represented a shift from general-purpose problem solvers to domain-specific knowledge bases combining facts and heuristic inference rules.",
+    "questionAr": "في السبعينيات، حولت الأنظمة المتخصصة تركيز الذكاء الاصطناعي نحو المعرفة الخاصة بمجال معين. ما هو النظام الخبير الشهير الذي قام بتشخيص أمراض الدم المعدية باستخدام 450 قاعدة؟",
+    "optionsAr": [
+      "مايسين",
+      "دندرال",
+      "المنقب",
+      "XCON"
+    ]
   },
   {
     "id": 264,
@@ -4124,7 +5865,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الأنظمة الخبيرة (Expert Systems) اعتمدت على تمثيل المعرفة المتخصصة عبر قواعد استدلالية تحاكي تفكير الخبراء البشريين في مجالات دقيقة كالطب والكيمياء.",
-    "explanationEn": "Expert systems represented a shift from general-purpose problem solvers to domain-specific knowledge bases combining facts and heuristic inference rules."
+    "explanationEn": "Expert systems represented a shift from general-purpose problem solvers to domain-specific knowledge bases combining facts and heuristic inference rules.",
+    "questionAr": "تم تسليط الضوء على النجاح التجاري للأنظمة المتخصصة في الثمانينيات من خلال نظام R1 (XCON)، وهو نظام خبير تم تطويره لصالح شركة Digital Equipment Corporation (DEC) من أجل:",
+    "optionsAr": [
+      "ترجمة الصينية إلى الإنجليزية",
+      "تكوين طلبات كمبيوتر العميل لأنظمة كمبيوتر VAX",
+      "قيادة شاحنة توصيل آلية",
+      "توقع أسعار أسواق الأسهم العالمية"
+    ]
   },
   {
     "id": 265,
@@ -4140,7 +5888,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Backpropagation' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Backpropagation' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Backpropagation' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "في عام 1986، أشعل روميلهارت وهينتون وماكليلاند نهضة \"الاتصالية\" من خلال النشر الواسع النطاق لأي خوارزمية تعليمية؟",
+    "optionsAr": [
+      "الانتشار العكسي",
+      "أ* بحث",
+      "بحث التكلفة الموحدة",
+      "تشذيب ألفا بيتا"
+    ]
   },
   {
     "id": 266,
@@ -4156,7 +5911,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Bayesian Networks' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Bayesian Networks' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Bayesian Networks' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "في عام 1988، قامت شركة جوديا بيرل بتحويل الذكاء الاصطناعي من خلال تقديم أي إطار رسمي للاستدلال في ظل عدم اليقين؟",
+    "optionsAr": [
+      "الشبكات الافتراضية",
+      "الويب الدلالي",
+      "الخوارزميات الجينية",
+      "حساب التفاضل والتكامل المسند"
+    ]
   },
   {
     "id": 267,
@@ -4172,7 +5934,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Garry Kasparov' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Garry Kasparov' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Garry Kasparov' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "في عام 1997، تصدر كمبيوتر الشطرنج Deep Blue التابع لشركة IBM عناوين الأخبار التاريخية بفوزه على أي بطل عالمي للشطرنج في مباراة عادية؟",
+    "optionsAr": [
+      "غاري كاسباروف",
+      "أناتولي كاربوف",
+      "ماجنوس كارلسن",
+      "بوبي فيشر"
+    ]
   },
   {
     "id": 268,
@@ -4188,7 +5957,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'ImageNet' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'ImageNet' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'ImageNet' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "تم تحفيز عصر التعلم العميق الحديث بشكل كبير في عام 2012 عندما حققت AlexNet إنجازًا تاريخيًا في أي مجموعة بيانات رؤية حاسوبية واسعة النطاق؟",
+    "optionsAr": [
+      "إيماج نت",
+      "منيست",
+      "سيفار-10",
+      "كوكو"
+    ]
   },
   {
     "id": 269,
@@ -4204,7 +5980,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "الخيار 'Monte Carlo Tree Search (MCTS)' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Monte Carlo Tree Search (MCTS)' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Monte Carlo Tree Search (MCTS)' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "في عام 2016، هزم AlphaGo من DeepMind بطل العالم Lee Sedol في لعبة Go اللوحية القديمة من خلال الجمع بين الشبكات العصبية العميقة مع:",
+    "optionsAr": [
+      "بحث شجرة مونت كارلو (MCTS)",
+      "العمق-البحث الأول مع التراجع",
+      "النظم الخبيرة المبنية على القواعد",
+      "البرمجة الخطية"
+    ]
   },
   {
     "id": 270,
@@ -4220,7 +6003,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "الخيار 'Ensuring that autonomous AI systems pursue objectives that are truly aligned with human values and intentions' يوضح هذا الحدث أو المبدأ التاريخي بدقة؛ حيث شكل ركيزة أساسية في تطور الذكاء الاصطناعي ومناهجه الفلسفية والرياضية.",
-    "explanationEn": "The option 'Ensuring that autonomous AI systems pursue objectives that are truly aligned with human values and intentions' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence."
+    "explanationEn": "The option 'Ensuring that autonomous AI systems pursue objectives that are truly aligned with human values and intentions' is correct because it identifies the foundational historical, mathematical, or philosophical contribution to artificial intelligence.",
+    "questionAr": "تشير \"مشكلة محاذاة القيمة\" في أبحاث سلامة الذكاء الاصطناعي الحديثة إلى التحدي المتمثل في:",
+    "optionsAr": [
+      "محاذاة الأعمدة في جداول قاعدة البيانات",
+      "التأكد من أن أنظمة الذكاء الاصطناعي المستقلة تسعى إلى تحقيق أهداف تتوافق حقًا مع القيم والنوايا الإنسانية",
+      "تحديد أسعار تجزئة متطابقة لأجهزة الذكاء الاصطناعي",
+      "معايرة أجهزة استشعار التسارع في الروبوتات"
+    ]
   },
   {
     "id": 271,
@@ -4234,7 +6024,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة (True). اختبار تورينج القياسي يتجنب التفاعل الجسدي المتعمد ليركز حصرياً على فحص الذكاء التواصلي والإدراكي دون التأثر بالشكل الفيزيائي أو المظهر الخارجي.",
-    "explanationEn": "True. The standard Turing Test deliberately avoids physical contact to ensure that intellectual ability, not physical appearance, is being evaluated."
+    "explanationEn": "True. The standard Turing Test deliberately avoids physical contact to ensure that intellectual ability, not physical appearance, is being evaluated.",
+    "questionAr": "يتجنب اختبار تورينج القياسي عمدا التفاعل الجسدي المباشر بين المحقق والكمبيوتر لضمان اختبار الذكاء، وليس المظهر الجسدي.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 272,
@@ -4248,7 +6043,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
-    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI.",
+    "questionAr": "يتطلب اجتياز اختبار تورينج الشامل أن تمتلك الآلة رؤية الكمبيوتر وقدرات الروبوتات المادية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 273,
@@ -4262,7 +6062,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
-    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI.",
+    "questionAr": "تجمع العلوم المعرفية بين نماذج الذكاء الاصطناعي الحاسوبية وتقنيات علم النفس التجريبي لبناء نظريات قابلة للاختبار للعقل البشري.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 274,
@@ -4276,7 +6081,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
-    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI.",
+    "questionAr": "تم تصميم القياسات المنطقية لأرسطو لتوفير أنماط لبنيات الحجج التي تسفر دائمًا عن استنتاجات صحيحة عندما تكون المقدمات صحيحة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 275,
@@ -4290,7 +6100,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
-    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI.",
+    "questionAr": "العامل العقلاني هو الذي يتصرف لتحقيق أفضل النتائج، أو، عندما يكون هناك عدم يقين، أفضل النتائج المتوقعة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 276,
@@ -4304,7 +6119,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
-    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities.",
+    "questionAr": "في ظل نهج الوكيل العقلاني، فإن إجراء الاستنتاجات المنطقية الصحيحة هو الطريقة الوحيدة الممكنة للوكيل لإظهار السلوك العقلاني.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 277,
@@ -4318,7 +6138,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
-    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities.",
+    "questionAr": "كان رينيه ديكارت مدافعًا عن المادية، مجادلًا بأن العقل البشري مطابق تمامًا للآلات الفيزيائية للدماغ.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 278,
@@ -4332,7 +6157,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
-    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI.",
+    "questionAr": "ترى التجريبية أن المعرفة تتشكل في المقام الأول من خلال الإدراك الحسي والملاحظة التجريبية بدلاً من الأفكار العقلية الفطرية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 279,
@@ -4346,7 +6176,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
-    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities.",
+    "questionAr": "أثبت كيرت جودل أن أي نظام رياضي رسمي قوي بما فيه الكفاية هو نظام كامل وقابل للتقرير بالكامل.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 280,
@@ -4360,7 +6195,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
-    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI.",
+    "questionAr": "أثبت آلان تورينج أنه لا توجد خوارزمية عامة قادرة على تحديد ما إذا كان برنامج الكمبيوتر التعسفي سيتوقف في النهاية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 281,
@@ -4374,7 +6214,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
-    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI.",
+    "questionAr": "إذا كانت المشكلة كاملة NP، فمن المعتقد على نطاق واسع أنه لا توجد خوارزمية يمكنها حل جميع حالات المشكلة في وقت متعدد الحدود.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 282,
@@ -4388,7 +6233,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
-    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI.",
+    "questionAr": "قدم توماس بايز القاعدة الرياضية التي تمكن من تحديث الاحتمالات السابقة في ظل وجود أدلة حسية جديدة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 283,
@@ -4402,7 +6252,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
-    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI.",
+    "questionAr": "أثبت فون نيومان ومورجنسترن أن أي وكيل عقلاني يمتلك تفضيلات متسقة بين اليانصيب غير المؤكد يجب أن يتصرف كما لو كان يعمل على تعظيم المنفعة المتوقعة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 284,
@@ -4416,7 +6271,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
-    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities.",
+    "questionAr": "ينص مفهوم هربرت سيمون عن \"المرضية\" على أنه يجب على الوكلاء البحث دائمًا حتى يحسبوا الحل الأمثل رياضيًا.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 285,
@@ -4430,7 +6290,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
-    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities.",
+    "questionAr": "تتمتع الخلايا العصبية البيولوجية الفردية في الدماغ البشري بسرعات تحويل أسرع بكثير من ترانزستورات المعالجات الدقيقة السيليكونية الحديثة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 286,
@@ -4444,7 +6309,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
-    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI.",
+    "questionAr": "يحتوي الدماغ البشري على ما يقرب من 10^11 خلية عصبية، حيث ترتبط كل خلية عصبية بآلاف الخلايا العصبية الأخرى عبر المشابك العصبية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 287,
@@ -4458,7 +6328,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
-    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities.",
+    "questionAr": "شجعت السلوكية النفسية بنشاط دراسة التمثيلات الداخلية والمعتقدات والرغبات الواعية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 288,
@@ -4472,7 +6347,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
-    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities.",
+    "questionAr": "توقعت آدا لوفليس أن يكون المحرك التحليلي قادرًا على التفكير الأصلي الحقيقي والمستقل تمامًا عن البرمجة البشرية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 289,
@@ -4486,7 +6366,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
-    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI.",
+    "questionAr": "حدد عمل نوربرت وينر في علم التحكم الآلي التنظيم الذاتي في الآلات من خلال حلقات ردود الفعل المصممة لتقليل الخطأ بين الحالة الحالية وحالة الهدف.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 290,
@@ -4500,7 +6385,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
-    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities.",
+    "questionAr": "أثبت نعوم تشومسكي أن الإبداع النحوي اللامتناهي للغة الطبيعية البشرية يمكن صياغته بشكل مناسب من خلال سلاسل ماركوف البسيطة ذات الحالة المحدودة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 291,
@@ -4514,7 +6404,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
-    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI.",
+    "questionAr": "أظهر نموذج ماكولوتش-بيتس العصبي لعام 1943 أن الشبكات المناسبة من الخلايا العصبية الاصطناعية المترابطة يمكنها حساب أي وظيفة منطقية قابلة للحساب.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 292,
@@ -4528,7 +6423,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
-    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI.",
+    "questionAr": "تمت صياغة مصطلح \"الذكاء الاصطناعي\" رسميًا من قبل جون مكارثي في ​​​​مقترح عام 1955 لمشروع أبحاث دارتموث الصيفي لعام 1956.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 293,
@@ -4542,7 +6442,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
-    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI.",
+    "questionAr": "أثبت برنامج Newell and Simon's Logic Theorist النظريات الرياضية بشكل رائع لدرجة أنه وجد دليلًا أقصر لنظرية واحدة مما نشره راسل ووايتهيد في الأصل.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 294,
@@ -4556,7 +6461,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
-    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI.",
+    "questionAr": "ساهم الفشل المبكر لمشاريع الترجمة الآلية الحرفية (مثل الترجمة من الإنجليزية إلى الروسية) بشكل كبير في أول شتاء للذكاء الاصطناعي.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 295,
@@ -4570,7 +6480,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
-    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities.",
+    "questionAr": "أثبت كتاب مينسكي وبابيرت عام 1969 رياضيًا أن الشبكات العصبية متعددة الطبقات لا يمكنها أبدًا تعلم الوظائف غير الخطية تحت أي ظرف من الظروف.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 296,
@@ -4584,7 +6499,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
-    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI.",
+    "questionAr": "كان تطوير الأنظمة المتخصصة في السبعينيات بمثابة تحول كبير في نموذج الذكاء الاصطناعي من خوارزميات البحث ذات الأغراض العامة إلى قواعد المعرفة الخاصة بالمجال.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 297,
@@ -4598,7 +6518,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
-    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI.",
+    "questionAr": "أدى تعميم خوارزمية الانتشار العكسي في عام 1986 إلى حل مشكلة تدريب الشبكات العصبية متعددة الطبقات.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 298,
@@ -4612,7 +6537,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة؛ حيث تمثل قاعدة فكرية وتاريخية موثقة في تطور الذكاء الاصطناعي ودراسة الآلات الذكية.",
-    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI."
+    "explanationEn": "True. This statement accurately records the established historical fact and philosophical rationale in the development of AI.",
+    "questionAr": "توفر الشبكات البايزية طريقة مبدئية رياضيًا لتمثيل التبعيات الشرطية والتفكير الاحتمالي في ظل عدم اليقين.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 299,
@@ -4626,7 +6556,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "العبارة خاطئة؛ فالواقع العلمي والتاريخي يثبت عكس ذلك تماماً، سواء في حدود الأنظمة أو الشروط الصارمة للاختبارات المعرفية.",
-    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities."
+    "explanationEn": "False. The historical and scientific evidence contradicts this premise regarding cognitive testing and automated capabilities.",
+    "questionAr": "كان الاختراق في التعلم العميق الحديث مدفوعًا في المقام الأول بنظريات رياضية جديدة بدلاً من توفر مجموعات البيانات الضخمة وقوة الحوسبة المتوازية لوحدة معالجة الرسومات.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 300,
@@ -4640,7 +6575,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "العبارة صحيحة (True). معضلة الملك ميداس (King Midas problem) تشير إلى الخطر الكامن في تحقيق الآلة للهدف المحدد لها بدقة حرفية مطلقة ولكن الهدف صيغ بطريقة خاطئة أو ناقصة، مسبباً كوارث غير مقصودة.",
-    "explanationEn": "True. The King Midas problem describes the AI safety peril where an agent flawlessly optimizes a human-specified objective that was improperly or incompletely stated."
+    "explanationEn": "True. The King Midas problem describes the AI safety peril where an agent flawlessly optimizes a human-specified objective that was improperly or incompletely stated.",
+    "questionAr": "تشير مشكلة King Midas في سلامة الذكاء الاصطناعي إلى الخطر المتمثل في قيام الوكيل بتعظيم الهدف الذي تم تحديده بشكل غير صحيح من قبل المصمم البشري.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   }
 ];
 

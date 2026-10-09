@@ -185,11 +185,11 @@
               <span class="badge badge-primary" id="quiz-mode-badge" data-i18n="mode_all_badge">All Questions Mode</span>
               <span class="badge badge-chapter" id="quiz-chapter-badge">Chapter 1</span>
             </div>
-            <div class="quiz-counter" id="quiz-counter">Question 1 of 20</div>
+            <div class="quiz-counter" id="quiz-counter">Question 1 of 300</div>
           </div>
           <!-- Progress bar -->
           <div class="progress-container">
-            <div class="progress-bar" id="quiz-progress-bar"></div>
+            <div class="progress-bar" id="quiz-progress-bar" style="width: 0.33%;"></div>
           </div>
         </div>
 
@@ -199,7 +199,7 @@
             <div class="navigator-title-group">
               <span class="navigator-icon">📑</span>
               <h3 class="navigator-title" data-i18n="nav_panel_title">Question Navigator</h3>
-              <span class="navigator-summary" id="navigator-summary">0 / 20 Answered</span>
+              <span class="navigator-summary" id="navigator-summary">0 / 300 Answered</span>
             </div>
             <button class="nav-toggle-btn" id="btn-toggle-navigator" type="button" aria-expanded="true">
               <span id="nav-toggle-text" data-i18n="nav_toggle_hide">Hide Navigator</span>
@@ -225,16 +225,19 @@
         <div class="question-card">
           <div class="question-header">
             <span class="question-number-tag" id="q-id-tag">Q1</span>
-            <span class="badge" id="q-type-badge">MCQ</span>
+            <span class="badge badge-primary" id="q-type-badge">MCQ</span>
           </div>
 
           <div class="question-text" id="q-text">
-            Question text will appear here...
+            In artificial intelligence, an entity that perceives its environment through sensors and acts upon that environment through actuators is fundamentally defined as a/an:
           </div>
 
           <!-- Options Container -->
           <div class="options-list" id="q-options-container">
-            <!-- Dynamically populated -->
+            <div class="option-item" data-idx="0"><div class="option-prefix">A</div><div class="option-label">Controller</div></div>
+            <div class="option-item" data-idx="1"><div class="option-prefix">B</div><div class="option-label">Agent</div></div>
+            <div class="option-item" data-idx="2"><div class="option-prefix">C</div><div class="option-label">Model</div></div>
+            <div class="option-item" data-idx="3"><div class="option-prefix">D</div><div class="option-label">Program</div></div>
           </div>
 
           <!-- Feedback Banner (Shown after check answer) -->

@@ -354,9 +354,22 @@
     // Load question database from global variable
     if (typeof questions !== 'undefined' && Array.isArray(questions)) {
       state.allQuestions = questions;
+    } else if (typeof window !== 'undefined' && Array.isArray(window.questions)) {
+      state.allQuestions = window.questions;
     } else {
       console.error('Questions data not loaded! Please check questions.js');
     }
+
+    // Pre-populate quiz state with all 300 questions immediately
+    state.currentQuiz = {
+      mode: 'all',
+      titleAr: 'جميع الأسئلة (300 سؤال)',
+      titleEn: 'All Questions (300 Questions)',
+      questions: [...state.allQuestions],
+      currentIndex: 0,
+      userAnswers: {},
+      isFinished: false,
+    };
 
     applyTheme(state.theme);
     applyLanguage(state.lang);
@@ -901,19 +914,21 @@
 
   function updateQuizTopBar() {
     const quiz = state.currentQuiz;
-    const index = quiz.currentIndex;
+    if (!quiz || !quiz.questions || quiz.questions.length === 0) return;
+    const index = quiz.currentIndex !== undefined ? quiz.currentIndex : 0;
     const total = quiz.questions.length;
     const q = quiz.questions[index];
+    if (!q) return;
 
-    dom.quizModeBadge.textContent = state.lang === 'ar' ? quiz.titleAr : quiz.titleEn;
-    dom.quizChapterBadge.textContent = q.chapter;
+    if (dom.quizModeBadge) dom.quizModeBadge.textContent = state.lang === 'ar' ? quiz.titleAr : quiz.titleEn;
+    if (dom.quizChapterBadge) dom.quizChapterBadge.textContent = q.chapter;
 
     const qWord = i18n[state.lang].question_word;
     const ofWord = i18n[state.lang].of_word;
-    dom.quizCounter.textContent = `${qWord} ${index + 1} ${ofWord} ${total}`;
+    if (dom.quizCounter) dom.quizCounter.textContent = `${qWord} ${index + 1} ${ofWord} ${total}`;
 
     const pct = ((index + 1) / total) * 100;
-    dom.quizProgressBar.style.width = `${pct}%`;
+    if (dom.quizProgressBar) dom.quizProgressBar.style.width = `${pct}%`;
   }
 
   function selectOption(optionIndex) {
@@ -1297,6 +1312,11 @@
     });
   }
 
-  // Run on page load
-  document.addEventListener('DOMContentLoaded', init);
+  // Run on page load safely
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
 })();
+

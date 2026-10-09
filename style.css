@@ -1071,7 +1071,13 @@ body {
 .exp-text {
   font-size: 0.95rem;
   color: var(--text-primary);
-  line-height: 1.6;
+  line-height: 1.7;
+  white-space: pre-line;
+}
+
+.exp-text strong {
+  color: var(--primary);
+  font-weight: 700;
 }
 
 /* Navigation & Action Bar */

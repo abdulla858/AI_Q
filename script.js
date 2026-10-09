@@ -40,6 +40,7 @@
     en: {
       app_title: 'Artificial Intelligence',
       app_subtitle: 'Interactive Quiz Platform (300 Questions)',
+      btn_modes_nav: 'Modes',
       btn_bank_nav: 'Question Bank',
       theme_dark: 'Dark',
       theme_light: 'Light',
@@ -146,6 +147,7 @@
     ar: {
       app_title: 'الذكاء الاصطناعي',
       app_subtitle: 'منصة الاختبارات التفاعلية (300 سؤال)',
+      btn_modes_nav: 'الأوضاع',
       btn_bank_nav: 'بنك الأسئلة',
       theme_dark: 'الداكن',
       theme_light: 'الفاتح',
@@ -261,6 +263,7 @@
     langLabel: document.getElementById('lang-label'),
     btnResetStorage: document.getElementById('btn-reset-storage'),
     btnOpenBank: document.getElementById('btn-open-bank'),
+    btnHomeNav: document.getElementById('btn-home-nav'),
 
     // Views
     viewHome: document.getElementById('view-home'),
@@ -358,6 +361,9 @@
     applyTheme(state.theme);
     applyLanguage(state.lang);
     bindEvents();
+
+    // Launch directly into Quiz View on startup with Question Navigator visible!
+    startAllQuestionsQuiz();
   }
 
   // =========================================================================
@@ -461,6 +467,9 @@
   function bindEvents() {
     // Header navigation
     dom.brandLogo.addEventListener('click', () => showView(dom.viewHome));
+    if (dom.btnHomeNav) {
+      dom.btnHomeNav.addEventListener('click', () => showView(dom.viewHome));
+    }
     dom.btnThemeToggle.addEventListener('click', toggleTheme);
     dom.btnLangToggle.addEventListener('click', toggleLanguage);
     dom.btnOpenBank.addEventListener('click', () => {

@@ -615,6 +615,34 @@
         dom.customCountInput.style.display = 'none';
       }
     });
+
+    // Keyboard navigation: Enter key advances to the next question
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        if (dom.viewQuiz && dom.viewQuiz.classList.contains('active')) {
+          if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) {
+            return;
+          }
+
+          e.preventDefault();
+
+          if (state.currentQuiz && state.currentQuiz.questions) {
+            const idx = state.currentQuiz.currentIndex;
+            const total = state.currentQuiz.questions.length;
+            if (idx < total - 1) {
+              goToNextQuestion();
+            } else {
+              const ans = state.currentQuiz.userAnswers[idx];
+              if (ans && ans.isChecked) {
+                if (confirm(i18n[state.lang].confirm_finish)) {
+                  finishQuiz();
+                }
+              }
+            }
+          }
+        }
+      }
+    });
   }
 
   function setupPillGroup(container, onSelect) {

@@ -26,14 +26,130 @@
     bankChapterFilter: 'all',
     bankTypeFilter: 'all',
     theme: localStorage.getItem('ai_quiz_theme') || 'light',
-    lang: localStorage.getItem('ai_quiz_lang') || 'ar',
+    lang: (function () {
+      const pref = localStorage.getItem('ai_quiz_lang_pref');
+      if (pref) return pref;
+      return 'en';
+    })(),
+    isNavigatorVisible: true,
   };
 
   // Translations dictionary
   const i18n = {
+    en: {
+      app_title: 'Artificial Intelligence',
+      app_subtitle: 'Interactive Quiz Platform (300 Questions)',
+      btn_bank_nav: 'Question Bank',
+      theme_dark: 'Dark',
+      theme_light: 'Light',
+      home_title: 'AI Practice & Examination Platform',
+      home_desc: 'Comprehensive academic question bank with 300 questions covering AI foundations, intelligent agents, and problem-solving search with detailed bilingual explanations.',
+      stat_total: 'Total Questions',
+      stat_mcq: 'Multiple Choice (MCQ)',
+      stat_tf: 'True / False',
+      stat_chapters: 'Course Chapters',
+      modes_title: '🎯 Choose Quiz Mode:',
+      mode_all_title: 'All Questions',
+      mode_all_desc: 'Practice the complete question bank (300 questions) sequentially by chapter for comprehensive mastery.',
+      badge_300_qs: '300 Questions',
+      btn_start: 'Start Quiz',
+      mode_random_title: 'Random Quiz',
+      mode_random_desc: 'Real exam simulation with randomized non-repeating questions, customizable counts, and chapter scope.',
+      badge_random_qs: '10 - 100 Questions',
+      btn_customize: 'Configure & Start',
+      mode_bank_title: 'Question Bank Browser',
+      mode_bank_desc: 'Browse and search all 300 questions, view verified answers, and read bilingual explanations on demand.',
+      badge_bank: 'Search & Filter',
+      btn_browse: 'Open Bank',
+      chapters_title: '📑 Practice by Chapter:',
+      chap1_title: 'Chapter 1: Introduction to AI',
+      chap1_desc: 'AI history, Turing Test, Midas problem, rational agents, philosophical foundations.',
+      chap1_badge: '100 Questions (70 MCQ + 30 T/F)',
+      chap2_title: 'Chapter 2: Intelligent Agents',
+      chap2_desc: 'Agents, PEAS framework, environment types, agent architectures, rationality & autonomy.',
+      chap2_badge: '80 Questions (60 MCQ + 20 T/F)',
+      chap3_title: 'Chapter 3: Solving Problems by Searching',
+      chap3_desc: 'Problem formulation, BFS, DFS, UCS, IDS, A*, heuristic design, path costs.',
+      chap3_badge: '120 Questions (90 MCQ + 30 T/F)',
+      btn_practice_now: 'Practice Now',
+      mode_all_badge: 'All Questions Mode',
+      btn_prev: 'Previous',
+      btn_next: 'Next',
+      btn_check: 'Check Answer',
+      btn_finish: 'Finish Quiz',
+      correct_msg: '✓ Correct Answer',
+      wrong_msg: '✗ Incorrect Answer',
+      your_answer: 'Your Answer:',
+      correct_answer: 'Correct Answer:',
+      show_explanation: '💡 Show Explanation',
+      hide_explanation: '💡 Hide Explanation',
+      exp_header_ar: '🇸🇦 Arabic Explanation:',
+      exp_header_en: '🇬🇧 English Explanation:',
+      question_word: 'Question',
+      of_word: 'of',
+      res_title: 'Quiz Completed!',
+      res_subtitle: 'Performance Summary & Final Result',
+      stat_correct: 'Correct Answers',
+      stat_wrong: 'Wrong Answers',
+      stat_total_qs: 'Total Questions',
+      grade_excellent: 'Excellent ⭐',
+      grade_verygood: 'Very Good 👍',
+      grade_good: 'Good',
+      grade_pass: 'Pass',
+      grade_needs: 'Needs More Practice',
+      btn_review: 'Review Answers',
+      btn_retry: 'Try Again',
+      btn_new_random: 'New Random Quiz',
+      btn_home: 'Home',
+      review_title: '📋 Review Answers',
+      tab_all: 'All',
+      tab_correct: 'Correct ✓',
+      tab_wrong: 'Wrong ✗',
+      btn_back_results: 'Back to Results',
+      review_search_placeholder: '🔍 Search reviewed questions...',
+      bank_title: '📚 Question Bank Browser (300 Questions)',
+      bank_subtitle: 'Browse and study all 300 questions with verified solutions and explanations',
+      bank_search_placeholder: '🔍 Search any keyword or concept in questions...',
+      bank_filter_all_chaps: 'All Chapters',
+      bank_filter_chap1: 'Chapter 1: Introduction to AI',
+      bank_filter_chap2: 'Chapter 2: Intelligent Agents',
+      bank_filter_chap3: 'Chapter 3: Solving Problems by Searching',
+      bank_filter_all_types: 'All Types',
+      bank_filter_mcq: 'Multiple Choice (MCQ)',
+      bank_filter_tf: 'True / False',
+      modal_title: '🎲 Configure Random Quiz',
+      modal_scope_lbl: 'Chapter Scope:',
+      modal_scope_all: 'All (300 Q)',
+      modal_scope_1: 'Chapter 1 (100 Q)',
+      modal_scope_2: 'Chapter 2 (80 Q)',
+      modal_scope_3: 'Chapter 3 (120 Q)',
+      modal_count_lbl: 'Number of Questions:',
+      modal_count_custom: 'Custom',
+      modal_count_custom_placeholder: 'Enter a number between 5 and 300',
+      btn_cancel: 'Cancel',
+      btn_modal_start: 'Start Quiz Now 🚀',
+      footer_line1: 'Interactive AI Quiz Platform • Built with HTML5, CSS3, Vanilla JS',
+      footer_line2: 'Static Standalone System • Zero Dependencies, No Backend',
+      confirm_finish: 'Are you sure you want to finish the quiz now?',
+      confirm_reset: 'Are you sure you want to reset all stored progress?',
+      nav_panel_title: 'Question Navigator',
+      nav_toggle_show: 'Show Navigator',
+      nav_toggle_hide: 'Hide Navigator',
+      legend_current: 'Current',
+      legend_correct: 'Correct',
+      legend_wrong: 'Incorrect',
+      legend_answered: 'Answered',
+      legend_unanswered: 'Unanswered',
+      nav_answered_ratio: '{answered} / {total} Answered',
+    },
     ar: {
       app_title: 'الذكاء الاصطناعي',
       app_subtitle: 'منصة الاختبارات التفاعلية (300 سؤال)',
+      btn_bank_nav: 'بنك الأسئلة',
+      theme_dark: 'الداكن',
+      theme_light: 'الفاتح',
+      home_title: 'منصة اختبارات الذكاء الاصطناعي',
+      home_desc: 'بنك أسئلة جامعي تفاعلي متقدم يحتوي على 300 سؤال تغطي أساسيات الذكاء الاصطناعي، والوكلاء الأذكياء، واستراتيجيات البحث مع شروحات تعليمية دقيقة باللغتين العربية والإنجليزية.',
       stat_total: 'إجمالي الأسئلة',
       stat_mcq: 'اختيار من متعدد (MCQ)',
       stat_tf: 'صح أم خطأ (True / False)',
@@ -41,101 +157,96 @@
       modes_title: '🎯 اختر وضع الاختبار:',
       mode_all_title: 'جميع الأسئلة (All Questions)',
       mode_all_desc: 'تدرب على بنك الأسئلة بالكامل (300 سؤال) مرتبة حسب الأبواب والموضوعات لدراسة منهجية شاملة.',
+      badge_300_qs: '300 سؤال',
+      btn_start: 'ابدأ الاختبار',
       mode_random_title: 'اختبار عشوائي (Random Quiz)',
       mode_random_desc: 'محاكاة لاختبار حقيقي مع أسئلة عشوائية بدون تكرار، مع إمكانية تحديد عدد الأسئلة والباب المراد اختباره.',
+      badge_random_qs: '10 - 100 سؤال',
+      btn_customize: 'تخصيص وبدء',
       mode_bank_title: 'تصفح والبحث في الأسئلة',
       mode_bank_desc: 'ابحث في بنك الأسئلة بالكامل، واطلع على الإجابات النموذجية والشروحات التفصيلية بالعربية والإنجليزية مباشرة.',
-      chapters_title: '📑 تدرب حسب الباب الدراسي:',
-      btn_start: 'ابدأ الاختبار',
-      btn_customize: 'تخصيص وبدء',
+      badge_bank: 'بحث وتصفية',
       btn_browse: 'فتح البنك',
+      chapters_title: '📑 تدرب حسب الباب الدراسي:',
+      chap1_title: 'الباب الأول: مقدمة في الذكاء الاصطناعي',
+      chap1_desc: 'Chapter 1: Introduction to AI (تاريخ الذكاء الاصطناعي، اختبار تورينج، معضلة ميداس، الفلسفة)',
+      chap1_badge: '100 سؤال (70 MCQ + 30 T/F)',
+      chap2_title: 'الباب الثاني: الوكلاء الأذكياء',
+      chap2_desc: 'Chapter 2: Intelligent Agents (الوكلاء، PEAS، أنواع البيئات، هياكل الوكلاء، العقلانية والاستقلالية)',
+      chap2_badge: '80 سؤال (60 MCQ + 20 T/F)',
+      chap3_title: 'الباب الثالث: حل المشكلات بالبحث',
+      chap3_desc: 'Chapter 3: Solving Problems by Searching (صياغة المشكلات، BFS، DFS، UCS، IDS، A*، الهيورستك)',
+      chap3_badge: '120 سؤال (90 MCQ + 30 T/F)',
+      btn_practice_now: 'تدرب الآن',
+      mode_all_badge: 'وضع جميع الأسئلة',
       btn_prev: 'السابق',
       btn_next: 'التالي',
       btn_check: 'تحقق من الإجابة',
       btn_finish: 'إنهاء الاختبار',
-      btn_review: 'مراجعة الإجابات',
-      btn_retry: 'إعادة الاختبار',
-      btn_new_random: 'اختبار عشوائي جديد',
-      btn_home: 'الرئيسية',
-      res_title: 'اكتمل الاختبار بنجاح!',
-      res_subtitle: 'ملخص الأداء والنتيجة النهائية',
-      stat_correct: 'إجابات صحيحة',
-      stat_wrong: 'إجابات خاطئة',
-      stat_total_qs: 'إجمالي الأسئلة',
-      review_title: '📋 مراجعة الإجابات',
-      tab_all: 'الكل',
-      tab_correct: 'الصحيحة ✓',
-      tab_wrong: 'الخاطئة ✗',
-      btn_back_results: 'العودة للنتيجة',
-      bank_title: '📚 تصفح بنك الأسئلة (300 سؤال)',
       correct_msg: '✓ إجابة صحيحة (Correct)',
       wrong_msg: '✗ إجابة خاطئة (Wrong)',
       your_answer: 'إجابتك:',
       correct_answer: 'الإجابة الصحيحة:',
       show_explanation: '💡 عرض الشرح التعليمي / Show Explanation',
       hide_explanation: '💡 إخفاء الشرح التعليمي / Hide Explanation',
+      exp_header_ar: '🇸🇦 الشرح باللغة العربية:',
+      exp_header_en: '🇬🇧 English Explanation:',
       question_word: 'السؤال',
       of_word: 'من',
+      res_title: 'اكتمل الاختبار بنجاح!',
+      res_subtitle: 'ملخص الأداء والنتيجة النهائية',
+      stat_correct: 'إجابات صحيحة',
+      stat_wrong: 'إجابات خاطئة',
+      stat_total_qs: 'إجمالي الأسئلة',
       grade_excellent: 'ممتاز ⭐ Excellent',
       grade_verygood: 'جيد جداً 👍 Very Good',
       grade_good: 'جيد Good',
       grade_pass: 'مقبول Pass',
       grade_needs: 'يحتاج لمزيد من التدريب Needs More Practice',
+      btn_review: 'مراجعة الإجابات',
+      btn_retry: 'إعادة الاختبار',
+      btn_new_random: 'اختبار عشوائي جديد',
+      btn_home: 'الرئيسية',
+      review_title: '📋 مراجعة الإجابات',
+      tab_all: 'الكل',
+      tab_correct: 'الصحيحة ✓',
+      tab_wrong: 'الخاطئة ✗',
+      btn_back_results: 'العودة للنتيجة',
+      review_search_placeholder: '🔍 ابحث في الأسئلة التي تمت مراجعتها...',
+      bank_title: '📚 تصفح بنك الأسئلة (300 سؤال)',
+      bank_subtitle: 'تصفح واقرأ جميع الأسئلة مع الإجابات والشروحات التعليمية الكاملة',
+      bank_search_placeholder: '🔍 ابحث عن أي كلمة أو مفهوم في الأسئلة...',
+      bank_filter_all_chaps: 'جميع الأبواب (All Chapters)',
+      bank_filter_chap1: 'الباب 1: مقدمة الذكاء الاصطناعي',
+      bank_filter_chap2: 'الباب 2: الوكلاء الأذكياء',
+      bank_filter_chap3: 'الباب 3: حل المشكلات بالبحث',
+      bank_filter_all_types: 'جميع الأنواع',
+      bank_filter_mcq: 'اختيار من متعدد (MCQ)',
+      bank_filter_tf: 'صح أم خطأ (True / False)',
+      modal_title: '🎲 إعداد الاختبار العشوائي',
+      modal_scope_lbl: 'نطاق الأسئلة (Chapter Scope):',
+      modal_scope_all: 'الكل (300 سؤال)',
+      modal_scope_1: 'الباب 1 (100 Q)',
+      modal_scope_2: 'الباب 2 (80 Q)',
+      modal_scope_3: 'الباب 3 (120 Q)',
+      modal_count_lbl: 'عدد الأسئلة (Number of Questions):',
+      modal_count_custom: 'مخصص',
+      modal_count_custom_placeholder: 'أدخل عدداً بين 5 و 300',
+      btn_cancel: 'إلغاء',
+      btn_modal_start: 'ابدأ الاختبار الآن 🚀',
+      footer_line1: 'منصة الاختبارات التفاعلية للذكاء الاصطناعي • مبنية بالكامل باستخدام HTML5, CSS3, Vanilla JS',
+      footer_line2: 'نظام Static مستقل • خالي من أي مكتبات أو Backend',
       confirm_finish: 'هل أنت متأكد من رغبتك في إنهاء الاختبار الآن؟',
       confirm_reset: 'هل تريد حقاً إعادة ضبط التقدم وحذف السجلات المحفوظة؟',
-    },
-    en: {
-      app_title: 'Artificial Intelligence',
-      app_subtitle: 'Interactive Quiz Platform (300 Questions)',
-      stat_total: 'Total Questions',
-      stat_mcq: 'Multiple Choice (MCQ)',
-      stat_tf: 'True / False',
-      stat_chapters: 'Complete Chapters',
-      modes_title: '🎯 Choose Quiz Mode:',
-      mode_all_title: 'All Questions',
-      mode_all_desc: 'Practice the complete question bank (300 questions) sequentially by chapter for comprehensive mastery.',
-      mode_random_title: 'Random Quiz',
-      mode_random_desc: 'Real exam simulation with randomized non-repeating questions, customizable counts, and chapter scope.',
-      mode_bank_title: 'Question Bank Browser',
-      mode_bank_desc: 'Browse and search all 300 questions, view verified answers, and read bilingual explanations on demand.',
-      chapters_title: '📑 Practice by Chapter:',
-      btn_start: 'Start Quiz',
-      btn_customize: 'Configure & Start',
-      btn_browse: 'Open Bank',
-      btn_prev: 'Previous',
-      btn_next: 'Next',
-      btn_check: 'Check Answer',
-      btn_finish: 'Finish Quiz',
-      btn_review: 'Review Answers',
-      btn_retry: 'Try Again',
-      btn_new_random: 'New Random Quiz',
-      btn_home: 'Home',
-      res_title: 'Quiz Completed!',
-      res_subtitle: 'Performance Summary & Final Result',
-      stat_correct: 'Correct Answers',
-      stat_wrong: 'Wrong Answers',
-      stat_total_qs: 'Total Questions',
-      review_title: '📋 Review Answers',
-      tab_all: 'All',
-      tab_correct: 'Correct ✓',
-      tab_wrong: 'Wrong ✗',
-      btn_back_results: 'Back to Results',
-      bank_title: '📚 Question Bank Browser (300 Questions)',
-      correct_msg: '✓ Correct Answer',
-      wrong_msg: '✗ Wrong Answer',
-      your_answer: 'Your Answer:',
-      correct_answer: 'Correct Answer:',
-      show_explanation: '💡 Show Explanation',
-      hide_explanation: '💡 Hide Explanation',
-      question_word: 'Question',
-      of_word: 'of',
-      grade_excellent: 'Excellent ⭐',
-      grade_verygood: 'Very Good 👍',
-      grade_good: 'Good',
-      grade_pass: 'Pass',
-      grade_needs: 'Needs More Practice',
-      confirm_finish: 'Are you sure you want to finish the quiz now?',
-      confirm_reset: 'Are you sure you want to reset all stored progress?',
+      nav_panel_title: 'قائمة الأسئلة والتنقل السريع',
+      nav_toggle_show: 'إظهار القائمة',
+      nav_toggle_hide: 'إخفاء القائمة',
+      legend_current: 'الحالي',
+      legend_correct: 'صحيحة',
+      legend_wrong: 'خاطئة',
+      legend_answered: 'تمت الإجابة',
+      legend_unanswered: 'غير مجاب',
+      nav_answered_ratio: 'تمت الإجابة: {answered} من {total}',
     }
   };
 
@@ -167,6 +278,17 @@
     quizChapterBadge: document.getElementById('quiz-chapter-badge'),
     quizCounter: document.getElementById('quiz-counter'),
     quizProgressBar: document.getElementById('quiz-progress-bar'),
+
+    // Navigator elements
+    quizNavigatorCard: document.getElementById('quiz-navigator-card'),
+    navigatorHeader: document.getElementById('navigator-header'),
+    navigatorContent: document.getElementById('navigator-content'),
+    btnToggleNavigator: document.getElementById('btn-toggle-navigator'),
+    navToggleText: document.getElementById('nav-toggle-text'),
+    navToggleIcon: document.getElementById('nav-toggle-icon'),
+    navigatorSummary: document.getElementById('navigator-summary'),
+    navigatorGrid: document.getElementById('navigator-grid'),
+
     qIdTag: document.getElementById('q-id-tag'),
     qTypeBadge: document.getElementById('q-type-badge'),
     qText: document.getElementById('q-text'),
@@ -257,8 +379,21 @@
     applyTheme(state.theme === 'dark' ? 'light' : 'dark');
   }
 
+  function reorderExplanationHeaders(lang) {
+    const blockEn = document.getElementById('block-exp-en');
+    const blockAr = document.getElementById('block-exp-ar');
+    if (blockEn && blockAr && dom.explanationContent) {
+      if (lang === 'ar') {
+        dom.explanationContent.insertBefore(blockAr, blockEn);
+      } else {
+        dom.explanationContent.insertBefore(blockEn, blockAr);
+      }
+    }
+  }
+
   function applyLanguage(lang) {
     state.lang = lang;
+    localStorage.setItem('ai_quiz_lang_pref', lang);
     localStorage.setItem('ai_quiz_lang', lang);
     const isRtl = lang === 'ar';
     document.documentElement.setAttribute('lang', lang);
@@ -273,11 +408,31 @@
       }
     });
 
+    // Update placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      if (i18n[lang] && i18n[lang][key]) {
+        el.setAttribute('placeholder', i18n[lang][key]);
+      }
+    });
+
+    // Dynamic directional arrow icons
+    const btnPrevIcon = document.getElementById('btn-prev-icon');
+    const btnNextIcon = document.getElementById('btn-next-icon');
+    const btnReviewBackIcon = document.getElementById('btn-review-back-icon');
+    if (btnPrevIcon) btnPrevIcon.textContent = isRtl ? '▶' : '◀';
+    if (btnNextIcon) btnNextIcon.textContent = isRtl ? '◀' : '▶';
+    if (btnReviewBackIcon) btnReviewBackIcon.textContent = isRtl ? '▶' : '◀';
+
     if (lang === 'ar') {
       dom.themeLabel.textContent = state.theme === 'dark' ? 'الفاتح' : 'الداكن';
     } else {
       dom.themeLabel.textContent = state.theme === 'dark' ? 'Light' : 'Dark';
     }
+
+    reorderExplanationHeaders(lang);
+    updateNavigatorVisibilityUI();
+    updateNavigatorState();
 
     // Refresh active question counter / labels if quiz is running
     if (dom.viewQuiz.classList.contains('active')) {
@@ -317,7 +472,7 @@
       if (confirm(i18n[state.lang].confirm_reset)) {
         localStorage.clear();
         applyTheme('light');
-        applyLanguage('ar');
+        applyLanguage('en');
         alert(state.lang === 'ar' ? 'تمت إعادة ضبط التقدم بنجاح!' : 'Progress reset successfully!');
         showView(dom.viewHome);
       }
@@ -339,6 +494,19 @@
         startChapterQuiz(chId);
       });
     });
+
+    // Question Navigator toggle button & header
+    if (dom.btnToggleNavigator) {
+      dom.btnToggleNavigator.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleNavigator();
+      });
+    }
+    if (dom.navigatorHeader) {
+      dom.navigatorHeader.addEventListener('click', () => {
+        toggleNavigator();
+      });
+    }
 
     // Quiz action buttons
     dom.btnPrevQ.addEventListener('click', goToPreviousQuestion);
@@ -439,6 +607,7 @@
       isFinished: false,
     };
 
+    renderNavigator();
     showView(dom.viewQuiz);
     loadQuestion(0);
   }
@@ -532,6 +701,102 @@
   }
 
   // =========================================================================
+  // Question Navigator (Quick Navigation Panel)
+  // =========================================================================
+  function toggleNavigator(forceState) {
+    if (typeof forceState === 'boolean') {
+      state.isNavigatorVisible = forceState;
+    } else {
+      state.isNavigatorVisible = !state.isNavigatorVisible;
+    }
+    updateNavigatorVisibilityUI();
+  }
+
+  function updateNavigatorVisibilityUI() {
+    if (!dom.navigatorContent) return;
+    if (state.isNavigatorVisible) {
+      dom.navigatorContent.classList.remove('hidden');
+      if (dom.navToggleText) dom.navToggleText.textContent = i18n[state.lang].nav_toggle_hide;
+      if (dom.navToggleIcon) dom.navToggleIcon.textContent = '▲';
+      if (dom.btnToggleNavigator) dom.btnToggleNavigator.setAttribute('aria-expanded', 'true');
+    } else {
+      dom.navigatorContent.classList.add('hidden');
+      if (dom.navToggleText) dom.navToggleText.textContent = i18n[state.lang].nav_toggle_show;
+      if (dom.navToggleIcon) dom.navToggleIcon.textContent = '▼';
+      if (dom.btnToggleNavigator) dom.btnToggleNavigator.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  function renderNavigator() {
+    if (!dom.navigatorGrid) return;
+    dom.navigatorGrid.innerHTML = '';
+    const quiz = state.currentQuiz;
+    if (!quiz || !quiz.questions) return;
+    const total = quiz.questions.length;
+
+    for (let i = 0; i < total; i++) {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'nav-q-btn';
+      btn.setAttribute('data-q-idx', i);
+      btn.setAttribute('title', `${i18n[state.lang].question_word} ${i + 1}`);
+      btn.textContent = i + 1;
+
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        loadQuestion(i);
+      });
+
+      dom.navigatorGrid.appendChild(btn);
+    }
+
+    updateNavigatorVisibilityUI();
+    updateNavigatorState();
+  }
+
+  function updateNavigatorState() {
+    if (!dom.navigatorGrid) return;
+    const quiz = state.currentQuiz;
+    if (!quiz || !quiz.questions || quiz.questions.length === 0) return;
+
+    const currentIndex = quiz.currentIndex;
+    const total = quiz.questions.length;
+    let answeredCount = 0;
+
+    const buttons = dom.navigatorGrid.querySelectorAll('.nav-q-btn');
+    buttons.forEach((btn, i) => {
+      btn.classList.remove('current', 'answered-correct', 'answered-wrong', 'answered-selected');
+      btn.setAttribute('title', `${i18n[state.lang].question_word} ${i + 1}`);
+
+      const ans = quiz.userAnswers[i];
+      if (ans && ans.isChecked) {
+        answeredCount++;
+        if (ans.isCorrect) {
+          btn.classList.add('answered-correct');
+        } else {
+          btn.classList.add('answered-wrong');
+        }
+      } else if (ans && ans.selected !== undefined) {
+        answeredCount++;
+        btn.classList.add('answered-selected');
+      }
+
+      if (i === currentIndex) {
+        btn.classList.add('current');
+        if (state.isNavigatorVisible) {
+          btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+        }
+      }
+    });
+
+    if (dom.navigatorSummary && i18n[state.lang].nav_answered_ratio) {
+      dom.navigatorSummary.textContent = i18n[state.lang].nav_answered_ratio
+        .replace('{answered}', answeredCount)
+        .replace('{total}', total);
+    }
+  }
+
+  // =========================================================================
   // Question Rendering & Navigation
   // =========================================================================
   function loadQuestion(index) {
@@ -557,6 +822,7 @@
     dom.expToggleIcon.textContent = '▼';
     dom.expTextAr.textContent = q.explanationAr;
     dom.expTextEn.textContent = q.explanationEn;
+    reorderExplanationHeaders(state.lang);
 
     // Check if previously answered
     const savedAnswer = quiz.userAnswers[index];
@@ -614,9 +880,14 @@
       dom.btnCheckAns.disabled = true;
       showFeedbackBanner(savedAnswer.isCorrect, savedAnswer.selected, q.correctAnswer);
       dom.explanationBox.classList.add('show');
+      dom.explanationContent.style.display = 'block';
+      dom.expToggleText.textContent = i18n[state.lang].hide_explanation;
+      dom.expToggleIcon.textContent = '▲';
     } else {
       dom.btnCheckAns.disabled = !(savedAnswer && savedAnswer.selected !== undefined);
     }
+
+    updateNavigatorState();
   }
 
   function updateQuizTopBar() {
@@ -651,6 +922,8 @@
 
     // Enable check answer button
     dom.btnCheckAns.disabled = false;
+
+    updateNavigatorState();
   }
 
   function checkCurrentAnswer() {
@@ -683,8 +956,13 @@
     // Show feedback banner
     showFeedbackBanner(isCorrect, userChoice, q.correctAnswer);
 
-    // Show explanation box
+    // Show explanation box & auto-expand content
     dom.explanationBox.classList.add('show');
+    dom.explanationContent.style.display = 'block';
+    dom.expToggleText.textContent = i18n[state.lang].hide_explanation;
+    dom.expToggleIcon.textContent = '▲';
+
+    updateNavigatorState();
   }
 
   function optItemHighlight(opt, status) {
@@ -895,14 +1173,25 @@
         </div>
 
         <div class="explanation-content" style="padding:0;">
-          <div class="exp-lang-block">
-            <div class="exp-lang-header">🇸🇦 الشرح بالعربية:</div>
-            <div class="exp-text">${q.explanationAr}</div>
-          </div>
-          <div class="exp-lang-block">
-            <div class="exp-lang-header">🇬🇧 English Explanation:</div>
-            <div class="exp-text">${q.explanationEn}</div>
-          </div>
+          ${state.lang === 'en' ? `
+            <div class="exp-lang-block">
+              <div class="exp-lang-header">🇬🇧 English Explanation:</div>
+              <div class="exp-text">${q.explanationEn}</div>
+            </div>
+            <div class="exp-lang-block">
+              <div class="exp-lang-header">🇸🇦 الشرح بالعربية:</div>
+              <div class="exp-text">${q.explanationAr}</div>
+            </div>
+          ` : `
+            <div class="exp-lang-block">
+              <div class="exp-lang-header">🇸🇦 الشرح بالعربية:</div>
+              <div class="exp-text">${q.explanationAr}</div>
+            </div>
+            <div class="exp-lang-block">
+              <div class="exp-lang-header">🇬🇧 English Explanation:</div>
+              <div class="exp-text">${q.explanationEn}</div>
+            </div>
+          `}
         </div>
       `;
 
@@ -973,14 +1262,25 @@
         </div>
 
         <div class="explanation-content" style="padding:0;">
-          <div class="exp-lang-block">
-            <div class="exp-lang-header">🇸🇦 الشرح بالعربية:</div>
-            <div class="exp-text">${q.explanationAr}</div>
-          </div>
-          <div class="exp-lang-block">
-            <div class="exp-lang-header">🇬🇧 English Explanation:</div>
-            <div class="exp-text">${q.explanationEn}</div>
-          </div>
+          ${state.lang === 'en' ? `
+            <div class="exp-lang-block">
+              <div class="exp-lang-header">🇬🇧 English Explanation:</div>
+              <div class="exp-text">${q.explanationEn}</div>
+            </div>
+            <div class="exp-lang-block">
+              <div class="exp-lang-header">🇸🇦 الشرح بالعربية:</div>
+              <div class="exp-text">${q.explanationAr}</div>
+            </div>
+          ` : `
+            <div class="exp-lang-block">
+              <div class="exp-lang-header">🇸🇦 الشرح بالعربية:</div>
+              <div class="exp-text">${q.explanationAr}</div>
+            </div>
+            <div class="exp-lang-block">
+              <div class="exp-lang-header">🇬🇧 English Explanation:</div>
+              <div class="exp-text">${q.explanationEn}</div>
+            </div>
+          `}
         </div>
       `;
 

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" data-theme="light">
+<html lang="en" dir="ltr" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="منصة اختبارات تفاعلية ذكية وشاملة لمقرر الذكاء الاصطناعي - 300 سؤال شامل">
-  <title>منصة اختبارات الذكاء الاصطناعي | Interactive AI Quiz Platform</title>
+  <meta name="description" content="Interactive AI Quiz Platform - Comprehensive 300 Questions based on AIMA (Chapters 1, 2, 3)">
+  <title>Interactive AI Quiz Platform | منصة اختبارات الذكاء الاصطناعي</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,32 +15,32 @@
       <div class="brand" id="brand-logo">
         <div class="brand-icon">🧠</div>
         <div class="brand-text">
-          <h1 id="app-title">الذكاء الاصطناعي</h1>
-          <span id="app-subtitle">منصة الاختبارات التفاعلية (300 سؤال)</span>
+          <h1 id="app-title" data-i18n="app_title">Artificial Intelligence</h1>
+          <span id="app-subtitle" data-i18n="app_subtitle">Interactive Quiz Platform (300 Questions)</span>
         </div>
       </div>
       
       <div class="header-actions">
         <!-- Question Bank Browser Button -->
-        <button class="icon-btn" id="btn-open-bank" title="تصفح بنك الأسئلة / Question Bank">
+        <button class="icon-btn" id="btn-open-bank" title="Question Bank / تصفح بنك الأسئلة">
           <span>📚</span>
-          <span class="btn-text">بنك الأسئلة</span>
+          <span class="btn-text" data-i18n="btn_bank_nav">Question Bank</span>
         </button>
 
         <!-- Language Toggle -->
-        <button class="icon-btn" id="btn-lang-toggle" title="تغيير اتجاه اللغة / Switch Language">
+        <button class="icon-btn" id="btn-lang-toggle" title="Switch Language / تغيير اللغة">
           <span>🌐</span>
-          <span id="lang-label">English</span>
+          <span id="lang-label">عربي</span>
         </button>
 
         <!-- Theme Toggle -->
-        <button class="icon-btn" id="btn-theme-toggle" title="تغيير المظهر / Toggle Dark Mode">
+        <button class="icon-btn" id="btn-theme-toggle" title="Toggle Theme / تغيير المظهر">
           <span id="theme-icon">🌙</span>
-          <span id="theme-label">الداكن</span>
+          <span id="theme-label" data-i18n="theme_dark">Dark</span>
         </button>
 
         <!-- Reset Button -->
-        <button class="icon-btn" id="btn-reset-storage" title="إعادة ضبط التقدم / Reset Progress">
+        <button class="icon-btn" id="btn-reset-storage" title="Reset Progress / إعادة ضبط التقدم">
           <span>🔄</span>
         </button>
       </div>
@@ -61,9 +61,9 @@
             <span>✨</span>
             <span>AIMA Chapters 1, 2 & 3 • Russell & Norvig</span>
           </div>
-          <h2 class="hero-title" id="home-title">منصة اختبارات الذكاء الاصطناعي</h2>
-          <p class="hero-subtitle" id="home-desc">
-            بنك أسئلة جامعي تفاعلي متقدم يحتوي على 300 سؤال تغطي أساسيات الذكاء الاصطناعي، والوكلاء الأذكياء، واستراتيجيات البحث مع شروحات تعليمية دقيقة باللغتين العربية والإنجليزية.
+          <h2 class="hero-title" id="home-title" data-i18n="home_title">AI Practice &amp; Examination Platform</h2>
+          <p class="hero-subtitle" id="home-desc" data-i18n="home_desc">
+            Comprehensive academic question bank with 300 questions covering AI foundations, intelligent agents, and problem-solving search with detailed bilingual explanations.
           </p>
         </div>
 
@@ -71,98 +71,98 @@
         <div class="stats-grid">
           <div class="stat-card">
             <div class="stat-value">300</div>
-            <div class="stat-label" data-i18n="stat_total">إجمالي الأسئلة</div>
+            <div class="stat-label" data-i18n="stat_total">Total Questions</div>
           </div>
           <div class="stat-card">
             <div class="stat-value">220</div>
-            <div class="stat-label" data-i18n="stat_mcq">اختيار من متعدد (MCQ)</div>
+            <div class="stat-label" data-i18n="stat_mcq">Multiple Choice (MCQ)</div>
           </div>
           <div class="stat-card">
             <div class="stat-value">80</div>
-            <div class="stat-label" data-i18n="stat_tf">صح أم خطأ (True / False)</div>
+            <div class="stat-label" data-i18n="stat_tf">True / False</div>
           </div>
           <div class="stat-card">
             <div class="stat-value">3</div>
-            <div class="stat-label" data-i18n="stat_chapters">أبواب دراسية متكاملة</div>
+            <div class="stat-label" data-i18n="stat_chapters">Course Chapters</div>
           </div>
         </div>
 
         <!-- Modes Grid -->
-        <h3 class="modes-title" data-i18n="modes_title">🎯 اختر وضع الاختبار:</h3>
+        <h3 class="modes-title" data-i18n="modes_title">🎯 Choose Quiz Mode:</h3>
         <div class="modes-grid">
           <!-- All Questions -->
           <div class="mode-card all" id="card-mode-all">
             <div class="mode-icon">📖</div>
-            <h4 class="mode-title" data-i18n="mode_all_title">جميع الأسئلة (All Questions)</h4>
+            <h4 class="mode-title" data-i18n="mode_all_title">All Questions</h4>
             <p class="mode-desc" data-i18n="mode_all_desc">
-              تدرب على بنك الأسئلة بالكامل (300 سؤال) مرتبة حسب الأبواب والموضوعات لدراسة منهجية شاملة.
+              Practice the complete question bank (300 questions) sequentially by chapter for comprehensive mastery.
             </p>
             <div class="mode-footer">
-              <span class="mode-badge">300 سؤال</span>
-              <button class="btn btn-primary" data-i18n="btn_start">ابدأ الاختبار</button>
+              <span class="mode-badge" data-i18n="badge_300_qs">300 Questions</span>
+              <button class="btn btn-primary" data-i18n="btn_start">Start Quiz</button>
             </div>
           </div>
 
           <!-- Random Quiz -->
           <div class="mode-card random" id="card-mode-random">
             <div class="mode-icon">🎲</div>
-            <h4 class="mode-title" data-i18n="mode_random_title">اختبار عشوائي (Random Quiz)</h4>
+            <h4 class="mode-title" data-i18n="mode_random_title">Random Quiz</h4>
             <p class="mode-desc" data-i18n="mode_random_desc">
-              محاكاة لاختبار حقيقي مع أسئلة عشوائية بدون تكرار، مع إمكانية تحديد عدد الأسئلة والباب المراد اختباره.
+              Real exam simulation with randomized non-repeating questions, customizable counts, and chapter scope.
             </p>
             <div class="mode-footer">
-              <span class="mode-badge">10 - 100 سؤال</span>
-              <button class="btn btn-primary" data-i18n="btn_customize">تخصيص وبدء</button>
+              <span class="mode-badge" data-i18n="badge_random_qs">10 - 100 Questions</span>
+              <button class="btn btn-primary" data-i18n="btn_customize">Configure &amp; Start</button>
             </div>
           </div>
 
           <!-- Question Browser -->
           <div class="mode-card browser" id="card-mode-browser">
             <div class="mode-icon">🔍</div>
-            <h4 class="mode-title" data-i18n="mode_bank_title">تصفح والبحث في الأسئلة</h4>
+            <h4 class="mode-title" data-i18n="mode_bank_title">Question Bank Browser</h4>
             <p class="mode-desc" data-i18n="mode_bank_desc">
-              ابحث في بنك الأسئلة بالكامل، واطلع على الإجابات النموذجية والشروحات التفصيلية بالعربية والإنجليزية مباشرة.
+              Browse and search all 300 questions, view verified answers, and read bilingual explanations on demand.
             </p>
             <div class="mode-footer">
-              <span class="mode-badge">بحث وتصفية</span>
-              <button class="btn btn-secondary" data-i18n="btn_browse">فتح البنك</button>
+              <span class="mode-badge" data-i18n="badge_bank">Search &amp; Filter</span>
+              <button class="btn btn-secondary" data-i18n="btn_browse">Open Bank</button>
             </div>
           </div>
         </div>
 
         <!-- Chapter Practice Section -->
-        <h3 class="modes-title" data-i18n="chapters_title">📑 تدرب حسب الباب الدراسي:</h3>
+        <h3 class="modes-title" data-i18n="chapters_title">📑 Practice by Chapter:</h3>
         <div class="modes-grid">
           <!-- Chapter 1 -->
           <div class="mode-card" data-chapter="1">
             <div class="mode-icon" style="background:#e0f2fe; color:#0369a1;">📘</div>
-            <h4 class="mode-title">الباب الأول: مقدمة في الذكاء الاصطناعي</h4>
-            <p class="mode-desc">Chapter 1: Introduction to AI (تاريخ الذكاء الاصطناعي، اختبار تورينج، معضلة ميداس، الفلسفة)</p>
+            <h4 class="mode-title" data-i18n="chap1_title">Chapter 1: Introduction to AI</h4>
+            <p class="mode-desc" data-i18n="chap1_desc">AI history, Turing Test, Midas problem, rational agents, philosophical foundations.</p>
             <div class="mode-footer">
-              <span class="mode-badge">100 سؤال (70 MCQ + 30 T/F)</span>
-              <button class="btn btn-secondary start-chap-btn" data-chapter="1">تدرب الآن</button>
+              <span class="mode-badge" data-i18n="chap1_badge">100 Questions (70 MCQ + 30 T/F)</span>
+              <button class="btn btn-secondary start-chap-btn" data-chapter="1" data-i18n="btn_practice_now">Practice Now</button>
             </div>
           </div>
 
           <!-- Chapter 2 -->
           <div class="mode-card" data-chapter="2">
             <div class="mode-icon" style="background:#fef3c7; color:#b45309;">📙</div>
-            <h4 class="mode-title">الباب الثاني: الوكلاء الأذكياء</h4>
-            <p class="mode-desc">Chapter 2: Intelligent Agents (الوكلاء، PEAS، أنواع البيئات، هياكل الوكلاء، العقلانية والاستقلالية)</p>
+            <h4 class="mode-title" data-i18n="chap2_title">Chapter 2: Intelligent Agents</h4>
+            <p class="mode-desc" data-i18n="chap2_desc">Agents, PEAS framework, environment types, agent architectures, rationality &amp; autonomy.</p>
             <div class="mode-footer">
-              <span class="mode-badge">80 سؤال (60 MCQ + 20 T/F)</span>
-              <button class="btn btn-secondary start-chap-btn" data-chapter="2">تدرب الآن</button>
+              <span class="mode-badge" data-i18n="chap2_badge">80 Questions (60 MCQ + 20 T/F)</span>
+              <button class="btn btn-secondary start-chap-btn" data-chapter="2" data-i18n="btn_practice_now">Practice Now</button>
             </div>
           </div>
 
           <!-- Chapter 3 -->
           <div class="mode-card" data-chapter="3">
             <div class="mode-icon" style="background:#ede9fe; color:#6d28d9;">📗</div>
-            <h4 class="mode-title">الباب الثالث: حل المشكلات بالبحث</h4>
-            <p class="mode-desc">Chapter 3: Solving Problems by Searching (صياغة المشكلات، BFS، DFS، UCS، IDS، A*، الهيورستك)</p>
+            <h4 class="mode-title" data-i18n="chap3_title">Chapter 3: Solving Problems by Searching</h4>
+            <p class="mode-desc" data-i18n="chap3_desc">Problem formulation, BFS, DFS, UCS, IDS, A*, heuristic design, path costs.</p>
             <div class="mode-footer">
-              <span class="mode-badge">120 سؤال (90 MCQ + 30 T/F)</span>
-              <button class="btn btn-secondary start-chap-btn" data-chapter="3">تدرب الآن</button>
+              <span class="mode-badge" data-i18n="chap3_badge">120 Questions (90 MCQ + 30 T/F)</span>
+              <button class="btn btn-secondary start-chap-btn" data-chapter="3" data-i18n="btn_practice_now">Practice Now</button>
             </div>
           </div>
         </div>
@@ -176,14 +176,42 @@
         <div class="quiz-top-bar">
           <div class="quiz-info-row">
             <div class="quiz-badge-group">
-              <span class="badge badge-primary" id="quiz-mode-badge">وضع جميع الأسئلة</span>
-              <span class="badge badge-chapter" id="quiz-chapter-badge">Chapter 2</span>
+              <span class="badge badge-primary" id="quiz-mode-badge" data-i18n="mode_all_badge">All Questions Mode</span>
+              <span class="badge badge-chapter" id="quiz-chapter-badge">Chapter 1</span>
             </div>
-            <div class="quiz-counter" id="quiz-counter">السؤال 1 من 20</div>
+            <div class="quiz-counter" id="quiz-counter">Question 1 of 20</div>
           </div>
           <!-- Progress bar -->
           <div class="progress-container">
             <div class="progress-bar" id="quiz-progress-bar"></div>
+          </div>
+        </div>
+
+        <!-- Question Navigator (Quick Navigation Panel) -->
+        <div class="navigator-card" id="quiz-navigator-card">
+          <div class="navigator-header" id="navigator-header">
+            <div class="navigator-title-group">
+              <span class="navigator-icon">📑</span>
+              <h3 class="navigator-title" data-i18n="nav_panel_title">Question Navigator</h3>
+              <span class="navigator-summary" id="navigator-summary">0 / 20 Answered</span>
+            </div>
+            <button class="nav-toggle-btn" id="btn-toggle-navigator" type="button" aria-expanded="true">
+              <span id="nav-toggle-text" data-i18n="nav_toggle_hide">Hide Navigator</span>
+              <span id="nav-toggle-icon">▲</span>
+            </button>
+          </div>
+
+          <div class="navigator-content" id="navigator-content">
+            <div class="navigator-legend">
+              <span class="legend-item"><span class="legend-dot current"></span><span data-i18n="legend_current">Current</span></span>
+              <span class="legend-item"><span class="legend-dot correct"></span><span data-i18n="legend_correct">Correct</span></span>
+              <span class="legend-item"><span class="legend-dot wrong"></span><span data-i18n="legend_wrong">Incorrect</span></span>
+              <span class="legend-item"><span class="legend-dot selected"></span><span data-i18n="legend_answered">Answered</span></span>
+              <span class="legend-item"><span class="legend-dot unvisited"></span><span data-i18n="legend_unanswered">Unanswered</span></span>
+            </div>
+            <div class="navigator-grid" id="navigator-grid">
+              <!-- Dynamically populated buttons -->
+            </div>
           </div>
         </div>
 
@@ -195,7 +223,7 @@
           </div>
 
           <div class="question-text" id="q-text">
-            نص السؤال يظهر هنا...
+            Question text will appear here...
           </div>
 
           <!-- Options Container -->
@@ -216,17 +244,17 @@
           <!-- Explanation Container (Shown after check answer) -->
           <div class="explanation-box" id="explanation-box">
             <button class="explanation-toggle-btn" id="btn-toggle-exp">
-              <span id="exp-toggle-text">💡 عرض الشرح التعليمي / Show Explanation</span>
+              <span id="exp-toggle-text" data-i18n="show_explanation">💡 Show Explanation</span>
               <span id="exp-toggle-icon">▼</span>
             </button>
             <div class="explanation-content" id="explanation-content">
-              <div class="exp-lang-block">
-                <div class="exp-lang-header">🇸🇦 الشرح باللغة العربية:</div>
-                <div class="exp-text" id="exp-text-ar"></div>
-              </div>
-              <div class="exp-lang-block">
-                <div class="exp-lang-header">🇬🇧 English Explanation:</div>
+              <div class="exp-lang-block" id="block-exp-en">
+                <div class="exp-lang-header" data-i18n="exp_header_en">🇬🇧 English Explanation:</div>
                 <div class="exp-text" id="exp-text-en"></div>
+              </div>
+              <div class="exp-lang-block" id="block-exp-ar">
+                <div class="exp-lang-header" data-i18n="exp_header_ar">🇸🇦 الشرح باللغة العربية:</div>
+                <div class="exp-text" id="exp-text-ar"></div>
               </div>
             </div>
           </div>
@@ -235,23 +263,23 @@
         <!-- Bottom Actions -->
         <div class="quiz-actions">
           <button class="btn btn-secondary" id="btn-prev-q" disabled>
-            <span>◀</span>
-            <span data-i18n="btn_prev">السابق</span>
+            <span id="btn-prev-icon">◀</span>
+            <span data-i18n="btn_prev">Previous</span>
           </button>
 
           <div class="action-btn-group">
             <button class="btn btn-primary" id="btn-check-ans" disabled>
               <span>✓</span>
-              <span data-i18n="btn_check">تحقق من الإجابة</span>
+              <span data-i18n="btn_check">Check Answer</span>
             </button>
             <button class="btn btn-primary" id="btn-next-q">
-              <span data-i18n="btn_next">التالي</span>
-              <span>▶</span>
+              <span data-i18n="btn_next">Next</span>
+              <span id="btn-next-icon">▶</span>
             </button>
           </div>
 
           <button class="btn btn-danger" id="btn-finish-quiz">
-            <span data-i18n="btn_finish">إنهاء الاختبار</span>
+            <span data-i18n="btn_finish">Finish Quiz</span>
           </button>
         </div>
       </section>
@@ -262,8 +290,8 @@
       <section id="view-results" class="view-section">
         <div class="results-card">
           <div class="results-badge" id="res-badge-icon">🏆</div>
-          <h2 class="results-title" data-i18n="res_title">اكتمل الاختبار بنجاح!</h2>
-          <p class="results-subtitle" id="res-subtitle">ملخص الأداء والنتيجة النهائية</p>
+          <h2 class="results-title" data-i18n="res_title">Quiz Completed!</h2>
+          <p class="results-subtitle" id="res-subtitle" data-i18n="res_subtitle">Performance Summary &amp; Final Result</p>
 
           <div class="score-display-box">
             <div class="score-number" id="res-score-ratio">17 / 20</div>
@@ -271,40 +299,40 @@
           </div>
 
           <div>
-            <span class="grade-pill" id="res-grade-pill">👍 Very Good (جيد جداً)</span>
+            <span class="grade-pill" id="res-grade-pill">👍 Very Good</span>
           </div>
 
           <div class="results-stats-row">
             <div class="r-stat">
               <div class="r-stat-val correct" id="res-stat-correct">17</div>
-              <div class="r-stat-lbl" data-i18n="stat_correct">إجابات صحيحة</div>
+              <div class="r-stat-lbl" data-i18n="stat_correct">Correct Answers</div>
             </div>
             <div class="r-stat">
               <div class="r-stat-val wrong" id="res-stat-wrong">3</div>
-              <div class="r-stat-lbl" data-i18n="stat_wrong">إجابات خاطئة</div>
+              <div class="r-stat-lbl" data-i18n="stat_wrong">Wrong Answers</div>
             </div>
             <div class="r-stat">
               <div class="r-stat-val total" id="res-stat-total">20</div>
-              <div class="r-stat-lbl" data-i18n="stat_total_qs">إجمالي الأسئلة</div>
+              <div class="r-stat-lbl" data-i18n="stat_total_qs">Total Questions</div>
             </div>
           </div>
 
           <div class="results-actions">
             <button class="btn btn-primary" id="btn-review-answers">
               <span>📋</span>
-              <span data-i18n="btn_review">مراجعة الإجابات</span>
+              <span data-i18n="btn_review">Review Answers</span>
             </button>
             <button class="btn btn-secondary" id="btn-try-again">
               <span>🔄</span>
-              <span data-i18n="btn_retry">إعادة الاختبار</span>
+              <span data-i18n="btn_retry">Try Again</span>
             </button>
             <button class="btn btn-secondary" id="btn-new-random">
               <span>🎲</span>
-              <span data-i18n="btn_new_random">اختبار عشوائي جديد</span>
+              <span data-i18n="btn_new_random">New Random Quiz</span>
             </button>
             <button class="btn btn-secondary" id="btn-return-home">
               <span>🏠</span>
-              <span data-i18n="btn_home">الرئيسية</span>
+              <span data-i18n="btn_home">Home</span>
             </button>
           </div>
         </div>
@@ -315,20 +343,20 @@
            =================================================================== -->
       <section id="view-review" class="view-section">
         <div class="review-header-bar">
-          <h2 class="review-title" data-i18n="review_title">📋 مراجعة الإجابات</h2>
+          <h2 class="review-title" data-i18n="review_title">📋 Review Answers</h2>
           <div class="review-filter-tabs">
-            <button class="tab-btn active" data-filter="all" data-i18n="tab_all">الكل</button>
-            <button class="tab-btn" data-filter="correct" data-i18n="tab_correct">الصحيحة ✓</button>
-            <button class="tab-btn" data-filter="wrong" data-i18n="tab_wrong">الخاطئة ✗</button>
+            <button class="tab-btn active" data-filter="all" data-i18n="tab_all">All</button>
+            <button class="tab-btn" data-filter="correct" data-i18n="tab_correct">Correct ✓</button>
+            <button class="tab-btn" data-filter="wrong" data-i18n="tab_wrong">Wrong ✗</button>
           </div>
           <button class="btn btn-secondary" id="btn-review-back">
-            <span>◀</span>
-            <span data-i18n="btn_back_results">العودة للنتيجة</span>
+            <span id="btn-review-back-icon">◀</span>
+            <span data-i18n="btn_back_results">Back to Results</span>
           </button>
         </div>
 
         <div class="review-search-bar">
-          <input type="text" class="search-input" id="review-search-input" placeholder="🔍 ابحث في الأسئلة التي تمت مراجعتها...">
+          <input type="text" class="search-input" id="review-search-input" placeholder="🔍 Search reviewed questions..." data-i18n-placeholder="review_search_placeholder">
         </div>
 
         <div class="review-cards-list" id="review-cards-container">
@@ -342,29 +370,29 @@
       <section id="view-browser" class="view-section">
         <div class="bank-header">
           <div>
-            <h2 class="review-title" data-i18n="bank_title">📚 تصفح بنك الأسئلة (300 سؤال)</h2>
-            <p style="color:var(--text-secondary); font-size:0.95rem;">تصفح واقرأ جميع الأسئلة مع الإجابات والشروحات التعليمية الكاملة</p>
+            <h2 class="review-title" data-i18n="bank_title">📚 Question Bank Browser (300 Questions)</h2>
+            <p id="bank-subtitle" data-i18n="bank_subtitle" style="color:var(--text-secondary); font-size:0.95rem;">Browse and study all 300 questions with verified solutions and explanations</p>
           </div>
           <button class="btn btn-secondary" id="btn-browser-back">
             <span>🏠</span>
-            <span data-i18n="btn_home">الرئيسية</span>
+            <span data-i18n="btn_home">Home</span>
           </button>
         </div>
 
         <div class="bank-filters">
-          <input type="text" class="search-input" id="bank-search-input" placeholder="🔍 ابحث عن أي كلمة أو مفهوم في الأسئلة..." style="flex:2; min-width:240px;">
+          <input type="text" class="search-input" id="bank-search-input" placeholder="🔍 Search any keyword or concept in questions..." data-i18n-placeholder="bank_search_placeholder" style="flex:2; min-width:240px;">
           
           <select class="select-filter" id="bank-chapter-filter" style="flex:1; min-width:180px;">
-            <option value="all">جميع الأبواب (All Chapters)</option>
-            <option value="1">الباب 1: مقدمة الذكاء الاصطناعي</option>
-            <option value="2">الباب 2: الوكلاء الأذكياء</option>
-            <option value="3">الباب 3: حل المشكلات بالبحث</option>
+            <option value="all" data-i18n="bank_filter_all_chaps">All Chapters</option>
+            <option value="1" data-i18n="bank_filter_chap1">Chapter 1: Introduction to AI</option>
+            <option value="2" data-i18n="bank_filter_chap2">Chapter 2: Intelligent Agents</option>
+            <option value="3" data-i18n="bank_filter_chap3">Chapter 3: Solving Problems by Searching</option>
           </select>
 
           <select class="select-filter" id="bank-type-filter" style="flex:1; min-width:150px;">
-            <option value="all">جميع الأنواع</option>
-            <option value="mcq">اختيار من متعدد (MCQ)</option>
-            <option value="true_false">صح أم خطأ (True / False)</option>
+            <option value="all" data-i18n="bank_filter_all_types">All Types</option>
+            <option value="mcq" data-i18n="bank_filter_mcq">Multiple Choice (MCQ)</option>
+            <option value="true_false" data-i18n="bank_filter_tf">True / False</option>
           </select>
         </div>
 
@@ -382,36 +410,36 @@
   <div class="config-modal-backdrop" id="random-config-modal">
     <div class="config-modal">
       <div class="modal-header">
-        <h3 class="modal-title">🎲 إعداد الاختبار العشوائي</h3>
+        <h3 class="modal-title" data-i18n="modal_title">🎲 Configure Random Quiz</h3>
         <button class="close-btn" id="modal-close-btn">&times;</button>
       </div>
 
       <div class="form-group">
-        <label class="form-label">نطاق الأسئلة (Chapter Scope):</label>
+        <label class="form-label" data-i18n="modal_scope_lbl">Chapter Scope:</label>
         <div class="pill-group" id="modal-scope-pills">
-          <button class="pill-btn active" data-scope="all">الكل (300 سؤال)</button>
-          <button class="pill-btn" data-scope="1">الباب 1 (100 Q)</button>
-          <button class="pill-btn" data-scope="2">الباب 2 (80 Q)</button>
-          <button class="pill-btn" data-scope="3">الباب 3 (120 Q)</button>
+          <button class="pill-btn active" data-scope="all" data-i18n="modal_scope_all">All (300 Q)</button>
+          <button class="pill-btn" data-scope="1" data-i18n="modal_scope_1">Chapter 1 (100 Q)</button>
+          <button class="pill-btn" data-scope="2" data-i18n="modal_scope_2">Chapter 2 (80 Q)</button>
+          <button class="pill-btn" data-scope="3" data-i18n="modal_scope_3">Chapter 3 (120 Q)</button>
         </div>
       </div>
 
       <div class="form-group">
-        <label class="form-label">عدد الأسئلة (Number of Questions):</label>
+        <label class="form-label" data-i18n="modal_count_lbl">Number of Questions:</label>
         <div class="pill-group" id="modal-count-pills">
           <button class="pill-btn" data-count="10">10</button>
           <button class="pill-btn active" data-count="20">20</button>
           <button class="pill-btn" data-count="30">30</button>
           <button class="pill-btn" data-count="50">50</button>
           <button class="pill-btn" data-count="100">100</button>
-          <button class="pill-btn" data-count="custom">مخصص</button>
+          <button class="pill-btn" data-count="custom" data-i18n="modal_count_custom">Custom</button>
         </div>
-        <input type="number" id="custom-count-input" class="custom-input" min="5" max="300" placeholder="أدخل عدداً بين 5 و 300" style="display:none;">
+        <input type="number" id="custom-count-input" class="custom-input" min="5" max="300" placeholder="Enter a number between 5 and 300" data-i18n-placeholder="modal_count_custom_placeholder" style="display:none;">
       </div>
 
       <div class="modal-actions">
-        <button class="btn btn-secondary" id="modal-cancel-btn">إلغاء</button>
-        <button class="btn btn-primary" id="modal-start-btn">ابدأ الاختبار الآن 🚀</button>
+        <button class="btn btn-secondary" id="modal-cancel-btn" data-i18n="btn_cancel">Cancel</button>
+        <button class="btn btn-primary" id="modal-start-btn" data-i18n="btn_modal_start">Start Quiz Now 🚀</button>
       </div>
     </div>
   </div>
@@ -419,8 +447,8 @@
   <!-- Footer -->
   <footer class="app-footer">
     <div class="container footer-inner">
-      <div>منصة الاختبارات التفاعلية للذكاء الاصطناعي • مبنية بالكامل باستخدام HTML5, CSS3, Vanilla JS</div>
-      <div>نظام Static مستقل • خالي من أي مكتبات أو Backend</div>
+      <div data-i18n="footer_line1">Interactive AI Quiz Platform • Built with HTML5, CSS3, Vanilla JS</div>
+      <div data-i18n="footer_line2">Static Standalone System • Zero Dependencies, No Backend</div>
     </div>
   </footer>
 

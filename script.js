@@ -922,9 +922,9 @@
       if (dom.btnCheckAns) dom.btnCheckAns.disabled = true;
       showFeedbackBanner(savedAnswer.isCorrect, savedAnswer.selected, q.correctAnswer);
       dom.explanationBox.classList.add('show');
-      dom.explanationContent.style.display = 'block';
-      dom.expToggleText.textContent = i18n[state.lang].hide_explanation;
-      dom.expToggleIcon.textContent = '▲';
+      dom.explanationContent.style.display = 'none';
+      dom.expToggleText.textContent = i18n[state.lang].show_explanation;
+      dom.expToggleIcon.textContent = '▼';
     } else {
       if (dom.btnCheckAns) dom.btnCheckAns.disabled = true;
     }
@@ -995,11 +995,11 @@
     // Show feedback banner immediately
     showFeedbackBanner(isCorrect, userChoice, q.correctAnswer);
 
-    // Show explanation box & auto-expand content
+    // Show explanation toggle box, but keep content collapsed/hidden by default
     dom.explanationBox.classList.add('show');
-    dom.explanationContent.style.display = 'block';
-    dom.expToggleText.textContent = i18n[state.lang].hide_explanation;
-    dom.expToggleIcon.textContent = '▲';
+    dom.explanationContent.style.display = 'none';
+    dom.expToggleText.textContent = i18n[state.lang].show_explanation;
+    dom.expToggleIcon.textContent = '▼';
 
     updateNavigatorState();
   }

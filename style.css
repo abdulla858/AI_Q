@@ -1046,7 +1046,7 @@ body {
 
 .explanation-content {
   padding: 1.25rem;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 1.2rem;
 }

@@ -375,8 +375,8 @@
     applyLanguage(state.lang);
     bindEvents();
 
-    // Launch directly into Quiz View on startup with Question Navigator visible!
-    startAllQuestionsQuiz();
+    // Default view on project startup is Home Landing Page (AI Practice & Examination Platform)
+    showView(dom.viewHome);
   }
 
   // =========================================================================

@@ -1492,45 +1492,403 @@ body {
 }
 
 /* ==========================================================================
-   Responsive Adjustments
+   Comprehensive Mobile & Tablet Responsive Design System
    ========================================================================== */
 
-@media (max-width: 768px) {
+/* Tablet & Smaller Laptops (<= 992px) */
+@media (max-width: 992px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .hero-banner {
+    padding: 2.25rem 1.5rem;
+  }
   .hero-title {
-    font-size: 1.75rem;
+    font-size: 2rem;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.85rem;
+  }
+  .modes-grid,
+  .chapters-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* Standard Mobile Devices (<= 768px) */
+@media (max-width: 768px) {
+  /* Layout & Base */
+  .main-content {
+    padding: 1.25rem 0 2rem;
   }
   
+  /* Header Navigation */
+  .app-header {
+    padding: 0.5rem 0;
+  }
+  .header-inner {
+    padding: 0.5rem 0.75rem;
+    gap: 0.5rem;
+  }
+  .brand-icon {
+    font-size: 1.5rem;
+  }
+  .brand-text h1 {
+    font-size: 1.05rem;
+  }
+  .brand-text span {
+    display: none; /* Hide subtitle to preserve clean header space */
+  }
+  .header-actions {
+    gap: 0.35rem;
+  }
+  .icon-btn {
+    padding: 0.45rem 0.65rem;
+    font-size: 0.8rem;
+    border-radius: var(--radius-sm);
+  }
+
+  /* Home Landing Banner */
+  .hero-banner {
+    padding: 1.75rem 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: var(--radius-lg);
+  }
+  .hero-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 0.85rem;
+  }
+  .hero-title {
+    font-size: 1.55rem;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+  }
   .hero-subtitle {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+  }
+
+  /* Statistics Cards: Clean 2x2 Grid on Mobile */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+    margin-bottom: 2rem;
+  }
+  .stat-card {
+    padding: 1rem 0.65rem;
+  }
+  .stat-value {
+    font-size: 1.6rem;
+  }
+  .stat-label {
+    font-size: 0.78rem;
+  }
+
+  /* Mode and Chapter Cards */
+  .modes-title {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+  }
+  .modes-grid,
+  .chapters-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+  .mode-card,
+  .chapter-card {
+    padding: 1.25rem 1rem;
+  }
+
+  /* Question Navigator (Quick Navigation Panel) */
+  .navigator-card {
+    padding: 0.85rem 1rem;
+    margin-bottom: 1.15rem;
+    border-radius: var(--radius-md);
+  }
+  .navigator-header {
+    gap: 0.5rem;
+  }
+  .navigator-title-group {
+    gap: 0.4rem;
+  }
+  .navigator-title {
+    font-size: 0.92rem;
+  }
+  .navigator-summary {
+    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
+  }
+  .nav-toggle-btn {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.78rem;
+  }
+  .navigator-legend {
+    gap: 0.65rem;
+    font-size: 0.72rem;
+    margin-bottom: 0.65rem;
+  }
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+  }
+  .navigator-grid {
+    grid-template-columns: repeat(auto-fill, minmax(34px, 1fr));
+    gap: 0.35rem;
+    max-height: 180px;
+    padding: 0.25rem 0;
+  }
+  .nav-q-btn {
+    height: 34px;
+    font-size: 0.78rem;
+    border-radius: 6px;
+  }
+
+  /* Quiz Top Bar & Counter */
+  .quiz-top-bar {
+    margin-bottom: 1rem;
+  }
+  .quiz-info-row {
+    margin-bottom: 0.6rem;
+    gap: 0.4rem;
+  }
+  .quiz-badge-group {
+    gap: 0.35rem;
+  }
+  .badge {
+    font-size: 0.72rem;
+    padding: 0.25rem 0.6rem;
+  }
+  .quiz-counter {
+    font-size: 0.88rem;
+  }
+
+  /* Question Card & Question Text */
+  .question-card {
+    padding: 1.15rem 1rem;
+    border-radius: var(--radius-md);
+    margin-bottom: 1.25rem;
+  }
+  .question-header {
+    margin-bottom: 0.85rem;
+  }
+  .question-number-tag {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.65rem;
+  }
+  .question-text {
+    font-size: 1.05rem;
+    line-height: 1.55;
+    margin-bottom: 1.25rem;
+  }
+
+  /* Multiple Choice & True/False Options */
+  .options-list {
+    gap: 0.65rem;
+    margin-bottom: 1.25rem;
+  }
+  .option-item {
+    padding: 0.75rem 0.85rem;
+    border-radius: var(--radius-md);
+    gap: 0.7rem;
+    min-height: 48px; /* Comfortable touch target */
+  }
+  .option-prefix {
+    width: 28px;
+    height: 28px;
+    font-size: 0.82rem;
+    flex-shrink: 0;
+  }
+  .option-label {
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
+  /* Quiz Action Buttons (Touch Friendly) */
+  .quiz-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+  .action-btn-group {
+    display: flex;
+    width: 100%;
+    gap: 0.65rem;
+  }
+  .action-btn-group .btn {
+    flex: 1;
+    min-height: 46px;
+    font-size: 0.9rem;
+    justify-content: center;
+  }
+  #btn-check-ans {
+    order: -1; /* Check Answer placed prominently at the top */
+    min-height: 48px;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  #btn-finish-quiz {
+    min-height: 44px;
+    font-size: 0.88rem;
+  }
+
+  /* Feedback & Explanation Box */
+  .feedback-banner {
+    padding: 0.85rem 1rem;
+    margin-bottom: 1rem;
+  }
+  .feedback-header {
     font-size: 0.95rem;
   }
-  
-  .question-card {
-    padding: 1.35rem;
+  .feedback-details {
+    font-size: 0.85rem;
   }
-  
-  .question-text {
-    font-size: 1.1rem;
+  .explanation-box {
+    margin-top: 1rem;
   }
-  
-  .option-item {
-    padding: 0.85rem 1rem;
+  .explanation-toggle-btn {
+    padding: 0.75rem 0.85rem;
+    font-size: 0.85rem;
   }
-  
-  .score-display-box {
-    padding: 1.25rem 2rem;
+  .explanation-content {
+    padding: 0.85rem;
+    gap: 0.75rem;
   }
-  
+  .exp-lang-block {
+    padding: 0.75rem;
+  }
+  .exp-lang-header {
+    font-size: 0.82rem;
+  }
+  .exp-text {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+  /* Results View */
+  .results-card {
+    padding: 1.5rem 1rem;
+  }
+  .results-badge-icon {
+    font-size: 3rem;
+  }
   .score-number {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
-  
-  .quiz-actions {
-    flex-direction: column-reverse;
+  .results-stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
   }
-  
-  .quiz-actions .btn,
-  .action-btn-group,
-  .action-btn-group .btn {
+  .res-stat-card {
+    padding: 0.65rem 0.35rem;
+  }
+  .res-stat-value {
+    font-size: 1.35rem;
+  }
+  .res-stat-label {
+    font-size: 0.72rem;
+  }
+  .results-actions {
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+  .results-actions .btn {
     width: 100%;
+    min-height: 46px;
+  }
+
+  /* Browser & Review View */
+  .browser-header,
+  .review-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .bank-filters {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .select-filter {
+    width: 100%;
+  }
+
+  /* Modal Dialog */
+  .modal-dialog {
+    width: 95%;
+    padding: 1.25rem 1rem;
+  }
+}
+
+/* Compact Mobile Devices (<= 520px) */
+@media (max-width: 520px) {
+  /* Header: Collapse button text to pure icons for maximum elegance */
+  .icon-btn .btn-text,
+  .icon-btn #lang-label,
+  .icon-btn #theme-label {
+    display: none;
+  }
+  .icon-btn {
+    padding: 0.45rem 0.55rem;
+    min-width: 38px;
+    height: 38px;
+    justify-content: center;
+  }
+  .header-actions {
+    gap: 0.25rem;
+  }
+  
+  /* Banner Title */
+  .hero-title {
+    font-size: 1.35rem;
+  }
+
+  /* Navigator Buttons */
+  .navigator-grid {
+    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    gap: 0.3rem;
+  }
+  .nav-q-btn {
+    height: 30px;
+    font-size: 0.74rem;
+  }
+
+  /* Footer */
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+}
+
+/* Very Small Mobile Devices (<= 360px) */
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 1.2rem;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.45rem;
+  }
+  .stat-card {
+    padding: 0.75rem 0.35rem;
+  }
+  .stat-value {
+    font-size: 1.3rem;
+  }
+  .stat-label {
+    font-size: 0.7rem;
+  }
+  .navigator-grid {
+    grid-template-columns: repeat(auto-fill, minmax(27px, 1fr));
+    gap: 0.25rem;
+  }
+  .nav-q-btn {
+    height: 27px;
+    font-size: 0.7rem;
+  }
+  .question-text {
+    font-size: 0.96rem;
   }
 }

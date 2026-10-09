@@ -411,6 +411,17 @@
     }
   }
 
+  const chapterTitlesAr = {
+    1: 'الباب الأول: مقدمة في الذكاء الاصطناعي',
+    2: 'الباب الثاني: الوكلاء الأذكياء',
+    3: 'الباب الثالث: حل المشكلات بالبحث'
+  };
+  const chapterTitlesEn = {
+    1: 'Chapter 1: Introduction to AI',
+    2: 'Chapter 2: Intelligent Agents',
+    3: 'Chapter 3: Problem-Solving by Search'
+  };
+
   function applyLanguage(lang) {
     state.lang = lang;
     localStorage.setItem('ai_quiz_lang_pref_v2', lang);
@@ -453,9 +464,16 @@
     updateNavigatorVisibilityUI();
     updateNavigatorState();
 
-    // Refresh active question counter / labels if quiz is running
-    if (dom.viewQuiz.classList.contains('active')) {
+    // Refresh active views and re-render current question with translated text instantly!
+    if (dom.viewQuiz && dom.viewQuiz.classList.contains('active')) {
       updateQuizTopBar();
+      if (state.currentQuiz && state.currentQuiz.questions && state.currentQuiz.questions.length > 0) {
+        loadQuestion(state.currentQuiz.currentIndex);
+      }
+    } else if (dom.viewBrowser && dom.viewBrowser.classList.contains('active')) {
+      renderBankView();
+    } else if (dom.viewReview && dom.viewReview.classList.contains('active')) {
+      renderReviewView();
     }
   }
 
@@ -823,19 +841,20 @@
   // =========================================================================
   function loadQuestion(index) {
     const quiz = state.currentQuiz;
-    if (index < 0 || index >= quiz.questions.length) return;
+    if (!quiz || !quiz.questions || index < 0 || index >= quiz.questions.length) return;
 
     quiz.currentIndex = index;
     const q = quiz.questions[index];
     const total = quiz.questions.length;
+    const isAr = state.lang === 'ar';
 
     updateQuizTopBar();
 
     // Set question meta tags
     dom.qIdTag.textContent = `Q${q.id}`;
-    dom.qTypeBadge.textContent = q.type === 'mcq' ? 'MCQ' : 'True / False';
+    dom.qTypeBadge.textContent = isAr ? (q.type === 'mcq' ? 'اختيار من متعدد' : 'صواب أو خطأ') : (q.type === 'mcq' ? 'MCQ' : 'True / False');
     dom.qTypeBadge.className = `badge ${q.type === 'mcq' ? 'badge-primary' : 'badge-chapter'}`;
-    dom.qText.textContent = q.question;
+    dom.qText.textContent = isAr && q.questionAr ? q.questionAr : q.question;
 
     // Reset Explanation box
     dom.explanationBox.classList.remove('show');
@@ -853,18 +872,19 @@
     dom.feedbackBanner.classList.remove('show', 'correct', 'wrong');
     dom.feedbackBanner.style.display = 'none';
 
-    // Render Options
+    // Render Options (Bilingual)
     dom.qOptionsContainer.innerHTML = '';
     const optionLetters = ['A', 'B', 'C', 'D'];
+    const activeOptions = isAr && q.optionsAr && q.optionsAr.length === q.options.length ? q.optionsAr : q.options;
 
-    q.options.forEach((optText, optIdx) => {
+    activeOptions.forEach((optText, optIdx) => {
       const optItem = document.createElement('div');
       optItem.className = 'option-item';
       optItem.setAttribute('data-idx', optIdx);
 
       const prefix = document.createElement('div');
       prefix.className = 'option-prefix';
-      prefix.textContent = q.type === 'mcq' ? optionLetters[optIdx] : (optIdx === 0 ? 'T' : 'F');
+      prefix.textContent = q.type === 'mcq' ? optionLetters[optIdx] : (optIdx === 0 ? (isAr ? 'ص' : 'T') : (isAr ? 'خ' : 'F'));
 
       const label = document.createElement('div');
       label.className = 'option-label';
@@ -920,8 +940,9 @@
     const q = quiz.questions[index];
     if (!q) return;
 
-    if (dom.quizModeBadge) dom.quizModeBadge.textContent = state.lang === 'ar' ? quiz.titleAr : quiz.titleEn;
-    if (dom.quizChapterBadge) dom.quizChapterBadge.textContent = q.chapter;
+    const isAr = state.lang === 'ar';
+    if (dom.quizModeBadge) dom.quizModeBadge.textContent = isAr ? quiz.titleAr : quiz.titleEn;
+    if (dom.quizChapterBadge) dom.quizChapterBadge.textContent = isAr ? (chapterTitlesAr[q.chapterId] || q.chapter) : (chapterTitlesEn[q.chapterId] || q.chapter);
 
     const qWord = i18n[state.lang].question_word;
     const ofWord = i18n[state.lang].of_word;
@@ -997,7 +1018,9 @@
   function showFeedbackBanner(isCorrect, userChoiceIdx, correctChoiceIdx) {
     const quiz = state.currentQuiz;
     const q = quiz.questions[quiz.currentIndex];
+    const isAr = state.lang === 'ar';
     const optionLetters = ['A', 'B', 'C', 'D'];
+    const activeOptions = isAr && q.optionsAr && q.optionsAr.length === q.options.length ? q.optionsAr : q.options;
 
     dom.feedbackBanner.classList.remove('correct', 'wrong');
     dom.feedbackBanner.classList.add('show', isCorrect ? 'correct' : 'wrong');
@@ -1006,16 +1029,16 @@
     if (isCorrect) {
       dom.feedbackHeader.textContent = i18n[state.lang].correct_msg;
       dom.feedbackDetails.innerHTML = `
-        <div>${i18n[state.lang].correct_answer} <strong>${q.options[correctChoiceIdx]}</strong></div>
+        <div>${i18n[state.lang].correct_answer} <strong>${activeOptions[correctChoiceIdx]}</strong></div>
       `;
     } else {
       dom.feedbackHeader.textContent = i18n[state.lang].wrong_msg;
-      const userLetter = q.type === 'mcq' ? optionLetters[userChoiceIdx] : (userChoiceIdx === 0 ? 'True' : 'False');
-      const correctLetter = q.type === 'mcq' ? optionLetters[correctChoiceIdx] : (correctChoiceIdx === 0 ? 'True' : 'False');
+      const userLetter = q.type === 'mcq' ? optionLetters[userChoiceIdx] : (userChoiceIdx === 0 ? (isAr ? 'صواب' : 'True') : (isAr ? 'خطأ' : 'False'));
+      const correctLetter = q.type === 'mcq' ? optionLetters[correctChoiceIdx] : (correctChoiceIdx === 0 ? (isAr ? 'صواب' : 'True') : (isAr ? 'خطأ' : 'False'));
 
       dom.feedbackDetails.innerHTML = `
-        <div>${i18n[state.lang].your_answer} <span style="text-decoration:line-through; color:var(--danger);">${userLetter}) ${q.options[userChoiceIdx]}</span></div>
-        <div>${i18n[state.lang].correct_answer} <span style="font-weight:700; color:var(--success);">${correctLetter}) ${q.options[correctChoiceIdx]}</span></div>
+        <div>${i18n[state.lang].your_answer} <span style="text-decoration:line-through; color:var(--danger);">${userLetter}) ${activeOptions[userChoiceIdx]}</span></div>
+        <div>${i18n[state.lang].correct_answer} <span style="font-weight:700; color:var(--success);">${correctLetter}) ${activeOptions[correctChoiceIdx]}</span></div>
       `;
     }
   }
@@ -1168,28 +1191,30 @@
     }
 
     const optionLetters = ['A', 'B', 'C', 'D'];
+    const isAr = state.lang === 'ar';
 
     itemsToRender.forEach(({ q, idx, userAns, isCorrect }) => {
       const card = document.createElement('div');
       card.className = `review-item-card ${isCorrect ? 'is-correct' : 'is-wrong'}`;
 
-      const userChoiceText = userAns.selected >= 0 ? q.options[userAns.selected] : (state.lang === 'ar' ? 'لم تتم الإجابة' : 'Unanswered');
-      const userChoiceLetter = userAns.selected >= 0 ? (q.type === 'mcq' ? optionLetters[userAns.selected] : (userAns.selected === 0 ? 'True' : 'False')) : '-';
-      const correctChoiceText = q.options[q.correctAnswer];
-      const correctChoiceLetter = q.type === 'mcq' ? optionLetters[q.correctAnswer] : (q.correctAnswer === 0 ? 'True' : 'False');
+      const activeOptions = isAr && q.optionsAr && q.optionsAr.length === q.options.length ? q.optionsAr : q.options;
+      const userChoiceText = userAns.selected >= 0 ? activeOptions[userAns.selected] : (isAr ? 'لم تتم الإجابة' : 'Unanswered');
+      const userChoiceLetter = userAns.selected >= 0 ? (q.type === 'mcq' ? optionLetters[userAns.selected] : (userAns.selected === 0 ? (isAr ? 'صواب' : 'True') : (isAr ? 'خطأ' : 'False'))) : '-';
+      const correctChoiceText = activeOptions[q.correctAnswer];
+      const correctChoiceLetter = q.type === 'mcq' ? optionLetters[q.correctAnswer] : (q.correctAnswer === 0 ? (isAr ? 'صواب' : 'True') : (isAr ? 'خطأ' : 'False'));
 
       card.innerHTML = `
         <div class="review-card-top">
           <div style="display:flex; align-items:center; gap:0.5rem;">
             <span class="question-number-tag">Q${q.id}</span>
-            <span class="badge badge-chapter">${q.chapter}</span>
+            <span class="badge badge-chapter">${isAr ? (chapterTitlesAr[q.chapterId] || q.chapter) : (chapterTitlesEn[q.chapterId] || q.chapter)}</span>
           </div>
           <span class="review-status-badge ${isCorrect ? 'correct' : 'wrong'}">
-            ${isCorrect ? (state.lang === 'ar' ? '✓ إجابة صحيحة' : '✓ Correct') : (state.lang === 'ar' ? '✗ إجابة خاطئة' : '✗ Wrong')}
+            ${isCorrect ? (isAr ? '✓ إجابة صحيحة' : '✓ Correct') : (isAr ? '✗ إجابة خاطئة' : '✗ Wrong')}
           </span>
         </div>
 
-        <div class="review-q-text">${q.question}</div>
+        <div class="review-q-text">${isAr && q.questionAr ? q.questionAr : q.question}</div>
 
         <div class="review-answers-box">
           <div><strong>${i18n[state.lang].your_answer}</strong> <span style="color:${isCorrect ? 'var(--success)' : 'var(--danger)'}; font-weight:700;">${userChoiceLetter}) ${userChoiceText}</span></div>
@@ -1255,14 +1280,16 @@
     }
 
     const optionLetters = ['A', 'B', 'C', 'D'];
+    const isAr = state.lang === 'ar';
 
     filtered.forEach((q) => {
       const card = document.createElement('div');
       card.className = 'review-item-card is-correct';
 
-      const optionsHtml = q.options.map((opt, i) => {
+      const activeOptions = isAr && q.optionsAr && q.optionsAr.length === q.options.length ? q.optionsAr : q.options;
+      const optionsHtml = activeOptions.map((opt, i) => {
         const isAnswer = i === q.correctAnswer;
-        const letter = q.type === 'mcq' ? optionLetters[i] : (i === 0 ? 'True' : 'False');
+        const letter = q.type === 'mcq' ? optionLetters[i] : (i === 0 ? (isAr ? 'صواب' : 'True') : (isAr ? 'خطأ' : 'False'));
         return `
           <div style="padding:0.4rem 0.6rem; border-radius:6px; background:${isAnswer ? 'var(--success-bg)' : 'transparent'}; color:${isAnswer ? 'var(--success-text)' : 'inherit'}; font-weight:${isAnswer ? '700' : 'normal'};">
             ${letter}) ${opt} ${isAnswer ? '✓' : ''}
@@ -1274,12 +1301,12 @@
         <div class="review-card-top">
           <div style="display:flex; align-items:center; gap:0.5rem;">
             <span class="question-number-tag">Q${q.id}</span>
-            <span class="badge badge-chapter">${q.chapter}</span>
-            <span class="badge ${q.type === 'mcq' ? 'badge-primary' : 'badge-chapter'}">${q.type === 'mcq' ? 'MCQ' : 'True/False'}</span>
+            <span class="badge badge-chapter">${isAr ? (chapterTitlesAr[q.chapterId] || q.chapter) : (chapterTitlesEn[q.chapterId] || q.chapter)}</span>
+            <span class="badge ${q.type === 'mcq' ? 'badge-primary' : 'badge-chapter'}">${isAr ? (q.type === 'mcq' ? 'اختيار من متعدد' : 'صواب أو خطأ') : (q.type === 'mcq' ? 'MCQ' : 'True/False')}</span>
           </div>
         </div>
 
-        <div class="review-q-text">${q.question}</div>
+        <div class="review-q-text">${isAr && q.questionAr ? q.questionAr : q.question}</div>
 
         <div style="background:var(--bg-tertiary); border-radius:8px; padding:0.75rem 1rem; margin-bottom:1rem; display:flex; flex-direction:column; gap:0.25rem;">
           ${optionsHtml}

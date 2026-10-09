@@ -13,7 +13,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Agent):\nيُعرَّف الوكيل (Agent) في الذكاء الاصطناعي بأنه أي كيان يدرك بيئته المحيطة عبر أجهزة الاستشعار (Sensors) ويؤثر فيها ويتصرف عبر المشغلات (Actuators).\n\n💡 مثال وتطبيق واقعي:\nسيارة تسلا ذاتية القيادة هي وكيل (Agent)؛ حساساتها هي الكاميرات والرادار لاكتشاف المشاة والسيارات، ومشغلاتها هي المقود والفرامل والمحرك للتحكم في الحركة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Controller)، (C - Model)، (D - Program)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Agent') is the correct choice:\nAn Agent is fundamentally defined in AIMA as anything that perceives its environment through sensors and acts upon that environment through actuators.\n\n💡 Real-World Example & Application:\nA Tesla self-driving car is an Agent; its sensors are cameras/radar detecting pedestrians and traffic, and its actuators are the steering, brakes, and motor.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Controller), (C - Model), (D - Program)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Agent') is the correct choice:\nAn Agent is fundamentally defined in AIMA as anything that perceives its environment through sensors and acts upon that environment through actuators.\n\n💡 Real-World Example & Application:\nA Tesla self-driving car is an Agent; its sensors are cameras/radar detecting pedestrians and traffic, and its actuators are the steering, brakes, and motor.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Controller), (C - Model), (D - Program)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في الذكاء الاصطناعي، يتم تعريف الكيان الذي يدرك بيئته من خلال أجهزة الاستشعار ويعمل على تلك البيئة من خلال المحركات بشكل أساسي على أنه أ/أن:",
+    "optionsAr": [
+      "جهاز التحكم",
+      "الوكيل",
+      "نموذج",
+      "برنامج"
+    ]
   },
   {
     "id": 2,
@@ -29,7 +36,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - Percept):\nالمُدرَك (Percept) يشير تحديداً إلى المدخلات الحسية للوكيل في لحظة زمنية معينة، بينما تمثل سلسلة المُدركات (Percept Sequence) التاريخ التراكمي الكامل لتلك المدخلات.\n\n💡 مثال وتطبيق واقعي:\nالتقاط كاميرا السيارة لصورة إشارة مرور حمراء في جزء من الثانية هو 'Percept' (مُدرَك لحظي فردي).\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Sequence)، (B - Action)، (D - State)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'Percept') is the correct choice:\nA Percept refers specifically to the agent's sensory inputs at any given instant of time, whereas the percept sequence is the complete history of all percepts.\n\n💡 Real-World Example & Application:\nA car camera capturing a red traffic light at an exact millisecond is a single 'Percept'.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Sequence), (B - Action), (D - State)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'Percept') is the correct choice:\nA Percept refers specifically to the agent's sensory inputs at any given instant of time, whereas the percept sequence is the complete history of all percepts.\n\n💡 Real-World Example & Application:\nA car camera capturing a red traffic light at an exact millisecond is a single 'Percept'.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Sequence), (B - Action), (D - State)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "أي من المصطلحات التالية يشير على وجه التحديد إلى المدخلات الحسية للعامل في أي لحظة زمنية معينة؟",
+    "optionsAr": [
+      "التسلسل",
+      "العمل",
+      "الإدراك",
+      "ولاية"
+    ]
   },
   {
     "id": 3,
@@ -45,7 +59,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Percept sequence):\nسلسلة المُدركات (Percept Sequence) تمثل السجل التاريخي التراكمي الكامل لكل ما التقطه الوكيل بحواسه منذ بدء تشغيله وحتى اللحظة الحالية.\n\n💡 مثال وتطبيق واقعي:\nالسجل الكامل لكل قراءات الحساسات وصور الكاميرات التي التقطتها السيارة منذ بدء الرحلة وحتى الآن هو سلسلة المُدركات (Percept Sequence).\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - State space)، (C - Action history)، (D - Knowledge base)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Percept sequence') is the correct choice:\nThe Percept Sequence is the complete chronological history of everything the agent has ever perceived during its entire operating lifetime.\n\n💡 Real-World Example & Application:\nThe complete video stream and sensor log recorded by an autonomous vehicle from trip start to the present is the Percept Sequence.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - State space), (C - Action history), (D - Knowledge base)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Percept sequence') is the correct choice:\nThe Percept Sequence is the complete chronological history of everything the agent has ever perceived during its entire operating lifetime.\n\n💡 Real-World Example & Application:\nThe complete video stream and sensor log recorded by an autonomous vehicle from trip start to the present is the Percept Sequence.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - State space), (C - Action history), (D - Knowledge base)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "يتم تعريف السجل التاريخي الكامل لكل ما أدركه الوكيل خلال فترة تشغيله بالكامل على النحو التالي:",
+    "optionsAr": [
+      "مساحة الدولة",
+      "تسلسل الإدراك",
+      "تاريخ العمل",
+      "قاعدة المعرفة"
+    ]
   },
   {
     "id": 4,
@@ -61,7 +82,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - Agent function):\nدالة الوكيل (Agent Function) هي توصيف رياضي مجرد يربط أي سلسلة مُدركات معطاة بالفعل الذي يجب على الوكيل اتخاذه [f: P* -> A].\n\n💡 مثال وتطبيق واقعي:\nبرنامج الشطرنج الذي ينظر في سجل نقلات المباراة ويحدد الحركة التالية الأفضل يمثل دالة الوكيل (Agent Function).\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Transition model)، (B - Sensor function)، (D - Utility function)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'Agent function') is the correct choice:\nThe Agent Function is the abstract mathematical mapping from every possible percept sequence to an action [f: P* -> A].\n\n💡 Real-World Example & Application:\nA chess program that takes the historical board moves and outputs the best next move implements an Agent Function.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Transition model), (B - Sensor function), (D - Utility function)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'Agent function') is the correct choice:\nThe Agent Function is the abstract mathematical mapping from every possible percept sequence to an action [f: P* -> A].\n\n💡 Real-World Example & Application:\nA chess program that takes the historical board moves and outputs the best next move implements an Agent Function.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Transition model), (B - Sensor function), (D - Utility function)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "رياضيًا، يُعرف التعيين المجرد الذي يحدد الإجراء المحدد للوكيل لكل تسلسل إدراكي محتمل باسم:",
+    "optionsAr": [
+      "نموذج التحول",
+      "وظيفة الاستشعار",
+      "وظيفة الوكيل",
+      "وظيفة المنفعة"
+    ]
   },
   {
     "id": 5,
@@ -77,7 +105,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - f: P* -> A):\n🎯 سبب اختيار (B - f: P* -> A):\nتم اختيار هذا الخيار تحديداً لأنه يمثل الحل العلمي المباشر والصحيح لمعايير السؤال؛ حيث دالة الوكيل (Agent Function) هي دالة رياضية مجردة تربط سلاسل المُدركات بالأفعال المناسبة (f: P* -> A). 🧠 التحليل المنطقي والمفهوم العلمي: 🚫 استبعاد الخيارات الأخرى: الخيارات البديلة المطروحة [(A - f: P -> A)، (C - f: A -> P*)، (D - f: P x A -> P)] غير صحيحة في هذا السياق؛ لأنها تشير إما إلى مفاهيم تخصصية منفصلة، أو تعبر عن مستويات تجريد أخرى لا تحقق الشرط المطلوب بالسؤال.\n\n💡 مثال واقعي: دالة الوكيل تربط التاريخ الكامل للمُدركات (P*) بالفعل التالي المناسب (A).\n\n❌ لماذا الخيارات الأخرى غير صحيحة؟\nالخيارات [(A - f: P -> A)، (C - f: A -> P*)، (D - f: P x A -> P)] لا تحقق المطلوب لأنها إما تعبر عن مفاهيم مختلفة تماماً أو لا تطابق الشروط الدقيقة المذكورة في السؤال.\n\n💡 مثال وتطبيق واقعي:\nدالة الوكيل f: P* -> A تستقبل أي تسلسل من المشاهدات السابقة (P*) وتختار فعلاً واحداً محدداً للتنفيذ (A).\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - f: P -> A)، (C - f: A -> P*)، (D - f: P x A -> P)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'f: P* -> A') is the correct choice:\n🎯 Why (B - 'f: P* -> A') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: The Agent Function is the abstract mathematical mapping from percept histories to actions: f: P* -> A. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(A - f: P -> A), (C - f: A -> P*), (D - f: P x A -> P)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n💡 Real-world Example: The agent function maps any history of percepts (P*) to the appropriate action (A).\n\n❌ Why other options are incorrect:\nThe alternative options [(A - f: P -> A), (C - f: A -> P*), (D - f: P x A -> P)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nThe agent function f: P* -> A maps any historical percept sequence (P*) to a single actionable decision (A).\n\n❌ Why other options are incorrect:\nThe alternative options [(A - f: P -> A), (C - f: A -> P*), (D - f: P x A -> P)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'f: P* -> A') is the correct choice:\n🎯 Why (B - 'f: P* -> A') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: The Agent Function is the abstract mathematical mapping from percept histories to actions: f: P* -> A. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(A - f: P -> A), (C - f: A -> P*), (D - f: P x A -> P)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n💡 Real-world Example: The agent function maps any history of percepts (P*) to the appropriate action (A).\n\n❌ Why other options are incorrect:\nThe alternative options [(A - f: P -> A), (C - f: A -> P*), (D - f: P x A -> P)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nThe agent function f: P* -> A maps any historical percept sequence (P*) to a single actionable decision (A).\n\n❌ Why other options are incorrect:\nThe alternative options [(A - f: P -> A), (C - f: A -> P*), (D - f: P x A -> P)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "إذا كانت P هي مجموعة جميع التصورات الممكنة و A هي مجموعة جميع الإجراءات الممكنة، فما هو المجال الرياضي الرسمي ومدى الدالة الوكيل f؟",
+    "optionsAr": [
+      "و: ف -> أ",
+      "و: ف* -> أ",
+      "و: أ -> ف*",
+      "و: ف × أ -> ص"
+    ]
   },
   {
     "id": 6,
@@ -93,7 +128,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - The computing hardware, sensors, and actuators):\n🎯 سبب اختيار (B - The computing hardware, sensors, and actuators):\nتم اختيار هذا الخيار تحديداً لأنه يمثل الحل العلمي المباشر والصحيح لمعايير السؤال؛ حيث بنية الوكيل (Architecture) توفر العتاد الحاسوبي وأجهزة الاستشعار والمشغلات التي يعمل عليها برنامج الوكيل (Program). 🧠 التحليل المنطقي والمفهوم العلمي: 🚫 استبعاد الخيارات الأخرى: الخيارات البديلة المطروحة [(A - The condition-action rules)، (C - The heuristic evaluation function)، (D - The objective performance measure)] غير صحيحة في هذا السياق؛ لأنها تشير إما إلى مفاهيم تخصصية منفصلة، أو تعبر عن مستويات تجريد أخرى لا تحقق الشرط المطلوب بالسؤال.\n\n💡 مثال واقعي: الهيكل الفيزيائي لطائرة الدرون (المحركات، المراوح، الكاميرات، والمعالج المركزي) يمثل الـ Architecture التي يعمل عليها كود الملاحة.\n\n❌ لماذا الخيارات الأخرى غير صحيحة؟\nالخيارات [(A - The condition-action rules)، (C - The heuristic evaluation function)، (D - The objective performance measure)] لا تحقق المطلوب لأنها إما تعبر عن مفاهيم مختلفة تماماً أو لا تطابق الشروط الدقيقة المذكورة في السؤال.\n\n💡 مثال وتطبيق واقعي:\nالهيكل الفيزيائي لطائرة الدرون (المحركات، المراوح، الكاميرات، والمعالج المركزي) يمثل بنية الوكيل (Architecture) التي يعمل عليها كود الملاحة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The condition-action rules)، (C - The heuristic evaluation function)، (D - The objective performance measure)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'The computing hardware, sensors, and actuators') is the correct choice:\n🎯 Why (B - 'The computing hardware, sensors, and actuators') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: The architecture provides the computing platform, physical sensors, and actuators that run the agent program. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(A - The condition-action rules), (C - The heuristic evaluation function), (D - The objective performance measure)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n💡 Real-world Example: A drone's physical body, rotors, cameras, and onboard processor provide the Architecture executing the flight software.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The condition-action rules), (C - The heuristic evaluation function), (D - The objective performance measure)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nA drone's physical body, rotors, cameras, and onboard processor provide the Architecture executing the flight software.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The condition-action rules), (C - The heuristic evaluation function), (D - The objective performance measure)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'The computing hardware, sensors, and actuators') is the correct choice:\n🎯 Why (B - 'The computing hardware, sensors, and actuators') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: The architecture provides the computing platform, physical sensors, and actuators that run the agent program. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(A - The condition-action rules), (C - The heuristic evaluation function), (D - The objective performance measure)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n💡 Real-world Example: A drone's physical body, rotors, cameras, and onboard processor provide the Architecture executing the flight software.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The condition-action rules), (C - The heuristic evaluation function), (D - The objective performance measure)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nA drone's physical body, rotors, cameras, and onboard processor provide the Architecture executing the flight software.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The condition-action rules), (C - The heuristic evaluation function), (D - The objective performance measure)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "يتكون الوكيل الذكي فعليًا من مكونين أساسيين وفقًا للمعادلة: الوكيل = الهندسة المعمارية + البرنامج. ماذا تقدم الهندسة المعمارية؟",
+    "optionsAr": [
+      "قواعد التصرف الشرطي",
+      "أجهزة الحوسبة وأجهزة الاستشعار والمحركات",
+      "وظيفة التقييم الإرشادي",
+      "مقياس الأداء الموضوعي"
+    ]
   },
   {
     "id": 7,
@@ -109,7 +151,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - The function is an abstract mathematical concept, while the program runs on physical hardware):\nدالة الوكيل هي توصيف رياضي مجرد، بينما برنامج الوكيل (Agent Program) هو الكود البرمجي الملموس الذي يُنفذ فعلياً على العتاد المادي (Architecture).\n\n💡 مثال وتطبيق واقعي:\nالمعادلة الرياضية المجردة هي دالة الوكيل، بينما الكود المكتوب بلغة البرمجة والمنفذ على المعالج هو برنامج الوكيل (Agent Program).\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The function takes the current percept, while the program takes the percept history)، (C - The program is always table-driven, while the function is rule-based)، (D - There is no distinction; both terms refer to the same software code)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'The function is an abstract mathematical concept, while the program runs on physical hardware') is the correct choice:\nThe agent function is an abstract mathematical concept, whereas the agent program is the concrete software implementation executing on physical hardware.\n\n💡 Real-World Example & Application:\nThe abstract mathematical formula is the agent function, while the concrete software code running on the processor is the agent program.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The function takes the current percept, while the program takes the percept history), (C - The program is always table-driven, while the function is rule-based), (D - There is no distinction; both terms refer to the same software code)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'The function is an abstract mathematical concept, while the program runs on physical hardware') is the correct choice:\nThe agent function is an abstract mathematical concept, whereas the agent program is the concrete software implementation executing on physical hardware.\n\n💡 Real-World Example & Application:\nThe abstract mathematical formula is the agent function, while the concrete software code running on the processor is the agent program.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The function takes the current percept, while the program takes the percept history), (C - The program is always table-driven, while the function is rule-based), (D - There is no distinction; both terms refer to the same software code)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هو الفرق التشغيلي الرئيسي بين وظيفة الوكيل وبرنامج الوكيل؟",
+    "optionsAr": [
+      "تأخذ الدالة الإدراك الحالي، بينما يأخذ البرنامج تاريخ الإدراك",
+      "الدالة هي مفهوم رياضي مجرد، بينما يعمل البرنامج على أجهزة مادية",
+      "يعتمد البرنامج دائمًا على الجدول، بينما تعتمد الوظيفة على القواعد",
+      "لا يوجد تمييز. يشير كلا المصطلحين إلى نفس رمز البرنامج"
+    ]
   },
   {
     "id": 8,
@@ -125,7 +174,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - The entire accumulated percept sequence):\n🎯 سبب اختيار (C - The entire accumulated percept sequence):\nتم اختيار هذا الخيار تحديداً لأنه يمثل الحل العلمي المباشر والصحيح لمعايير السؤال؛ حيث وكلاء الجداول يعانون من النمو الأسي الهائل لحجم الجدول مع تزايد عدد الخطوات والمُدركات، مما يجعلهم غير قابلين للتطبيق في العالم الحقيقي. 🧠 التحليل المنطقي والمفهوم العلمي: 🚫 استبعاد الخيارات الأخرى: الخيارات البديلة المطروحة [(A - The current percept only)، (B - The current state only)، (D - The next expected reward)] غير صحيحة في هذا السياق؛ لأنها تشير إما إلى مفاهيم تخصصية منفصلة، أو تعبر عن مستويات تجريد أخرى لا تحقق الشرط المطلوب بالسؤال.\n\n💡 مثال واقعي: مكنسة رومبا الذكية يمكنها التحرك يميناً، يساراً، أو تشغيل محرك الشفط لكنس الغبار.\n\n❌ لماذا الخيارات الأخرى غير صحيحة؟\nالخيارات [(A - The current percept only)، (B - The current state only)، (D - The next expected reward)] لا تحقق المطلوب لأنها إما تعبر عن مفاهيم مختلفة تماماً أو لا تطابق الشروط الدقيقة المذكورة في السؤال.\n\n💡 مثال وتطبيق واقعي:\nمكنسة رومبا الذكية يمكنها التحرك يميناً، يساراً، أو تشغيل محرك الشفط لكنس الغبار (Suck).\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The current percept only)، (B - The current state only)، (D - The next expected reward)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'The entire accumulated percept sequence') is the correct choice:\n🎯 Why (C - 'The entire accumulated percept sequence') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: Table-driven agents fail because the lookup table size grows exponentially with the percept space and lifetime. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(A - The current percept only), (B - The current state only), (D - The next expected reward)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n💡 Real-world Example: A Roomba vacuum can move Left, Right, or turn on its suction motor to Suck dirt.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The current percept only), (B - The current state only), (D - The next expected reward)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nA Roomba vacuum can move Left, Right, or turn on its suction motor to clean dirt.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The current percept only), (B - The current state only), (D - The next expected reward)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'The entire accumulated percept sequence') is the correct choice:\n🎯 Why (C - 'The entire accumulated percept sequence') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: Table-driven agents fail because the lookup table size grows exponentially with the percept space and lifetime. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(A - The current percept only), (B - The current state only), (D - The next expected reward)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n💡 Real-world Example: A Roomba vacuum can move Left, Right, or turn on its suction motor to Suck dirt.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The current percept only), (B - The current state only), (D - The next expected reward)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nA Roomba vacuum can move Left, Right, or turn on its suction motor to clean dirt.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The current percept only), (B - The current state only), (D - The next expected reward)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في الوكيل المبني على الجدول، ما هي المدخلات الأساسية التي يأخذها البرنامج في كل استدعاء لإجراء بحث الجدول الخاص به؟",
+    "optionsAr": [
+      "الإدراك الحالي فقط",
+      "الحالة الحالية فقط",
+      "كامل تسلسل الإدراك المتراكم",
+      "المكافأة المتوقعة القادمة"
+    ]
   },
   {
     "id": 9,
@@ -141,7 +197,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - The table size grows exponentially with the agent's lifetime and percept set size):\n🎯 سبب اختيار (B - The table size grows exponentially with the agent's lifetime and percept set size):\nتم اختيار هذا الخيار تحديداً لأنه يمثل الحل العلمي المباشر والصحيح لمعايير السؤال؛ حيث الإجابة الصحيحة هي (B): 'The table size grows exponentially with the agent's lifetime and percept set size'. وكلاء الجداول يعانون من النمو الأسي الهائل لحجم الجدول مع تزايد عدد الخطوات والمُدركات، مما يجعلهم غير قابلين للتطبيق في العالم الحقيقي. 🧠 التحليل المنطقي والمفهوم العلمي: 🚫 استبعاد الخيارات الأخرى: الخيارات البديلة المطروحة [(A - It cannot implement deterministic agent functions)، (C - Table lookup requires complex recursive algorithms)، (D - Hardware architectures cannot execute lookup tables)] غير صحيحة في هذا السياق؛ لأنها تشير إما إلى مفاهيم تخصصية منفصلة، أو تعبر عن مستويات تجريد أخرى لا تحقق الشرط المطلوب بالسؤال.\n\n💡 مثال واقعي: جدول ضخم يحتوي على رد فعل جاهز لكل احتمال، مثل دليل هاتف عملاق يحتوي على اسم كل شخص ورقمه.\n\n❌ لماذا الخيارات الأخرى غير صحيحة؟\nالخيارات [(A - It cannot implement deterministic agent functions)، (C - Table lookup requires complex recursive algorithms)، (D - Hardware architectures cannot execute lookup tables)] لا تحقق المطلوب لأنها إما تعبر عن مفاهيم مختلفة تماماً أو لا تطابق الشروط الدقيقة المذكورة في السؤال.\n\n💡 مثال وتطبيق واقعي:\nالوكيل المعتمد على جدول يشبه دليلاً هاتفياً عملاقاً يبحث عن رد الفعل المسجل مسبقاً لكل تسلسل مدخلات محتمل.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - It cannot implement deterministic agent functions)، (C - Table lookup requires complex recursive algorithms)، (D - Hardware architectures cannot execute lookup tables)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'The table size grows exponentially with the agent's lifetime and percept set size') is the correct choice:\n🎯 Why (B - 'The table size grows exponentially with the agent's lifetime and percept set size') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: The correct answer is B: 'The table size grows exponentially with the agent's lifetime and percept set size'. Table-driven agents fail because the lookup table size grows exponentially with the percept space and lifetime. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(A - It cannot implement deterministic agent functions), (C - Table lookup requires complex recursive algorithms), (D - Hardware architectures cannot execute lookup tables)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n💡 Real-world Example: A massive lookup table storing pre-stored reactions for every possible input sequence, like an exhaustive phonebook.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - It cannot implement deterministic agent functions), (C - Table lookup requires complex recursive algorithms), (D - Hardware architectures cannot execute lookup tables)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nA table-driven agent operates like an exhaustive phonebook, looking up pre-stored actions for every possible percept sequence.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - It cannot implement deterministic agent functions), (C - Table lookup requires complex recursive algorithms), (D - Hardware architectures cannot execute lookup tables)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'The table size grows exponentially with the agent's lifetime and percept set size') is the correct choice:\n🎯 Why (B - 'The table size grows exponentially with the agent's lifetime and percept set size') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: The correct answer is B: 'The table size grows exponentially with the agent's lifetime and percept set size'. Table-driven agents fail because the lookup table size grows exponentially with the percept space and lifetime. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(A - It cannot implement deterministic agent functions), (C - Table lookup requires complex recursive algorithms), (D - Hardware architectures cannot execute lookup tables)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n💡 Real-world Example: A massive lookup table storing pre-stored reactions for every possible input sequence, like an exhaustive phonebook.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - It cannot implement deterministic agent functions), (C - Table lookup requires complex recursive algorithms), (D - Hardware architectures cannot execute lookup tables)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nA table-driven agent operates like an exhaustive phonebook, looking up pre-stored actions for every possible percept sequence.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - It cannot implement deterministic agent functions), (C - Table lookup requires complex recursive algorithms), (D - Hardware architectures cannot execute lookup tables)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا يعتبر النهج القائم على الجدول لبناء عملاء أذكياء غير عملي بشكل أساسي لمهام العالم الحقيقي المعقدة؟",
+    "optionsAr": [
+      "لا يمكنه تنفيذ وظائف الوكيل الحتمية",
+      "ينمو حجم الجدول بشكل كبير مع عمر الوكيل وحجم المجموعة المدركة",
+      "يتطلب البحث عن الجدول خوارزميات متكررة معقدة",
+      "لا تستطيع بنيات الأجهزة تنفيذ جداول البحث"
+    ]
   },
   {
     "id": 10,
@@ -157,7 +220,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - 8 states):\nفي عالم المكنسة ذي الخليتين (A و B): هناك موقعان للوكيل وحالتان لكل خلية (نظيفة/متسخة) أي 2^2 = 4 حالات اتساخ، فيكون الإجمالي: 2 * 4 = 8 حالات فيزيائية.\n\n💡 مثال وتطبيق واقعي:\nفي غرفتين (A و B): الروبوت قد يكون في A أو B (احتمالان)، وكل غرفة إما نظيفة أو متسخة (2^2 = 4 احتمالات): 2 × 4 = 8 حالات ممكنة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - 4 states)، (C - 16 states)، (D - 2 states)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - '8 states') is the correct choice:\nWith 2 agent locations and 2 states (clean/dirty) per cell, there are 2 locations * 2^2 dirt configurations = 2 * 4 = 8 possible physical states.\n\n💡 Real-World Example & Application:\nFor 2 rooms: agent location (2) * dirt configurations (2^2 = 4) = 8 total physical world states.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - 4 states), (C - 16 states), (D - 2 states)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - '8 states') is the correct choice:\nWith 2 agent locations and 2 states (clean/dirty) per cell, there are 2 locations * 2^2 dirt configurations = 2 * 4 = 8 possible physical states.\n\n💡 Real-World Example & Application:\nFor 2 rooms: agent location (2) * dirt configurations (2^2 = 4) = 8 total physical world states.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - 4 states), (C - 16 states), (D - 2 states)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في عالم المكنسة الكهربائية القياسي المكون من خليتين (الموقعان A وB)، ما عدد الحالات الفيزيائية الذرية المحتملة الموجودة في البيئة؟",
+    "optionsAr": [
+      "4 ولايات",
+      "8 ولايات",
+      "16 ولاية",
+      "2 ولاية"
+    ]
   },
   {
     "id": 11,
@@ -173,7 +243,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - n * 2^n):\nلأي عالم مكنسة به n خلية: يتواجد الوكيل في أي خلية من الـ n، وللخلايا 2^n تشكيلاً محتملاً للاتساخ، مما يعطي n * 2^n حالة فيزيائية ممكنة.\n\n💡 مثال وتطبيق واقعي:\nلكل غرفة من الـ n غرف حالتان (نظيفة/متسخة) أي 2^n تشكيلاً، وموقع المكنسة له n احتمال، فيكون المجموع: n × 2^n.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - 2^n)، (C - n^2)، (D - (n!)^2)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'n * 2^n') is the correct choice:\nFor n cells, the agent can occupy any of the n cells, and there are 2^n independent dirt states, yielding n * 2^n total physical states.\n\n💡 Real-World Example & Application:\nFor n rooms, there are 2^n dirt combinations and n possible agent positions, yielding n * 2^n physical states.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - 2^n), (C - n^2), (D - (n!)^2)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'n * 2^n') is the correct choice:\nFor n cells, the agent can occupy any of the n cells, and there are 2^n independent dirt states, yielding n * 2^n total physical states.\n\n💡 Real-World Example & Application:\nFor n rooms, there are 2^n dirt combinations and n possible agent positions, yielding n * 2^n physical states.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - 2^n), (C - n^2), (D - (n!)^2)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "بالنسبة لعالم المكنسة الكهربائية الذي يتكون من عدد n من الخلايا المتميزة، حيث يمكن أن تكون كل خلية بشكل مستقل إما نظيفة أو متسخة، يتم إعطاء العدد الإجمالي للحالات المادية بواسطة:",
+    "optionsAr": [
+      "2 ^ ن",
+      "ن * 2 ^ ن",
+      "ن^2",
+      "(ن!)^2"
+    ]
   },
   {
     "id": 12,
@@ -189,7 +266,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Controller):\nفي نظرية التحكم (Control Theory)، يُطلق مصطلح 'المُتحكم' (Controller) على النظام ذي الحلقة المغلقة الذي يستشعر المخرجات ويصدر إشارات للتحكم في البيئة.\n\n💡 مثال وتطبيق واقعي:\nمنظم حرارة المكيف (Thermostat) الذي يشغل التبريد تلقائياً عند ارتفاع الحرارة هو متحكم (Controller).\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Transducer)، (C - Softbot)، (D - Sensor array)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Controller') is the correct choice:\nIn control theory, a closed-loop system that senses environment outputs and regulates behavior to maintain a desired state is called a Controller.\n\n💡 Real-World Example & Application:\nA home AC thermostat that turns on the compressor when room temperature exceeds 24°C is a classic Controller.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Transducer), (C - Softbot), (D - Sensor array)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Controller') is the correct choice:\nIn control theory, a closed-loop system that senses environment outputs and regulates behavior to maintain a desired state is called a Controller.\n\n💡 Real-World Example & Application:\nA home AC thermostat that turns on the compressor when room temperature exceeds 24°C is a classic Controller.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Transducer), (C - Softbot), (D - Sensor array)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في مجال نظرية التحكم، يُعرف نظام الحلقة المغلقة الذي ينظم متغير العملية إلى نقطة محددة دون تدخل بشري باسم:",
+    "optionsAr": [
+      "جهاز التحكم",
+      "محول",
+      "سوفت بوت",
+      "مجموعة أجهزة الاستشعار"
+    ]
   },
   {
     "id": 13,
@@ -205,7 +289,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - Softbot):\nيُطلق مصطلح Softbot (وكيل برمجي) على الوكيل الذي يعيش ويعمل كلياً داخل بيئة رقمية أو برمجية، مثل برامج التداول الآلي وزواحف الويب.\n\n💡 مثال وتطبيق واقعي:\nبوت التداول الآلي في البورصة أو زاحف بحث جوجل الذي يفهرس المواقع يعمل بالكامل داخل السوفتوير كـ Softbot.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Robot)، (B - Cyborg)، (D - Transducer)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'Softbot') is the correct choice:\nAn agent operating purely in a software environment (such as web crawlers or algorithmic trading bots) is termed a Softbot.\n\n💡 Real-World Example & Application:\nA Wall Street algorithmic trading bot or Google search crawler operating entirely inside cyberspace is a Softbot.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Robot), (B - Cyborg), (D - Transducer)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'Softbot') is the correct choice:\nAn agent operating purely in a software environment (such as web crawlers or algorithmic trading bots) is termed a Softbot.\n\n💡 Real-World Example & Application:\nA Wall Street algorithmic trading bot or Google search crawler operating entirely inside cyberspace is a Softbot.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Robot), (B - Cyborg), (D - Transducer)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "يُشار عادةً إلى الوكيل الموجود فقط في بيئة برمجية (مثل متتبع الويب الآلي أو برنامج التداول عبر الإنترنت) باسم:",
+    "optionsAr": [
+      "روبوت",
+      "سايبورغ",
+      "سوفت بوت",
+      "محول"
+    ]
   },
   {
     "id": 14,
@@ -221,7 +312,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Sum from t=1 to T of |P|^t):\nلأن الجدول يجب أن يغطي كل تسلسل مُدركات بطول t من 1 إلى T، فإن عدد المدخلات هو مجموع متسلسلة القوى: Sum from t=1 to T of |P|^t.\n\n💡 مثال وتطبيق واقعي:\nكل ثانية إضافية تضاعف حجم الجدول بشكل أُسي؛ فحفظ كل فيديو مدته دقيقة بدقة عالية يحتاج لجدول بحجم فلكي.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - |P| * T)، (C - T^|P|)، (D - |P|!)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Sum from t=1 to T of |P|^t') is the correct choice:\nA complete table must map every possible percept sequence of length 1 to T, requiring the summation of |P|^t for all t from 1 to T.\n\n💡 Real-World Example & Application:\nEvery added second exponentially multiplies rows; storing all possible 1-minute video sequences creates an astronomically huge table.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - |P| * T), (C - T^|P|), (D - |P|!)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Sum from t=1 to T of |P|^t') is the correct choice:\nA complete table must map every possible percept sequence of length 1 to T, requiring the summation of |P|^t for all t from 1 to T.\n\n💡 Real-World Example & Application:\nEvery added second exponentially multiplies rows; storing all possible 1-minute video sequences creates an astronomically huge table.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - |P| * T), (C - T^|P|), (D - |P|!)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "إذا كان الوكيل يعمل لمدى الحياة بخطوات زمنية T مع مجموعة من التصورات المحتملة |P|، فكم عدد الإدخالات الإجمالية التي سيحتويها جدول البحث الكامل؟",
+    "optionsAr": [
+      "|ف| *ت",
+      "المجموع من t=1 إلى T لـ |P|^t",
+      "ت^|ف|",
+      "|ف|!"
+    ]
   },
   {
     "id": 15,
@@ -237,7 +335,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Left, Right, Suck, NoOp):\nفي النموذج القياسي للمكنسة بعالم الخليتين في AIMA، يقتصر فضاء أفعال الوكيل على: التحرك يساراً (Left)، التحرك يميناً (Right)، الشفط (Suck)، واللافعل (NoOp).\n\n💡 مثال وتطبيق واقعي:\nحفظ جميع نقلات الشطرنج في جدول يتطلب صفوفاً تفوق عدد ذرات الكون؛ لذلك تحتاج الآلة للذكاء والبحث بدلاً من الجداول.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Forward, Backward, TurnLeft, TurnRight)، (C - Clean, Move, Sleep, Stop)، (D - Search, Scan, Pick, Drop)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Left, Right, Suck, NoOp') is the correct choice:\nThe basic 2-cell vacuum agent in AIMA Chapter 2 has four elementary actions: Left, Right, Suck, and NoOp (do nothing).\n\n💡 Real-World Example & Application:\nStoring all chess moves in a lookup table requires more rows than atoms in the universe; intelligent search is mandatory instead.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Forward, Backward, TurnLeft, TurnRight), (C - Clean, Move, Sleep, Stop), (D - Search, Scan, Pick, Drop)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Left, Right, Suck, NoOp') is the correct choice:\nThe basic 2-cell vacuum agent in AIMA Chapter 2 has four elementary actions: Left, Right, Suck, and NoOp (do nothing).\n\n💡 Real-World Example & Application:\nStoring all chess moves in a lookup table requires more rows than atoms in the universe; intelligent search is mandatory instead.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Forward, Backward, TurnLeft, TurnRight), (C - Clean, Move, Sleep, Stop), (D - Search, Scan, Pick, Drop)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في أبسط نموذج للمكنسة الكهربائية المكونة من خليتين والموصوف في الفصل الثاني من AIMA، ما هي الإجراءات الأساسية المتاحة للوكيل؟",
+    "optionsAr": [
+      "للأمام، للخلف، لليسار، لليمين",
+      "يسار، يمين، مص، NoOp",
+      "تنظيف، تحرك، نوم، توقف",
+      "بحث، مسح، اختيار، إسقاط"
+    ]
   },
   {
     "id": 16,
@@ -253,7 +358,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Consequentialism):\nالنزعة العواقبية (Consequentialism) هي المذهب الفلسفي الذي يقيس عقلانية وصحة السلوك فقط بناءً على النتائج والعواقب المترتبة على أفعال الوكيل في البيئة.\n\n💡 مثال وتطبيق واقعي:\nالوكيل العقلاني يفعل أذكى شيء بناءً على ما يراه الآن، مثل عبور الشارع عند الإشارة الخضراء، حتى لو سقط نيزك فجأة لم يكن متوقعاً.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Deontology)، (C - Rationalism)، (D - Dualism)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Consequentialism') is the correct choice:\nConsequentialism is the philosophical stance that evaluates the rationality of an agent's behavior purely on the consequences and outcomes it produces.\n\n💡 Real-World Example & Application:\nA rational agent does the best expected action given what it senses (e.g. crossing on green), but cannot foresee an impossible meteorite falling.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Deontology), (C - Rationalism), (D - Dualism)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Consequentialism') is the correct choice:\nConsequentialism is the philosophical stance that evaluates the rationality of an agent's behavior purely on the consequences and outcomes it produces.\n\n💡 Real-World Example & Application:\nA rational agent does the best expected action given what it senses (e.g. crossing on green), but cannot foresee an impossible meteorite falling.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Deontology), (C - Rationalism), (D - Dualism)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "يُطلق على النهج الفلسفي المعتمد في الذكاء الاصطناعي والذي يقيم جودة أو عقلانية سلوك العميل بشكل صارم من خلال نتائجه:",
+    "optionsAr": [
+      "أخلاق",
+      "التبعية",
+      "العقلانية",
+      "ثنائية"
+    ]
   },
   {
     "id": 17,
@@ -269,7 +381,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Performance measure):\nمقياس الأداء (Performance Measure) هو المعيار العددي الموضوعي الخارجي الذي يحدده مصمم النظام لتقييم مدى نجاح الوكيل في تحقيق الأهداف المطلوبة.\n\n💡 مثال وتطبيق واقعي:\nالوكيل كلي المعرفة (Omniscient) يعرف نتيجة رمي حجر النرد مسبقاً قبل سقوطه على الأرض في الحقيقة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Agent program)، (C - Sensor model)، (D - Percept history)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Performance measure') is the correct choice:\nA Performance Measure is an objective external criterion defined by the designer to evaluate how successfully an agent achieves its goals.\n\n💡 Real-World Example & Application:\nAn omniscient agent knows the exact real-world outcome of a dice roll before it even hits the table.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Agent program), (C - Sensor model), (D - Percept history)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Performance measure') is the correct choice:\nA Performance Measure is an objective external criterion defined by the designer to evaluate how successfully an agent achieves its goals.\n\n💡 Real-World Example & Application:\nAn omniscient agent knows the exact real-world outcome of a dice roll before it even hits the table.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Agent program), (C - Sensor model), (D - Percept history)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "المعيار العددي الموضوعي الذي يستخدمه المصمم الخارجي لتقييم نجاح سلوك الوكيل في البيئة هو:",
+    "optionsAr": [
+      "برنامج الوكيل",
+      "مقياس الأداء",
+      "نموذج الحساس",
+      "تاريخ الإدراك"
+    ]
   },
   {
     "id": 18,
@@ -285,7 +404,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - A rational agent could maximize score by repeatedly dumping dirt and cleaning it again):\nإذا قسنا الأداء بكمية الأوساخ المكنوسة، يمكن لوكيل عقلاني أن يرمي الأوساخ ثم يعيد شفطها باستمرار لتحقيق أعلى نتيجة دون تنظيف حقيقي للغرفة.\n\n💡 مثال وتطبيق واقعي:\nالنظر يميناً ويساراً قبل عبور الطريق هو جمع معلومات (Information gathering) ضروري لاتخاذ قرار عقلاني سليم.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The agent cannot count the dirt particles accurately)، (C - Dirt sensors are too noisy to provide objective feedback)، (D - Sucking dirt consumes excessive electrical power)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'A rational agent could maximize score by repeatedly dumping dirt and cleaning it again') is the correct choice:\nMeasuring dirt collected encourages perverse incentives: a rational agent could dump dirt and clean it repeatedly to score points without keeping the room clean.\n\n💡 Real-World Example & Application:\nLooking both ways before crossing the street is active information gathering, essential for rational safety.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The agent cannot count the dirt particles accurately), (C - Dirt sensors are too noisy to provide objective feedback), (D - Sucking dirt consumes excessive electrical power)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'A rational agent could maximize score by repeatedly dumping dirt and cleaning it again') is the correct choice:\nMeasuring dirt collected encourages perverse incentives: a rational agent could dump dirt and clean it repeatedly to score points without keeping the room clean.\n\n💡 Real-World Example & Application:\nLooking both ways before crossing the street is active information gathering, essential for rational safety.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The agent cannot count the dirt particles accurately), (C - Dirt sensors are too noisy to provide objective feedback), (D - Sucking dirt consumes excessive electrical power)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا يعتبر بشكل عام تصميمًا سيئًا لقياس أداء المكنسة الكهربائية من خلال كمية الأوساخ التي تقوم بكنسها أثناء نوبة العمل؟",
+    "optionsAr": [
+      "لا يستطيع العامل إحصاء ذرات الأوساخ بدقة",
+      "يمكن للعامل العقلاني تعظيم النتيجة عن طريق رمي الأوساخ بشكل متكرر وتنظيفها مرة أخرى",
+      "أجهزة استشعار الأوساخ صاخبة جدًا بحيث لا توفر ردود فعل موضوعية",
+      "يستهلك مص الأوساخ طاقة كهربائية زائدة"
+    ]
   },
   {
     "id": 19,
@@ -301,7 +427,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Design them according to the desired state of the environment):\nالقاعدة الذهبية لتصميم مقاييس الأداء هي قياس 'الحالة المرغوبة للبيئة' (مثل نظافة الغرفة) بدلاً من قياس سلوك أو أفعال الوكيل نفسه.\n\n💡 مثال وتطبيق واقعي:\nالمكنسة الذكية التي تستكشف زوايا الغرفة الجديدة لأول مرة تقوم بعملية استكشاف (Exploration) لبناء خريطة واقعية للمنزل.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Design them according to how you think the agent should behave)، (C - Maximize the number of actions executed per second)، (D - Penalize the agent whenever it visits a previously seen state)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Design them according to the desired state of the environment') is the correct choice:\nPerformance measures should be designed according to the desired state of the environment (e.g., cleanliness) rather than rewarding specific agent actions.\n\n💡 Real-World Example & Application:\nA robot vacuum mapping an unfamiliar room for the first time performs exploration to discover furniture positions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Design them according to how you think the agent should behave), (C - Maximize the number of actions executed per second), (D - Penalize the agent whenever it visits a previously seen state)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Design them according to the desired state of the environment') is the correct choice:\nPerformance measures should be designed according to the desired state of the environment (e.g., cleanliness) rather than rewarding specific agent actions.\n\n💡 Real-World Example & Application:\nA robot vacuum mapping an unfamiliar room for the first time performs exploration to discover furniture positions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Design them according to how you think the agent should behave), (C - Maximize the number of actions executed per second), (D - Penalize the agent whenever it visits a previously seen state)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هي القاعدة العامة الموصى بها لتصميم مقاييس الأداء لأنظمة الذكاء الاصطناعي؟",
+    "optionsAr": [
+      "قم بتصميمها وفقًا للطريقة التي تعتقد أنه يجب أن يتصرف بها الوكيل",
+      "تصميمها حسب الحالة البيئية المرغوبة",
+      "تعظيم عدد الإجراءات التي يتم تنفيذها في الثانية",
+      "معاقبة الوكيل كلما زار دولة سبق رؤيتها"
+    ]
   },
   {
     "id": 20,
@@ -317,7 +450,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - Four factors):\nتعتمد عقلانية الوكيل في أي لحظة على 4 عوامل: مقياس الأداء، تسلسل المُدركات السابقة، المعرفة المسبقة بالبيئة، والأفعال المتاحة للوكيل.\n\n💡 مثال وتطبيق واقعي:\nالسيارة الذكية التي تتعلم قيادة الطرق الجليدية بالخبرة تمتلك استقلالية (Autonomy) تفوق سيارة تعتمد فقط على مسار مبرمج مسبقاً.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Two factors)، (B - Three factors)، (D - Six factors)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'Four factors') is the correct choice:\nRationality depends on four factors: the performance measure, the prior percept sequence, prior domain knowledge, and the agent's available actions.\n\n💡 Real-World Example & Application:\nA vehicle learning to adjust for slippery icy roads through experience shows autonomy, unlike one rigidly following hardcoded instructions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Two factors), (B - Three factors), (D - Six factors)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'Four factors') is the correct choice:\nRationality depends on four factors: the performance measure, the prior percept sequence, prior domain knowledge, and the agent's available actions.\n\n💡 Real-World Example & Application:\nA vehicle learning to adjust for slippery icy roads through experience shows autonomy, unlike one rigidly following hardcoded instructions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Two factors), (B - Three factors), (D - Six factors)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "وفقًا لراسل ونورفيج، تعتمد عقلانية الفاعل في أي وقت على كم عدد العوامل الأساسية؟",
+    "optionsAr": [
+      "عاملين",
+      "ثلاثة عوامل",
+      "أربعة عوامل",
+      "ستة عوامل"
+    ]
   },
   {
     "id": 21,
@@ -333,7 +473,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - The agent's future percepts that have not yet occurred):\nلا يمكن للوكيل أن يعتمد على المُدركات المستقبلية لأنها لم تحدث بعد؛ العقلانية تُقاس بناءً على ما أدركه الوكيل بالفعل حتى اللحظة الحالية.\n\n💡 مثال وتطبيق واقعي:\nلا يمكن لوم السائق الذكي على حادث ناتج عن سقوط شجرة فجأة بعد ثوانٍ؛ فالعقلانية تحاسب على ما رآه حتى اللحظة فقط.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The external performance measure)، (B - The agent's prior knowledge of the environment)، (D - The agent's percept sequence to date)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'The agent's future percepts that have not yet occurred') is the correct choice:\nAn agent cannot be judged on future unperceived inputs; rationality is strictly conditioned on percepts received up to the present moment.\n\n💡 Real-World Example & Application:\nYou cannot judge an automated driver on an unpredictable tree collapse seconds later; rationality depends only on percepts received so far.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The external performance measure), (B - The agent's prior knowledge of the environment), (D - The agent's percept sequence to date)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'The agent's future percepts that have not yet occurred') is the correct choice:\nAn agent cannot be judged on future unperceived inputs; rationality is strictly conditioned on percepts received up to the present moment.\n\n💡 Real-World Example & Application:\nYou cannot judge an automated driver on an unpredictable tree collapse seconds later; rationality depends only on percepts received so far.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The external performance measure), (B - The agent's prior knowledge of the environment), (D - The agent's percept sequence to date)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "أي مما يلي ليس أحد العوامل الأربعة التي تحدد عقلانية الوكيل في أي وقت معين؟",
+    "optionsAr": [
+      "مقياس الأداء الخارجي",
+      "معرفة الوكيل المسبقة بالبيئة",
+      "تصورات الوكيل المستقبلية التي لم تحدث بعد",
+      "تسلسل إدراك الوكيل حتى الآن"
+    ]
   },
   {
     "id": 22,
@@ -349,7 +496,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Omniscient):\nالوكيل كلي العلم (Omniscient) هو وكيل افتراضي يعرف النتيجة الفعلية لكل فعل مسبقاً بشكل معصوم، وهو مفهوم نظري يختلف عن العقلانية الواقعية.\n\n💡 مثال وتطبيق واقعي:\nنقيس نجاح المكنسة بنظافة الأرضية (النتيجة المرغوبة)، وليس بعدد مرات دوران محركها حتى لا تتعمد تكرار الحركة دون تنظيف فعلي.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Rational)، (C - Autonomous)، (D - Model-based)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Omniscient') is the correct choice:\nAn omniscient agent knows the actual outcome of its actions with infallible foresight, a theoretical ideal impossible in uncertain real-world environments.\n\n💡 Real-World Example & Application:\nWe evaluate a vacuum by clean floor percentage (desired outcome), not brush rotations, preventing the robot from gaming the system.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Rational), (C - Autonomous), (D - Model-based)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Omniscient') is the correct choice:\nAn omniscient agent knows the actual outcome of its actions with infallible foresight, a theoretical ideal impossible in uncertain real-world environments.\n\n💡 Real-World Example & Application:\nWe evaluate a vacuum by clean floor percentage (desired outcome), not brush rotations, preventing the robot from gaming the system.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Rational), (C - Autonomous), (D - Model-based)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "الفاعل الذي يعرف النتيجة الفعلية لأفعاله ويستطيع أن يتصرف ببصيرة معصومة يسمى:",
+    "optionsAr": [
+      "عقلاني",
+      "كلي العلم",
+      "مستقلة",
+      "على أساس النموذج"
+    ]
   },
   {
     "id": 23,
@@ -365,7 +519,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Rationality maximizes expected performance, whereas perfection maximizes actual outcome):\nالعقلانية (Rationality) تعني تعظيم الأداء المتوقع بناءً على المعرفة المتاحة، بينما المثالية (Perfection) تتطلب تعظيم النتيجة الفعلية في الواقع.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Perfection applies only to software agents, whereas rationality applies to physical robots)، (C - Rationality requires complete knowledge of the future, whereas perfection does not)، (D - Rational agents make no errors under any circumstances)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Rationality maximizes expected performance, whereas perfection maximizes actual outcome') is the correct choice:\nRationality maximizes expected performance given incomplete information, whereas perfection requires maximizing actual outcome, which is impossible without omniscience.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Perfection applies only to software agents, whereas rationality applies to physical robots), (C - Rationality requires complete knowledge of the future, whereas perfection does not), (D - Rational agents make no errors under any circumstances)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Rationality maximizes expected performance, whereas perfection maximizes actual outcome') is the correct choice:\nRationality maximizes expected performance given incomplete information, whereas perfection requires maximizing actual outcome, which is impossible without omniscience.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Perfection applies only to software agents, whereas rationality applies to physical robots), (C - Rationality requires complete knowledge of the future, whereas perfection does not), (D - Rational agents make no errors under any circumstances)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هو الفرق المفاهيمي الحاسم بين العقلانية والكمال؟",
+    "optionsAr": [
+      "العقلانية تزيد من الأداء المتوقع، في حين أن الكمال يزيد من النتيجة الفعلية",
+      "الكمال ينطبق فقط على وكلاء البرمجيات، في حين أن العقلانية تنطبق على الروبوتات المادية",
+      "العقلانية تتطلب معرفة كاملة بالمستقبل، أما الكمال فلا",
+      "الوكلاء العقلانيون لا يرتكبون الأخطاء تحت أي ظرف من الظروف"
+    ]
   },
   {
     "id": 24,
@@ -381,7 +542,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Information gathering):\nأفعال جمع المعلومات (Information Gathering) هي أفعال هدفها الأساسي استقبال مُدركات جديدة ومفيدة لاتخاذ قرارات أفضل مستقبلاً (مثل الاستكشاف).\n\n💡 مثال وتطبيق واقعي:\nأخذ مظلة عند الخروج عندما تشير توقعات الطقس إلى احتمال هطول أمطار بنسبة 90% هو تصرف عقلاني يعظم المنفعة المتوقعة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Reflex actions)، (C - Backtracking)، (D - Pruning)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Information gathering') is the correct choice:\nInformation gathering actions are executed specifically to modify future percepts (e.g., exploring or looking around) rather than directly altering the environment state.\n\n💡 Real-World Example & Application:\nCarrying an umbrella when radar forecasts a 90% chance of rain is a rational action that maximizes expected utility.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Reflex actions), (C - Backtracking), (D - Pruning)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Information gathering') is the correct choice:\nInformation gathering actions are executed specifically to modify future percepts (e.g., exploring or looking around) rather than directly altering the environment state.\n\n💡 Real-World Example & Application:\nCarrying an umbrella when radar forecasts a 90% chance of rain is a rational action that maximizes expected utility.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Reflex actions), (C - Backtracking), (D - Pruning)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "تسمى الإجراءات التي ينفذها الوكيل بشكل أساسي لتعديل التصورات المستقبلية بدلاً من تعديل حالة البيئة مباشرة:",
+    "optionsAr": [
+      "الأفعال الانعكاسية",
+      "جمع المعلومات",
+      "التراجع",
+      "تشذيب"
+    ]
   },
   {
     "id": 25,
@@ -397,7 +565,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - It modifies future percepts to help make a decision that maximizes expected safety):\nالنظر في كلا الاتجاهين قبل عبور الطريق هو فعل عقلاني لجمع المعلومات؛ فهو يعدل المُدركات المستقبلية لتجنب الخطر وتعظيم السلامة المتوقعة.\n\n💡 مثال وتطبيق واقعي:\nسحب اليد فوراً عند لمس سطح ساخن هو فعل منعكس لا يحتاج لتفكير طويل لتفادي الخطر الفوري.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - It provides a delay that slows down the agent's processor)، (C - It immediately changes the positions of approaching vehicles)، (D - Looking is an actuator movement that scores direct utility points)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'It modifies future percepts to help make a decision that maximizes expected safety') is the correct choice:\nLooking both ways before crossing modifies future percepts with critical visual data, maximizing the agent's expected safety and preventing collisions.\n\n💡 Real-World Example & Application:\nPulling your hand back instantly upon touching a hot stove is a reflex action, bypassing deep deliberation to avoid burns.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - It provides a delay that slows down the agent's processor), (C - It immediately changes the positions of approaching vehicles), (D - Looking is an actuator movement that scores direct utility points)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'It modifies future percepts to help make a decision that maximizes expected safety') is the correct choice:\nLooking both ways before crossing modifies future percepts with critical visual data, maximizing the agent's expected safety and preventing collisions.\n\n💡 Real-World Example & Application:\nPulling your hand back instantly upon touching a hot stove is a reflex action, bypassing deep deliberation to avoid burns.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - It provides a delay that slows down the agent's processor), (C - It immediately changes the positions of approaching vehicles), (D - Looking is an actuator movement that scores direct utility points)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا يعتبر النظر في الاتجاهين قبل عبور شارع مزدحم عملاً عقلانيًا وليس عملاً ضائعًا؟",
+    "optionsAr": [
+      "يوفر تأخيرًا يؤدي إلى إبطاء معالج الوكيل",
+      "إنه يعدل التصورات المستقبلية للمساعدة في اتخاذ قرار يزيد من السلامة المتوقعة",
+      "يقوم على الفور بتغيير مواقع المركبات المقتربة",
+      "النظر هو حركة مشغلة تسجل نقاط فائدة مباشرة"
+    ]
   },
   {
     "id": 26,
@@ -413,7 +588,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Autonomy):\nيفقد الوكيل استقلاليته (Autonomy) إذا اعتمد حصراً على البرمجة والمعرفة المسبقة لمصممه وعجز عن التعلم وتكييف سلوكه بناءً على خبراته الذاتية.\n\n💡 مثال وتطبيق واقعي:\nنموذج PEAS يحدد: معيار الأداء (Performance)، البيئة (Environment)، المشغلات (Actuators)، والحساسات (Sensors).\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Mobility)، (C - Determinism)، (D - Continuity)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Autonomy') is the correct choice:\nAn agent lacks Autonomy if it relies solely on its designer's prior built-in knowledge rather than adapting and learning from its own perceptual experience.\n\n💡 Real-World Example & Application:\nPEAS stands for Performance measure, Environment, Actuators, and Sensors.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Mobility), (C - Determinism), (D - Continuity)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Autonomy') is the correct choice:\nAn agent lacks Autonomy if it relies solely on its designer's prior built-in knowledge rather than adapting and learning from its own perceptual experience.\n\n💡 Real-World Example & Application:\nPEAS stands for Performance measure, Environment, Actuators, and Sensors.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Mobility), (C - Determinism), (D - Continuity)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "إذا كان الوكيل يعتمد بشكل أساسي على المعرفة السابقة المضمنة في مصممه بدلاً من اعتماده على إدراكه وتعلمه، فيقال إن الوكيل يفتقر إلى:",
+    "optionsAr": [
+      "التنقل",
+      "الحكم الذاتي",
+      "الحتمية",
+      "الاستمرارية"
+    ]
   },
   {
     "id": 27,
@@ -429,7 +611,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - By learning from its percepts to compensate for partial or incorrect prior knowledge):\n🎯 سبب اختيار (B - By learning from its percepts to compensate for partial or incorrect prior knowledge):\nتم اختيار هذا الخيار تحديداً لأنه يمثل الحل العلمي المباشر والصحيح لمعايير السؤال؛ حيث الاستقلالية (Autonomy) تعني قدرة الوكيل على التعلم وتعديل سلوكه بناءً على تجاربه الخاصة بدلاً من الاعتماد المطلق على معرفة المصمم المسبقة. 🧠 التحليل المنطقي والمفهوم العلمي: 🚫 استبعاد الخيارات الأخرى: الخيارات البديلة المطروحة [(A - By discarding all sensors and relying solely on its internal clock)، (C - By following a fixed table of condition-action rules created at manufacture)، (D - By refusing to execute actions in unfamiliar environments)] غير صحيحة في هذا السياق؛ لأنها تشير إما إلى مفاهيم تخصصية منفصلة، أو تعبر عن مستويات تجريد أخرى لا تحقق الشرط المطلوب بالسؤال.\n\n💡 مثال واقعي: في سيارة الأجرة الذاتية: السلامة هي الأداء، الشوارع والمشاة هي البيئة، المقود والمكابح هي المشغلات، والكاميرات هي الحساسات.\n\n❌ لماذا الخيارات الأخرى غير صحيحة؟\nالخيارات [(A - By discarding all sensors and relying solely on its internal clock)، (C - By following a fixed table of condition-action rules created at manufacture)، (D - By refusing to execute actions in unfamiliar environments)] لا تحقق المطلوب لأنها إما تعبر عن مفاهيم مختلفة تماماً أو لا تطابق الشروط الدقيقة المذكورة في السؤال.\n\n💡 مثال وتطبيق واقعي:\nفي سيارة الأجرة الذاتية: السلامة هي الأداء، الشوارع والمشاة هي البيئة، المقود والمكابح هي المشغلات، والكاميرات هي الحساسات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - By discarding all sensors and relying solely on its internal clock)، (C - By following a fixed table of condition-action rules created at manufacture)، (D - By refusing to execute actions in unfamiliar environments)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'By learning from its percepts to compensate for partial or incorrect prior knowledge') is the correct choice:\n🎯 Why (B - 'By learning from its percepts to compensate for partial or incorrect prior knowledge') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: An agent possesses autonomy if its behavior is determined by its own learning and experience rather than solely by its designer's initial programming. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(A - By discarding all sensors and relying solely on its internal clock), (C - By following a fixed table of condition-action rules created at manufacture), (D - By refusing to execute actions in unfamiliar environments)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n💡 Real-world Example: For an automated taxi: Safety is Performance, city roads are Environment, steering/brakes are Actuators, and cameras are Sensors.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - By discarding all sensors and relying solely on its internal clock), (C - By following a fixed table of condition-action rules created at manufacture), (D - By refusing to execute actions in unfamiliar environments)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nFor an automated taxi: Safety is Performance, city roads are Environment, steering/brakes are Actuators, and cameras are Sensors.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - By discarding all sensors and relying solely on its internal clock), (C - By following a fixed table of condition-action rules created at manufacture), (D - By refusing to execute actions in unfamiliar environments)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'By learning from its percepts to compensate for partial or incorrect prior knowledge') is the correct choice:\n🎯 Why (B - 'By learning from its percepts to compensate for partial or incorrect prior knowledge') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: An agent possesses autonomy if its behavior is determined by its own learning and experience rather than solely by its designer's initial programming. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(A - By discarding all sensors and relying solely on its internal clock), (C - By following a fixed table of condition-action rules created at manufacture), (D - By refusing to execute actions in unfamiliar environments)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n💡 Real-world Example: For an automated taxi: Safety is Performance, city roads are Environment, steering/brakes are Actuators, and cameras are Sensors.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - By discarding all sensors and relying solely on its internal clock), (C - By following a fixed table of condition-action rules created at manufacture), (D - By refusing to execute actions in unfamiliar environments)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nFor an automated taxi: Safety is Performance, city roads are Environment, steering/brakes are Actuators, and cameras are Sensors.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - By discarding all sensors and relying solely on its internal clock), (C - By following a fixed table of condition-action rules created at manufacture), (D - By refusing to execute actions in unfamiliar environments)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "كيف يحقق الوكيل استقلالية عالية على مدار حياته؟",
+    "optionsAr": [
+      "وذلك بالتخلص من كافة المستشعرات والاعتماد فقط على ساعتها الداخلية",
+      "بالتعلم من مفاهيمه للتعويض عن المعرفة المسبقة الجزئية أو غير الصحيحة",
+      "باتباع جدول ثابت لقواعد الإجراء الشرطي التي تم إنشاؤها عند التصنيع",
+      "من خلال رفض تنفيذ الإجراءات في بيئات غير مألوفة"
+    ]
   },
   {
     "id": 28,
@@ -445,7 +634,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Innate, rigid behavioral routines that fail when assumptions are violated):\nدبور سبيكس وخنفساء الروث أمثلة بيولوجية كلاسيكية على السلوك الغريزي الصارم (Rigid routines) الذي يفتقر للاستقلالية ويفشل تماماً عند حدوث أي اضطراب غير متوقع.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Highly autonomous utility-based learning agents)، (C - Perfect agents that exhibit complete omniscience)، (D - Multi-agent competitive systems in continuous environments)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Innate, rigid behavioral routines that fail when assumptions are violated') is the correct choice:\nThe sphex wasp and dung beetle illustrate genetically pre-programmed, rigid behavioral routines that fail catastrophically when environmental conditions are altered.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Highly autonomous utility-based learning agents), (C - Perfect agents that exhibit complete omniscience), (D - Multi-agent competitive systems in continuous environments)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Innate, rigid behavioral routines that fail when assumptions are violated') is the correct choice:\nThe sphex wasp and dung beetle illustrate genetically pre-programmed, rigid behavioral routines that fail catastrophically when environmental conditions are altered.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Highly autonomous utility-based learning agents), (C - Perfect agents that exhibit complete omniscience), (D - Multi-agent competitive systems in continuous environments)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في الفصل الثاني من AIMA، تمت مناقشة دبور السفيكس وخنفساء الروث كأمثلة بيولوجية كلاسيكية لما يلي:",
+    "optionsAr": [
+      "وكلاء التعلم القائم على المرافق ذات الاستقلالية العالية",
+      "إجراءات سلوكية فطرية جامدة تفشل عند انتهاك الافتراضات",
+      "وكلاء مثاليون يظهرون المعرفة الكاملة",
+      "أنظمة تنافسية متعددة الوكلاء في بيئات مستمرة"
+    ]
   },
   {
     "id": 29,
@@ -461,7 +657,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Bounded rationality):\nالعقلانية المقيدة (Bounded Rationality) تصف الواقع الحقيقي للوكلاء حيث تكون القدرة على اتخاذ القرار الأمثل مقيدة بالموارد المحدودة من وقت وحساب وذاكرة.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Perfect rationality)، (C - Omniscience)، (D - Unobservable logic)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Bounded rationality') is the correct choice:\nBounded Rationality accounts for physical limitations: an agent must make the best decision it can within strict constraints of finite time and computational resources.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Perfect rationality), (C - Omniscience), (D - Unobservable logic)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Bounded rationality') is the correct choice:\nBounded Rationality accounts for physical limitations: an agent must make the best decision it can within strict constraints of finite time and computational resources.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Perfect rationality), (C - Omniscience), (D - Unobservable logic)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "من الناحية العملية، فإن قدرة الوكيل على حساب القرار العقلاني الأمثل مقيدة بشكل صارم بالوقت الحسابي والذاكرة المحدودة. وهذا ما يُعرف بـ:",
+    "optionsAr": [
+      "العقلانية المحدودة",
+      "العقلانية الكاملة",
+      "كلي العلم",
+      "منطق لا يمكن ملاحظته"
+    ]
   },
   {
     "id": 30,
@@ -477,7 +680,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - a = argmax_a E(U | a)):\nالقرار العقلاني رياضياً يختار الفعل a الذي يعظم المنفعة المتوقعة E(U|a)، ويُعبر عنه بـ: a = argmax_a E(U | a).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - a = argmin_a E(U | a))، (C - a = E(a | U))، (D - a = max_s P(s | a))] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'a = argmax_a E(U | a)') is the correct choice:\nA rational agent chooses the action that maximizes expected utility, formally expressed as: a = argmax_a E(U | a).\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - a = argmin_a E(U | a)), (C - a = E(a | U)), (D - a = max_s P(s | a))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'a = argmax_a E(U | a)') is the correct choice:\nA rational agent chooses the action that maximizes expected utility, formally expressed as: a = argmax_a E(U | a).\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - a = argmin_a E(U | a)), (C - a = E(a | U)), (D - a = max_s P(s | a))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما التعبير الرياضي الذي يصف اختيار الإجراء الذي يزيد من المنفعة المتوقعة E(U|a)؟",
+    "optionsAr": [
+      "أ = argmax_a E(U | أ)",
+      "أ = argmin_a E(U | أ)",
+      "أ = ه(أ | ش)",
+      "أ = max_s P(s | أ)"
+    ]
   },
   {
     "id": 31,
@@ -493,7 +703,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Performance measure, Environment, Actuators, Sensors):\nإطار PEAS يحدد بيئة مهمة الوكيل عبر 4 ركائز: مقياس الأداء (Performance)، البيئة (Environment)، المشغلات (Actuators)، وأجهزة الاستشعار (Sensors).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Perception, Environment, Actions, System)، (C - Process, Execution, Agents, State)، (D - Program, Entity, Actuation, Sequence)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Performance measure, Environment, Actuators, Sensors') is the correct choice:\nPEAS specifies an agent's task environment through: Performance measure, Environment, Actuators, and Sensors.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Perception, Environment, Actions, System), (C - Process, Execution, Agents, State), (D - Program, Entity, Actuation, Sequence)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Performance measure, Environment, Actuators, Sensors') is the correct choice:\nPEAS specifies an agent's task environment through: Performance measure, Environment, Actuators, and Sensors.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Perception, Environment, Actions, System), (C - Process, Execution, Agents, State), (D - Program, Entity, Actuation, Sequence)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في إطار مواصفات مشكلة PEAS، ما الذي ترمز إليه الأحرف الأربعة؟",
+    "optionsAr": [
+      "الإدراك، البيئة، الإجراءات، النظام",
+      "مقياس الأداء، البيئة، المحركات، الحساسات",
+      "العملية، التنفيذ، الوكلاء، الدولة",
+      "البرنامج، الكيان، التشغيل، التسلسل"
+    ]
   },
   {
     "id": 32,
@@ -509,7 +726,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Specify the task environment (PEAS) as fully as possible):\nوفقاً لـ AIMA، الخطوة الأولى الإلزامية عند تصميم أي وكيل ذكي هي توصيف بيئة المهمة بالكامل باستخدام نموذج PEAS.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Write the code for the condition-action rules)، (C - Select a neural network architecture)، (D - Assemble the physical hardware and actuators)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Specify the task environment (PEAS) as fully as possible') is the correct choice:\nThe very first step in designing an intelligent agent is always to specify the task environment (PEAS) as thoroughly and completely as possible.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Write the code for the condition-action rules), (C - Select a neural network architecture), (D - Assemble the physical hardware and actuators)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Specify the task environment (PEAS) as fully as possible') is the correct choice:\nThe very first step in designing an intelligent agent is always to specify the task environment (PEAS) as thoroughly and completely as possible.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Write the code for the condition-action rules), (C - Select a neural network architecture), (D - Assemble the physical hardware and actuators)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "عند تصميم أي وكيل ذكي، ما هي الخطوة الأولى التي يجب أن تكون دائمًا وفقًا لـ AIMA؟",
+    "optionsAr": [
+      "اكتب الكود الخاص بقواعد التصرف الشرطي",
+      "حدد بيئة المهمة (PEAS) على أكمل وجه قدر الإمكان",
+      "حدد بنية الشبكة العصبية",
+      "تجميع الأجهزة المادية والمحركات"
+    ]
   },
   {
     "id": 33,
@@ -525,7 +749,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Steering wheel):\nعجلة القيادة (Steering Wheel) هي أداة تشغيل وإخراج (Actuator) تتيح للتاكسي الذاتي تنفيذ فعل توجيه السيارة وتغيير مسارها فيزيائياً.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Video camera)، (C - Speedometer)، (D - GPS receiver)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Steering wheel') is the correct choice:\nIn an autonomous taxi, the steering wheel (along with accelerator and brakes) acts as an actuator, converting agent commands into physical mechanical motion.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Video camera), (C - Speedometer), (D - GPS receiver)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Steering wheel') is the correct choice:\nIn an autonomous taxi, the steering wheel (along with accelerator and brakes) acts as an actuator, converting agent commands into physical mechanical motion.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Video camera), (C - Speedometer), (D - GPS receiver)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في مواصفات PEAS لسائق سيارة أجرة آلي، أي مما يلي يعتبر مشغلًا؟",
+    "optionsAr": [
+      "كاميرا فيديو",
+      "عجلة القيادة",
+      "عداد السرعة",
+      "جهاز استقبال جي بي اس"
+    ]
   },
   {
     "id": 34,
@@ -541,7 +772,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - Lidar / Radar):\nأجهزة الليدار والرادار (Lidar / Radar) هي أجهزة استشعار (Sensors) تقيس المسافات والأجسام المحيطة وتزود وكيل التاكسي بالمُدركات البيئية.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Accelerator)، (B - Brake pedal)، (D - Voice synthesizer)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'Lidar / Radar') is the correct choice:\nLidar and radar serve as primary sensors for an automated vehicle, perceiving obstacle distances, vehicles, and pedestrians in the environment.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Accelerator), (B - Brake pedal), (D - Voice synthesizer)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'Lidar / Radar') is the correct choice:\nLidar and radar serve as primary sensors for an automated vehicle, perceiving obstacle distances, vehicles, and pedestrians in the environment.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Accelerator), (B - Brake pedal), (D - Voice synthesizer)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في مواصفات PEAS لسائق سيارة أجرة آلي، أي مما يلي يُصنف على أنه جهاز استشعار؟",
+    "optionsAr": [
+      "المسرع",
+      "دواسة الفرامل",
+      "ليدار / رادار",
+      "مركب صوتي"
+    ]
   },
   {
     "id": 35,
@@ -557,7 +795,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Driving smoothly to maximize comfort, safety, and passenger satisfaction):\nيشمل مقياس أداء التاكسي الذاتي: القيادة بسلاسة، السلامة ومنع الحوادث، سرعة الوصول، والالتزام بقوانين المرور لتحقيق رضا الركاب.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Turning the steering wheel 15 degrees right)، (C - Detecting lane markings with cameras)، (D - Sending coordinate packets over 5G networks)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Driving smoothly to maximize comfort, safety, and passenger satisfaction') is the correct choice:\nThe performance measure for an automated taxi balances safety, journey speed, legal compliance, passenger comfort, and trip smoothness.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Turning the steering wheel 15 degrees right), (C - Detecting lane markings with cameras), (D - Sending coordinate packets over 5G networks)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Driving smoothly to maximize comfort, safety, and passenger satisfaction') is the correct choice:\nThe performance measure for an automated taxi balances safety, journey speed, legal compliance, passenger comfort, and trip smoothness.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Turning the steering wheel 15 degrees right), (C - Detecting lane markings with cameras), (D - Sending coordinate packets over 5G networks)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "أي مما يلي يعد عنصرًا صريحًا في مقياس الأداء لسائق سيارة أجرة آلي؟",
+    "optionsAr": [
+      "القيادة بسلاسة لتحقيق أقصى قدر من الراحة والأمان ورضا الركاب",
+      "تحويل المقود 15 درجة لليمين",
+      "كشف علامات المسار بالكاميرات",
+      "إرسال حزم الإحداثيات عبر شبكات 5G"
+    ]
   },
   {
     "id": 36,
@@ -573,7 +818,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Accuracy in minimizing false positives and false negatives):\nمقياس الأداء الأساسي لمرشح البريد المزعج (Spam Filter) هو دقة التصنيف وتقليل الإيجابيات الكاذبة (حظر رسالة هامة) والسلبيات الكاذبة (تمرير سبام).\n\n💡 مثال وتطبيق واقعي:\nلعبة الشطرنج بيئة ملاحظة بالكامل؛ لأن رقعة الشطرنج ومواقع جميع القطع مكشوفة لكلا اللاعبين طوال الوقت.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Speed of downloading files)، (C - Number of emails sent per hour)، (D - Disk storage capacity of the server)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Accuracy in minimizing false positives and false negatives') is the correct choice:\nA spam filter's performance measure evaluates classification accuracy, specifically penalizing false positives (marking real emails as spam) and false negatives.\n\n💡 Real-World Example & Application:\nChess is fully observable because the entire 64-square board and all pieces are visible at all times.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Speed of downloading files), (C - Number of emails sent per hour), (D - Disk storage capacity of the server)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Accuracy in minimizing false positives and false negatives') is the correct choice:\nA spam filter's performance measure evaluates classification accuracy, specifically penalizing false positives (marking real emails as spam) and false negatives.\n\n💡 Real-World Example & Application:\nChess is fully observable because the entire 64-square board and all pieces are visible at all times.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Speed of downloading files), (C - Number of emails sent per hour), (D - Disk storage capacity of the server)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "بالنسبة لعامل تصفية البريد الإلكتروني العشوائي الآلي، ما الذي يشكل مقياس الأداء الأساسي؟",
+    "optionsAr": [
+      "سرعة تحميل الملفات",
+      "الدقة في التقليل من الإيجابيات الكاذبة والسلبيات الكاذبة",
+      "عدد رسائل البريد الإلكتروني المرسلة في الساعة",
+      "سعة تخزين القرص للخادم"
+    ]
   },
   {
     "id": 37,
@@ -589,7 +841,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - Moving an email to the Spam folder):\nنقل البريد المشبوه إلى مجلد المهملات أو السبام هو الفعل التنفيذي (Actuator) الذي يؤثر فيه مرشح البريد على بيئة العمل الخاصة به.\n\n💡 مثال وتطبيق واقعي:\nلعبة البوكر أو القيادة في الضباب بيئة ملاحظة جزئياً؛ لأن كروت المنافسين أو العوائق البعيدة تكون مخفية عنك.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Incoming email headers)، (B - Email text content)، (D - Sender IP address)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'Moving an email to the Spam folder') is the correct choice:\nMoving an incoming email message to the Junk/Spam folder is the software actuator through which the spam filter takes action in its environment.\n\n💡 Real-World Example & Application:\nPoker or driving through fog is partially observable because opponent cards or distant road obstacles are hidden.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Incoming email headers), (B - Email text content), (D - Sender IP address)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'Moving an email to the Spam folder') is the correct choice:\nMoving an incoming email message to the Junk/Spam folder is the software actuator through which the spam filter takes action in its environment.\n\n💡 Real-World Example & Application:\nPoker or driving through fog is partially observable because opponent cards or distant road obstacles are hidden.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Incoming email headers), (B - Email text content), (D - Sender IP address)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "أي مما يلي يعد مشغلًا لعامل تصفية البريد الإلكتروني العشوائي؟",
+    "optionsAr": [
+      "رؤوس البريد الإلكتروني الوارد",
+      "محتوى نص البريد الإلكتروني",
+      "نقل البريد الإلكتروني إلى مجلد البريد العشوائي",
+      "عنوان IP للمرسل"
+    ]
   },
   {
     "id": 38,
@@ -605,7 +864,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Touchscreen display of questions, test suggestions, and diagnoses):\nشاشة العرض التي تُظهر الأسئلة المقترحة والتشخيص النهائي للمريض هي أداة الإخراج والتنفيذ (Actuator) لنظام التشخيص الطبي الخبير.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Keyboard entry of patient symptoms)، (C - Patient heart rate sensor)، (D - Hospital billing database)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Touchscreen display of questions, test suggestions, and diagnoses') is the correct choice:\nIn a medical diagnosis system, the user interface display (presenting diagnostic questions, test recommendations, and therapies) serves as the actuator.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Keyboard entry of patient symptoms), (C - Patient heart rate sensor), (D - Hospital billing database)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Touchscreen display of questions, test suggestions, and diagnoses') is the correct choice:\nIn a medical diagnosis system, the user interface display (presenting diagnostic questions, test recommendations, and therapies) serves as the actuator.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Keyboard entry of patient symptoms), (C - Patient heart rate sensor), (D - Hospital billing database)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في النظام الخبير للتشخيص الطبي، أي مما يلي يمثل المحرك؟",
+    "optionsAr": [
+      "شاشة تعمل باللمس للأسئلة واقتراحات الاختبار والتشخيصات",
+      "إدخال لوحة المفاتيح لأعراض المريض",
+      "مستشعر معدل ضربات قلب المريض",
+      "قاعدة بيانات فواتير المستشفيات"
+    ]
   },
   {
     "id": 39,
@@ -621,7 +887,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Percentage of parts placed into correct sorting bins):\nمقياس الأداء لروبوت فرز القطع الصناعية هو النسبة المئوية للقطع التي تم التقاطها ووضعها في صناديق الفرز الصحيحة بنجاح وسرعة.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Electrical voltage supplied to the conveyor belt)، (C - Ambient temperature of the warehouse)، (D - Angle of the robotic arm joints)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Percentage of parts placed into correct sorting bins') is the correct choice:\nThe performance measure of a part-picking robot measures accuracy and throughput: the percentage of parts correctly categorized into appropriate bins.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Electrical voltage supplied to the conveyor belt), (C - Ambient temperature of the warehouse), (D - Angle of the robotic arm joints)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Percentage of parts placed into correct sorting bins') is the correct choice:\nThe performance measure of a part-picking robot measures accuracy and throughput: the percentage of parts correctly categorized into appropriate bins.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Electrical voltage supplied to the conveyor belt), (C - Ambient temperature of the warehouse), (D - Angle of the robotic arm joints)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هو مقياس الأداء الأساسي لروبوت التقاط الأجزاء الذي يعمل على خط تجميع التصنيع؟",
+    "optionsAr": [
+      "نسبة الأجزاء الموضوعة في صناديق الفرز الصحيحة",
+      "الجهد الكهربائي المزود للحزام الناقل",
+      "درجة الحرارة المحيطة بالمستودع",
+      "زاوية مفاصل الذراع الروبوتية"
+    ]
   },
   {
     "id": 40,
@@ -637,7 +910,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Digital cameras and tactile touch sensors):\nتعتمد روبوتات الفرز على الكاميرات الرقمية (لرؤية أشكال وألوان القطع) ومستشعرات اللمس في القبضة (للتحقق من إمساك القطعة) كأجهزة استشعار رئيسية.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Jointed arm and pneumatic gripper)، (C - Electric servomotors and gears)، (D - Conveyor belt rollers)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Digital cameras and tactile touch sensors') is the correct choice:\nA part-picking assembly robot utilizes digital vision cameras to recognize parts and tactile sensors in its gripper to detect grasp force and orientation.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Jointed arm and pneumatic gripper), (C - Electric servomotors and gears), (D - Conveyor belt rollers)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Digital cameras and tactile touch sensors') is the correct choice:\nA part-picking assembly robot utilizes digital vision cameras to recognize parts and tactile sensors in its gripper to detect grasp force and orientation.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Jointed arm and pneumatic gripper), (C - Electric servomotors and gears), (D - Conveyor belt rollers)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هي مجموعة الأجهزة التي تعمل كأجهزة استشعار لروبوت التقاط الأجزاء في المصنع؟",
+    "optionsAr": [
+      "ذراع مفصلية وقابض هوائي",
+      "الكاميرات الرقمية وحساسات اللمس",
+      "محركات مؤازرة وتروس كهربائية",
+      "بكرات الحزام الناقل"
+    ]
   },
   {
     "id": 41,
@@ -653,7 +933,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Valves, heaters, pumps, and stirrers):\nالمشغلات في مصفاة التكرير الكيميائي هي الصمامات الهيدروليكية، السخانات، المضخات، والمقلبات التي تتحكم بالتدفق ودرجات الحرارة وضغط التفاعل.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Pressure gauges and temperature sensors)، (C - Purity measurement assays)، (D - Chemical composition reports)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Valves, heaters, pumps, and stirrers') is the correct choice:\nA refinery control agent acts on the physical plant using actuators such as motorized valves, heaters, pumps, and mixers to maintain chemical equilibrium.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Pressure gauges and temperature sensors), (C - Purity measurement assays), (D - Chemical composition reports)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Valves, heaters, pumps, and stirrers') is the correct choice:\nA refinery control agent acts on the physical plant using actuators such as motorized valves, heaters, pumps, and mixers to maintain chemical equilibrium.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Pressure gauges and temperature sensors), (C - Purity measurement assays), (D - Chemical composition reports)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "بالنسبة لعامل التحكم في مصفاة تكرير المواد الكيميائية، ما هي المحركات الأساسية المستخدمة للحفاظ على التحكم في العملية؟",
+    "optionsAr": [
+      "أجهزة قياس الضغط وحساسات الحرارة",
+      "صمامات وسخانات ومضخات ونمامات",
+      "فحوصات قياس النقاء",
+      "تقارير التركيب الكيميائي"
+    ]
   },
   {
     "id": 42,
@@ -669,7 +956,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - The student's improvement and test score):\n🎯 سبب اختيار (B - The student's improvement and test score):\nتم اختيار هذا الخيار تحديداً لأنه يمثل الحل العلمي المباشر والصحيح لمعايير السؤال؛ حيث الإجابة الصحيحة هي (B): 'The student's improvement and test score'. مقياس الأداء (Performance Measure) هو معيار موضوعي خارجي يحدده المصمم لقياس مدى نجاح سلوك الوكيل في البيئة. 🧠 التحليل المنطقي والمفهوم العلمي: 🚫 استبعاد الخيارات الأخرى: الخيارات البديلة المطروحة [(A - The speed of keystroke logging)، (C - Number of network requests handled)، (D - Audio speaker frequency range)] غير صحيحة في هذا السياق؛ لأنها تشير إما إلى مفاهيم تخصصية منفصلة، أو تعبر عن مستويات تجريد أخرى لا تحقق الشرط المطلوب بالسؤال.\n\n💡 مثال واقعي: نعتبر الكيان وكيلاً آخر إذا كان يمتلك أهدافاً خاصة به ويسعى لتحسين أدائه بناءً على تصرفاتنا (مثل الخصم في الشطرنج).\n\n❌ لماذا الخيارات الأخرى غير صحيحة؟\nالخيارات [(A - The speed of keystroke logging)، (C - Number of network requests handled)، (D - Audio speaker frequency range)] لا تحقق المطلوب لأنها إما تعبر عن مفاهيم مختلفة تماماً أو لا تطابق الشروط الدقيقة المذكورة في السؤال.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The speed of keystroke logging)، (C - Number of network requests handled)، (D - Audio speaker frequency range)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'The student's improvement and test score') is the correct choice:\n🎯 Why (B - 'The student's improvement and test score') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: The correct answer is B: 'The student's improvement and test score'. A performance measure is an objective external standard used to evaluate the desirability of the states achieved by the agent. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(A - The speed of keystroke logging), (C - Number of network requests handled), (D - Audio speaker frequency range)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n💡 Real-world Example: An entity is an agent if it optimizes its own performance measure that dynamically interacts with our actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The speed of keystroke logging), (C - Number of network requests handled), (D - Audio speaker frequency range)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The speed of keystroke logging), (C - Number of network requests handled), (D - Audio speaker frequency range)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'The student's improvement and test score') is the correct choice:\n🎯 Why (B - 'The student's improvement and test score') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: The correct answer is B: 'The student's improvement and test score'. A performance measure is an objective external standard used to evaluate the desirability of the states achieved by the agent. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(A - The speed of keystroke logging), (C - Number of network requests handled), (D - Audio speaker frequency range)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n💡 Real-world Example: An entity is an agent if it optimizes its own performance measure that dynamically interacts with our actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The speed of keystroke logging), (C - Number of network requests handled), (D - Audio speaker frequency range)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The speed of keystroke logging), (C - Number of network requests handled), (D - Audio speaker frequency range)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "بالنسبة لبرنامج softbot لتعليم اللغة الإنجليزية التفاعلي الآلي، ما هو مقياس الأداء الرئيسي؟",
+    "optionsAr": [
+      "سرعة تسجيل ضغطات المفاتيح",
+      "تحسن الطالب ودرجة الاختبار",
+      "عدد طلبات الشبكة التي تمت معالجتها",
+      "نطاق تردد مكبر الصوت"
+    ]
   },
   {
     "id": 43,
@@ -685,7 +979,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - The agent's sensors give it access to the complete state of the environment at each point in time):\nتكون البيئة قابلة للملاحظة كلياً (Fully Observable) عندما تمنح أجهزة الاستشعار الوكيل وصولاً كاملاً للحالة الدقيقة للبيئة في كل لحظة زمنية.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The agent knows the entire future trajectory of states)، (C - The agent has no need for actuators)، (D - The environment never changes while the agent is deciding)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'The agent's sensors give it access to the complete state of the environment at each point in time') is the correct choice:\nAn environment is Fully Observable if an agent's sensors give it access to the complete, exact state of the environment at each point in time.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The agent knows the entire future trajectory of states), (C - The agent has no need for actuators), (D - The environment never changes while the agent is deciding)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'The agent's sensors give it access to the complete state of the environment at each point in time') is the correct choice:\nAn environment is Fully Observable if an agent's sensors give it access to the complete, exact state of the environment at each point in time.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The agent knows the entire future trajectory of states), (C - The agent has no need for actuators), (D - The environment never changes while the agent is deciding)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "توصف البيئة بأنها قابلة للملاحظة بالكامل إذا:",
+    "optionsAr": [
+      "الوكيل يعرف المسار المستقبلي الكامل للدول",
+      "أجهزة الاستشعار الخاصة بالوكيل تمنحه إمكانية الوصول إلى الحالة الكاملة للبيئة في كل نقطة زمنية",
+      "الوكيل لا يحتاج إلى مشغلات",
+      "البيئة لا تتغير أبدًا بينما يتخذ الوكيل القرار"
+    ]
   },
   {
     "id": 44,
@@ -701,7 +1002,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Players cannot see the hidden cards held by their opponents):\nلعبة البوكر بيئة قابلة للملاحظة جزئياً (Partially Observable) لأن بطاقات الخصوم مقلوبة ومخفية، فلا يمكن للاعب رؤية كامل حالة اللعبة.\n\n💡 مثال وتطبيق واقعي:\nفي لعبة الشطرنج، إذا قمت بتحريك القلعة للأمام، فموقعها مؤكد 100% دون أي مفاجآت عشوائية (حتمية).\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The dealer shuffles cards unpredictably)، (C - The betting rules change after every round)، (D - The chip count is not visible to all players)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Players cannot see the hidden cards held by their opponents') is the correct choice:\nPoker is partially observable because opponents' cards are hidden, meaning the agent lacks sensory access to the complete game state.\n\n💡 Real-World Example & Application:\nIn chess, moving a rook to e4 results in the rook landing on e4 with 100% certainty (deterministic).\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The dealer shuffles cards unpredictably), (C - The betting rules change after every round), (D - The chip count is not visible to all players)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Players cannot see the hidden cards held by their opponents') is the correct choice:\nPoker is partially observable because opponents' cards are hidden, meaning the agent lacks sensory access to the complete game state.\n\n💡 Real-World Example & Application:\nIn chess, moving a rook to e4 results in the rook landing on e4 with 100% certainty (deterministic).\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The dealer shuffles cards unpredictably), (C - The betting rules change after every round), (D - The chip count is not visible to all players)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا يتم تصنيف لعبة البوكر على أنها بيئة يمكن ملاحظتها جزئيًا؟",
+    "optionsAr": [
+      "يقوم الموزع بخلط البطاقات بشكل غير متوقع",
+      "لا يمكن للاعبين رؤية البطاقات المخفية التي يحتفظ بها خصومهم",
+      "قواعد الرهان تتغير بعد كل جولة",
+      "عدد الرقائق غير مرئي لجميع اللاعبين"
+    ]
   },
   {
     "id": 45,
@@ -717,7 +1025,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Deterministic):\nالبيئة حتمية (Deterministic) إذا كانت الحالة التالية للبيئة تتحدد كلياً وبشكل مؤكد بواسطة الحالة الحالية والفعل الذي ينفذه الوكيل فقط.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Stochastic)، (C - Dynamic)، (D - Continuous)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Deterministic') is the correct choice:\nAn environment is Deterministic if its next state is completely determined by the current state and the action executed by the agent.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Stochastic), (C - Dynamic), (D - Continuous)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Deterministic') is the correct choice:\nAn environment is Deterministic if its next state is completely determined by the current state and the action executed by the agent.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Stochastic), (C - Dynamic), (D - Continuous)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "إذا تم تحديد الحالة التالية للبيئة بالكامل من خلال الحالة الحالية والإجراء الذي تم تنفيذه بواسطة الوكيل، فإن البيئة هي:",
+    "optionsAr": [
+      "مؤشر ستوكاستيك",
+      "حتمية",
+      "ديناميكي",
+      "مستمر"
+    ]
   },
   {
     "id": 46,
@@ -733,7 +1048,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Stochastic explicitly associates probabilities with outcomes, while nondeterministic simply lists possibilities):\nالبيئة العشوائية (Stochastic) تحدد احتمالات صريحة للمخرجات، بينما البيئة غير الحتمية (Nondeterministic) تسرد المخرجات الممكنة دون ترجيحات احتمالية.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Nondeterministic environments are always fully observable, while stochastic environments are not)، (C - Stochastic environments only occur in board games)، (D - There is no mathematical distinction; they are completely interchangeable)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Stochastic explicitly associates probabilities with outcomes, while nondeterministic simply lists possibilities') is the correct choice:\nStochastic environments model uncertainty using explicit probability distributions over outcomes, whereas nondeterministic models list possible outcomes without probabilities.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Nondeterministic environments are always fully observable, while stochastic environments are not), (C - Stochastic environments only occur in board games), (D - There is no mathematical distinction; they are completely interchangeable)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Stochastic explicitly associates probabilities with outcomes, while nondeterministic simply lists possibilities') is the correct choice:\nStochastic environments model uncertainty using explicit probability distributions over outcomes, whereas nondeterministic models list possible outcomes without probabilities.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Nondeterministic environments are always fully observable, while stochastic environments are not), (C - Stochastic environments only occur in board games), (D - There is no mathematical distinction; they are completely interchangeable)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هو الفرق الفني بين البيئة العشوائية والبيئة غير الحتمية في AIMA؟",
+    "optionsAr": [
+      "يربط مؤشر ستوكاستيك الاحتمالات بالنتائج بشكل صريح، بينما يسرد مؤشر غير حتمي الاحتمالات",
+      "البيئات غير الحتمية تكون دائمًا قابلة للملاحظة بشكل كامل، في حين أن البيئات العشوائية ليست",
+      "البيئات العشوائية تحدث فقط في ألعاب الطاولة",
+      "لا يوجد تمييز رياضي. فهي قابلة للتبديل تمامًا"
+    ]
   },
   {
     "id": 47,
@@ -749,7 +1071,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Episodic):\nفي البيئة العرضية (Episodic)، تنقسم تجربة الوكيل إلى نوبات مستقلة؛ وقرار الوكيل في النوبة الحالية لا يؤثر إطلاقاً على النوبات القادمة (مثل فحص عيوب القطع).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Sequential)، (C - Dynamic)، (D - Continuous)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Episodic') is the correct choice:\nIn an Episodic environment, the agent's experience is divided into self-contained episodes where current actions have no bearing on future episodes.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Sequential), (C - Dynamic), (D - Continuous)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Episodic') is the correct choice:\nIn an Episodic environment, the agent's experience is divided into self-contained episodes where current actions have no bearing on future episodes.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Sequential), (C - Dynamic), (D - Continuous)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في أي نوع من بيئة المهام يتم تقسيم تجربة الوكيل إلى حلقات ذرية حيث ليس للقرار الحالي أي تأثير على الحلقات المستقبلية؟",
+    "optionsAr": [
+      "متسلسل",
+      "عرضي",
+      "ديناميكي",
+      "مستمر"
+    ]
   },
   {
     "id": 48,
@@ -765,7 +1094,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Current board moves have long-term consequences that directly affect all future states):\nالشطرنج بيئة تتابعية (Sequential) لأن النقلة الحالية تغير موقع القطع وتترتب عليها عواقب طويلة المدى تؤثر على كل النقلات اللاحقة والنتيجة النهائية.\n\n💡 مثال وتطبيق واقعي:\nنظام فرز البريد: كل رسالة تُفحص وتُفرز بمعزل تام عما حدث للرسالة السابقة دون أي تأثير تراكمي (حلقية - Episodic).\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The pieces move in discrete squares)، (C - Each turn is completely independent of who moved previously)، (D - Players are rewarded points for every piece captured)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Current board moves have long-term consequences that directly affect all future states') is the correct choice:\nChess is sequential because early board moves shape the piece configuration, directly impacting all future positions and the final outcome of the match.\n\n💡 Real-World Example & Application:\nMail sorting: classifying one letter's postal code is an isolated episode, having zero effect on subsequent letters.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The pieces move in discrete squares), (C - Each turn is completely independent of who moved previously), (D - Players are rewarded points for every piece captured)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Current board moves have long-term consequences that directly affect all future states') is the correct choice:\nChess is sequential because early board moves shape the piece configuration, directly impacting all future positions and the final outcome of the match.\n\n💡 Real-World Example & Application:\nMail sorting: classifying one letter's postal code is an isolated episode, having zero effect on subsequent letters.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The pieces move in discrete squares), (C - Each turn is completely independent of who moved previously), (D - Players are rewarded points for every piece captured)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا تعتبر لعبة الشطرنج بيئة متتابعة وليست عرضية؟",
+    "optionsAr": [
+      "تتحرك القطع في مربعات منفصلة",
+      "تحركات مجلس الإدارة الحالية لها عواقب طويلة المدى تؤثر بشكل مباشر على جميع الحالات المستقبلية",
+      "كل دور مستقل تمامًا عن من انتقل سابقًا",
+      "يحصل اللاعبون على نقاط مقابل كل قطعة يتم التقاطها"
+    ]
   },
   {
     "id": 49,
@@ -781,7 +1117,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - Semidynamic):\nالبيئة شبه الديناميكية (Semidynamic) هي التي لا تتغير فيها الحالة المادية للبيئة أثناء تفكير الوكيل، ولكن درجة أداء الوكيل تتناقص مع مرور الوقت.\n\n💡 مثال وتطبيق واقعي:\nلعبة الشطرنج أو قيادة السيارة تتابعية (Sequential)؛ لأن خطأك في نقلة واحدة الآن سيؤثر على وضعك طوال المباراة القادمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Static)، (B - Dynamic)، (D - Discrete)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'Semidynamic') is the correct choice:\nAn environment is Semidynamic if the environment state itself does not change while the agent is deliberating, but the agent's performance score drops with time.\n\n💡 Real-World Example & Application:\nChess or driving is sequential; making a reckless turn now permanently impacts your safety and future path choices.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Static), (B - Dynamic), (D - Discrete)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'Semidynamic') is the correct choice:\nAn environment is Semidynamic if the environment state itself does not change while the agent is deliberating, but the agent's performance score drops with time.\n\n💡 Real-World Example & Application:\nChess or driving is sequential; making a reckless turn now permanently impacts your safety and future path choices.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Static), (B - Dynamic), (D - Discrete)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "إذا لم تتغير البيئة أثناء مداولات الوكيل، لكن درجة أداء الوكيل تنخفض مع مرور الوقت، فإن البيئة هي:",
+    "optionsAr": [
+      "ثابت",
+      "ديناميكي",
+      "شبه ديناميكي",
+      "منفصلة"
+    ]
   },
   {
     "id": 50,
@@ -797,7 +1140,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Playing chess with a running game clock):\nلعب الشطرنج بساعة توقيت مثال على بيئة شبه ديناميكية؛ فرقعة الشطرنج ثابتة أثناء تفكيرك، ولكن وقتك المتبقي يقل، مما قد يعرضك للخسارة بالوقت.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Driving an automated taxi through urban traffic)، (C - Solving a standard crossword puzzle)، (D - Sorting parts on a moving conveyor belt)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Playing chess with a running game clock') is the correct choice:\nChess played with a clock is semidynamic: the board state remains static while you think, but the passage of time consumes your clock allocation.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Driving an automated taxi through urban traffic), (C - Solving a standard crossword puzzle), (D - Sorting parts on a moving conveyor belt)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Playing chess with a running game clock') is the correct choice:\nChess played with a clock is semidynamic: the board state remains static while you think, but the passage of time consumes your clock allocation.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Driving an automated taxi through urban traffic), (C - Solving a standard crossword puzzle), (D - Sorting parts on a moving conveyor belt)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "أي مما يلي يعد مثالًا كلاسيكيًا لبيئة المهام شبه الديناميكية؟",
+    "optionsAr": [
+      "قيادة سيارة أجرة آلية عبر حركة المرور في المناطق الحضرية",
+      "لعب الشطرنج بساعة اللعب الجارية",
+      "حل لغز الكلمات المتقاطعة القياسية",
+      "فرز الأجزاء على الحزام الناقل المتحرك"
+    ]
   },
   {
     "id": 51,
@@ -813,7 +1163,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Discrete):\nتكون البيئة منفصلة (Discrete) إذا كان عدد الحالات والمُدركات والأفعال والخطوات الزمنية محدوداً أو قابلاً للعد (مثل مربعات رقعة الشطرنج).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Continuous)، (C - Dynamic)، (D - Stochastic)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Discrete') is the correct choice:\nA task environment is Discrete if it has a finite or countable number of distinct states, percepts, actions, and time steps.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Continuous), (C - Dynamic), (D - Stochastic)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Discrete') is the correct choice:\nA task environment is Discrete if it has a finite or countable number of distinct states, percepts, actions, and time steps.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Continuous), (C - Dynamic), (D - Stochastic)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "يتم تصنيف البيئة التي تحتوي على عدد محدود أو لا يحصى من الحالات والإدراكات والإجراءات والخطوات الزمنية المميزة على النحو التالي:",
+    "optionsAr": [
+      "مستمر",
+      "منفصل",
+      "ديناميكي",
+      "العشوائية"
+    ]
   },
   {
     "id": 52,
@@ -829,7 +1186,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Speed, location, steering angles, and time vary continuously through real-valued ranges):\nقيادة التاكسي بيئة مستمرة (Continuous) لأن السرعة، والموقع الجغرافي، وزاوية دوران عجلة القيادة، والزمن تتغير عبر قيم حقيقية متصلة غير متقطعة.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The taxi operates 24 hours a day without stops)، (C - The rules of the road never change over time)، (D - The taxi visits every city in the country)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Speed, location, steering angles, and time vary continuously through real-valued ranges') is the correct choice:\nAutomated taxi driving is continuous because physical variables such as vehicle speed, position, steering angles, and time range over continuous real numbers.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The taxi operates 24 hours a day without stops), (C - The rules of the road never change over time), (D - The taxi visits every city in the country)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Speed, location, steering angles, and time vary continuously through real-valued ranges') is the correct choice:\nAutomated taxi driving is continuous because physical variables such as vehicle speed, position, steering angles, and time range over continuous real numbers.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The taxi operates 24 hours a day without stops), (C - The rules of the road never change over time), (D - The taxi visits every city in the country)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا تصنف قيادة سيارات الأجرة الآلية على أنها بيئة مستمرة؟",
+    "optionsAr": [
+      "التاكسي يعمل 24 ساعة يوميا بدون توقف",
+      "تختلف السرعة والموقع وزوايا التوجيه والوقت بشكل مستمر من خلال نطاقات ذات قيمة حقيقية",
+      "قواعد الطريق لا تتغير مع مرور الوقت",
+      "سيارة الأجرة تزور كل مدينة في البلاد"
+    ]
   },
   {
     "id": 53,
@@ -845,7 +1209,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - The entity's behavior is best described as maximizing a performance measure that depends on the primary agent's actions):\nيُعتبر الكيان 'وكيلاً آخر' إذا كان سلوكه يوصف بتعظيم مقياس أداء خاص به يعتمد على قرارات الوكيل الأصلي، وليس مجرد جسم يطيع قوانين الفيزياء كالموج.\n\n💡 مثال وتطبيق واقعي:\nقيادة السيارة في شوارع مزدحمة بيئة ديناميكية؛ السيارات الأخرى والمشاة يتحركون باستمرار أثناء تفكيرك.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The entity moves faster than the primary agent)، (C - The entity is made of metal and electronic circuits)، (D - The entity communicates using human natural language)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'The entity's behavior is best described as maximizing a performance measure that depends on the primary agent's actions') is the correct choice:\nAn entity is classified as an agent if its behavior is best modeled as maximizing an objective or performance measure that interacts with the primary agent's actions.\n\n💡 Real-World Example & Application:\nDriving in heavy city traffic is dynamic; pedestrian and vehicle positions change continuously while the driver decides.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The entity moves faster than the primary agent), (C - The entity is made of metal and electronic circuits), (D - The entity communicates using human natural language)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'The entity's behavior is best described as maximizing a performance measure that depends on the primary agent's actions') is the correct choice:\nAn entity is classified as an agent if its behavior is best modeled as maximizing an objective or performance measure that interacts with the primary agent's actions.\n\n💡 Real-World Example & Application:\nDriving in heavy city traffic is dynamic; pedestrian and vehicle positions change continuously while the driver decides.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The entity moves faster than the primary agent), (C - The entity is made of metal and electronic circuits), (D - The entity communicates using human natural language)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هو المعيار الرئيسي الذي يميز كيانًا ما في بيئة ما باعتباره \"عاملًا\" آخر وليس مجرد كائن يتبع القوانين الفيزيائية؟",
+    "optionsAr": [
+      "يتحرك الكيان بشكل أسرع من الوكيل الأساسي",
+      "أفضل وصف لسلوك الكيان هو تعظيم مقياس الأداء الذي يعتمد على تصرفات الوكيل الأساسي",
+      "الكيان مصنوع من المعدن والدوائر الإلكترونية",
+      "يتواصل الكيان باستخدام اللغة البشرية الطبيعية"
+    ]
   },
   {
     "id": 54,
@@ -861,7 +1232,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Maximizing one agent's performance measure minimizes the other's):\n🎯 سبب اختيار (A - Maximizing one agent's performance measure minimizes the other's):\nتم اختيار هذا الخيار تحديداً لأنه يمثل الحل العلمي المباشر والصحيح لمعايير السؤال؛ حيث الإجابة الصحيحة هي (A): 'Maximizing one agent's performance measure minimizes the other's'. مقياس الأداء (Performance Measure) هو معيار موضوعي خارجي يحدده المصمم لقياس مدى نجاح سلوك الوكيل في البيئة. 🧠 التحليل المنطقي والمفهوم العلمي: 🚫 استبعاد الخيارات الأخرى: الخيارات البديلة المطروحة [(B - Both agents work together to maximize a shared reward)، (C - The agents ignore each other's score entirely)، (D - Both agents receive equal points regardless of outcome)] غير صحيحة في هذا السياق؛ لأنها تشير إما إلى مفاهيم تخصصية منفصلة، أو تعبر عن مستويات تجريد أخرى لا تحقق الشرط المطلوب بالسؤال.\n\n💡 مثال واقعي: الشطرنج ذو الساعة الزمنية بيئة شبه ديناميكية؛ وضع القطع لا يتغير، لكن رصيدك الزمني ينقص كل ثانية أثناء تفكيرك.\n\n❌ لماذا الخيارات الأخرى غير صحيحة؟\nالخيارات [(B - Both agents work together to maximize a shared reward)، (C - The agents ignore each other's score entirely)، (D - Both agents receive equal points regardless of outcome)] لا تحقق المطلوب لأنها إما تعبر عن مفاهيم مختلفة تماماً أو لا تطابق الشروط الدقيقة المذكورة في السؤال.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Both agents work together to maximize a shared reward)، (C - The agents ignore each other's score entirely)، (D - Both agents receive equal points regardless of outcome)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Maximizing one agent's performance measure minimizes the other's') is the correct choice:\n🎯 Why (A - 'Maximizing one agent's performance measure minimizes the other's') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: The correct answer is A: 'Maximizing one agent's performance measure minimizes the other's'. A performance measure is an objective external standard used to evaluate the desirability of the states achieved by the agent. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(B - Both agents work together to maximize a shared reward), (C - The agents ignore each other's score entirely), (D - Both agents receive equal points regardless of outcome)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n💡 Real-world Example: Speed chess with an active chess clock is semidynamic; board pieces freeze, but your ticking clock penalty increases.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Both agents work together to maximize a shared reward), (C - The agents ignore each other's score entirely), (D - Both agents receive equal points regardless of outcome)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Both agents work together to maximize a shared reward), (C - The agents ignore each other's score entirely), (D - Both agents receive equal points regardless of outcome)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Maximizing one agent's performance measure minimizes the other's') is the correct choice:\n🎯 Why (A - 'Maximizing one agent's performance measure minimizes the other's') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: The correct answer is A: 'Maximizing one agent's performance measure minimizes the other's'. A performance measure is an objective external standard used to evaluate the desirability of the states achieved by the agent. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(B - Both agents work together to maximize a shared reward), (C - The agents ignore each other's score entirely), (D - Both agents receive equal points regardless of outcome)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n💡 Real-world Example: Speed chess with an active chess clock is semidynamic; board pieces freeze, but your ticking clock penalty increases.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Both agents work together to maximize a shared reward), (C - The agents ignore each other's score entirely), (D - Both agents receive equal points regardless of outcome)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Both agents work together to maximize a shared reward), (C - The agents ignore each other's score entirely), (D - Both agents receive equal points regardless of outcome)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في بيئة تنافسية متعددة الوكلاء مثل لعبة الشطرنج، كيف ترتبط مقاييس أداء الوكلاء ببعضها البعض؟",
+    "optionsAr": [
+      "يؤدي تعظيم مقياس أداء وكيل واحد إلى تقليل",
+      "الآخر يعمل كلا الوكيلين معًا لتحقيق أقصى قدر من المكافأة المشتركة",
+      "يتجاهل الوكلاء نقاط بعضهم البعض تمامًا",
+      "يحصل كلا الوكيلين على نقاط متساوية بغض النظر عن النتيجة"
+    ]
   },
   {
     "id": 55,
@@ -877,7 +1255,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - The outcomes (or outcome probabilities) for all actions are fully given to the agent):\nتكون البيئة معلومة (Known) عندما يمتلك الوكيل معرفة كاملة بقواعد وقوانين البيئة واحتمالات نتائج الأفعال المتاحة له مسبقاً.\n\n💡 مثال وتطبيق واقعي:\nرقعة الشطرنج منفصلة؛ هناك 64 مربعاً محدداً وعدد محدد من القطع والنقلات في كل دور.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The agent can see through walls using infrared sensors)، (C - The agent has already reached the goal state)، (D - The state space contains fewer than 100 states)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'The outcomes (or outcome probabilities) for all actions are fully given to the agent') is the correct choice:\nAn environment is Known if the agent has complete knowledge of the environment's rules, physics, and action transition probabilities.\n\n💡 Real-World Example & Application:\nChess is discrete; there are exactly 64 distinct squares, discrete turns, and a finite set of legal moves.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The agent can see through walls using infrared sensors), (C - The agent has already reached the goal state), (D - The state space contains fewer than 100 states)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'The outcomes (or outcome probabilities) for all actions are fully given to the agent') is the correct choice:\nAn environment is Known if the agent has complete knowledge of the environment's rules, physics, and action transition probabilities.\n\n💡 Real-World Example & Application:\nChess is discrete; there are exactly 64 distinct squares, discrete turns, and a finite set of legal moves.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The agent can see through walls using infrared sensors), (C - The agent has already reached the goal state), (D - The state space contains fewer than 100 states)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "تسمى البيئة \"معروفة\" عندما:",
+    "optionsAr": [
+      "يستطيع العميل الرؤية من خلال الجدران باستخدام أجهزة استشعار الأشعة تحت الحمراء",
+      "يتم إعطاء النتائج (أو احتمالات النتائج) لجميع الإجراءات بالكامل إلى الوكيل",
+      "لقد وصل الوكيل بالفعل إلى حالة الهدف",
+      "تحتوي مساحة الحالة على أقل من 100 ولاية"
+    ]
   },
   {
     "id": 56,
@@ -893,7 +1278,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Yes; in solitaire card games the rules are known, but face-down cards cannot be seen):\nنعم؛ لعبة السوليتير بيئة قواعدها معروفة كلياً للوكيل (Known)، ولكنها قابلة للملاحظة جزئياً لأن الأوراق المقلوبة في الكومة لا يمكن رؤيتها مسبقاً.\n\n💡 مثال وتطبيق واقعي:\nقيادة السيارة بيئة مستمرة؛ فالسرعة تتغير بكسور الكيلومتر، وزاوية عجلة القيادة والزمن يتدفقان بشكل مستمر لا نهائي التجزئة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - No, knowing the rules guarantees full observability)، (C - Yes; in crossword puzzles the grid is partially invisible)، (D - No, partial observability only occurs in unknown video games)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Yes; in solitaire card games the rules are known, but face-down cards cannot be seen') is the correct choice:\nYes; solitaire is a known environment because the rules are fully understood, but partially observable because cards in the deck face downward and are unseen.\n\n💡 Real-World Example & Application:\nDriving is continuous; vehicle velocity, steering angles, and trajectories evolve across smooth continuous real numbers.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - No, knowing the rules guarantees full observability), (C - Yes; in crossword puzzles the grid is partially invisible), (D - No, partial observability only occurs in unknown video games)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Yes; in solitaire card games the rules are known, but face-down cards cannot be seen') is the correct choice:\nYes; solitaire is a known environment because the rules are fully understood, but partially observable because cards in the deck face downward and are unseen.\n\n💡 Real-World Example & Application:\nDriving is continuous; vehicle velocity, steering angles, and trajectories evolve across smooth continuous real numbers.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - No, knowing the rules guarantees full observability), (C - Yes; in crossword puzzles the grid is partially invisible), (D - No, partial observability only occurs in unknown video games)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "هل يمكن أن تكون البيئة \"معروفة\" ولكن مع ذلك \"يمكن ملاحظتها جزئيًا\"؟ أي مثال يثبت ذلك؟",
+    "optionsAr": [
+      "لا، إن معرفة القواعد تضمن إمكانية الملاحظة الكاملة",
+      "نعم؛ القواعد معروفة في ألعاب ورق السوليتير، لكن لا يمكن رؤية البطاقات المقلوبة",
+      "نعم؛ في الكلمات المتقاطعة تكون الشبكة غير مرئية جزئيًا",
+      "لا، إمكانية الملاحظة الجزئية تحدث فقط في ألعاب الفيديو غير المعروفة"
+    ]
   },
   {
     "id": 57,
@@ -909,7 +1301,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Partially observable, multiagent, nondeterministic, sequential, dynamic, continuous, unknown):\nأصعب بيئة ذكاء اصطناعي هي: القابلة للملاحظة جزئياً، متعددة الوكلاء، غير الحتمية، التتابعية، الديناميكية، المستمرة، وغير المعروفة (Unknown).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Fully observable, deterministic, static, discrete, single-agent, known)، (C - Fully observable, stochastic, episodic, static, single-agent, known)، (D - Partially observable, deterministic, sequential, static, discrete, known)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Partially observable, multiagent, nondeterministic, sequential, dynamic, continuous, unknown') is the correct choice:\nThe hardest challenge in AI is an environment that is partially observable, multiagent, nondeterministic, sequential, dynamic, continuous, and unknown.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Fully observable, deterministic, static, discrete, single-agent, known), (C - Fully observable, stochastic, episodic, static, single-agent, known), (D - Partially observable, deterministic, sequential, static, discrete, known)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Partially observable, multiagent, nondeterministic, sequential, dynamic, continuous, unknown') is the correct choice:\nThe hardest challenge in AI is an environment that is partially observable, multiagent, nondeterministic, sequential, dynamic, continuous, and unknown.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Fully observable, deterministic, static, discrete, single-agent, known), (C - Fully observable, stochastic, episodic, static, single-agent, known), (D - Partially observable, deterministic, sequential, static, discrete, known)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هي مجموعة خصائص البيئة التي تمثل التحدي الأكثر صعوبة في تصميم عوامل الذكاء الاصطناعي؟",
+    "optionsAr": [
+      "يمكن ملاحظتها بالكامل، حتمية، ثابتة، منفصلة، ​​وكيل واحد، معروف",
+      "يمكن ملاحظته جزئيا، متعدد العوامل، غير حتمي، متسلسل، ديناميكي، مستمر، غير معروف",
+      "يمكن ملاحظته بالكامل، عشوائي، عرضي، ثابت، وكيل واحد، معروف",
+      "يمكن ملاحظتها جزئيا، حتمية، متسلسل، ثابت، منفصل، معروف"
+    ]
   },
   {
     "id": 58,
@@ -925,7 +1324,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Standard crossword puzzle):\nالكلمات المتقاطعة بيئة ثابتة (لا تتغير الشبكة تلقائياً)، منفصلة (مربعات وحروف محددة)، وحتمية (كتابة حرف تعطي نتيجة مؤكدة).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Taxi driving)، (C - Refinery controller)، (D - Medical diagnosis)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Standard crossword puzzle') is the correct choice:\nA crossword puzzle is static (the grid does not change while you ponder), discrete (finite cells and letters), and deterministic.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Taxi driving), (C - Refinery controller), (D - Medical diagnosis)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Standard crossword puzzle') is the correct choice:\nA crossword puzzle is static (the grid does not change while you ponder), discrete (finite cells and letters), and deterministic.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Taxi driving), (C - Refinery controller), (D - Medical diagnosis)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "أي من بيئات المهام التالية تم تصنيفها على أنها ثابتة ومنفصلة وحتمية؟",
+    "optionsAr": [
+      "قيادة سيارات الأجرة",
+      "لغز الكلمات المتقاطعة القياسية",
+      "مراقب المصفاة",
+      "التشخيص الطبي"
+    ]
   },
   {
     "id": 59,
@@ -941,7 +1347,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Fully observable and Stochastic):\nفي جدول AIMA 2.6، لعبة الطاولة (Backgammon) مصنفة كبيئة قابلة للملاحظة كلياً (الرقعة مكشوفة بالكامل) ولكنها عشوائية بسبب رميات النرد.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Partially observable and Deterministic)، (C - Fully observable and Deterministic)، (D - Partially observable and Continuous)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Fully observable and Stochastic') is the correct choice:\nIn AIMA Figure 2.6, backgammon is classified as Fully Observable (all pieces and dice are visible) and Stochastic (dice rolls introduce probability).\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Partially observable and Deterministic), (C - Fully observable and Deterministic), (D - Partially observable and Continuous)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Fully observable and Stochastic') is the correct choice:\nIn AIMA Figure 2.6, backgammon is classified as Fully Observable (all pieces and dice are visible) and Stochastic (dice rolls introduce probability).\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Partially observable and Deterministic), (C - Fully observable and Deterministic), (D - Partially observable and Continuous)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في الشكل 2.6 من AIMA، كيف يتم تصنيف بيئة مهمة لعبة الطاولة فيما يتعلق بقابلية الملاحظة والحتمية؟",
+    "optionsAr": [
+      "يمكن ملاحظتها جزئيا وحتمية",
+      "يمكن ملاحظتها بالكامل و العشوائية",
+      "يمكن ملاحظتها بالكامل وحتمية",
+      "يمكن ملاحظتها جزئيا ومستمرة"
+    ]
   },
   {
     "id": 60,
@@ -957,7 +1370,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Backgammon involves dice rolls, which introduce randomness into state transitions):\nالشطرنج حتمي لخلوه من الصدفة، بينما الطاولة عشوائية لأن رمي النرد يدخل عنصراً احتماليا يحدد الحركات القانونية المتاحة في كل دور.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات مثل المكنسة الذكية أو أنظمة التكييف الذكية تطبق هذا المفهوم للتكيف مع المتغيرات البيئية واتخاذ قرارات ملائمة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Chess has a smaller board size than backgammon)، (C - In backgammon, the opponent's pieces are hidden from view)، (D - Chess requires timing clocks, while backgammon does not)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Backgammon involves dice rolls, which introduce randomness into state transitions') is the correct choice:\nChess is deterministic because moves have certain outcomes, whereas backgammon is stochastic because dice rolls inject random probabilities into state transitions.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Chess has a smaller board size than backgammon), (C - In backgammon, the opponent's pieces are hidden from view), (D - Chess requires timing clocks, while backgammon does not)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Backgammon involves dice rolls, which introduce randomness into state transitions') is the correct choice:\nChess is deterministic because moves have certain outcomes, whereas backgammon is stochastic because dice rolls inject random probabilities into state transitions.\n\n💡 Real-World Example & Application:\nApplications like robotic vacuums or smart climate control apply this principle to adapt to environmental changes and select rational actions.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Chess has a smaller board size than backgammon), (C - In backgammon, the opponent's pieces are hidden from view), (D - Chess requires timing clocks, while backgammon does not)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا تم تصنيف لعبة الطاولة على أنها عشوائية، في حين تم تصنيف الشطرنج على أنها حتمية؟",
+    "optionsAr": [
+      "تتضمن لعبة الطاولة رمي النرد، مما يُدخل العشوائية في انتقالات الحالة",
+      "الشطرنج لديه حجم لوحة أصغر من لعبة الطاولة",
+      "في لعبة الطاولة، يتم إخفاء قطع الخصم عن الأنظار",
+      "تتطلب لعبة الشطرنج ساعات زمنية، بينما لا تتطلب لعبة الطاولة ذلك"
+    ]
   },
   {
     "id": 61,
@@ -971,7 +1391,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nيُعرَّف الوكيل (Agent) بدقة بأنه أي كيان يمتلك حساسات تستقبل إشارات البيئة (Sensors) ومشغلات تنفذ أفعالاً مادية أو برمجية في البيئة (Actuators).\n\n💡 مثال وتطبيق واقعي:\nالسيارة ذاتية القيادة تستقبل صور الكاميرات وأشعة الليدار وتتحكم في المقود ودواسات السرعة، مما يجعلها وكيلاً متكاملاً.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن العبارة تمثل التعريف القياسي والأساسي للوكيل في الذكاء الاصطناعي (Russel & Norvig, Ch 2).",
-    "explanationEn": "🎯 Why this statement is True:\nAn agent is formally defined in AI as anything that perceives its environment via sensors and acts on it via actuators.\n\n💡 Real-World Example & Application:\nAn autonomous vehicle senses pedestrians via cameras/LiDAR and acts via motor acceleration and steering.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because this is the foundational textbook definition of an AI agent."
+    "explanationEn": "🎯 Why this statement is True:\nAn agent is formally defined in AI as anything that perceives its environment via sensors and acts on it via actuators.\n\n💡 Real-World Example & Application:\nAn autonomous vehicle senses pedestrians via cameras/LiDAR and acts via motor acceleration and steering.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because this is the foundational textbook definition of an AI agent.",
+    "questionAr": "الوكيل هو أي شيء يمكنه إدراك بيئته من خلال أجهزة الاستشعار والتصرف في تلك البيئة من خلال المحركات.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 62,
@@ -985,7 +1410,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nلا يمكن لأي وكيل حقيقي أو نظام فيزيائي أن يبني قراره الحالي على مدركات مستقبلية لم تحدث بعد بسبب مبدأ السببية (Causality). قرارات الوكيل تعتمد فقط على المدركات السابقة والحالية.\n\n💡 مثال وتطبيق واقعي:\nنظام التداول الآلي في البورصة يقرر الشراء بناءً على أسعار اللحظة وبيانات الماضي، ولا يمكنه قراءة أسعار الغد مسبقاً قبل حدوثها.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح ومستحيل فيزيائياً وبرمجياً؛ لأن معرفة المستقبل تخرق قوانين السببية.",
-    "explanationEn": "🎯 Why this statement is False:\nAn agent's actions can only depend on past and present percept sequences; relying on future unperceived events violates physical causality.\n\n💡 Real-World Example & Application:\nAn algorithmic stock trading bot executes orders based on historical and real-time tick data, never on unarrived tomorrow's prices.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because causality restricts decision making to past and current percept sequences."
+    "explanationEn": "🎯 Why this statement is False:\nAn agent's actions can only depend on past and present percept sequences; relying on future unperceived events violates physical causality.\n\n💡 Real-World Example & Application:\nAn algorithmic stock trading bot executes orders based on historical and real-time tick data, never on unarrived tomorrow's prices.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because causality restricts decision making to past and current percept sequences.",
+    "questionAr": "يمكن أن يعتمد اختيار الوكيل للتصرف في أي لحظة بشكل مشروع على التصورات المستقبلية التي لم تحدث بعد.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 63,
@@ -999,7 +1429,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nنظرياً، يمكن لجدول يحتوي على كافة تسلسلات المدركات الممكنة (Look-up Table) أن يربط كل تسلسل بالفعل المناسب، لكنه مستحيل عملياً بسبب الانفجار الأسي لحجم الجدول.\n\n💡 مثال وتطبيق واقعي:\nفي لعبة الشطرنج، تمثيل جميع الحركات الممكنة في جدول يتطلب خانات تخزين تفوق عدد ذرات الكون المنظور، مع أنه نظرياً ممكن برمجياً.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن العبارة فرقت بدقة بين الإمكانية النظرية التامة والاستحالة العملية التطبيقية.",
-    "explanationEn": "🎯 Why this statement is True:\nTheoretically, a look-up table can represent any agent function by mapping every percept sequence to an action, though exponential memory makes it practically impossible.\n\n💡 Real-World Example & Application:\nA chess table mapping every move sequence would exceed 10^120 entries, theoretically complete but practically uncomputable.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because the distinction between theoretical computability and practical feasibility is accurate."
+    "explanationEn": "🎯 Why this statement is True:\nTheoretically, a look-up table can represent any agent function by mapping every percept sequence to an action, though exponential memory makes it practically impossible.\n\n💡 Real-World Example & Application:\nA chess table mapping every move sequence would exceed 10^120 entries, theoretically complete but practically uncomputable.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because the distinction between theoretical computability and practical feasibility is accurate.",
+    "questionAr": "الوكيل المبني على الجدول قادر نظريًا على تنفيذ أي وظيفة وكيل صالحة، على الرغم من كونه غير ممكن عمليًا للمهام المعقدة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 64,
@@ -1013,7 +1448,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nالوكيل كلي المعرفة (Omniscient) يعرف النتيجة الفعلية لكل فعل مسبقاً، بينما الوكيل العقلاني (Rational) يعظم النتيجة المتوقعة استناداً إلى معرفته ومدركاته المتاحة فقط.\n\n💡 مثال وتطبيق واقعي:\nلاعب النرد العقلاني يراهن على الوجه الأكثر احتمالاً، لكنه لا يعلم الغيب كلياً كالوكيل كلي المعرفة.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأن العقلانية لا تعني معرفة الغيب أو المعرفة المطلقة بالنتائج المستقبلية.",
-    "explanationEn": "🎯 Why this statement is False:\nOmniscience means knowing the actual outcome of actions, whereas rationality is about maximizing expected utility given available percepts.\n\n💡 Real-World Example & Application:\nA medical diagnosis agent prescribes the best expected treatment based on symptoms; it cannot magically foresee rare unforeseen genetic anomalies.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because rationality and omniscience are fundamentally distinct concepts in AI."
+    "explanationEn": "🎯 Why this statement is False:\nOmniscience means knowing the actual outcome of actions, whereas rationality is about maximizing expected utility given available percepts.\n\n💡 Real-World Example & Application:\nA medical diagnosis agent prescribes the best expected treatment based on symptoms; it cannot magically foresee rare unforeseen genetic anomalies.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because rationality and omniscience are fundamentally distinct concepts in AI.",
+    "questionAr": "العامل كلي العلم مطابق في التعريف للعامل العقلاني، حيث يتطلب كلا المصطلحين تعظيم المنفعة المتوقعة بناءً على التصورات الحالية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 65,
@@ -1027,7 +1467,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nالعقلانية تتعلق باتخاذ القرار الأمثل بناءً على المعطيات المتاحة وليست ضماناً للكمال أو التوفيق المطلق؛ فالأحداث الخارجية غير المتوقعة قد تؤدي لنتائج مؤسفة رغم صحة القرار منطقياً.\n\n💡 مثال وتطبيق واقعي:\nإذا عبرت الشارع عند الإشارة الخضراء فقرارك عقلاني، لكن سيارة طائشة تكسر الإشارة قد تصدمك دون خطأ في عقلانية قرارك.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأن الكمال يتطلب كشف كل المجهول مسبقاً، وهو ما لا تشترطه العقلانية.",
-    "explanationEn": "🎯 Why this statement is False:\nRationality maximizes expected success based on current evidence; it does not guarantee perfection against unpredictable external events.\n\n💡 Real-World Example & Application:\nCrossing a street on a green walk signal is rational, even if an unforeseeable runaway vehicle causes an accident.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because rationality is evaluated on the decision process, not post-hoc infallibility."
+    "explanationEn": "🎯 Why this statement is False:\nRationality maximizes expected success based on current evidence; it does not guarantee perfection against unpredictable external events.\n\n💡 Real-World Example & Application:\nCrossing a street on a green walk signal is rational, even if an unforeseeable runaway vehicle causes an accident.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because rationality is evaluated on the decision process, not post-hoc infallibility.",
+    "questionAr": "العقلانية تضمن الكمال؛ ولذلك، فإن العامل العقلاني لن يعاني أبدًا من نتيجة مؤسفة بسبب أحداث خارجية غير ملحوظة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 66,
@@ -1041,7 +1486,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nمعيار الأداء (Performance Measure) يجب أن يقيس النتيجة المرغوبة في البيئة (الغاية) وليس سلوك الوكيل (الوسيلة)، وإلا كرر الوكيل سلوكيات فارغة لتحصيل النقاط.\n\n💡 مثال وتطبيق واقعي:\nمكنسة الروبوت يجب أن تقاس بنظافة الأرضيات، وليس بعدد مرات شفطها؛ وإلا لأفرغت الأوساخ وكنستها مراراً لرفع نقاطها.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن معايير الأداء الموضوعة على سلوكيات الوكيل تؤدي لتحايل الوكيل واستغلال الثغرات البرمجية.",
-    "explanationEn": "🎯 Why this statement is True:\nPerformance measures must evaluate the desired state of the environment, not agent behavior, preventing reward gaming.\n\n💡 Real-World Example & Application:\nA vacuum cleaner should be scored on how clean the floor stays, not on how many kilograms of dust it cleans up (which encourages dumping and re-cleaning).\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because scoring behavior instead of environmental outcome causes perverse incentive loops."
+    "explanationEn": "🎯 Why this statement is True:\nPerformance measures must evaluate the desired state of the environment, not agent behavior, preventing reward gaming.\n\n💡 Real-World Example & Application:\nA vacuum cleaner should be scored on how clean the floor stays, not on how many kilograms of dust it cleans up (which encourages dumping and re-cleaning).\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because scoring behavior instead of environmental outcome causes perverse incentive loops.",
+    "questionAr": "كقاعدة عامة، يجب تصميم مقياس الأداء وفقًا لما يريد الفرد تحقيقه فعليًا في البيئة، وليس وفقًا للطريقة التي يجب أن يتصرف بها الوكيل.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 67,
@@ -1055,7 +1505,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nالاستقلالية (Autonomy) تتطلب أن يتعلم الوكيل من تجاربه ومدركاته ليعوض نقص المعرفة الأولية، أما الاعتماد الكامل على المعرفة المسبقة فيعني انعدام الاستقلالية.\n\n💡 مثال وتطبيق واقعي:\nروبوت التنظيف المستقل يتعلم خريطة الغرفة وتغير أماكن الأثاث عبر التجربة، بينما الروبوت المبرمج بمسار ثابت يفشل عند أول عائق.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأن غياب التعلم من البيئة يمنع الوكيل من أن يكون مستقلاً في البيئات المتغيرة.",
-    "explanationEn": "🎯 Why this statement is False:\nAutonomy requires an agent to compensate for partial prior knowledge by learning from its experience and percept history.\n\n💡 Real-World Example & Application:\nA robotic vacuum mapping a new home gains autonomy by learning furniture layouts rather than requiring pre-programmed coordinates.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because complete reliance on hardcoded prior knowledge defines lack of autonomy."
+    "explanationEn": "🎯 Why this statement is False:\nAutonomy requires an agent to compensate for partial prior knowledge by learning from its experience and percept history.\n\n💡 Real-World Example & Application:\nA robotic vacuum mapping a new home gains autonomy by learning furniture layouts rather than requiring pre-programmed coordinates.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because complete reliance on hardcoded prior knowledge defines lack of autonomy.",
+    "questionAr": "يقال إن الوكيل الذي يعتمد بشكل كامل على المعرفة السابقة المضمنة ولا يتعلم أبدًا من تجربته الحسية يمتلك استقلالية كاملة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 68,
@@ -1069,7 +1524,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nوكيل رد الفعل البسيط (Simple Reflex Agent) يعمل بقواعد (Condition-Action) ترتبط مباشرة بالمدرك الحالي فقط وتتجاهل سجل المدركات السابق بالكامل.\n\n💡 مثال وتطبيق واقعي:\nمنظم الحرارة (Thermostat) يشغل التدفئة إذا كانت القراءة الحالية أقل من 20 درجة، دون النظر إلى درجات الحرارة قبل ساعة.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن هذا هو جوهر وتوصيف وكيل رد الفعل البسيط المباشر.",
-    "explanationEn": "🎯 Why this statement is True:\nSimple reflex agents select actions strictly based on current percepts via condition-action rules, ignoring past history.\n\n💡 Real-World Example & Application:\nA simple thermostat switches on heating if current temperature < 20°C, regardless of yesterday's temperatures.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because simple reflex agents lack state history memory."
+    "explanationEn": "🎯 Why this statement is True:\nSimple reflex agents select actions strictly based on current percepts via condition-action rules, ignoring past history.\n\n💡 Real-World Example & Application:\nA simple thermostat switches on heating if current temperature < 20°C, regardless of yesterday's temperatures.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because simple reflex agents lack state history memory.",
+    "questionAr": "يختار الوكلاء المنعكسون البسيطون إجراءات تعتمد فقط على الإدراك الحالي، متجاهلين تمامًا تسلسل الإدراك التاريخي.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 69,
@@ -1083,7 +1543,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nفي البيئات القابلة للملاحظة جزئياً، يعجز وكيل رد الفعل الحتمي عن تمييز الحالات المختلفة التي تنتج نفس المدرك، فيكرر نفس الفعل ويدخل في حلقة لا نهائية.\n\n💡 مثال وتطبيق واقعي:\nمكنسة روبوتية بسيطة في غرفة متناظرة ذات جدارين متماثلين قد تستمر في الانعطاف ذهاباً وإياباً للأبد لعدم امتلاكها ذاكرة داخلية.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن الوقوع في الحلقات المفرغة هو أكبر عيوب وكلاء رد الفعل الحتميين في البيئات الجزئية.",
-    "explanationEn": "🎯 Why this statement is True:\nIn partially observable environments, identical percepts can represent distinct states, causing deterministic reflex agents to cycle infinitely.\n\n💡 Real-World Example & Application:\nA vacuum cleaner without memory between two identical walls may turn left, bounce back, and cycle back and forth indefinitely.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because infinite looping is a classic proven failure mode in partial observability."
+    "explanationEn": "🎯 Why this statement is True:\nIn partially observable environments, identical percepts can represent distinct states, causing deterministic reflex agents to cycle infinitely.\n\n💡 Real-World Example & Application:\nA vacuum cleaner without memory between two identical walls may turn left, bounce back, and cycle back and forth indefinitely.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because infinite looping is a classic proven failure mode in partial observability.",
+    "questionAr": "في البيئات التي يمكن ملاحظتها جزئيًا، غالبًا ما تكون العوامل المنعكسة الحتمية البسيطة عرضة للوقوع في فخ حلقات لا نهائية وغير قابلة للاسترداد.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 70,
@@ -1097,7 +1562,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nإدخال العشوائية (Randomization) يكسر التناظر ويمنع الوكيل من تكرار نفس النمط الفاشل عند مواجهة مدركات متكررة في البيئات الجزئية.\n\n💡 مثال وتطبيق واقعي:\nالمكنسة الذكية عندما تصطدم بجدار وتتحرك بزاوية عشوائية تهرب بنجاح من الزوايا الضيقة التي تحبس الحركة الحتمية.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن القرارات العشوائية ثبتت فعاليتها عملياً ورياضياً في كسر الحلقات المقفلة.",
-    "explanationEn": "🎯 Why this statement is True:\nRandomizing actions breaks symmetry and disrupts recurring loops in partially observable single-agent environments.\n\n💡 Real-World Example & Application:\nA Roomba choosing a pseudo-random turn angle escapes tight corridor corners where a deterministic rule would get stuck.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because randomized policies are a formal solution to escape infinite reflex loops."
+    "explanationEn": "🎯 Why this statement is True:\nRandomizing actions breaks symmetry and disrupts recurring loops in partially observable single-agent environments.\n\n💡 Real-World Example & Application:\nA Roomba choosing a pseudo-random turn angle escapes tight corridor corners where a deterministic rule would get stuck.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because randomized policies are a formal solution to escape infinite reflex loops.",
+    "questionAr": "يمكن أن تساعد عشوائية الإجراءات في بعض الأحيان وكيلًا منعكسًا بسيطًا على الهروب من الحلقات اللانهائية في بيئات الوكيل الفردي التي يمكن ملاحظتها جزئيًا.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 71,
@@ -1111,7 +1581,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nوكيل رد الفعل القائم على النموذج (Model-based reflex agent) يحتفظ بحالة داخلية (Internal State) ليتتبع الجوانب غير المرئية من البيئة الحالية.\n\n💡 مثال وتطبيق واقعي:\nنظام الملاحة الذكي يتذكر أن هناك شاحنة في النقطة العمياء بعد أن تجاوزتها الكاميرا لثوانٍ معدودة.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن النموذج الداخلي صُمم خصيصاً للتغلب على الملاحظة الجزئية عبر تتبع تاريخ العالم.",
-    "explanationEn": "🎯 Why this statement is True:\nModel-based agents maintain an internal state tracking how the world evolves and how the agent's actions affect it.\n\n💡 Real-World Example & Application:\nA blind-spot monitor tracks a car that recently passed out of direct side mirror view.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because internal state is the defining feature of model-based reflex agents."
+    "explanationEn": "🎯 Why this statement is True:\nModel-based agents maintain an internal state tracking how the world evolves and how the agent's actions affect it.\n\n💡 Real-World Example & Application:\nA blind-spot monitor tracks a car that recently passed out of direct side mirror view.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because internal state is the defining feature of model-based reflex agents.",
+    "questionAr": "تحافظ العوامل المنعكسة القائمة على النموذج على حالة داخلية لتتبع جوانب العالم التي لا يمكن ملاحظتها في الإدراك الحالي.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 72,
@@ -1125,7 +1600,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nوكيل الأهداف (Goal-based Agent) يجمع بين معرفة الحالة الراهنة وتحديد حالة الهدف لاتخاذ مسارات تحقق الغايات المحددة بمرونة.\n\n💡 مثال وتطبيق واقعي:\nتطبيق خرائط Google يخطط لمسارات متعددة للوصول إلى الوجهة المحددة (Goal) ويتكيف عند إغلاق أحد الشوارع.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن وكلاء الأهداف يتميزون بدمج التخطيط والبحث لتحقيق الأهداف المنشودة.",
-    "explanationEn": "🎯 Why this statement is True:\nGoal-based agents combine state information with explicit goal descriptions to direct search and planning.\n\n💡 Real-World Example & Application:\nGoogle Maps plans diverse route options to guide the driver toward a specified destination target.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because goals explicitly guide state-space search and decision policies."
+    "explanationEn": "🎯 Why this statement is True:\nGoal-based agents combine state information with explicit goal descriptions to direct search and planning.\n\n💡 Real-World Example & Application:\nGoogle Maps plans diverse route options to guide the driver toward a specified destination target.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because goals explicitly guide state-space search and decision policies.",
+    "questionAr": "يعكس نموذج الانتقال في الوكيل القائم على النموذج المعرفة حول كيفية تطور العالم بشكل مستقل وكيف تغير تصرفات الوكيل العالم.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 73,
@@ -1139,7 +1619,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nدالة المنفعة (Utility Function) تترجم درجة تفضيل حالات العالم إلى أرقام حقيقية، مما يسمح بالمفاضلة بين الأهداف المتعارضة مثل السرعة والأمان.\n\n💡 مثال وتطبيق واقعي:\nتطبيق سيارات الأجرة يوازن بين الوصول الأسرع للعميل وبين توفير استهلاك الوقود باستخدام دالة منفعة رياضية متكاملة.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن دالة المنفعة هي المعيار الدقيق لقياس السعادة وجودة الحل في وكلاء المنفعة.",
-    "explanationEn": "🎯 Why this statement is False:\nA utility function maps world states onto real numbers, measuring agent preference and resolving tradeoffs between conflicting goals.\n\n💡 Real-World Example & Application:\nA rideshare route selector balances fastest arrival time against fuel costs using weighted utility scores.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because utility functions formalize preference trade-offs under uncertainty."
+    "explanationEn": "🎯 Why this statement is False:\nA utility function maps world states onto real numbers, measuring agent preference and resolving tradeoffs between conflicting goals.\n\n💡 Real-World Example & Application:\nA rideshare route selector balances fastest arrival time against fuel costs using weighted utility scores.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because utility functions formalize preference trade-offs under uncertainty.",
+    "questionAr": "تعتبر الوكلاء المعتمدون على الأهداف أقل مرونة من الوكلاء المنعكسين البسيطين لأنه لا يمكن تعديل منطق القرار الخاص بهم دون إعادة كتابة البرنامج بأكمله.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 74,
@@ -1153,7 +1638,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nعنصر التعلم (Learning Element) هو المسؤول عن إجراء التحسينات وتطوير السياسات، بينما عنصر الأداء (Performance Element) يختار الأفعال الخارجية وينفذها.\n\n💡 مثال وتطبيق واقعي:\nفي برنامج لعب الشطرنج، عنصر الأداء يختار نقلة البيادق في المباراة الحالية، وعنصر التعلم يحلل الخسارة لتعديل تقييم الوضعيات للمباريات القادمة.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأنه عكس الأدوار؛ فعنصر الأداء هو المنفذ وعنصر التعلم هو المطور.",
-    "explanationEn": "🎯 Why this statement is True:\nThe learning element improves the agent's behavior, while the performance element is responsible for selecting external actions.\n\n💡 Real-World Example & Application:\nIn a chess AI, the performance element selects live moves; the learning element reviews post-game mistakes to adjust evaluations.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because it reverses the distinct roles of learning and performance elements."
+    "explanationEn": "🎯 Why this statement is True:\nThe learning element improves the agent's behavior, while the performance element is responsible for selecting external actions.\n\n💡 Real-World Example & Application:\nIn a chess AI, the performance element selects live moves; the learning element reviews post-game mistakes to adjust evaluations.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because it reverses the distinct roles of learning and performance elements.",
+    "questionAr": "يستخدم الوكلاء المعتمدون على المنفعة وظيفة المنفعة الداخلية التي تسمح لهم بإجراء مقايضات عقلانية بين الأهداف المتضاربة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 75,
@@ -1167,7 +1657,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nمولد المشكلات (Problem Generator) يقترح أفعالاً استكشافية تؤدي لتجارب جديدة ومفيدة، حتى لو كانت دون المستوى الأفضل على المدى القصير.\n\n💡 مثال وتطبيق واقعي:\nروبوت المستودع يجرب مساراً فرعياً جديداً لاختبار ما إذا كان أسرع، مضحياً بدقائق قليلة لجمع بيانات تدريبية أفضل.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن الاستكشاف (Exploration) ضروري لاكتشاف حلول خارقة لا يمكن للقرارات الروتينية الوصول إليها.",
-    "explanationEn": "🎯 Why this statement is False:\nThe problem generator proposes exploratory actions to generate novel experiences, trading short-term suboptimality for long-term improvement.\n\n💡 Real-World Example & Application:\nAn e-commerce recommendation system shows a novel book category to learn user affinity beyond past purchase patterns.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because exploration is vital for learning agents to avoid local optima."
+    "explanationEn": "🎯 Why this statement is False:\nThe problem generator proposes exploratory actions to generate novel experiences, trading short-term suboptimality for long-term improvement.\n\n💡 Real-World Example & Application:\nAn e-commerce recommendation system shows a novel book category to learn user affinity beyond past purchase patterns.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because exploration is vital for learning agents to avoid local optima.",
+    "questionAr": "في بنية وكيل التعلم، يقوم الناقد بتقييم سلوك الوكيل مقابل معيار أداء خارجي يُسمح للوكيل نفسه بتعديله.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 76,
@@ -1181,7 +1676,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nالبيئة القابلة للملاحظة بالكامل (Fully Observable) هي التي توفر فيها حساسات الوكيل وصولاً كاملاً للحالة الدقيقة للبيئة في كل نقطة زمنية.\n\n💡 مثال وتطبيق واقعي:\nلعبة الشطرنج بيئة كاملة الملاحظة لأن رقعة الشطرنج ومواقع جميع القطع مكشوفة تماماً أمام كلا اللاعبين دون أي غموض.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن هذا هو التعريف الحصري للبيئات القابلة للملاحظة بالكامل في الذكاء الاصطناعي.",
-    "explanationEn": "🎯 Why this statement is True:\nA fully observable environment provides sensors with access to the complete state of the environment at each point in time.\n\n💡 Real-World Example & Application:\nChess and Go are fully observable since all pieces on the board are visible to all players without hidden cards or fog of war.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because complete sensor access is the standard definition of full observability."
+    "explanationEn": "🎯 Why this statement is True:\nA fully observable environment provides sensors with access to the complete state of the environment at each point in time.\n\n💡 Real-World Example & Application:\nChess and Go are fully observable since all pieces on the board are visible to all players without hidden cards or fog of war.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because complete sensor access is the standard definition of full observability.",
+    "questionAr": "يعد مكون مولد المشكلات في وكيل التعلم مسؤولاً عن اقتراح الإجراءات الاستكشافية التي تؤدي إلى تجارب جديدة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 77,
@@ -1195,7 +1695,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nالبيئة الحتمية (Deterministic) هي التي تتحدد حالتها التالية كلياً بالحالة الحالية وفعل الوكيل، بينما الشطرنج مع ساعة توقيت يظل حتمياً؛ وجود الساعة لا يجعل قوانين النقلات عشوائية.\n\n💡 مثال وتطبيق واقعي:\nنقلة الحصان في الشطرنج تنتج دائماً نفس الوضعية المتوقعة بدقة 100% دون أي عنصر حظ أو رمي نرد.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأن الساعة تؤثر على الزمن المتاح للتفكير لكنها لا تجعل فيزياء اللعبة أو نتائج النقلات عشوائية (Stochastic).",
-    "explanationEn": "🎯 Why this statement is False:\nDeterministic environments mean the next state is completely determined by the current state and action; chess with a clock remains deterministic.\n\n💡 Real-World Example & Application:\nMoving a rook in blitz chess deterministically modifies the board; the ticking clock does not introduce stochastic roll-of-dice mechanics.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because chess transition dynamics are purely deterministic regardless of time constraints."
+    "explanationEn": "🎯 Why this statement is False:\nDeterministic environments mean the next state is completely determined by the current state and action; chess with a clock remains deterministic.\n\n💡 Real-World Example & Application:\nMoving a rook in blitz chess deterministically modifies the board; the ticking clock does not introduce stochastic roll-of-dice mechanics.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because chess transition dynamics are purely deterministic regardless of time constraints.",
+    "questionAr": "في التمثيل الذري، كل حالة من دول العالم لديها بنية داخلية تتكون من متغيرات قيمة السمة التي يمكن الوصول إليها والتي تسمى بطلاقة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 78,
@@ -1209,7 +1714,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nالبيئة العرضية (Episodic) تنقسم لتجارب ذرية مستقلة؛ كل حلقة لا يعتمد القرار فيها على الحلقات السابقة ولا يؤثر على الحلقات اللاحقة.\n\n💡 مثال وتطبيق واقعي:\nنظام فرز البريد الإلكتروني (Spam Detection) يعالج كل بريد كحلقة مستقلة تماماً؛ تصنيف رسالة الآن كبريد مزعج لا يؤثر على وصول الرسالة التالية.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن استقلالية الحلقات هي جوهر البيئات العرضية مقارنة بالبيئات المتسلسلة (Sequential).",
-    "explanationEn": "🎯 Why this statement is True:\nIn episodic environments, each episode consists of perception and action without dependence on past or future episodes.\n\n💡 Real-World Example & Application:\nDefect detection on a conveyor belt inspects each microchip independently; the current chip decision does not alter future chip manufacturing.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because episode independence is the textbook definition."
+    "explanationEn": "🎯 Why this statement is True:\nIn episodic environments, each episode consists of perception and action without dependence on past or future episodes.\n\n💡 Real-World Example & Application:\nDefect detection on a conveyor belt inspects each microchip independently; the current chip decision does not alter future chip manufacturing.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because episode independence is the textbook definition.",
+    "questionAr": "يقوم تمثيل الحالة المُعامل بتقسيم كل حالة إلى مجموعة ثابتة من المتغيرات أو السمات، كل منها يمكن أن يحمل قيمة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 79,
@@ -1223,7 +1733,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nالبيئة الثابتة (Static) لا تتغير أثناء تفكير الوكيل، بينما البيئة الديناميكية (Dynamic) تستمر في التغير والتطور أثناء اتخاذ القرار.\n\n💡 مثال وتطبيق واقعي:\nقيادة السيارة في شوارع الرياض بيئة ديناميكية، لأن المشاة وحركة المرور تتغير باستمرار في كل جزء من الثانية أثناء اتخاذ القرار.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن التمييز بين الثابت والديناميكي يستند تحديداً إلى تغير البيئة أثناء زمن المعالجة.",
-    "explanationEn": "🎯 Why this statement is False:\nA static environment does not change while the agent deliberates, whereas a dynamic environment continuously changes over time.\n\n💡 Real-World Example & Application:\nCrossword puzzles are static (the grid does not mutate while you think); taxi driving is dynamic (traffic moves while you calculate turns).\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because deliberation-time stability defines static environments."
+    "explanationEn": "🎯 Why this statement is False:\nA static environment does not change while the agent deliberates, whereas a dynamic environment continuously changes over time.\n\n💡 Real-World Example & Application:\nCrossword puzzles are static (the grid does not mutate while you think); taxi driving is dynamic (traffic moves while you calculate turns).\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because deliberation-time stability defines static environments.",
+    "questionAr": "تعتبر البيئة ديناميكية إذا ظل العالم المادي دون تغيير أثناء تداول الوكيل، ولكن تنتهي الحدود الزمنية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 80,
@@ -1237,7 +1752,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nالبيئة المنفصلة (Discrete) تحتوي على عدد محدود ومحدد بوضوح من الحالات والأزمنة والمدركات، بينما المتصلة (Continuous) تتدفق عبر قيم حقيقية مستمرة.\n\n💡 مثال وتطبيق واقعي:\nالشطرنج بيئة منفصلة (مربعات محددة ونقلات منفصلة)، بينما التحكم في ذراع الروبوت أو توجيه الصاروخ بيئة متصلة (زوايا وسرعات مستمرة).\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن التمييز بين المنفصل والمتصل يعتمد على كيفية التعامل مع الزمن والمكان والمدخلات.",
-    "explanationEn": "🎯 Why this statement is False:\nA discrete environment has a finite or countable number of distinct states, actions, and time steps, whereas continuous involves real numbers.\n\n💡 Real-World Example & Application:\nChess board squares and move turns are discrete; autonomous steering angles and brake pressure are continuous.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because discrete vs continuous categorizes state space and action discretization."
+    "explanationEn": "🎯 Why this statement is False:\nA discrete environment has a finite or countable number of distinct states, actions, and time steps, whereas continuous involves real numbers.\n\n💡 Real-World Example & Application:\nChess board squares and move turns are discrete; autonomous steering angles and brake pressure are continuous.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because discrete vs continuous categorizes state space and action discretization.",
+    "questionAr": "تعمل سيارة أجرة آلية تسير على الطريق السريع في بيئة وكيل واحد لأن السيارات الأخرى مجرد عقبات مادية تحكمها الفيزياء.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 81,
@@ -1253,7 +1773,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Problem-solving agent):\nوكيل حل المشكلات (Problem-solving agent) هو وكيل ذري يعتمد على الأهداف ويقوم بالتخطيط المسبق عبر محاكاة تسلسل من الأفعال للوصول إلى الهدف قبل التنفيذ الفعلي.\n\n💡 مثال وتطبيق واقعي:\nتطبيق خرائط جوجل (Google Maps) هو وكيل حل مشكلات؛ يخطط مساراً كاملاً من البداية للوجهة قبل أن تبدأ بالتحرك فعلياً بالسيارة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Reflex agent)، (C - Utility-free agent)، (D - Reactive agent)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Problem-solving agent') is the correct choice:\nA problem-solving agent is a goal-based agent that plans ahead by formulating a sequence of actions leading to a goal state before taking action in the physical world.\n\n💡 Real-World Example & Application:\nGoogle Maps is a problem-solving agent; it computes the entire turn-by-turn route before you ever put the car in drive.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Reflex agent), (C - Utility-free agent), (D - Reactive agent)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Problem-solving agent') is the correct choice:\nA problem-solving agent is a goal-based agent that plans ahead by formulating a sequence of actions leading to a goal state before taking action in the physical world.\n\n💡 Real-World Example & Application:\nGoogle Maps is a problem-solving agent; it computes the entire turn-by-turn route before you ever put the car in drive.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Reflex agent), (C - Utility-free agent), (D - Reactive agent)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "الوكيل الذي يخطط للمستقبل من خلال النظر في سلسلة من الإجراءات التي تشكل طريقًا إلى حالة الهدف قبل اتخاذ إجراء في العالم المادي يسمى:",
+    "optionsAr": [
+      "العامل المنعكس",
+      "وكيل حل المشكلات",
+      "وكيل بدون فائدة",
+      "عامل رد الفعل"
+    ]
   },
   {
     "id": 82,
@@ -1269,7 +1796,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - Goal formulation):\nصياغة الهدف (Goal formulation) هي الخطوة الأولى الإلزامية لأنها تحدد الحالات المرغوبة التي يسعى الوكيل لتحقيقها، وبدونها لا يمكن تحديد الأفعال أو قياس النجاح.\n\n💡 مثال وتطبيق واقعي:\nعند فتح الملاحة، يجب تحديد الوجهة أولاً (صياغة الهدف) قبل أن تتمكن الخوارزمية من حساب المنعطفات والطرق البديلة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Execution)، (B - Search)، (D - Problem formulation)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'Goal formulation') is the correct choice:\nGoal formulation is the first phase because deciding what objectives to achieve is necessary before deciding what actions and states to consider.\n\n💡 Real-World Example & Application:\nIn GPS navigation, specifying the destination (Goal formulation) must occur before the algorithm can plan turns and routes.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Execution), (B - Search), (D - Problem formulation)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'Goal formulation') is the correct choice:\nGoal formulation is the first phase because deciding what objectives to achieve is necessary before deciding what actions and states to consider.\n\n💡 Real-World Example & Application:\nIn GPS navigation, specifying the destination (Goal formulation) must occur before the algorithm can plan turns and routes.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Execution), (B - Search), (D - Problem formulation)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هي المرحلة الأولى في عملية حل المشكلات ذات المراحل الأربع التي يقوم بها وكيل حل المشكلات؟",
+    "optionsAr": [
+      "تنفيذ",
+      "بحث",
+      "صياغة الأهداف",
+      "صياغة المشكلة"
+    ]
   },
   {
     "id": 83,
@@ -1285,7 +1819,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Goal formulation -> Problem formulation -> Search -> Execution):\nالترتيب الزمني الصحيح للعملية الرباعية لحل المشكلات هو: صياغة الهدف أولاً، ثم صياغة المشكلة، ثم البحث عن مسار الحل، وأخيراً تنفيذ الحل.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Search -> Goal formulation -> Problem formulation -> Execution)، (C - Problem formulation -> Execution -> Goal formulation -> Search)، (D - Goal formulation -> Search -> Execution -> Problem formulation)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Goal formulation -> Problem formulation -> Search -> Execution') is the correct choice:\nThe canonical four-phase problem-solving sequence is: Goal formulation -> Problem formulation -> Search -> Execution.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Search -> Goal formulation -> Problem formulation -> Execution), (C - Problem formulation -> Execution -> Goal formulation -> Search), (D - Goal formulation -> Search -> Execution -> Problem formulation)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Goal formulation -> Problem formulation -> Search -> Execution') is the correct choice:\nThe canonical four-phase problem-solving sequence is: Goal formulation -> Problem formulation -> Search -> Execution.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Search -> Goal formulation -> Problem formulation -> Execution), (C - Problem formulation -> Execution -> Goal formulation -> Search), (D - Goal formulation -> Search -> Execution -> Problem formulation)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في عملية حل المشكلات المكونة من أربع مراحل، ما هو التسلسل الزمني الصحيح للمراحل؟",
+    "optionsAr": [
+      "بحث -> صياغة الأهداف -> صياغة المشكلة -> التنفيذ",
+      "صياغة الأهداف -> صياغة المشكلة -> البحث -> التنفيذ",
+      "صياغة المشكلة -> التنفيذ -> صياغة الأهداف -> بحث",
+      "صياغة الأهداف -> البحث -> التنفيذ -> صياغة المشكلة"
+    ]
   },
   {
     "id": 84,
@@ -1301,7 +1842,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Because the predetermined sequence of actions is guaranteed to reach the goal without surprises):\n🎯 سبب اختيار (B - Because the predetermined sequence of actions is guaranteed to reach the goal without surprises):\nتم اختيار هذا الخيار تحديداً لأنه يمثل الحل العلمي المباشر والصحيح لمعايير السؤال؛ حيث الوكيل (Agent) هو المفهوم الأساسي في الذكاء الاصطناعي لكل ما يدرك بيئته بالمستشعرات (Sensors) ويؤثر فيها بالمشغلات (Actuators). 🧠 التحليل المنطقي والمفهوم العلمي: 🚫 استبعاد الخيارات الأخرى: الخيارات البديلة المطروحة [(A - Because the actuators never wear out)، (C - Because open-loop systems are always faster than closed-loop systems)، (D - Because sensors are deactivated during execution to conserve energy)] غير صحيحة في هذا السياق؛ لأنها تشير إما إلى مفاهيم تخصصية منفصلة، أو تعبر عن مستويات تجريد أخرى لا تحقق الشرط المطلوب بالسؤال.\n\n❌ لماذا الخيارات الأخرى غير صحيحة؟\nالخيارات [(A - Because the actuators never wear out)، (C - Because open-loop systems are always faster than closed-loop systems)، (D - Because sensors are deactivated during execution to conserve energy)] لا تحقق المطلوب لأنها إما تعبر عن مفاهيم مختلفة تماماً أو لا تطابق الشروط الدقيقة المذكورة في السؤال.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Because the actuators never wear out)، (C - Because open-loop systems are always faster than closed-loop systems)، (D - Because sensors are deactivated during execution to conserve energy)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Because the predetermined sequence of actions is guaranteed to reach the goal without surprises') is the correct choice:\n🎯 Why (B - 'Because the predetermined sequence of actions is guaranteed to reach the goal without surprises') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: An Agent is formally defined as an entity that perceives its environment through sensors and acts upon it through actuators. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(A - Because the actuators never wear out), (C - Because open-loop systems are always faster than closed-loop systems), (D - Because sensors are deactivated during execution to conserve energy)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Because the actuators never wear out), (C - Because open-loop systems are always faster than closed-loop systems), (D - Because sensors are deactivated during execution to conserve energy)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Because the actuators never wear out), (C - Because open-loop systems are always faster than closed-loop systems), (D - Because sensors are deactivated during execution to conserve energy)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Because the predetermined sequence of actions is guaranteed to reach the goal without surprises') is the correct choice:\n🎯 Why (B - 'Because the predetermined sequence of actions is guaranteed to reach the goal without surprises') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: An Agent is formally defined as an entity that perceives its environment through sensors and acts upon it through actuators. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(A - Because the actuators never wear out), (C - Because open-loop systems are always faster than closed-loop systems), (D - Because sensors are deactivated during execution to conserve energy)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Because the actuators never wear out), (C - Because open-loop systems are always faster than closed-loop systems), (D - Because sensors are deactivated during execution to conserve energy)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Because the actuators never wear out), (C - Because open-loop systems are always faster than closed-loop systems), (D - Because sensors are deactivated during execution to conserve energy)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في بيئة يمكن ملاحظتها وحتميتها ومعروفة بالكامل، لماذا يمكن للوكيل تنفيذ حله باعتباره \"نظام حلقة مفتوحة\" دون مراقبة أجهزة الاستشعار؟",
+    "optionsAr": [
+      "لأن المحركات لا تبلى أبدًا",
+      "لأن تسلسل الإجراءات المحدد مسبقًا يضمن الوصول إلى الهدف دون مفاجآت",
+      "لأن أنظمة الحلقة المفتوحة تكون دائمًا أسرع من أنظمة الحلقة المغلقة",
+      "لأنه يتم تعطيل أجهزة الاستشعار أثناء التنفيذ للحفاظ على الطاقة"
+    ]
   },
   {
     "id": 85,
@@ -1317,7 +1865,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - Five components):\nوفقاً لـ AIMA، تتطلب الصياغة الرياضية الرسمية للمشكلة 5 مكونات: الحالة الابتدائية، الأفعال المتاحة، دالة الانتقال/النتيجة، اختبار الهدف، ودالة تكلفة المسار.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Three components)، (B - Four components)، (D - Seven components)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'Five components') is the correct choice:\nA search problem is formally defined by five components: initial state, possible actions, transition model (RESULT), goal test, and path cost function.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Three components), (B - Four components), (D - Seven components)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'Five components') is the correct choice:\nA search problem is formally defined by five components: initial state, possible actions, transition model (RESULT), goal test, and path cost function.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Three components), (B - Four components), (D - Seven components)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هو عدد المكونات الرسمية المطلوبة لتحديد مشكلة البحث رياضيًا وفقًا للفصل الثالث من AIMA؟",
+    "optionsAr": [
+      "ثلاثة مكونات",
+      "أربعة مكونات",
+      "خمسة مكونات",
+      "سبعة مكونات"
+    ]
   },
   {
     "id": 86,
@@ -1333,7 +1888,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - Heuristic decay rate):\n'معدل اضمحلال الحدس' (Heuristic decay rate) ليس من مكونات صياغة المشكلة؛ فالمكونات الخمسة هي الحالة الابتدائية، الأفعال، دالة الانتقال، اختبار الهدف، وتكلفة المسار.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Initial state)، (B - Set of available actions (ACTIONS))، (D - Transition model (RESULT))] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'Heuristic decay rate') is the correct choice:\n'Heuristic decay rate' is not a component of a search problem. The five formal components are initial state, actions, transition model, goal test, and path cost.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Initial state), (B - Set of available actions (ACTIONS)), (D - Transition model (RESULT))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'Heuristic decay rate') is the correct choice:\n'Heuristic decay rate' is not a component of a search problem. The five formal components are initial state, actions, transition model, goal test, and path cost.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Initial state), (B - Set of available actions (ACTIONS)), (D - Transition model (RESULT))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "أي مما يلي ليس أحد المكونات الرسمية الخمسة لمشكلة البحث؟",
+    "optionsAr": [
+      "الحالة الأولية",
+      "مجموعة الإجراءات المتاحة (ACTIONS)",
+      "معدل الاضمحلال الإرشادي",
+      "النموذج الانتقالي (النتيجة)"
+    ]
   },
   {
     "id": 87,
@@ -1349,7 +1911,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - The state that results from executing action a in state s):\nدالة الانتقال RESULT(s, a) تأخذ الحالة s والفعل a وتعيد الحالة الناتجة عن تطبيق ذلك الفعل في تلك الحالة المحددة.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - A boolean indicating if state s is the goal)، (B - The numerical cost of action a)، (D - The list of all valid actions in state s)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'The state that results from executing action a in state s') is the correct choice:\nThe transition model function RESULT(s, a) returns the specific state that results from executing action a in state s.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - A boolean indicating if state s is the goal), (B - The numerical cost of action a), (D - The list of all valid actions in state s)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'The state that results from executing action a in state s') is the correct choice:\nThe transition model function RESULT(s, a) returns the specific state that results from executing action a in state s.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - A boolean indicating if state s is the goal), (B - The numerical cost of action a), (D - The list of all valid actions in state s)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في التعريف الرسمي لمشكلة البحث، ما الذي ترجعه الدالة RESULT(s, a)؟",
+    "optionsAr": [
+      "قيمة منطقية تشير إلى ما إذا كانت الحالة هي الهدف",
+      "التكلفة العددية للعمل أ",
+      "الحالة الناتجة عن تنفيذ الإجراء a في الحالة",
+      "قائمة بجميع الإجراءات الصالحة في الحالة"
+    ]
   },
   {
     "id": 88,
@@ -1365,7 +1934,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - a belongs to the set ACTIONS(s)):\nيكون الفعل a قابلاً للتطبيق (Applicable) في الحالة s إذا وفقط إذا كان ينتمي لمجموعة الأفعال القانونية المسموح بها في تلك الحالة ACTIONS(s).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - a has a cost of zero)، (C - a immediately achieves the goal state)، (D - a has never been performed before)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'a belongs to the set ACTIONS(s)') is the correct choice:\nAn action a is defined as applicable in state s if it is a legal member of the action set ACTIONS(s).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - a has a cost of zero), (C - a immediately achieves the goal state), (D - a has never been performed before)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'a belongs to the set ACTIONS(s)') is the correct choice:\nAn action a is defined as applicable in state s if it is a legal member of the action set ACTIONS(s).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - a has a cost of zero), (C - a immediately achieves the goal state), (D - a has never been performed before)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "يتم وصف الإجراء a بأنه \"قابل للتطبيق\" في الحالة s إذا:",
+    "optionsAr": [
+      "ينتمي a إلى مجموعة الإجراءات (الإجراءات)",
+      "تكلفة صفر",
+      "يحقق حالة الهدف على الفور",
+      "لم يتم تنفيذها من قبل"
+    ]
   },
   {
     "id": 89,
@@ -1381,7 +1957,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - A path leading from the initial state to any valid goal state):\nالمسار هو سلسلة متتابعة من الأفعال، ويُعرَّف الحل رسمياً بأنه مسار يبدأ من الحالة الابتدائية وينتهي عند أي حالة تحقق اختبار الهدف.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The shortest path between any two random states)، (C - The entire explored portion of the state space graph)، (D - The minimum spanning tree of the search space)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'A path leading from the initial state to any valid goal state') is the correct choice:\nA solution in search algorithms is formally defined as a complete path of actions from the initial state to a valid goal state.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The shortest path between any two random states), (C - The entire explored portion of the state space graph), (D - The minimum spanning tree of the search space)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'A path leading from the initial state to any valid goal state') is the correct choice:\nA solution in search algorithms is formally defined as a complete path of actions from the initial state to a valid goal state.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The shortest path between any two random states), (C - The entire explored portion of the state space graph), (D - The minimum spanning tree of the search space)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في خوارزميات البحث، يتم تعريف المسار على أنه سلسلة من الإجراءات، ويتم تعريف الحل رسميًا على النحو التالي:",
+    "optionsAr": [
+      "أقصر مسار بين أي حالتين عشوائيتين",
+      "مسار يؤدي من الحالة الأولية إلى أي حالة هدف صالحة",
+      "الجزء المستكشف بالكامل من الرسم البياني الفضائي للحالة",
+      "الحد الأدنى للشجرة الممتدة لمساحة البحث"
+    ]
   },
   {
     "id": 90,
@@ -1397,7 +1980,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - The sum of the individual step costs along the path):\nفي خوارزميات البحث التقليدية، تُفترض تكلفة المسار كخاصية جمعية (Additive)، أي أن التكلفة الإجمالية للمسار تساوي مجموع تكاليف الخطوات الفردية المكونة له.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The maximum cost among all individual action steps)، (B - The product of all individual action costs)، (D - The average of the start and goal node costs)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'The sum of the individual step costs along the path') is the correct choice:\nPath costs are assumed to be additive, meaning the total cost of a path is the algebraic sum of the individual step costs along that path.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The maximum cost among all individual action steps), (B - The product of all individual action costs), (D - The average of the start and goal node costs)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'The sum of the individual step costs along the path') is the correct choice:\nPath costs are assumed to be additive, meaning the total cost of a path is the algebraic sum of the individual step costs along that path.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The maximum cost among all individual action steps), (B - The product of all individual action costs), (D - The average of the start and goal node costs)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في خوارزميات البحث، يُفترض أن تكون تكاليف المسار مضافة، مما يعني أن تكلفة المسار الإجمالية هي:",
+    "optionsAr": [
+      "الحد الأقصى للتكلفة بين جميع خطوات العمل الفردية",
+      "منتج جميع تكاليف العمل الفردي",
+      "مجموع تكاليف الخطوة الفردية على طول المسار",
+      "متوسط ​​تكاليف عقدة البداية والهدف"
+    ]
   },
   {
     "id": 91,
@@ -1413,7 +2003,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - To avoid infinite loops where the agent traverses zero-cost or negative-cost cycles endlessly):\nاشتراط أن تكون تكاليف الخطوات موجبة قطيعاً (c >= ε > 0) يضمن عدم وقوع الخوارزمية في دورات لا نهائية ذات تكلفة صفرية أو سالبة تمنع التقدم نحو الهدف.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - To ensure that computers do not divide by zero during search)، (C - Because real money can never have negative values)، (D - To force BFS and DFS to generate the same number of nodes)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'To avoid infinite loops where the agent traverses zero-cost or negative-cost cycles endlessly') is the correct choice:\nStep costs must be strictly positive (cost >= epsilon > 0) to prevent the search from being trapped in infinite loops of zero-cost or negative-cost cycles.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - To ensure that computers do not divide by zero during search), (C - Because real money can never have negative values), (D - To force BFS and DFS to generate the same number of nodes)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'To avoid infinite loops where the agent traverses zero-cost or negative-cost cycles endlessly') is the correct choice:\nStep costs must be strictly positive (cost >= epsilon > 0) to prevent the search from being trapped in infinite loops of zero-cost or negative-cost cycles.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - To ensure that computers do not divide by zero during search), (C - Because real money can never have negative values), (D - To force BFS and DFS to generate the same number of nodes)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا يُفترض في البحث الكلاسيكي القياسي أن جميع تكاليف الإجراء يجب أن تكون إيجابية تمامًا (التكلفة > = إبسيلون > 0)؟",
+    "optionsAr": [
+      "للتأكد من عدم قسمة أجهزة الكمبيوتر على صفر أثناء البحث",
+      "لتجنب الحلقات اللانهائية حيث يجتاز الوكيل دورات التكلفة الصفرية أو التكلفة السلبية إلى ما لا نهاية",
+      "لأن المال الحقيقي لا يمكن أن يكون له قيم سلبية أبدًا",
+      "لإجبار BFS و DFS على إنشاء نفس العدد من العقد"
+    ]
   },
   {
     "id": 92,
@@ -1429,7 +2026,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Abstraction):\nالتجريد (Abstraction) هو عملية إزالة التفاصيل غير الجوهرية من تمثيل العالم الحقيقي لإنشاء نموذج مشكلة مبسط ومحدد رياضياً وقابل للحساب.\n\n💡 مثال وتطبيق واقعي:\nخريطة المترو تجرد تفاصيل المباني والأشجار وإشارات المرور، وتبقي فقط المحطات وخطوط الربط لحل مسار التنقل بسهولة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Pruning)، (C - Discretization)، (D - Optimization)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Abstraction') is the correct choice:\nAbstraction is the process of removing irrelevant real-world details to create a manageable, mathematically tractable problem model.\n\n💡 Real-World Example & Application:\nA subway map abstracts away street curves and buildings, retaining only stations and rail connections for easy route finding.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Pruning), (C - Discretization), (D - Optimization)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Abstraction') is the correct choice:\nAbstraction is the process of removing irrelevant real-world details to create a manageable, mathematically tractable problem model.\n\n💡 Real-World Example & Application:\nA subway map abstracts away street curves and buildings, retaining only stations and rail connections for easy route finding.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Pruning), (C - Discretization), (D - Optimization)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "تسمى العملية الهندسية الأساسية لإزالة التفاصيل غير ذات الصلة من التمثيل العالمي لإنشاء نموذج مشكلة يمكن التحكم فيه:",
+    "optionsAr": [
+      "التقليم",
+      "التجريد",
+      "التفرد",
+      "تحسين"
+    ]
   },
   {
     "id": 93,
@@ -1445,7 +2049,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - If any abstract solution can be elaborated into a concrete solution in the more detailed real world):\nتكون الصياغة المجردة 'صالحة' (Valid) إذا كان كل حل مجرد يمكن تفصيله وتحويله إلى حل ملموس وواقعي في بيئة العالم الحقيقي المعقدة.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - If it contains no numbers greater than 1,000)، (C - If it can be solved in polynomial time O(n))، (D - Only if the state space graph is completely planar)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'If any abstract solution can be elaborated into a concrete solution in the more detailed real world') is the correct choice:\nAn abstract problem formulation is valid if every abstract solution path can be elaborated into a concrete, executable solution in the real world.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - If it contains no numbers greater than 1,000), (C - If it can be solved in polynomial time O(n)), (D - Only if the state space graph is completely planar)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'If any abstract solution can be elaborated into a concrete solution in the more detailed real world') is the correct choice:\nAn abstract problem formulation is valid if every abstract solution path can be elaborated into a concrete, executable solution in the real world.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - If it contains no numbers greater than 1,000), (C - If it can be solved in polynomial time O(n)), (D - Only if the state space graph is completely planar)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "متى تعتبر صياغة المشكلة المجردة \"صالحة\"؟",
+    "optionsAr": [
+      "إذا لم يكن يحتوي على أرقام أكبر من 1000",
+      "إذا كان من الممكن تطوير أي حل مجرد إلى حل ملموس في العالم الحقيقي الأكثر تفصيلاً",
+      "إذا كان من الممكن حلها في زمن كثير الحدود O(n)",
+      "فقط إذا كان الرسم البياني الفضائي للحالة مستويًا تمامًا"
+    ]
   },
   {
     "id": 94,
@@ -1461,7 +2072,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Is easier than solving the original unabstracted problem):\nيُعتبر التجريد 'مفيداً' (Useful) إذا كان تنفيذ كل فعل مجرد في الحل أسهل بكثير من حل المشكلة الأصلية بتفاصيلها الكاملة.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Generates at least 100 successor states)، (C - Costs exactly one unit of energy)، (D - Eliminates the need for an initial state)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Is easier than solving the original unabstracted problem') is the correct choice:\nAn abstraction is useful if carrying out each abstract action in the solution path is significantly easier than solving the original unabstracted problem.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Generates at least 100 successor states), (C - Costs exactly one unit of energy), (D - Eliminates the need for an initial state)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Is easier than solving the original unabstracted problem') is the correct choice:\nAn abstraction is useful if carrying out each abstract action in the solution path is significantly easier than solving the original unabstracted problem.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Generates at least 100 successor states), (C - Costs exactly one unit of energy), (D - Eliminates the need for an initial state)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "يعتبر التجريد \"مفيدًا\" في حالة تنفيذ كل إجراء مجرد في الحل:",
+    "optionsAr": [
+      "أسهل من حل المشكلة الأصلية غير الملخصة",
+      "يولد ما لا يقل عن 100 دولة لاحقة",
+      "يكلف بالضبط وحدة واحدة من الطاقة",
+      "يلغي الحاجة إلى حالة أولية"
+    ]
   },
   {
     "id": 95,
@@ -1477,7 +2095,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - A solution path that has the lowest path cost among all possible solutions):\nالحل الأمثل (Optimal solution) هو مسار الحل الذي يحقق أقل تكلفة مسار ممكنة من بين جميع مسارات الحلول الممكنة التي تصل إلى الهدف.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Any path that visits the fewest possible states)، (C - The path that visits every node in the graph exactly once)، (D - A solution discovered without expanding any non-goal nodes)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'A solution path that has the lowest path cost among all possible solutions') is the correct choice:\nAn optimal solution is formally defined as a solution path having the lowest total path cost among all possible valid solutions.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Any path that visits the fewest possible states), (C - The path that visits every node in the graph exactly once), (D - A solution discovered without expanding any non-goal nodes)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'A solution path that has the lowest path cost among all possible solutions') is the correct choice:\nAn optimal solution is formally defined as a solution path having the lowest total path cost among all possible valid solutions.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Any path that visits the fewest possible states), (C - The path that visits every node in the graph exactly once), (D - A solution discovered without expanding any non-goal nodes)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "يتم تعريف الحل الأمثل لمشكلة البحث رسميًا على النحو التالي:",
+    "optionsAr": [
+      "أي مسار يزور أقل عدد ممكن من الحالات",
+      "مسار الحل ذو تكلفة المسار الأقل بين جميع الحلول الممكنة",
+      "المسار الذي يزور كل عقدة في الرسم البياني مرة واحدة بالضبط",
+      "تم اكتشاف الحل دون توسيع أي عقد غير هدفية"
+    ]
   },
   {
     "id": 96,
@@ -1493,7 +2118,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - To provide concise, exact problem descriptions to compare algorithm performance):\nالهدف الأساسي من المشاكل المعيارية (Benchmark/Toy problems) هو توفير وصف موجز ومضبوط رياضياً لاختبار ومقارنة كفاءة خوارزميات البحث المختلفة بدقة.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - To run actual commercial airline flight reservations)، (C - To control factory hardware on production lines)، (D - To eliminate the need for heuristic functions)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'To provide concise, exact problem descriptions to compare algorithm performance') is the correct choice:\nStandard benchmark problems provide concise, exact, reproducible environments to evaluate and compare the performance of different search algorithms.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - To run actual commercial airline flight reservations), (C - To control factory hardware on production lines), (D - To eliminate the need for heuristic functions)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'To provide concise, exact problem descriptions to compare algorithm performance') is the correct choice:\nStandard benchmark problems provide concise, exact, reproducible environments to evaluate and compare the performance of different search algorithms.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - To run actual commercial airline flight reservations), (C - To control factory hardware on production lines), (D - To eliminate the need for heuristic functions)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هو الغرض الأكاديمي الأساسي لمشكلة مرجعية موحدة في أبحاث الذكاء الاصطناعي؟",
+    "optionsAr": [
+      "لإجراء حجوزات طيران تجارية فعلية",
+      "لتوفير أوصاف موجزة ودقيقة للمشكلة لمقارنة أداء الخوارزمية",
+      "للتحكم بأجهزة المصنع على خطوط الإنتاج",
+      "للقضاء على الحاجة إلى وظائف ارشادية"
+    ]
   },
   {
     "id": 97,
@@ -1509,7 +2141,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - 24 states):\nفي عالم 3 خلايا: موقع الوكيل له 3 احتمالات، وكل خلية لها حالتان (نظيفة/متسخة) أي 2^3 = 8 حالات اتساخ، فيكون إجمالي فضاء الحالات: 3 * 8 = 24 حالة.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - 12 states)، (C - 16 states)، (D - 64 states)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - '24 states') is the correct choice:\nFor 3 cells, there are 3 possible agent locations and 2^3 = 8 possible dirt configurations, yielding 3 * 8 = 24 distinct physical states.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - 12 states), (C - 16 states), (D - 64 states)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - '24 states') is the correct choice:\nFor 3 cells, there are 3 possible agent locations and 2^3 = 8 possible dirt configurations, yielding 3 * 8 = 24 distinct physical states.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - 12 states), (C - 16 states), (D - 64 states)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في عالم المكنسة الكهربائية المكون من ثلاث خلايا حيث يمكن أن تكون كل خلية نظيفة أو متسخة، ما هو العدد الدقيق للحالات المحتملة في مساحة الحالة؟",
+    "optionsAr": [
+      "12 ولاية",
+      "24 ولاية",
+      "16 ولاية",
+      "64 ولاية"
+    ]
   },
   {
     "id": 98,
@@ -1525,7 +2164,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Moving the blank space Left, Right, Up, or Down):\nفي أحجية الأرقام (8-puzzle)، الصياغة الأكثر ملاءمة ونظافة هي اعتبار الأفعال حركة للمربع الفارغ (تحريك الفراغ يساراً أو يميناً أو لأعلى أو لأسفل).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Moving numbered tiles along diagonal tracks)، (C - Shaking the puzzle board to randomize tiles)، (D - Swapping any two arbitrary tiles regardless of position)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Moving the blank space Left, Right, Up, or Down') is the correct choice:\nIn sliding-tile puzzles, actions are most cleanly formalized as moving the single blank space (Left, Right, Up, Down), rather than tracking moving numbers.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Moving numbered tiles along diagonal tracks), (C - Shaking the puzzle board to randomize tiles), (D - Swapping any two arbitrary tiles regardless of position)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Moving the blank space Left, Right, Up, or Down') is the correct choice:\nIn sliding-tile puzzles, actions are most cleanly formalized as moving the single blank space (Left, Right, Up, Down), rather than tracking moving numbers.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Moving numbered tiles along diagonal tracks), (C - Shaking the puzzle board to randomize tiles), (D - Swapping any two arbitrary tiles regardless of position)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في الصيغة القياسية للألغاز الثمانية، كيف يتم تصور الإجراءات بشكل أكثر وضوحًا وملاءمة؟",
+    "optionsAr": [
+      "تحريك البلاطات المرقمة على طول المسارات القطرية",
+      "تحريك المساحة الفارغة لليسار أو لليمين أو للأعلى أو للأسفل",
+      "هز لوحة اللغز لترتيب البلاط بشكل عشوائي",
+      "مبادلة أي اثنين من البلاط التعسفي بغض النظر عن الموقف"
+    ]
   },
   {
     "id": 99,
@@ -1541,7 +2187,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Exactly one-half (50%)):\nبسبب خاصية التكافؤ الرياضي (Parity) في تباديل أحجية الألواح المنزلقة، ينقسم فضاء الحالات إلى مكونين منفصلين، مما يجعل 50% فقط من الترتيبات العشوائية قابلة للحل.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Exactly all (100%))، (C - Exactly one-third (33%))، (D - Exactly one-ninth (11%))] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Exactly one-half (50%)') is the correct choice:\nDue to the permutation parity property of sliding-tile puzzles, the state space is partitioned into two disjoint halves; exactly 50% of random states can reach the goal.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Exactly all (100%)), (C - Exactly one-third (33%)), (D - Exactly one-ninth (11%))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Exactly one-half (50%)') is the correct choice:\nDue to the permutation parity property of sliding-tile puzzles, the state space is partitioned into two disjoint halves; exactly 50% of random states can reach the goal.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Exactly all (100%)), (C - Exactly one-third (33%)), (D - Exactly one-ninth (11%))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "بسبب خاصية التكافؤ الرياضي في لغز البلاط المنزلق، ما هو الجزء من جميع ترتيبات البلاط العشوائية الممكنة التي يمكن أن تصل إلى حالة هدف معينة؟",
+    "optionsAr": [
+      "الكل بالضبط (100%)",
+      "بالضبط النصف (50%)",
+      "الثلث بالضبط (33%)",
+      "التاسع بالضبط (11%)"
+    ]
   },
   {
     "id": 100,
@@ -1557,7 +2210,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - 9! / 2 = 181,440):\n🎯 سبب اختيار (B - 9! / 2 = 181,440):\nتم اختيار هذا الخيار تحديداً لأنه يمثل الحل العلمي المباشر والصحيح لمعايير السؤال؛ حيث عدد الحالات التي يمكن الوصول إليها في لغز 8-puzzle هو نصف إجمالي التباديل الممكنة: 9! / 2 = 181,440 حالة. 🧠 التحليل المنطقي والمفهوم العلمي: 🚫 استبعاد الخيارات الأخرى: الخيارات البديلة المطروحة [(A - 9! = 362,880)، (C - 8! = 40,320)، (D - 2^8 = 256)] غير صحيحة في هذا السياق؛ لأنها تشير إما إلى مفاهيم تخصصية منفصلة، أو تعبر عن مستويات تجريد أخرى لا تحقق الشرط المطلوب بالسؤال.\n\n❌ لماذا الخيارات الأخرى غير صحيحة؟\nالخيارات [(A - 9! = 362,880)، (C - 8! = 40,320)، (D - 2^8 = 256)] لا تحقق المطلوب لأنها إما تعبر عن مفاهيم مختلفة تماماً أو لا تطابق الشروط الدقيقة المذكورة في السؤال.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - 9! = 362,880)، (C - 8! = 40,320)، (D - 2^8 = 256)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - '9! / 2 = 181,440') is the correct choice:\n🎯 Why (B - '9! / 2 = 181,440') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: The 8-puzzle state space splits into two disconnected halves of reachability; exactly 9! / 2 = 181,440 states are reachable. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(A - 9! = 362,880), (C - 8! = 40,320), (D - 2^8 = 256)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - 9! = 362,880), (C - 8! = 40,320), (D - 2^8 = 256)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - 9! = 362,880), (C - 8! = 40,320), (D - 2^8 = 256)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - '9! / 2 = 181,440') is the correct choice:\n🎯 Why (B - '9! / 2 = 181,440') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: The 8-puzzle state space splits into two disconnected halves of reachability; exactly 9! / 2 = 181,440 states are reachable. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(A - 9! = 362,880), (C - 8! = 40,320), (D - 2^8 = 256)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - 9! = 362,880), (C - 8! = 40,320), (D - 2^8 = 256)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - 9! = 362,880), (C - 8! = 40,320), (D - 2^8 = 256)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "إجمالي عدد الحالات التي يمكن الوصول إليها في مساحة الحالة القياسية المكونة من 8 ألغاز هو بالضبط:",
+    "optionsAr": [
+      "9! = 362,880",
+      "9! / 2 = 181,440",
+      "8! = 40,320",
+      "2^8 = 256"
+    ]
   },
   {
     "id": 101,
@@ -1573,7 +2233,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Over 10 trillion (16! / 2)):\n🎯 سبب اختيار (B - Over 10 trillion (16! / 2)):\nتم اختيار هذا الخيار تحديداً لأنه يمثل الحل العلمي المباشر والصحيح لمعايير السؤال؛ حيث في لغز 15-puzzle، عدد الحالات التي يمكن الوصول إليها هو 16! / 2 = تقريباً 1.05 * 10^13 (أو ما يقارب 1.8 * 10^5 في النسخ المصغرة). 🧠 التحليل المنطقي والمفهوم العلمي: 🚫 استبعاد الخيارات الأخرى: الخيارات البديلة المطروحة [(A - 1.8 * 10^5)، (C - 15^2 = 225)، (D - Infinite)] غير صحيحة في هذا السياق؛ لأنها تشير إما إلى مفاهيم تخصصية منفصلة، أو تعبر عن مستويات تجريد أخرى لا تحقق الشرط المطلوب بالسؤال.\n\n❌ لماذا الخيارات الأخرى غير صحيحة؟\nالخيارات [(A - 1.8 * 10^5)، (C - 15^2 = 225)، (D - Infinite)] لا تحقق المطلوب لأنها إما تعبر عن مفاهيم مختلفة تماماً أو لا تطابق الشروط الدقيقة المذكورة في السؤال.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - 1.8 * 10^5)، (C - 15^2 = 225)، (D - Infinite)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Over 10 trillion (16! / 2)') is the correct choice:\n🎯 Why (B - 'Over 10 trillion (16! / 2)') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: The 15-puzzle has half of 16! reachable configurations due to parity constraints. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(A - 1.8 * 10^5), (C - 15^2 = 225), (D - Infinite)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - 1.8 * 10^5), (C - 15^2 = 225), (D - Infinite)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - 1.8 * 10^5), (C - 15^2 = 225), (D - Infinite)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Over 10 trillion (16! / 2)') is the correct choice:\n🎯 Why (B - 'Over 10 trillion (16! / 2)') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: The 15-puzzle has half of 16! reachable configurations due to parity constraints. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(A - 1.8 * 10^5), (C - 15^2 = 225), (D - Infinite)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - 1.8 * 10^5), (C - 15^2 = 225), (D - Infinite)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - 1.8 * 10^5), (C - 15^2 = 225), (D - Infinite)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "بالنسبة للألغاز الأكبر المكونة من 15 لغزًا (شبكة 4×4)، يكون عدد الحالات التي يمكن الوصول إليها تقريبًا:",
+    "optionsAr": [
+      "1.8 * 10^5",
+      "أكثر من 10 تريليون (16!/2)",
+      "15^2 = 225",
+      "لانهائي"
+    ]
   },
   {
     "id": 102,
@@ -1589,7 +2256,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Square root, floor, and factorial):\nمسألة دونالد كنوث للأربعة تبين نشوء فضاءات حالات لا نهائية من خلال تطبيق ثلاث عمليات رياضية تكرارية على الرقم 4: الجذر التربيعي، دالة الجزء الصحيح (الأرضية)، والمضروب.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Addition, subtraction, multiplication, and division)، (C - Modulo, exponentiation, and logarithms)، (D - Derivatives, integrals, and limits)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Square root, floor, and factorial') is the correct choice:\nKnuth's 4-problem generates an infinite state space from the number 4 by repeatedly applying square root, floor, and factorial operations.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Addition, subtraction, multiplication, and division), (C - Modulo, exponentiation, and logarithms), (D - Derivatives, integrals, and limits)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Square root, floor, and factorial') is the correct choice:\nKnuth's 4-problem generates an infinite state space from the number 4 by repeatedly applying square root, floor, and factorial operations.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Addition, subtraction, multiplication, and division), (C - Modulo, exponentiation, and logarithms), (D - Derivatives, integrals, and limits)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "توضح مشكلة دونالد كنوث 4 كيف يمكن أن تنشأ مساحات الحالة اللانهائية في مشاكل البحث من خلال تطبيق أي مجموعة من العمليات الرياضية على الرقم 4؟",
+    "optionsAr": [
+      "الجمع والطرح والضرب والقسمة",
+      "الجذر التربيعي والأرضي والمضروب",
+      "الوحدات والأسيات واللوغاريتمات",
+      "المشتقات والتكاملات والحدود"
+    ]
   },
   {
     "id": 103,
@@ -1605,7 +2279,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Push scattered boxes to designated storage locations):\nفي لعبة سوكوبان (Sokoban)، الهدف الأساسي للوكيل هو دفع الصناديق المتفرقة عبر شبكة المتاهة لإيصالها إلى مواقع التخزين المحددة مسبقاً.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Clean all dirty squares with suction)، (C - Destroy enemy pieces on a board)، (D - Travel to Bucharest with minimum mileage)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Push scattered boxes to designated storage locations') is the correct choice:\nIn the Sokoban puzzle, the agent's objective is to push all scattered crates/boxes onto specified storage target squares without getting stuck.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Clean all dirty squares with suction), (C - Destroy enemy pieces on a board), (D - Travel to Bucharest with minimum mileage)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Push scattered boxes to designated storage locations') is the correct choice:\nIn the Sokoban puzzle, the agent's objective is to push all scattered crates/boxes onto specified storage target squares without getting stuck.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Clean all dirty squares with suction), (C - Destroy enemy pieces on a board), (D - Travel to Bucharest with minimum mileage)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في لغز عالم شبكة سوكوبان، ما هو الهدف الأساسي للعميل؟",
+    "optionsAr": [
+      "تنظيف جميع المربعات المتسخة بالشفط",
+      "ادفع الصناديق المتناثرة إلى مواقع التخزين المخصصة",
+      "تدمير قطع العدو على اللوح",
+      "سافر إلى بوخارست بأقل عدد من الأميال"
+    ]
   },
   {
     "id": 104,
@@ -1621,7 +2302,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Touring problem where every city must be visited):\nمسألة البائع المتجول (TSP) هي مسألة جولة سياحية (Touring problem)، حيث يُشترط زيارة كل مدينة في الشبكة مرة واحدة والعودة لمدينة الانطلاق بأقل تكلفة.\n\n💡 مثال وتطبيق واقعي:\nمسألة البائع المتجول (TSP) تحاكي شاحنة توصيل طرود أمازون التي يجب أن تزور كل عنوان عميل مرة واحدة وتعود للمستودع بأقصر مسافة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Single-destination path problem)، (C - Continuous reflex problem)، (D - Softbot parsing problem)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Touring problem where every city must be visited') is the correct choice:\nThe Traveling Salesperson Problem (TSP) is a touring problem where every city must be visited exactly once with minimal total travel cost.\n\n💡 Real-World Example & Application:\nThe Traveling Salesperson Problem (TSP) models an Amazon delivery van visiting each delivery stop once with minimal total mileage.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Single-destination path problem), (C - Continuous reflex problem), (D - Softbot parsing problem)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Touring problem where every city must be visited') is the correct choice:\nThe Traveling Salesperson Problem (TSP) is a touring problem where every city must be visited exactly once with minimal total travel cost.\n\n💡 Real-World Example & Application:\nThe Traveling Salesperson Problem (TSP) models an Amazon delivery van visiting each delivery stop once with minimal total mileage.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Single-destination path problem), (C - Continuous reflex problem), (D - Softbot parsing problem)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "يتم تصنيف مشكلة مندوب المبيعات المتجول (TSP) رسميًا على أنها نوع مشكلة البحث؟",
+    "optionsAr": [
+      "مشكلة مسار الوجهة الواحدة",
+      "مشكلة التجول حيث يجب زيارة كل مدينة",
+      "مشكلة الانعكاس المستمر",
+      "مشكلة في تحليل سوفت بوت"
+    ]
   },
   {
     "id": 105,
@@ -1637,7 +2325,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Cell layout and channel routing):\nفي تصميم الدوائر المتكاملة الفائقة (VLSI)، تُقسَّم المشكلة تقليدياً إلى مسألتين فرعيتين: تخطيط مواضع الخلايا (Cell layout)، وتوجيه مسارات القنوات والأسلاك (Channel routing).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Gate soldering and wire splicing)، (C - Logic synthesis and power charging)، (D - Clock timing and instruction decoding)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Cell layout and channel routing') is the correct choice:\nVLSI design is standardly decomposed into two sequential search subproblems: cell layout (positioning components) and channel routing (wiring connections).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Gate soldering and wire splicing), (C - Logic synthesis and power charging), (D - Clock timing and instruction decoding)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Cell layout and channel routing') is the correct choice:\nVLSI design is standardly decomposed into two sequential search subproblems: cell layout (positioning components) and channel routing (wiring connections).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Gate soldering and wire splicing), (C - Logic synthesis and power charging), (D - Clock timing and instruction decoding)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في تصميم الدوائر الإلكترونية، تنقسم مشكلة تخطيط VLSI عادةً إلى أي مشكلتين فرعيتين متسلسلتين؟",
+    "optionsAr": [
+      "تخطيط الخلية وتوجيه القناة",
+      "لحام البوابة وربط الأسلاك",
+      "التوليف المنطقي وشحن الطاقة",
+      "توقيت الساعة وفك التعليمات"
+    ]
   },
   {
     "id": 106,
@@ -1653,7 +2348,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - The search space has one continuous dimension for each joint angle):\nتخطيط حركة ذراع الروبوت متعدد المفاصل معقد لأن فضاء التكوين يمتلك بعداً مستمراً (Continuous dimension) مستقلاً لكل زاوية من زوايا مفاصل الذراع.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Robot arms cannot execute rotation actions)، (C - Robot arms have no initial state)، (D - The cost of arm movement is always negative)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'The search space has one continuous dimension for each joint angle') is the correct choice:\nRobot arm motion planning is complex because the configuration space has continuous degrees of freedom—one continuous dimension per joint angle.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Robot arms cannot execute rotation actions), (C - Robot arms have no initial state), (D - The cost of arm movement is always negative)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'The search space has one continuous dimension for each joint angle') is the correct choice:\nRobot arm motion planning is complex because the configuration space has continuous degrees of freedom—one continuous dimension per joint angle.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Robot arms cannot execute rotation actions), (C - Robot arms have no initial state), (D - The cost of arm movement is always negative)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا يعتبر تخطيط حركة الروبوت لذراع الروبوت ذات المفاصل المتعددة أكثر تعقيدًا بكثير من تحديد مسار الشبكة ثنائية الأبعاد؟",
+    "optionsAr": [
+      "مساحة البحث لها بعد واحد مستمر لكل زاوية مشتركة",
+      "لا يمكن لأذرع الروبوت تنفيذ إجراءات التدوير",
+      "أذرع الروبوت ليس لها حالة أولية",
+      "تكلفة حركة الذراع دائما سلبية"
+    ]
   },
   {
     "id": 107,
@@ -1669,7 +2371,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Testing whether a physical part can be added without geometrical collision requires complex spatial reasoning):\nفي مسألة تسلسل التجميع الآلي، اختبار قانونية الفعل مكلف حسابياً لأنه يتطلب اختبارات تصادم هندسية ثلاثية الأبعاد معقدة للتأكد من إمكانية تركيب الجزء دون اصطدام.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Parts cannot be painted beforehand)، (C - Assembly lines always have zero-cost actions)، (D - The state space is always completely acyclic)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Testing whether a physical part can be added without geometrical collision requires complex spatial reasoning') is the correct choice:\nIn assembly sequencing, checking legal actions is expensive because testing whether a physical part can be inserted collision-free requires complex 3D spatial reasoning.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Parts cannot be painted beforehand), (C - Assembly lines always have zero-cost actions), (D - The state space is always completely acyclic)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Testing whether a physical part can be added without geometrical collision requires complex spatial reasoning') is the correct choice:\nIn assembly sequencing, checking legal actions is expensive because testing whether a physical part can be inserted collision-free requires complex 3D spatial reasoning.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Parts cannot be painted beforehand), (C - Assembly lines always have zero-cost actions), (D - The state space is always completely acyclic)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في تسلسل التجميع التلقائي لأشياء التصنيع، ما الذي يجعل العثور على الإجراءات القانونية مكلفًا من الناحية الحسابية بشكل خاص؟",
+    "optionsAr": [
+      "لا يمكن طلاء الأجزاء مسبقًا",
+      "يتطلب اختبار إمكانية إضافة جزء مادي دون تصادم هندسي تفكيرًا مكانيًا معقدًا",
+      "خطوط التجميع لها دائمًا إجراءات بدون تكلفة",
+      "مساحة الحالة دائمًا ما تكون غير دورية تمامًا"
+    ]
   },
   {
     "id": 108,
@@ -1685,7 +2394,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Protein design):\nفي البيولوجيا الحسابية، مسألة 'تصميم البروتين' (Protein design) تبحث عن تسلسل من الأحماض الأمينية ينطوي في بنية فراغية ثلاثية الأبعاد مرغوبة لمكافحة الأمراض.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Sokoban routing)، (C - Touring problem)، (D - Grid world navigation)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Protein design') is the correct choice:\nProtein design searches for an amino acid sequence that will fold into a specific 3D target structure with desired therapeutic properties.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Sokoban routing), (C - Touring problem), (D - Grid world navigation)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Protein design') is the correct choice:\nProtein design searches for an amino acid sequence that will fold into a specific 3D target structure with desired therapeutic properties.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Sokoban routing), (C - Touring problem), (D - Grid world navigation)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في علم الأحياء الحسابي، ما هي مشكلة البحث التي تهدف إلى العثور على سلسلة من الأحماض الأمينية التي يمكن طيها في بنية ثلاثية الأبعاد محددة لعلاج الأمراض؟",
+    "optionsAr": [
+      "تصميم البروتين",
+      "توجيه سوكوبان",
+      "مشكلة التجول",
+      "شبكة الملاحة العالمية"
+    ]
   },
   {
     "id": 109,
@@ -1701,7 +2417,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - The state space describes physical configurations of the world, while the search tree describes search paths between states):\nالفرق الجوهري هو أن فضاء الحالات يصف التكوينات الفيزيائية الحقيقية للعالم، بينما تصف شجرة البحث مسارات البحث المتولدة لاستكشاف تلك الحالات.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - The search tree contains physical cities, while the state space contains abstract nodes)، (C - State space graphs can never contain loops, while search trees always contain loops)، (D - There is no difference; the two terms are identical)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'The state space describes physical configurations of the world, while the search tree describes search paths between states') is the correct choice:\nThe state space graph represents physical world configurations, whereas a search tree represents the search paths explored between those states.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - The search tree contains physical cities, while the state space contains abstract nodes), (C - State space graphs can never contain loops, while search trees always contain loops), (D - There is no difference; the two terms are identical)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'The state space describes physical configurations of the world, while the search tree describes search paths between states') is the correct choice:\nThe state space graph represents physical world configurations, whereas a search tree represents the search paths explored between those states.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - The search tree contains physical cities, while the state space contains abstract nodes), (C - State space graphs can never contain loops, while search trees always contain loops), (D - There is no difference; the two terms are identical)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هو الفرق المفاهيمي الرئيسي بين الرسم البياني الفضائي للحالة وشجرة البحث؟",
+    "optionsAr": [
+      "تصف مساحة الحالة التكوينات المادية للعالم، بينما تصف شجرة البحث مسارات البحث بين الحالات",
+      "تحتوي شجرة البحث على مدن فعلية، بينما تحتوي مساحة الحالة على عقد مجردة",
+      "لا يمكن أبدًا أن تحتوي الرسوم البيانية الفضائية للحالة على حلقات، بينما تحتوي أشجار البحث دائمًا على حلقات",
+      "لا يوجد فرق. المصطلحين متطابقان"
+    ]
   },
   {
     "id": 110,
@@ -1717,7 +2440,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - Four components):\nتحتوي عقدة شجرة البحث على أربعة مكونات أساسية: الحالة الممثلة (STATE)، العقدة الأم (PARENT)، الفعل المتخذ (ACTION)، وتكلفة المسار (PATH-COST).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Two components)، (B - Three components)، (D - Six components)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'Four components') is the correct choice:\nA search tree node data structure comprises four core components: STATE, PARENT, ACTION, and PATH-COST.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Two components), (B - Three components), (D - Six components)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'Four components') is the correct choice:\nA search tree node data structure comprises four core components: STATE, PARENT, ACTION, and PATH-COST.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Two components), (B - Three components), (D - Six components)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في خوارزميات البحث، يتم تمثيل كل عقدة في شجرة البحث بواسطة بنية بيانات تحتوي على عدد المكونات الأساسية؟",
+    "optionsAr": [
+      "مكونين",
+      "ثلاثة مكونات",
+      "أربعة مكونات",
+      "ستة مكونات"
+    ]
   },
   {
     "id": 111,
@@ -1733,7 +2463,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - STATE, PARENT, ACTION, PATH-COST):\nالمكونات الأربعة لعقدة شجرة البحث هي: STATE (الحالة)، PARENT (المؤشر للعقدة الأصلية)، ACTION (الفعل المنفذ)، و PATH-COST (التكلفة التراكمية g).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - SENSOR, ACTUATOR, PROGRAM, REWARD)، (C - INPUT, OUTPUT, WEIGHT, BIAS)، (D - DEPTH, WIDTH, HEIGHT, VOLUME)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'STATE, PARENT, ACTION, PATH-COST') is the correct choice:\nThe four required components of a node in a search tree are STATE, PARENT, ACTION, and PATH-COST.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - SENSOR, ACTUATOR, PROGRAM, REWARD), (C - INPUT, OUTPUT, WEIGHT, BIAS), (D - DEPTH, WIDTH, HEIGHT, VOLUME)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'STATE, PARENT, ACTION, PATH-COST') is the correct choice:\nThe four required components of a node in a search tree are STATE, PARENT, ACTION, and PATH-COST.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - SENSOR, ACTUATOR, PROGRAM, REWARD), (C - INPUT, OUTPUT, WEIGHT, BIAS), (D - DEPTH, WIDTH, HEIGHT, VOLUME)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "أي مما يلي يسرد بشكل صحيح المكونات الأربعة لبنية بيانات عقدة شجرة البحث؟",
+    "optionsAr": [
+      "الدولة، الوالد، الإجراء، تكلفة المسار",
+      "المستشعر، المشغل، البرنامج، المكافأة",
+      "المدخلات والمخرجات والوزن والتحيز",
+      "العمق، العرض، الارتفاع، الحجم"
+    ]
   },
   {
     "id": 112,
@@ -1749,7 +2486,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - It allows the algorithm to trace backward from the goal node to recover the complete solution path):\nوظيفة مؤشر العقدة الأم (PARENT) هي تمكين الخوارزمية من تتبع المسار عكسياً من عقدة الهدف حتى الحالة الابتدائية لاستخراج تسلسل الحل الكامل.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - It determines the heuristic value h(n))، (C - It calculates the branching factor b)، (D - It resets the search when memory runs out)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'It allows the algorithm to trace backward from the goal node to recover the complete solution path') is the correct choice:\nThe PARENT pointer enables the search algorithm to backtrack from the goal node to the root, reconstructing the complete solution path.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - It determines the heuristic value h(n)), (C - It calculates the branching factor b), (D - It resets the search when memory runs out)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'It allows the algorithm to trace backward from the goal node to recover the complete solution path') is the correct choice:\nThe PARENT pointer enables the search algorithm to backtrack from the goal node to the root, reconstructing the complete solution path.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - It determines the heuristic value h(n)), (C - It calculates the branching factor b), (D - It resets the search when memory runs out)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هي الوظيفة الأساسية لمؤشر PARENT المخزن داخل كل بنية بيانات عقدة في شجرة البحث؟",
+    "optionsAr": [
+      "يسمح للخوارزمية بالتتبع للخلف من عقدة الهدف لاستعادة مسار الحل الكامل",
+      "إنه يحدد القيمة الإرشادية h(n)",
+      "يقوم بحساب عامل التفرع ب",
+      "يقوم بإعادة ضبط البحث عند نفاد الذاكرة"
+    ]
   },
   {
     "id": 113,
@@ -1765,7 +2509,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Frontier (or open list)):\nتسمى مجموعة العقد التي تم توليدها ولكن لم يتم توسيعها بعد باسم 'الجبهة' (Frontier) أو القائمة المفتوحة (Open list).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Reached set)، (C - State space)، (D - Solution path)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Frontier (or open list)') is the correct choice:\nThe frontier (or open list) is the set of all leaf nodes that have been generated but not yet expanded in the search tree.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Reached set), (C - State space), (D - Solution path)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Frontier (or open list)') is the correct choice:\nThe frontier (or open list) is the set of all leaf nodes that have been generated but not yet expanded in the search tree.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Reached set), (C - State space), (D - Solution path)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "مجموعة كافة العقد التي تم إنشاؤها ولكن لم يتم توسيعها بعد في شجرة البحث تسمى:",
+    "optionsAr": [
+      "وصلت المجموعة",
+      "الحدود (أو القائمة المفتوحة)",
+      "مساحة الدولة",
+      "مسار الحل"
+    ]
   },
   {
     "id": 114,
@@ -1781,7 +2532,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - POP(frontier)):\nعملية POP(frontier) هي العملية القياسية التي تقوم بإزالة واسترجاع العقدة الأولى من طابور الجبهة وفقاً لاستراتيجية ترتيب الطابور.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - TOP(frontier))، (C - ADD(node, frontier))، (D - IS-EMPTY(frontier))] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'POP(frontier)') is the correct choice:\nPOP(frontier) is the standard queue operation that removes and returns the top node according to the queue's specific ordering strategy.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - TOP(frontier)), (C - ADD(node, frontier)), (D - IS-EMPTY(frontier))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'POP(frontier)') is the correct choice:\nPOP(frontier) is the standard queue operation that removes and returns the top node according to the queue's specific ordering strategy.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - TOP(frontier)), (C - ADD(node, frontier)), (D - IS-EMPTY(frontier))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هي عملية قائمة الانتظار الحدودية التي تقوم بإزالة العقدة العليا وإرجاعها وفقًا لاستراتيجية ترتيب قائمة الانتظار؟",
+    "optionsAr": [
+      "أعلى (الحدود)",
+      "بوب (الحدود)",
+      "ADD(عقدة، حدود)",
+      "IS-فارغة (الحدود)"
+    ]
   },
   {
     "id": 115,
@@ -1797,7 +2555,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - The interior (fully expanded states) and the exterior (unreached states)):\nخاصية الفصل (Separation property) في بحث المخططات تعني أن الجبهة تشكل حداً فاصلاً بين المنطقة الداخلية (الحالات التي تم فحصها) والمنطقة الخارجية (الحالات غير المستكشفة).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The start node and the root node)، (C - The goal states and the initial states)، (D - Admissible states and inadmissible states)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'The interior (fully expanded states) and the exterior (unreached states)') is the correct choice:\nThe separation property states that the frontier acts as a boundary separating the interior (fully explored states) from the exterior (unreached states).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The start node and the root node), (C - The goal states and the initial states), (D - Admissible states and inadmissible states)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'The interior (fully expanded states) and the exterior (unreached states)') is the correct choice:\nThe separation property states that the frontier acts as a boundary separating the interior (fully explored states) from the exterior (unreached states).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The start node and the root node), (C - The goal states and the initial states), (D - Admissible states and inadmissible states)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "توضح خاصية الفصل للبحث في الرسم البياني أن الحدود تعمل كحدود تفصل بين منطقتين من الرسم البياني الفضائي للحالة؟",
+    "optionsAr": [
+      "عقدة البداية والعقدة الجذرية",
+      "الداخلية (الحالات الموسعة بالكامل) والخارجية (الحالات التي لم يتم الوصول إليها)",
+      "حالات الهدف والحالات الأولية",
+      "الدول المقبولة والدول غير المقبولة"
+    ]
   },
   {
     "id": 116,
@@ -1813,7 +2578,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Cycle (or loopy path)):\nالمسار الذي يشكل حلقة بالعودة إلى حالة سابقة تم استكشافها بالفعل (مثل Arad -> Sibiu -> Arad) يُسمى دورة (Cycle أو Loopy path).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Heuristic path)، (C - Optimal branch)، (D - Dominant edge)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Cycle (or loopy path)') is the correct choice:\nA search path that returns to a previously visited state is termed a cycle (or loopy path).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Heuristic path), (C - Optimal branch), (D - Dominant edge)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Cycle (or loopy path)') is the correct choice:\nA search path that returns to a previously visited state is termed a cycle (or loopy path).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Heuristic path), (C - Optimal branch), (D - Dominant edge)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في خوارزميات البحث، المسار الذي يشكل حلقة من خلال العودة إلى الحالة التي تمت زيارتها مسبقًا (على سبيل المثال، Arad -> Sibiu -> Arad) يُعرف باسم:",
+    "optionsAr": [
+      "المسار الإرشادي",
+      "دورة (أو مسار مجنون)",
+      "الفرع الأمثل",
+      "الحافة المهيمنة"
+    ]
   },
   {
     "id": 117,
@@ -1829,7 +2601,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Graph search maintains a reached table to detect and eliminate redundant paths, whereas tree- like search does not):\nالبحث في المخططات (Graph search) يحتفظ بجدول الحالات التي تم الوصول إليها (Reached table) لتجنب تكرار المسارات وحلقاتها، بينما لا يفعل البحث الشجري ذلك.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Graph search only runs on planar maps, while tree-like search runs on trees)، (C - Tree-like search always uses a priority queue, while graph search uses a stack)، (D - Graph search cannot find optimal paths)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Graph search maintains a reached table to detect and eliminate redundant paths, whereas tree- like search does not') is the correct choice:\nGraph search maintains a reached table to detect and eliminate redundant paths and cycles, whereas tree-like search does not.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Graph search only runs on planar maps, while tree-like search runs on trees), (C - Tree-like search always uses a priority queue, while graph search uses a stack), (D - Graph search cannot find optimal paths)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Graph search maintains a reached table to detect and eliminate redundant paths, whereas tree- like search does not') is the correct choice:\nGraph search maintains a reached table to detect and eliminate redundant paths and cycles, whereas tree-like search does not.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Graph search only runs on planar maps, while tree-like search runs on trees), (C - Tree-like search always uses a priority queue, while graph search uses a stack), (D - Graph search cannot find optimal paths)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هو الفرق الخوارزمي الحاسم بين خوارزمية \"بحث الرسم البياني\" وخوارزمية \"البحث الشبيه بالشجرة\"؟",
+    "optionsAr": [
+      "يحتفظ بحث الرسم البياني بجدول تم الوصول إليه لاكتشاف المسارات الزائدة عن الحاجة وإزالتها، في حين أن البحث الشبيه بالشجرة لا",
+      "يتم تشغيل بحث الرسم البياني فقط على الخرائط المستوية، بينما يتم تشغيل البحث المشابه للشجرة على الأشجار",
+      "يستخدم البحث الشبيه بالشجرة دائمًا قائمة انتظار ذات أولوية، بينما يستخدم البحث في الرسم البياني المكدس",
+      "لا يمكن لبحث الرسم البياني العثور على المسارات المثالية"
+    ]
   },
   {
     "id": 118,
@@ -1845,7 +2624,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Space Complexity):\nتُقيَّم خوارزميات البحث بأربعة أبعاد: الاكتمال (Completeness)، والأمثلية (Cost Optimality)، والتعقيد الزمني (Time)، والتعقيد المكاني (Space Complexity).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Expandability)، (C - Heuristic Slope)، (D - Branching Depth)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Space Complexity') is the correct choice:\nThe four fundamental criteria for evaluating search algorithms are Completeness, Cost Optimality, Time Complexity, and Space Complexity.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Expandability), (C - Heuristic Slope), (D - Branching Depth)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Space Complexity') is the correct choice:\nThe four fundamental criteria for evaluating search algorithms are Completeness, Cost Optimality, Time Complexity, and Space Complexity.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Expandability), (C - Heuristic Slope), (D - Branching Depth)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "يتم تقييم خوارزميات البحث رسميًا وفقًا لأربعة أبعاد أساسية: الاكتمال، وتحسين التكلفة، وتعقيد الوقت، و:",
+    "optionsAr": [
+      "قابلية التوسيع",
+      "تعقيد الفضاء",
+      "المنحدر الإرشادي",
+      "عمق المتفرعة"
+    ]
   },
   {
     "id": 119,
@@ -1861,7 +2647,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Find a solution whenever one exists, and correctly report failure when there is none):\nتكون الخوارزمية مكتملة (Complete) إذا كانت تضمن إيجاد حل كلما وجد حل للمشكلة، وتعلن الفشل بشكل صحيح إذا لم يكن هناك حل.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Find a solution in less than one second)، (C - Use no more than O(bm) memory)، (D - Expand all nodes in the state space graph)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Find a solution whenever one exists, and correctly report failure when there is none') is the correct choice:\nAn algorithm is complete if it is guaranteed to find a solution when one exists, and correctly report failure if no solution exists.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Find a solution in less than one second), (C - Use no more than O(bm) memory), (D - Expand all nodes in the state space graph)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Find a solution whenever one exists, and correctly report failure when there is none') is the correct choice:\nAn algorithm is complete if it is guaranteed to find a solution when one exists, and correctly report failure if no solution exists.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Find a solution in less than one second), (C - Use no more than O(bm) memory), (D - Expand all nodes in the state space graph)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "يُطلق على خوارزمية البحث اسم \"كاملة\" إذا تم ضمانها لـ:",
+    "optionsAr": [
+      "ابحث عن الحل في أقل من ثانية",
+      "ابحث عن حل عندما يكون موجودًا، وقم بالإبلاغ بشكل صحيح عن الفشل في حالة عدم وجوده",
+      "لا تستخدم أكثر من ذاكرة O(bm)",
+      "قم بتوسيع كافة العقد في الرسم البياني الفضائي للحالة"
+    ]
   },
   {
     "id": 120,
@@ -1877,7 +2670,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Always finds a solution path with the lowest path cost among all possible solutions):\nتكون الخوارزمية ذات أمثلية من حيث التكلفة (Cost-optimal) إذا كانت تجد دائماً الحل الأقل تكلفة إجمالية من بين جميع الحلول الممكنة.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Expands the lowest number of total nodes)، (C - Operates with linear memory complexity O(bd))، (D - Evaluates only admissible heuristic functions)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Always finds a solution path with the lowest path cost among all possible solutions') is the correct choice:\nA search algorithm is cost-optimal if it always returns a solution path with the lowest possible path cost among all solutions.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Expands the lowest number of total nodes), (C - Operates with linear memory complexity O(bd)), (D - Evaluates only admissible heuristic functions)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Always finds a solution path with the lowest path cost among all possible solutions') is the correct choice:\nA search algorithm is cost-optimal if it always returns a solution path with the lowest possible path cost among all solutions.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Expands the lowest number of total nodes), (C - Operates with linear memory complexity O(bd)), (D - Evaluates only admissible heuristic functions)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "توصف خوارزمية البحث بأنها \"التكلفة المثلى\" إذا كانت:",
+    "optionsAr": [
+      "يوسع أقل عدد من العقد الإجمالية",
+      "يجد دائمًا مسار الحل بأقل تكلفة للمسار بين جميع الحلول الممكنة",
+      "تعمل مع تعقيد الذاكرة الخطية O(bd)",
+      "يقيم فقط وظائف ارشادية مقبولة"
+    ]
   },
   {
     "id": 121,
@@ -1893,7 +2693,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - The maximum branching factor of the search tree):\nفي تحليل التعقيد النظري لخوارزميات البحث، يمثل الرمز 'b' أقصى معامل تفرع (Branching factor) للشجرة، أي الحد الأقصى لخلفاء أي عقدة.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The depth of the shallowest goal)، (C - The total number of cycles in the graph)، (D - The straight-line distance to Bucharest)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'The maximum branching factor of the search tree') is the correct choice:\nIn search complexity analysis, 'b' represents the maximum branching factor—the maximum number of successors of any node.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The depth of the shallowest goal), (C - The total number of cycles in the graph), (D - The straight-line distance to Bucharest)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'The maximum branching factor of the search tree') is the correct choice:\nIn search complexity analysis, 'b' represents the maximum branching factor—the maximum number of successors of any node.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The depth of the shallowest goal), (C - The total number of cycles in the graph), (D - The straight-line distance to Bucharest)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في تحليل التعقيد النظري لخوارزميات البحث، ماذا تمثل المعلمة \"b\"؟",
+    "optionsAr": [
+      "عمق المرمى الضحل",
+      "الحد الأقصى لعامل التفرع لشجرة البحث",
+      "إجمالي عدد الدورات في الرسم البياني",
+      "مسافة الخط المستقيم إلى بوخارست"
+    ]
   },
   {
     "id": 122,
@@ -1909,7 +2716,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - The depth of the shallowest optimal solution):\nفي معادلات التعقيد، يمثل الرمز 'd' عمق (Depth) الحل الأقل عمقاً (الضحل) أو الحل الأمثل في شجرة البحث.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The maximum depth of the search tree (can be infinite))، (C - The diameter of the graph)، (D - The number of action costs equal to 1)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'The depth of the shallowest optimal solution') is the correct choice:\nIn search complexity equations, 'd' denotes the depth of the shallowest optimal goal node.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The maximum depth of the search tree (can be infinite)), (C - The diameter of the graph), (D - The number of action costs equal to 1)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'The depth of the shallowest optimal solution') is the correct choice:\nIn search complexity equations, 'd' denotes the depth of the shallowest optimal goal node.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The maximum depth of the search tree (can be infinite)), (C - The diameter of the graph), (D - The number of action costs equal to 1)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في صيغ تعقيد البحث، ما الذي تشير إليه المعلمة \"d\"؟",
+    "optionsAr": [
+      "أقصى عمق لشجرة البحث (يمكن أن يكون لا نهائي)",
+      "عمق الحل الأمثل الضحل",
+      "قطر الرسم البياني",
+      "عدد تكاليف الإجراء يساوي 1"
+    ]
   },
   {
     "id": 123,
@@ -1925,7 +2739,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - The maximum length of any path in the state space (which may be infinite)):\nفي معادلات تعقيد خوارزميات البحث، يمثل 'm' أقصى عمق أو أطول مسار ممكن في فضاء الحالات (والذي قد يكون لانهائياً).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - The number of misplaced tiles in the 8-puzzle)، (C - The minimum step cost epsilon)، (D - The number of goal states)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'The maximum length of any path in the state space (which may be infinite)') is the correct choice:\nIn complexity notation, 'm' denotes the maximum length (or depth) of any path in the state space.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - The number of misplaced tiles in the 8-puzzle), (C - The minimum step cost epsilon), (D - The number of goal states)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'The maximum length of any path in the state space (which may be infinite)') is the correct choice:\nIn complexity notation, 'm' denotes the maximum length (or depth) of any path in the state space.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - The number of misplaced tiles in the 8-puzzle), (C - The minimum step cost epsilon), (D - The number of goal states)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في صيغ تعقيد البحث، ما الذي تشير إليه المعلمة \"m\"؟",
+    "optionsAr": [
+      "الحد الأقصى لطول أي مسار في مساحة الحالة (والذي قد يكون لا نهائيًا)",
+      "عدد البلاطات في غير مكانها في اللغز الـ 8",
+      "الحد الأدنى لتكلفة الخطوة إبسيلون",
+      "عدد حالات الهدف"
+    ]
   },
   {
     "id": 124,
@@ -1941,7 +2762,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Diameter):\nيُعرَّف 'قطر' فضاء الحالات (Diameter) بأنه أقصى عدد من الخطوات اللازمة للانتقال بين أي حالتين على أقصر مسار يربط بينهما.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Radius)، (C - Perimeter)، (D - Branching index)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Diameter') is the correct choice:\nThe diameter of a state space is the maximum number of steps required to get from any state to any other state along the shortest path between them.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Radius), (C - Perimeter), (D - Branching index)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Diameter') is the correct choice:\nThe diameter of a state space is the maximum number of steps required to get from any state to any other state along the shortest path between them.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Radius), (C - Perimeter), (D - Branching index)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "الحد الأقصى لعدد الخطوات المطلوبة للانتقال من أي ولاية إلى أي ولاية أخرى على طول أقصر مسار بينهما في الرسم البياني لمساحة الولاية يسمى:",
+    "optionsAr": [
+      "نصف القطر",
+      "القطر",
+      "محيط",
+      "مؤشر المتفرعة"
+    ]
   },
   {
     "id": 125,
@@ -1957,7 +2785,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - The grid has only 100 cells, but the number of paths of length 9 is over 100 million):\nفي شبكة خالية من العوائق 10x10، عدد الخلايا 100 فقط، لكن عدد المسارات بطول 9 يتجاوز 100 مليون، مما يوضح الأثر الكارثي للمسارات المتكررة على سرعة البحث.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - 10x10 grids cannot be solved using breadth-first search)، (C - Moving in 8 directions makes the environment continuous)، (D - The agent's sensors fail after 9 steps)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'The grid has only 100 cells, but the number of paths of length 9 is over 100 million') is the correct choice:\nIn a 10x10 grid with only 100 cells, the number of paths of length 9 exceeds 100 million, showing why eliminating redundant paths is essential.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - 10x10 grids cannot be solved using breadth-first search), (C - Moving in 8 directions makes the environment continuous), (D - The agent's sensors fail after 9 steps)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'The grid has only 100 cells, but the number of paths of length 9 is over 100 million') is the correct choice:\nIn a 10x10 grid with only 100 cells, the number of paths of length 9 exceeds 100 million, showing why eliminating redundant paths is essential.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - 10x10 grids cannot be solved using breadth-first search), (C - Moving in 8 directions makes the environment continuous), (D - The agent's sensors fail after 9 steps)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في عالم شبكي خالٍ من العوائق 10x10 حيث يمكن للوكيل التحرك في 8 اتجاهات، لماذا يعد التخلص من المسارات الزائدة أمرًا بالغ الأهمية لسرعة البحث؟",
+    "optionsAr": [
+      "تحتوي الشبكة على 100 خلية فقط، لكن عدد المسارات بطول 9 يزيد عن 100 مليون",
+      "لا يمكن حل شبكات 10x10 باستخدام بحث العرض الأول",
+      "التحرك في 8 اتجاهات يجعل البيئة مستمرة",
+      "أجهزة استشعار الوكيل تفشل بعد 9 خطوات"
+    ]
   },
   {
     "id": 126,
@@ -1973,7 +2808,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Expand the shallowest unexpanded node in the frontier):\nقاعدة التوسيع في البحث بالعرض أولاً (BFS) هي دائماً توسيع العقدة الأقل عمقاً (الأضحل) غير الموسعة في الجبهة، مستكشفة المستويات طبقة تلو الأخرى.\n\n💡 مثال وتطبيق واقعي:\nخوارزمية BFS تشبه قطرة ماء تسقط في بركة فتنتشر أمواجها دائرياً طبقة تلو الأخرى، مما يضمن العثور على أقرب حل أولاً.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Expand the deepest unexpanded node in the frontier)، (C - Expand the node with the lowest heuristic value h(n))، (D - Expand the node with the largest path cost g(n))] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Expand the shallowest unexpanded node in the frontier') is the correct choice:\nBreadth-First Search (BFS) always expands the shallowest unexpanded node in the frontier, exploring nodes level by level.\n\n💡 Real-World Example & Application:\nBFS expands like ripples in a pond, exploring nodes level by level to guarantee finding the shallowest solution first.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Expand the deepest unexpanded node in the frontier), (C - Expand the node with the lowest heuristic value h(n)), (D - Expand the node with the largest path cost g(n))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Expand the shallowest unexpanded node in the frontier') is the correct choice:\nBreadth-First Search (BFS) always expands the shallowest unexpanded node in the frontier, exploring nodes level by level.\n\n💡 Real-World Example & Application:\nBFS expands like ripples in a pond, exploring nodes level by level to guarantee finding the shallowest solution first.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Expand the deepest unexpanded node in the frontier), (C - Expand the node with the lowest heuristic value h(n)), (D - Expand the node with the largest path cost g(n))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هي قاعدة توسيع العقدة التي تحكم البحث بالعرض الأول (BFS)؟",
+    "optionsAr": [
+      "قم بتوسيع أعمق عقدة غير موسعة في الحدود",
+      "قم بتوسيع العقدة الضحلة غير الموسعة في الحدود",
+      "قم بتوسيع العقدة ذات القيمة الإرشادية الأقل h(n)",
+      "قم بتوسيع العقدة ذات تكلفة المسار الأكبر g(n)"
+    ]
   },
   {
     "id": 127,
@@ -1989,7 +2831,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - FIFO queue):\nيُنفذ طابور الجبهة في خوارزمية البحث بالعرض أولاً (BFS) باستخدام طابور من نوع FIFO (يدخل أولاً يخرج أولاً)، ليضمن توسيع العقد بحسب ترتيب توليدها.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - LIFO stack)، (C - Priority queue ordered by h(n))، (D - Hash table)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'FIFO queue') is the correct choice:\nBFS uses a FIFO (First-In, First-Out) queue for its frontier to ensure that shallower nodes generated earlier are expanded first.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - LIFO stack), (C - Priority queue ordered by h(n)), (D - Hash table)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'FIFO queue') is the correct choice:\nBFS uses a FIFO (First-In, First-Out) queue for its frontier to ensure that shallower nodes generated earlier are expanded first.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - LIFO stack), (C - Priority queue ordered by h(n)), (D - Hash table)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هي بنية البيانات المستخدمة بشكل تقليدي لتنفيذ قائمة الانتظار الحدودية في بحث العرض الأول (BFS)؟",
+    "optionsAr": [
+      "مكدس LIFO",
+      "قائمة انتظار FIFO",
+      "قائمة انتظار الأولوية مرتبة بواسطة h(n)",
+      "جدول التجزئة"
+    ]
   },
   {
     "id": 128,
@@ -2005,7 +2854,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Because any child generated at depth d is guaranteed to be among the shallowest paths to that state):\nيطبق BFS اختبار الهدف المبكر (عند التوليد) بأمان لأن أي عقدة ابن تُولَّد عند العمق d تضمن أن مسارها هو من بين الأقصر عمقاً لتلك الحالة.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Because BFS never expands nodes with equal costs)، (C - Because priority queues require early goal testing)، (D - Because early goal testing reduces the branching factor to 1)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Because any child generated at depth d is guaranteed to be among the shallowest paths to that state') is the correct choice:\nBFS can safely use early goal testing (upon generation) because any child generated at depth d is guaranteed to be along a shortest-hop path to that state.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Because BFS never expands nodes with equal costs), (C - Because priority queues require early goal testing), (D - Because early goal testing reduces the branching factor to 1)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Because any child generated at depth d is guaranteed to be among the shallowest paths to that state') is the correct choice:\nBFS can safely use early goal testing (upon generation) because any child generated at depth d is guaranteed to be along a shortest-hop path to that state.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Because BFS never expands nodes with equal costs), (C - Because priority queues require early goal testing), (D - Because early goal testing reduces the branching factor to 1)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا يمكن لبحث العرض الأول تطبيق \"اختبار الهدف المبكر\" (التحقق مما إذا كانت العقدة هدفًا بمجرد إنشائها، وليس عند ظهورها)؟",
+    "optionsAr": [
+      "لأن BFS لا يقوم أبدًا بتوسيع العقد بتكاليف متساوية",
+      "لأن أي طفل يتم إنشاؤه على العمق d يضمن أن يكون من بين المسارات الأكثر ضحالة لتلك الحالة",
+      "لأن قوائم الانتظار ذات الأولوية تتطلب اختبار الهدف مبكرًا",
+      "لأن اختبار الهدف المبكر يقلل من عامل التفرع إلى 1"
+    ]
   },
   {
     "id": 129,
@@ -2021,7 +2877,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - O(b^d)):\nالتعقيد المكاني لـ BFS في أسوأ الحالات هو O(b^d) لأن جميع العقد عند المستوى d تظل محفوظة في الذاكرة داخل الجبهة في نفس الوقت.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - O(bd))، (C - O(bm))، (D - O(d^b))] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'O(b^d)') is the correct choice:\nThe worst-case space complexity of BFS is O(b^d) because all generated nodes at depth d must reside simultaneously in the frontier queue.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - O(bd)), (C - O(bm)), (D - O(d^b))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'O(b^d)') is the correct choice:\nThe worst-case space complexity of BFS is O(b^d) because all generated nodes at depth d must reside simultaneously in the frontier queue.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - O(bd)), (C - O(bm)), (D - O(d^b))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هو التعقيد الفضائي الأسوأ في البحث عن العرض الأول لعامل التفرع b وعمق الحل d؟",
+    "optionsAr": [
+      "يا(دينار بحريني)",
+      "يا(ب^د)",
+      "يا(بم)",
+      "يا (د ^ ب)"
+    ]
   },
   {
     "id": 130,
@@ -2037,7 +2900,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - All generated nodes at level d must remain stored in memory, consuming gigabytes or terabytes rapidly):\nتعتبر متطلبات الذاكرة العائق الأكبر لـ BFS لأن حفظ جميع عقد المستوى d يتطلب مساحات تخزين بالغيغابايت والتيرابايت تتجاوز سعة الذاكرة بسرعة هائلة.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Memory access is slower than CPU processing)، (C - BFS empties the memory buffer after every expansion)، (D - FIFO queues can only hold a maximum of 1,000 nodes in modern operating systems)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'All generated nodes at level d must remain stored in memory, consuming gigabytes or terabytes rapidly') is the correct choice:\nMemory is the critical bottleneck in BFS because storing all generated nodes at depth d rapidly exhausts available RAM long before CPU time expires.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Memory access is slower than CPU processing), (C - BFS empties the memory buffer after every expansion), (D - FIFO queues can only hold a maximum of 1,000 nodes in modern operating systems)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'All generated nodes at level d must remain stored in memory, consuming gigabytes or terabytes rapidly') is the correct choice:\nMemory is the critical bottleneck in BFS because storing all generated nodes at depth d rapidly exhausts available RAM long before CPU time expires.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Memory access is slower than CPU processing), (C - BFS empties the memory buffer after every expansion), (D - FIFO queues can only hold a maximum of 1,000 nodes in modern operating systems)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا تعتبر متطلبات الذاكرة (تعقيد المساحة) عادةً بمثابة عنق الزجاجة العملي الأكثر خطورة بكثير من وقت التنفيذ للبحث الموسع؟",
+    "optionsAr": [
+      "الوصول إلى الذاكرة أبطأ من معالجة وحدة المعالجة المركزية",
+      "يجب أن تظل كافة العقد التي تم إنشاؤها في المستوى d مخزنة في الذاكرة، مما يؤدي إلى استهلاك الجيجابايت أو التيرابايت بسرعة",
+      "يقوم BFS بإفراغ المخزن المؤقت للذاكرة بعد كل توسيع",
+      "يمكن أن تحتوي قوائم انتظار FIFO على 1000 عقدة كحد أقصى في أنظمة التشغيل الحديثة"
+    ]
   },
   {
     "id": 131,
@@ -2053,7 +2923,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Uniform-Cost Search (UCS)):\nخوارزمية البحث بالتكلفة الموحدة (Uniform-Cost Search) في الذكاء الاصطناعي تكافئ تماماً خوارزمية دكسترا (Dijkstra) لأقصر مسار في نظرية المخططات.\n\n💡 مثال وتطبيق واقعي:\nخوارزمية UCS (وهي نفسها Dijkstra) تستخدمها أنظمة الملاحة لإيجاد المسار الأقل تكلفة بالوقود أو المسافة الموزونة بالكيلومترات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Depth-First Search)، (C - Greedy Best-First Search)، (D - Iterative Deepening Search)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Uniform-Cost Search (UCS)') is the correct choice:\nUniform-Cost Search (UCS) is the artificial intelligence search equivalent of Dijkstra's algorithm for finding shortest paths in non-negative weighted graphs.\n\n💡 Real-World Example & Application:\nUCS (equivalent to Dijkstra) powers turn-by-turn GPS navigation finding the strictly cheapest mileage/toll route.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Depth-First Search), (C - Greedy Best-First Search), (D - Iterative Deepening Search)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Uniform-Cost Search (UCS)') is the correct choice:\nUniform-Cost Search (UCS) is the artificial intelligence search equivalent of Dijkstra's algorithm for finding shortest paths in non-negative weighted graphs.\n\n💡 Real-World Example & Application:\nUCS (equivalent to Dijkstra) powers turn-by-turn GPS navigation finding the strictly cheapest mileage/toll route.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Depth-First Search), (C - Greedy Best-First Search), (D - Iterative Deepening Search)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هي الخوارزمية التي تعادل خوارزمية Dijkstra للمسار الأقصر في أدبيات بحث الذكاء الاصطناعي؟",
+    "optionsAr": [
+      "العمق-البحث الأول",
+      "بحث التكلفة الموحدة (UCS)",
+      "الجشع أفضل البحث الأول",
+      "بحث التعميق التكراري"
+    ]
   },
   {
     "id": 132,
@@ -2069,7 +2946,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - The node with the lowest path cost g(n) from the start state):\nتختار خوارزمية البحث بالتكلفة الموحدة (UCS) لتوسيعها العقدة التي تمتلك أقل تكلفة مسار تراكمية g(n) محسوبة من الحالة الابتدائية.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The node with the deepest level in the tree)، (C - The node with the largest number of children)، (D - The node generated most recently)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'The node with the lowest path cost g(n) from the start state') is the correct choice:\nUCS always selects for expansion the frontier node with the lowest cumulative path cost g(n) from the start state.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The node with the deepest level in the tree), (C - The node with the largest number of children), (D - The node generated most recently)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'The node with the lowest path cost g(n) from the start state') is the correct choice:\nUCS always selects for expansion the frontier node with the lowest cumulative path cost g(n) from the start state.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The node with the deepest level in the tree), (C - The node with the largest number of children), (D - The node generated most recently)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في بحث التكلفة الموحدة، ما هي العقدة من الحدود التي تم تحديدها للتوسع في كل خطوة؟",
+    "optionsAr": [
+      "العقدة ذات المستوى الأعمق في الشجرة",
+      "العقدة ذات أقل تكلفة للمسار g(n) من حالة البداية",
+      "العقدة التي تحتوي على أكبر عدد من الأطفال",
+      "العقدة التي تم إنشاؤها مؤخرًا"
+    ]
   },
   {
     "id": 133,
@@ -2085,7 +2969,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Because a cheaper path to the goal might be discovered later before the goal is expanded):\nيجب على UCS تطبيق اختبار الهدف المتأخر (عند السحب من الطابور) لأنه قد يتم اكتشاف مسار بديل أرخص إلى الهدف لاحقاً قبل أن يتم سحب عقدة الهدف وتوسيعها.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - To prevent memory overflow in the priority queue)، (C - Because priority queues do not support early insertion)، (D - Because the start node has cost g(n) = 0)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Because a cheaper path to the goal might be discovered later before the goal is expanded') is the correct choice:\nUCS must test for a goal when a node is POPPED because a lower-cost path to the goal might still be discovered before the goal node is expanded.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - To prevent memory overflow in the priority queue), (C - Because priority queues do not support early insertion), (D - Because the start node has cost g(n) = 0)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Because a cheaper path to the goal might be discovered later before the goal is expanded') is the correct choice:\nUCS must test for a goal when a node is POPPED because a lower-cost path to the goal might still be discovered before the goal node is expanded.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - To prevent memory overflow in the priority queue), (C - Because priority queues do not support early insertion), (D - Because the start node has cost g(n) = 0)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا يجب أن يقوم بحث التكلفة الموحدة بإجراء اختبار الهدف الخاص به عند ظهور العقدة من الحدود (اختبار متأخر)، وليس عند إنشائها (اختبار مبكر)؟",
+    "optionsAr": [
+      "لمنع تجاوز الذاكرة في قائمة الانتظار ذات الأولوية",
+      "لأن الطريق الأرخص للوصول إلى الهدف قد يتم اكتشافه لاحقاً قبل توسيع الهدف",
+      "لأن قوائم الانتظار ذات الأولوية لا تدعم الإدراج المبكر",
+      "لأن تكلفة عقدة البداية g(n) = 0"
+    ]
   },
   {
     "id": 134,
@@ -2101,7 +2992,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Expand the deepest unexpanded node in the frontier):\nقاعدة التوسيع في البحث بالعمق أولاً (DFS) هي دائماً توسيع العقدة الأكثر عمقاً (الأعمق) غير الموسعة في الجبهة للغوص في الفروع.\n\n💡 مثال وتطبيق واقعي:\nخوارزمية DFS تشبه استكشاف متاهة بالسير في ممر واحد حتى النهاية المسدودة قبل التراجع خطوة واحدة لتجربة الممر المجاور.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Expand the shallowest unexpanded node)، (C - Expand the node with the highest heuristic value)، (D - Expand nodes in random order)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Expand the deepest unexpanded node in the frontier') is the correct choice:\nDepth-First Search (DFS) always selects the deepest unexpanded node in the frontier for expansion, driving down a branch until it hits a dead end.\n\n💡 Real-World Example & Application:\nDFS operates like exploring a maze by following a single tunnel to its dead end before backtracking one step to try another.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Expand the shallowest unexpanded node), (C - Expand the node with the highest heuristic value), (D - Expand nodes in random order)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Expand the deepest unexpanded node in the frontier') is the correct choice:\nDepth-First Search (DFS) always selects the deepest unexpanded node in the frontier for expansion, driving down a branch until it hits a dead end.\n\n💡 Real-World Example & Application:\nDFS operates like exploring a maze by following a single tunnel to its dead end before backtracking one step to try another.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Expand the shallowest unexpanded node), (C - Expand the node with the highest heuristic value), (D - Expand nodes in random order)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هي قاعدة توسيع العقدة التي تميز البحث العميق الأول (DFS)؟",
+    "optionsAr": [
+      "قم بتوسيع العقدة الضحلة غير الموسعة",
+      "قم بتوسيع أعمق عقدة غير موسعة في الحدود",
+      "قم بتوسيع العقدة ذات القيمة الإرشادية الأعلى",
+      "قم بتوسيع العقد بترتيب عشوائي"
+    ]
   },
   {
     "id": 135,
@@ -2117,7 +3015,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - LIFO stack):\nتُستخدم بنية المكدس LIFO (يدخل آخراً يخرج أولاً) لإدارة الجبهة في البحث بالعمق أولاً (DFS)، مما يضمن استكشاف أحدث الفروع المتولدة أولاً.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - FIFO queue)، (C - Priority queue ordered by g(n))، (D - Binary min-heap)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'LIFO stack') is the correct choice:\nDFS utilizes a LIFO (Last-In, First-Out) stack structure for its frontier, ensuring the most recently generated deepest nodes are processed first.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - FIFO queue), (C - Priority queue ordered by g(n)), (D - Binary min-heap)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'LIFO stack') is the correct choice:\nDFS utilizes a LIFO (Last-In, First-Out) stack structure for its frontier, ensuring the most recently generated deepest nodes are processed first.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - FIFO queue), (C - Priority queue ordered by g(n)), (D - Binary min-heap)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هي بنية البيانات المستخدمة للحفاظ على الحدود في البحث القياسي للعمق الأول؟",
+    "optionsAr": [
+      "مكدس LIFO",
+      "قائمة انتظار FIFO",
+      "قائمة الانتظار ذات الأولوية مرتبة حسب g(n)",
+      "الحد الأدنى الثنائي"
+    ]
   },
   {
     "id": 136,
@@ -2133,7 +3038,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - It has a modest linear space complexity of O(bm)):\nالميزة العملية الكبرى للبحث بالعمق أولاً الشجري هي تعقيده المكاني الخطي المعتدل O(bm)، حيث لا يحتاج سوى لتخزين مسار الفرع الحالي وعقد أشقائه.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - It is always guaranteed to find the optimal cost solution)، (C - It never visits redundant paths or cycles)، (D - Its time complexity is always O(d))] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'It has a modest linear space complexity of O(bm)') is the correct choice:\nThe primary practical advantage of tree-like DFS is its modest linear space complexity of O(bm), storing only the current path and unexplored siblings.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - It is always guaranteed to find the optimal cost solution), (C - It never visits redundant paths or cycles), (D - Its time complexity is always O(d))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'It has a modest linear space complexity of O(bm)') is the correct choice:\nThe primary practical advantage of tree-like DFS is its modest linear space complexity of O(bm), storing only the current path and unexplored siblings.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - It is always guaranteed to find the optimal cost solution), (C - It never visits redundant paths or cycles), (D - Its time complexity is always O(d))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هي الميزة العملية الأساسية لبحث العمق أولاً الشبيه بالشجرة مقارنة ببحث العرض أولًا؟",
+    "optionsAr": [
+      "نضمن دائمًا إيجاد الحل الأمثل للتكلفة",
+      "لها تعقيد فضاء خطي متواضع قدره O(bm)",
+      "لا يقوم أبدًا بزيارة المسارات أو الدورات الزائدة عن الحاجة",
+      "التعقيد الزمني هو دائمًا O(d)"
+    ]
   },
   {
     "id": 137,
@@ -2149,7 +3061,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Because it can follow an infinite branch or cycle forever without ever exploring other alternatives):\nيعتبر البحث بالعمق أولاً الشجري غير مكتمل في الفضاءات ذات العمق اللانهائي أو الحلقات، لأنه قد يتبع فرعاً لا نهائياً دون أن يرجع لتجربة الخيارات الأخرى.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Because the stack runs out of memory immediately)، (C - Because the goal test cannot be performed at depth greater than 10)، (D - Because step costs are strictly positive)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Because it can follow an infinite branch or cycle forever without ever exploring other alternatives') is the correct choice:\nTree-like DFS is incomplete in infinite-depth or cyclical graphs because it can get trapped following an infinite path forever without exploring alternatives.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Because the stack runs out of memory immediately), (C - Because the goal test cannot be performed at depth greater than 10), (D - Because step costs are strictly positive)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Because it can follow an infinite branch or cycle forever without ever exploring other alternatives') is the correct choice:\nTree-like DFS is incomplete in infinite-depth or cyclical graphs because it can get trapped following an infinite path forever without exploring alternatives.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Because the stack runs out of memory immediately), (C - Because the goal test cannot be performed at depth greater than 10), (D - Because step costs are strictly positive)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا لا يكتمل البحث القياسي في العمق-الأول الشبيه بالشجرة في مساحات الحالة ذات العمق أو الدورات اللانهائية؟",
+    "optionsAr": [
+      "لأن الذاكرة المكدسة نفدت على الفور",
+      "لأنه يمكن أن يتبع فرعًا أو دورة لا نهائية إلى الأبد دون استكشاف بدائل أخرى",
+      "لأنه لا يمكن إجراء اختبار الهدف على عمق أكبر من 10",
+      "لأن تكاليف الخطوة إيجابية تمامًا"
+    ]
   },
   {
     "id": 138,
@@ -2165,7 +3084,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Exactly one successor):\nفي بحث التراجع (Backtracking search)، وهو البديل الموفر للذاكرة لـ DFS، يتم توليد خليفة واحد فقط في كل خطوة، مما يقلل استهلاك الذاكرة إلى O(m).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - All b successors)، (C - b / 2 successors)، (D - Zero successors)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Exactly one successor') is the correct choice:\nIn backtracking search, only a single successor node is generated at a time, keeping memory requirements down to O(m).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - All b successors), (C - b / 2 successors), (D - Zero successors)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Exactly one successor') is the correct choice:\nIn backtracking search, only a single successor node is generated at a time, keeping memory requirements down to O(m).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - All b successors), (C - b / 2 successors), (D - Zero successors)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في البحث التراجعي (متغير DFS موفر للذاكرة)، ما عدد العقد اللاحقة التي يتم إنشاؤها في المرة الواحدة؟",
+    "optionsAr": [
+      "خليفة واحد بالضبط",
+      "جميع ب خلفاء",
+      "ب/ 2 خلفاء",
+      "صفر خلفاء"
+    ]
   },
   {
     "id": 139,
@@ -2181,7 +3107,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Nodes at depth l are treated as if they have no successors):\nفي البحث محدود العمق (DLS)، عندما يصل فرع البحث إلى حد العمق المحدد مسبقاً l، تُعامل العقد عند هذا الحد وكأنها لا تمتلك أي خلفاء.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The entire program crashes with failure)، (C - The algorithm switches immediately to BFS)، (D - The heuristic function is doubled)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Nodes at depth l are treated as if they have no successors') is the correct choice:\nIn Depth-Limited Search (DLS), nodes at depth limit l are treated as having no successors, pruning any deeper exploration along that branch.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The entire program crashes with failure), (C - The algorithm switches immediately to BFS), (D - The heuristic function is doubled)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Nodes at depth l are treated as if they have no successors') is the correct choice:\nIn Depth-Limited Search (DLS), nodes at depth limit l are treated as having no successors, pruning any deeper exploration along that branch.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The entire program crashes with failure), (C - The algorithm switches immediately to BFS), (D - The heuristic function is doubled)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في البحث المحدود العمق (DLS)، ماذا يحدث عندما يصل فرع البحث إلى حد العمق المحدد مسبقًا؟",
+    "optionsAr": [
+      "البرنامج بأكمله يتعطل مع الفشل",
+      "يتم التعامل مع العقد في العمق l كما لو لم يكن لها خلفاء",
+      "تتحول الخوارزمية فورًا إلى BFS",
+      "يتم مضاعفة وظيفة الكشف عن مجريات الأمور"
+    ]
   },
   {
     "id": 140,
@@ -2197,7 +3130,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Solution node, Failure, or Cutoff):\nوفقاً لخوارزمية DLS الرسمية، فإنها تعيد إحدى ثلاث قيم محتملة: عقدة الحل إذا وُجد، أو الفشل (Failure) إذا استُنفد الفضاء، أو الانقطاع (Cutoff) إذا بلغت حد العمق.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Success, Error, Timeout)، (C - True, False, Null)، (D - Optimal, Suboptimal, Infeasible)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Solution node, Failure, or Cutoff') is the correct choice:\nDepth-Limited Search returns one of three values: a solution node, failure (no solution exists), or cutoff (depth limit was reached).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Success, Error, Timeout), (C - True, False, Null), (D - Optimal, Suboptimal, Infeasible)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Solution node, Failure, or Cutoff') is the correct choice:\nDepth-Limited Search returns one of three values: a solution node, failure (no solution exists), or cutoff (depth limit was reached).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Success, Error, Timeout), (C - True, False, Null), (D - Optimal, Suboptimal, Infeasible)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "وفقًا للكود الكاذب في الشكل 3.12، ما هي الأنواع الثلاثة المحتملة من القيم؟",
+    "optionsAr": [
+      "نجاح، خطأ، مهلة",
+      "عقدة الحل أو الفشل أو القطع",
+      "صحيح، خطأ، لاغ",
+      "الأمثل، دون الأمثل، غير ممكن"
+    ]
   },
   {
     "id": 141,
@@ -2213,7 +3153,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - It systematically tries increasing depth limits: first 0, then 1, then 2, and so on):\nتحدد خوارزمية التعميق التكراري (IDS) حد العمق عبر زيادته تدريجياً وبشكل منهجي: تبدأ بالحد 0، ثم 1، ثم 2، وهكذا حتى تجد الحل.\n\n💡 مثال وتطبيق واقعي:\nخوارزمية IDS تعطي ميزات BFS (الأمثلية وأقصر مسار) مع ميزات DFS (استهلاك ذاكرة منخفض جداً يناسب الحواسيب المحدودة).\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - It starts at infinity and decreases by 1 each step)، (C - It sets the depth limit equal to the heuristic value h(n))، (D - It generates a random depth limit between 1 and 100)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'It systematically tries increasing depth limits: first 0, then 1, then 2, and so on') is the correct choice:\nIterative Deepening Search (IDS) systematically increases the depth limit l starting from 0, then 1, 2, and so on until a goal is found.\n\n💡 Real-World Example & Application:\nIDS gives the optimality and completeness of BFS while using the tiny linear memory footprint of DFS.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - It starts at infinity and decreases by 1 each step), (C - It sets the depth limit equal to the heuristic value h(n)), (D - It generates a random depth limit between 1 and 100)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'It systematically tries increasing depth limits: first 0, then 1, then 2, and so on') is the correct choice:\nIterative Deepening Search (IDS) systematically increases the depth limit l starting from 0, then 1, 2, and so on until a goal is found.\n\n💡 Real-World Example & Application:\nIDS gives the optimality and completeness of BFS while using the tiny linear memory footprint of DFS.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - It starts at infinity and decreases by 1 each step), (C - It sets the depth limit equal to the heuristic value h(n)), (D - It generates a random depth limit between 1 and 100)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "كيف يحدد بحث التعميق التكراري (IDS) حد العمق l أثناء تنفيذه؟",
+    "optionsAr": [
+      "يبدأ من ما لا نهاية ويتناقص بمقدار 1 في كل خطوة",
+      "فهو يحاول بشكل منهجي زيادة حدود العمق: أولاً 0، ثم 1، ثم 2، وهكذا",
+      "يقوم بتعيين حد العمق مساويًا للقيمة الإرشادية h(n)",
+      "يقوم بإنشاء حد عمق عشوائي بين 1 و 100"
+    ]
   },
   {
     "id": 142,
@@ -2229,7 +3176,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - O(bd)):\nالتعقيد المكاني لخوارزمية التعميق التكراري (IDS) هو تعقيد خطي O(bd)، حيث تجمع بين كفاءة ذاكرة DFS وضمانات اكتمال وأمثلية BFS.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - O(b^d))، (C - O(d^b))، (D - O(m!))] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'O(bd)') is the correct choice:\nThe space complexity of IDS is O(bd), combining the modest linear memory usage of DFS with the completeness and optimality guarantees of BFS.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - O(b^d)), (C - O(d^b)), (D - O(m!))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'O(bd)') is the correct choice:\nThe space complexity of IDS is O(bd), combining the modest linear memory usage of DFS with the completeness and optimality guarantees of BFS.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - O(b^d)), (C - O(d^b)), (D - O(m!))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هو تعقيد الذاكرة (المساحة) للبحث التعميق التكراري عندما يوجد حل في العمق d مع عامل التفرع b؟",
+    "optionsAr": [
+      "يا(ب^د)",
+      "يا(دينار بحريني)",
+      "يا (د ^ ب)",
+      "يا (م!)"
+    ]
   },
   {
     "id": 143,
@@ -2245,7 +3199,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Because the vast majority of nodes in an exponential tree reside in the bottom level d):\nإعادة توليد العقد العليا في IDS لا يمثل هدراً كبيراً في الأشجار ذات معامل التفرع b >= 2، لأن الغالبية الساحقة من العقد توجد في الطبقة السفلية d.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Because the upper nodes are permanently stored in cache)، (C - Because the processor runs 10 times faster on repeated nodes)، (D - Because upper nodes have a cost of zero)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Because the vast majority of nodes in an exponential tree reside in the bottom level d') is the correct choice:\nRegenerating upper-level nodes in IDS is not wasteful because for b >= 2, the vast majority of nodes in an exponential tree reside in the bottom level d.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Because the upper nodes are permanently stored in cache), (C - Because the processor runs 10 times faster on repeated nodes), (D - Because upper nodes have a cost of zero)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Because the vast majority of nodes in an exponential tree reside in the bottom level d') is the correct choice:\nRegenerating upper-level nodes in IDS is not wasteful because for b >= 2, the vast majority of nodes in an exponential tree reside in the bottom level d.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Because the upper nodes are permanently stored in cache), (C - Because the processor runs 10 times faster on repeated nodes), (D - Because upper nodes have a cost of zero)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا لا يعد التوليد المتكرر لعقد المستوى العلوي في بحث التعميق التكراري هدرًا حسابيًا كبيرًا في الأشجار ذات عامل المتفرعة b >= 2؟",
+    "optionsAr": [
+      "لأن العقد العلوية مخزنة بشكل دائم في ذاكرة التخزين المؤقت",
+      "لأن الغالبية العظمى من العقد في الشجرة الأسية تقع في المستوى السفلي d",
+      "لأن المعالج يعمل بشكل أسرع 10 مرات على العقد المتكررة",
+      "لأن تكلفة العقد العليا صفر"
+    ]
   },
   {
     "id": 144,
@@ -2261,7 +3222,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - It simultaneously searches forward from the initial state and backward from the goal state):\nالمبدأ التشغيلي للبحث ثنائي الاتجاه (Bidirectional Search) هو البحث في وقت متزامن للأمام من الحالة الابتدائية وللخلف من حالة الهدف حتى تلتقي الجبهتان.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - It runs Breadth-First Search and Depth-First Search in alternating turns)، (C - It searches the left subtree and right subtree simultaneously)، (D - It evaluates both admissible and inadmissible heuristics concurrently)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'It simultaneously searches forward from the initial state and backward from the goal state') is the correct choice:\nBidirectional search simultaneously runs two searches: forward from the initial state and backward from the goal, stopping when the two frontiers intersect.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - It runs Breadth-First Search and Depth-First Search in alternating turns), (C - It searches the left subtree and right subtree simultaneously), (D - It evaluates both admissible and inadmissible heuristics concurrently)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'It simultaneously searches forward from the initial state and backward from the goal state') is the correct choice:\nBidirectional search simultaneously runs two searches: forward from the initial state and backward from the goal, stopping when the two frontiers intersect.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - It runs Breadth-First Search and Depth-First Search in alternating turns), (C - It searches the left subtree and right subtree simultaneously), (D - It evaluates both admissible and inadmissible heuristics concurrently)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هو المبدأ التشغيلي الأساسي للبحث ثنائي الاتجاه؟",
+    "optionsAr": [
+      "يتم تشغيل بحث العرض الأول وبحث العمق أولاً بالتناوب",
+      "يقوم بالبحث في نفس الوقت للأمام من الحالة الأولية وللخلف من حالة الهدف",
+      "يقوم بالبحث في الشجرة الفرعية اليسرى والشجرة الفرعية اليمنى في وقت واحد",
+      "يقوم بتقييم كل من الاستدلالات المقبولة وغير المقبولة في وقت واحد"
+    ]
   },
   {
     "id": 145,
@@ -2277,7 +3245,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Searching two frontiers of depth d/2 takes time O(2 * b^(d/2)), which is exponentially smaller than O(b^d)):\nالدافع الحسابي للبحث ثنائي الاتجاه هو تقليص وقت البحث أسيّاً، حيث يستغرق بحث جبهتين عند العمق d/2 زمناً قدره O(2 * b^(d/2)) مقارنة بـ O(b^d).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - It completely eliminates the need for sensor data)، (C - It requires zero memory because frontiers never store states)، (D - It guarantees that all heuristics become strictly consistent)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Searching two frontiers of depth d/2 takes time O(2 * b^(d/2)), which is exponentially smaller than O(b^d)') is the correct choice:\nBidirectional search drastically cuts time because expanding two frontiers to depth d/2 requires O(2 * b^(d/2)), which is exponentially smaller than O(b^d).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - It completely eliminates the need for sensor data), (C - It requires zero memory because frontiers never store states), (D - It guarantees that all heuristics become strictly consistent)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Searching two frontiers of depth d/2 takes time O(2 * b^(d/2)), which is exponentially smaller than O(b^d)') is the correct choice:\nBidirectional search drastically cuts time because expanding two frontiers to depth d/2 requires O(2 * b^(d/2)), which is exponentially smaller than O(b^d).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - It completely eliminates the need for sensor data), (C - It requires zero memory because frontiers never store states), (D - It guarantees that all heuristics become strictly consistent)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هو الدافع الحسابي الأساسي لاستخدام البحث ثنائي الاتجاه بدلاً من البحث أحادي الاتجاه؟",
+    "optionsAr": [
+      "يستغرق البحث عن حدين للعمق d/2 وقتًا O(2 * b^(d/2))، وهو أصغر بشكل كبير من O(b^d)",
+      "إنه يلغي تمامًا الحاجة إلى بيانات المستشعر",
+      "لا يتطلب أي ذاكرة لأن الحدود لا تخزن الحالات",
+      "إنه يضمن أن جميع الاستدلالات تصبح متسقة بشكل صارم"
+    ]
   },
   {
     "id": 146,
@@ -2293,7 +3268,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - The estimated cost of the cheapest path from the state at node n to a goal state):\nتقدر الدالة الحدسية h(n) في خوارزميات البحث المستنير التكلفة المتوقعة لأرخص مسار من الحالة عند العقدة n للوصول إلى أقرب حالة هدف.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The exact cost of the path from the root node to node n)، (C - The total number of nodes currently stored in the frontier)، (D - The time required to execute the next action in seconds)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'The estimated cost of the cheapest path from the state at node n to a goal state') is the correct choice:\nThe heuristic function h(n) estimates the cost of the cheapest path from the state at node n to reach a goal state.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The exact cost of the path from the root node to node n), (C - The total number of nodes currently stored in the frontier), (D - The time required to execute the next action in seconds)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'The estimated cost of the cheapest path from the state at node n to a goal state') is the correct choice:\nThe heuristic function h(n) estimates the cost of the cheapest path from the state at node n to reach a goal state.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The exact cost of the path from the root node to node n), (C - The total number of nodes currently stored in the frontier), (D - The time required to execute the next action in seconds)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في خوارزميات البحث المستنيرة، ما الذي تقدره الدالة الإرشادية h(n)؟",
+    "optionsAr": [
+      "التكلفة الدقيقة للمسار من العقدة الجذرية إلى العقدة n",
+      "التكلفة المقدرة لأرخص مسار من الحالة عند العقدة n إلى حالة الهدف",
+      "إجمالي عدد العقد المخزنة حاليًا في الحدود",
+      "الوقت اللازم لتنفيذ الإجراء التالي بالثواني"
+    ]
   },
   {
     "id": 147,
@@ -2309,7 +3291,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - h(n) = 0):\nإذا كانت العقدة n تمثل حالة هدف صالحة، فإن التكلفة المتبقية للوصول إلى الهدف تكون صفراً بالضرورة، أي h(n) = 0.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - h(n) = 1)، (C - h(n) = infinity)، (D - h(n) = g(n))] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'h(n) = 0') is the correct choice:\nBy definition, if node n is already a goal state, the estimated remaining cost to reach the goal is zero: h(n) = 0.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - h(n) = 1), (C - h(n) = infinity), (D - h(n) = g(n))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'h(n) = 0') is the correct choice:\nBy definition, if node n is already a goal state, the estimated remaining cost to reach the goal is zero: h(n) = 0.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - h(n) = 1), (C - h(n) = infinity), (D - h(n) = g(n))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "إذا كانت العقدة n تمثل حالة هدف صالحة، فما هي قيمة دالتها الإرشادية h(n)؟",
+    "optionsAr": [
+      "ح(ن) = 0",
+      "ح(ن) = 1",
+      "ح(ن) = ما لا نهاية",
+      "ح(ن) = ز(ن)"
+    ]
   },
   {
     "id": 148,
@@ -2325,7 +3314,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Straight-line distance (h_SLD)):\nفي مسألة خرائط رومانيا، الحدس الأكثر شيوعاً لتقدير المسافة إلى بوخارست هو مسافة الخط المستقيم الجوية (Straight-line distance / h_SLD).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Number of toll booths)، (C - Manhattan grid distance)، (D - Number of intermediate cities)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Straight-line distance (h_SLD)') is the correct choice:\nIn the Romania navigation problem, straight-line distance to Bucharest (h_SLD) is the standard heuristic used to guide search.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Number of toll booths), (C - Manhattan grid distance), (D - Number of intermediate cities)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Straight-line distance (h_SLD)') is the correct choice:\nIn the Romania navigation problem, straight-line distance to Bucharest (h_SLD) is the standard heuristic used to guide search.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Number of toll booths), (C - Manhattan grid distance), (D - Number of intermediate cities)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في مشكلة تحديد الطريق في رومانيا، ما هي الوظيفة الإرشادية المستخدمة عادة لتقدير المسافة إلى بوخارست؟",
+    "optionsAr": [
+      "عدد أكشاك تحصيل الرسوم",
+      "مسافة الخط المستقيم (h_SLD)",
+      "مسافة شبكة مانهاتن",
+      "عدد المدن الوسيطة"
+    ]
   },
   {
     "id": 149,
@@ -2341,7 +3337,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - The node that has the lowest heuristic value h(n)):\nيختار البحث الجشع بأفضلية أولاً (Greedy Best-First) لتوسيعه العقدة التي تمتلك أقل قيمة حدسية h(n)، أي التي تبدو الأقرب للهدف محلياً.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The node that has the lowest path cost g(n))، (C - The node with the largest evaluation function f(n))، (D - The node that has been in the queue the longest)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'The node that has the lowest heuristic value h(n)') is the correct choice:\nGreedy Best-First Search selects the node with the lowest heuristic value h(n), expanding what appears closest to the goal in the short term.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The node that has the lowest path cost g(n)), (C - The node with the largest evaluation function f(n)), (D - The node that has been in the queue the longest)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'The node that has the lowest heuristic value h(n)') is the correct choice:\nGreedy Best-First Search selects the node with the lowest heuristic value h(n), expanding what appears closest to the goal in the short term.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The node that has the lowest path cost g(n)), (C - The node with the largest evaluation function f(n)), (D - The node that has been in the queue the longest)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "هل يختار البحث الجشع الأفضل-الأول أي عقدة من الحدود للتوسع في كل خطوة؟",
+    "optionsAr": [
+      "العقدة التي لديها أقل تكلفة للمسار g(n)",
+      "العقدة التي لها أقل قيمة إرشادية h(n)",
+      "العقدة ذات أكبر دالة تقييم f(n)",
+      "العقدة التي ظلت في قائمة الانتظار لفترة أطول"
+    ]
   },
   {
     "id": 150,
@@ -2357,7 +3360,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - It greedily chooses locally promising steps (like Fagaras) that lead to longer overall routes (450 miles vs 418 miles)):\nالبحث الجشع ليس أمثل التكلفة لأنه يركز على الخطوات المغرية محلياً (مثل الذهاب إلى Fagaras) التي قد تؤدي لمسار إجمالي أطول (450 ميلاً بدلاً من 418).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - It cannot handle graphs with cycles)، (C - Its priority queue reverses the order of cities)، (D - It requires straight-line distance to be negative)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'It greedily chooses locally promising steps (like Fagaras) that lead to longer overall routes (450 miles vs 418 miles)') is the correct choice:\nGreedy search is not cost-optimal because local heuristic choices can mislead the search into suboptimal paths (e.g. Arad->Fagaras->Bucharest at cost 450 vs 418).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - It cannot handle graphs with cycles), (C - Its priority queue reverses the order of cities), (D - It requires straight-line distance to be negative)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'It greedily chooses locally promising steps (like Fagaras) that lead to longer overall routes (450 miles vs 418 miles)') is the correct choice:\nGreedy search is not cost-optimal because local heuristic choices can mislead the search into suboptimal paths (e.g. Arad->Fagaras->Bucharest at cost 450 vs 418).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - It cannot handle graphs with cycles), (C - Its priority queue reverses the order of cities), (D - It requires straight-line distance to be negative)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا يعتبر البحث الجشع الأفضل-الأول ليس الأمثل من حيث التكلفة في العثور على الطريق من أراد إلى بوخارست؟",
+    "optionsAr": [
+      "لا يمكنه التعامل مع الرسوم البيانية ذات الدورات",
+      "يختار بجشع خطوات واعدة محليًا (مثل Fagaras) تؤدي إلى مسارات إجمالية أطول (450 ميلًا مقابل 418 ميلًا)",
+      "قائمة انتظار الأولوية الخاصة بها تعكس ترتيب المدن",
+      "يتطلب أن تكون مسافة الخط المستقيم سالبة"
+    ]
   },
   {
     "id": 151,
@@ -2373,7 +3383,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - f(n) = g(n) + h(n)):\nدالة التقييم القياسية في خوارزمية A* هي f(n) = g(n) + h(n)، حيث تمثل g التكلفة الفعلية المنفقة، و h التكلفة المقدرة المتبقية.\n\n💡 مثال وتطبيق واقعي:\nخوارزمية A* تجمع بين المسافة المقطوعة فعلياً g(n) والمسافة الجوية التقديرية المتبقية للهدف h(n)، مثل تقدير GPS لوقت الوصول المتبقي.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - f(n) = g(n) - h(n))، (C - f(n) = g(n) * h(n))، (D - f(n) = max(g(n), h(n)))] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'f(n) = g(n) + h(n)') is the correct choice:\nThe A* evaluation function is f(n) = g(n) + h(n), combining the cost already incurred g(n) with the estimated remaining cost h(n).\n\n💡 Real-World Example & Application:\nA* combines actual cost-so-far g(n) with estimated straight-line cost h(n), exactly like GPS ETA estimation.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - f(n) = g(n) - h(n)), (C - f(n) = g(n) * h(n)), (D - f(n) = max(g(n), h(n)))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'f(n) = g(n) + h(n)') is the correct choice:\nThe A* evaluation function is f(n) = g(n) + h(n), combining the cost already incurred g(n) with the estimated remaining cost h(n).\n\n💡 Real-World Example & Application:\nA* combines actual cost-so-far g(n) with estimated straight-line cost h(n), exactly like GPS ETA estimation.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - f(n) = g(n) - h(n)), (C - f(n) = g(n) * h(n)), (D - f(n) = max(g(n), h(n)))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في بحث A*، ما هي وظيفة التقييم القياسية f(n) المستخدمة لترتيب العقد في الحدود؟",
+    "optionsAr": [
+      "و(ن) = ز(ن) - ح(ن)",
+      "و(ن) = ز(ن) + ح(ن)",
+      "و(ن) = ز(ن) * ح(ن)",
+      "و(ن) = الحد الأقصى(ز(ن)، ح(ن))"
+    ]
   },
   {
     "id": 152,
@@ -2389,7 +3406,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - The estimated cost of the best path that continues from the start node through node n to a goal):\nتمثل f(n) في خوارزمية A* التكلفة الإجمالية المقدرة لأرخص مسار يمر من البداية عبر العقدة n وصولاً إلى الهدف.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The exact total execution time of the algorithm)، (C - The depth of the search tree divided by branching factor b)، (D - The penalty for visiting a redundant state)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'The estimated cost of the best path that continues from the start node through node n to a goal') is the correct choice:\nIn A*, f(n) represents the estimated total cost of the best solution path passing from the start node through node n to a goal.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The exact total execution time of the algorithm), (C - The depth of the search tree divided by branching factor b), (D - The penalty for visiting a redundant state)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'The estimated cost of the best path that continues from the start node through node n to a goal') is the correct choice:\nIn A*, f(n) represents the estimated total cost of the best solution path passing from the start node through node n to a goal.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The exact total execution time of the algorithm), (C - The depth of the search tree divided by branching factor b), (D - The penalty for visiting a redundant state)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في دالة التقييم A* f(n) = g(n) + h(n)، ماذا تمثل f(n) من الناحية المفاهيمية؟",
+    "optionsAr": [
+      "إجمالي وقت التنفيذ الدقيق للخوارزمية",
+      "التكلفة المقدرة لأفضل مسار يستمر من عقدة البداية عبر العقدة n إلى الهدف",
+      "عمق شجرة البحث مقسوما على عامل التفرع ب",
+      "عقوبة زيارة دولة زائدة عن الحاجة"
+    ]
   },
   {
     "id": 153,
@@ -2405,7 +3429,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - h(n) never overestimates the true cost to reach a goal, i.e., h(n) <= h*(n)):\nتكون الدالة الحدسية h(n) مقبولة (Admissible) إذا كانت لا تُبالغ أبداً في تقدير التكلفة الحقيقية للوصول للهدف، أي h(n) <= h*(n).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - h(n) is always greater than the true cost h*(n))، (C - h(n) is calculated in polynomial time)، (D - h(n) is an integer multiple of the branching factor)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'h(n) never overestimates the true cost to reach a goal, i.e., h(n) <= h*(n)') is the correct choice:\nA heuristic h(n) is admissible if it never overestimates the true minimal cost to achieve a goal, satisfying h(n) <= h*(n) for all n.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - h(n) is always greater than the true cost h*(n)), (C - h(n) is calculated in polynomial time), (D - h(n) is an integer multiple of the branching factor)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'h(n) never overestimates the true cost to reach a goal, i.e., h(n) <= h*(n)') is the correct choice:\nA heuristic h(n) is admissible if it never overestimates the true minimal cost to achieve a goal, satisfying h(n) <= h*(n) for all n.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - h(n) is always greater than the true cost h*(n)), (C - h(n) is calculated in polynomial time), (D - h(n) is an integer multiple of the branching factor)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "يتم تعريف الدالة الإرشادية h(n) رسميًا على أنها \"مقبولة\" إذا:",
+    "optionsAr": [
+      "h(n) دائمًا أكبر من التكلفة الحقيقية h*(n)",
+      "لا تبالغ h(n) أبدًا في تقدير التكلفة الحقيقية للوصول إلى الهدف، أي h(n) <= h*(n)",
+      "يتم حساب h(n) في زمن متعدد الحدود",
+      "h(n) هو عدد صحيح مضاعف لعامل التفرع"
+    ]
   },
   {
     "id": 154,
@@ -2421,7 +3452,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Optimistic):\nتُوصف الدالة الحدسية المقبولة بأنها 'متفائلة' (Optimistic) لأنها تعتقد دائماً أن تكلفة الوصول للهدف أقل أو مساوية للتكلفة الحقيقية.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Pessimistic)، (C - Random)، (D - Inconsistent)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Optimistic') is the correct choice:\nAn admissible heuristic is called optimistic because it always estimates the cost to reach the goal as being less than or equal to the true cost.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Pessimistic), (C - Random), (D - Inconsistent)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Optimistic') is the correct choice:\nAn admissible heuristic is called optimistic because it always estimates the cost to reach the goal as being less than or equal to the true cost.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Pessimistic), (C - Random), (D - Inconsistent)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "نظرًا لأن الاستدلال المقبول لا يبالغ أبدًا في تقدير التكلفة الحقيقية المتبقية للهدف، فإنه كثيرًا ما يوصف بأنه:",
+    "optionsAr": [
+      "متشائم",
+      "متفائل",
+      "عشوائي",
+      "غير متناسق"
+    ]
   },
   {
     "id": 155,
@@ -2437,7 +3475,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - The heuristic function h(n) is admissible):\nتنص النظرية الأساسية للبحث الحدسي على أن بحث A* الشجري يضمن الوصول للحل الأمثل تكلفة إذا كانت الدالة الحدسية h(n) مقبولة (Admissible).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - The branching factor b is less than 2)، (C - The state space is finite and acyclic)، (D - All action costs are equal to zero)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'The heuristic function h(n) is admissible') is the correct choice:\nTree-search A* is guaranteed to be cost-optimal if the heuristic function h(n) is admissible.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - The branching factor b is less than 2), (C - The state space is finite and acyclic), (D - All action costs are equal to zero)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'The heuristic function h(n) is admissible') is the correct choice:\nTree-search A* is guaranteed to be cost-optimal if the heuristic function h(n) is admissible.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - The branching factor b is less than 2), (C - The state space is finite and acyclic), (D - All action costs are equal to zero)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "وفقًا للنظرية الأساسية للبحث الإرشادي، فإن بحث A* الشبيه بالشجرة يضمن أن يكون مثاليًا من حيث التكلفة إذا:",
+    "optionsAr": [
+      "الدالة الإرشادية h(n) مقبولة",
+      "عامل التفرع b أقل من 2",
+      "مساحة الحالة محدودة وغير دورية",
+      "جميع تكاليف العمل تساوي الصفر"
+    ]
   },
   {
     "id": 156,
@@ -2453,7 +3498,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - h(n) <= c(n, a, n') + h(n')):\nتكون الدالة الحدسية متسقة (Consistent / Monotonic) إذا تحقق لكل عقدة وخليفتها: h(n) <= c(n, a, n') + h(n').\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - h(n) >= c(n, a, n') + h(n'))، (C - h(n) = c(n, a, n'))، (D - h(n) + h(n') <= c(n, a, n'))] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'h(n) <= c(n, a, n') + h(n')') is the correct choice:\nA heuristic is consistent (or monotonic) if for every node n and successor n' via action a, h(n) <= c(n, a, n') + h(n').\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - h(n) >= c(n, a, n') + h(n')), (C - h(n) = c(n, a, n')), (D - h(n) + h(n') <= c(n, a, n'))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'h(n) <= c(n, a, n') + h(n')') is the correct choice:\nA heuristic is consistent (or monotonic) if for every node n and successor n' via action a, h(n) <= c(n, a, n') + h(n').\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - h(n) >= c(n, a, n') + h(n')), (C - h(n) = c(n, a, n')), (D - h(n) + h(n') <= c(n, a, n'))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "تعتبر الدالة الإرشادية h(n) \"متسقة\" (أو رتيبة) إذا تم إنشاء كل عقدة n وكل عقدة لاحقة n بواسطة الإجراء a:",
+    "optionsAr": [
+      "h(n) <= c(n, a, n') + h(n')",
+      "h(n) >= c(n, a, n') + h(n')",
+      "h(n) = c(n, a, n')",
+      "ح(ن) + ح(ن') <= ج(ن، أ، ن')"
+    ]
   },
   {
     "id": 157,
@@ -2469,7 +3521,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Triangle inequality):\nشرط الاتساق الحدسي h(n) <= c(n, a, n') + h(n') هو تطبيق رياضي مباشر لمتباينة المثلث (Triangle inequality) في الهندسة.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Pythagorean theorem)، (C - Cauchy-Schwarz inequality)، (D - Central limit theorem)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Triangle inequality') is the correct choice:\nHeuristic consistency is a direct application of the triangle inequality, stating that one side of a triangle cannot exceed the sum of the other two sides.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Pythagorean theorem), (C - Cauchy-Schwarz inequality), (D - Central limit theorem)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Triangle inequality') is the correct choice:\nHeuristic consistency is a direct application of the triangle inequality, stating that one side of a triangle cannot exceed the sum of the other two sides.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Pythagorean theorem), (C - Cauchy-Schwarz inequality), (D - Central limit theorem)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "الشرط الرياضي للاتساق الإرشادي هو تطبيق مباشر لأي مبدأ هندسي؟",
+    "optionsAr": [
+      "نظرية فيثاغورس",
+      "متباينة المثلث",
+      "عدم المساواة بين كوشي وشوارتز",
+      "نظرية الحد المركزي"
+    ]
   },
   {
     "id": 158,
@@ -2485,7 +3544,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Every consistent heuristic is admissible, but not every admissible heuristic is consistent):\nكل دالة حدسية متسقة هي بالضرورة دالة مقبولة، ولكن ليست كل دالة مقبولة متسقة؛ فالاتساق شرط أشد صرامة من القبول.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Every admissible heuristic is consistent, but not vice versa)، (C - Consistency and admissibility are completely mutually exclusive)، (D - An admissible heuristic can never satisfy the triangle inequality)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Every consistent heuristic is admissible, but not every admissible heuristic is consistent') is the correct choice:\nEvery consistent heuristic is admissible, but an admissible heuristic is not necessarily consistent (consistency is a strictly stronger condition).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Every admissible heuristic is consistent, but not vice versa), (C - Consistency and admissibility are completely mutually exclusive), (D - An admissible heuristic can never satisfy the triangle inequality)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Every consistent heuristic is admissible, but not every admissible heuristic is consistent') is the correct choice:\nEvery consistent heuristic is admissible, but an admissible heuristic is not necessarily consistent (consistency is a strictly stronger condition).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Every admissible heuristic is consistent, but not vice versa), (C - Consistency and admissibility are completely mutually exclusive), (D - An admissible heuristic can never satisfy the triangle inequality)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هي العلاقة بين الاستدلال المتسق والاستدلال المقبول؟",
+    "optionsAr": [
+      "كل إرشادي متسق مقبول، ولكن ليس كل إرشادي مقبول متسق",
+      "كل ارشادي مقبول هو متسق، ولكن ليس العكس",
+      "الاتساق والمقبولية متنافيان تمامًا",
+      "لا يمكن للاستدلال المقبول أبدًا أن يفي بعدم المساواة في المثلث"
+    ]
   },
   {
     "id": 159,
@@ -2501,7 +3567,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - All reachable nodes with f(n) < C*):\nعند استخدام حدس متسق، تضمن خوارزمية A* توسيع جميع العقد التي تحقق f(n) < C*، حيث C* هي تكلفة المسار الأمثل.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - All nodes with f(n) > C*)، (C - Only nodes whose depth is less than d/2)، (D - Every node in the state space graph)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'All reachable nodes with f(n) < C*') is the correct choice:\nWith a consistent heuristic, A* is guaranteed to expand all reachable nodes whose evaluation function satisfies f(n) < C*.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - All nodes with f(n) > C*), (C - Only nodes whose depth is less than d/2), (D - Every node in the state space graph)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'All reachable nodes with f(n) < C*') is the correct choice:\nWith a consistent heuristic, A* is guaranteed to expand all reachable nodes whose evaluation function satisfies f(n) < C*.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - All nodes with f(n) > C*), (C - Only nodes whose depth is less than d/2), (D - Every node in the state space graph)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "إذا كانت C* هي تكلفة مسار الحل الأمثل، فما هي مجموعة العقد المضمونة للتوسيع بواسطة بحث A* باستخدام إرشادي متسق؟",
+    "optionsAr": [
+      "جميع العقد مع f(n) > C*",
+      "جميع العقد التي يمكن الوصول إليها باستخدام f(n) < C*",
+      "فقط العقد التي يقل عمقها عن d/2",
+      "كل عقدة في الرسم البياني لمساحة الدولة"
+    ]
   },
   {
     "id": 160,
@@ -2517,7 +3590,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - No other optimal search algorithm using the same heuristic can expand fewer nodes (up to tie- breaking)):\nتُوصف A* بالاتساق بأنها 'مثالية الكفاءة' (Optimally efficient) لأنه لا توجد خوارزمية أمثلية أخرى بنفس الحدس يمكنها توسيع عدد عقد أقل دون كسر الأمثلية.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - It uses less memory than Depth-First Search)، (C - Its run time is strictly linear in the solution depth d)، (D - It never computes the value of g(n))] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'No other optimal search algorithm using the same heuristic can expand fewer nodes (up to tie- breaking)') is the correct choice:\nA* with a consistent heuristic is optimally efficient because no optimal search algorithm using the same heuristic can expand fewer nodes.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - It uses less memory than Depth-First Search), (C - Its run time is strictly linear in the solution depth d), (D - It never computes the value of g(n))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'No other optimal search algorithm using the same heuristic can expand fewer nodes (up to tie- breaking)') is the correct choice:\nA* with a consistent heuristic is optimally efficient because no optimal search algorithm using the same heuristic can expand fewer nodes.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - It uses less memory than Depth-First Search), (C - Its run time is strictly linear in the solution depth d), (D - It never computes the value of g(n))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "يتم وصف A* ذو الاستدلال المتسق بأنه \"فعال على النحو الأمثل\" للأسباب التالية:",
+    "optionsAr": [
+      "يستخدم ذاكرة أقل من بحث العمق الأول",
+      "لا توجد خوارزمية بحث مثالية أخرى تستخدم نفس الاستدلال يمكنها توسيع عدد أقل من العقد (حتى كسر التعادل)",
+      "وقت تشغيله خطي تمامًا في عمق الحل d",
+      "لا يحسب أبدًا قيمة g(n)"
+    ]
   },
   {
     "id": 161,
@@ -2533,7 +3613,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Number of misplaced tiles (excluding the blank)):\nفي أحجية الأرقام الثمانية، تُعرَّف الدالة h1(n) بأنها عدد الألواح غير الموجودة في موضعها الصحيح مقارنة بالهدف (مع استبعاد الفراغ).\n\n💡 مثال وتطبيق واقعي:\nفي لغز الأرقام المنزلقة (8-puzzle): حدسية h1 تعد فقط عدد الأرقام غير الموجودة في مربعها الصحيح.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Sum of horizontal and vertical distances of tiles from their goal positions)، (C - Total number of legal moves available to the blank)، (D - Direct straight-line Euclidean distance)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Number of misplaced tiles (excluding the blank)') is the correct choice:\nIn the 8-puzzle, heuristic h1(n) is defined as the number of misplaced tiles (excluding the blank space).\n\n💡 Real-World Example & Application:\nIn the 8-puzzle: heuristic h1 simply counts the number of misplaced number tiles.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Sum of horizontal and vertical distances of tiles from their goal positions), (C - Total number of legal moves available to the blank), (D - Direct straight-line Euclidean distance)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Number of misplaced tiles (excluding the blank)') is the correct choice:\nIn the 8-puzzle, heuristic h1(n) is defined as the number of misplaced tiles (excluding the blank space).\n\n💡 Real-World Example & Application:\nIn the 8-puzzle: heuristic h1 simply counts the number of misplaced number tiles.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Sum of horizontal and vertical distances of tiles from their goal positions), (C - Total number of legal moves available to the blank), (D - Direct straight-line Euclidean distance)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في مسألة الألغاز الثمانية، يتم تعريف h1(n) الإرشادي على النحو التالي:",
+    "optionsAr": [
+      "مجموع المسافات الأفقية والرأسية للبلاطات من مواقع أهدافها",
+      "عدد البلاطات في غير مكانها (باستثناء الفراغات)",
+      "إجمالي عدد التحركات القانونية المتاحة للفراغ",
+      "المسافة الإقليدية المستقيمة المباشرة"
+    ]
   },
   {
     "id": 162,
@@ -2549,7 +3636,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - The sum of horizontal and vertical grid steps each tile must take to reach its goal square):\nتحسب حدسية مانهاتن h2(n) مجموع مسافات الخطوات الأفقية والرأسية المطلوبة لتحريك كل لوح من موضعه الحالي إلى موضعه المستهدف.\n\n💡 مثال وتطبيق واقعي:\nحدسية مانهاتن h2 تحسب عدد خطوات الشبكة الأفقية والرأسية المطلوبة لإيصال كل رقم لمكانه كأن لا توجد ألواح تعيقه.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The number of tiles currently in their exact goal squares)، (C - The straight-line diagonal Euclidean distance of all tiles)، (D - The product of row and column indices for each tile)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'The sum of horizontal and vertical grid steps each tile must take to reach its goal square') is the correct choice:\nThe Manhattan distance heuristic h2(n) sums the horizontal and vertical grid distances each tile must travel to reach its goal position.\n\n💡 Real-World Example & Application:\nManhattan distance h2 measures the exact horizontal + vertical grid steps each tile must travel to reach its home square.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The number of tiles currently in their exact goal squares), (C - The straight-line diagonal Euclidean distance of all tiles), (D - The product of row and column indices for each tile)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'The sum of horizontal and vertical grid steps each tile must take to reach its goal square') is the correct choice:\nThe Manhattan distance heuristic h2(n) sums the horizontal and vertical grid distances each tile must travel to reach its goal position.\n\n💡 Real-World Example & Application:\nManhattan distance h2 measures the exact horizontal + vertical grid steps each tile must travel to reach its home square.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The number of tiles currently in their exact goal squares), (C - The straight-line diagonal Euclidean distance of all tiles), (D - The product of row and column indices for each tile)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في مسألة الألغاز الثمانية، يتم حساب المسافة الإرشادية في مانهاتن h2(n):",
+    "optionsAr": [
+      "عدد المربعات الموجودة حاليًا في مربعات الأهداف المحددة",
+      "مجموع خطوات الشبكة الأفقية والرأسية التي يجب أن يتخذها كل بلاط للوصول إلى مربع الهدف",
+      "المسافة الإقليدية القطرية المستقيمة لجميع البلاطات",
+      "حاصل ضرب مؤشرات الصفوف والأعمدة لكل بلاطة"
+    ]
   },
   {
     "id": 163,
@@ -2565,7 +3659,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - h2 dominates h1):\nإذا كانت h1 و h2 مقبولين، وكانت h2(n) >= h1(n) لجميع العقد، فإننا نقول رياضياً إن الحدسية h2 تهيمن على h1 (Dominates).\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - h1 dominates h2)، (C - h2 is inadmissible)، (D - h1 is strictly monotonic)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'h2 dominates h1') is the correct choice:\nIf h1 and h2 are both admissible and h2(n) >= h1(n) for all nodes n, we say that h2 dominates h1.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - h1 dominates h2), (C - h2 is inadmissible), (D - h1 is strictly monotonic)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'h2 dominates h1') is the correct choice:\nIf h1 and h2 are both admissible and h2(n) >= h1(n) for all nodes n, we say that h2 dominates h1.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - h1 dominates h2), (C - h2 is inadmissible), (D - h1 is strictly monotonic)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "إذا كان كل من h1 وh2 استدلالًا مقبولًا، وh2(n) >= h1(n) لجميع العقد n، فإننا نقول:",
+    "optionsAr": [
+      "h1 يهيمن على h2",
+      "h2 يهيمن على h1",
+      "h2 غير مقبول",
+      "h1 رتيب تمامًا"
+    ]
   },
   {
     "id": 164,
@@ -2581,7 +3682,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - A* using h2 will never expand more nodes than A* using h1 (except for tie-breaking)):\nيُفضل الحدس المهيمن h2 لأنه يضمن أن A* لن توسع أبداً عقداً أكثر مما توسعها باستخدام h1، مما يقلل الجهد الحسابي ويسرع البحث.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - h2 requires less memory to store)، (C - h2 guarantees that branching factor b becomes 1)، (D - h2 eliminates the need to calculate path costs g(n))] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'A* using h2 will never expand more nodes than A* using h1 (except for tie-breaking)') is the correct choice:\nA dominant heuristic h2 is preferred because A* using h2 will never expand more nodes than A* using h1 (except possibly during tie-breaking).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - h2 requires less memory to store), (C - h2 guarantees that branching factor b becomes 1), (D - h2 eliminates the need to calculate path costs g(n))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'A* using h2 will never expand more nodes than A* using h1 (except for tie-breaking)') is the correct choice:\nA dominant heuristic h2 is preferred because A* using h2 will never expand more nodes than A* using h1 (except possibly during tie-breaking).\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - h2 requires less memory to store), (C - h2 guarantees that branching factor b becomes 1), (D - h2 eliminates the need to calculate path costs g(n))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا يتم تفضيل h2 الإرشادي السائد على h1 في بحث A*؟",
+    "optionsAr": [
+      "يتطلب h2 ذاكرة أقل لتخزين",
+      "A* باستخدام h2 لن يقوم أبدًا بتوسيع عقد أكثر من A* باستخدام h1 (باستثناء كسر التعادل)",
+      "يضمن h2 أن يصبح عامل التفرع b 1",
+      "h2 يلغي الحاجة إلى حساب تكاليف المسار g(n)"
+    ]
   },
   {
     "id": 165,
@@ -2597,7 +3705,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Relaxed problem):\nالمشكلة المسترخية (Relaxed problem) هي مشكلة مشتقة من المشكلة الأصلية عن طريق إزالة قيود معينة على الأفعال المسموح بها، مما يجعل حلها أسهل.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Bounded problem)، (C - Factored problem)، (D - Dual problem)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Relaxed problem') is the correct choice:\nA relaxed problem is derived by dropping one or more constraints on actions from the original problem definition.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Bounded problem), (C - Factored problem), (D - Dual problem)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Relaxed problem') is the correct choice:\nA relaxed problem is derived by dropping one or more constraints on actions from the original problem definition.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Bounded problem), (C - Factored problem), (D - Dual problem)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "تسمى المشكلة المشتقة عن طريق إزالة واحد أو أكثر من القيود على الإجراءات من تعريف المشكلة الأصلي a/an:",
+    "optionsAr": [
+      "مشكلة مريحة",
+      "مشكلة محدودة",
+      "مشكلة عاملة",
+      "مشكلة مزدوجة"
+    ]
   },
   {
     "id": 166,
@@ -2613,7 +3728,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Because removing action constraints adds edges to the state graph, creating shortcuts that can never increase the optimal cost):\nتكلفة حل المشكلة المسترخية مقبولة دائماً لأن إزالة القيود تضيف مسارات مختصرة جديدة في المخطط، مما لا يمكن أن يزيد تكلفة الحل عن الأصل إطلاقاً.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Because relaxed problems have no goal states)، (C - Because relaxed problems can only be solved using depth-first search)، (D - Because all heuristics generated by relaxation equal zero)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Because removing action constraints adds edges to the state graph, creating shortcuts that can never increase the optimal cost') is the correct choice:\nThe optimal solution cost of a relaxed problem is admissible because relaxing constraints adds edges, which can never increase the minimum path cost.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Because relaxed problems have no goal states), (C - Because relaxed problems can only be solved using depth-first search), (D - Because all heuristics generated by relaxation equal zero)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Because removing action constraints adds edges to the state graph, creating shortcuts that can never increase the optimal cost') is the correct choice:\nThe optimal solution cost of a relaxed problem is admissible because relaxing constraints adds edges, which can never increase the minimum path cost.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Because relaxed problems have no goal states), (C - Because relaxed problems can only be solved using depth-first search), (D - Because all heuristics generated by relaxation equal zero)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا تكون تكلفة الحل الأمثل لمشكلة مريحة مضمونة لتكون إرشادية مقبولة للمشكلة الأصلية؟",
+    "optionsAr": [
+      "لأن المشاكل المريحة ليس لها أهداف",
+      "لأن إزالة قيود الإجراء تضيف حواف إلى الرسم البياني للحالة، مما يؤدي إلى إنشاء اختصارات لا يمكنها أبدًا زيادة التكلفة المثلى",
+      "لأن المشكلات المريحة لا يمكن حلها إلا باستخدام بحث العمق أولاً",
+      "لأن جميع الاستدلالات الناتجة عن الاسترخاء تساوي الصفر"
+    ]
   },
   {
     "id": 167,
@@ -2629,7 +3751,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - h(n) = max{h1(n), h2(n), ..., hk(n)}):\nعند توفر عدة حدسيات مقبولة، فإن دالة الحدس المهيمنة المجمعة والمقبولة دائماً هي دالة القيمة العظمى: h(n) = max{h1(n), h2(n), ..., hk(n)}.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - h(n) = min{h1(n), h2(n), ..., hk(n)})، (C - h(n) = h1(n) * h2(n) * ... * hk(n))، (D - h(n) = (h1(n) + h2(n) + ... + hk(n)) / k)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'h(n) = max{h1(n), h2(n), ..., hk(n)}') is the correct choice:\nGiven multiple admissible heuristics, they can be combined into a dominant admissible heuristic using the maximum: h(n) = max{h1(n), ..., hk(n)}.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - h(n) = min{h1(n), h2(n), ..., hk(n)}), (C - h(n) = h1(n) * h2(n) * ... * hk(n)), (D - h(n) = (h1(n) + h2(n) + ... + hk(n)) / k)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'h(n) = max{h1(n), h2(n), ..., hk(n)}') is the correct choice:\nGiven multiple admissible heuristics, they can be combined into a dominant admissible heuristic using the maximum: h(n) = max{h1(n), ..., hk(n)}.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - h(n) = min{h1(n), h2(n), ..., hk(n)}), (C - h(n) = h1(n) * h2(n) * ... * hk(n)), (D - h(n) = (h1(n) + h2(n) + ... + hk(n)) / k)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "إذا كان لدينا مجموعة من الاستدلالات المقبولة h1، h2، ...، hk، فكيف يمكننا دمجها في استدلال واحد مقبول ومهيمن h(n)؟",
+    "optionsAr": [
+      "h(n) = دقيقة{h1(n), h2(n), ..., hk(n)}",
+      "h(n) = الحد الأقصى{h1(n), h2(n), ..., hk(n)}",
+      "h(n) = h1(n) * h2(n) * ... * hk(n)",
+      "h(n) = (h1(n) + h2(n) + ... + hk(n)) / k"
+    ]
   },
   {
     "id": 168,
@@ -2645,7 +3774,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Pattern database):\nقاعدة بيانات الأنماط (Pattern database) هي جدول بحث يخزن التكاليف المحسوبة مسبقاً لحلول جميع التهيئات الفرعية الممكنة للمسألة لاستخدامها كحدسيات فائقة الدقة.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Frontier queue)، (C - Reached table)، (D - Landmark cache)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Pattern database') is the correct choice:\nA pattern database is a lookup table storing exact precomputed solution costs for all possible configurations of abstract subproblems.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Frontier queue), (C - Reached table), (D - Landmark cache)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Pattern database') is the correct choice:\nA pattern database is a lookup table storing exact precomputed solution costs for all possible configurations of abstract subproblems.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Frontier queue), (C - Reached table), (D - Landmark cache)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في ألغاز التجانب المنزلق، يُعرف تخزين تكاليف الحل المحسوبة مسبقًا الدقيقة لجميع تكوينات المشكلات الفرعية المحتملة في جدول البحث باسم:",
+    "optionsAr": [
+      "قاعدة بيانات الأنماط",
+      "طابور الحدود",
+      "تم الوصول إلى الجدول",
+      "ذاكرة التخزين المؤقت التاريخية"
+    ]
   },
   {
     "id": 169,
@@ -2661,7 +3797,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - To trade off solution optimality for a significant reduction in the number of expanded nodes):\nبحث A* الموزون (Weighted A*) يستخدم وزناً W > 1 على h(n) لمقايضة أمثلية الحل بحد أقصى W مقابل تقليص هائل في عدد العقد الموسعة وزمن البحث.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - To ensure that the heuristic becomes strictly consistent)، (C - To eliminate the need for priority queues)، (D - To convert graph search into tree search)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'To trade off solution optimality for a significant reduction in the number of expanded nodes') is the correct choice:\nWeighted A* search uses W > 1 to trade off strict solution optimality for a dramatic reduction in the number of expanded nodes and search time.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - To ensure that the heuristic becomes strictly consistent), (C - To eliminate the need for priority queues), (D - To convert graph search into tree search)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'To trade off solution optimality for a significant reduction in the number of expanded nodes') is the correct choice:\nWeighted A* search uses W > 1 to trade off strict solution optimality for a dramatic reduction in the number of expanded nodes and search time.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - To ensure that the heuristic becomes strictly consistent), (C - To eliminate the need for priority queues), (D - To convert graph search into tree search)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "يستخدم البحث الموزون A* دالة التقييم f(n) = g(n) + W * h(n) مع W > 1. ما هو الغرض الأساسي من هذا الترجيح؟",
+    "optionsAr": [
+      "للتأكد من أن الاستدلال يصبح متسقًا تمامًا",
+      "لمقايضة الحل الأمثل من أجل تقليل كبير في عدد العقد الموسعة",
+      "للتخلص من الحاجة إلى قوائم الانتظار ذات الأولوية",
+      "لتحويل بحث الرسم البياني إلى بحث شجرة"
+    ]
   },
   {
     "id": 170,
@@ -2677,7 +3820,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - The worst leaf node, which has the highest f-value):\nعند امتلاء الذاكرة بالكامل، تقوم خوارزمية SMA* بحذف أسوأ عقدة ورقية من شجرة البحث، وهي العقدة التي تمتلك أعلى قيمة تقييم f.\n\n💡 مثال وتطبيق واقعي:\nتطبيقات الملاحة وتخطيط حركة الروبوتات في المستودعات تعتمد هذا المبدأ لحساب المسارات واختيار أفضل خطة بديلة بأقل تكلفة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The root node of the tree)، (C - The newest child node with the lowest g-value)، (D - All nodes residing at depth d)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'The worst leaf node, which has the highest f-value') is the correct choice:\nWhen memory is exhausted, SMA* drops the worst leaf node from the search tree—the one having the highest f-value.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The root node of the tree), (C - The newest child node with the lowest g-value), (D - All nodes residing at depth d)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'The worst leaf node, which has the highest f-value') is the correct choice:\nWhen memory is exhausted, SMA* drops the worst leaf node from the search tree—the one having the highest f-value.\n\n💡 Real-World Example & Application:\nNavigation apps and warehouse robot planners rely on this search strategy to compute obstacle-free paths with minimal operational cost.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The root node of the tree), (C - The newest child node with the lowest g-value), (D - All nodes residing at depth d)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "عندما تكون الذاكرة ممتلئة تمامًا، ما هي العقدة التي تقوم بإسقاط خوارزمية Simplified Memory-Bounded A* (SMA*) من شجرة البحث؟",
+    "optionsAr": [
+      "العقدة الجذرية للشجرة",
+      "أسوأ عقدة ورقية، والتي لديها أعلى قيمة f",
+      "أحدث عقدة فرعية ذات أقل قيمة g",
+      "جميع العقد المقيمة في العمق د"
+    ]
   },
   {
     "id": 171,
@@ -2691,7 +3841,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nتُعرَّف مسألة البحث رسمياً بالمكونات الخمسة: الحالة الابتدائية، الأفعال المتاحة، نموذج الانتقال، فحص الهدف، ودالة تكلفة المسار.\n\n💡 مثال وتطبيق واقعي:\nفي مسألة ملاحة المدن: البداية (أراد)، الأفعال (التحرك للمدن المجاورة)، الانتقال (الوصول للمدينة الجديدة)، الهدف (بوخارست)، والتكلفة (المسافة بالكيلومتر).\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن هذه المكونات الخمسة هي المعيار الرياضي الصارم لصياغة أي مسألة بحث في AIMA.",
-    "explanationEn": "🎯 Why this statement is True:\nA search problem is formally defined by five elements: initial state, actions, transition model, goal test, and path cost function.\n\n💡 Real-World Example & Application:\nIn route planning: Start (Arad), Actions (drive to neighbors), Transition (arrive at destination city), Goal (Bucharest), Cost (distance in km).\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because these five elements constitute the canonical formulation of search problems."
+    "explanationEn": "🎯 Why this statement is True:\nA search problem is formally defined by five elements: initial state, actions, transition model, goal test, and path cost function.\n\n💡 Real-World Example & Application:\nIn route planning: Start (Arad), Actions (drive to neighbors), Transition (arrive at destination city), Goal (Bucharest), Cost (distance in km).\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because these five elements constitute the canonical formulation of search problems.",
+    "questionAr": "يتم تعريف مشكلة البحث رسميًا من خلال خمسة مكونات: الحالة الأولية، والإجراءات، ونموذج الانتقال، وحالات الهدف، ووظيفة تكلفة الإجراء.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 172,
@@ -2705,7 +3860,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nفي البيئات غير الحتمية أو الجزئية الملاحظة، لا يمكن استخدام نظام مفتوح الحلقة (Open-loop) أعمى؛ بل يجب استخدام نظام مغلق الحلقة (Closed-loop) يستشعر البيئة باستمرار للتعامل مع المفاجآت.\n\n💡 مثال وتطبيق واقعي:\nالسيارة ذاتية القيادة لا يمكنها تنفيذ خطة سير مبرمجة سلفاً دون النظر المستمر في الكاميرات للتأكد من عدم ظهور سيارة طارئة فجأة.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأن تنفيذ الخطة دون مراقبة المدخلات الحسية في بيئة غير حتمية يؤدي إلى حوادث وفشل مؤكد.",
-    "explanationEn": "🎯 Why this statement is False:\nIn nondeterministic or partially observable domains, open-loop execution fails because the agent must observe percepts to react to unexpected states.\n\n💡 Real-World Example & Application:\nA robotic surgical arm must constantly verify tissue sensors rather than executing blind pre-recorded cutting movements.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because open-loop execution is only safe in fully observable, deterministic, static environments."
+    "explanationEn": "🎯 Why this statement is False:\nIn nondeterministic or partially observable domains, open-loop execution fails because the agent must observe percepts to react to unexpected states.\n\n💡 Real-World Example & Application:\nA robotic surgical arm must constantly verify tissue sensors rather than executing blind pre-recorded cutting movements.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because open-loop execution is only safe in fully observable, deterministic, static environments.",
+    "questionAr": "في بيئة غير حتمية أو يمكن ملاحظتها جزئيًا، يمكن للوكيل تنفيذ حل بحث بأمان باستخدام نظام حلقة مفتوحة دون التحقق من تصوراته.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 173,
@@ -2719,7 +3879,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nفي شجرة البحث، يمكن الوصول إلى نفس الحالة الفيزيائية عبر مسارات وأطوال مختلفة، مما ينشئ عقداً متعددة ومستقلة في الشجرة تمثل نفس الحالة في العالم الحقيقي.\n\n💡 مثال وتطبيق واقعي:\nفي لعبة المتاهة، يمكن الوصول إلى المربع (3, 3) عبر (يمين ثم فوق) أو (فوق ثم يمين)، فتظهر عقدتان منفصلتان لنفس المربع.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن شجرة البحث تفرق بين المسارات، فتمثل كل مسار بعقدة مختلفة حتى لو اتفقت الحالة النهائية.",
-    "explanationEn": "🎯 Why this statement is True:\nIn a search tree, multiple distinct paths can lead to the same state, resulting in distinct tree nodes for the identical environment state.\n\n💡 Real-World Example & Application:\nNavigating a grid: Moving (Right, Down) and (Down, Right) lead to the same coordinates but represent two separate branch nodes.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because search tree paths create duplicate nodes for reachable states."
+    "explanationEn": "🎯 Why this statement is True:\nIn a search tree, multiple distinct paths can lead to the same state, resulting in distinct tree nodes for the identical environment state.\n\n💡 Real-World Example & Application:\nNavigating a grid: Moving (Right, Down) and (Down, Right) lead to the same coordinates but represent two separate branch nodes.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because search tree paths create duplicate nodes for reachable states.",
+    "questionAr": "يمكن تمثيل الحالة المادية الواحدة للبيئة من خلال عدة عقد مميزة في شجرة بحث إذا كانت هناك مسارات زائدة عن الحاجة إلى تلك الحالة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 174,
@@ -2733,7 +3898,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nكل عقدة في شجرة البحث تحتفظ بمؤشر إلى العقدة الأم (Parent Pointer)، مما يسمح باسترجاع تسلسل الحركات الكامل عند العثور على عقدة الهدف عبر الرجوع للخلف حتى الجذر.\n\n💡 مثال وتطبيق واقعي:\nعندما يجد نظام الملاحة وجهة الهدف، يتتبع مؤشرات الأب رجوعاً إلى نقطة البداية لتوليد خط السير خطوة بخطوة للسائق.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن مؤشرات الأب هي الآلية الرياضية الوحيدة لإعادة بناء مسار الحل النهائي.",
-    "explanationEn": "🎯 Why this statement is True:\nSearch tree nodes maintain parent pointers so that upon finding the goal node, the sequence of actions can be reconstructed by tracing back to root.\n\n💡 Real-World Example & Application:\nGPS systems trace parent pointers backwards from the destination node to construct turn-by-turn driving directions.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because parent pointers are the essential mechanism for solution path extraction."
+    "explanationEn": "🎯 Why this statement is True:\nSearch tree nodes maintain parent pointers so that upon finding the goal node, the sequence of actions can be reconstructed by tracing back to root.\n\n💡 Real-World Example & Application:\nGPS systems trace parent pointers backwards from the destination node to construct turn-by-turn driving directions.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because parent pointers are the essential mechanism for solution path extraction.",
+    "questionAr": "تقوم كل عقدة في شجرة البحث بتخزين مؤشر إلى العقدة الأصلية، مما يسمح بإعادة بناء مسار الحل للإجراءات بمجرد الوصول إلى الهدف.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 175,
@@ -2747,7 +3917,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nخوارزمية البحث في الرسوم البيانية (Graph Search) تحتفظ بجدول الحالات التي تم الوصول إليها (Reached Table أو Closed List) لتجنب إعادة فحص نفس الحالات ومنع الدخول في حلقات مفرغة.\n\n💡 مثال وتطبيق واقعي:\nعند حل لغز الـ 8 أرقام، حفظ الوضعيات السابقة يمنع الخوارزمية من تكرار نقل قطعة للأمام ثم للخلف للأبد.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن منع تكرار الحالات هو الفارق الجوهري بين بحث الرسم البياني وبحث الشجرة.",
-    "explanationEn": "🎯 Why this statement is True:\nGraph search algorithms use a reached table (or closed list) to record explored states, eliminating redundant state expansions and infinite cycles.\n\n💡 Real-World Example & Application:\nSolving the 8-puzzle: keeping track of seen configurations prevents flipping two tiles back and forth infinitely.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because duplicate detection is the fundamental defining feature of graph search."
+    "explanationEn": "🎯 Why this statement is True:\nGraph search algorithms use a reached table (or closed list) to record explored states, eliminating redundant state expansions and infinite cycles.\n\n💡 Real-World Example & Application:\nSolving the 8-puzzle: keeping track of seen configurations prevents flipping two tiles back and forth infinitely.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because duplicate detection is the fundamental defining feature of graph search.",
+    "questionAr": "تستخدم خوارزميات البحث في الرسم البياني جدولًا تم الوصول إليه (أو قائمة مغلقة) لتذكر الحالات التي تم استكشافها مسبقًا ومنع زيارة العقد عدة مرات.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 176,
@@ -2761,7 +3936,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nبحث الرسم البياني هو الذي يستهلك ذاكرة أكبر لأنه يحتفظ بقائمة الحالات المغلقة والمفتوحة معاً في الذاكرة، بينما بحث الشجرة لا يحتفظ بجدول الحالات السابقة المستكشفة.\n\n💡 مثال وتطبيق واقعي:\nفي خوارزمية BFS على رسم بياني، تخزين جميع الحالات التي تمت زيارتها في جدول التجزئة يستهلك الرام بسرعة، عكس بحث الشجرة الذي يضحي بالوقت لتوفير مساحة الذاكرة.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأن العبارة عكست استهلاك الذاكرة تماماً بين نوعي البحث.",
-    "explanationEn": "🎯 Why this statement is False:\nGraph search requires more memory than tree search because graph search maintains a reached set in memory alongside the frontier.\n\n💡 Real-World Example & Application:\nA maze solver using graph search stores thousands of visited junction coordinates in memory, whereas pure tree DFS only holds the current active branch.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because maintaining duplicate detection sets increases memory overhead, not decreases it."
+    "explanationEn": "🎯 Why this statement is False:\nGraph search requires more memory than tree search because graph search maintains a reached set in memory alongside the frontier.\n\n💡 Real-World Example & Application:\nA maze solver using graph search stores thousands of visited junction coordinates in memory, whereas pure tree DFS only holds the current active branch.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because maintaining duplicate detection sets increases memory overhead, not decreases it.",
+    "questionAr": "يستخدم البحث الشبيه بالشجرة ذاكرة أكبر من البحث في الرسم البياني لأنه يحتفظ بقائمة مفتوحة وقائمة مغلقة للحالات التي تم الوصول إليها.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 177,
@@ -2775,7 +3955,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nخوارزمية البحث في العرض أولاً (BFS) مكتملة (Complete) دائماً في فضاءات الحالات اللانهائية طالما أن معامل التفرع b محدود وعمق الحل الأقل d منتهٍ، لأنها تفحص الأعماق بالترتيب.\n\n💡 مثال وتطبيق واقعي:\nحتى لو كانت المتاهة تمتد لعدد لانهائي من الممرات، فإن كان المخرج يقع على بعد 5 خطوات، ستصل BFS إليه حتماً لأنها تستكشف جميع مسارات الخطوات 1 و2 و3 و4 و5 قبل الذهاب أعمق.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن الفحص المنظم مستوى تلو الآخر يضمن العثور على الحل الضحل دون الغرق في الفروع اللانهائية.",
-    "explanationEn": "🎯 Why this statement is True:\nBFS is complete even in infinite state spaces as long as the branching factor b is finite and a solution exists at finite depth d.\n\n💡 Real-World Example & Application:\nEven in an infinite network of web hyperlinks, BFS will always find a linked target page 3 clicks away because it explores level 1, then 2, then 3.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because shallowest-first level traversal guarantees discovering finite-depth goals."
+    "explanationEn": "🎯 Why this statement is True:\nBFS is complete even in infinite state spaces as long as the branching factor b is finite and a solution exists at finite depth d.\n\n💡 Real-World Example & Application:\nEven in an infinite network of web hyperlinks, BFS will always find a linked target page 3 clicks away because it explores level 1, then 2, then 3.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because shallowest-first level traversal guarantees discovering finite-depth goals.",
+    "questionAr": "يكتمل بحث العرض الأول في مساحات الحالة اللانهائية، بشرط أن يكون عامل التفرع b محدودًا.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 178,
@@ -2789,7 +3974,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nخوارزمية BFS تضمن الحل الأمثل فقط إذا كانت تكاليف جميع الخطوات متطابقة؛ أما إذا تباينت التكاليف، فقد تختار مساراً يحتوي على خطوات أقل ولكن بتكلفة إجمالية أعلى بكثير.\n\n💡 مثال وتطبيق واقعي:\nطريق سريع بخطوة واحدة تكلفته 100 ريال، وطريق بديل بخطوتين تكلفتهما 10+10=20 ريالاً؛ ستختار BFS الخطوة الواحدة الأقصر عمقاً لكنها الأغلى ثمناً.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأن الأمثلية العامة مع اختلاف التكاليف تتطلب Uniform-Cost Search (Dijkstra) وليس BFS العادي.",
-    "explanationEn": "🎯 Why this statement is False:\nBFS is cost-optimal only when step costs are identical; when costs vary, BFS finds the fewest-action path, which can have high total cost.\n\n💡 Real-World Example & Application:\nA direct toll flight costs $500 (1 step); a connecting flight costs $100+$100=$200 (2 steps). BFS picks the 1-step route despite it costing more.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because finding the minimum-depth goal does not equate to finding the minimum-cost path when step weights differ."
+    "explanationEn": "🎯 Why this statement is False:\nBFS is cost-optimal only when step costs are identical; when costs vary, BFS finds the fewest-action path, which can have high total cost.\n\n💡 Real-World Example & Application:\nA direct toll flight costs $500 (1 step); a connecting flight costs $100+$100=$200 (2 steps). BFS picks the 1-step route despite it costing more.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because finding the minimum-depth goal does not equate to finding the minimum-cost path when step weights differ.",
+    "questionAr": "يعتبر البحث الموسع أولاً هو التكلفة الأمثل دائمًا، بغض النظر عما إذا كانت تكاليف الإجراء المرحلي متطابقة أو مختلفة إلى حد كبير.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 179,
@@ -2803,7 +3993,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nفي خوارزمية BFS، عدد العقد عند عمق الحل d يتناسب مع b^d، ولأن الخوارزمية تخزن جميع عقد الطبقة الأخيرة في طابور الحدود (Frontier)، فإن كلا التعقيدين الزمني والمكاني هو O(b^d).\n\n💡 مثال وتطبيق واقعي:\nإذا كان معامل التفرع 10 والحل عند العمق 6، فإن الذاكرة تحتاج لحفظ مليون عقدة، وعند العمق 10 تتطلب الذاكرة تيرابايتات تفوق سعة الأجهزة العادية.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن التعقيد الأسي للذاكرة هو نقطة الضعف القاتلة المشهورة لخوارزمية BFS في الذكاء الاصطناعي.",
-    "explanationEn": "🎯 Why this statement is True:\nBoth time and space complexity of Breadth-First Search are exponential in solution depth d, specifically O(b^d), because all nodes at depth d must be stored in the frontier.\n\n💡 Real-World Example & Application:\nWith branching factor b=10, searching depth d=8 requires storing 100 million nodes in RAM, quickly causing out-of-memory crashes.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because exponential queue memory is the classic known bottleneck of BFS."
+    "explanationEn": "🎯 Why this statement is True:\nBoth time and space complexity of Breadth-First Search are exponential in solution depth d, specifically O(b^d), because all nodes at depth d must be stored in the frontier.\n\n💡 Real-World Example & Application:\nWith branching factor b=10, searching depth d=8 requires storing 100 million nodes in RAM, quickly causing out-of-memory crashes.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because exponential queue memory is the classic known bottleneck of BFS.",
+    "questionAr": "يعد كل من التعقيد الزمني والتعقيد المكاني للبحث العرضي الأول أسيًا في عمق الحل d، معبرًا عنه بـ O(b^d).",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 180,
@@ -2817,7 +4012,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nخوارزمية البحث متساوي التكلفة (Uniform-Cost Search) توسع دائماً العقدة ذات تكلفة المسار التراكمية الأقل g(n)، مما يضمن إيجاد المسار الأرخص إجمالاً.\n\n💡 مثال وتطبيق واقعي:\nفي خرائط السفر، تفحص UCS الطرق القصيرة أولاً حتى تضمن أن وصولها للهدف يمثل المسار الأقل استهلاكاً للمسافة والوقود.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن الترتيب التصاعدي حسب g(n) هو التعريف المباشر لآلية عمل خوارزمية UCS.",
-    "explanationEn": "🎯 Why this statement is True:\nUniform-Cost Search expands the node with the lowest cumulative path cost g(n) using a priority queue.\n\n💡 Real-World Example & Application:\nRoute finding: expanding roads prioritized by accumulated travel kilometers guarantees reaching the destination with the minimum total mileage.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because lowest g(n) expansion defines UCS (equivalent to Dijkstra's algorithm)."
+    "explanationEn": "🎯 Why this statement is True:\nUniform-Cost Search expands the node with the lowest cumulative path cost g(n) using a priority queue.\n\n💡 Real-World Example & Application:\nRoute finding: expanding roads prioritized by accumulated travel kilometers guarantees reaching the destination with the minimum total mileage.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because lowest g(n) expansion defines UCS (equivalent to Dijkstra's algorithm).",
+    "questionAr": "يقوم بحث التكلفة الموحدة بتوسيع العقد بترتيب متزايد لتكلفة مسارها g(n) من الحالة الأولية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 181,
@@ -2831,7 +4031,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nخوارزمية البحث في العمق أولاً (DFS) تستخدم مكدساً (LIFO Stack) لتوسيع أعمق عقدة في الحدود الحالية أولاً بأول.\n\n💡 مثال وتطبيق واقعي:\nفي حل متاهة الورق، يستمر اللاعب في السير في أعمق ممر حتى يصطدم بحائط مسدود، ثم يتراجع خطوة واحدة فقط للخلف.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن المكدس هو بنية البيانات المعيارية المستخدمة لتطبيق البحث في العمق.",
-    "explanationEn": "🎯 Why this statement is False:\nDepth-First Search always expands the deepest node in the current frontier, naturally implemented using a LIFO stack.\n\n💡 Real-World Example & Application:\nNavigating a maze by walking as deep as possible down a corridor until hitting a dead end before backtracking.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because deep-first node selection via stack is the formal definition of DFS."
+    "explanationEn": "🎯 Why this statement is False:\nDepth-First Search always expands the deepest node in the current frontier, naturally implemented using a LIFO stack.\n\n💡 Real-World Example & Application:\nNavigating a maze by walking as deep as possible down a corridor until hitting a dead end before backtracking.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because deep-first node selection via stack is the formal definition of DFS.",
+    "questionAr": "إذا طبق البحث الموحد للتكلفة اختبارًا مبكرًا للهدف عند إنشاء عقدة، فلا يزال من المضمون إرجاع الحل الأمثل من حيث التكلفة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 182,
@@ -2845,7 +4050,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nفي فضاءات الحالات اللانهائية أو التي تحتوي على حلقات، قد تعلق خوارزمية DFS في فرع لانهائي لا يحتوي على حل دون أن تتراجع، مما يجعلها غير مكتملة (Incomplete).\n\n💡 مثال وتطبيق واقعي:\nإذا كانت المتاهة تملك ممر تفرع مستمراً إلى ما لا نهاية في اليسار، ستسير DFS فيه للأبد ولن تكتشف الهدف القريب جداً في اليمين.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأن خوارزمية DFS تفتقر لضمان الاكتمال في الفضاءات اللانهائية وبحث الشجرة.",
-    "explanationEn": "🎯 Why this statement is False:\nDFS can get trapped down an infinite path or cycle without ever backtracking to find a shallow goal on another branch, making it incomplete in infinite spaces.\n\n💡 Real-World Example & Application:\nExploring directory trees with recursive symbolic links: a DFS crawler loops endlessly without terminating unless depth bounded.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because DFS lacks completeness guarantees on unbounded trees."
+    "explanationEn": "🎯 Why this statement is False:\nDFS can get trapped down an infinite path or cycle without ever backtracking to find a shallow goal on another branch, making it incomplete in infinite spaces.\n\n💡 Real-World Example & Application:\nExploring directory trees with recursive symbolic links: a DFS crawler loops endlessly without terminating unless depth bounded.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because DFS lacks completeness guarantees on unbounded trees.",
+    "questionAr": "يعد البحث في العمق أولاً مثاليًا من حيث التكلفة لأنه يستكشف دائمًا أعمق الأوراق أولاً.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 183,
@@ -2859,7 +4069,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nميزة DFS الكبرى هي كفاءتها الهائلة في استهلاك الذاكرة؛ ففي بحث الشجرة تحتاج فقط لتخزين مسار العمق الحالي، مما يعطي تعقيد ذاكرة خطياً O(bm) فقط.\n\n💡 مثال وتطبيق واقعي:\nلبحث عمق 20 مع تفرع 10، تحتاج DFS لتخزين 200 عقدة فقط في الذاكرة، بينما تحتاج BFS لتخزين ملايين العقد.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن متطلبات الذاكرة الخطية المتواضعة هي الدافع الرئيسي لاستخدام DFS ومشتقاتها.",
-    "explanationEn": "🎯 Why this statement is True:\nFor a tree search, DFS needs to store only the single path from the root to a leaf node along with remaining unexpanded siblings, yielding linear space O(bm).\n\n💡 Real-World Example & Application:\nSearching depth 15 with branching factor 10 requires storing ~150 nodes in DFS versus 10^15 nodes in BFS, easily fitting into RAM.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because linear memory efficiency is the primary structural advantage of DFS."
+    "explanationEn": "🎯 Why this statement is True:\nFor a tree search, DFS needs to store only the single path from the root to a leaf node along with remaining unexpanded siblings, yielding linear space O(bm).\n\n💡 Real-World Example & Application:\nSearching depth 15 with branching factor 10 requires storing ~150 nodes in DFS versus 10^15 nodes in BFS, easily fitting into RAM.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because linear memory efficiency is the primary structural advantage of DFS.",
+    "questionAr": "لا يتطلب البحث عن العمق الأول الشبيه بالشجرة سوى تعقيد الفضاء الخطي O(bm)، حيث b هو عامل التفرع وm هو الحد الأقصى للعمق.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 184,
@@ -2873,7 +4088,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nالبحث في العمق المحدود (DLS) يفرض حداً أقصى l للعمق، فإذا كان الهدف يقع عند عمق d يتجاوز هذا الحد (d > l)، فلن تعثر عليه الخوارزمية أبداً.\n\n💡 مثال وتطبيق واقعي:\nإذا وضعت حد البحث 3 خطوات، وكان الحل يتطلب 4 خطوات، ستنتهي الخوارزمية بإعلان الفشل رغم وجود الحل.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأن الحد يمنع الوصول لأي حل يقع في أعماق تتجاوز الحد الموضوع.",
-    "explanationEn": "🎯 Why this statement is True:\nDepth-Limited Search artificially treats all nodes at depth l as having no successors; if the shallowest goal is at depth d > l, it will never be found.\n\n💡 Real-World Example & Application:\nSetting a search limit to 5 moves in a chess puzzle whose checkmate requires 6 moves guarantees failing to find the solution.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because bounding the search tree prunes away deeper legitimate solutions."
+    "explanationEn": "🎯 Why this statement is True:\nDepth-Limited Search artificially treats all nodes at depth l as having no successors; if the shallowest goal is at depth d > l, it will never be found.\n\n💡 Real-World Example & Application:\nSetting a search limit to 5 moves in a chess puzzle whose checkmate requires 6 moves guarantees failing to find the solution.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because bounding the search tree prunes away deeper legitimate solutions.",
+    "questionAr": "يؤدي البحث التراجعي إلى تقليل متطلبات الذاكرة بشكل أكبر من DFS القياسي إلى وصف حالة واحد فقط ومسار لإجراءات O(m).",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 185,
@@ -2887,7 +4107,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nخوارزمية تعميق البحث التكراري (IDS) تجمع بين ميزة الذاكرة الخطية لـ DFS واكتمال وأمثلية BFS في خطوة واحدة ذكية.\n\n💡 مثال وتطبيق واقعي:\nتعتبر IDS الخوارزمية الافتراضية المفضلة عندما يكون فضاء البحث ضخماً وعمق الحل مجهولاً، لأنها لا تستهلك الرام أبداً وتضمن الحل الأقصر.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن كتب الذكاء الاصطناعي تعتبر IDS الطريقة المثالية التي توفق بين حسنات الطريقتين.",
-    "explanationEn": "🎯 Why this statement is False:\nIterative Deepening Search (IDS) combines the linear space complexity of DFS with the completeness and optimality of BFS.\n\n💡 Real-World Example & Application:\nGame playing engines use IDS to safely search as deep as possible within fixed time limits without blowing up memory limits.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because IDS is mathematically proven to harmonize the benefits of both strategies."
+    "explanationEn": "🎯 Why this statement is False:\nIterative Deepening Search (IDS) combines the linear space complexity of DFS with the completeness and optimality of BFS.\n\n💡 Real-World Example & Application:\nGame playing engines use IDS to safely search as deep as possible within fixed time limits without blowing up memory limits.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because IDS is mathematically proven to harmonize the benefits of both strategies.",
+    "questionAr": "يكتمل البحث محدود العمق حتى لو كان حد العمق المختار l أصغر من العمق d للحل الأمثل.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 186,
@@ -2901,7 +4126,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nرغم تكرار توليد العقد العلوية في IDS، فإن العقد في الطبقات السفلية تسيطر على الإجمالي أُسياً، مما يجعل التكلفة الإضافية لتكرار العقد العلوية ضئيلة جداً (أقل من الضعف).\n\n💡 مثال وتطبيق واقعي:\nفي تفرع 10، تمثل الطبقة الأخيرة وحدها 90% من إجمالي كل العمليات، وتكرار الطبقات السابقة يمثل جزءاً يسيراً لا يذكر.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأن التكلفة الإضافية صغيرة ومقبولة تماماً مقابل توفير غيغابايتات من الذاكرة العشوائية.",
-    "explanationEn": "🎯 Why this statement is True:\nBecause most nodes in an exponential tree reside in the bottom level, re-generating upper levels incurs minimal computational overhead (typically within a factor of b/(b-1)).\n\n💡 Real-World Example & Application:\nWith b=10 and d=5, bottom layer nodes dominate >90% of total work; upper level re-visits add negligible compute time compared to BFS memory costs.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because the overhead of regenerating shallow nodes is mathematically minor."
+    "explanationEn": "🎯 Why this statement is True:\nBecause most nodes in an exponential tree reside in the bottom level, re-generating upper levels incurs minimal computational overhead (typically within a factor of b/(b-1)).\n\n💡 Real-World Example & Application:\nWith b=10 and d=5, bottom layer nodes dominate >90% of total work; upper level re-visits add negligible compute time compared to BFS memory costs.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because the overhead of regenerating shallow nodes is mathematically minor.",
+    "questionAr": "يجمع البحث التكراري العميق بين فوائد الذاكرة الخطية لـ DFS واكتمال BFS وتحسينه بالنسبة لتكاليف عمل الوحدة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 187,
@@ -2915,7 +4145,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nالبحث ثنائي الاتجاه (Bidirectional Search) يعمل بتشغيل بحثين متزامنين؛ أحدهما للأمام من البداية والآخر للخلف من الهدف، حتى يلتقيا في المنتصف.\n\n💡 مثال وتطبيق واقعي:\nفي شبكات التواصل، للبحث عن رابط بين شخصين، يبدأ البحث من حساب الشخص الأول ومن حساب الشخص الثاني حتى يلتقي المساران في صديق مشترك.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن البحث من الطرفين معاً هو التعريف الأساسي للبحث ثنائي الاتجاه.",
-    "explanationEn": "🎯 Why this statement is True:\nBidirectional search runs two simultaneous searches: one forward from the initial state and one backward from the goal, stopping when they meet.\n\n💡 Real-World Example & Application:\nFinding degrees of separation on LinkedIn: searching connections forward from User A and backward from User B until an overlap contact is found.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because simultaneous bidirectional frontier expansion defines this algorithm."
+    "explanationEn": "🎯 Why this statement is True:\nBidirectional search runs two simultaneous searches: one forward from the initial state and one backward from the goal, stopping when they meet.\n\n💡 Real-World Example & Application:\nFinding degrees of separation on LinkedIn: searching connections forward from User A and backward from User B until an overlap contact is found.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because simultaneous bidirectional frontier expansion defines this algorithm.",
+    "questionAr": "يحافظ البحث ثنائي الاتجاه على حدين وجدولين تم الوصول إليهما، ويبحث في وقت واحد من البداية والهدف.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 188,
@@ -2929,7 +4164,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nفي البحث ثنائي الاتجاه، يتم خفض التعقيد الزمني من O(b^d) إلى O(b^(d/2)) لأن كل بحث يحتاج لقطع نصف المسافة فقط (d/2)، مما يمثل اختصاراً أُسياً ضخماً.\n\n💡 مثال وتطبيق واقعي:\nإذا كان العمق 10، فبدل توليد 10 مليارات عقدة (10^10)، يولد كل بحث 100 ألف عقدة فقط (10^5)، وهو توفير هائل في السرعة.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن قسمة الأس على 2 هي الميزة الرياضية المركزية التي تجعل البحث ثنائي الاتجاه جذاباً للغاية.",
-    "explanationEn": "🎯 Why this statement is True:\nReplacing O(b^d) with O(2 * b^(d/2)) represents a massive exponential speedup because both frontiers need to cover only half the distance.\n\n💡 Real-World Example & Application:\nFor b=10 and d=8: b^d is 100,000,000 nodes, while 2*b^(d/2) is only 20,000 nodes, reducing compute by orders of magnitude.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because halving the exponent yields exponential savings."
+    "explanationEn": "🎯 Why this statement is True:\nReplacing O(b^d) with O(2 * b^(d/2)) represents a massive exponential speedup because both frontiers need to cover only half the distance.\n\n💡 Real-World Example & Application:\nFor b=10 and d=8: b^d is 100,000,000 nodes, while 2*b^(d/2) is only 20,000 nodes, reducing compute by orders of magnitude.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because halving the exponent yields exponential savings.",
+    "questionAr": "يقوم البحث الجشع الأفضل-الأول بتوسيع العقدة ذات القيمة الدنيا لوظيفة التقييم f(n) = h(n).",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 189,
@@ -2943,7 +4183,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nالدالة الكشفية (Heuristic Function h(n)) تقدر التكلفة المتبقية من العقدة n للوصول إلى أقرب هدف، معتمدة على معلومات خاصة بمجال المسألة.\n\n💡 مثال وتطبيق واقعي:\nفي نظام الملاحة، مسافة الخط المستقيم (Straight-line distance) تمثل دالة كشفية ممتازة لتقدير البعد المتبقي عن الوجهة.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن هذا هو التعريف العلمي الدقيق للدالة الكشفية في خوارزميات البحث المستنير.",
-    "explanationEn": "🎯 Why this statement is False:\nA heuristic function h(n) estimates the cost of the cheapest path from node n to a goal state using domain knowledge.\n\n💡 Real-World Example & Application:\nIn road travel, straight-line aerial distance ('as the crow flies') is a classic heuristic estimating remaining distance to the destination.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because domain-specific distance estimation is the exact definition of a heuristic function."
+    "explanationEn": "🎯 Why this statement is False:\nA heuristic function h(n) estimates the cost of the cheapest path from node n to a goal state using domain knowledge.\n\n💡 Real-World Example & Application:\nIn road travel, straight-line aerial distance ('as the crow flies') is a classic heuristic estimating remaining distance to the destination.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because domain-specific distance estimation is the exact definition of a heuristic function.",
+    "questionAr": "يُضمن أن يكون البحث الجشع الأفضل-الأول هو الأمثل من حيث التكلفة لأنه يعمل دائمًا على توسيع العقدة التي تبدو الأقرب إلى الهدف.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 190,
@@ -2957,7 +4202,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nالبحث الجشع (Greedy Best-First Search) يوسع العقدة التي تبدو أقرب للهدف بناءً على h(n) فقط متجاهلاً تكلفة المسار المقطوع g(n)، مما يجعله غير أمثل وعرضة لاتباع طرق مسدودة.\n\n💡 مثال وتطبيق واقعي:\nنظام قيادة جشع قد يتوجه مباشرة نحو برج خليفة لأنه يراه أمامه، فيعلق عند بحيرة صناعية لا يمكن عبورها.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأن الجشع نحو الهدف لا يضمن أقصر مسار ولا يحمي من الوقوع في فخ المسارات الملتوية.",
-    "explanationEn": "🎯 Why this statement is True:\nGreedy Best-First Search evaluates nodes solely by h(n); it can be led down costly or dead-end paths, failing both optimality and completeness in infinite graphs.\n\n💡 Real-World Example & Application:\nA hiking bot heading straight for a visible peak might walk directly into an impassable swamp, ignoring a slightly longer paved highway.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because greedy evaluation ignores past path cost and is not optimal."
+    "explanationEn": "🎯 Why this statement is True:\nGreedy Best-First Search evaluates nodes solely by h(n); it can be led down costly or dead-end paths, failing both optimality and completeness in infinite graphs.\n\n💡 Real-World Example & Application:\nA hiking bot heading straight for a visible peak might walk directly into an impassable swamp, ignoring a slightly longer paved highway.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because greedy evaluation ignores past path cost and is not optimal.",
+    "questionAr": "وظيفة التقييم للبحث A* هي f(n) = g(n) + h(n)، حيث g(n) هي تكلفة المسار إلى n وh(n) هي التكلفة المقدرة من n إلى الهدف.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 191,
@@ -2971,7 +4221,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nخوارزمية A* تقيم العقد باستخدام دالة التقييم الشاملة f(n) = g(n) + h(n)، التي تجمع تكلفة الوصول للعقدة g(n) مع التكلفة التقديرية للوصول للهدف h(n).\n\n💡 مثال وتطبيق واقعي:\nفي ألعاب الفيديو، تستخدم A* لتحريك الشخصيات بتكلفة أقل عبر دمج المسافة المقطوعة والمسافة المتبقية لتفادي الجدران بكفاءة تامة.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن المعادلة f(n) = g(n) + h(n) هي الهوية الرياضية لخوارزمية A*.",
-    "explanationEn": "🎯 Why this statement is True:\nA* search evaluates nodes by combining g(n) (cost to reach the node) and h(n) (estimated cost to get to the goal): f(n) = g(n) + h(n).\n\n💡 Real-World Example & Application:\nVideo game pathfinding uses A* to steer NPCs around obstacles by balancing distance already traveled with Euclidean distance to target.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because f(n) = g(n) + h(n) is the defining mathematical formula of A*."
+    "explanationEn": "🎯 Why this statement is True:\nA* search evaluates nodes by combining g(n) (cost to reach the node) and h(n) (estimated cost to get to the goal): f(n) = g(n) + h(n).\n\n💡 Real-World Example & Application:\nVideo game pathfinding uses A* to steer NPCs around obstacles by balancing distance already traveled with Euclidean distance to target.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because f(n) = g(n) + h(n) is the defining mathematical formula of A*.",
+    "questionAr": "إن الاستدلال المقبول هو الذي لا يبالغ أبدًا في تقدير التكلفة الحقيقية للوصول إلى حالة الهدف.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 192,
@@ -2985,7 +4240,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nتكون الدالة الكشفية مقبولة (Admissible) إذا لم تبالغ أبداً في تقدير التكلفة الحقيقية للوصول إلى الهدف (أي h(n) <= h*(n)).\n\n💡 مثال وتطبيق واقعي:\nمسافة الخط المستقيم مقبولة لأنها أقصر مسار فيزيائي ممكن بين نقطتين؛ فلا يمكن لأي طريق بري فعلي أن يكون أقصر من الخط المستقيم.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن عدم المبالغة (Never overestimating) هو الشرط الإلزامي للمقبولية.",
-    "explanationEn": "🎯 Why this statement is True:\nA heuristic is admissible if it never overestimates the true cost to reach the nearest goal state (it is optimistic: h(n) <= h*(n)).\n\n💡 Real-World Example & Application:\nStraight-line flight distance never overestimates road driving distance because straight geometry is always the shortest possible distance.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because non-overestimation is the formal definition of admissibility."
+    "explanationEn": "🎯 Why this statement is True:\nA heuristic is admissible if it never overestimates the true cost to reach the nearest goal state (it is optimistic: h(n) <= h*(n)).\n\n💡 Real-World Example & Application:\nStraight-line flight distance never overestimates road driving distance because straight geometry is always the shortest possible distance.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because non-overestimation is the formal definition of admissibility.",
+    "questionAr": "يكون الاستدلال متسقًا إذا كان لكل عقدة n وخليفة n'، تباين المثلث h(n) <= c(n, a, n') + h(n') محققًا.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 193,
@@ -2999,7 +4259,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nفي بحث الشجرة، تضمن المقبولية (Admissibility) وحدها أمثلية A*؛ أما في بحث الرسم البياني (Graph Search)، فيشترط أن تكون الدالة متسقة (Consistent / Monotonic) لضمان الأمثلية دون إعادة فتح العقد.\n\n💡 مثال وتطبيق واقعي:\nإذا كانت الدالة مقبولة فقط دون اتساق في بحث الرسم البياني، فقد تتجاوز الخوارزمية مساراً أفضل تم إغلاقه سابقاً ما لم تطبق آليات إعادة الفتح المعقدة.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأن العبارة أهملت شرط الاتساق الضروري لبحث الرسوم البيانية.",
-    "explanationEn": "🎯 Why this statement is True:\nIn graph search, admissibility alone does not guarantee A* optimality without node re-opening; the heuristic must be consistent (monotonic) for standard graph search.\n\n💡 Real-World Example & Application:\nA heuristic that drops drastically between neighbor nodes can cause A* graph search to discard an optimal path that reaches an already closed state.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because consistency is strictly required for optimal A* graph search without node reopenings."
+    "explanationEn": "🎯 Why this statement is True:\nIn graph search, admissibility alone does not guarantee A* optimality without node re-opening; the heuristic must be consistent (monotonic) for standard graph search.\n\n💡 Real-World Example & Application:\nA heuristic that drops drastically between neighbor nodes can cause A* graph search to discard an optimal path that reaches an already closed state.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because consistency is strictly required for optimal A* graph search without node reopenings.",
+    "questionAr": "كل ارشادي متسق مقبول، ولكن ارشادي مقبول ليس بالضرورة متسقا.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 194,
@@ -3013,7 +4278,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nالاتساق (Consistency أو متباينة المثلث) يشترط أن h(n) <= c(n, a, n') + h(n')؛ أي أن التقدير من العقدة الحالية لا يتجاوز تكلفة الخطوة زائد التقدير من العقدة المجاورة.\n\n💡 مثال وتطبيق واقعي:\nإذا كنت تبعد تقديرياً 100 كم عن مكة، وقطعت خطوة 20 كم نحو جدة، فلا يمكن أن يقفز تقديرك من جدة إلى 90 كم لأن 100 <= 20 + 90 صحيحة.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن متباينة المثلث هي التعبير الرياضي للاتساق.",
-    "explanationEn": "🎯 Why this statement is True:\nA heuristic is consistent (monotonic) if for every node n and successor n' generated by action a: h(n) <= c(n, a, n') + h(n').\n\n💡 Real-World Example & Application:\nTriangle inequality in navigation: the direct aerial estimate to Bucharest is always <= the cost to drive to Sibiu plus the aerial estimate from Sibiu.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because this inequality is the mathematical definition of heuristic consistency."
+    "explanationEn": "🎯 Why this statement is True:\nA heuristic is consistent (monotonic) if for every node n and successor n' generated by action a: h(n) <= c(n, a, n') + h(n').\n\n💡 Real-World Example & Application:\nTriangle inequality in navigation: the direct aerial estimate to Bucharest is always <= the cost to drive to Sibiu plus the aerial estimate from Sibiu.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because this inequality is the mathematical definition of heuristic consistency.",
+    "questionAr": "لا يقوم بحث A* بتوسيع أي عقد بتكلفة تقييم أكبر بشكل صارم من تكلفة الحل الأمثل C*.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 195,
@@ -3027,7 +4297,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nكل دالة كشفية متسقة (Consistent) هي بالضرورة دالة مقبولة (Admissible)، ولكن العكس ليس صحيحاً دائماً (هناك دوال مقبولة ولكنها غير متسقة).\n\n💡 مثال وتطبيق واقعي:\nمتباينة المثلث الرياضية تضمن بالاستقراء الرياضي أن التقدير لا يبالغ في التكلفة الحقيقية للهدف إطلاقاً.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن الاتساق شرط أقوى من المقبولية ويتضمنها بالضرورة.",
-    "explanationEn": "🎯 Why this statement is True:\nEvery consistent heuristic is mathematically guaranteed to be admissible, whereas the reverse is not always true.\n\n💡 Real-World Example & Application:\nApplying the triangle inequality step-by-step from any node to the goal proves by induction that h(n) <= h*(n).\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because consistency is a strictly stronger condition that implies admissibility."
+    "explanationEn": "🎯 Why this statement is True:\nEvery consistent heuristic is mathematically guaranteed to be admissible, whereas the reverse is not always true.\n\n💡 Real-World Example & Application:\nApplying the triangle inequality step-by-step from any node to the goal proves by induction that h(n) <= h*(n).\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because consistency is a strictly stronger condition that implies admissibility.",
+    "questionAr": "يعد اختبار مسافة مانهاتن للألغاز الثمانية مقبولًا لأن أي حركة واحدة يمكن أن تقلل على الأكثر مسافة قطعة واحدة بخطوة واحدة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 196,
@@ -3041,7 +4316,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nإذا كانت الدالة متسقة، فإن قيم f(n) لا تتناقص أبداً على طول أي مسار، مما يجعل منحنيات كفاف التكلفة f تتوسع بشكل منتظم ومتحد المركز تماماً كالأمواج في الماء.\n\n💡 مثال وتطبيق واقعي:\nفي بحث A*، عند فحص المسارات المتتالية، تزداد قيمة f(n) باطراد أو تثبت، ولا تهبط فجأة إلى الوراء.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن الرتابة (Monotonicity) في قيم f هي إحدى الخصائص الرياضية الجوهرية للاتساق.",
-    "explanationEn": "🎯 Why this statement is True:\nWith a consistent heuristic, values of f(n) = g(n) + h(n) along any path are monotonically non-decreasing, expanding in concentric contours.\n\n💡 Real-World Example & Application:\nTracing search contours in navigation: each successive expanded node has an f-value greater than or equal to its parent.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because monotonic non-decreasing f-values are guaranteed by consistency."
+    "explanationEn": "🎯 Why this statement is True:\nWith a consistent heuristic, values of f(n) = g(n) + h(n) along any path are monotonically non-decreasing, expanding in concentric contours.\n\n💡 Real-World Example & Application:\nTracing search contours in navigation: each successive expanded node has an f-value greater than or equal to its parent.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because monotonic non-decreasing f-values are guaranteed by consistency.",
+    "questionAr": "إذا كان h2 الإرشادي يهيمن على h1، فلن يقوم بحث A* باستخدام h2 أبدًا بتوسيع عقد أكثر من بحث A* باستخدام h1 (باستثناء كسر التعادل).",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 197,
@@ -3055,7 +4335,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nنقول إن الدالة الكشفية h2 تهيمن (Dominates) على h1 إذا كانت h2(n) >= h1(n) لجميع العقد (مع بقاء كلاهما مقبولين)، لأن h2 تقدم تقديراً أدق وأقرب للتكلفة الحقيقية.\n\n💡 مثال وتطبيق واقعي:\nفي لغز الـ 8 أرقام، مسافة مانهاتن تهيمن على عدد القطع غير الموضوعة في مكانها، لأن مسافة مانهاتن دائماً أكبر أو تساوي وتعطي بحثاً أسرع.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن الهيمنة تعني الاقتراب أكثر من القيمة الحقيقية دون تجاوزها.",
-    "explanationEn": "🎯 Why this statement is True:\nA heuristic h2 dominates h1 if h2(n) >= h1(n) for all nodes n and both are admissible, meaning h2 is tighter and more informative.\n\n💡 Real-World Example & Application:\nIn the 8-puzzle, Manhattan distance dominates misplaced tiles because Manhattan distance is always >= misplaced tiles count.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because dominance mathematically requires being closer to true cost without overshooting."
+    "explanationEn": "🎯 Why this statement is True:\nA heuristic h2 dominates h1 if h2(n) >= h1(n) for all nodes n and both are admissible, meaning h2 is tighter and more informative.\n\n💡 Real-World Example & Application:\nIn the 8-puzzle, Manhattan distance dominates misplaced tiles because Manhattan distance is always >= misplaced tiles count.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because dominance mathematically requires being closer to true cost without overshooting.",
+    "questionAr": "بالنظر إلى اثنين من الاستدلالات المقبولة h1 وh2، فإن الوظيفة المركبة h(n) = max(h1(n)، h2(n)) مقبولة أيضًا وتهيمن على كل من h1 وh2.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 198,
@@ -3069,7 +4354,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nاستخدام دالة كشفية مهيمنة (Dominating Heuristic) يقلص شجرة البحث ويوسع عدداً أقل أو مساوياً من العقد، مما يوفر وقتاً ومعالجة أكبر بكثير.\n\n💡 مثال وتطبيق واقعي:\nحل لغز الـ 8 بمسافة مانهاتن يوسع مئات العقد فقط، بينما حله بعدد القطع الشاذة يوسع آلاف العقد للوصول لنفس الحل.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن كفاءة الدالة المهيمنة مثبتة رياضياً في تقليص فضاء العقد المفحوصة.",
-    "explanationEn": "🎯 Why this statement is True:\nA* using a dominating heuristic h2 will never expand more nodes than A* using h1 (except possibly some nodes on the boundary where f(n) = C*).\n\n💡 Real-World Example & Application:\nSolving a 15-puzzle: Manhattan distance explores tens of thousands fewer nodes than the naive misplaced-tile heuristic.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because tighter heuristics are mathematically proven to prune more of the search space."
+    "explanationEn": "🎯 Why this statement is True:\nA* using a dominating heuristic h2 will never expand more nodes than A* using h1 (except possibly some nodes on the boundary where f(n) = C*).\n\n💡 Real-World Example & Application:\nSolving a 15-puzzle: Manhattan distance explores tens of thousands fewer nodes than the naive misplaced-tile heuristic.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because tighter heuristics are mathematically proven to prune more of the search space.",
+    "questionAr": "توفر تكلفة الحل الأمثل لمشكلة مريحة إرشادًا مقبولًا للمشكلة الأصلية غير المريحة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 199,
@@ -3083,7 +4373,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nالمسألة المريحة (Relaxed Problem) تنشأ من تقليص القيود المفروضة على الأفعال؛ وتكلفة الحل الأمثل للمسألة المريحة هي دائماً دالة كشفية مقبولة ومتسقة للمسألة الأصلية.\n\n💡 مثال وتطبيق واقعي:\nالسماح لقطع الشطرنج أو لغز الأرقام بالقفز فوق بعضها (تخفيف القيود) يعطي حساباً فورياً لمسافة مانهاتن المقبولة.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن تخفيف القيود هو الأسلوب الرياضي الأشهر والأكثر منهجية لتوليد الدوال الكشفية في الذكاء الاصطناعي.",
-    "explanationEn": "🎯 Why this statement is False:\nA relaxed problem removes action restrictions; the exact optimal cost of solving a relaxed problem is always an admissible and consistent heuristic for the original problem.\n\n💡 Real-World Example & Application:\nAllowing 8-puzzle tiles to slide into occupied squares creates the relaxed Manhattan distance heuristic naturally.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because relaxed problems are the primary formal method for deriving admissible heuristics."
+    "explanationEn": "🎯 Why this statement is False:\nA relaxed problem removes action restrictions; the exact optimal cost of solving a relaxed problem is always an admissible and consistent heuristic for the original problem.\n\n💡 Real-World Example & Application:\nAllowing 8-puzzle tiles to slide into occupied squares creates the relaxed Manhattan distance heuristic naturally.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because relaxed problems are the primary formal method for deriving admissible heuristics.",
+    "questionAr": "يتم ضمان البحث الموزون A* مع الوزن W > 1 للعثور على الحل الأمثل من حيث التكلفة في كل مشكلة بحث.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 200,
@@ -3097,7 +4392,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nخوارزمية IDA* تطبق فكرة التعميق التكراري ولكن بدلاً من تحديد حد العمق بالأرقام الصحيحة للطبقات، تحدده بحد تكلفة الدالة الكشفية الشاملة f(n).\n\n💡 مثال وتطبيق واقعي:\nفي مسائل الألغاز الكبيرة، تحتفظ IDA* بمسار واحد فقط في الذاكرة (مما يوفر الرام)، وتزيد حد التكلفة f في كل دورة إلى أدنى قيمة تجاوزت الحد السابق.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن تعيين حد القطع على قيمة f(n) هو الفارق الأساسي بين IDA* وIDS العادي.",
-    "explanationEn": "🎯 Why this statement is True:\nIterative-Deepening A* (IDA*) uses an f-cost limit (g + h) rather than a simple depth limit to control successive iterations while conserving memory.\n\n💡 Real-World Example & Application:\nSolving the 24-puzzle on limited memory: IDA* keeps a single branch in RAM, bumping the f-contour cutoff at each round.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because using f-cost as the iterative threshold is the exact operational definition of IDA*."
+    "explanationEn": "🎯 Why this statement is True:\nIterative-Deepening A* (IDA*) uses an f-cost limit (g + h) rather than a simple depth limit to control successive iterations while conserving memory.\n\n💡 Real-World Example & Application:\nSolving the 24-puzzle on limited memory: IDA* keeps a single branch in RAM, bumping the f-contour cutoff at each round.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because using f-cost as the iterative threshold is the exact operational definition of IDA*.",
+    "questionAr": "في مشكلات البحث المعقدة ذات الحدود الضيقة للذاكرة، يمكن أن يعاني SMA* من الضرب، حيث يقوم باستمرار بتجديد العقد المنسية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 201,
@@ -3113,7 +4413,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Thought processes/reasoning vs Behavior, and Human performance vs Ideal rationality):\nتُنظَّم تعريفات الذكاء الاصطناعي في AIMA تاريخياً ضمن مصفوفة ثنائية الأبعاد: بُعد (التفكير مقابل السلوك)، وبُعد (الأداء البشري مقابل العقلانية المثالية).\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Hardware vs Software, and Theory vs Practice)، (C - Symbolic systems vs Connectionist systems, and Supervised vs Unsupervised)، (D - Discrete time vs Continuous time, and Single-agent vs Multi-agent)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Thought processes/reasoning vs Behavior, and Human performance vs Ideal rationality') is the correct choice:\nAI definitions are historically mapped across two dimensions: thought processes/reasoning vs. behavior, and human performance vs. ideal rationality.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Hardware vs Software, and Theory vs Practice), (C - Symbolic systems vs Connectionist systems, and Supervised vs Unsupervised), (D - Discrete time vs Continuous time, and Single-agent vs Multi-agent)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Thought processes/reasoning vs Behavior, and Human performance vs Ideal rationality') is the correct choice:\nAI definitions are historically mapped across two dimensions: thought processes/reasoning vs. behavior, and human performance vs. ideal rationality.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Hardware vs Software, and Theory vs Practice), (C - Symbolic systems vs Connectionist systems, and Supervised vs Unsupervised), (D - Discrete time vs Continuous time, and Single-agent vs Multi-agent)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في الفصل الأول من AIMA، تم تنظيم تعريفات الذكاء الاصطناعي تاريخيًا في مصفوفة 2x2 والتي يوجد على طولها بعدان أساسيان؟",
+    "optionsAr": [
+      "الأجهزة مقابل البرمجيات، والنظرية مقابل الممارسة",
+      "عمليات التفكير/الاستدلال مقابل السلوك، والأداء البشري مقابل العقلانية المثالية",
+      "الأنظمة الرمزية مقابل الأنظمة الاتصالية، والأنظمة الخاضعة للإشراف مقابل الأنظمة غير الخاضعة للرقابة",
+      "الوقت المنفصل مقابل الوقت المستمر، والوكيل الفردي مقابل الوكيل المتعدد"
+    ]
   },
   {
     "id": 202,
@@ -3129,7 +4436,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - The Imitation Game (Turing Test)):\nجسد آلان تورينج مدخل 'التصرف كالبشر' (Acting Humanly) عام 1950 عبر 'لعبة المحاكاة' (اختبار تورينج)، كمعيار عملي لقياس الذكاء عبر محادثة نصية.\n\n💡 مثال وتطبيق واقعي:\nاختبار تورينج يقيس ما إذا كان روبوت محادثة نصية يستطيع مجاراة إنسان في الحوار بحيث يعجز المحاور البشري عن التمييز بينهما.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The Chinese Room argument)، (C - The Winograd Schema Challenge)، (D - The Voight-Kampff test)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'The Imitation Game (Turing Test)') is the correct choice:\nAlan Turing operationalized the 'Acting Humanly' approach in 1950 through his Imitation Game (the Turing Test), assessing conversational indistinguishability from a human.\n\n💡 Real-World Example & Application:\nThe Turing Test evaluates whether a text-based conversational bot can converse so naturally that an interrogator cannot distinguish it from a human.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The Chinese Room argument), (C - The Winograd Schema Challenge), (D - The Voight-Kampff test)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'The Imitation Game (Turing Test)') is the correct choice:\nAlan Turing operationalized the 'Acting Humanly' approach in 1950 through his Imitation Game (the Turing Test), assessing conversational indistinguishability from a human.\n\n💡 Real-World Example & Application:\nThe Turing Test evaluates whether a text-based conversational bot can converse so naturally that an interrogator cannot distinguish it from a human.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The Chinese Room argument), (C - The Winograd Schema Challenge), (D - The Voight-Kampff test)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لقد تم تفعيل منهج \"التصرف بشكل إنساني\" تجاه الذكاء الاصطناعي في عام 1950 على يد آلان تورينج، من خلال أي تقييم مقترح؟",
+    "optionsAr": [
+      "حجة الغرفة الصينية",
+      "لعبة التقليد (اختبار تورينج)",
+      "تحدي مخطط فينوغراد",
+      "اختبار فويت كامبف"
+    ]
   },
   {
     "id": 203,
@@ -3145,7 +4459,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - Physical Robotic Manipulation):\nلا يتطلب اختبار تورينج القياسي عبر الشاشة النصية أي قدرات روبوتية مادية (Robotic Manipulation)؛ فالهدف هو اختبار الذكاء التجريدي بمعزل عن الجسد المادي.\n\n💡 مثال وتطبيق واقعي:\nاختبار تورينج القياسي يجري عبر شاشة نصية معزولة؛ لذا لا يحتاج الروبوت لذراع ميكانيكية أو جسد فيزيائي للمشاركة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Natural Language Processing (NLP))، (B - Knowledge Representation)، (D - Machine Learning)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'Physical Robotic Manipulation') is the correct choice:\nThe standard teletype Turing Test deliberately excludes Physical Robotic Manipulation, testing intellectual capabilities without physical embodiment.\n\n💡 Real-World Example & Application:\nThe standard Turing Test operates purely via teletype/screen; physical robotic arms or legs are completely unnecessary.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Natural Language Processing (NLP)), (B - Knowledge Representation), (D - Machine Learning)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'Physical Robotic Manipulation') is the correct choice:\nThe standard teletype Turing Test deliberately excludes Physical Robotic Manipulation, testing intellectual capabilities without physical embodiment.\n\n💡 Real-World Example & Application:\nThe standard Turing Test operates purely via teletype/screen; physical robotic arms or legs are completely unnecessary.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Natural Language Processing (NLP)), (B - Knowledge Representation), (D - Machine Learning)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لاجتياز اختبار تورينج القياسي عبر محطة قائمة على النصوص، يحتاج نظام الذكاء الاصطناعي إلى قدرات في جميع التخصصات الأساسية التالية باستثناء:",
+    "optionsAr": [
+      "معالجة اللغات الطبيعية (NLP)",
+      "تمثيل المعرفة",
+      "التلاعب الآلي الفيزيائي",
+      "التعلم الآلي"
+    ]
   },
   {
     "id": 204,
@@ -3161,7 +4482,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Computer Vision and Robotics):\nيتطلب اختبار تورينج الشامل (Total Turing Test) إضافتين جوهريتين للاختبار القياسي: الرؤية الحاسوبية (Computer Vision) لإدراك الأشياء، والروبوتات (Robotics) للتعامل معها ماديّاً.\n\n💡 مثال وتطبيق واقعي:\nاختبار تورينج الشامل (Total Turing Test) يضيف الرؤية الحاسوبية والروبوتات لاختبار قدرة الآلة على رؤية الأشياء ولمسها في الواقع.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Calculus and Theorem Proving)، (C - Speech synthesis and Web searching)، (D - Quantum computing and Cloud storage)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Computer Vision and Robotics') is the correct choice:\nThe Total Turing Test requires two additional capabilities beyond the standard test: Computer Vision (to perceive objects) and Robotics (to manipulate physical objects).\n\n💡 Real-World Example & Application:\nThe Total Turing Test adds Computer Vision and Robotics to test physical perception and object manipulation.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Calculus and Theorem Proving), (C - Speech synthesis and Web searching), (D - Quantum computing and Cloud storage)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Computer Vision and Robotics') is the correct choice:\nThe Total Turing Test requires two additional capabilities beyond the standard test: Computer Vision (to perceive objects) and Robotics (to manipulate physical objects).\n\n💡 Real-World Example & Application:\nThe Total Turing Test adds Computer Vision and Robotics to test physical perception and object manipulation.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Calculus and Theorem Proving), (C - Speech synthesis and Web searching), (D - Quantum computing and Cloud storage)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما الإمكانيتين الإضافيتين المطلوبتين على وجه التحديد للوكيل لاجتياز اختبار تورينج الإجمالي مقارنة باختبار تورينج القياسي؟",
+    "optionsAr": [
+      "حساب التفاضل والتكامل والنظرية إثبات",
+      "الرؤية الحاسوبية والروبوتات",
+      "تركيب الكلام والبحث في الويب",
+      "الحوسبة الكمومية والتخزين السحابي"
+    ]
   },
   {
     "id": 205,
@@ -3177,7 +4505,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Cognitive Science):\nيرتكز مدخل 'التفكير كالبشر' (Thinking Humanly) على مطابقة البرامج الحسابية مع السلوك البشري التجريبي عبر حقل 'العلوم الاستعرافية' (Cognitive Science).\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Operations Research)، (C - Quantum Mechanics)، (D - Control Theory)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Cognitive Science') is the correct choice:\nThe 'Thinking Humanly' approach relies on Cognitive Science, which combines computer models with experimental psychology techniques to study the human mind.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Operations Research), (C - Quantum Mechanics), (D - Control Theory)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Cognitive Science') is the correct choice:\nThe 'Thinking Humanly' approach relies on Cognitive Science, which combines computer models with experimental psychology techniques to study the human mind.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Operations Research), (C - Quantum Mechanics), (D - Control Theory)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "يعتمد نهج \"التفكير الإنساني\" في الذكاء الاصطناعي على التحقق من صحة برامج الكمبيوتر مقابل البيانات البشرية التجريبية، من خلال أي مجال متعدد التخصصات؟",
+    "optionsAr": [
+      "بحوث العمليات",
+      "العلوم المعرفية",
+      "ميكانيكا الكم",
+      "نظرية التحكم"
+    ]
   },
   {
     "id": 206,
@@ -3193,7 +4528,14 @@ const questions = [
     ],
     "correctAnswer": 3,
     "explanationAr": "🎯 سبب اختيار (D - Measuring processor clock speeds and memory voltage):\nقياس تردد المعالج وسرعة الفولتية ليس من طرق علم النفس الاستعرافي؛ فالطرق الثلاث المعتمدة هي: الاستبطان الذاتي، والتجارب النفسية، والتصوير الدماغي العصبي.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Introspection (catching our own thoughts as they go by))، (B - Psychological experiments (observing people in action))، (C - Brain imaging (observing the neurological brain in action))] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (D - 'Measuring processor clock speeds and memory voltage') is the correct choice:\nMeasuring clock speeds and voltage is purely computer hardware profiling; the three cognitive science methods are introspection, psychological experiments, and brain imaging.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Introspection (catching our own thoughts as they go by)), (B - Psychological experiments (observing people in action)), (C - Brain imaging (observing the neurological brain in action))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (D - 'Measuring processor clock speeds and memory voltage') is the correct choice:\nMeasuring clock speeds and voltage is purely computer hardware profiling; the three cognitive science methods are introspection, psychological experiments, and brain imaging.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Introspection (catching our own thoughts as they go by)), (B - Psychological experiments (observing people in action)), (C - Brain imaging (observing the neurological brain in action))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في العلوم المعرفية، أي مما يلي لا يعد إحدى الطرق الأساسية الثلاثة المستخدمة لتحديد كيفية عمل الأفكار البشرية؟",
+    "optionsAr": [
+      "الاستبطان (التقاط أفكارنا أثناء مرورها)",
+      "تجارب نفسية (ملاحظة الأشخاص أثناء تصرفاتهم)",
+      "تصوير الدماغ (ملاحظة عمل الدماغ العصبي)",
+      "قياس سرعات ساعة المعالج وجهد الذاكرة"
+    ]
   },
   {
     "id": 207,
@@ -3209,7 +4551,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Aristotle):\nتعود جذور مدخل 'التفكير العقلاني' (Thinking Rationally) إلى تقاليد 'قوانين الفكر' والقياس المنطقي (Syllogisms) التي وضعها الفيلسوف اليوناني أرسطو.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Socrates)، (C - Pythagoras)، (D - Epicurus)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Aristotle') is the correct choice:\nThe 'Thinking Rationally' tradition originated with Aristotle's syllogisms, which initiated the formal 'laws of thought' approach to deductive reasoning.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Socrates), (C - Pythagoras), (D - Epicurus)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Aristotle') is the correct choice:\nThe 'Thinking Rationally' tradition originated with Aristotle's syllogisms, which initiated the formal 'laws of thought' approach to deductive reasoning.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Socrates), (C - Pythagoras), (D - Epicurus)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "إن منهج \"التفكير العقلاني\" في التعامل مع الذكاء الاصطناعي متجذر في تقليد \"قوانين الفكر\"، الذي كان رائده أي فيلسوف يوناني قديم؟",
+    "optionsAr": [
+      "أرسطو",
+      "سقراط",
+      "فيثاغورس",
+      "أبيقور"
+    ]
   },
   {
     "id": 208,
@@ -3225,7 +4574,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Stating informal real-world knowledge in formal logic terms is extremely difficult, and deductive reasoning can be computationally intractable):\nيواجه المدخل المنطقي الصارم عقبتين عمليتين: صعوبة تحويل معارف العالم الواقعي غير المؤكدة إلى رموز منطقية، والاستعصاء الحسابي للاستدلال المنطقي في المسائل الكبيرة.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Computers cannot perform logical operations like AND and OR)، (C - Aristotelian syllogisms only function in continuous environments)، (D - Formal logic cannot be implemented using programming languages)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Stating informal real-world knowledge in formal logic terms is extremely difficult, and deductive reasoning can be computationally intractable') is the correct choice:\nThe logicist approach struggles because formalizing informal world knowledge is extremely hard, and pure deductive reasoning can be computationally intractable.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Computers cannot perform logical operations like AND and OR), (C - Aristotelian syllogisms only function in continuous environments), (D - Formal logic cannot be implemented using programming languages)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Stating informal real-world knowledge in formal logic terms is extremely difficult, and deductive reasoning can be computationally intractable') is the correct choice:\nThe logicist approach struggles because formalizing informal world knowledge is extremely hard, and pure deductive reasoning can be computationally intractable.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Computers cannot perform logical operations like AND and OR), (C - Aristotelian syllogisms only function in continuous environments), (D - Formal logic cannot be implemented using programming languages)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هي العقبة العملية الرئيسية التي يواجهها النهج المنطقي المحض (\"قوانين الفكر\") عند تطبيقه على الذكاء الاصطناعي في العالم الحقيقي؟",
+    "optionsAr": [
+      "لا يمكن لأجهزة الكمبيوتر إجراء عمليات منطقية مثل AND وOR",
+      "يعد ذكر المعرفة غير الرسمية في العالم الحقيقي بمصطلحات المنطق الرسمي أمرًا صعبًا للغاية، ويمكن أن يكون التفكير الاستنتاجي مستعصيًا حسابيًا",
+      "القياسات المنطقية الأرسطية تعمل فقط في البيئات المستمرة",
+      "لا يمكن تنفيذ المنطق الرسمي باستخدام لغات البرمجة"
+    ]
   },
   {
     "id": 209,
@@ -3241,7 +4597,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - Acting Rationally (The rational agent approach)):\nالمدخل الأساسي المعتمد في كتاب AIMA كإطار تنظيمي مركزي شامل هو 'التصرف بعقلانية' عبر تصميم الوكلاء العقلانيين (Rational Agents).\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Thinking Humanly (Cognitive modeling))، (B - Acting Humanly (Turing test imitation))، (D - Thinking Rationally (Pure deductive logic))] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'Acting Rationally (The rational agent approach)') is the correct choice:\nAIMA adopts 'Acting Rationally' (the rational agent approach) as its core organizing framework because it is more general and operationally well-defined.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Thinking Humanly (Cognitive modeling)), (B - Acting Humanly (Turing test imitation)), (D - Thinking Rationally (Pure deductive logic))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'Acting Rationally (The rational agent approach)') is the correct choice:\nAIMA adopts 'Acting Rationally' (the rational agent approach) as its core organizing framework because it is more general and operationally well-defined.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Thinking Humanly (Cognitive modeling)), (B - Acting Humanly (Turing test imitation)), (D - Thinking Rationally (Pure deductive logic))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في AIMA، النهج الأساسي المعتمد كموضوع تنظيمي مركزي في جميع أنحاء الكتاب المدرسي هو:",
+    "optionsAr": [
+      "التفكير إنسانياً (النمذجة المعرفية)",
+      "التصرف إنسانيا (التقليد باختبار تورينج)",
+      "التصرف بعقلانية (منهج الفاعل العقلاني)",
+      "التفكير العقلاني (المنطق الاستنتاجي البحت)"
+    ]
   },
   {
     "id": 210,
@@ -3257,7 +4620,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Correct logical inference is only one of several possible mechanisms for achieving rationality, allowing for reflex actions and actions under uncertainty):\nيتفوق مدخل الوكيل العقلاني لأن الاستنتاج المنطقي هو مجرد آلية واحدة من بين عدة آليات لتحقيق العقلانية، مما يسمح بالسلوكيات المنعكسة واتخاذ القرارات تحت ظروف عدم اليقين.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - It completely eliminates the need for mathematical representations)، (C - Rational agents do not require sensors or actuators)، (D - It guarantees that algorithms always run in O(1) constant time)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Correct logical inference is only one of several possible mechanisms for achieving rationality, allowing for reflex actions and actions under uncertainty') is the correct choice:\nThe rational agent approach is superior because logical inference is only one mechanism for rationality, accommodating reflex actions and decisions under uncertainty.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - It completely eliminates the need for mathematical representations), (C - Rational agents do not require sensors or actuators), (D - It guarantees that algorithms always run in O(1) constant time)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Correct logical inference is only one of several possible mechanisms for achieving rationality, allowing for reflex actions and actions under uncertainty') is the correct choice:\nThe rational agent approach is superior because logical inference is only one mechanism for rationality, accommodating reflex actions and decisions under uncertainty.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - It completely eliminates the need for mathematical representations), (C - Rational agents do not require sensors or actuators), (D - It guarantees that algorithms always run in O(1) constant time)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا يعد منهج العامل العقلاني (\"التصرف بعقلانية\") مفيدًا على منهج \"التفكير العقلاني\" (قوانين الفكر)؟",
+    "optionsAr": [
+      "إنه يلغي تماما الحاجة إلى التمثيلات الرياضية",
+      "إن الاستدلال المنطقي الصحيح ليس سوى واحدة من عدة آليات ممكنة لتحقيق العقلانية، مما يسمح بأفعال منعكسة وأفعال في ظل عدم اليقين",
+      "لا تتطلب العوامل العقلانية أجهزة استشعار أو مشغلات",
+      "إنه يضمن تشغيل الخوارزميات دائمًا في وقت ثابت O (1)."
+    ]
   },
   {
     "id": 211,
@@ -3273,7 +4643,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Optimize an objective or utility function specified by its human designers):\nيُعرَّف 'النموذج القياسي' للذكاء الاصطناعي بأن الوكيل يُصمَّم لتحسين وتحقيق أقصى قيمة لدالة هدف أو منفعة محددة مسبقاً من قِبل مصمميه البشريين.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Experience human emotional states)، (C - Disobey human commands whenever energy is low)، (D - Pass the Turing Test in a minimum of five different languages)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Optimize an objective or utility function specified by its human designers') is the correct choice:\nThe 'standard model' of AI envisions an agent designed to optimize a fixed objective or utility function specified by its human designers.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Experience human emotional states), (C - Disobey human commands whenever energy is low), (D - Pass the Turing Test in a minimum of five different languages)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Optimize an objective or utility function specified by its human designers') is the correct choice:\nThe 'standard model' of AI envisions an agent designed to optimize a fixed objective or utility function specified by its human designers.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Experience human emotional states), (C - Disobey human commands whenever energy is low), (D - Pass the Turing Test in a minimum of five different languages)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في أبحاث الذكاء الاصطناعي، يتصور \"النموذج القياسي\" للذكاء الاصطناعي وكيلًا مصممًا من أجل:",
+    "optionsAr": [
+      "تجربة الحالات العاطفية البشرية",
+      "تحسين وظيفة الهدف أو المنفعة المحددة من قبل المصممين البشريين",
+      "عصي أوامر الإنسان عندما تكون الطاقة منخفضة",
+      "اجتياز اختبار تورينج بخمس لغات مختلفة على الأقل"
+    ]
   },
   {
     "id": 212,
@@ -3289,7 +4666,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - If we specify the wrong objective function, a super-capable agent will optimize that flawed objective with potentially catastrophic consequences):\nتكمن معضلة الملك ميداس (King Midas problem) في أن النظام فائق القدرة قد يحسن دالة هدف غير دقيقة أو معيبة حرفياً، مما يؤدي إلى عواقب كارثية غير مقصودة.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Machines will become too slow to process speech)، (C - Silicon processors will melt when running deep neural networks)، (D - Agents will refuse to accept any objectives from users)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'If we specify the wrong objective function, a super-capable agent will optimize that flawed objective with potentially catastrophic consequences') is the correct choice:\nThe King Midas problem warns that if we specify the wrong objective, a highly capable autonomous agent will optimize that flawed goal with catastrophic unintended consequences.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Machines will become too slow to process speech), (C - Silicon processors will melt when running deep neural networks), (D - Agents will refuse to accept any objectives from users)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'If we specify the wrong objective function, a super-capable agent will optimize that flawed objective with potentially catastrophic consequences') is the correct choice:\nThe King Midas problem warns that if we specify the wrong objective, a highly capable autonomous agent will optimize that flawed goal with catastrophic unintended consequences.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Machines will become too slow to process speech), (C - Silicon processors will melt when running deep neural networks), (D - Agents will refuse to accept any objectives from users)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هو الاهتمام الرئيسي بالسلامة الحديثة في \"النموذج القياسي\" للذكاء الاصطناعي (مشكلة الملك ميداس)؟",
+    "optionsAr": [
+      "ستصبح الآلات بطيئة جدًا في معالجة الكلام",
+      "إذا قمنا بتحديد وظيفة الهدف الخاطئة، فسيعمل الوكيل ذو القدرة الفائقة على تحسين هذا الهدف المعيب مع عواقب وخيمة محتملة",
+      "سوف تذوب معالجات السيليكون عند تشغيل الشبكات العصبية العميقة",
+      "سوف يرفض الوكلاء قبول أي أهداف من المستخدمين"
+    ]
   },
   {
     "id": 213,
@@ -3305,7 +4689,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - 5 minutes):\nفي بروتوكول اختبار تورينج الأصلي لعام 1950، يقضي المحاور البشري مدة 5 دقائق في المحادثة النصية قبل أن يصدر حكمه عما إذا كان الطرف الآخر إنساناً أم آلة.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - 1 hour)، (C - 24 hours)، (D - 10 seconds)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - '5 minutes') is the correct choice:\nIn Turing's original 1950 formulation, the interrogator was given 5 minutes of conversational interaction before judging machine vs. human identity.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - 1 hour), (C - 24 hours), (D - 10 seconds)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - '5 minutes') is the correct choice:\nIn Turing's original 1950 formulation, the interrogator was given 5 minutes of conversational interaction before judging machine vs. human identity.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - 1 hour), (C - 24 hours), (D - 10 seconds)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في بروتوكول اختبار تورينج الأصلي، بعد أي مدة من المحادثة يقرر المحقق ما إذا كان المستفتى آلة أم إنسانًا؟",
+    "optionsAr": [
+      "5 دقائق",
+      "ساعة واحدة",
+      "24 ساعة",
+      "10 ثواني"
+    ]
   },
   {
     "id": 214,
@@ -3321,7 +4712,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - AI researchers focus on studying the underlying principles of intelligence and solving real problems, analogous to how aeronautical engineering focuses on aerodynamics rather than copying birds):\nيركز باحثو الذكاء الاصطناعي على دراسة المبادئ العميقة للذكاء وحل المسائل الواقعية، تماماً كما تركز هندسة الطيران على قوانين الديناميكا الهوائية بدلاً من تقليد ريش الطيور.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The test has already been officially solved by pocket calculators)، (C - Passing the Turing Test is illegal under international law)، (D - The Turing Test only applies to analog computers)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'AI researchers focus on studying the underlying principles of intelligence and solving real problems, analogous to how aeronautical engineering focuses on aerodynamics rather than copying birds') is the correct choice:\nResearchers focus on underlying principles of rational decision-making rather than mimicking human idiosyncrasies, just as aeronautics studies aerodynamics rather than bird feathers.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The test has already been officially solved by pocket calculators), (C - Passing the Turing Test is illegal under international law), (D - The Turing Test only applies to analog computers)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'AI researchers focus on studying the underlying principles of intelligence and solving real problems, analogous to how aeronautical engineering focuses on aerodynamics rather than copying birds') is the correct choice:\nResearchers focus on underlying principles of rational decision-making rather than mimicking human idiosyncrasies, just as aeronautics studies aerodynamics rather than bird feathers.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The test has already been officially solved by pocket calculators), (C - Passing the Turing Test is illegal under international law), (D - The Turing Test only applies to analog computers)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا يبذل باحثو الذكاء الاصطناعي السائد عمومًا جهدًا قليلًا نسبيًا في محاولة بناء أنظمة مصممة خصيصًا لاجتياز اختبار تورينج؟",
+    "optionsAr": [
+      "لقد تم بالفعل حل الاختبار رسميًا بواسطة حاسبات الجيب",
+      "يركز باحثو الذكاء الاصطناعي على دراسة المبادئ الأساسية للذكاء وحل المشكلات الحقيقية، على غرار كيفية تركيز هندسة الطيران على الديناميكا الهوائية بدلاً من تقليد الطيور",
+      "اجتياز اختبار تورينج أمر غير قانوني بموجب القانون الدولي",
+      "ينطبق اختبار تورينج فقط على أجهزة الكمبيوتر التناظرية"
+    ]
   },
   {
     "id": 215,
@@ -3337,7 +4735,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Automated Reasoning):\nيُطلق مصطلح 'الاستدلال الآلي' (Automated Reasoning) على قدرة النظام على استخدام المعلومات المخزنة للإجابة عن التساؤلات واستخلاص استنتاجات ومعارف جديدة.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Computer Vision)، (C - Robotics)، (D - Natural Language Processing)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Automated Reasoning') is the correct choice:\nAutomated Reasoning is the capability to use stored knowledge to answer queries and derive logically sound new conclusions.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Computer Vision), (C - Robotics), (D - Natural Language Processing)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Automated Reasoning') is the correct choice:\nAutomated Reasoning is the capability to use stored knowledge to answer queries and derive logically sound new conclusions.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Computer Vision), (C - Robotics), (D - Natural Language Processing)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في سياق اختبار تورينج، تُعرف القدرة على استخدام المعلومات المخزنة للإجابة على الأسئلة واستخلاص استنتاجات جديدة باسم:",
+    "optionsAr": [
+      "رؤية الكمبيوتر",
+      "الاستدلال الآلي",
+      "الروبوتات",
+      "معالجة اللغات الطبيعية"
+    ]
   },
   {
     "id": 216,
@@ -3353,7 +4758,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - To adapt to new circumstances and detect and extrapolate patterns):\nيُعد التعلم الآلي (Machine Learning) ضرورياً في اختبار تورينج لتمكين الوكيل من التكيف مع المواقف والظروف الجديدة واكتشاف الأنماط واستقرائها من التجارب.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - To power its cooling fans)، (C - To calculate mathematical square roots in hardware)، (D - To convert AC power to DC power)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'To adapt to new circumstances and detect and extrapolate patterns') is the correct choice:\nMachine Learning is essential for passing the Turing Test because an intelligent agent must adapt to novel scenarios and extrapolate patterns from experience.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - To power its cooling fans), (C - To calculate mathematical square roots in hardware), (D - To convert AC power to DC power)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'To adapt to new circumstances and detect and extrapolate patterns') is the correct choice:\nMachine Learning is essential for passing the Turing Test because an intelligent agent must adapt to novel scenarios and extrapolate patterns from experience.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - To power its cooling fans), (C - To calculate mathematical square roots in hardware), (D - To convert AC power to DC power)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا يعتبر التعلم الآلي قدرة أساسية للوكيل الذي يحاول اجتياز اختبار تورينج؟",
+    "optionsAr": [
+      "لتشغيل مراوح التبريد",
+      "التكيف مع الظروف الجديدة وكشف الأنماط واستقراءها",
+      "لحساب الجذور التربيعية الرياضية في الأجهزة",
+      "لتحويل طاقة التيار المتردد إلى طاقة التيار المستمر"
+    ]
   },
   {
     "id": 217,
@@ -3369,7 +4781,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Does the 'right thing' based on what it knows and its performance measure):\nيُعرَّف النظام بأنه عقلاني (Rational) إذا كان يفعل 'الشيء الصحيح' الذي يحقق أفضل نتيجة متوقعة استناداً إلى ما يدركه من معلومات ومعيار الأداء المحدد له.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Replicates human mistakes and biases)، (C - Runs exclusively on quantum hardware)، (D - Discards all past percept history)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Does the 'right thing' based on what it knows and its performance measure') is the correct choice:\nA system is defined as rational if it takes actions that maximize expected success given its perceptions and its specified performance measure.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Replicates human mistakes and biases), (C - Runs exclusively on quantum hardware), (D - Discards all past percept history)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Does the 'right thing' based on what it knows and its performance measure') is the correct choice:\nA system is defined as rational if it takes actions that maximize expected success given its perceptions and its specified performance measure.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Replicates human mistakes and biases), (C - Runs exclusively on quantum hardware), (D - Discards all past percept history)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "يتم تعريف النظام على أنه عقلاني إذا كان:",
+    "optionsAr": [
+      "يكرر أخطاء البشر وتحيزاتهم",
+      "يفعل \"الشيء الصحيح\" بناءً على ما يعرفه وقياس أدائه",
+      "يعمل حصريًا على الأجهزة الكمومية",
+      "يتجاهل كل تاريخ الإدراك الماضي"
+    ]
   },
   {
     "id": 218,
@@ -3385,7 +4804,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Human reasoning is subject to systematic cognitive biases, emotional distortions, and computational resource limits):\nالتفكير البشري ليس عقلانياً دائماً بسبب خضوعه للتحيزات المعرفية المنهجية (Cognitive biases)، والتأثيرات العاطفية، والمحدودية الحسابية لقدرات الدماغ المعرفية.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Humans do not possess biological brains)، (C - Humans cannot communicate in natural language)، (D - Human memory capacity is mathematically zero)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Human reasoning is subject to systematic cognitive biases, emotional distortions, and computational resource limits') is the correct choice:\nHuman thought is not strictly rational because human cognition is subject to systematic psychological biases, emotional heuristics, and bounded computational limits.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Humans do not possess biological brains), (C - Humans cannot communicate in natural language), (D - Human memory capacity is mathematically zero)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Human reasoning is subject to systematic cognitive biases, emotional distortions, and computational resource limits') is the correct choice:\nHuman thought is not strictly rational because human cognition is subject to systematic psychological biases, emotional heuristics, and bounded computational limits.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Humans do not possess biological brains), (C - Humans cannot communicate in natural language), (D - Human memory capacity is mathematically zero)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا لا تكون عمليات التفكير البشري عقلانية دائمًا؟",
+    "optionsAr": [
+      "البشر لا يملكون أدمغة بيولوجية",
+      "يخضع المنطق البشري للتحيزات المعرفية المنهجية والتشوهات العاطفية وحدود الموارد الحسابية",
+      "لا يستطيع البشر التواصل باللغة الطبيعية",
+      "سعة الذاكرة البشرية تساوي صفرًا رياضيًا"
+    ]
   },
   {
     "id": 219,
@@ -3401,7 +4827,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Dualism):\nالمذهب الفلسفي الذي وضعه رينيه ديكارت والذي يفترض أن العقل كيان غير مادي منفصل جوهرياً عن الجسد المادي يُعرف بـ 'الثنائية' (Dualism).\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Materialism)، (C - Positivism)، (D - Empiricism)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Dualism') is the correct choice:\nDescartes' philosophical doctrine positing that the mind is an immaterial substance fundamentally distinct from the physical body is Dualism.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Materialism), (C - Positivism), (D - Empiricism)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Dualism') is the correct choice:\nDescartes' philosophical doctrine positing that the mind is an immaterial substance fundamentally distinct from the physical body is Dualism.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Materialism), (C - Positivism), (D - Empiricism)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "تُعرف العقيدة الفلسفية التي اقترحها رينيه ديكارت والتي تفترض أن العقل منفصل بشكل أساسي عن الجسم المادي بما يلي:",
+    "optionsAr": [
+      "المادية",
+      "الثنائية",
+      "الوضعية",
+      "التجريبية"
+    ]
   },
   {
     "id": 220,
@@ -3417,7 +4850,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Materialism (or Physicalism)):\nتذهب المدرسة 'المادية' أو 'الفيزيائية' (Materialism / Physicalism) إلى أن عمليات الدماغ التي تخضع لقوانين الفيزياء والكيمياء هي بذاتها التي تُشكل وتولد العقل.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Solipsism)، (C - Rationalism)، (D - Existentialism)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Materialism (or Physicalism)') is the correct choice:\nMaterialism (Physicalism) asserts that the operations of the physical brain operating according to physical laws constitute all mental processes.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Solipsism), (C - Rationalism), (D - Existentialism)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Materialism (or Physicalism)') is the correct choice:\nMaterialism (Physicalism) asserts that the operations of the physical brain operating according to physical laws constitute all mental processes.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Solipsism), (C - Rationalism), (D - Existentialism)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "على النقيض من الثنائية، ما هي المدرسة الفلسفية التي ترى أن عمليات الدماغ التي تعمل وفقا لقوانين الفيزياء تشكل العقل؟",
+    "optionsAr": [
+      "المادية (أو الفيزيائية)",
+      "الأنانية",
+      "العقلانية",
+      "الوجودية"
+    ]
   },
   {
     "id": 221,
@@ -3433,7 +4873,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Empiricism):\nتُعرف الحركة الفلسفية التي أطلقها جون لوك بمقولته 'لا شيء في العقل لم يكن أولاً في الحواس' بالمذهب التجريبي (Empiricism).\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Idealism)، (C - Nativism)، (D - Skepticism)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Empiricism') is the correct choice:\nEmpiricism, championed by John Locke, asserts that all understanding and knowledge originate directly from sensory perception.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Idealism), (C - Nativism), (D - Skepticism)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Empiricism') is the correct choice:\nEmpiricism, championed by John Locke, asserts that all understanding and knowledge originate directly from sensory perception.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Idealism), (C - Nativism), (D - Skepticism)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "تُعرف الحركة الفلسفية التي بدأها جون لوك بمقولته القائلة بأن \"لا شيء في الفهم لم يكن أولًا بالمعنى\" باسم:",
+    "optionsAr": [
+      "التجريبية",
+      "المثالية",
+      "القومية",
+      "الشك"
+    ]
   },
   {
     "id": 222,
@@ -3449,7 +4896,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - How general rules and future predictions can be justified on the basis of a finite number of past observations):\nحلل ديفيد هيوم 'مبدأ الاستقراء' طارحاً التساؤل الجوهري للتعلم الآلي: كيف يمكن تبرير القواعد العامة والتنبؤات المستقبلية استناداً إلى عدد محدود من الملاحظات الماضية؟\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - How electrical currents induce magnetic fields in computer disks)، (C - Why binary logic cannot represent decimal fractions)، (D - How processors maintain clock synchronization)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'How general rules and future predictions can be justified on the basis of a finite number of past observations') is the correct choice:\nDavid Hume's problem of induction asks how general rules and future predictions can be logically justified based on a finite set of past observations.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - How electrical currents induce magnetic fields in computer disks), (C - Why binary logic cannot represent decimal fractions), (D - How processors maintain clock synchronization)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'How general rules and future predictions can be justified on the basis of a finite number of past observations') is the correct choice:\nDavid Hume's problem of induction asks how general rules and future predictions can be logically justified based on a finite set of past observations.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - How electrical currents induce magnetic fields in computer disks), (C - Why binary logic cannot represent decimal fractions), (D - How processors maintain clock synchronization)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "اشتهر ديفيد هيوم بتحليل \"مبدأ الاستقراء\"، والذي يطرح ما هو السؤال الأساسي ذو الصلة بالتعلم الآلي؟",
+    "optionsAr": [
+      "كيف تحفز التيارات الكهربائية المجالات المغناطيسية في أقراص الكمبيوتر",
+      "كيف يمكن تبرير القواعد العامة والتنبؤات المستقبلية على أساس عدد محدود من الملاحظات السابقة",
+      "لماذا لا يمكن للمنطق الثنائي تمثيل الكسور العشرية",
+      "كيف تحافظ المعالجات على تزامن الساعة"
+    ]
   },
   {
     "id": 223,
@@ -3465,7 +4919,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Logical theories connected to observable sensory observations):\nطورت حلقة فيينا مذهب 'الوضعية المنطقية' (Logical Positivism)، مؤكدة أن المعرفة ذات المعنى يجب أن ترتبط بنظريات منطقية متصلة بالملاحظات الحسية القابلة للتحقق.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Divine revelation)، (C - Syllogisms written strictly in ancient Greek)، (D - Hardware circuits)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Logical theories connected to observable sensory observations') is the correct choice:\nThe Vienna Circle's logical positivism asserted that all meaningful knowledge must consist of logical theories grounded in verifiable sensory observations.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Divine revelation), (C - Syllogisms written strictly in ancient Greek), (D - Hardware circuits)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Logical theories connected to observable sensory observations') is the correct choice:\nThe Vienna Circle's logical positivism asserted that all meaningful knowledge must consist of logical theories grounded in verifiable sensory observations.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Divine revelation), (C - Syllogisms written strictly in ancient Greek), (D - Hardware circuits)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "طورت دائرة فيينا من الفلاسفة \"الوضعية المنطقية\"، التي جادلت بأن كل المعرفة ذات المعنى يجب أن تكون مرتبطة بما يلي:",
+    "optionsAr": [
+      "الوحي الإلهي",
+      "النظريات المنطقية المرتبطة بالملاحظات الحسية المرصودة",
+      "القياسات المنطقية مكتوبة بدقة باللغة اليونانية القديمة",
+      "دوائر الأجهزة"
+    ]
   },
   {
     "id": 224,
@@ -3481,7 +4942,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - George Boole):\nقدم جورج بول المنطق البولي (Boolean Logic) عام 1847، مؤسساً إمكانية التفكير المنطقي عبر حسابات ومعادلات جبرية رياضية دقيقة.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Alan Turing)، (C - Isaac Newton)، (D - Gottfried Leibniz)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'George Boole') is the correct choice:\nGeorge Boole introduced formal Boolean algebra in 1847, showing that propositional logical reasoning could be calculated mathematically.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Alan Turing), (C - Isaac Newton), (D - Gottfried Leibniz)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'George Boole') is the correct choice:\nGeorge Boole introduced formal Boolean algebra in 1847, showing that propositional logical reasoning could be calculated mathematically.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Alan Turing), (C - Isaac Newton), (D - Gottfried Leibniz)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "من الذي قدم المنطق المنطقي الرسمي في عام 1847، معتبرًا أن الاستدلال المنطقي يمكن حسابه رياضيًا من خلال التلاعب الجبري؟",
+    "optionsAr": [
+      "آلان تورينج",
+      "جورج بول",
+      "إسحاق نيوتن",
+      "جوتفريد لايبنتز"
+    ]
   },
   {
     "id": 225,
@@ -3497,7 +4965,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - First-order predicate calculus):\nوسع جوتلوب فريجه المنطق في 1879 بإدخال الكائنات والعلاقات والمسورات (Quantifiers)، منشئاً 'حساب المحمولات من الرتبة الأولى' (First-order predicate calculus).\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Fuzzy logic)، (C - Modal logic)، (D - Quantum gates)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'First-order predicate calculus') is the correct choice:\nGottlob Frege extended logic in 1879 by introducing objects, relations, and quantifiers, founding first-order predicate logic.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Fuzzy logic), (C - Modal logic), (D - Quantum gates)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'First-order predicate calculus') is the correct choice:\nGottlob Frege extended logic in 1879 by introducing objects, relations, and quantifiers, founding first-order predicate logic.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Fuzzy logic), (C - Modal logic), (D - Quantum gates)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "قام جوتلوب فريجه بتوسيع المنطق البولياني في عام 1879 من خلال إدخال الأشياء والعلاقات والمحددات الكمية، مما أدى إلى إنشاء:",
+    "optionsAr": [
+      "حساب التفاضل والتكامل من الدرجة الأولى",
+      "منطق غامض",
+      "منطق مشروط",
+      "بوابات الكم"
+    ]
   },
   {
     "id": 226,
@@ -3513,7 +4988,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - In any formal mathematical system powerful enough to do arithmetic, there exist true statements that cannot be proven within the system):\nأثبت كورت غودل في مبرهنة عدم الاكتمال (1931) أنه في أي نظام رياضي صوري قادر على تمثيل الحساب، توجد دائماً عبارات صحيحة لا يمكن إثباتها من داخل النظام.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - No computer could ever be built with more than 100 bytes of memory)، (C - All polynomial-time algorithms are NP-complete)، (D - Heuristics are always inadmissible in cyclic graphs)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'In any formal mathematical system powerful enough to do arithmetic, there exist true statements that cannot be proven within the system') is the correct choice:\nGödel's Incompleteness Theorem (1931) proved that any consistent formal system rich enough for arithmetic contains true statements that cannot be proven within it.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - No computer could ever be built with more than 100 bytes of memory), (C - All polynomial-time algorithms are NP-complete), (D - Heuristics are always inadmissible in cyclic graphs)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'In any formal mathematical system powerful enough to do arithmetic, there exist true statements that cannot be proven within the system') is the correct choice:\nGödel's Incompleteness Theorem (1931) proved that any consistent formal system rich enough for arithmetic contains true statements that cannot be proven within it.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - No computer could ever be built with more than 100 bytes of memory), (C - All polynomial-time algorithms are NP-complete), (D - Heuristics are always inadmissible in cyclic graphs)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في عام 1931، صدم كورت جودل المجتمع الرياضي بنظرية عدم الاكتمال، والتي أثبتت أن:",
+    "optionsAr": [
+      "لا يمكن بناء أي جهاز كمبيوتر بأكثر من 100 بايت من الذاكرة",
+      "في أي نظام رياضي رسمي قوي بما يكفي لإجراء العمليات الحسابية، توجد عبارات صحيحة لا يمكن إثباتها داخل النظام",
+      "جميع خوارزميات الوقت متعدد الحدود كاملة NP",
+      "الاستدلال غير مقبول دائمًا في الرسوم البيانية الدورية"
+    ]
   },
   {
     "id": 227,
@@ -3529,7 +5011,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Halting Problem):\nقدم آلان تورينج عام 1936 'آلة تورينج' وأثبت وجود مسائل غير قابلة للحساب حاسوبياً، وأشهرها 'مسألة التوقف' (The Halting Problem).\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Traveling Salesperson Problem)، (C - Shortest Path Problem)، (D - Sorting Problem)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Halting Problem') is the correct choice:\nAlan Turing (1936) proved that certain computational problems are undecidable, most famously the Halting Problem.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Traveling Salesperson Problem), (C - Shortest Path Problem), (D - Sorting Problem)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Halting Problem') is the correct choice:\nAlan Turing (1936) proved that certain computational problems are undecidable, most famously the Halting Problem.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Traveling Salesperson Problem), (C - Shortest Path Problem), (D - Sorting Problem)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "قدمت ورقة آلان تورينج عام 1936 آلة تورينج وأثبتت وجود مشاكل غير قابلة للحساب، أبرزها:",
+    "optionsAr": [
+      "مشكلة مندوب المبيعات المتجول",
+      "مشكلة التوقف",
+      "مشكلة أقصر مسار",
+      "مشكلة الفرز"
+    ]
   },
   {
     "id": 228,
@@ -3545,7 +5034,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - Exponentially with the size of the problem instances):\nتُصنف المشكلة الحسابية رسمياً بأنها 'مستعصية' (Intractable) إذا كان وقت حلها ينمو بمعدل أُسي (Exponentially) مع زيادة حجم مدخلات المسألة.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Linearly with input size O(n))، (B - Logarithmically O(log n))، (D - In constant time O(1))] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'Exponentially with the size of the problem instances') is the correct choice:\nIn computational complexity theory, a problem is classified as intractable if the time required to solve it scales exponentially with instance size.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Linearly with input size O(n)), (B - Logarithmically O(log n)), (D - In constant time O(1))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'Exponentially with the size of the problem instances') is the correct choice:\nIn computational complexity theory, a problem is classified as intractable if the time required to solve it scales exponentially with instance size.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Linearly with input size O(n)), (B - Logarithmically O(log n)), (D - In constant time O(1))] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في نظرية التعقيد الحسابي، يتم تصنيف المشكلة الحسابية رسميًا على أنها \"مستعصية على الحل\" إذا زاد الوقت اللازم لحل الحالات:",
+    "optionsAr": [
+      "خطيًا بحجم الإدخال O(n)",
+      "لوغاريتميًا O(log n)",
+      "أضعافا مضاعفة مع حجم مثيلات المشكلة",
+      "في زمن ثابت O(1)"
+    ]
   },
   {
     "id": 229,
@@ -3561,7 +5057,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - A large class of combinatorial search and reasoning problems are likely intractable in the worst case):\nأسس ستيفن كوك وريتشارد كارب نظرية NP-completeness، مبرهنين أن فئة واسعة من مسائل البحث التوافقي والاستدلال مستعصية حاسوبياً في أسوأ الحالات.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - All NP-complete problems can be solved in linear time on single-core computers)، (C - Computers cannot store floating point numbers)، (D - Neural networks cannot compute linear combinations)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'A large class of combinatorial search and reasoning problems are likely intractable in the worst case') is the correct choice:\nCook (1971) and Karp (1972) founded NP-completeness theory, proving that large classes of combinatorial search problems are likely intractable in the worst case.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - All NP-complete problems can be solved in linear time on single-core computers), (C - Computers cannot store floating point numbers), (D - Neural networks cannot compute linear combinations)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'A large class of combinatorial search and reasoning problems are likely intractable in the worst case') is the correct choice:\nCook (1971) and Karp (1972) founded NP-completeness theory, proving that large classes of combinatorial search problems are likely intractable in the worst case.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - All NP-complete problems can be solved in linear time on single-core computers), (C - Computers cannot store floating point numbers), (D - Neural networks cannot compute linear combinations)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "أسس ستيفن كوك (1971) وريتشارد كارب (1972) نظرية اكتمال NP، وأثبتا أن:",
+    "optionsAr": [
+      "يمكن حل جميع مشاكل NP-Complete في الوقت الخطي على أجهزة الكمبيوتر أحادية النواة",
+      "من المحتمل أن تكون هناك فئة كبيرة من مشكلات البحث والاستدلال التوافقي مستعصية على الحل في أسوأ الحالات",
+      "لا يمكن لأجهزة الكمبيوتر تخزين أرقام الفاصلة العائمة",
+      "لا تستطيع الشبكات العصبية حساب المجموعات الخطية"
+    ]
   },
   {
     "id": 230,
@@ -3577,7 +5080,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Thomas Bayes):\nصاغ عالم الرياضيات الإنجليزي توماس بايز (Thomas Bayes) في القرن الثامن عشر القاعدة الأساسية لتحديث الاحتمالات الذاتية في ضوء الأدلة والبيانات الجديدة.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Isaac Newton)، (C - Charles Babbage)، (D - Bertrand Russell)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Thomas Bayes') is the correct choice:\nThomas Bayes formulated the fundamental rule for updating subjective probabilities upon observing new evidence (Bayes' Rule).\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Isaac Newton), (C - Charles Babbage), (D - Bertrand Russell)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Thomas Bayes') is the correct choice:\nThomas Bayes formulated the fundamental rule for updating subjective probabilities upon observing new evidence (Bayes' Rule).\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Isaac Newton), (C - Charles Babbage), (D - Bertrand Russell)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "أي عالم رياضيات إنجليزي من القرن الثامن عشر صاغ القاعدة الأساسية لتحديث الاحتمالات الذاتية في ضوء الأدلة الجديدة؟",
+    "optionsAr": [
+      "إسحاق نيوتن",
+      "توماس بايز",
+      "تشارلز باباج",
+      "برتراند راسل"
+    ]
   },
   {
     "id": 231,
@@ -3593,7 +5103,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Gambling odds in games of chance):\nتأسست النظرية الرياضية للاحتمالات عام 1654 في مراسلات بين بيير دي فيرما وبليز باسكال لتحليل احتمالات الرهان في ألعاب القمار والحظ.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Automated theorem proving)، (C - Chess endgames)، (D - Computer network packet loss)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Gambling odds in games of chance') is the correct choice:\nProbability theory was formally established in 1654 correspondence between Fermat and Pascal to calculate betting odds in gambling games.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Automated theorem proving), (C - Chess endgames), (D - Computer network packet loss)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Gambling odds in games of chance') is the correct choice:\nProbability theory was formally established in 1654 correspondence between Fermat and Pascal to calculate betting odds in gambling games.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Automated theorem proving), (C - Chess endgames), (D - Computer network packet loss)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "تم تطوير النظرية الرياضية الرسمية للاحتمال في الأصل عام 1654 من خلال المراسلات بين بيير دي فيرما وبليز باسكال لتحليل:",
+    "optionsAr": [
+      "احتمالات القمار في ألعاب الحظ",
+      "إثبات النظرية الآلية",
+      "نهاية مباريات الشطرنج",
+      "فقدان حزمة شبكة الكمبيوتر"
+    ]
   },
   {
     "id": 232,
@@ -3609,7 +5126,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Any algorithmic computation that can be carried out by any physical machine can be simulated by a Turing machine):\nتؤكد أطروحة تشيرش-تورينج (Church-Turing thesis) أن أي حساب خوارزمي يمكن تنفيذه بواسطة أي آلة فيزيائية يمكن محاكاته بواسطة آلة تورينج.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Quantum computers cannot solve any mathematical problems)، (C - Human intelligence will be exceeded by AI by the year 2000)، (D - Brains contain exactly 10 billion neurons)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Any algorithmic computation that can be carried out by any physical machine can be simulated by a Turing machine') is the correct choice:\nThe Church-Turing thesis asserts that any effective algorithmic computation can be simulated by a universal Turing machine.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Quantum computers cannot solve any mathematical problems), (C - Human intelligence will be exceeded by AI by the year 2000), (D - Brains contain exactly 10 billion neurons)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Any algorithmic computation that can be carried out by any physical machine can be simulated by a Turing machine') is the correct choice:\nThe Church-Turing thesis asserts that any effective algorithmic computation can be simulated by a universal Turing machine.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Quantum computers cannot solve any mathematical problems), (C - Human intelligence will be exceeded by AI by the year 2000), (D - Brains contain exactly 10 billion neurons)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "تؤكد أطروحة الكنيسة-تورينج على أن:",
+    "optionsAr": [
+      "أي عملية حسابية خوارزمية يمكن إجراؤها بواسطة أي آلة مادية يمكن محاكاتها بواسطة آلة تورينج",
+      "لا تستطيع أجهزة الكمبيوتر الكمومية حل أي مسائل رياضية",
+      "الذكاء البشري سوف يفوق الذكاء الاصطناعي بحلول عام 2000",
+      "يحتوي الدماغ على 10 مليارات خلية عصبية بالضبط"
+    ]
   },
   {
     "id": 233,
@@ -3625,7 +5149,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - John von Neumann and Oskar Morgenstern):\nوضع جون فون نيومان وأوسكار مورجنشتيرن عام 1944 الأسس الرياضية لنظرية المنفعة، موضحين إمكانية نمذجة أي تفضيلات عقلانية بدالة منفعة رقمية.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Adam Smith and David Ricardo)، (C - John Maynard Keynes and Milton Friedman)، (D - Alan Turing and Claude Shannon)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'John von Neumann and Oskar Morgenstern') is the correct choice:\nVon Neumann and Morgenstern (1944) established the axiomatic foundations of utility theory in 'Theory of Games and Economic Behavior'.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Adam Smith and David Ricardo), (C - John Maynard Keynes and Milton Friedman), (D - Alan Turing and Claude Shannon)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'John von Neumann and Oskar Morgenstern') is the correct choice:\nVon Neumann and Morgenstern (1944) established the axiomatic foundations of utility theory in 'Theory of Games and Economic Behavior'.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Adam Smith and David Ricardo), (C - John Maynard Keynes and Milton Friedman), (D - Alan Turing and Claude Shannon)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "الأساس الرياضي الرسمي لنظرية المنفعة، والذي يوضح أن أي بنية تفضيل عقلاني يمكن نمذجتها باستخدام دالة منفعة رقمية، تم تأسيسها في عام 1944 بواسطة:",
+    "optionsAr": [
+      "آدم سميث وديفيد ريكاردو",
+      "جون فون نيومان وأوسكار مورجنسترن",
+      "جون ماينارد كينز وميلتون فريدمان",
+      "آلان تورينج وكلود شانون"
+    ]
   },
   {
     "id": 234,
@@ -3641,7 +5172,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Probability Theory and Utility Theory):\nتُعرَّف نظرية القرار (Decision Theory) في الاقتصاد والذكاء الاصطناعي بأنها الدمج المنهجي بين نظرية الاحتمالات (لتمثيل المعتقدات) ونظرية المنفعة (لتمثيل التفضيلات).\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Logic and Arithmetic)، (C - Hardware Architecture and Software Code)، (D - Robotics and Computer Vision)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Probability Theory and Utility Theory') is the correct choice:\nDecision Theory is formally defined as the combination of Probability Theory (for beliefs) and Utility Theory (for preferences).\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Logic and Arithmetic), (C - Hardware Architecture and Software Code), (D - Robotics and Computer Vision)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Probability Theory and Utility Theory') is the correct choice:\nDecision Theory is formally defined as the combination of Probability Theory (for beliefs) and Utility Theory (for preferences).\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Logic and Arithmetic), (C - Hardware Architecture and Software Code), (D - Robotics and Computer Vision)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في الاقتصاد والذكاء الاصطناعي، يتم تعريف نظرية القرار رسميًا على أنها مزيج من:",
+    "optionsAr": [
+      "المنطق والحساب",
+      "نظرية الاحتمالية ونظرية المنفعة",
+      "هندسة الأجهزة ورمز البرمجيات",
+      "الروبوتات ورؤية الكمبيوتر"
+    ]
   },
   {
     "id": 235,
@@ -3657,7 +5195,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Satisficing (making decisions that are 'good enough')):\nنال هربرت سايمون جائزة نوبل لأبحاثه التي بينت أن صانعي القرار البشريين يمارسون 'الإرضاء' (Satisficing) باتخاذ قرارات 'جيدة بما يكفي' بدلاً من التحسين المطلق.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Rational maximization)، (C - Backtracking search)، (D - Exhaustive state enumeration)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Satisficing (making decisions that are 'good enough')') is the correct choice:\nHerbert Simon won the Nobel Prize for demonstrating that real agents exhibit bounded rationality and engage in satisficing (choosing 'good enough' options).\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Rational maximization), (C - Backtracking search), (D - Exhaustive state enumeration)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Satisficing (making decisions that are 'good enough')') is the correct choice:\nHerbert Simon won the Nobel Prize for demonstrating that real agents exhibit bounded rationality and engage in satisficing (choosing 'good enough' options).\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Rational maximization), (C - Backtracking search), (D - Exhaustive state enumeration)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "فاز هربرت سايمون بجائزة نوبل في الاقتصاد لعمله الرائد الذي أظهر أن صناع القرار البشريين الفعليين لا يقومون بالتحسين بشكل صارم، بل ينخرطون في:",
+    "optionsAr": [
+      "التعظيم العقلاني",
+      "مرضية (اتخاذ قرارات \"جيدة بما فيه الكفاية\")",
+      "البحث التراجعي",
+      "تعداد الدولة الشامل"
+    ]
   },
   {
     "id": 236,
@@ -3673,7 +5218,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Markov Decision Processes (MDPs)):\nابتكر ريتشارد بيلمان البرمجة الديناميكية في الخمسينيات، مؤطراً فئة من مشاكل القرار التتابعية تُعرف بـ 'عمليات قرار ماركوف' (MDPs).\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Boolean circuits)، (C - Heuristic graphs)، (D - Turing machines)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Markov Decision Processes (MDPs)') is the correct choice:\nRichard Bellman founded dynamic programming in the 1950s, formulating Markov Decision Processes (MDPs) for sequential decision problems.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Boolean circuits), (C - Heuristic graphs), (D - Turing machines)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Markov Decision Processes (MDPs)') is the correct choice:\nRichard Bellman founded dynamic programming in the 1950s, formulating Markov Decision Processes (MDPs) for sequential decision problems.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Boolean circuits), (C - Heuristic graphs), (D - Turing machines)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "كان ريتشارد بيلمان رائدًا في البرمجة الديناميكية في الخمسينيات من القرن الماضي، حيث أنشأ فئة من مشاكل القرار المتسلسلة في الاقتصاد المعروفة باسم:",
+    "optionsAr": [
+      "الدوائر المنطقية",
+      "عمليات ماركوف لاتخاذ القرار (MDPs)",
+      "الرسوم البيانية الإرشادية",
+      "آلات تورينج"
+    ]
   },
   {
     "id": 237,
@@ -3689,7 +5241,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Neuron):\nالخلية العصبية (Neuron) هي الوحدة البيولوجية التشريحية الأساسية المسؤولة عن استقبال ومعالجة ونقل الإشارات والمعلومات داخل الدماغ والجهاز العصبي.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Glia)، (C - Axon terminal)، (D - Synaptic cleft)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Neuron') is the correct choice:\nThe neuron is the fundamental biological information-processing cell of the brain and nervous system.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Glia), (C - Axon terminal), (D - Synaptic cleft)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Neuron') is the correct choice:\nThe neuron is the fundamental biological information-processing cell of the brain and nervous system.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Glia), (C - Axon terminal), (D - Synaptic cleft)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "علم الأعصاب هو دراسة الجهاز العصبي والدماغ. ما هي الخلية البيولوجية الأساسية لمعالجة المعلومات في الدماغ؟",
+    "optionsAr": [
+      "العصبون",
+      "جليا",
+      "محطة اكسون",
+      "شق متشابك"
+    ]
   },
   {
     "id": 238,
@@ -3705,7 +5264,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Computer processors have cycle times in nanoseconds, whereas biological neurons operate much slower, in milliseconds):\nتعمل المعالجات الحاسوبية بدورات في زمن النانو ثانية، في حين تعمل الخلايا العصبية البيولوجية بسرعة أبطأ بكثير في نطاق المللي ثانية.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Neurons are a million times faster than computer chips)، (C - Biological neurons operate at the exact speed of light)، (D - Both have identical cycle times of one microsecond)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Computer processors have cycle times in nanoseconds, whereas biological neurons operate much slower, in milliseconds') is the correct choice:\nSilicon computer processors operate at cycle times of nanoseconds, whereas biological neurons operate orders of magnitude slower, in milliseconds.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Neurons are a million times faster than computer chips), (C - Biological neurons operate at the exact speed of light), (D - Both have identical cycle times of one microsecond)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Computer processors have cycle times in nanoseconds, whereas biological neurons operate much slower, in milliseconds') is the correct choice:\nSilicon computer processors operate at cycle times of nanoseconds, whereas biological neurons operate orders of magnitude slower, in milliseconds.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Neurons are a million times faster than computer chips), (C - Biological neurons operate at the exact speed of light), (D - Both have identical cycle times of one microsecond)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "كيف يمكن مقارنة زمن دورة الخلايا العصبية البشرية بمعالجات الكمبيوتر الدقيقة المصنوعة من السيليكون الحديثة؟",
+    "optionsAr": [
+      "الخلايا العصبية أسرع مليون مرة من رقائق الكمبيوتر",
+      "تستغرق معالجات الكمبيوتر أوقات دورة بالنانو ثانية، بينما تعمل الخلايا العصبية البيولوجية بشكل أبطأ بكثير، بالمللي ثانية",
+      "تعمل الخلايا العصبية البيولوجية بسرعة الضوء بالضبط",
+      "كلاهما لهما أوقات دورة متطابقة تبلغ ميكروثانية واحدة"
+    ]
   },
   {
     "id": 239,
@@ -3721,7 +5287,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - The brain utilizes massive parallelism across roughly 10^11 neurons and 10^14 synaptic connections):\nيتفوق الدماغ في المهام الإدراكية بفضل التوازي الهائل (Massive Parallelism) عبر ما يقرب من 10^11 خلية عصبية و10^14 وصلة مشبكية تعمل معاً.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - The brain uses liquid nitrogen cooling)، (C - The brain has zero latency between sensors and muscles)، (D - Biological neurons do not obey physical laws)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'The brain utilizes massive parallelism across roughly 10^11 neurons and 10^14 synaptic connections') is the correct choice:\nThe brain achieves superior perceptual performance despite slower cycle times through massive parallelism across ~10^11 neurons and ~10^14 synapses.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The brain uses liquid nitrogen cooling), (C - The brain has zero latency between sensors and muscles), (D - Biological neurons do not obey physical laws)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'The brain utilizes massive parallelism across roughly 10^11 neurons and 10^14 synaptic connections') is the correct choice:\nThe brain achieves superior perceptual performance despite slower cycle times through massive parallelism across ~10^11 neurons and ~10^14 synapses.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - The brain uses liquid nitrogen cooling), (C - The brain has zero latency between sensors and muscles), (D - Biological neurons do not obey physical laws)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "على الرغم من أن أوقات الدورة الفردية أبطأ بكثير من المعالجات الدقيقة، كيف يتفوق الدماغ البشري على أجهزة الكمبيوتر العملاقة في المهام الإدراكية المعقدة؟",
+    "optionsAr": [
+      "يستخدم الدماغ التبريد بالنتروجين السائل",
+      "يستخدم الدماغ التوازي الهائل عبر ما يقرب من 10^11 خلية عصبية و10^14 وصلة متشابكة",
+      "الدماغ لديه الكمون صفر بين أجهزة الاستشعار والعضلات",
+      "الخلايا العصبية البيولوجية لا تخضع للقوانين الفيزيائية"
+    ]
   },
   {
     "id": 240,
@@ -3737,7 +5310,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Objective measures of external stimuli and observable behavioral responses):\nرفضت المدرسة السلوكية (Behaviorism) دراسة الحالات الذهنية الداخلية، وقصرت دراستها على القياسات الموضوعية للمثيرات الخارجية والاستجابات السلوكية المرئية.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Introspective dreams)، (C - Brain surgery images)، (D - Mathematical proofs)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Objective measures of external stimuli and observable behavioral responses') is the correct choice:\nBehaviorism rejected internal mental concepts, insisting psychology study only observable external stimuli and behavioral responses.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Introspective dreams), (C - Brain surgery images), (D - Mathematical proofs)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Objective measures of external stimuli and observable behavioral responses') is the correct choice:\nBehaviorism rejected internal mental concepts, insisting psychology study only observable external stimuli and behavioral responses.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Introspective dreams), (C - Brain surgery images), (D - Mathematical proofs)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "رفضت المدرسة النفسية \"السلوكية\" (التي دافع عنها جيه بي واتسون وبي إف سكينر) دراسة الحالات العقلية الداخلية، بحجة أن علم النفس يجب أن يدرس فقط:",
+    "optionsAr": [
+      "أحلام استبطانية",
+      "المقاييس الموضوعية للمثيرات الخارجية والاستجابات السلوكية الملحوظة",
+      "صور عمليات المخ",
+      "البراهين الرياضية"
+    ]
   },
   {
     "id": 241,
@@ -3753,7 +5333,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Kenneth Craik):\nصاغ كينيث كريك (Kenneth Craik) في عام 1943 النموذج الذهني ثلاثي الخطوات: المثير -> التمثيل الداخلي -> الفعل، مؤسساً لعلم النفس الاستعرافي.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - B.F. Skinner)، (C - Sigmund Freud)، (D - Ivan Pavlov)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Kenneth Craik') is the correct choice:\nKenneth Craik (1943) specified the 3-step cognitive model: stimulus -> internal cognitive representation -> physical action.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - B.F. Skinner), (C - Sigmund Freud), (D - Ivan Pavlov)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Kenneth Craik') is the correct choice:\nKenneth Craik (1943) specified the 3-step cognitive model: stimulus -> internal cognitive representation -> physical action.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - B.F. Skinner), (C - Sigmund Freud), (D - Ivan Pavlov)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ينظر علم النفس المعرفي إلى الدماغ باعتباره نظامًا لمعالجة المعلومات. من الذي صاغ النموذج العقلي ثلاثي الخطوات لعام 1943 (التحفيز -> التمثيل الداخلي -> الفعل)؟",
+    "optionsAr": [
+      "كينيث كريك",
+      "بي إف سكينر",
+      "سيغموند فرويد",
+      "إيفان بافلوف"
+    ]
   },
   {
     "id": 242,
@@ -3769,7 +5356,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - MIT Symposium on Information Theory):\nشهدت ندوة معهد ماساتشوستس للتكنولوجيا (MIT) لنظرية المعلومات عام 1956 تقديم أبحاث نيويل وسايمون وتشومسكي وميلر التي فجرت الثورة الاستعرافية.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - The Royal Society Meeting in London)، (C - The IEEE Standards Convention)، (D - The World Economic Forum)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'MIT Symposium on Information Theory') is the correct choice:\nThe 1956 MIT Symposium on Information Theory ignited the Cognitive Revolution through foundational papers by Newell, Simon, Chomsky, and Miller.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - The Royal Society Meeting in London), (C - The IEEE Standards Convention), (D - The World Economic Forum)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'MIT Symposium on Information Theory') is the correct choice:\nThe 1956 MIT Symposium on Information Theory ignited the Cognitive Revolution through foundational papers by Newell, Simon, Chomsky, and Miller.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - The Royal Society Meeting in London), (C - The IEEE Standards Convention), (D - The World Economic Forum)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في أي ندوة تاريخية عام 1956 قدم ألين نيويل، وهربرت سايمون، ونعوم تشومسكي، وجورج ميلر أوراقًا بحثية تاريخية أشعلت شرارة الثورة المعرفية؟",
+    "optionsAr": [
+      "ندوة معهد ماساتشوستس للتكنولوجيا حول نظرية المعلومات",
+      "اجتماع الجمعية الملكية في لندن",
+      "اتفاقية معايير IEEE",
+      "المنتدى الاقتصادي العالمي"
+    ]
   },
   {
     "id": 243,
@@ -3785,7 +5379,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - 7 plus or minus 2 chunks):\nأثبت جورج ميلر في ورقته الشهيرة عام 1956 أن سعة الذاكرة العاملة قصيرة المدى لدى الإنسان تبلغ تقريباً 7 وحدات أو كتل (زائد أو ناقص 2).\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - 100 items)، (C - 1 item only)، (D - Infinite)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - '7 plus or minus 2 chunks') is the correct choice:\nGeorge Miller's landmark 1956 paper established that human short-term working memory capacity is approximately 7 ± 2 chunks.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - 100 items), (C - 1 item only), (D - Infinite)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - '7 plus or minus 2 chunks') is the correct choice:\nGeorge Miller's landmark 1956 paper established that human short-term working memory capacity is approximately 7 ± 2 chunks.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - 100 items), (C - 1 item only), (D - Infinite)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "أوضحت ورقة علم النفس الشهيرة لجورج ميلر عام 1956 أن سعة الذاكرة العاملة قصيرة المدى للإنسان تبلغ تقريبًا:",
+    "optionsAr": [
+      "7 قطع زائد أو ناقص 2",
+      "100 عنصر",
+      "عنصر واحد فقط",
+      "لانهائي"
+    ]
   },
   {
     "id": 244,
@@ -3801,7 +5402,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - It allowed researchers to legitimately model internal cognitive structures, beliefs, and goals inside computer programs):\nكان تراجع السلوكية وصعود النفس الاستعرافي جوهرياً للذكاء الاصطناعي لأنه شرعن للباحثين نمذجة التراكيب المعرفية الداخلية والأهداف والمعتقدات برمجياً.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - It proved that hardware cannot be built without wooden gears)، (C - It banned the use of mathematical logic in computer science)، (D - It proved that animals do not possess neural systems)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'It allowed researchers to legitimately model internal cognitive structures, beliefs, and goals inside computer programs') is the correct choice:\nThe cognitive revolution was vital for AI because it legitimized computationally modeling internal cognitive representations, goals, and beliefs.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - It proved that hardware cannot be built without wooden gears), (C - It banned the use of mathematical logic in computer science), (D - It proved that animals do not possess neural systems)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'It allowed researchers to legitimately model internal cognitive structures, beliefs, and goals inside computer programs') is the correct choice:\nThe cognitive revolution was vital for AI because it legitimized computationally modeling internal cognitive representations, goals, and beliefs.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - It proved that hardware cannot be built without wooden gears), (C - It banned the use of mathematical logic in computer science), (D - It proved that animals do not possess neural systems)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا كان تراجع السلوكية وصعود علم النفس المعرفي ضروريًا لنمو الذكاء الاصطناعي الحديث؟",
+    "optionsAr": [
+      "لقد سمح للباحثين بصياغة الهياكل المعرفية الداخلية والمعتقدات والأهداف بشكل شرعي داخل برامج الكمبيوتر",
+      "لقد أثبت أنه لا يمكن بناء الأجهزة بدون التروس الخشبية",
+      "حظر استخدام المنطق الرياضي في علوم الكمبيوتر",
+      "لقد أثبت أن الحيوانات لا تمتلك أنظمة عصبية"
+    ]
   },
   {
     "id": 245,
@@ -3817,7 +5425,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Charles Babbage):\nصمم تشارلز باباج 'المحرك التحليلي' الميكانيكي (Analytical Engine) عام 1834، والذي يُعد أول نموذج ميكانيكي للحاسوب القابل للبرمجة للأغراض العامة.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Blaise Pascal)، (C - Gottfried Leibniz)، (D - John von Neumann)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Charles Babbage') is the correct choice:\nCharles Babbage designed the mechanical Analytical Engine in 1834, recognized as the earliest precursor to general-purpose programmable computers.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Blaise Pascal), (C - Gottfried Leibniz), (D - John von Neumann)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Charles Babbage') is the correct choice:\nCharles Babbage designed the mechanical Analytical Engine in 1834, recognized as the earliest precursor to general-purpose programmable computers.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Blaise Pascal), (C - Gottfried Leibniz), (D - John von Neumann)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "من الذي صمم \"المحرك التحليلي\" الميكانيكي في عام 1834، والذي تم الاعتراف به باعتباره أول مقدمة ميكانيكية للكمبيوتر الحديث متعدد الأغراض القابل للبرمجة؟",
+    "optionsAr": [
+      "تشارلز باباج",
+      "بليز باسكال",
+      "جوتفريد لايبنيز",
+      "جون فون نيومان"
+    ]
   },
   {
     "id": 246,
@@ -3833,7 +5448,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - The Analytical Engine has no pretensions to originate anything; it can do whatever we know how to order it to perform):\nاعترضت آدا لوفليس، أول مبرمجة في التاريخ، مؤكدة أن المحرك التحليلي ليس لديه أي ادعاء لابتكار أي شيء، بل يمكنه فقط تنفيذ ما نعرف كيف نأمره بفعله.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Machines will definitely destroy humanity within 50 years)، (C - Mechanical gears cannot represent prime numbers)، (D - Only digital electronic circuits can perform addition)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'The Analytical Engine has no pretensions to originate anything; it can do whatever we know how to order it to perform') is the correct choice:\nAda Lovelace famously observed that the Analytical Engine has no pretensions to originate anything; it can only do whatever we know how to order it to perform.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Machines will definitely destroy humanity within 50 years), (C - Mechanical gears cannot represent prime numbers), (D - Only digital electronic circuits can perform addition)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'The Analytical Engine has no pretensions to originate anything; it can do whatever we know how to order it to perform') is the correct choice:\nAda Lovelace famously observed that the Analytical Engine has no pretensions to originate anything; it can only do whatever we know how to order it to perform.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Machines will definitely destroy humanity within 50 years), (C - Mechanical gears cannot represent prime numbers), (D - Only digital electronic circuits can perform addition)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "أدا لوفلايس، التي تعتبر أول مبرمجة كمبيوتر في العالم، ما هو الاعتراض الشهير فيما يتعلق بذكاء الآلة؟",
+    "optionsAr": [
+      "ليس لدى المحرك التحليلي أي ادعاءات لإنشاء أي شيء؛ يمكنها أن تفعل كل ما نعرف كيفية تنفيذه",
+      "الآلات ستدمر البشرية حتماً خلال 50 عاماً",
+      "لا يمكن للتروس الميكانيكية أن تمثل الأعداد الأولية",
+      "الدوائر الإلكترونية الرقمية فقط هي التي يمكنها إجراء عملية الجمع"
+    ]
   },
   {
     "id": 247,
@@ -3849,7 +5471,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - The Bombe):\nصمم فريق آلان تورينج في بليتشلي بارك آلة 'بومب' (The Bombe) الكهروميكانيكية لفك شفرات جهاز إنيجما العسكري الألماني خلال الحرب العالمية الثانية.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - ENIAC)، (C - Deep Blue)، (D - Analytical Engine)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'The Bombe') is the correct choice:\nAlan Turing's team at Bletchley Park designed The Bombe to automate the cryptanalysis and deciphering of Enigma military ciphers.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - ENIAC), (C - Deep Blue), (D - Analytical Engine)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'The Bombe') is the correct choice:\nAlan Turing's team at Bletchley Park designed The Bombe to automate the cryptanalysis and deciphering of Enigma military ciphers.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - ENIAC), (C - Deep Blue), (D - Analytical Engine)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "خلال الحرب العالمية الثانية، صمم فريق آلان تورينج لفك الشفرات في بلتشلي بارك أي آلة كهروميكانيكية يمكنها فك رموز اتصالات إنجما العسكرية الألمانية؟",
+    "optionsAr": [
+      "القنبلة",
+      "اينياك",
+      "ديب بلو",
+      "المحرك التحليلي"
+    ]
   },
   {
     "id": 248,
@@ -3865,7 +5494,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - A water clock with a float regulator):\nتُعد الساعة المائية ذات المنظم العائم التي بناها كتيسيبيوس السكندري (حوالي 250 ق.م) أول نظام تحكم تاريخي معروف ذاتي التنظيم يعتمد على التغذية الراجعة.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - A steam engine governor)، (C - An electric relay circuit)، (D - An abacus)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'A water clock with a float regulator') is the correct choice:\nKtesibios of Alexandria's water clock with a float regulator (c. 250 BCE) is cited as an early historical self-regulating feedback control system.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - A steam engine governor), (C - An electric relay circuit), (D - An abacus)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'A water clock with a float regulator') is the correct choice:\nKtesibios of Alexandria's water clock with a float regulator (c. 250 BCE) is cited as an early historical self-regulating feedback control system.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - A steam engine governor), (C - An electric relay circuit), (D - An abacus)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هو الجهاز الهيدروليكي القديم الذي بناه كتيسيبيوس السكندري (حوالي 250 قبل الميلاد) والذي تم الاستشهاد به باعتباره نظامًا تاريخيًا مبكرًا للتحكم في التغذية الراجعة ذاتي التنظيم؟",
+    "optionsAr": [
+      "ساعة مائية بمنظم العوامة",
+      "حاكم المحرك البخاري",
+      "دائرة التتابع الكهربائي",
+      "المعداد"
+    ]
   },
   {
     "id": 249,
@@ -3881,7 +5517,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Cybernetics):\nألف نوربرت وينر كتابه التأسيسي عام 1948 الذي قنن فيه حلقات التغذية الراجعة والتحكم في الحيوانات والآلات تحت عنوان 'السيبرنطيقا' (Cybernetics).\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - The Computer and the Brain)، (C - Mind and Matter)، (D - Robot Dynamics)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Cybernetics') is the correct choice:\nNorbert Wiener published 'Cybernetics' in 1948, formalizing feedback control loops and information processing in biological and engineered systems.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - The Computer and the Brain), (C - Mind and Matter), (D - Robot Dynamics)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Cybernetics') is the correct choice:\nNorbert Wiener published 'Cybernetics' in 1948, formalizing feedback control loops and information processing in biological and engineered systems.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - The Computer and the Brain), (C - Mind and Matter), (D - Robot Dynamics)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "نشر نوربرت وينر كتابًا تأسيسيًا عام 1948 أضفى طابعًا رسميًا على حلقات التغذية الراجعة والتحكم في الحيوانات والآلات تحت عنوان:",
+    "optionsAr": [
+      "علم التحكم الآلي",
+      "الكمبيوتر والدماغ",
+      "العقل والمادة",
+      "ديناميات الروبوت"
+    ]
   },
   {
     "id": 250,
@@ -3897,7 +5540,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Control theory focused on continuous state spaces governed by calculus and differential equations, while early AI focused on discrete logical and symbolic reasoning):\nركزت نظرية التحكم الكلاسيكية تاريخياً على الفضاءات المستمرة المحكومة بحساب التفاضل والتكامل، بينما ركز الذكاء الاصطناعي المبكر على الاستدلال المنطقي والرمزي المنفصل.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Control theory does not use sensors or actuators)، (C - AI only studies games, while control theory only studies astronomy)، (D - Control theory was invented after deep learning)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Control theory focused on continuous state spaces governed by calculus and differential equations, while early AI focused on discrete logical and symbolic reasoning') is the correct choice:\nControl theory focused on continuous systems governed by differential equations, whereas early AI focused on discrete symbolic logical reasoning.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Control theory does not use sensors or actuators), (C - AI only studies games, while control theory only studies astronomy), (D - Control theory was invented after deep learning)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Control theory focused on continuous state spaces governed by calculus and differential equations, while early AI focused on discrete logical and symbolic reasoning') is the correct choice:\nControl theory focused on continuous systems governed by differential equations, whereas early AI focused on discrete symbolic logical reasoning.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Control theory does not use sensors or actuators), (C - AI only studies games, while control theory only studies astronomy), (D - Control theory was invented after deep learning)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "كيف اختلفت نظرية التحكم الكلاسيكية تاريخياً في التركيز عن الذكاء الاصطناعي السائد؟",
+    "optionsAr": [
+      "ركزت نظرية التحكم على مساحات الحالة المستمرة التي يحكمها حساب التفاضل والتكامل والمعادلات التفاضلية، بينما ركز الذكاء الاصطناعي المبكر على التفكير المنطقي والرمزي المنفصل",
+      "نظرية التحكم لا تستخدم أجهزة الاستشعار أو المحركات",
+      "الذكاء الاصطناعي يدرس الألعاب فقط، بينما نظرية التحكم تدرس علم الفلك فقط",
+      "تم اختراع نظرية التحكم بعد التعلم العميق"
+    ]
   },
   {
     "id": 251,
@@ -3913,7 +5563,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Noam Chomsky):\nنشر نعوم تشومسكي كتاب 'البنى النحوية' عام 1957، مبيناً أن اللغة البشرية لا يمكن تفسيرها بسلاسل ماركوفية سلوكية بسيطة لأنها تتطلب قواعد توليدية عميقة.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - B.F. Skinner)، (C - Ferdinand de Saussure)، (D - Roman Jakobson)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Noam Chomsky') is the correct choice:\nNoam Chomsky published 'Syntactic Structures' (1957), proving human language syntax cannot be explained by simple behaviorist Markovian word chains.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - B.F. Skinner), (C - Ferdinand de Saussure), (D - Roman Jakobson)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Noam Chomsky') is the correct choice:\nNoam Chomsky published 'Syntactic Structures' (1957), proving human language syntax cannot be explained by simple behaviorist Markovian word chains.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - B.F. Skinner), (C - Ferdinand de Saussure), (D - Roman Jakobson)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في عام 1957، من هو اللغوي الذي نشر كتابه \"البنى النحوية\"، الذي يوضح أن اللغة البشرية لا يمكن تفسيرها من خلال سلاسل كلمات ماركوفية سلوكية بسيطة؟",
+    "optionsAr": [
+      "نعوم تشومسكي",
+      "بي إف سكينر",
+      "فرديناند دي سوسير",
+      "رومان جاكوبسون"
+    ]
   },
   {
     "id": 252,
@@ -3929,7 +5586,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Computational Linguistics (Natural Language Processing)):\nنتج عن تلاقي اللسانيات الصورية مع علوم الحاسوب والذكاء الاصطناعي ولادة حقل 'اللسانيات الحاسوبية' أو 'معالجة اللغات الطبيعية' (NLP).\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Computer Graphics)، (C - Solid-State Physics)، (D - Cryptanalysis)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Computational Linguistics (Natural Language Processing)') is the correct choice:\nThe intersection of formal linguistics and AI created the field of Computational Linguistics (Natural Language Processing).\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Computer Graphics), (C - Solid-State Physics), (D - Cryptanalysis)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Computational Linguistics (Natural Language Processing)') is the correct choice:\nThe intersection of formal linguistics and AI created the field of Computational Linguistics (Natural Language Processing).\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Computer Graphics), (C - Solid-State Physics), (D - Cryptanalysis)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "أدى التقاطع بين اللغويات الرسمية والذكاء الاصطناعي إلى ولادة أي مجال فرعي رئيسي للبحث؟",
+    "optionsAr": [
+      "اللغويات الحاسوبية (معالجة اللغات الطبيعية)",
+      "رسومات الحاسوب",
+      "فيزياء الحالة الصلبة",
+      "تحليل الشفرات"
+    ]
   },
   {
     "id": 253,
@@ -3945,7 +5609,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Because sentences contain massive lexical and syntactic ambiguities that can only be resolved using background world context):\nيتطلب فهم اللغة معارف حسية وعامة واسعة عن العالم لأن الجمل تحتوي على لبس وغموض نحوي ودلالي هائل لا يمكن فضه إلا بسياق المعرفة الخلفية للواقع.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Because dictionaries contain no words)، (C - Because computers cannot store alphabet letters)، (D - Because grammar rules are identical in all languages)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Because sentences contain massive lexical and syntactic ambiguities that can only be resolved using background world context') is the correct choice:\nNatural language understanding requires world knowledge because sentences contain immense lexical and syntactic ambiguities resolvable only via real-world context.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Because dictionaries contain no words), (C - Because computers cannot store alphabet letters), (D - Because grammar rules are identical in all languages)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Because sentences contain massive lexical and syntactic ambiguities that can only be resolved using background world context') is the correct choice:\nNatural language understanding requires world knowledge because sentences contain immense lexical and syntactic ambiguities resolvable only via real-world context.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Because dictionaries contain no words), (C - Because computers cannot store alphabet letters), (D - Because grammar rules are identical in all languages)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "لماذا اكتشف الباحثون الأوائل بسرعة أن ترجمة اللغة الطبيعية أو فهمها يتطلب معرفة عالمية واسعة النطاق بالفطرة السليمة؟",
+    "optionsAr": [
+      "لأن القواميس لا تحتوي على كلمات",
+      "لأن الجمل تحتوي على غموض معجمي ونحوي هائل لا يمكن حله إلا باستخدام سياق عالم الخلفية",
+      "لأن أجهزة الكمبيوتر لا تستطيع تخزين الحروف الهجائية",
+      "لأن القواعد النحوية متطابقة في جميع اللغات"
+    ]
   },
   {
     "id": 254,
@@ -3961,7 +5632,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - The number of transistors on an integrated circuit doubles approximately every 18 to 24 months):\nينص قانون مور (Moore's Law) التجريبي على أن عدد الترانزستورات المدمجة على الدائرة المتكاملة يتضاعف تقريباً كل 18 إلى 24 شهراً.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Software error rates increase by 50% every year)، (C - AI systems will replace all human workers by 1980)، (D - Computer screen resolutions double every week)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'The number of transistors on an integrated circuit doubles approximately every 18 to 24 months') is the correct choice:\nMoore's Law is the empirical observation that the number of transistors on microchips doubles roughly every 18 to 24 months.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Software error rates increase by 50% every year), (C - AI systems will replace all human workers by 1980), (D - Computer screen resolutions double every week)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'The number of transistors on an integrated circuit doubles approximately every 18 to 24 months') is the correct choice:\nMoore's Law is the empirical observation that the number of transistors on microchips doubles roughly every 18 to 24 months.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Software error rates increase by 50% every year), (C - AI systems will replace all human workers by 1980), (D - Computer screen resolutions double every week)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ملاحظة جوردون مور التجريبية (قانون مور) تنص تاريخياً على ما يلي:",
+    "optionsAr": [
+      "عدد الترانزستورات في الدائرة المتكاملة يتضاعف تقريباً كل 18 إلى 24 شهراً",
+      "معدلات الأخطاء البرمجية ترتفع بنسبة 50% كل عام",
+      "أنظمة الذكاء الاصطناعي ستحل محل جميع العاملين البشريين بحلول عام 1980",
+      "تتضاعف دقة شاشة الكمبيوتر كل أسبوع"
+    ]
   },
   {
     "id": 255,
@@ -3977,7 +5655,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Warren McCulloch and Walter Pitts):\nنشر وارن ماكولوتش ووالتر بيتس عام 1943 أول نموذج رياضي وحسابي لشبكة عصبية اصطناعية تعتمد على منطق العتبة للخلايا العصبية.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - John von Neumann and Norbert Wiener)، (C - Marvin Minsky and Claude Shannon)، (D - Donald Hebb and Frank Rosenblatt)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Warren McCulloch and Walter Pitts') is the correct choice:\nWarren McCulloch and Walter Pitts (1943) published the first computational mathematical model of artificial neural networks.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - John von Neumann and Norbert Wiener), (C - Marvin Minsky and Claude Shannon), (D - Donald Hebb and Frank Rosenblatt)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Warren McCulloch and Walter Pitts') is the correct choice:\nWarren McCulloch and Walter Pitts (1943) published the first computational mathematical model of artificial neural networks.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - John von Neumann and Norbert Wiener), (C - Marvin Minsky and Claude Shannon), (D - Donald Hebb and Frank Rosenblatt)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "تم نشر أول نموذج رياضي وحسابي معترف به للشبكة العصبية الاصطناعية في عام 1943 بواسطة:",
+    "optionsAr": [
+      "وارن ماكولوتش ووالتر بيتس",
+      "جون فون نيومان ونوربرت وينر",
+      "مارفن مينسكي وكلود شانون",
+      "دونالد هيب وفرانك روزنبلات"
+    ]
   },
   {
     "id": 256,
@@ -3993,7 +5678,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Synaptic connections strengthen when two neurons fire simultaneously ('neurons that fire together, wire together')):\nقدم دونالد هب (1949) قاعدة التعلم الهبي الشهيرة التي توضح أن الوصلات المشبكية تزداد قوة عندما تُثار خليتان عصبيتان في وقت متزامن ('تتصل معاً إذا أثيرت معاً').\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Memory capacity is strictly limited to 1,000 facts)، (C - Neurons transmit signals purely mechanically via fluids)، (D - Neural networks cannot learn linear functions)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Synaptic connections strengthen when two neurons fire simultaneously ('neurons that fire together, wire together')') is the correct choice:\nDonald Hebb (1949) introduced Hebbian learning, stating that synaptic connections strengthen when two neurons fire together.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Memory capacity is strictly limited to 1,000 facts), (C - Neurons transmit signals purely mechanically via fluids), (D - Neural networks cannot learn linear functions)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Synaptic connections strengthen when two neurons fire simultaneously ('neurons that fire together, wire together')') is the correct choice:\nDonald Hebb (1949) introduced Hebbian learning, stating that synaptic connections strengthen when two neurons fire together.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Memory capacity is strictly limited to 1,000 facts), (C - Neurons transmit signals purely mechanically via fluids), (D - Neural networks cannot learn linear functions)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "قدم دونالد هب (1949) قاعدة تعلم فسيولوجية عصبية مؤثرة أظهرت ما يلي:",
+    "optionsAr": [
+      "تتقوى الوصلات المتشابكة عندما تنشط خليتان عصبيتان في وقت واحد (\"الخلايا العصبية التي تنطلق معًا، وتتصل ببعضها البعض\")",
+      "سعة الذاكرة محدودة بشكل صارم بـ 1000 حقيقة",
+      "تنقل الخلايا العصبية الإشارات بطريقة ميكانيكية بحتة عبر السوائل",
+      "لا تستطيع الشبكات العصبية تعلم الوظائف الخطية"
+    ]
   },
   {
     "id": 257,
@@ -4009,7 +5701,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - SNARC):\nبنى مارفن مينسكي ودين إدموندز عام 1951 أول حاسوب شبكات عصبية اصطناعية عامل في التاريخ، وأُطلق عليه اسم SNARC.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - ENIAC)، (C - Deep Blue)، (D - Shakey)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'SNARC') is the correct choice:\nIn 1951, Marvin Minsky and Dean Edmonds built SNARC, the first operational artificial neural network computer.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - ENIAC), (C - Deep Blue), (D - Shakey)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'SNARC') is the correct choice:\nIn 1951, Marvin Minsky and Dean Edmonds built SNARC, the first operational artificial neural network computer.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - ENIAC), (C - Deep Blue), (D - Shakey)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في عام 1951، قام مارفن مينسكي ودين إدموندز ببناء أول حاسوب تشغيلي للشبكة العصبية الاصطناعية، وسمي:",
+    "optionsAr": [
+      "سنارك",
+      "اينياك",
+      "ديب بلو",
+      "هش"
+    ]
   },
   {
     "id": 258,
@@ -4025,7 +5724,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Dartmouth College):\nالميلاد الرسمي المعتمد للذكاء الاصطناعي كتخصص أكاديمي مستقل حدث في ورشة العمل التاريخية التي استمرت شهرين عام 1956 في كلية دارتموث (Dartmouth College).\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Harvard University)، (C - Stanford University)، (D - Oxford University)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Dartmouth College') is the correct choice:\nThe official birth of Artificial Intelligence as an academic field occurred at the Dartmouth College summer workshop organized by John McCarthy in 1956.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Harvard University), (C - Stanford University), (D - Oxford University)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Dartmouth College') is the correct choice:\nThe official birth of Artificial Intelligence as an academic field occurred at the Dartmouth College summer workshop organized by John McCarthy in 1956.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Harvard University), (C - Stanford University), (D - Oxford University)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "حدثت الولادة الرسمية للذكاء الاصطناعي كنظام أكاديمي مستقل في ورشة العمل التاريخية التي استمرت لمدة شهرين في عام 1956 والتي عقدت في:",
+    "optionsAr": [
+      "جامعة هارفارد",
+      "كلية دارتموث",
+      "جامعة ستانفورد",
+      "جامعة أكسفورد"
+    ]
   },
   {
     "id": 259,
@@ -4041,7 +5747,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Logic Theorist):\n🎯 سبب اختيار (A - Logic Theorist):\nتم اختيار هذا الخيار تحديداً لأنه يمثل الحل العلمي المباشر والصحيح لمعايير السؤال؛ حيث ورشة عمل دارتموث (1956) هي الحدث التاريخي الذي تأسس فيه علم الذكاء الاصطناعي رسمياً بقيادة جون مكارثي ومارفن مينسكي وشانون. 🧠 التحليل المنطقي والمفهوم العلمي: 🚫 استبعاد الخيارات الأخرى: الخيارات البديلة المطروحة [(B - General Problem Solver)، (C - Deep Blue)، (D - DENDRAL)] غير صحيحة في هذا السياق؛ لأنها تشير إما إلى مفاهيم تخصصية منفصلة، أو تعبر عن مستويات تجريد أخرى لا تحقق الشرط المطلوب بالسؤال.\n\n❌ لماذا الخيارات الأخرى غير صحيحة؟\nالخيارات [(B - General Problem Solver)، (C - Deep Blue)، (D - DENDRAL)] لا تحقق المطلوب لأنها إما تعبر عن مفاهيم مختلفة تماماً أو لا تطابق الشروط الدقيقة المذكورة في السؤال.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - General Problem Solver)، (C - Deep Blue)، (D - DENDRAL)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Logic Theorist') is the correct choice:\n🎯 Why (A - 'Logic Theorist') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: The 1956 Dartmouth workshop officially established Artificial Intelligence as an academic field, organized by John McCarthy. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(B - General Problem Solver), (C - Deep Blue), (D - DENDRAL)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - General Problem Solver), (C - Deep Blue), (D - DENDRAL)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - General Problem Solver), (C - Deep Blue), (D - DENDRAL)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Logic Theorist') is the correct choice:\n🎯 Why (A - 'Logic Theorist') was chosen:\nThis option is specifically chosen because it directly and accurately satisfies the question criteria: The 1956 Dartmouth workshop officially established Artificial Intelligence as an academic field, organized by John McCarthy. 🧠 Logical Analysis & Core Concept: 🚫 Elimination of Other Options: The alternative options [(B - General Problem Solver), (C - Deep Blue), (D - DENDRAL)] are incorrect in this context because they refer to distinct operations or components that do not satisfy the specific conditions posed in the problem.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - General Problem Solver), (C - Deep Blue), (D - DENDRAL)] are incorrect because they represent distinct concepts or do not satisfy the specific conditions posed in the question.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - General Problem Solver), (C - Deep Blue), (D - DENDRAL)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هو البرنامج البرمجي، الذي عرضه ألين نيويل وهربرت سيمون في دارتموث عام 1956، والذي يحظى بالاحتفاء به على نطاق واسع باعتباره أول برنامج للذكاء الاصطناعي؟",
+    "optionsAr": [
+      "المنظر المنطقي",
+      "حل المشكلات العامة",
+      "ديب بلو",
+      "ديندرال"
+    ]
   },
   {
     "id": 260,
@@ -4057,7 +5770,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Checkers):\nابتكر آرثر صموئيل عام 1952 في شركة IBM برنامجاً رائداً للعبة الداما (Checkers)، وتعلم البرنامج ذاتياً ليصبح أفضل مهارة من صانعه البشري.\n\n💡 مثال وتطبيق واقعي:\nبرنامج آرثر صموئيل للعبة الداما (1952) درب نفسه بلعب آلاف المباريات ضد نفسه حتى تفوق على صانعه البشري، مؤسساً للتعلم المعزز.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Chess)، (C - Go)، (D - Backgammon)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Checkers') is the correct choice:\nArthur Samuel (1952) created a groundbreaking Checkers program at IBM that learned through self-play to outperform its creator.\n\n💡 Real-World Example & Application:\nArthur Samuel's 1952 checkers program played thousands of self-play games to beat its creator, pioneering reinforcement learning.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Chess), (C - Go), (D - Backgammon)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Checkers') is the correct choice:\nArthur Samuel (1952) created a groundbreaking Checkers program at IBM that learned through self-play to outperform its creator.\n\n💡 Real-World Example & Application:\nArthur Samuel's 1952 checkers program played thousands of self-play games to beat its creator, pioneering reinforcement learning.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Chess), (C - Go), (D - Backgammon)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في عام 1952، أنشأ آرثر صموئيل برنامجًا تاريخيًا في شركة IBM لعب أي لعبة، وتعلم كيف يصبح لاعبًا أفضل من مخترعها البشري؟",
+    "optionsAr": [
+      "لعبة الداما",
+      "شطرنج",
+      "اذهب",
+      "لعبة الطاولة"
+    ]
   },
   {
     "id": 261,
@@ -4073,7 +5793,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - The Lighthill Report):\nوجه 'تقرير لايتهيل' (The Lighthill Report) البريطاني عام 1973 انتقادات حادة لأبحاث الذكاء الاصطناعي لفشلها في تحقيق وعودها الكبرى، مما تسبب بقطع التمويل.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - The Turing Review)، (C - The Dartmouth Manifesto)، (D - The ALPAC Report)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'The Lighthill Report') is the correct choice:\nThe Lighthill Report (1973) in the UK heavily criticized AI research for failing to achieve its grand promises, triggering severe funding cuts and the first AI winter.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - The Turing Review), (C - The Dartmouth Manifesto), (D - The ALPAC Report)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'The Lighthill Report') is the correct choice:\nThe Lighthill Report (1973) in the UK heavily criticized AI research for failing to achieve its grand promises, triggering severe funding cuts and the first AI winter.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - The Turing Review), (C - The Dartmouth Manifesto), (D - The ALPAC Report)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "ما هو التقرير المؤثر الصادر عام 1973 والذي نُشر في المملكة المتحدة والذي انتقد بشدة أبحاث الذكاء الاصطناعي لفشلها في تحقيق وعودها الكبرى، مما أدى إلى تخفيضات حادة في التمويل؟",
+    "optionsAr": [
+      "تقرير لايتهيل",
+      "مراجعة تورينج",
+      "بيان دارتموث",
+      "تقرير الألباك"
+    ]
   },
   {
     "id": 262,
@@ -4089,7 +5816,14 @@ const questions = [
     ],
     "correctAnswer": 2,
     "explanationAr": "🎯 سبب اختيار (C - XOR (Exclusive-OR)):\nأثبت مارفن مينسكي وسيمور بابيرت في كتابهما 'Perceptrons' عام 1969 أن البيرسبترون أحادي الطبقة عاجز رياضياً عن حساب دالة XOR غير الخطية.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - AND)، (B - OR)، (D - NOT)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (C - 'XOR (Exclusive-OR)') is the correct choice:\nMinsky and Papert's 1969 book 'Perceptrons' proved mathematically that single-layer perceptrons cannot learn the non-linear XOR function.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - AND), (B - OR), (D - NOT)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (C - 'XOR (Exclusive-OR)') is the correct choice:\nMinsky and Papert's 1969 book 'Perceptrons' proved mathematically that single-layer perceptrons cannot learn the non-linear XOR function.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - AND), (B - OR), (D - NOT)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في عام 1969، نشر مارفن مينسكي وسيمور بابيرت كتابًا بعنوان \"الإدراك الحسي\"، حيث أثبتا رياضيًا أن الإدراك الحسي أحادي الطبقة لا يمكنه حساب أي وظيفة بسيطة؟",
+    "optionsAr": [
+      "و",
+      "أو",
+      "XOR (حصريا-OR)",
+      "لا"
+    ]
   },
   {
     "id": 263,
@@ -4105,7 +5839,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - MYCIN):\nنظام MYCIN الذي طُوِّر في السبعينيات كان نظاماً خبيراً شهيراً اعتمد على 450 قاعدة لتشخيص الأمراض المعدية في الدم والتوصية بالمضادات الحيوية.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - DENDRAL)، (C - PROSPECTOR)، (D - XCON)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'MYCIN') is the correct choice:\nMYCIN was a famous 1970s medical expert system using roughly 450 rules to diagnose infectious blood diseases and recommend therapies.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - DENDRAL), (C - PROSPECTOR), (D - XCON)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'MYCIN') is the correct choice:\nMYCIN was a famous 1970s medical expert system using roughly 450 rules to diagnose infectious blood diseases and recommend therapies.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - DENDRAL), (C - PROSPECTOR), (D - XCON)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في السبعينيات، حولت الأنظمة المتخصصة تركيز الذكاء الاصطناعي نحو المعرفة الخاصة بمجال معين. ما هو النظام الخبير الشهير الذي قام بتشخيص أمراض الدم المعدية باستخدام 450 قاعدة؟",
+    "optionsAr": [
+      "مايسين",
+      "دندرال",
+      "المنقب",
+      "XCON"
+    ]
   },
   {
     "id": 264,
@@ -4121,7 +5862,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Configure customer computer orders for VAX computer systems):\nأثبت نظام R1 (المعروف بـ XCON) النجاح التجاري للأنظمة الخبيرة في الثمانينيات لشركة DEC عبر أتمتة تكوين وتجميع طلبيات حواسيب VAX المخصصة.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Translate Chinese into English)، (C - Drive an automated delivery truck)، (D - Predict international stock market prices)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Configure customer computer orders for VAX computer systems') is the correct choice:\nR1 (XCON) was a commercially successful expert system at DEC that configured customer orders for VAX computer systems, saving millions annually.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Translate Chinese into English), (C - Drive an automated delivery truck), (D - Predict international stock market prices)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Configure customer computer orders for VAX computer systems') is the correct choice:\nR1 (XCON) was a commercially successful expert system at DEC that configured customer orders for VAX computer systems, saving millions annually.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Translate Chinese into English), (C - Drive an automated delivery truck), (D - Predict international stock market prices)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "تم تسليط الضوء على النجاح التجاري للأنظمة المتخصصة في الثمانينيات من خلال نظام R1 (XCON)، وهو نظام خبير تم تطويره لصالح شركة Digital Equipment Corporation (DEC) من أجل:",
+    "optionsAr": [
+      "ترجمة الصينية إلى الإنجليزية",
+      "تكوين طلبات كمبيوتر العميل لأنظمة كمبيوتر VAX",
+      "قيادة شاحنة توصيل آلية",
+      "توقع أسعار أسواق الأسهم العالمية"
+    ]
   },
   {
     "id": 265,
@@ -4137,7 +5885,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Backpropagation):\nأشعل روميلهارت وهينتون وماكليلاند نهضة الشبكات العصبية (الاتصالية) في 1986 عبر نشر خوارزمية الانتشار العكسي (Backpropagation) لتدريب الشبكات متعددة الطبقات.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - A* Search)، (C - Uniform-Cost Search)، (D - Alpha-Beta Pruning)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Backpropagation') is the correct choice:\nThe Connectionist revival in 1986 was ignited by Rumelhart, Hinton, and McClelland through the widespread popularization of the Backpropagation algorithm.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - A* Search), (C - Uniform-Cost Search), (D - Alpha-Beta Pruning)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Backpropagation') is the correct choice:\nThe Connectionist revival in 1986 was ignited by Rumelhart, Hinton, and McClelland through the widespread popularization of the Backpropagation algorithm.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - A* Search), (C - Uniform-Cost Search), (D - Alpha-Beta Pruning)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في عام 1986، أشعل روميلهارت وهينتون وماكليلاند نهضة \"الاتصالية\" من خلال النشر الواسع النطاق لأي خوارزمية تعليمية؟",
+    "optionsAr": [
+      "الانتشار العكسي",
+      "أ* بحث",
+      "بحث التكلفة الموحدة",
+      "تشذيب ألفا بيتا"
+    ]
   },
   {
     "id": 266,
@@ -4153,7 +5908,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Bayesian Networks):\nأحدث جوديا بيرل (Judea Pearl) ثورة في الذكاء الاصطناعي عام 1988 بتقديمه 'الشبكات البايزية' (Bayesian Networks) كإطار رسمي للاستدلال في ظل عدم اليقين.\n\n💡 مثال وتطبيق واقعي:\nالأنظمة الحديثة كالروبوتات ومحركات الاستدلال في الأنظمة الطبية تستند إلى هذه المبادئ التأسيسية لمعالجة البيانات واتخاذ القرارات.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Semantic Web)، (C - Genetic Algorithms)، (D - Predicate Calculus)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Bayesian Networks') is the correct choice:\nJudea Pearl transformed AI in 1988 by introducing Bayesian Networks as a principled, rigorous framework for probabilistic reasoning under uncertainty.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Semantic Web), (C - Genetic Algorithms), (D - Predicate Calculus)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Bayesian Networks') is the correct choice:\nJudea Pearl transformed AI in 1988 by introducing Bayesian Networks as a principled, rigorous framework for probabilistic reasoning under uncertainty.\n\n💡 Real-World Example & Application:\nModern intelligent systems like diagnostic medical engines and conversational agents rely on these historical foundations for rational decision-making.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Semantic Web), (C - Genetic Algorithms), (D - Predicate Calculus)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في عام 1988، قامت شركة جوديا بيرل بتحويل الذكاء الاصطناعي من خلال تقديم أي إطار رسمي للاستدلال في ظل عدم اليقين؟",
+    "optionsAr": [
+      "الشبكات الافتراضية",
+      "الويب الدلالي",
+      "الخوارزميات الجينية",
+      "حساب التفاضل والتكامل المسند"
+    ]
   },
   {
     "id": 267,
@@ -4169,7 +5931,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Garry Kasparov):\nحقق حاسوب Deep Blue من شركة IBM إنجازاً تاريخياً في عام 1997 عندما هزم بطل العالم في الشطرنج غاري كاسباروف (Garry Kasparov) في مباراة رسمية.\n\n💡 مثال وتطبيق واقعي:\nفوز حاسوب Deep Blue على غاري كاسباروف عام 1997 أثبت قدرة البحث الذكي وتقييم المواقف في التفوق على أبطال العالم في الشطرنج.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Anatoly Karpov)، (C - Magnus Carlsen)، (D - Bobby Fischer)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Garry Kasparov') is the correct choice:\nIBM's Deep Blue made history in 1997 by defeating reigning World Chess Champion Garry Kasparov in a regulation match.\n\n💡 Real-World Example & Application:\nIBM Deep Blue defeating Garry Kasparov in 1997 proved that heuristic search and position evaluation could triumph in grandmaster chess.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Anatoly Karpov), (C - Magnus Carlsen), (D - Bobby Fischer)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Garry Kasparov') is the correct choice:\nIBM's Deep Blue made history in 1997 by defeating reigning World Chess Champion Garry Kasparov in a regulation match.\n\n💡 Real-World Example & Application:\nIBM Deep Blue defeating Garry Kasparov in 1997 proved that heuristic search and position evaluation could triumph in grandmaster chess.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Anatoly Karpov), (C - Magnus Carlsen), (D - Bobby Fischer)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في عام 1997، تصدر كمبيوتر الشطرنج Deep Blue التابع لشركة IBM عناوين الأخبار التاريخية بفوزه على أي بطل عالمي للشطرنج في مباراة عادية؟",
+    "optionsAr": [
+      "غاري كاسباروف",
+      "أناتولي كاربوف",
+      "ماجنوس كارلسن",
+      "بوبي فيشر"
+    ]
   },
   {
     "id": 268,
@@ -4185,7 +5954,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - ImageNet):\nانطلقت حقبة التعلم العميق الحديثة في عام 2012 عندما حققت شبكة AlexNet طفرة استثنائية في التعرف على الصور على مجموعة بيانات ImageNet الضخمة.\n\n💡 مثال وتطبيق واقعي:\nفوز AlexNet في مسابقة ImageNet عام 2012 أطلق ثورة التعلم العميق (Deep Learning) الحديثة بالاعتماد على معالجات GPU والشبكات العصبية الالتفافية.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - MNIST)، (C - CIFAR-10)، (D - COCO)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'ImageNet') is the correct choice:\nThe modern Deep Learning era was catalyzed in 2012 when AlexNet achieved a historic breakthrough on the large-scale ImageNet computer vision dataset.\n\n💡 Real-World Example & Application:\nAlexNet's 2012 ImageNet victory triggered the modern deep learning revolution by leveraging GPUs and convolutional neural networks.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - MNIST), (C - CIFAR-10), (D - COCO)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'ImageNet') is the correct choice:\nThe modern Deep Learning era was catalyzed in 2012 when AlexNet achieved a historic breakthrough on the large-scale ImageNet computer vision dataset.\n\n💡 Real-World Example & Application:\nAlexNet's 2012 ImageNet victory triggered the modern deep learning revolution by leveraging GPUs and convolutional neural networks.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - MNIST), (C - CIFAR-10), (D - COCO)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "تم تحفيز عصر التعلم العميق الحديث بشكل كبير في عام 2012 عندما حققت AlexNet إنجازًا تاريخيًا في أي مجموعة بيانات رؤية حاسوبية واسعة النطاق؟",
+    "optionsAr": [
+      "إيماج نت",
+      "منيست",
+      "سيفار-10",
+      "كوكو"
+    ]
   },
   {
     "id": 269,
@@ -4201,7 +5977,14 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب اختيار (A - Monte Carlo Tree Search (MCTS)):\nهزم نظام AlphaGo من شركة DeepMind بطل العالم لي سيدول عام 2016 في لعبة Go المعقدة عبر الجمع بين الشبكات العصبية العميقة وبحث شجرة مونت كارلو (MCTS).\n\n💡 مثال وتطبيق واقعي:\nفوز AlphaGo على لي سيدول عام 2016 جمع بين الشبكات العصبية العميقة وبحث شجرة مونت كارلو (MCTS) لحل لعبة Go فائقة التعقيد.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(B - Depth-First Search with backtracking)، (C - Rule-based expert systems)، (D - Linear programming)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (A - 'Monte Carlo Tree Search (MCTS)') is the correct choice:\nDeepMind's AlphaGo defeated world champion Lee Sedol in 2016 by combining deep neural networks with Monte Carlo Tree Search (MCTS).\n\n💡 Real-World Example & Application:\nDeepMind's AlphaGo defeating Lee Sedol in 2016 combined deep reinforcement learning with Monte Carlo Tree Search (MCTS) to master Go.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Depth-First Search with backtracking), (C - Rule-based expert systems), (D - Linear programming)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (A - 'Monte Carlo Tree Search (MCTS)') is the correct choice:\nDeepMind's AlphaGo defeated world champion Lee Sedol in 2016 by combining deep neural networks with Monte Carlo Tree Search (MCTS).\n\n💡 Real-World Example & Application:\nDeepMind's AlphaGo defeating Lee Sedol in 2016 combined deep reinforcement learning with Monte Carlo Tree Search (MCTS) to master Go.\n\n❌ Why other options are incorrect:\nThe alternative options [(B - Depth-First Search with backtracking), (C - Rule-based expert systems), (D - Linear programming)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "في عام 2016، هزم AlphaGo من DeepMind بطل العالم Lee Sedol في لعبة Go اللوحية القديمة من خلال الجمع بين الشبكات العصبية العميقة مع:",
+    "optionsAr": [
+      "بحث شجرة مونت كارلو (MCTS)",
+      "العمق-البحث الأول مع التراجع",
+      "النظم الخبيرة المبنية على القواعد",
+      "البرمجة الخطية"
+    ]
   },
   {
     "id": 270,
@@ -4217,7 +6000,14 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب اختيار (B - Ensuring that autonomous AI systems pursue objectives that are truly aligned with human values and intentions):\nتتمثل 'مسألة محاذاة القيم' (Value Alignment Problem) في التحدي الهندسي لضمان أن تسعى أنظمة الذكاء الاصطناعي المستقلة لتحقيق أهداف تتوافق حقاً مع قيم ونوايا البشر.\n\n💡 مثال وتطبيق واقعي:\nمشكلة محاذاة القيم تبحث في كيفية ضمان أن تطيع أنظمة الذكاء الاصطناعي الفائقة قيم البشر ونواياهم الحقيقية دون أضرار غير مقصودة.\n\n❌ استبعاد الخيارات الأخرى:\nالخيارات [(A - Aligning columns in database tables)، (C - Setting identical retail prices for AI hardware)، (D - Calibrating accelerometer sensors in robots)] غير صحيحة لأنها إما تعبر عن مكونات جزئية أو وظائف مختلفة لا تحقق التعريف المطلوب في السؤال.",
-    "explanationEn": "🎯 Why (B - 'Ensuring that autonomous AI systems pursue objectives that are truly aligned with human values and intentions') is the correct choice:\nThe value alignment problem focuses on ensuring that autonomous AI systems pursue objectives that are truly aligned with human values and intentions.\n\n💡 Real-World Example & Application:\nThe value alignment problem focuses on ensuring autonomous superintelligent AI systems reliably pursue human values without unintended harms.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Aligning columns in database tables), (C - Setting identical retail prices for AI hardware), (D - Calibrating accelerometer sensors in robots)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria."
+    "explanationEn": "🎯 Why (B - 'Ensuring that autonomous AI systems pursue objectives that are truly aligned with human values and intentions') is the correct choice:\nThe value alignment problem focuses on ensuring that autonomous AI systems pursue objectives that are truly aligned with human values and intentions.\n\n💡 Real-World Example & Application:\nThe value alignment problem focuses on ensuring autonomous superintelligent AI systems reliably pursue human values without unintended harms.\n\n❌ Why other options are incorrect:\nThe alternative options [(A - Aligning columns in database tables), (C - Setting identical retail prices for AI hardware), (D - Calibrating accelerometer sensors in robots)] are incorrect because they represent distinct components or functions that do not satisfy the specific question criteria.",
+    "questionAr": "تشير \"مشكلة محاذاة القيمة\" في أبحاث سلامة الذكاء الاصطناعي الحديثة إلى التحدي المتمثل في:",
+    "optionsAr": [
+      "محاذاة الأعمدة في جداول قاعدة البيانات",
+      "التأكد من أن أنظمة الذكاء الاصطناعي المستقلة تسعى إلى تحقيق أهداف تتوافق حقًا مع القيم والنوايا الإنسانية",
+      "تحديد أسعار تجزئة متطابقة لأجهزة الذكاء الاصطناعي",
+      "معايرة أجهزة استشعار التسارع في الروبوتات"
+    ]
   },
   {
     "id": 271,
@@ -4231,7 +6021,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nاختبار تورينغ القياسي يتعمد عزل الحاسوب والمحكم عبر أجهزة طرفية نصية، لضمان قياس الذكاء والقدرات المنطقية المجردة دون التأثر بالمظهر الخارجي أو نبرة الصوت المادية.\n\n💡 مثال وتطبيق واقعي:\nالمحادثة مع روبوت ChatGPT عبر واجهة نصية تماثل اختبار تورينغ؛ فأنت تحكم على جودة إجاباته الفكرية دون أن تشترط وجود جسد بشري أمامه.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن استبعاد التفاعل المادي المباشر هو جوهر تصميم اختبار تورينغ لمنع الانحياز البصري.",
-    "explanationEn": "🎯 Why this statement is True:\nThe standard Turing Test uses text-based communication to isolate cognitive ability from physical human appearance or voice characteristics.\n\n💡 Real-World Example & Application:\nChatting with an AI via a terminal screen evaluates intelligence through linguistic reasoning rather than whether it looks like a biological human.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because avoiding physical bias was central to Turing's formulation."
+    "explanationEn": "🎯 Why this statement is True:\nThe standard Turing Test uses text-based communication to isolate cognitive ability from physical human appearance or voice characteristics.\n\n💡 Real-World Example & Application:\nChatting with an AI via a terminal screen evaluates intelligence through linguistic reasoning rather than whether it looks like a biological human.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because avoiding physical bias was central to Turing's formulation.",
+    "questionAr": "يتجنب اختبار تورينج القياسي عمدا التفاعل الجسدي المباشر بين المحقق والكمبيوتر لضمان اختبار الذكاء، وليس المظهر الجسدي.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 272,
@@ -4245,7 +6040,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nاختبار تورينغ الشامل (Total Turing Test) يشترط تفاعلاً كاملاً مع العالم المادي، مما يتطلب تقنيات الرؤية الحاسوبية (Computer Vision) لإدراك الأشياء، والروبوتات (Robotics) للتعامل معها ميكانيكياً.\n\n💡 مثال وتطبيق واقعي:\nتسليم طرد فيزيائي في مكتب والتعرف على وجوه الموظفين يتطلب اختبار تورينغ الشامل؛ فهو يحتاج كاميرات لتحليل الوجوه وأذرعاً آلية لتسليم الطرد.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن الرؤية والروبوتات هما المكونان الإضافيان المحددان لاختبار تورينغ الشامل.",
-    "explanationEn": "🎯 Why this statement is True:\nPassing the Total Turing Test requires physical interaction with the world, necessitating computer vision to perceive objects and robotics to manipulate them.\n\n💡 Real-World Example & Application:\nA humanoid hospital assistant that passes objects to doctors and identifies surgical tools needs computer vision and robotic actuators.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because perception and manipulation define the Total Turing Test beyond text."
+    "explanationEn": "🎯 Why this statement is True:\nPassing the Total Turing Test requires physical interaction with the world, necessitating computer vision to perceive objects and robotics to manipulate them.\n\n💡 Real-World Example & Application:\nA humanoid hospital assistant that passes objects to doctors and identifies surgical tools needs computer vision and robotic actuators.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because perception and manipulation define the Total Turing Test beyond text.",
+    "questionAr": "يتطلب اجتياز اختبار تورينج الشامل أن تمتلك الآلة رؤية الكمبيوتر وقدرات الروبوتات المادية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 273,
@@ -4259,7 +6059,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nالعلوم الاستعرافية (Cognitive Science) تدمج نماذج الذكاء الاصطناعي الحاسوبية مع تقنيات علم النفس التجريبي لبناء نظريات علمية قابلة للاختبار حول طريقة عمل العقل البشري.\n\n💡 مثال وتطبيق واقعي:\nمحاكاة طريقة تذكر الكلمات على الكمبيوتر ومقارنتها بتجارب قياس نشاط الدماغ لدى متطوعين بشريين في المختبر.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن الجمع بين النمذجة الحاسوبية والتجارب السلوكية هو تعريف العلوم الاستعرافية.",
-    "explanationEn": "🎯 Why this statement is True:\nCognitive Science merges computational AI models with experimental psychology methods to construct and validate theories of the human mind.\n\n💡 Real-World Example & Application:\nDeveloping a neural model of human short-term memory capacity and validating it against human recall laboratory experiments.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because this interdisciplinary union is the formal definition of cognitive science."
+    "explanationEn": "🎯 Why this statement is True:\nCognitive Science merges computational AI models with experimental psychology methods to construct and validate theories of the human mind.\n\n💡 Real-World Example & Application:\nDeveloping a neural model of human short-term memory capacity and validating it against human recall laboratory experiments.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because this interdisciplinary union is the formal definition of cognitive science.",
+    "questionAr": "تجمع العلوم المعرفية بين نماذج الذكاء الاصطناعي الحاسوبية وتقنيات علم النفس التجريبي لبناء نظريات قابلة للاختبار للعقل البشري.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 274,
@@ -4273,7 +6078,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nصمم أرسطو القياسات المنطقية (Syllogisms) لتقديم قوالب حجاجية تضمن دائماً استنتاجات صحيحة لا تقبل الشك طالما كانت المقدمات الأولية صحيحة.\n\n💡 مثال وتطبيق واقعي:\nالمقدمة 1: كل إنسان فانٍ. المقدمة 2: سقراط إنسان. النتيجة القطعية: سقراط فانٍ.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن قياسات أرسطو أرست القواعد الأولى لقوانين الفكر والمنطق الصوري في التاريخ.",
-    "explanationEn": "🎯 Why this statement is True:\nAristotle's syllogisms provided formal argument patterns that guaranteed correct conclusions whenever the initial premises were true.\n\n💡 Real-World Example & Application:\n'All humans are mortal; Socrates is a human; therefore Socrates is mortal'—a classic truth-preserving syllogism.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because truth-preserving deductive patterns are the purpose of Aristotle's syllogistic logic."
+    "explanationEn": "🎯 Why this statement is True:\nAristotle's syllogisms provided formal argument patterns that guaranteed correct conclusions whenever the initial premises were true.\n\n💡 Real-World Example & Application:\n'All humans are mortal; Socrates is a human; therefore Socrates is mortal'—a classic truth-preserving syllogism.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because truth-preserving deductive patterns are the purpose of Aristotle's syllogistic logic.",
+    "questionAr": "تم تصميم القياسات المنطقية لأرسطو لتوفير أنماط لبنيات الحجج التي تسفر دائمًا عن استنتاجات صحيحة عندما تكون المقدمات صحيحة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 275,
@@ -4287,7 +6097,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nالوكيل العقلاني (Rational Agent) هو الذي يتصرف لتحقيق أفضل نتيجة ممكنة، أو أفضل نتيجة متوقعة رياضياً عند وجود عدم يقين في البيئة.\n\n💡 مثال وتطبيق واقعي:\nبرنامج الملاحة الذكي يختار الطريق ذي الزمن المتوقع الأقل مع الأخذ في الحسبان احتمالات الازدحام المروري المفاجئ.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن هذا هو التعريف المعتمد للوكيل العقلاني في مرجع الذكاء الاصطناعي AIMA.",
-    "explanationEn": "🎯 Why this statement is True:\nA rational agent acts so as to achieve the best outcome or, when uncertainty exists, the best expected outcome.\n\n💡 Real-World Example & Application:\nA smart investment advisor allocates capital across assets to maximize expected return for an accepted risk threshold.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because maximizing expected utility is the canonical standard of rational agency."
+    "explanationEn": "🎯 Why this statement is True:\nA rational agent acts so as to achieve the best outcome or, when uncertainty exists, the best expected outcome.\n\n💡 Real-World Example & Application:\nA smart investment advisor allocates capital across assets to maximize expected return for an accepted risk threshold.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because maximizing expected utility is the canonical standard of rational agency.",
+    "questionAr": "العامل العقلاني هو الذي يتصرف لتحقيق أفضل النتائج، أو، عندما يكون هناك عدم يقين، أفضل النتائج المتوقعة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 276,
@@ -4301,7 +6116,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nالاستنتاج المنطقي الصارم ليس الطريقة الوحيدة للعقلانية؛ فهناك أفعال رد فعل سريعة (Reflexes) أو تصرفات استكشافية عقلانية تماماً دون حاجة لاستنتاج منطقي معقد.\n\n💡 مثال وتطبيق واقعي:\nسحب يدك فوراً عند لمس موقد ساخن هو تصرف عقلاني يحميك من الاحتراق، لكنه تم كرد فعل فوري دون بناء براهين منطقية طويلة.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأن حصر العقلانية في البراهين المنطقية الصارمة يتجاهل وكلاء رد الفعل والتصرف تحت ضغط الزمن.",
-    "explanationEn": "🎯 Why this statement is False:\nLogical deduction is not the sole route to rationality; reflex actions and heuristic choices can be rational when logic is too slow.\n\n💡 Real-World Example & Application:\nFlinching your hand off a blazing stove is rational self-preservation that bypasses slow logical syllogism deductions.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because the rational agent approach encompasses reflex and probabilistic decisions beyond pure logic."
+    "explanationEn": "🎯 Why this statement is False:\nLogical deduction is not the sole route to rationality; reflex actions and heuristic choices can be rational when logic is too slow.\n\n💡 Real-World Example & Application:\nFlinching your hand off a blazing stove is rational self-preservation that bypasses slow logical syllogism deductions.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because the rational agent approach encompasses reflex and probabilistic decisions beyond pure logic.",
+    "questionAr": "في ظل نهج الوكيل العقلاني، فإن إجراء الاستنتاجات المنطقية الصحيحة هو الطريقة الوحيدة الممكنة للوكيل لإظهار السلوك العقلاني.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 277,
@@ -4315,7 +6135,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nديكارت كان من أبرز دعاة الثنائية (Dualism) التي تفصل بين العقل اللامادي والجسد المادي، ولم يكن مادياً (Materialist) على الإطلاق.\n\n💡 مثال وتطبيق واقعي:\nاعتقد ديكارت أن الروح والعقل الإنسانيين كيان غير مادي يتجاوز القوانين الفيزيائية لآلات الطبيعة المادية.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأن المادية تعارض فكر ديكارت؛ الماديون يعتبرون العقل نتاجاً خالصاً للمادة الفيزيائية للمخ.",
-    "explanationEn": "🎯 Why this statement is False:\nRené Descartes was a leading proponent of Dualism (mind distinct from matter), strongly opposing Materialism.\n\n💡 Real-World Example & Application:\nDescartes asserted that the human soul/mind exists outside physical mechanics, famously reasoning 'Cogito, ergo sum'.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because attributing materialism to Descartes completely contradicts his historical philosophical stance."
+    "explanationEn": "🎯 Why this statement is False:\nRené Descartes was a leading proponent of Dualism (mind distinct from matter), strongly opposing Materialism.\n\n💡 Real-World Example & Application:\nDescartes asserted that the human soul/mind exists outside physical mechanics, famously reasoning 'Cogito, ergo sum'.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because attributing materialism to Descartes completely contradicts his historical philosophical stance.",
+    "questionAr": "كان رينيه ديكارت مدافعًا عن المادية، مجادلًا بأن العقل البشري مطابق تمامًا للآلات الفيزيائية للدماغ.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 278,
@@ -4329,7 +6154,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nالمذهب التجريبي (Empiricism) بقيادة فلاسفة مثل جون لوك وفرانسيس بيكون يرى أن المعرفة تتشكل أساساً عبر الملاحظة والتجربة الحسية وليس عبر أفكار فطرية مسبقة.\n\n💡 مثال وتطبيق واقعي:\nتدريب نماذج الذكاء الاصطناعي الحالية مثل الشبكات العصبية على ملايين الصور الواقعية يجسد المنهج التجريبي في التعلم من البيانات.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن تأسيس المعرفة على الحس والتجربة هو المبدأ التأسيسي للمذهب التجريبي.",
-    "explanationEn": "🎯 Why this statement is True:\nEmpiricism holds that knowledge originates primarily through sensory experience, observation, and data rather than innate concepts.\n\n💡 Real-World Example & Application:\nModern machine learning training on massive real-world observation datasets exemplifies the empirical approach to knowledge.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because sensation-driven knowledge acquisition is the foundational premise of empiricism."
+    "explanationEn": "🎯 Why this statement is True:\nEmpiricism holds that knowledge originates primarily through sensory experience, observation, and data rather than innate concepts.\n\n💡 Real-World Example & Application:\nModern machine learning training on massive real-world observation datasets exemplifies the empirical approach to knowledge.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because sensation-driven knowledge acquisition is the foundational premise of empiricism.",
+    "questionAr": "ترى التجريبية أن المعرفة تتشكل في المقام الأول من خلال الإدراك الحسي والملاحظة التجريبية بدلاً من الأفكار العقلية الفطرية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 279,
@@ -4343,7 +6173,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nأثبت كورت غودل في مبرهنة عدم الاكتمال الشهيرة (Incompleteness Theorem) أنه لا يوجد نظام رياضي شكلي قوي يمكن أن يكون مكتملاً ومتسقاً في الوقت ذاته.\n\n💡 مثال وتطبيق واقعي:\nتوجد دائماً عبارات رياضية صحيحة في علم الحساب لا يمكن إثبات صحتها أو خطؤها من داخل قواعد النظام ذاته.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأن مبرهنة غودل نفت تماماً إمكانية اكتمال الأنظمة الرياضية الشاملة وحطمت حلم هيلبرت الرياضي.",
-    "explanationEn": "🎯 Why this statement is False:\nKurt Gödel proved in his Incompleteness Theorem that any sufficiently powerful formal mathematical system contains true statements that cannot be proven within the system.\n\n💡 Real-World Example & Application:\nGödel showed arithmetic cannot be both consistent and complete, demonstrating inherent limits to formal algorithmic deduction.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because Gödel proved mathematics is inherently incomplete and undecidable."
+    "explanationEn": "🎯 Why this statement is False:\nKurt Gödel proved in his Incompleteness Theorem that any sufficiently powerful formal mathematical system contains true statements that cannot be proven within the system.\n\n💡 Real-World Example & Application:\nGödel showed arithmetic cannot be both consistent and complete, demonstrating inherent limits to formal algorithmic deduction.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because Gödel proved mathematics is inherently incomplete and undecidable.",
+    "questionAr": "أثبت كيرت جودل أن أي نظام رياضي رسمي قوي بما فيه الكفاية هو نظام كامل وقابل للتقرير بالكامل.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 280,
@@ -4357,7 +6192,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nأثبت آلان تورينغ عبر مسألة التوقف (Halting Problem) أنه لا يمكن وجود خوارزمية عامة قادرة على التنبؤ بما إذا كان أي برنامج حاسوبي سيتوقف أم سيستمر في حلقة لا نهائية.\n\n💡 مثال وتطبيق واقعي:\nلا يمكن لبرنامج فحص الأخطاء (Antivirus أو Compiler) أن يضمن اكتشاف جميع الحلقات اللانهائية في أي كود برمجي عشوائي مسبقاً.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن مبرهنة عدم قابلية التوقف للحل هي أحد أهم أعمدة علم الحاسوب النظري التي أثبتها تورينغ عام 1936.",
-    "explanationEn": "🎯 Why this statement is True:\nAlan Turing proved that the Halting Problem is undecidable—no general algorithm can determine if an arbitrary program will ever halt or run forever.\n\n💡 Real-World Example & Application:\nNo software linter can be built that reliably determines whether any arbitrary while-loop will terminate on all inputs.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because Turing's proof of the unsolvability of the halting problem is a foundational cornerstone of computing."
+    "explanationEn": "🎯 Why this statement is True:\nAlan Turing proved that the Halting Problem is undecidable—no general algorithm can determine if an arbitrary program will ever halt or run forever.\n\n💡 Real-World Example & Application:\nNo software linter can be built that reliably determines whether any arbitrary while-loop will terminate on all inputs.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because Turing's proof of the unsolvability of the halting problem is a foundational cornerstone of computing.",
+    "questionAr": "أثبت آلان تورينج أنه لا توجد خوارزمية عامة قادرة على تحديد ما إذا كان برنامج الكمبيوتر التعسفي سيتوقف في النهاية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 281,
@@ -4371,7 +6211,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nتُعرَّف مسألة بأنها مستعصية (Intractable) إذا كان الوقت اللازم لحلها ينمو بشكل أُسي مع حجم المدخلات، مما يجعل حل الحالات الكبيرة مستحيلاً عملياً.\n\n💡 مثال وتطبيق واقعي:\nمسألة البائع المتجول (TSP) لـ 100 مدينة تتطلب مليارات السنين لفحص جميع الاحتمالات بالطريقة العادية بسبب نموها الأُسي.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن النمو الأسي للمسائل هو المعيار الدقيق لكونها مستعصية حاسوبياً.",
-    "explanationEn": "🎯 Why this statement is True:\nA problem is called intractable if the time required to solve instances grows exponentially with input size, making large problems practically unsolvable.\n\n💡 Real-World Example & Application:\nBrute-force traveling salesperson problems with hundreds of cities scale factorially/exponentially, defying classical computation.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because exponential scaling is the standard definition of intractability."
+    "explanationEn": "🎯 Why this statement is True:\nA problem is called intractable if the time required to solve instances grows exponentially with input size, making large problems practically unsolvable.\n\n💡 Real-World Example & Application:\nBrute-force traveling salesperson problems with hundreds of cities scale factorially/exponentially, defying classical computation.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because exponential scaling is the standard definition of intractability.",
+    "questionAr": "إذا كانت المشكلة كاملة NP، فمن المعتقد على نطاق واسع أنه لا توجد خوارزمية يمكنها حل جميع حالات المشكلة في وقت متعدد الحدود.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 282,
@@ -4385,7 +6230,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nاختزال مسألة إلى صنف NP-Complete يعني أنها تنتمي لأصعب المسائل في NP، وإذا وجد حل متعدد الحدود لأي منها، فإن P = NP لجميعها.\n\n💡 مثال وتطبيق واقعي:\nمسألة تلوين الرسوم البيانية أو إرضاء العبارات المنطقية (SAT) هي مسائل NP-Complete شهيرة تتطلب خوارزميات كشفية تقريبية للتعامل معها.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن إثبات الانتماء لـ NP-Complete يعد دليلاً قوياً على عدم قابلية الحل السريع السهل.",
-    "explanationEn": "🎯 Why this statement is True:\nReducing a problem to NP-completeness provides strong evidence of its intractability, as no polynomial-time algorithm is known for any NP-complete problem.\n\n💡 Real-World Example & Application:\nThe Boolean Satisfiability (SAT) problem is canonically NP-complete, requiring heuristic approximations for large industrial verification.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because NP-completeness is universally accepted as evidence of hard computational limits."
+    "explanationEn": "🎯 Why this statement is True:\nReducing a problem to NP-completeness provides strong evidence of its intractability, as no polynomial-time algorithm is known for any NP-complete problem.\n\n💡 Real-World Example & Application:\nThe Boolean Satisfiability (SAT) problem is canonically NP-complete, requiring heuristic approximations for large industrial verification.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because NP-completeness is universally accepted as evidence of hard computational limits.",
+    "questionAr": "قدم توماس بايز القاعدة الرياضية التي تمكن من تحديث الاحتمالات السابقة في ظل وجود أدلة حسية جديدة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 283,
@@ -4399,7 +6249,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nصاغ جيريمي بينثام مبدأ النفعية (Utilitarianism)، الذي يقترح أن الأفعال تُقاس بمدى تعظيمها للسعادة والمنفعة الإجمالية لجميع المتأثرين بها.\n\n💡 مثال وتطبيق واقعي:\nتوجيه سيارات الإسعاف أو توزيع الموارد الطبية في الأزمات لتنقذ أكبر عدد ممكن من الأرواح يطبق المبدأ النفعي لبينثام.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن النفعية هي الأساس الفلسفي الذي استمد منه علم الاقتصاد والذكاء الاصطناعي مفهوم دوال المنفعة (Utility).",
-    "explanationEn": "🎯 Why this statement is True:\nJeremy Bentham introduced Utilitarianism, which posits that moral actions are judged by how effectively they maximize overall utility or well-being.\n\n💡 Real-World Example & Application:\nHealthcare triage algorithms allocating ventilators to maximize total expected saved lives follow utilitarian ethics.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because utilitarianism is historically credited to Bentham."
+    "explanationEn": "🎯 Why this statement is True:\nJeremy Bentham introduced Utilitarianism, which posits that moral actions are judged by how effectively they maximize overall utility or well-being.\n\n💡 Real-World Example & Application:\nHealthcare triage algorithms allocating ventilators to maximize total expected saved lives follow utilitarian ethics.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because utilitarianism is historically credited to Bentham.",
+    "questionAr": "أثبت فون نيومان ومورجنسترن أن أي وكيل عقلاني يمتلك تفضيلات متسقة بين اليانصيب غير المؤكد يجب أن يتصرف كما لو كان يعمل على تعظيم المنفعة المتوقعة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 284,
@@ -4413,7 +6268,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nتجمع نظرية القرار (Decision Theory) بين نظرية الاحتمالات للتعامل مع عدم اليقين ونظرية المنفعة لتحديد التفضيلات والأهداف، مما يقدم إطاراً متكاملاً لاتخاذ القرار العقلاني.\n\n💡 مثال وتطبيق واقعي:\nأنظمة التداول المالي تحسب احتمال ارتفاع السهم (احتمالات) والربح المتوقع للمحفظة (منفعة) لاختيار أفضل صفقة شراء.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن المعادلة (Decision Theory = Probability Theory + Utility Theory) هي الركيزة التأسيسية للذكاء الاصطناعي العقلاني.",
-    "explanationEn": "🎯 Why this statement is False:\nDecision Theory formally combines Probability Theory (reasoning under uncertainty) with Utility Theory (preferences and objectives).\n\n💡 Real-World Example & Application:\nFinancial trading engines weigh probability of market shifts against expected portfolio returns to execute optimal buy orders.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because probability plus utility formally defines decision theory."
+    "explanationEn": "🎯 Why this statement is False:\nDecision Theory formally combines Probability Theory (reasoning under uncertainty) with Utility Theory (preferences and objectives).\n\n💡 Real-World Example & Application:\nFinancial trading engines weigh probability of market shifts against expected portfolio returns to execute optimal buy orders.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because probability plus utility formally defines decision theory.",
+    "questionAr": "ينص مفهوم هربرت سيمون عن \"المرضية\" على أنه يجب على الوكلاء البحث دائمًا حتى يحسبوا الحل الأمثل رياضيًا.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 285,
@@ -4427,7 +6287,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nتتميز نظرية الألعاب (Game Theory) بأن النتيجة لأي وكيل تعتمد أيضاً على تصرفات وكلاء آخرين ينافسونه أو يتعاونون معه، عكس نظرية القرار الفردية الكلاسيكية.\n\n💡 مثال وتطبيق واقعي:\nفي مزادات الإعلانات على Google أو ألعاب البوكر، يعتمد نجاح عطائك على استراتيجيات المزايدين الآخرين وليس على رغبتك وحدك.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن التفاعل المتعدد بين الوكلاء والاستجابة المتبادلة هي جوهر نظرية الألعاب.",
-    "explanationEn": "🎯 Why this statement is False:\nGame Theory models settings where an agent's payoff depends not only on its own actions but also on the decisions of other interactive agents.\n\n💡 Real-World Example & Application:\nGoogle ad auctions and multiplayer poker evaluate payoffs dependent on competitive bidding moves of rival participants.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because multi-agent interdependence is the core definition of game theory."
+    "explanationEn": "🎯 Why this statement is False:\nGame Theory models settings where an agent's payoff depends not only on its own actions but also on the decisions of other interactive agents.\n\n💡 Real-World Example & Application:\nGoogle ad auctions and multiplayer poker evaluate payoffs dependent on competitive bidding moves of rival participants.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because multi-agent interdependence is the core definition of game theory.",
+    "questionAr": "تتمتع الخلايا العصبية البيولوجية الفردية في الدماغ البشري بسرعات تحويل أسرع بكثير من ترانزستورات المعالجات الدقيقة السيليكونية الحديثة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 286,
@@ -4441,7 +6306,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nاقترح هربرت سيمون مفهوم العقلانية المقيدة (Bounded Rationality) تقديراً لحقيقة أن صانعي القرار الحقيقيين مقيدون بحدود قدرات المعالجة والوقت المتاح، فلا يمكنهم الحساب الأمثل المطلق دائماً.\n\n💡 مثال وتطبيق واقعي:\nلاعب الشطرنج البشري يختار نقلة 'جيدة بما يكفي' في 3 دقائق، بدلاً من حساب ملايين الاحتمالات حتى نهاية اللعبة كالحاسوب الخارق.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن مفهوم العقلانية المقيدة نال عنه سيمون جائزة نوبل ويعد أساسياً في الذكاء الاصطناعي الواقعي.",
-    "explanationEn": "🎯 Why this statement is True:\nHerbert Simon proposed Bounded Rationality to recognize that decision makers face computational limits and time constraints, choosing satisfying rather than globally optimal actions.\n\n💡 Real-World Example & Application:\nEmergency room doctors make good heuristic decisions within minutes rather than conducting exhaustive mathematical utility optimizations.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because bounded rationality is Simon's seminal Nobel prize-winning framework."
+    "explanationEn": "🎯 Why this statement is True:\nHerbert Simon proposed Bounded Rationality to recognize that decision makers face computational limits and time constraints, choosing satisfying rather than globally optimal actions.\n\n💡 Real-World Example & Application:\nEmergency room doctors make good heuristic decisions within minutes rather than conducting exhaustive mathematical utility optimizations.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because bounded rationality is Simon's seminal Nobel prize-winning framework.",
+    "questionAr": "يحتوي الدماغ البشري على ما يقرب من 10^11 خلية عصبية، حيث ترتبط كل خلية عصبية بآلاف الخلايا العصبية الأخرى عبر المشابك العصبية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 287,
@@ -4455,7 +6325,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nالخلية العصبية الحيوية (Neuron) تتكون من: التغصنات (Dendrites) لاستقبال الإشارات، وجسم الخلية (Soma)، والمحور العصبي (Axon) لنقل الإشارات، والمشابك العصبية (Synapses) للاتصال بالخلايا الأخرى.\n\n💡 مثال وتطبيق واقعي:\nالمحور العصبي يعمل ككابل نقل كهربائي يرسل النبضات إلى العضلات والخلايا المجاورة بسرعة فائقة.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن هذه المكونات الأربعة تمثل البنية التشريحية الأساسية للخلايا العصبية في علم الأعصاب.",
-    "explanationEn": "🎯 Why this statement is False:\nA biological neuron consists of dendrites for receiving signals, a cell body (soma), an axon for sending pulses, and synapses for transmitting to neighbors.\n\n💡 Real-World Example & Application:\nElectrical pulses travel down the axon to transmit muscle flex signals from motor cortex neurons.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because dendrites, soma, axon, and synapses form the standard anatomical model."
+    "explanationEn": "🎯 Why this statement is False:\nA biological neuron consists of dendrites for receiving signals, a cell body (soma), an axon for sending pulses, and synapses for transmitting to neighbors.\n\n💡 Real-World Example & Application:\nElectrical pulses travel down the axon to transmit muscle flex signals from motor cortex neurons.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because dendrites, soma, axon, and synapses form the standard anatomical model.",
+    "questionAr": "شجعت السلوكية النفسية بنشاط دراسة التمثيلات الداخلية والمعتقدات والرغبات الواعية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 288,
@@ -4469,7 +6344,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nرغم أن الخلية العصبية الحيوية أبطأ بكثير في زمن معالجة النبضة (بالميلي ثانية مقابل النانو ثانية للمعالج)، إلا أن الدماغ يعوض ذلك بالتوازي الفائق والهائل لمليارات الخلايا معاً.\n\n💡 مثال وتطبيق واقعي:\nيتعرف الدماغ البشري على وجه صديق خلال 100 ميلي ثانية فقط بفضل عمل مليارات المشابك العصبية بالتوازي، رغم بطء كل خلية منفردة.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن التوازي الفائق هو السر الذي يحاول الذكاء الاصطناعي محاكاته في معالجات الرسوميات (GPUs).",
-    "explanationEn": "🎯 Why this statement is False:\nBiological neurons switch millions of times slower than silicon chips (~milliseconds vs nanoseconds), but compensate with immense parallelism across 86 billion neurons.\n\n💡 Real-World Example & Application:\nHuman facial recognition takes only ~100 milliseconds because visual cortex pathways compute over billions of synapses simultaneously.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because high parallelism balancing slow switching speeds is the canonical neuroscience fact."
+    "explanationEn": "🎯 Why this statement is False:\nBiological neurons switch millions of times slower than silicon chips (~milliseconds vs nanoseconds), but compensate with immense parallelism across 86 billion neurons.\n\n💡 Real-World Example & Application:\nHuman facial recognition takes only ~100 milliseconds because visual cortex pathways compute over billions of synapses simultaneously.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because high parallelism balancing slow switching speeds is the canonical neuroscience fact.",
+    "questionAr": "توقعت آدا لوفليس أن يكون المحرك التحليلي قادرًا على التفكير الأصلي الحقيقي والمستقل تمامًا عن البرمجة البشرية.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 289,
@@ -4483,7 +6363,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nأظهرت أبحاث علم الأعصاب الحديثة أن تلف أجزاء محددة من الدماغ يؤدي لفقدان وظائف محددة بدقة (كفقدان القدرة على الكلام في منطقة بروكا)، مما يؤكد التوطين الوظيفي للقدرات العقلية.\n\n💡 مثال وتطبيق واقعي:\nإصابة باحة فيرنيكه في المخ تجعل المريض قادراً على النطق بطلاقة ولكن بكلام غير مفهوم ولا معنى له، مما يثبت تخصص تلك المنطقة في استيعاب اللغة.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأن فكرة التماثل الكلي المطلق للدماغ دُحضت تماماً بظهور التخصص التشريحي العصبي.",
-    "explanationEn": "🎯 Why this statement is True:\nNeuroscience conclusively demonstrates localization of brain function: specific regions specialize in distinct tasks like language production (Broca's area) or visual processing.\n\n💡 Real-World Example & Application:\nDamage to Broca's area impairs speech formation while leaving comprehension intact, disproving uniform functional distribution.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because modern neuroscience confirms localized brain specialization."
+    "explanationEn": "🎯 Why this statement is True:\nNeuroscience conclusively demonstrates localization of brain function: specific regions specialize in distinct tasks like language production (Broca's area) or visual processing.\n\n💡 Real-World Example & Application:\nDamage to Broca's area impairs speech formation while leaving comprehension intact, disproving uniform functional distribution.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because modern neuroscience confirms localized brain specialization.",
+    "questionAr": "حدد عمل نوربرت وينر في علم التحكم الآلي التنظيم الذاتي في الآلات من خلال حلقات ردود الفعل المصممة لتقليل الخطأ بين الحالة الحالية وحالة الهدف.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 290,
@@ -4497,7 +6382,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nتتميز الرقائق الإلكترونية السيليكونية بأن زمن انتقال النبضات عبر بواباتها المنطقية هو بالنانو ثانية، وهو أسرع بملايين المرات من الاستجابة الكيميائية الكهربائية للخلايا الحيوية.\n\n💡 مثال وتطبيق واقعي:\nمعالج الحاسوب الحديث يعمل بتردد 4 غيغاهرتز وينفذ مليارات العمليات في الثانية الواحدة، بينما الخلية العصبية تطلق حوالي 100 إلى 1000 نبضة فقط في الثانية.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن سرعة التبديل المنطقي في الإلكترونيات تتفوق بمراحل شاسعة على الخلايا العضوية الحيوية.",
-    "explanationEn": "🎯 Why this statement is False:\nSilicon logic gates operate in fractions of a nanosecond, millions of times faster than biological neurotransmitter and ion-channel cycle times.\n\n💡 Real-World Example & Application:\nA modern 4 GHz computer chip executes billions of cycles per second, whereas biological neuron firing rates cap out at roughly 1,000 spikes per second.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because silicon switching speed vastly exceeds biological neuron firing rates."
+    "explanationEn": "🎯 Why this statement is False:\nSilicon logic gates operate in fractions of a nanosecond, millions of times faster than biological neurotransmitter and ion-channel cycle times.\n\n💡 Real-World Example & Application:\nA modern 4 GHz computer chip executes billions of cycles per second, whereas biological neuron firing rates cap out at roughly 1,000 spikes per second.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because silicon switching speed vastly exceeds biological neuron firing rates.",
+    "questionAr": "أثبت نعوم تشومسكي أن الإبداع النحوي اللامتناهي للغة الطبيعية البشرية يمكن صياغته بشكل مناسب من خلال سلاسل ماركوف البسيطة ذات الحالة المحدودة.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 291,
@@ -4511,7 +6401,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nتعتمد السلوكية (Behaviorism) على قياس الاستجابات السلوكية الظاهرة للمنبهات الخارجية فقط، وترفض تماماً دراسة الحالات العقلية الداخلية والوعي باعتبارها غير علمية وغير قابلة للملاحظة المباشرة.\n\n💡 مثال وتطبيق واقعي:\nتجارب بافلوف وسكينر على المنبه والشرطية السلوكية ركزت حصراً على الأفعال المادية دون افتراض أي عمليات تفكير باطنية.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأن نبذ دراسة العمليات العقلية الباطنية كان المبدأ الحاسم للسلوكية.",
-    "explanationEn": "🎯 Why this statement is True:\nBehaviorism rejected mentalist concepts, consciousness, and internal cognitive states, insisting that psychology must study observable stimulus-response behavior.\n\n💡 Real-World Example & Application:\nPavlovian conditioning and Skinner box experiments studied stimulus-reward associations while deliberately ignoring subjective mental thoughts.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because rejecting internal mental states was behaviorism's central tenet."
+    "explanationEn": "🎯 Why this statement is True:\nBehaviorism rejected mentalist concepts, consciousness, and internal cognitive states, insisting that psychology must study observable stimulus-response behavior.\n\n💡 Real-World Example & Application:\nPavlovian conditioning and Skinner box experiments studied stimulus-reward associations while deliberately ignoring subjective mental thoughts.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because rejecting internal mental states was behaviorism's central tenet.",
+    "questionAr": "أظهر نموذج ماكولوتش-بيتس العصبي لعام 1943 أن الشبكات المناسبة من الخلايا العصبية الاصطناعية المترابطة يمكنها حساب أي وظيفة منطقية قابلة للحساب.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 292,
@@ -4525,7 +6420,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nنشر كينيث كريك (Kenneth Craik) في كتابه 'The Nature of Explanation' (1943) الفكرة الثورية القائلة بأن العقل يحتوي على نموذج داخلي للعالم يستخدمه للتنبؤ بالأحداث وتجربة البدائل قبل تنفيذها في الواقع.\n\n💡 مثال وتطبيق واقعي:\nعند التخطيط لقفز حفرة، تتخيل النتيجة في نموذجك الذهني مسبقاً قبل المخاطرة بالقفز الفعلي.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن مفهوم النماذج العقلية لكريك كان الإرهاص الأساسي للوكلاء القائمين على النماذج في الذكاء الاصطناعي.",
-    "explanationEn": "🎯 Why this statement is True:\nKenneth Craik (1943) established that the mind constructs an internal mental model of the world to predict events and simulate actions before execution.\n\n💡 Real-World Example & Application:\nVisualizing whether a couch will fit through a doorway before physically lifting it represents an internal mental simulation.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because Craik's internal mental model concept is a foundational milestone of cognitive science."
+    "explanationEn": "🎯 Why this statement is True:\nKenneth Craik (1943) established that the mind constructs an internal mental model of the world to predict events and simulate actions before execution.\n\n💡 Real-World Example & Application:\nVisualizing whether a couch will fit through a doorway before physically lifting it represents an internal mental simulation.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because Craik's internal mental model concept is a foundational milestone of cognitive science.",
+    "questionAr": "تمت صياغة مصطلح \"الذكاء الاصطناعي\" رسميًا من قبل جون مكارثي في ​​​​مقترح عام 1955 لمشروع أبحاث دارتموث الصيفي لعام 1956.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 293,
@@ -4539,7 +6439,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nحدد وارن ويفر وكلود شانون (Claude Shannon) مفهوم المعلومات كمياً عبر الإنتروبيا الرياضية لقياس مقدار عدم اليقين والمفاجأة في الرسائل المنقولة.\n\n💡 مثال وتطبيق واقعي:\nضغط ملفات الكمبيوتر بصيغة ZIP يعتمد مباشرة على نظرية شانون للمعلومات لإزالة التكرار دون فقدان المعنى.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن نظرية شانون للمعلومات هي الأساس الرياضي لكافة شبكات الاتصالات وأنظمة الذكاء الاصطناعي الحديثة.",
-    "explanationEn": "🎯 Why this statement is True:\nClaude Shannon founded Information Theory by formalizing information mathematically through entropy, quantifying communication certainty and message surprise.\n\n💡 Real-World Example & Application:\nLossless data compression algorithms (like gzip or ZIP) rely directly on Shannon entropy limits to eliminate redundant bit encoding.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because Shannon is universally recognized as the father of mathematical information theory."
+    "explanationEn": "🎯 Why this statement is True:\nClaude Shannon founded Information Theory by formalizing information mathematically through entropy, quantifying communication certainty and message surprise.\n\n💡 Real-World Example & Application:\nLossless data compression algorithms (like gzip or ZIP) rely directly on Shannon entropy limits to eliminate redundant bit encoding.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because Shannon is universally recognized as the father of mathematical information theory.",
+    "questionAr": "أثبت برنامج Newell and Simon's Logic Theorist النظريات الرياضية بشكل رائع لدرجة أنه وجد دليلًا أقصر لنظرية واحدة مما نشره راسل ووايتهيد في الأصل.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 294,
@@ -4553,7 +6458,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nتعتمد أنظمة التحكم الحديثة ونظرية السيبرنتيكا (Cybernetics) على حلقة التغذية الراجعة (Feedback Loop) لقياس الفرق بين الحالة الحالية والهدف وتعديل الأفعال تلقائياً.\n\n💡 مثال وتطبيق واقعي:\nنظام مثبت السرعة التكيفي في السيارة يقيس سرعة السيارة الحالية ويعدل تدفق الوقود باستمرار للحفاظ على سرعة 120 كم/ساعة مهما كان انحدار الطريق.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن التغذية الراجعة هي الأساس الهندسي لتصميم الأنظمة المستقرة ذاتية التنظيم.",
-    "explanationEn": "🎯 Why this statement is True:\nControl theory and cybernetics rely on feedback loops to measure deviation between current and target state, minimizing error dynamically.\n\n💡 Real-World Example & Application:\nVehicle cruise control measures vehicle speedometer feedback to continuously adjust the throttle valve against steep hill resistance.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because negative feedback error minimization is the core of control engineering."
+    "explanationEn": "🎯 Why this statement is True:\nControl theory and cybernetics rely on feedback loops to measure deviation between current and target state, minimizing error dynamically.\n\n💡 Real-World Example & Application:\nVehicle cruise control measures vehicle speedometer feedback to continuously adjust the throttle valve against steep hill resistance.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because negative feedback error minimization is the core of control engineering.",
+    "questionAr": "ساهم الفشل المبكر لمشاريع الترجمة الآلية الحرفية (مثل الترجمة من الإنجليزية إلى الروسية) بشكل كبير في أول شتاء للذكاء الاصطناعي.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 295,
@@ -4567,7 +6477,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nصمم وارن ماكولوتش ووالتر بيتس (McCulloch & Pitts, 1943) أول نموذج رياضي لخلية عصبية اصطناعية، وأثبتا أن شبكات هذه الخلايا قادرة نظرياً على حساب أي دالة منطقية قابلة للحساب.\n\n💡 مثال وتطبيق واقعي:\nبناء بوابات AND وOR وNOT المنطقية باستخدام عتبات تفعيل الخلايا العصبية الاصطناعية كان الإنجاز الأبرز لنموذج ماكولوتش وبيّتس.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن بحث ماكولوتش وبيّتس عام 1943 معترف به كأول عمل في تاريخ الذكاء الاصطناعي.",
-    "explanationEn": "🎯 Why this statement is False:\nWarren McCulloch and Walter Pitts (1943) developed the first mathematical model of artificial neural networks, demonstrating that networks of simple threshold units can compute any logical function.\n\n💡 Real-World Example & Application:\nConstructing Boolean AND/OR/NOT logic gates using artificial neuron activation thresholds formed the foundation of their model.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because McCulloch-Pitts is historically regarded as the first foundational paper in AI."
+    "explanationEn": "🎯 Why this statement is False:\nWarren McCulloch and Walter Pitts (1943) developed the first mathematical model of artificial neural networks, demonstrating that networks of simple threshold units can compute any logical function.\n\n💡 Real-World Example & Application:\nConstructing Boolean AND/OR/NOT logic gates using artificial neuron activation thresholds formed the foundation of their model.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because McCulloch-Pitts is historically regarded as the first foundational paper in AI.",
+    "questionAr": "أثبت كتاب مينسكي وبابيرت عام 1969 رياضيًا أن الشبكات العصبية متعددة الطبقات لا يمكنها أبدًا تعلم الوظائف غير الخطية تحت أي ظرف من الظروف.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 296,
@@ -4581,7 +6496,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nاقترح دونالد هيب (Donald Hebb, 1949) قاعدة التعلم الهيبي الشهيرة (Hebbian Learning): 'الخلايا التي تنشط معاً تترابط معاً' (Cells that fire together, wire together)، حيث تقوى المشابك العصبية بالاستخدام المتزامن.\n\n💡 مثال وتطبيق واقعي:\nتذكر رائحة القهوة فور رؤية فنجانها ينشأ من تقوية الروابط المشبكية بين مراكز الرؤية والشم لتكرار تزامن حدوثهما معاً.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن قاعدة هيب هي أقدم وأشهر خوارزمية للتعلم العصبي التكيفي في التاريخ.",
-    "explanationEn": "🎯 Why this statement is True:\nDonald Hebb (1949) proposed the Hebbian learning rule ('cells that fire together, wire together'), establishing that synaptic connections strengthen when firing simultaneously.\n\n💡 Real-World Example & Application:\nAssociating a ringtone with a specific friend's caller ID strengthens synaptic weights linking auditory cues to memory recognition.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because Hebb's postulate is the foundational rule of neural synaptic plasticity."
+    "explanationEn": "🎯 Why this statement is True:\nDonald Hebb (1949) proposed the Hebbian learning rule ('cells that fire together, wire together'), establishing that synaptic connections strengthen when firing simultaneously.\n\n💡 Real-World Example & Application:\nAssociating a ringtone with a specific friend's caller ID strengthens synaptic weights linking auditory cues to memory recognition.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because Hebb's postulate is the foundational rule of neural synaptic plasticity.",
+    "questionAr": "كان تطوير الأنظمة المتخصصة في السبعينيات بمثابة تحول كبير في نموذج الذكاء الاصطناعي من خوارزميات البحث ذات الأغراض العامة إلى قواعد المعرفة الخاصة بالمجال.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 297,
@@ -4595,7 +6515,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nصاغ جون مكارثي (John McCarthy) مصطلح 'الذكاء الاصطناعي' (Artificial Intelligence) رسمياً في مقترحه التاريخي لورشة عمل دارتموث الصيفية عام 1956.\n\n💡 مثال وتطبيق واقعي:\nاجتمع رواد العلم مثل مارفن مينسكي وكلود شانون في دارتموث عام 1956 تحت هذا العنوان، مما دشن ولادة الذكاء الاصطناعي كحقل أكاديمي مستقل.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن مكارثي هو من اختار هذا الاسم المميز لتفادي مصطلح 'السيبرنتيكا' المنافس حينها.",
-    "explanationEn": "🎯 Why this statement is True:\nJohn McCarthy formally coined the term 'Artificial Intelligence' when organizing the historic Dartmouth Summer Research Project in 1956.\n\n💡 Real-World Example & Application:\nPioneers including Marvin Minsky, Claude Shannon, and Herbert Simon gathered at Dartmouth in 1956, launching AI as a recognized academic discipline.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because historical consensus universally attributes the coining of 'Artificial Intelligence' to McCarthy."
+    "explanationEn": "🎯 Why this statement is True:\nJohn McCarthy formally coined the term 'Artificial Intelligence' when organizing the historic Dartmouth Summer Research Project in 1956.\n\n💡 Real-World Example & Application:\nPioneers including Marvin Minsky, Claude Shannon, and Herbert Simon gathered at Dartmouth in 1956, launching AI as a recognized academic discipline.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because historical consensus universally attributes the coining of 'Artificial Intelligence' to McCarthy.",
+    "questionAr": "أدى تعميم خوارزمية الانتشار العكسي في عام 1986 إلى حل مشكلة تدريب الشبكات العصبية متعددة الطبقات.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 298,
@@ -4609,7 +6534,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nطور ألين نيويل وهربرت سيمون برنامج 'Logic Theorist' عام 1956، والذي نجح في إثبات معظم النظريات الرياضية في الفصل الثاني من كتاب 'Principia Mathematica' لراسل ووايتهيد، واعتبر أول برنامج ذكاء اصطناعي حقيقي.\n\n💡 مثال وتطبيق واقعي:\nتمكن البرنامج من إيجاد برهان لإحدى النظريات كان أقصر وأكثر أناقة من البرهان الأصلي الذي كتبه الفيلسوف راسل بنفسه.\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن برنامج Logic Theorist حظي بإجماع المؤرخين كأول برنامج استدلال رمزي في تاريخ الذكاء الاصطناعي.",
-    "explanationEn": "🎯 Why this statement is True:\nAllen Newell and Herbert Simon developed the Logic Theorist (1956), which successfully proved mathematical theorems from Russell and Whitehead's Principia Mathematica.\n\n💡 Real-World Example & Application:\nThe Logic Theorist discovered a shorter proof for Theorem 2.85 than Russell himself had originally published.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because the Logic Theorist is widely recognized as the first operational reasoning AI program."
+    "explanationEn": "🎯 Why this statement is True:\nAllen Newell and Herbert Simon developed the Logic Theorist (1956), which successfully proved mathematical theorems from Russell and Whitehead's Principia Mathematica.\n\n💡 Real-World Example & Application:\nThe Logic Theorist discovered a shorter proof for Theorem 2.85 than Russell himself had originally published.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because the Logic Theorist is widely recognized as the first operational reasoning AI program.",
+    "questionAr": "توفر الشبكات البايزية طريقة مبدئية رياضيًا لتمثيل التبعيات الشرطية والتفكير الاحتمالي في ظل عدم اليقين.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 299,
@@ -4623,7 +6553,12 @@ const questions = [
     ],
     "correctAnswer": 1,
     "explanationAr": "🎯 سبب الحكم بأن العبارة خاطئة (False):\nأثبت مارفن مينسكي وسيمور بابيرت في كتابهما 'Perceptrons' (1969) رياضياً أن شبكات البيرسيبترون أحادية الطبقة عاجزة تماماً عن تمثيل الدوال غير الخطية البسيطة مثل بوابة XOR، مما أدى لقطع التمويل وبدء 'شتاء الذكاء الاصطناعي'.\n\n💡 مثال وتطبيق واقعي:\nبوابة XOR لا يمكن فصل نواتجها (0 و1) بخط مستقيم واحد على المستوى الإحداثي، مما أفشل البيرسيبترون الخطي أحادي الطبقة.\n\n❌ استبعاد الخيار الآخر:\nخيار (True) غير صحيح لأن الكتاب فضح محدودية البيرسيبترون وأثبت عجزه عن حل XOR، ولم يثبت قدرته عليها.",
-    "explanationEn": "🎯 Why this statement is False:\nMarvin Minsky and Seymour Papert (1969) mathematically proved that single-layer perceptrons cannot learn non-linearly separable functions like the XOR logic gate.\n\n💡 Real-World Example & Application:\nPlotting XOR outputs on a 2D plane reveals that no single straight decision boundary line can separate positive from negative samples.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because the book proved single-layer perceptrons fundamentally fail on XOR, triggering the first AI winter."
+    "explanationEn": "🎯 Why this statement is False:\nMarvin Minsky and Seymour Papert (1969) mathematically proved that single-layer perceptrons cannot learn non-linearly separable functions like the XOR logic gate.\n\n💡 Real-World Example & Application:\nPlotting XOR outputs on a 2D plane reveals that no single straight decision boundary line can separate positive from negative samples.\n\n❌ Why the opposite option is incorrect:\nTrue is incorrect because the book proved single-layer perceptrons fundamentally fail on XOR, triggering the first AI winter.",
+    "questionAr": "كان الاختراق في التعلم العميق الحديث مدفوعًا في المقام الأول بنظريات رياضية جديدة بدلاً من توفر مجموعات البيانات الضخمة وقوة الحوسبة المتوازية لوحدة معالجة الرسومات.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   },
   {
     "id": 300,
@@ -4637,7 +6572,12 @@ const questions = [
     ],
     "correctAnswer": 0,
     "explanationAr": "🎯 سبب الحكم بأن العبارة صحيحة (True):\nإعادة اكتشاف وتعميم خوارزمية الانتشار الخلفي (Backpropagation) في منتصف الثمانينات على يد رملهارت وهينتون ووليامز (1986) مكنت من تدريب الشبكات متعددة الطبقات بنجاح، مما أحيا مجال الشبكات العصبية بقوة.\n\n💡 مثال وتطبيق واقعي:\nالانتشار الخلفي هو المحرك الرياضي الذي تدربت به نماذج اليوم مثل ChatGPT وGemini عبر تعديل أوزان ملايين الطبقات باستخدام التفاضل وحساب التدرج (Gradient Descent).\n\n❌ استبعاد الخيار الآخر:\nخيار (False) غير صحيح لأن خوارزمية الانتشار الخلفي كانت المحطة المفصلية التي أنهت شتاء الذكاء الاصطناعي وأطلقت عصر التعلم العميق الحديث.",
-    "explanationEn": "🎯 Why this statement is True:\nThe popularization of the backpropagation learning algorithm by Rumelhart, Hinton, and Williams (1986) enabled training multi-layer neural networks, reviving connectionism.\n\n💡 Real-World Example & Application:\nBackpropagation via gradient descent remains the foundational engine training modern deep architectures like GPT and convolutional image classifiers.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because backpropagation is universally celebrated for revitalizing neural networks."
+    "explanationEn": "🎯 Why this statement is True:\nThe popularization of the backpropagation learning algorithm by Rumelhart, Hinton, and Williams (1986) enabled training multi-layer neural networks, reviving connectionism.\n\n💡 Real-World Example & Application:\nBackpropagation via gradient descent remains the foundational engine training modern deep architectures like GPT and convolutional image classifiers.\n\n❌ Why the opposite option is incorrect:\nFalse is incorrect because backpropagation is universally celebrated for revitalizing neural networks.",
+    "questionAr": "تشير مشكلة King Midas في سلامة الذكاء الاصطناعي إلى الخطر المتمثل في قيام الوكيل بتعظيم الهدف الذي تم تحديده بشكل غير صحيح من قبل المصمم البشري.",
+    "optionsAr": [
+      "صواب (True)",
+      "خطأ (False)"
+    ]
   }
 ];
 

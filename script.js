@@ -551,7 +551,7 @@
     // Quiz action buttons
     dom.btnPrevQ.addEventListener('click', goToPreviousQuestion);
     dom.btnNextQ.addEventListener('click', goToNextQuestion);
-    dom.btnCheckAns.addEventListener('click', checkCurrentAnswer);
+    if (dom.btnCheckAns) dom.btnCheckAns.addEventListener('click', checkCurrentAnswer);
     dom.btnFinishQuiz.addEventListener('click', () => {
       if (confirm(i18n[state.lang].confirm_finish)) {
         finishQuiz();
@@ -919,14 +919,14 @@
     dom.btnNextQ.disabled = index === total - 1;
 
     if (savedAnswer && savedAnswer.isChecked) {
-      dom.btnCheckAns.disabled = true;
+      if (dom.btnCheckAns) dom.btnCheckAns.disabled = true;
       showFeedbackBanner(savedAnswer.isCorrect, savedAnswer.selected, q.correctAnswer);
       dom.explanationBox.classList.add('show');
       dom.explanationContent.style.display = 'block';
       dom.expToggleText.textContent = i18n[state.lang].hide_explanation;
       dom.expToggleIcon.textContent = '▲';
     } else {
-      dom.btnCheckAns.disabled = !(savedAnswer && savedAnswer.selected !== undefined);
+      if (dom.btnCheckAns) dom.btnCheckAns.disabled = true;
     }
 
     updateNavigatorState();
@@ -956,19 +956,14 @@
     const quiz = state.currentQuiz;
     const idx = quiz.currentIndex;
 
+    // Prevent re-selection if question is already checked
+    if (quiz.userAnswers[idx] && quiz.userAnswers[idx].isChecked) return;
+
     quiz.userAnswers[idx] = quiz.userAnswers[idx] || {};
     quiz.userAnswers[idx].selected = optionIndex;
 
-    // Update option UI
-    dom.qOptionsContainer.querySelectorAll('.option-item').forEach((opt) => {
-      const optIdx = parseInt(opt.getAttribute('data-idx'), 10);
-      opt.classList.toggle('selected', optIdx === optionIndex);
-    });
-
-    // Enable check answer button
-    dom.btnCheckAns.disabled = false;
-
-    updateNavigatorState();
+    // Instant answer checking upon option click
+    checkCurrentAnswer();
   }
 
   function checkCurrentAnswer() {
@@ -984,7 +979,7 @@
     quiz.userAnswers[idx].isChecked = true;
     quiz.userAnswers[idx].isCorrect = isCorrect;
 
-    // Disable options and mark correct / wrong
+    // Disable options and mark correct / wrong immediately
     dom.qOptionsContainer.querySelectorAll('.option-item').forEach((opt) => {
       const optIdx = parseInt(opt.getAttribute('data-idx'), 10);
       opt.classList.add('disabled');
@@ -995,10 +990,9 @@
       }
     });
 
-    // Disable check answer button
-    dom.btnCheckAns.disabled = true;
+    if (dom.btnCheckAns) dom.btnCheckAns.disabled = true;
 
-    // Show feedback banner
+    // Show feedback banner immediately
     showFeedbackBanner(isCorrect, userChoice, q.correctAnswer);
 
     // Show explanation box & auto-expand content

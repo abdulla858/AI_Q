@@ -1724,10 +1724,7 @@ body {
     justify-content: center;
   }
   #btn-check-ans {
-    order: -1; /* Check Answer placed prominently at the top */
-    min-height: 48px;
-    font-size: 1rem;
-    font-weight: 700;
+    display: none !important;
   }
   #btn-finish-quiz {
     min-height: 44px;

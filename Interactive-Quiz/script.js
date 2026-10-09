@@ -27,7 +27,8 @@
     bankTypeFilter: 'all',
     theme: localStorage.getItem('ai_quiz_theme') || 'light',
     lang: (function () {
-      const pref = localStorage.getItem('ai_quiz_lang_pref');
+      // Primary default language is strictly English ('en')
+      const pref = localStorage.getItem('ai_quiz_lang_pref_v2');
       if (pref) return pref;
       return 'en';
     })(),
@@ -393,12 +394,11 @@
 
   function applyLanguage(lang) {
     state.lang = lang;
-    localStorage.setItem('ai_quiz_lang_pref', lang);
-    localStorage.setItem('ai_quiz_lang', lang);
+    localStorage.setItem('ai_quiz_lang_pref_v2', lang);
     const isRtl = lang === 'ar';
     document.documentElement.setAttribute('lang', lang);
     document.documentElement.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
-    dom.langLabel.textContent = isRtl ? 'English' : 'عربي';
+    dom.langLabel.textContent = isRtl ? 'English' : 'عربي (Arabic)';
 
     // Update i18n text in DOM
     document.querySelectorAll('[data-i18n]').forEach((el) => {

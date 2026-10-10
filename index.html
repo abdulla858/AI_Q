@@ -33,11 +33,31 @@
           <span class="btn-text" data-i18n="btn_bank_nav">Question Bank</span>
         </button>
 
-        <!-- Language Toggle -->
-        <button class="icon-btn" id="btn-lang-toggle" title="Switch Language / تغيير اللغة">
-          <span>🌐</span>
-          <span id="lang-label">عربي (Arabic)</span>
-        </button>
+        <!-- Language Selector -->
+        <div class="lang-dropdown-wrapper" id="lang-dropdown-wrapper">
+          <button class="icon-btn" id="btn-lang-toggle" aria-haspopup="true" aria-expanded="false" title="Switch Language / تغيير اللغة">
+            <span class="lang-icon">🌐</span>
+            <span id="lang-label">English</span>
+            <span class="dropdown-caret">▾</span>
+          </button>
+          <div class="lang-dropdown-menu" id="lang-dropdown-menu" role="menu">
+            <button type="button" class="lang-dropdown-item" data-lang="en" role="menuitem">
+              <span class="lang-flag">🇬🇧</span>
+              <span class="lang-item-text">English</span>
+              <span class="lang-item-check">✓</span>
+            </button>
+            <button type="button" class="lang-dropdown-item" data-lang="ar" role="menuitem">
+              <span class="lang-flag">🇸🇦</span>
+              <span class="lang-item-text">العربية</span>
+              <span class="lang-item-check">✓</span>
+            </button>
+            <button type="button" class="lang-dropdown-item" data-lang="both" role="menuitem">
+              <span class="lang-flag">🌐</span>
+              <span class="lang-item-text">كلاهما معاً (Both)</span>
+              <span class="lang-item-check">✓</span>
+            </button>
+          </div>
+        </div>
 
         <!-- Theme Toggle -->
         <button class="icon-btn" id="btn-theme-toggle" title="Toggle Theme / تغيير المظهر">
@@ -419,27 +439,49 @@
         <button class="close-btn" id="modal-close-btn">&times;</button>
       </div>
 
+      <!-- Chapter Scope (Multi-Select) -->
       <div class="form-group">
-        <label class="form-label" data-i18n="modal_scope_lbl">Chapter Scope:</label>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem; flex-wrap:wrap; gap:0.25rem;">
+          <label class="form-label" style="margin-bottom:0;" data-i18n="modal_scope_lbl">Chapter Scope:</label>
+          <span class="selection-hint" data-i18n="modal_scope_hint">(Multiple selection supported)</span>
+        </div>
         <div class="pill-group" id="modal-scope-pills">
-          <button class="pill-btn active" data-scope="all" data-i18n="modal_scope_all">All (300 Q)</button>
-          <button class="pill-btn" data-scope="1" data-i18n="modal_scope_1">Chapter 1 (100 Q)</button>
-          <button class="pill-btn" data-scope="2" data-i18n="modal_scope_2">Chapter 2 (80 Q)</button>
-          <button class="pill-btn" data-scope="3" data-i18n="modal_scope_3">Chapter 3 (120 Q)</button>
+          <button type="button" class="pill-btn active" data-scope="all" data-i18n="modal_scope_all">All Chapters (300 Q)</button>
+          <button type="button" class="pill-btn" data-scope="1" data-i18n="modal_scope_1">Chapter 1 (100 Q)</button>
+          <button type="button" class="pill-btn" data-scope="2" data-i18n="modal_scope_2">Chapter 2 (80 Q)</button>
+          <button type="button" class="pill-btn" data-scope="3" data-i18n="modal_scope_3">Chapter 3 (120 Q)</button>
         </div>
       </div>
 
+      <!-- Question Type Filter (MCQ / True-False / All) -->
+      <div class="form-group">
+        <label class="form-label" data-i18n="modal_type_lbl">Question Type:</label>
+        <div class="pill-group" id="modal-type-pills">
+          <button type="button" class="pill-btn active" data-type="all" data-i18n="modal_type_all">All Types (300 Q)</button>
+          <button type="button" class="pill-btn" data-type="mcq" data-i18n="modal_type_mcq">Multiple Choice (MCQ)</button>
+          <button type="button" class="pill-btn" data-type="true_false" data-i18n="modal_type_tf">True / False</button>
+        </div>
+      </div>
+
+      <!-- Live Available Matching Count Banner -->
+      <div class="modal-info-banner" id="modal-available-info">
+        <span class="info-icon">📊</span>
+        <span id="modal-available-text">Available matching questions: 300</span>
+      </div>
+
+      <!-- Number of Questions -->
       <div class="form-group">
         <label class="form-label" data-i18n="modal_count_lbl">Number of Questions:</label>
         <div class="pill-group" id="modal-count-pills">
-          <button class="pill-btn" data-count="10">10</button>
-          <button class="pill-btn active" data-count="20">20</button>
-          <button class="pill-btn" data-count="30">30</button>
-          <button class="pill-btn" data-count="50">50</button>
-          <button class="pill-btn" data-count="100">100</button>
-          <button class="pill-btn" data-count="custom" data-i18n="modal_count_custom">Custom</button>
+          <button type="button" class="pill-btn" data-count="10">10</button>
+          <button type="button" class="pill-btn active" data-count="20">20</button>
+          <button type="button" class="pill-btn" data-count="30">30</button>
+          <button type="button" class="pill-btn" data-count="50">50</button>
+          <button type="button" class="pill-btn" data-count="100">100</button>
+          <button type="button" class="pill-btn" data-count="all_available" data-i18n="modal_count_all_avail">All in Scope</button>
+          <button type="button" class="pill-btn" data-count="custom" data-i18n="modal_count_custom">Custom</button>
         </div>
-        <input type="number" id="custom-count-input" class="custom-input" min="5" max="300" placeholder="Enter a number between 5 and 300" data-i18n-placeholder="modal_count_custom_placeholder" style="display:none;">
+        <input type="number" id="custom-count-input" class="custom-input" min="5" max="300" placeholder="Enter a number between 5 and 300" data-i18n-placeholder="modal_count_custom_placeholder" style="display:none; margin-top:0.6rem;">
       </div>
 
       <div class="modal-actions">

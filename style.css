@@ -226,6 +226,90 @@ body {
   border-color: var(--primary);
 }
 
+/* Language Dropdown Selector */
+.lang-dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-caret {
+  font-size: 0.72rem;
+  transition: transform 0.2s ease;
+  margin-inline-start: 2px;
+  opacity: 0.8;
+}
+
+.lang-dropdown-wrapper.open .dropdown-caret {
+  transform: rotate(180deg);
+}
+
+.lang-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 210px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xl);
+  padding: 0.4rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.25rem;
+  z-index: 1000;
+  backdrop-filter: blur(12px);
+  animation: fadeIn 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[dir="rtl"] .lang-dropdown-menu {
+  right: auto;
+  left: 0;
+}
+
+.lang-dropdown-menu.show {
+  display: flex;
+}
+
+.lang-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 0.85rem;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: inherit;
+  width: 100%;
+}
+
+.lang-dropdown-item:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+.lang-dropdown-item.active {
+  background: var(--primary-light);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.lang-item-check {
+  margin-inline-start: auto;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: none;
+}
+
+.lang-dropdown-item.active .lang-item-check {
+  display: inline;
+}
+
 /* ==========================================================================
    Main Content Layout
    ========================================================================== */
@@ -515,6 +599,31 @@ body {
   background: var(--primary);
   border-color: var(--primary);
   color: #ffffff;
+}
+
+.selection-hint {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.modal-info-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.65rem 0.95rem;
+  background: var(--primary-light);
+  border: 1px solid var(--primary-glow);
+  border-radius: var(--radius-md);
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  transition: var(--transition);
+}
+
+.modal-info-banner .info-icon {
+  font-size: 1.05rem;
 }
 
 .custom-input {
@@ -872,6 +981,59 @@ body {
   margin-bottom: 1.75rem;
 }
 
+/* Bilingual Question Presentation */
+.q-bilingual-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.q-bilingual-en {
+  font-size: 1.22rem;
+  font-weight: 700;
+  line-height: 1.55;
+  color: var(--text-primary);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+.q-bilingual-ar {
+  font-size: 1.18rem;
+  font-weight: 600;
+  line-height: 1.65;
+  color: var(--text-primary);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding-top: 0.85rem;
+  border-top: 1px dashed var(--border-color);
+  font-family: 'Cairo', system-ui, sans-serif;
+}
+
+.q-bilingual-tag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  user-select: none;
+}
+
+.q-bilingual-tag.tag-en {
+  background: var(--primary-light);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.q-bilingual-tag.tag-ar {
+  background: var(--success-bg);
+  color: var(--success-text);
+  border: 1px solid var(--success-border);
+}
+
 /* Options */
 .options-list {
   display: flex;
@@ -937,6 +1099,44 @@ body {
   color: var(--text-primary);
   font-weight: 500;
   flex: 1;
+}
+
+/* Bilingual Option Layout */
+.option-label-bilingual {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+  width: 100%;
+}
+
+.opt-label-en {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.opt-label-ar {
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  font-family: 'Cairo', system-ui, sans-serif;
+}
+
+.option-item.selected .opt-label-ar {
+  color: var(--primary);
+}
+
+.option-item.correct .opt-label-en,
+.option-item.correct .opt-label-ar {
+  color: var(--success-text) !important;
+}
+
+.option-item.wrong .opt-label-en,
+.option-item.wrong .opt-label-ar {
+  color: var(--danger-text) !important;
 }
 
 /* Correct / Wrong States on Options */
@@ -1823,7 +2023,8 @@ body {
   /* Header: Collapse button text to pure icons for maximum elegance */
   .icon-btn .btn-text,
   .icon-btn #lang-label,
-  .icon-btn #theme-label {
+  .icon-btn #theme-label,
+  .icon-btn .dropdown-caret {
     display: none;
   }
   .icon-btn {

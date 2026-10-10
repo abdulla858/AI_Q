@@ -27,9 +27,9 @@
     bankTypeFilter: 'all',
     theme: localStorage.getItem('ai_quiz_theme') || 'light',
     lang: (function () {
-      // Primary default language is strictly English ('en')
+      // Primary default language: en, ar, or both
       const pref = localStorage.getItem('ai_quiz_lang_pref_v2');
-      if (pref) return pref;
+      if (pref && ['en', 'ar', 'both'].includes(pref)) return pref;
       return 'en';
     })(),
     isNavigatorVisible: true,
@@ -121,11 +121,18 @@
       bank_filter_tf: 'True / False',
       modal_title: '🎲 Configure Random Quiz',
       modal_scope_lbl: 'Chapter Scope:',
-      modal_scope_all: 'All (300 Q)',
+      modal_scope_hint: '(Multiple selection supported)',
+      modal_scope_all: 'All Chapters (300 Q)',
       modal_scope_1: 'Chapter 1 (100 Q)',
       modal_scope_2: 'Chapter 2 (80 Q)',
       modal_scope_3: 'Chapter 3 (120 Q)',
+      modal_type_lbl: 'Question Type:',
+      modal_type_all: 'All Types (300 Q)',
+      modal_type_mcq: 'Multiple Choice (MCQ)',
+      modal_type_tf: 'True / False',
+      modal_available_text: 'Available matching questions: {count}',
       modal_count_lbl: 'Number of Questions:',
+      modal_count_all_avail: 'All in Scope',
       modal_count_custom: 'Custom',
       modal_count_custom_placeholder: 'Enter a number between 5 and 300',
       btn_cancel: 'Cancel',
@@ -227,12 +234,19 @@
       bank_filter_mcq: 'اختيار من متعدد (MCQ)',
       bank_filter_tf: 'صح أم خطأ (True / False)',
       modal_title: '🎲 إعداد الاختبار العشوائي',
-      modal_scope_lbl: 'نطاق الأسئلة (Chapter Scope):',
-      modal_scope_all: 'الكل (300 سؤال)',
+      modal_scope_lbl: 'نطاق الأبواب (Chapter Scope):',
+      modal_scope_hint: '(يمكنك اختيار أكثر من باب معاً)',
+      modal_scope_all: 'كافة الأبواب (300 سؤال)',
       modal_scope_1: 'الباب 1 (100 Q)',
       modal_scope_2: 'الباب 2 (80 Q)',
       modal_scope_3: 'الباب 3 (120 Q)',
+      modal_type_lbl: 'نوع الأسئلة (Question Type):',
+      modal_type_all: 'كافة الأنواع (300 سؤال)',
+      modal_type_mcq: 'اختيار من متعدد فقط (MCQ)',
+      modal_type_tf: 'صح أم خطأ فقط (True / False)',
+      modal_available_text: 'إجمالي الأسئلة المتاحة في هذا التحديد: {count} سؤال',
       modal_count_lbl: 'عدد الأسئلة (Number of Questions):',
+      modal_count_all_avail: 'كل المتاح في التحديد',
       modal_count_custom: 'مخصص',
       modal_count_custom_placeholder: 'أدخل عدداً بين 5 و 300',
       btn_cancel: 'إلغاء',
@@ -250,8 +264,133 @@
       legend_answered: 'تمت الإجابة',
       legend_unanswered: 'غير مجاب',
       nav_answered_ratio: 'تمت الإجابة: {answered} من {total}',
+    },
+    both: {
+      app_title: 'Artificial Intelligence | الذكاء الاصطناعي',
+      app_subtitle: 'Interactive Quiz Platform (300 Questions) | منصة اختبارات الذكاء الاصطناعي',
+      btn_modes_nav: 'Modes | الأوضاع',
+      btn_bank_nav: 'Question Bank | بنك الأسئلة',
+      theme_dark: 'Dark | الداكن',
+      theme_light: 'Light | الفاتح',
+      home_title: 'AI Practice & Examination Platform | منصة اختبارات الذكاء الاصطناعي',
+      home_desc: 'Comprehensive academic question bank with 300 questions (Russell & Norvig AIMA) with detailed bilingual explanations. | بنك أسئلة جامعي تفاعلي متقدم يحتوي على 300 سؤال مع شروحات تعليمية دقيقة باللغتين العربية والإنجليزية.',
+      stat_total: 'Total | إجمالي الأسئلة',
+      stat_mcq: 'MCQ | اختيار من متعدد',
+      stat_tf: 'True / False | صح أم خطأ',
+      stat_chapters: 'Chapters | أبواب دراسية',
+      modes_title: '🎯 Choose Quiz Mode / اختر وضع الاختبار:',
+      mode_all_title: 'All Questions | جميع الأسئلة',
+      mode_all_desc: 'Practice the complete question bank (300 questions) sequentially by chapter for comprehensive mastery. | تدرب على بنك الأسئلة بالكامل مرتبة حسب الأبواب.',
+      badge_300_qs: '300 Q / سؤال',
+      btn_start: 'Start Quiz | ابدأ الاختبار',
+      mode_random_title: 'Random Quiz | اختبار عشوائي',
+      mode_random_desc: 'Real exam simulation with randomized non-repeating questions, customizable counts, and chapter scope. | محاكاة اختبار حقيقي بأسئلة عشوائية.',
+      badge_random_qs: '10 - 100 Q / سؤال',
+      btn_customize: 'Configure & Start | تخصيص وبدء',
+      mode_bank_title: 'Question Bank Browser | بنك الأسئلة',
+      mode_bank_desc: 'Browse and search all 300 questions, view verified answers, and read bilingual explanations on demand. | تصفح وبحث في كافة الأسئلة مع الحلول.',
+      badge_bank: 'Search & Filter | بحث وتصفية',
+      btn_browse: 'Open Bank | فتح البنك',
+      chapters_title: '📑 Practice by Chapter / تدرب حسب الباب الدراسي:',
+      chap1_title: 'Chapter 1: Intro to AI | الباب الأول: مقدمة الذكاء الاصطناعي',
+      chap1_desc: 'AI history, Turing Test, rational agents, philosophical foundations | تاريخ الذكاء الاصطناعي، اختبار تورينج، الفلسفة',
+      chap1_badge: '100 Q (70 MCQ + 30 T/F)',
+      chap2_title: 'Chapter 2: Intelligent Agents | الباب الثاني: الوكلاء الأذكياء',
+      chap2_desc: 'PEAS framework, environment types, agent architectures | الوكلاء، PEAS، أنواع البيئات، وهياكل الوكلاء',
+      chap2_badge: '80 Q (60 MCQ + 20 T/F)',
+      chap3_title: 'Chapter 3: Problem Solving by Search | الباب الثالث: حل المشكلات بالبحث',
+      chap3_desc: 'Problem formulation, BFS, DFS, UCS, IDS, A*, heuristics | صياغة المشكلات، BFS، DFS، A*، والهيورستك',
+      chap3_badge: '120 Q (90 MCQ + 30 T/F)',
+      btn_practice_now: 'Practice Now | تدرب الآن',
+      mode_all_badge: 'All Questions | جميع الأسئلة',
+      btn_prev: 'Previous | السابق',
+      btn_next: 'Next | التالي',
+      btn_check: 'Check Answer | تحقق من الإجابة',
+      btn_finish: 'Finish Quiz | إنهاء الاختبار',
+      correct_msg: '✓ Correct Answer | إجابة صحيحة',
+      wrong_msg: '✗ Incorrect Answer | إجابة خاطئة',
+      your_answer: 'Your Answer / إجابتك:',
+      correct_answer: 'Correct Answer / الإجابة الصحيحة:',
+      show_explanation: '💡 Show Explanation / عرض الشرح',
+      hide_explanation: '💡 Hide Explanation / إخفاء الشرح',
+      exp_header_ar: '🇸🇦 Arabic Explanation / الشرح بالعربية:',
+      exp_header_en: '🇬🇧 English Explanation:',
+      question_word: 'Question / السؤال',
+      of_word: 'of / من',
+      res_title: 'Quiz Completed! | اكتمل الاختبار بنجاح!',
+      res_subtitle: 'Performance Summary & Final Result | ملخص الأداء والنتيجة النهائية',
+      stat_correct: 'Correct | إجابات صحيحة',
+      stat_wrong: 'Wrong | إجابات خاطئة',
+      stat_total_qs: 'Total Questions | إجمالي الأسئلة',
+      grade_excellent: 'Excellent ⭐ ممتاز',
+      grade_verygood: 'Very Good 👍 جيد جداً',
+      grade_good: 'Good | جيد',
+      grade_pass: 'Pass | مقبول',
+      grade_needs: 'Needs More Practice | يحتاج لمزيد من التدريب',
+      btn_review: 'Review Answers | مراجعة الإجابات',
+      btn_retry: 'Try Again | إعادة الاختبار',
+      btn_new_random: 'New Random Quiz | اختبار عشوائي جديد',
+      btn_home: 'Home | الرئيسية',
+      review_title: '📋 Review Answers | مراجعة الإجابات',
+      tab_all: 'All | الكل',
+      tab_correct: 'Correct ✓ الصحيحة',
+      tab_wrong: 'Wrong ✗ الخاطئة',
+      btn_back_results: 'Back to Results | العودة للنتيجة',
+      review_search_placeholder: '🔍 Search reviewed questions / ابحث في الأسئلة...',
+      bank_title: '📚 Question Bank Browser / تصفح بنك الأسئلة (300)',
+      bank_subtitle: 'Browse and study all 300 questions with verified solutions and explanations | تصفح واقرأ جميع الأسئلة مع الحلول والشروحات',
+      bank_search_placeholder: '🔍 Search any keyword or concept / ابحث عن أي كلمة أو مفهوم...',
+      bank_filter_all_chaps: 'All Chapters | جميع الأبواب',
+      bank_filter_chap1: 'Chapter 1: Intro to AI',
+      bank_filter_chap2: 'Chapter 2: Intelligent Agents',
+      bank_filter_chap3: 'Chapter 3: Search',
+      bank_filter_all_types: 'All Types | كافة الأنواع',
+      bank_filter_mcq: 'MCQ | اختيار من متعدد',
+      bank_filter_tf: 'True / False | صح أم خطأ',
+      modal_title: '🎲 Configure Random Quiz | إعداد الاختبار العشوائي',
+      modal_scope_lbl: 'Chapter Scope / نطاق الأبواب:',
+      modal_scope_hint: '(Multi-selection / يمكنك اختيار أكثر من باب)',
+      modal_scope_all: 'All Chapters | كافة الأبواب (300 Q)',
+      modal_scope_1: 'Chapter 1 | الباب 1 (100 Q)',
+      modal_scope_2: 'Chapter 2 | الباب 2 (80 Q)',
+      modal_scope_3: 'Chapter 3 | الباب 3 (120 Q)',
+      modal_type_lbl: 'Question Type / نوع الأسئلة:',
+      modal_type_all: 'All Types | كافة الأنواع (300 Q)',
+      modal_type_mcq: 'MCQ Only | اختيار من متعدد فقط',
+      modal_type_tf: 'True/False Only | صح أو خطأ فقط',
+      modal_available_text: 'Available in selection: {count} Q | المتاح في التحديد: {count} سؤال',
+      modal_count_lbl: 'Number of Questions / عدد الأسئلة:',
+      modal_count_all_avail: 'All in Selection | كل المتاح',
+      modal_count_custom: 'Custom | مخصص',
+      modal_count_custom_placeholder: 'Enter a number between 5 and 300 / أدخل عدداً بين 5 و 300',
+      btn_cancel: 'Cancel | إلغاء',
+      btn_modal_start: 'Start Quiz Now 🚀 ابدأ الاختبار الآن',
+      footer_line1: 'Interactive AI Quiz Platform • Russell & Norvig AIMA Chapters 1, 2 & 3',
+      footer_line2: 'Bilingual Standalone System • Zero Dependencies, No Backend',
+      confirm_finish: 'Are you sure you want to finish the quiz now? / هل أنت متأكد من رغبتك في إنهاء الاختبار الآن؟',
+      confirm_reset: 'Are you sure you want to reset all stored progress? / هل تريد حقاً إعادة ضبط التقدم وحذف السجلات؟',
+      nav_panel_title: 'Question Navigator | قائمة الأسئلة والتنقل السريع',
+      nav_toggle_show: 'Show Navigator | إظهار القائمة',
+      nav_toggle_hide: 'Hide Navigator | إخفاء القائمة',
+      legend_current: 'Current | الحالي',
+      legend_correct: 'Correct | صواب',
+      legend_wrong: 'Incorrect | خطأ',
+      legend_answered: 'Answered | مجاب',
+      legend_unanswered: 'Unanswered | غير مجاب',
+      nav_answered_ratio: '{answered} / {total} Answered | تم حل',
     }
   };
+
+  // Safe HTML escape helper
+  function escapeHtml(str) {
+    if (str === null || str === undefined) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
 
   // DOM Elements
   const dom = {
@@ -261,6 +400,8 @@
     themeLabel: document.getElementById('theme-label'),
     btnLangToggle: document.getElementById('btn-lang-toggle'),
     langLabel: document.getElementById('lang-label'),
+    langDropdownWrapper: document.getElementById('lang-dropdown-wrapper'),
+    langDropdownMenu: document.getElementById('lang-dropdown-menu'),
     btnResetStorage: document.getElementById('btn-reset-storage'),
     btnOpenBank: document.getElementById('btn-open-bank'),
     btnHomeNav: document.getElementById('btn-home-nav'),
@@ -343,6 +484,9 @@
     modalCancelBtn: document.getElementById('modal-cancel-btn'),
     modalStartBtn: document.getElementById('modal-start-btn'),
     modalScopePills: document.getElementById('modal-scope-pills'),
+    modalTypePills: document.getElementById('modal-type-pills'),
+    modalAvailableInfo: document.getElementById('modal-available-info'),
+    modalAvailableText: document.getElementById('modal-available-text'),
     modalCountPills: document.getElementById('modal-count-pills'),
     customCountInput: document.getElementById('custom-count-input'),
   };
@@ -423,12 +567,25 @@
   };
 
   function applyLanguage(lang) {
+    if (!['en', 'ar', 'both'].includes(lang)) lang = 'en';
     state.lang = lang;
     localStorage.setItem('ai_quiz_lang_pref_v2', lang);
     const isRtl = lang === 'ar';
     document.documentElement.setAttribute('lang', lang);
     document.documentElement.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
-    dom.langLabel.textContent = isRtl ? 'English' : 'عربي (Arabic)';
+
+    // Update Language Toggle Label
+    if (dom.langLabel) {
+      if (lang === 'en') dom.langLabel.textContent = 'English';
+      else if (lang === 'ar') dom.langLabel.textContent = 'العربية';
+      else dom.langLabel.textContent = 'كلاهما (Both)';
+    }
+
+    // Update active state in language dropdown menu
+    document.querySelectorAll('.lang-dropdown-item').forEach((item) => {
+      const itemLang = item.getAttribute('data-lang');
+      item.classList.toggle('active', itemLang === lang);
+    });
 
     // Update i18n text in DOM
     document.querySelectorAll('[data-i18n]').forEach((el) => {
@@ -456,6 +613,8 @@
 
     if (lang === 'ar') {
       dom.themeLabel.textContent = state.theme === 'dark' ? 'الفاتح' : 'الداكن';
+    } else if (lang === 'both') {
+      dom.themeLabel.textContent = state.theme === 'dark' ? 'Light / فاتح' : 'Dark / داكن';
     } else {
       dom.themeLabel.textContent = state.theme === 'dark' ? 'Light' : 'Dark';
     }
@@ -478,7 +637,8 @@
   }
 
   function toggleLanguage() {
-    applyLanguage(state.lang === 'ar' ? 'en' : 'ar');
+    const cycle = { en: 'ar', ar: 'both', both: 'en' };
+    applyLanguage(cycle[state.lang] || 'en');
   }
 
   // =========================================================================
@@ -502,7 +662,51 @@
       dom.btnHomeNav.addEventListener('click', () => showView(dom.viewHome));
     }
     dom.btnThemeToggle.addEventListener('click', toggleTheme);
-    dom.btnLangToggle.addEventListener('click', toggleLanguage);
+
+    // Language Dropdown open/close toggle
+    if (dom.btnLangToggle) {
+      dom.btnLangToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (dom.langDropdownMenu) {
+          dom.langDropdownMenu.classList.toggle('show');
+          if (dom.langDropdownWrapper) {
+            dom.langDropdownWrapper.classList.toggle('open', dom.langDropdownMenu.classList.contains('show'));
+          }
+        }
+      });
+    }
+
+    // Language Dropdown item selection
+    document.querySelectorAll('.lang-dropdown-item').forEach((item) => {
+      item.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const selectedLang = item.getAttribute('data-lang');
+        if (selectedLang) {
+          applyLanguage(selectedLang);
+        }
+        if (dom.langDropdownMenu) dom.langDropdownMenu.classList.remove('show');
+        if (dom.langDropdownWrapper) dom.langDropdownWrapper.classList.remove('open');
+      });
+    });
+
+    // Close dropdown on outside click
+    document.addEventListener('click', (e) => {
+      if (dom.langDropdownMenu && dom.langDropdownMenu.classList.contains('show')) {
+        if (dom.langDropdownWrapper && !dom.langDropdownWrapper.contains(e.target)) {
+          dom.langDropdownMenu.classList.remove('show');
+          dom.langDropdownWrapper.classList.remove('open');
+        }
+      }
+    });
+
+    // Close dropdown on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && dom.langDropdownMenu && dom.langDropdownMenu.classList.contains('show')) {
+        dom.langDropdownMenu.classList.remove('show');
+        if (dom.langDropdownWrapper) dom.langDropdownWrapper.classList.remove('open');
+      }
+    });
+
     dom.btnOpenBank.addEventListener('click', () => {
       renderBankView();
       showView(dom.viewBrowser);
@@ -513,7 +717,7 @@
         localStorage.clear();
         applyTheme('light');
         applyLanguage('en');
-        alert(state.lang === 'ar' ? 'تمت إعادة ضبط التقدم بنجاح!' : 'Progress reset successfully!');
+        alert(state.lang === 'ar' ? 'تمت إعادة ضبط التقدم بنجاح!' : (state.lang === 'both' ? 'Progress reset successfully! | تمت إعادة ضبط التقدم!' : 'Progress reset successfully!'));
         showView(dom.viewHome);
       }
     });
@@ -606,7 +810,8 @@
     dom.modalStartBtn.addEventListener('click', startConfiguredRandomQuiz);
 
     // Modal Pills
-    setupPillGroup(dom.modalScopePills);
+    setupScopeMultiSelect();
+    setupTypeSelect();
     setupPillGroup(dom.modalCountPills, (val) => {
       if (val === 'custom') {
         dom.customCountInput.style.display = 'block';
@@ -646,14 +851,106 @@
   }
 
   function setupPillGroup(container, onSelect) {
+    if (!container) return;
     container.querySelectorAll('.pill-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
         container.querySelectorAll('.pill-btn').forEach((b) => b.classList.remove('active'));
         btn.classList.add('active');
-        const val = btn.getAttribute('data-scope') || btn.getAttribute('data-count');
+        const val = btn.getAttribute('data-count') || btn.getAttribute('data-scope') || btn.getAttribute('data-type');
         if (onSelect) onSelect(val);
       });
     });
+  }
+
+  // =========================================================================
+  // Random Quiz Configuration Handlers (Multi-Chapter & Question Type)
+  // =========================================================================
+  function setupScopeMultiSelect() {
+    if (!dom.modalScopePills) return;
+    const allBtn = dom.modalScopePills.querySelector('[data-scope="all"]');
+    const chapterBtns = dom.modalScopePills.querySelectorAll('[data-scope]:not([data-scope="all"])');
+
+    if (allBtn) {
+      allBtn.addEventListener('click', () => {
+        allBtn.classList.add('active');
+        chapterBtns.forEach((btn) => btn.classList.remove('active'));
+        updateRandomModalAvailableCount();
+      });
+    }
+
+    chapterBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+
+        const activeChBtns = dom.modalScopePills.querySelectorAll('[data-scope]:not([data-scope="all"]).active');
+
+        if (activeChBtns.length === 0) {
+          // If no individual chapter selected, revert to 'all'
+          if (allBtn) allBtn.classList.add('active');
+        } else if (activeChBtns.length === chapterBtns.length) {
+          // If all chapters selected, light up 'all'
+          if (allBtn) allBtn.classList.add('active');
+          chapterBtns.forEach((b) => b.classList.remove('active'));
+        } else {
+          // Partial selection (e.g. Ch1 & Ch2)
+          if (allBtn) allBtn.classList.remove('active');
+        }
+
+        updateRandomModalAvailableCount();
+      });
+    });
+  }
+
+  function setupTypeSelect() {
+    if (!dom.modalTypePills) return;
+    dom.modalTypePills.querySelectorAll('.pill-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        dom.modalTypePills.querySelectorAll('.pill-btn').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        updateRandomModalAvailableCount();
+      });
+    });
+  }
+
+  function getSelectedChaptersForRandom() {
+    if (!dom.modalScopePills) return [1, 2, 3];
+    const allBtn = dom.modalScopePills.querySelector('[data-scope="all"].active');
+    if (allBtn) return [1, 2, 3];
+
+    const activeChBtns = dom.modalScopePills.querySelectorAll('[data-scope]:not([data-scope="all"]).active');
+    if (activeChBtns.length === 0) return [1, 2, 3];
+
+    const chapters = [];
+    activeChBtns.forEach((b) => {
+      const ch = parseInt(b.getAttribute('data-scope'), 10);
+      if (!isNaN(ch)) chapters.push(ch);
+    });
+    return chapters.length > 0 ? chapters : [1, 2, 3];
+  }
+
+  function getSelectedTypeForRandom() {
+    if (!dom.modalTypePills) return 'all';
+    const activeBtn = dom.modalTypePills.querySelector('.pill-btn.active');
+    return activeBtn ? activeBtn.getAttribute('data-type') : 'all';
+  }
+
+  function getMatchingQuestionsForRandom() {
+    const chapters = getSelectedChaptersForRandom();
+    const type = getSelectedTypeForRandom();
+
+    return state.allQuestions.filter((q) => {
+      if (!chapters.includes(q.chapterId)) return false;
+      if (type !== 'all' && q.type !== type) return false;
+      return true;
+    });
+  }
+
+  function updateRandomModalAvailableCount() {
+    const matching = getMatchingQuestionsForRandom();
+    if (dom.modalAvailableText) {
+      const tmpl = i18n[state.lang].modal_available_text || 'Available matching questions: {count}';
+      dom.modalAvailableText.textContent = tmpl.replace('{count}', matching.length);
+    }
   }
 
   // =========================================================================
@@ -708,6 +1005,7 @@
 
   function openRandomConfigModal() {
     dom.randomModal.classList.add('active');
+    updateRandomModalAvailableCount();
   }
 
   function closeRandomConfigModal() {
@@ -715,14 +1013,19 @@
   }
 
   function startConfiguredRandomQuiz() {
-    const activeScopePill = dom.modalScopePills.querySelector('.pill-btn.active');
-    const scope = activeScopePill ? activeScopePill.getAttribute('data-scope') : 'all';
+    const matching = getMatchingQuestionsForRandom();
+    if (matching.length === 0) {
+      alert(state.lang === 'ar' ? 'لا توجد أسئلة مطابقة للخيارات المحددة!' : (state.lang === 'both' ? 'No questions match the selected options! | لا توجد أسئلة مطابقة للخيارات المحددة!' : 'No questions match the selected options!'));
+      return;
+    }
 
     const activeCountPill = dom.modalCountPills.querySelector('.pill-btn.active');
     let countVal = activeCountPill ? activeCountPill.getAttribute('data-count') : '20';
 
     let requestedCount = 20;
-    if (countVal === 'custom') {
+    if (countVal === 'all_available') {
+      requestedCount = matching.length;
+    } else if (countVal === 'custom') {
       requestedCount = parseInt(dom.customCountInput.value, 10);
       if (isNaN(requestedCount) || requestedCount < 1) {
         alert(state.lang === 'ar' ? 'يرجى إدخال عدد صحيح للأسئلة!' : 'Please enter a valid question count!');
@@ -732,15 +1035,8 @@
       requestedCount = parseInt(countVal, 10);
     }
 
-    // Filter by scope
-    let pool = [...state.allQuestions];
-    if (scope !== 'all') {
-      const chNum = parseInt(scope, 10);
-      pool = pool.filter((q) => q.chapterId === chNum);
-    }
-
     // Fisher-Yates Shuffle algorithm for true randomness
-    const shuffled = [...pool];
+    const shuffled = [...matching];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
@@ -750,11 +1046,24 @@
 
     closeRandomConfigModal();
 
+    // Construct descriptive bilingual titles
+    const chapters = getSelectedChaptersForRandom();
+    const type = getSelectedTypeForRandom();
+
+    const chapAr = chapters.length === 3 ? 'جميع الأبواب' : `الأبواب (${chapters.join(' و ')})`;
+    const chapEn = chapters.length === 3 ? 'All Chapters' : `Ch ${chapters.join(' & ')}`;
+
+    const typeAr = type === 'all' ? '' : (type === 'mcq' ? ' • اختيار من متعدد' : ' • صح أو خطأ');
+    const typeEn = type === 'all' ? '' : (type === 'mcq' ? ' • MCQ Only' : ' • T/F Only');
+
+    const titleAr = `اختبار عشوائي (${chapAr}${typeAr} • ${finalQuestions.length} سؤال)`;
+    const titleEn = `Random Quiz (${chapEn}${typeEn} • ${finalQuestions.length} Questions)`;
+
     startQuizSession(
       finalQuestions,
       'random',
-      `اختبار عشوائي (${finalQuestions.length} سؤال)`,
-      `Random Quiz (${finalQuestions.length} Questions)`
+      titleAr,
+      titleEn
     );
   }
 
@@ -875,14 +1184,40 @@
     const q = quiz.questions[index];
     const total = quiz.questions.length;
     const isAr = state.lang === 'ar';
+    const isBoth = state.lang === 'both';
 
     updateQuizTopBar();
 
     // Set question meta tags
     dom.qIdTag.textContent = `Q${q.id}`;
-    dom.qTypeBadge.textContent = isAr ? (q.type === 'mcq' ? 'اختيار من متعدد' : 'صواب أو خطأ') : (q.type === 'mcq' ? 'MCQ' : 'True / False');
+    if (isBoth) {
+      dom.qTypeBadge.textContent = q.type === 'mcq' ? 'MCQ | اختيار من متعدد' : 'True/False | صح أو خطأ';
+    } else if (isAr) {
+      dom.qTypeBadge.textContent = q.type === 'mcq' ? 'اختيار من متعدد' : 'صواب أو خطأ';
+    } else {
+      dom.qTypeBadge.textContent = q.type === 'mcq' ? 'MCQ' : 'True / False';
+    }
     dom.qTypeBadge.className = `badge ${q.type === 'mcq' ? 'badge-primary' : 'badge-chapter'}`;
-    dom.qText.textContent = isAr && q.questionAr ? q.questionAr : q.question;
+
+    // Question Text (Bilingual support)
+    if (isBoth) {
+      dom.qText.innerHTML = `
+        <div class="q-bilingual-wrapper">
+          <div class="q-bilingual-en">
+            <span class="q-bilingual-tag tag-en">EN</span>
+            <span>${escapeHtml(q.question)}</span>
+          </div>
+          <div class="q-bilingual-ar" dir="rtl">
+            <span class="q-bilingual-tag tag-ar">AR</span>
+            <span>${escapeHtml(q.questionAr || '')}</span>
+          </div>
+        </div>
+      `;
+    } else if (isAr) {
+      dom.qText.textContent = q.questionAr || q.question;
+    } else {
+      dom.qText.textContent = q.question;
+    }
 
     // Reset Explanation box
     dom.explanationBox.classList.remove('show');
@@ -912,11 +1247,31 @@
 
       const prefix = document.createElement('div');
       prefix.className = 'option-prefix';
-      prefix.textContent = q.type === 'mcq' ? optionLetters[optIdx] : (optIdx === 0 ? (isAr ? 'ص' : 'T') : (isAr ? 'خ' : 'F'));
+      if (q.type === 'mcq') {
+        prefix.textContent = optionLetters[optIdx];
+      } else {
+        if (isBoth) {
+          prefix.textContent = optIdx === 0 ? 'T / ص' : 'F / خ';
+        } else if (isAr) {
+          prefix.textContent = optIdx === 0 ? 'ص' : 'خ';
+        } else {
+          prefix.textContent = optIdx === 0 ? 'T' : 'F';
+        }
+      }
 
       const label = document.createElement('div');
-      label.className = 'option-label';
-      label.textContent = optText;
+      if (isBoth) {
+        label.className = 'option-label option-label-bilingual';
+        const optEn = q.options[optIdx] || '';
+        const optAr = (q.optionsAr && q.optionsAr[optIdx]) ? q.optionsAr[optIdx] : '';
+        label.innerHTML = `
+          <div class="opt-label-en">${escapeHtml(optEn)}</div>
+          <div class="opt-label-ar" dir="rtl">${escapeHtml(optAr)}</div>
+        `;
+      } else {
+        label.className = 'option-label';
+        label.textContent = optText;
+      }
 
       optItem.appendChild(prefix);
       optItem.appendChild(label);
@@ -969,8 +1324,17 @@
     if (!q) return;
 
     const isAr = state.lang === 'ar';
-    if (dom.quizModeBadge) dom.quizModeBadge.textContent = isAr ? quiz.titleAr : quiz.titleEn;
-    if (dom.quizChapterBadge) dom.quizChapterBadge.textContent = isAr ? (chapterTitlesAr[q.chapterId] || q.chapter) : (chapterTitlesEn[q.chapterId] || q.chapter);
+    const isBoth = state.lang === 'both';
+    if (dom.quizModeBadge) {
+      if (isBoth) dom.quizModeBadge.textContent = `${quiz.titleEn} | ${quiz.titleAr}`;
+      else if (isAr) dom.quizModeBadge.textContent = quiz.titleAr;
+      else dom.quizModeBadge.textContent = quiz.titleEn;
+    }
+    if (dom.quizChapterBadge) {
+      if (isBoth) dom.quizChapterBadge.textContent = `${chapterTitlesEn[q.chapterId] || q.chapter} | ${chapterTitlesAr[q.chapterId] || q.chapter}`;
+      else if (isAr) dom.quizChapterBadge.textContent = chapterTitlesAr[q.chapterId] || q.chapter;
+      else dom.quizChapterBadge.textContent = chapterTitlesEn[q.chapterId] || q.chapter;
+    }
 
     const qWord = i18n[state.lang].question_word;
     const ofWord = i18n[state.lang].of_word;
@@ -1041,26 +1405,46 @@
     const quiz = state.currentQuiz;
     const q = quiz.questions[quiz.currentIndex];
     const isAr = state.lang === 'ar';
+    const isBoth = state.lang === 'both';
     const optionLetters = ['A', 'B', 'C', 'D'];
-    const activeOptions = isAr && q.optionsAr && q.optionsAr.length === q.options.length ? q.optionsAr : q.options;
+
+    function getOptText(idx) {
+      if (idx < 0 || idx >= q.options.length) return isAr ? 'لم تتم الإجابة' : (isBoth ? 'Unanswered / لم تتم الإجابة' : 'Unanswered');
+      const en = q.options[idx];
+      const ar = (q.optionsAr && q.optionsAr[idx]) ? q.optionsAr[idx] : en;
+      if (isBoth) return `${en} / ${ar}`;
+      if (isAr) return ar;
+      return en;
+    }
+
+    function getOptLetter(idx) {
+      if (idx < 0) return '-';
+      if (q.type === 'mcq') return optionLetters[idx];
+      if (isBoth) return idx === 0 ? 'True / صواب' : 'False / خطأ';
+      if (isAr) return idx === 0 ? 'صواب' : 'خطأ';
+      return idx === 0 ? 'True' : 'False';
+    }
 
     dom.feedbackBanner.classList.remove('correct', 'wrong');
     dom.feedbackBanner.classList.add('show', isCorrect ? 'correct' : 'wrong');
     dom.feedbackBanner.style.display = 'block';
 
+    const correctText = getOptText(correctChoiceIdx);
+    const correctLetter = getOptLetter(correctChoiceIdx);
+
     if (isCorrect) {
       dom.feedbackHeader.textContent = i18n[state.lang].correct_msg;
       dom.feedbackDetails.innerHTML = `
-        <div>${i18n[state.lang].correct_answer} <strong>${activeOptions[correctChoiceIdx]}</strong></div>
+        <div>${i18n[state.lang].correct_answer} <strong>${correctLetter}) ${escapeHtml(correctText)}</strong></div>
       `;
     } else {
       dom.feedbackHeader.textContent = i18n[state.lang].wrong_msg;
-      const userLetter = q.type === 'mcq' ? optionLetters[userChoiceIdx] : (userChoiceIdx === 0 ? (isAr ? 'صواب' : 'True') : (isAr ? 'خطأ' : 'False'));
-      const correctLetter = q.type === 'mcq' ? optionLetters[correctChoiceIdx] : (correctChoiceIdx === 0 ? (isAr ? 'صواب' : 'True') : (isAr ? 'خطأ' : 'False'));
+      const userText = getOptText(userChoiceIdx);
+      const userLetter = getOptLetter(userChoiceIdx);
 
       dom.feedbackDetails.innerHTML = `
-        <div>${i18n[state.lang].your_answer} <span style="text-decoration:line-through; color:var(--danger);">${userLetter}) ${activeOptions[userChoiceIdx]}</span></div>
-        <div>${i18n[state.lang].correct_answer} <span style="font-weight:700; color:var(--success);">${correctLetter}) ${activeOptions[correctChoiceIdx]}</span></div>
+        <div>${i18n[state.lang].your_answer} <span style="text-decoration:line-through; color:var(--danger);">${userLetter}) ${escapeHtml(userText)}</span></div>
+        <div>${i18n[state.lang].correct_answer} <span style="font-weight:700; color:var(--success);">${correctLetter}) ${escapeHtml(correctText)}</span></div>
       `;
     }
   }
@@ -1181,7 +1565,7 @@
     dom.reviewCardsContainer.innerHTML = '';
 
     const filter = state.reviewFilter;
-    const query = state.reviewSearchQuery;
+    const query = state.reviewSearchQuery ? state.reviewSearchQuery.toLowerCase() : '';
 
     let itemsToRender = [];
 
@@ -1193,10 +1577,13 @@
       if (filter === 'wrong' && isCorrect) return;
 
       if (query) {
+        const qAr = q.questionAr ? q.questionAr.toLowerCase() : '';
         const textMatch = q.question.toLowerCase().includes(query) ||
+          qAr.includes(query) ||
           q.explanationAr.toLowerCase().includes(query) ||
           q.explanationEn.toLowerCase().includes(query) ||
-          q.options.some((o) => o.toLowerCase().includes(query));
+          q.options.some((o) => o.toLowerCase().includes(query)) ||
+          (q.optionsAr && q.optionsAr.some((o) => o.toLowerCase().includes(query)));
         if (!textMatch) return;
       }
 
@@ -1206,7 +1593,7 @@
     if (itemsToRender.length === 0) {
       dom.reviewCardsContainer.innerHTML = `
         <div style="text-align:center; padding:3rem; color:var(--text-muted); font-size:1.1rem;">
-          ${state.lang === 'ar' ? 'لا توجد أسئلة مطابقة للبحث أو التصفية الحالية.' : 'No questions matching current filter or search.'}
+          ${state.lang === 'ar' ? 'لا توجد أسئلة مطابقة للبحث أو التصفية الحالية.' : (state.lang === 'both' ? 'No questions matching search or filter | لا توجد أسئلة مطابقة للبحث.' : 'No questions matching current filter or search.')}
         </div>
       `;
       return;
@@ -1214,55 +1601,88 @@
 
     const optionLetters = ['A', 'B', 'C', 'D'];
     const isAr = state.lang === 'ar';
+    const isBoth = state.lang === 'both';
 
     itemsToRender.forEach(({ q, idx, userAns, isCorrect }) => {
       const card = document.createElement('div');
       card.className = `review-item-card ${isCorrect ? 'is-correct' : 'is-wrong'}`;
 
-      const activeOptions = isAr && q.optionsAr && q.optionsAr.length === q.options.length ? q.optionsAr : q.options;
-      const userChoiceText = userAns.selected >= 0 ? activeOptions[userAns.selected] : (isAr ? 'لم تتم الإجابة' : 'Unanswered');
-      const userChoiceLetter = userAns.selected >= 0 ? (q.type === 'mcq' ? optionLetters[userAns.selected] : (userAns.selected === 0 ? (isAr ? 'صواب' : 'True') : (isAr ? 'خطأ' : 'False'))) : '-';
-      const correctChoiceText = activeOptions[q.correctAnswer];
-      const correctChoiceLetter = q.type === 'mcq' ? optionLetters[q.correctAnswer] : (q.correctAnswer === 0 ? (isAr ? 'صواب' : 'True') : (isAr ? 'خطأ' : 'False'));
+      function getOptText(i) {
+        if (i < 0 || i >= q.options.length) return isAr ? 'لم تتم الإجابة' : (isBoth ? 'Unanswered / لم تتم الإجابة' : 'Unanswered');
+        const en = q.options[i];
+        const ar = (q.optionsAr && q.optionsAr[i]) ? q.optionsAr[i] : en;
+        if (isBoth) return `${en} / ${ar}`;
+        if (isAr) return ar;
+        return en;
+      }
+
+      function getOptLetter(i) {
+        if (i < 0) return '-';
+        if (q.type === 'mcq') return optionLetters[i];
+        if (isBoth) return i === 0 ? 'True / صواب' : 'False / خطأ';
+        if (isAr) return i === 0 ? 'صواب' : 'خطأ';
+        return i === 0 ? 'True' : 'False';
+      }
+
+      const userChoiceText = getOptText(userAns.selected);
+      const userChoiceLetter = getOptLetter(userAns.selected);
+      const correctChoiceText = getOptText(q.correctAnswer);
+      const correctChoiceLetter = getOptLetter(q.correctAnswer);
+
+      const chapterTag = isBoth
+        ? `${chapterTitlesEn[q.chapterId] || q.chapter} | ${chapterTitlesAr[q.chapterId] || q.chapter}`
+        : (isAr ? (chapterTitlesAr[q.chapterId] || q.chapter) : (chapterTitlesEn[q.chapterId] || q.chapter));
+
+      const typeTag = isBoth
+        ? (q.type === 'mcq' ? 'MCQ | اختيار من متعدد' : 'True/False | صح أو خطأ')
+        : (isAr ? (q.type === 'mcq' ? 'اختيار من متعدد' : 'صواب أو خطأ') : (q.type === 'mcq' ? 'MCQ' : 'True/False'));
+
+      const statusTag = isCorrect
+        ? (isBoth ? '✓ Correct | إجابة صحيحة' : (isAr ? '✓ إجابة صحيحة' : '✓ Correct'))
+        : (isBoth ? '✗ Incorrect | إجابة خاطئة' : (isAr ? '✗ إجابة خاطئة' : '✗ Wrong'));
+
+      let questionHtml = '';
+      if (isBoth) {
+        questionHtml = `
+          <div class="review-q-text">
+            <div class="q-bilingual-wrapper">
+              <div class="q-bilingual-en"><span class="q-bilingual-tag tag-en">EN</span><span>${escapeHtml(q.question)}</span></div>
+              <div class="q-bilingual-ar" dir="rtl"><span class="q-bilingual-tag tag-ar">AR</span><span>${escapeHtml(q.questionAr || '')}</span></div>
+            </div>
+          </div>
+        `;
+      } else {
+        questionHtml = `<div class="review-q-text">${escapeHtml(isAr && q.questionAr ? q.questionAr : q.question)}</div>`;
+      }
 
       card.innerHTML = `
         <div class="review-card-top">
-          <div style="display:flex; align-items:center; gap:0.5rem;">
+          <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
             <span class="question-number-tag">Q${q.id}</span>
-            <span class="badge badge-chapter">${isAr ? (chapterTitlesAr[q.chapterId] || q.chapter) : (chapterTitlesEn[q.chapterId] || q.chapter)}</span>
+            <span class="badge badge-chapter">${chapterTag}</span>
+            <span class="badge ${q.type === 'mcq' ? 'badge-primary' : 'badge-chapter'}">${typeTag}</span>
           </div>
           <span class="review-status-badge ${isCorrect ? 'correct' : 'wrong'}">
-            ${isCorrect ? (isAr ? '✓ إجابة صحيحة' : '✓ Correct') : (isAr ? '✗ إجابة خاطئة' : '✗ Wrong')}
+            ${statusTag}
           </span>
         </div>
 
-        <div class="review-q-text">${isAr && q.questionAr ? q.questionAr : q.question}</div>
+        ${questionHtml}
 
         <div class="review-answers-box">
-          <div><strong>${i18n[state.lang].your_answer}</strong> <span style="color:${isCorrect ? 'var(--success)' : 'var(--danger)'}; font-weight:700;">${userChoiceLetter}) ${userChoiceText}</span></div>
-          <div><strong>${i18n[state.lang].correct_answer}</strong> <span style="color:var(--success); font-weight:700;">${correctChoiceLetter}) ${correctChoiceText}</span></div>
+          <div><strong>${i18n[state.lang].your_answer}</strong> <span style="color:${isCorrect ? 'var(--success)' : 'var(--danger)'}; font-weight:700;">${userChoiceLetter}) ${escapeHtml(userChoiceText)}</span></div>
+          <div><strong>${i18n[state.lang].correct_answer}</strong> <span style="color:var(--success); font-weight:700;">${correctChoiceLetter}) ${escapeHtml(correctChoiceText)}</span></div>
         </div>
 
         <div class="explanation-content" style="padding:0;">
-          ${state.lang === 'en' ? `
-            <div class="exp-lang-block">
-              <div class="exp-lang-header">🇬🇧 English Explanation:</div>
-              <div class="exp-text">${q.explanationEn}</div>
-            </div>
-            <div class="exp-lang-block">
-              <div class="exp-lang-header">🇸🇦 الشرح بالعربية:</div>
-              <div class="exp-text">${q.explanationAr}</div>
-            </div>
-          ` : `
-            <div class="exp-lang-block">
-              <div class="exp-lang-header">🇸🇦 الشرح بالعربية:</div>
-              <div class="exp-text">${q.explanationAr}</div>
-            </div>
-            <div class="exp-lang-block">
-              <div class="exp-lang-header">🇬🇧 English Explanation:</div>
-              <div class="exp-text">${q.explanationEn}</div>
-            </div>
-          `}
+          <div class="exp-lang-block">
+            <div class="exp-lang-header">🇬🇧 English Explanation:</div>
+            <div class="exp-text">${escapeHtml(q.explanationEn)}</div>
+          </div>
+          <div class="exp-lang-block">
+            <div class="exp-lang-header">🇸🇦 الشرح بالعربية:</div>
+            <div class="exp-text">${escapeHtml(q.explanationAr)}</div>
+          </div>
         </div>
       `;
 
@@ -1275,7 +1695,7 @@
   // =========================================================================
   function renderBankView() {
     dom.bankCardsContainer.innerHTML = '';
-    const query = state.bankSearchQuery;
+    const query = state.bankSearchQuery ? state.bankSearchQuery.toLowerCase() : '';
     const chapFilter = state.bankChapterFilter;
     const typeFilter = state.bankTypeFilter;
 
@@ -1283,10 +1703,13 @@
       if (chapFilter !== 'all' && q.chapterId !== parseInt(chapFilter, 10)) return false;
       if (typeFilter !== 'all' && q.type !== typeFilter) return false;
       if (query) {
+        const qAr = q.questionAr ? q.questionAr.toLowerCase() : '';
         const matches = q.question.toLowerCase().includes(query) ||
+          qAr.includes(query) ||
           q.explanationAr.toLowerCase().includes(query) ||
           q.explanationEn.toLowerCase().includes(query) ||
-          q.options.some((o) => o.toLowerCase().includes(query));
+          q.options.some((o) => o.toLowerCase().includes(query)) ||
+          (q.optionsAr && q.optionsAr.some((o) => o.toLowerCase().includes(query)));
         if (!matches) return false;
       }
       return true;
@@ -1295,7 +1718,7 @@
     if (filtered.length === 0) {
       dom.bankCardsContainer.innerHTML = `
         <div style="text-align:center; padding:3rem; color:var(--text-muted); font-size:1.1rem;">
-          ${state.lang === 'ar' ? 'لم يتم العثور على أي أسئلة مطابقة للبحث.' : 'No questions found matching your search.'}
+          ${state.lang === 'ar' ? 'لم يتم العثور على أي أسئلة مطابقة للبحث.' : (state.lang === 'both' ? 'No questions found matching your search | لم يتم العثور على نتائج للبحث.' : 'No questions found matching your search.')}
         </div>
       `;
       return;
@@ -1303,57 +1726,86 @@
 
     const optionLetters = ['A', 'B', 'C', 'D'];
     const isAr = state.lang === 'ar';
+    const isBoth = state.lang === 'both';
 
     filtered.forEach((q) => {
       const card = document.createElement('div');
       card.className = 'review-item-card is-correct';
 
-      const activeOptions = isAr && q.optionsAr && q.optionsAr.length === q.options.length ? q.optionsAr : q.options;
-      const optionsHtml = activeOptions.map((opt, i) => {
+      const chapterTag = isBoth
+        ? `${chapterTitlesEn[q.chapterId] || q.chapter} | ${chapterTitlesAr[q.chapterId] || q.chapter}`
+        : (isAr ? (chapterTitlesAr[q.chapterId] || q.chapter) : (chapterTitlesEn[q.chapterId] || q.chapter));
+
+      const typeTag = isBoth
+        ? (q.type === 'mcq' ? 'MCQ | اختيار من متعدد' : 'True/False | صح أو خطأ')
+        : (isAr ? (q.type === 'mcq' ? 'اختيار من متعدد' : 'صواب أو خطأ') : (q.type === 'mcq' ? 'MCQ' : 'True/False'));
+
+      const optionsHtml = q.options.map((optEn, i) => {
         const isAnswer = i === q.correctAnswer;
-        const letter = q.type === 'mcq' ? optionLetters[i] : (i === 0 ? (isAr ? 'صواب' : 'True') : (isAr ? 'خطأ' : 'False'));
+        let letter = '';
+        if (q.type === 'mcq') {
+          letter = optionLetters[i];
+        } else {
+          if (isBoth) letter = i === 0 ? 'True / صواب' : 'False / خطأ';
+          else if (isAr) letter = i === 0 ? 'صواب' : 'خطأ';
+          else letter = i === 0 ? 'True' : 'False';
+        }
+
+        let labelHtml = '';
+        if (isBoth) {
+          const optAr = (q.optionsAr && q.optionsAr[i]) ? q.optionsAr[i] : '';
+          labelHtml = `<span>${escapeHtml(optEn)}</span> <span style="opacity:0.85; margin-inline-start:0.5rem;" dir="rtl">/ ${escapeHtml(optAr)}</span>`;
+        } else if (isAr) {
+          labelHtml = escapeHtml((q.optionsAr && q.optionsAr[i]) ? q.optionsAr[i] : optEn);
+        } else {
+          labelHtml = escapeHtml(optEn);
+        }
+
         return `
           <div style="padding:0.4rem 0.6rem; border-radius:6px; background:${isAnswer ? 'var(--success-bg)' : 'transparent'}; color:${isAnswer ? 'var(--success-text)' : 'inherit'}; font-weight:${isAnswer ? '700' : 'normal'};">
-            ${letter}) ${opt} ${isAnswer ? '✓' : ''}
+            ${letter}) ${labelHtml} ${isAnswer ? '✓' : ''}
           </div>
         `;
       }).join('');
 
+      let questionHtml = '';
+      if (isBoth) {
+        questionHtml = `
+          <div class="review-q-text">
+            <div class="q-bilingual-wrapper">
+              <div class="q-bilingual-en"><span class="q-bilingual-tag tag-en">EN</span><span>${escapeHtml(q.question)}</span></div>
+              <div class="q-bilingual-ar" dir="rtl"><span class="q-bilingual-tag tag-ar">AR</span><span>${escapeHtml(q.questionAr || '')}</span></div>
+            </div>
+          </div>
+        `;
+      } else {
+        questionHtml = `<div class="review-q-text">${escapeHtml(isAr && q.questionAr ? q.questionAr : q.question)}</div>`;
+      }
+
       card.innerHTML = `
         <div class="review-card-top">
-          <div style="display:flex; align-items:center; gap:0.5rem;">
+          <div style="display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;">
             <span class="question-number-tag">Q${q.id}</span>
-            <span class="badge badge-chapter">${isAr ? (chapterTitlesAr[q.chapterId] || q.chapter) : (chapterTitlesEn[q.chapterId] || q.chapter)}</span>
-            <span class="badge ${q.type === 'mcq' ? 'badge-primary' : 'badge-chapter'}">${isAr ? (q.type === 'mcq' ? 'اختيار من متعدد' : 'صواب أو خطأ') : (q.type === 'mcq' ? 'MCQ' : 'True/False')}</span>
+            <span class="badge badge-chapter">${chapterTag}</span>
+            <span class="badge ${q.type === 'mcq' ? 'badge-primary' : 'badge-chapter'}">${typeTag}</span>
           </div>
         </div>
 
-        <div class="review-q-text">${isAr && q.questionAr ? q.questionAr : q.question}</div>
+        ${questionHtml}
 
         <div style="background:var(--bg-tertiary); border-radius:8px; padding:0.75rem 1rem; margin-bottom:1rem; display:flex; flex-direction:column; gap:0.25rem;">
           ${optionsHtml}
         </div>
 
         <div class="explanation-content" style="padding:0;">
-          ${state.lang === 'en' ? `
-            <div class="exp-lang-block">
-              <div class="exp-lang-header">🇬🇧 English Explanation:</div>
-              <div class="exp-text">${q.explanationEn}</div>
-            </div>
-            <div class="exp-lang-block">
-              <div class="exp-lang-header">🇸🇦 الشرح بالعربية:</div>
-              <div class="exp-text">${q.explanationAr}</div>
-            </div>
-          ` : `
-            <div class="exp-lang-block">
-              <div class="exp-lang-header">🇸🇦 الشرح بالعربية:</div>
-              <div class="exp-text">${q.explanationAr}</div>
-            </div>
-            <div class="exp-lang-block">
-              <div class="exp-lang-header">🇬🇧 English Explanation:</div>
-              <div class="exp-text">${q.explanationEn}</div>
-            </div>
-          `}
+          <div class="exp-lang-block">
+            <div class="exp-lang-header">🇬🇧 English Explanation:</div>
+            <div class="exp-text">${escapeHtml(q.explanationEn)}</div>
+          </div>
+          <div class="exp-lang-block">
+            <div class="exp-lang-header">🇸🇦 الشرح بالعربية:</div>
+            <div class="exp-text">${escapeHtml(q.explanationAr)}</div>
+          </div>
         </div>
       `;
 

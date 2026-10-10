@@ -131,6 +131,11 @@
       modal_type_mcq: 'Multiple Choice (MCQ)',
       modal_type_tf: 'True / False',
       modal_available_text: 'Available matching questions: {count}',
+      modal_shuffle_lbl: 'Choices Order:',
+      modal_shuffle_default: 'Original Order',
+      modal_shuffle_random: '🔀 Randomized Choices',
+      btn_shuffle_options: 'Shuffle Choices',
+      toast_shuffled: 'Choices shuffled! 🔀',
       modal_count_lbl: 'Number of Questions:',
       modal_count_all_avail: 'All in Scope',
       modal_count_custom: 'Custom',
@@ -245,6 +250,11 @@
       modal_type_mcq: 'اختيار من متعدد فقط (MCQ)',
       modal_type_tf: 'صح أم خطأ فقط (True / False)',
       modal_available_text: 'إجمالي الأسئلة المتاحة في هذا التحديد: {count} سؤال',
+      modal_shuffle_lbl: 'ترتيب الاختيارات:',
+      modal_shuffle_default: 'الترتيب الافتراضي',
+      modal_shuffle_random: '🔀 خلط عشوائي للاختيارات',
+      btn_shuffle_options: 'خلط الاختيارات 🔀',
+      toast_shuffled: 'تم تغيير أماكن الاختيارات بنجاح! 🔀',
       modal_count_lbl: 'عدد الأسئلة (Number of Questions):',
       modal_count_all_avail: 'كل المتاح في التحديد',
       modal_count_custom: 'مخصص',
@@ -359,6 +369,11 @@
       modal_type_mcq: 'MCQ Only | اختيار من متعدد فقط',
       modal_type_tf: 'True/False Only | صح أو خطأ فقط',
       modal_available_text: 'Available in selection: {count} Q | المتاح في التحديد: {count} سؤال',
+      modal_shuffle_lbl: 'Choices Order / ترتيب الاختيارات:',
+      modal_shuffle_default: 'Original | افتراضي',
+      modal_shuffle_random: '🔀 Randomized | خلط عشوائي',
+      btn_shuffle_options: 'Shuffle Choices | خلط الاختيارات 🔀',
+      toast_shuffled: 'Choices shuffled! | تم تغيير أماكن الاختيارات! 🔀',
       modal_count_lbl: 'Number of Questions / عدد الأسئلة:',
       modal_count_all_avail: 'All in Selection | كل المتاح',
       modal_count_custom: 'Custom | مخصص',
@@ -489,7 +504,118 @@
     modalAvailableText: document.getElementById('modal-available-text'),
     modalCountPills: document.getElementById('modal-count-pills'),
     customCountInput: document.getElementById('custom-count-input'),
+    modalShufflePills: document.getElementById('modal-shuffle-pills'),
+    btnShuffleOptions: document.getElementById('btn-shuffle-options'),
+    quizToast: document.getElementById('quiz-toast'),
   };
+
+  // Floating Toast Notification
+  let toastTimer = null;
+  function showToast(message) {
+    if (!dom.quizToast) return;
+    dom.quizToast.textContent = message;
+    dom.quizToast.classList.add('show');
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      if (dom.quizToast) dom.quizToast.classList.remove('show');
+    }, 2000);
+  }
+
+  // Clone Question Deep Copy Helper
+  function cloneQuestion(q) {
+    return {
+      ...q,
+      options: [...q.options],
+      optionsAr: q.optionsAr ? [...q.optionsAr] : undefined,
+      eliminations: q.eliminations ? { ...q.eliminations } : undefined,
+      eliminationsAr: q.eliminationsAr ? { ...q.eliminationsAr } : undefined,
+    };
+  }
+
+  // Shuffle Question Options Helper
+  function shuffleQuestionOptions(q) {
+    if (!q || !q.options || q.options.length <= 1) return null;
+
+    const n = q.options.length;
+    const indices = Array.from({ length: n }, (_, i) => i);
+    let shuffledIndices;
+    let attempts = 0;
+    do {
+      shuffledIndices = [...indices];
+      for (let i = n - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledIndices[i], shuffledIndices[j]] = [shuffledIndices[j], shuffledIndices[i]];
+      }
+      attempts++;
+    } while (attempts < 10 && shuffledIndices.every((val, idx) => val === idx));
+
+    const newOptions = shuffledIndices.map((oldIdx) => q.options[oldIdx]);
+    const newOptionsAr = q.optionsAr ? shuffledIndices.map((oldIdx) => q.optionsAr[oldIdx]) : undefined;
+    const newCorrectAnswer = shuffledIndices.indexOf(q.correctAnswer);
+
+    let newEliminations = undefined;
+    if (q.eliminations) {
+      newEliminations = {};
+      shuffledIndices.forEach((oldIdx, newIdx) => {
+        if (q.eliminations[String(oldIdx)] !== undefined) {
+          newEliminations[String(newIdx)] = q.eliminations[String(oldIdx)];
+        }
+      });
+    }
+
+    let newEliminationsAr = undefined;
+    if (q.eliminationsAr) {
+      newEliminationsAr = {};
+      shuffledIndices.forEach((oldIdx, newIdx) => {
+        if (q.eliminationsAr[String(oldIdx)] !== undefined) {
+          newEliminationsAr[String(newIdx)] = q.eliminationsAr[String(oldIdx)];
+        }
+      });
+    }
+
+    q.options = newOptions;
+    if (newOptionsAr) q.optionsAr = newOptionsAr;
+    q.correctAnswer = newCorrectAnswer;
+    if (newEliminations) q.eliminations = newEliminations;
+    if (newEliminationsAr) q.eliminationsAr = newEliminationsAr;
+
+    return shuffledIndices;
+  }
+
+  function handleShuffleCurrentQuestion() {
+    const quiz = state.currentQuiz;
+    if (!quiz || !quiz.questions || quiz.questions.length === 0) return;
+    const q = quiz.questions[quiz.currentIndex];
+    if (!q || !q.options || q.options.length <= 1) return;
+
+    if (dom.btnShuffleOptions) {
+      dom.btnShuffleOptions.classList.add('spinning');
+      setTimeout(() => {
+        if (dom.btnShuffleOptions) dom.btnShuffleOptions.classList.remove('spinning');
+      }, 500);
+    }
+
+    const shuffledIndices = shuffleQuestionOptions(q);
+    if (!shuffledIndices) return;
+
+    const ans = quiz.userAnswers[quiz.currentIndex];
+    if (ans && ans.selected !== undefined) {
+      ans.selected = shuffledIndices.indexOf(ans.selected);
+    }
+
+    loadQuestion(quiz.currentIndex);
+
+    if (dom.qOptionsContainer) {
+      dom.qOptionsContainer.classList.remove('is-shuffling');
+      void dom.qOptionsContainer.offsetWidth;
+      dom.qOptionsContainer.classList.add('is-shuffling');
+      setTimeout(() => {
+        if (dom.qOptionsContainer) dom.qOptionsContainer.classList.remove('is-shuffling');
+      }, 400);
+    }
+
+    showToast(i18n[state.lang].toast_shuffled || 'Choices shuffled! 🔀');
+  }
 
   // =========================================================================
   // Initialization
@@ -812,6 +938,7 @@
     // Modal Pills
     setupScopeMultiSelect();
     setupTypeSelect();
+    setupPillGroup(dom.modalShufflePills);
     setupPillGroup(dom.modalCountPills, (val) => {
       if (val === 'custom') {
         dom.customCountInput.style.display = 'block';
@@ -821,8 +948,23 @@
       }
     });
 
-    // Keyboard navigation: Enter key advances to the next question
+    // Shuffle options button listener
+    if (dom.btnShuffleOptions) {
+      dom.btnShuffleOptions.addEventListener('click', handleShuffleCurrentQuestion);
+    }
+
+    // Keyboard navigation: Enter key advances, 'S' key shuffles options
     document.addEventListener('keydown', (e) => {
+      if (e.key === 's' || e.key === 'S') {
+        if (dom.viewQuiz && dom.viewQuiz.classList.contains('active')) {
+          if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+          if (!e.ctrlKey && !e.metaKey && !e.altKey) {
+            e.preventDefault();
+            handleShuffleCurrentQuestion();
+            return;
+          }
+        }
+      }
       if (e.key === 'Enter') {
         if (dom.viewQuiz && dom.viewQuiz.classList.contains('active')) {
           if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) {
@@ -962,11 +1104,13 @@
       return;
     }
 
+    const clonedQuestions = questionsList.map((q) => cloneQuestion(q));
+
     state.currentQuiz = {
       mode: mode,
       titleAr: titleAr,
       titleEn: titleEn,
-      questions: questionsList,
+      questions: clonedQuestions,
       currentIndex: 0,
       userAnswers: {},
       isFinished: false,
@@ -1043,6 +1187,13 @@
     }
 
     const finalQuestions = shuffled.slice(0, Math.min(requestedCount, shuffled.length));
+
+    // Check if options should be randomized
+    const activeShufflePill = dom.modalShufflePills ? dom.modalShufflePills.querySelector('.pill-btn.active') : null;
+    const shouldShuffleOptions = activeShufflePill && activeShufflePill.getAttribute('data-shuffle') === 'random';
+    if (shouldShuffleOptions) {
+      finalQuestions.forEach((q) => shuffleQuestionOptions(q));
+    }
 
     closeRandomConfigModal();
 
@@ -1250,12 +1401,14 @@
       if (q.type === 'mcq') {
         prefix.textContent = optionLetters[optIdx];
       } else {
+        const optEnText = (q.options[optIdx] || '').toLowerCase().trim();
+        const isTrueOpt = optEnText.startsWith('true');
         if (isBoth) {
-          prefix.textContent = optIdx === 0 ? 'T / ص' : 'F / خ';
+          prefix.textContent = isTrueOpt ? 'T / ص' : 'F / خ';
         } else if (isAr) {
-          prefix.textContent = optIdx === 0 ? 'ص' : 'خ';
+          prefix.textContent = isTrueOpt ? 'ص' : 'خ';
         } else {
-          prefix.textContent = optIdx === 0 ? 'T' : 'F';
+          prefix.textContent = isTrueOpt ? 'T' : 'F';
         }
       }
 
@@ -1420,9 +1573,11 @@
     function getOptLetter(idx) {
       if (idx < 0) return '-';
       if (q.type === 'mcq') return optionLetters[idx];
-      if (isBoth) return idx === 0 ? 'True / صواب' : 'False / خطأ';
-      if (isAr) return idx === 0 ? 'صواب' : 'خطأ';
-      return idx === 0 ? 'True' : 'False';
+      const optEnText = (q.options[idx] || '').toLowerCase().trim();
+      const isTrueOpt = optEnText.startsWith('true');
+      if (isBoth) return isTrueOpt ? 'True / صواب' : 'False / خطأ';
+      if (isAr) return isTrueOpt ? 'صواب' : 'خطأ';
+      return isTrueOpt ? 'True' : 'False';
     }
 
     dom.feedbackBanner.classList.remove('correct', 'wrong');
@@ -1619,9 +1774,11 @@
       function getOptLetter(i) {
         if (i < 0) return '-';
         if (q.type === 'mcq') return optionLetters[i];
-        if (isBoth) return i === 0 ? 'True / صواب' : 'False / خطأ';
-        if (isAr) return i === 0 ? 'صواب' : 'خطأ';
-        return i === 0 ? 'True' : 'False';
+        const optEnText = (q.options[i] || '').toLowerCase().trim();
+        const isTrueOpt = optEnText.startsWith('true');
+        if (isBoth) return isTrueOpt ? 'True / صواب' : 'False / خطأ';
+        if (isAr) return isTrueOpt ? 'صواب' : 'خطأ';
+        return isTrueOpt ? 'True' : 'False';
       }
 
       const userChoiceText = getOptText(userAns.selected);

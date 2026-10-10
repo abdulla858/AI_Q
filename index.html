@@ -244,8 +244,14 @@
         <!-- Question Card -->
         <div class="question-card">
           <div class="question-header">
-            <span class="question-number-tag" id="q-id-tag">Q1</span>
-            <span class="badge badge-primary" id="q-type-badge">MCQ</span>
+            <div class="question-tags">
+              <span class="question-number-tag" id="q-id-tag">Q1</span>
+              <span class="badge badge-primary" id="q-type-badge">MCQ</span>
+            </div>
+            <button type="button" class="btn-shuffle-options" id="btn-shuffle-options" title="Shuffle Choices / خلط أماكن الاختيارات">
+              <span class="shuffle-icon">🔀</span>
+              <span class="shuffle-btn-text" data-i18n="btn_shuffle_options">Shuffle Choices</span>
+            </button>
           </div>
 
           <div class="question-text" id="q-text">
@@ -307,6 +313,9 @@
             <span data-i18n="btn_finish">Finish Quiz</span>
           </button>
         </div>
+
+        <!-- Floating Feedback Toast -->
+        <div class="quiz-toast" id="quiz-toast" role="status" aria-live="polite"></div>
       </section>
 
       <!-- ===================================================================
@@ -482,6 +491,15 @@
           <button type="button" class="pill-btn" data-count="custom" data-i18n="modal_count_custom">Custom</button>
         </div>
         <input type="number" id="custom-count-input" class="custom-input" min="5" max="300" placeholder="Enter a number between 5 and 300" data-i18n-placeholder="modal_count_custom_placeholder" style="display:none; margin-top:0.6rem;">
+      </div>
+
+      <!-- Choices Order (Shuffle / Default) -->
+      <div class="form-group">
+        <label class="form-label" data-i18n="modal_shuffle_lbl">Choices Order:</label>
+        <div class="pill-group" id="modal-shuffle-pills">
+          <button type="button" class="pill-btn active" data-shuffle="default" data-i18n="modal_shuffle_default">Default Order</button>
+          <button type="button" class="pill-btn" data-shuffle="random" data-i18n="modal_shuffle_random">🔀 Randomized Choices</button>
+        </div>
       </div>
 
       <div class="modal-actions">
